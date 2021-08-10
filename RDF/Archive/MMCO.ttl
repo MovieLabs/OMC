@@ -1,0 +1,1065 @@
+# baseURI: http://mmco.movielabs.com
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: mmco
+
+@prefix : <http://mmco.movielabs.com#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix mmco: <http://mmco.movielabs.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://mmco.movielabs.com>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+mmco:Address
+  rdf:type owl:Class ;
+  rdfs:label "Address"@en ;
+  rdfs:subClassOf mmco:Utility ;
+  skos:prefLabel "Address"@en ;
+.
+mmco:AnimationShot
+  rdf:type owl:Class ;
+  rdfs:label "Animation shot"@en ;
+  rdfs:subClassOf mmco:ProductionShot ;
+  skos:prefLabel "Animation shot"@en ;
+.
+mmco:AnythingWithAName
+  rdf:type owl:Class ;
+  rdfs:label "Anything with a name"@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmco:AnythingWithAnIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "Anything with an Identifier"@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmco:Asset
+  rdf:type owl:Class ;
+  rdfs:label "Asset"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "A physical or digital object or collection of objects specific to the creation of a Creative Work." ;
+  skos:prefLabel "Asset"@en ;
+.
+mmco:AssetClassVocabTerm
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy <http://movielabs.org/vocab/s-FunctionalAsset> ;
+  rdfs:label "Asset Class Vocabulary Term"@en ;
+  rdfs:subClassOf mmco:VocabularyTerm ;
+.
+mmco:AssetFunctionalClass
+  rdf:type owl:Class ;
+  rdfs:label "Asset functional class"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Asset Functional Class describes how an Asset is used in the production process. A Script is always a Script (its Functional Class), but its Structural Class might be a physical document or a digital document. Thinking of a video file as a Daily or an image as a VFX plate is more natural and useful to the participants in the production. The ontology uses this pattern, rather than directly creating subclasses of Asset, in order to support a potentially large and evolving set of different structural classes." ;
+  skos:prefLabel "Asset functional class"@en ;
+.
+mmco:AssetGroup
+  rdf:type owl:Class ;
+  rdfs:label "Asset group"@en ;
+  rdfs:subClassOf mmco:Asset ;
+  skos:definition "An asset that consists of a group of other assets. For example, a 3D model of a Production Prop has geometry, textures, materials, and so on. The components can be made by different specialists, and managed separately. The fact that an Asset is an Asset Group may not be known when the Asset is created. In the physical world, Set Dressing is a good example of an Asset Group. Each individual element is an Asset, and can be purchased, on loan, or taken from a Prop warehouse, and will have different tracking and budgetary need. " ;
+  skos:prefLabel "Asset group"@en ;
+.
+mmco:AssetStructuralClass
+  rdf:type owl:Class ;
+  rdfs:label "Asset structural class"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Describes the underlying nature of an Asset, independent of its use. For example, an image is always an image (and thus will have an instance of Image as its structural characteristic), whether it is used as concept art, reference art, or a texture for computer graphics. The ontology uses this pattern, rather than directly creating subclasses of Asset, in order to support a potentially large and evolving set of different structural classes." ;
+  skos:prefLabel "Asset structural class"@en ;
+.
+mmco:AudioClass
+  rdf:type owl:Class ;
+  rdfs:label "Audio class"@en ;
+  rdfs:subClassOf mmco:AssetStructuralClass ;
+  skos:definition "Represents the fact that an Asset is a representation of sound." ;
+  skos:prefLabel "Audio class"@en ;
+.
+mmco:AudioVisualClass
+  rdf:type owl:Class ;
+  rdfs:label "Audio visual class"@en ;
+  rdfs:subClassOf mmco:AssetStructuralClass ;
+  skos:definition "Represents the fact that the Asset is a  moving Image with audio synchronized to the images." ;
+  skos:prefLabel "Audio visual class"@en ;
+.
+mmco:Character
+  rdf:type owl:Class ;
+  rdfs:label "Character"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Character"@en ;
+.
+mmco:Contribution
+  rdf:type owl:Class ;
+  rdfs:label "Contribution"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Contribution"@en ;
+.
+mmco:Country
+  rdf:type owl:Class ;
+  rdfs:label "Country"@en ;
+  rdfs:subClassOf mmco:Utility ;
+.
+mmco:CreativeWork
+  rdf:type owl:Class ;
+  rdfs:label "Creative work"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  skos:prefLabel "Creative work"@en ;
+.
+mmco:DateAndTime
+  rdf:type owl:Class ;
+  rdfs:label "Date and Time"@en ;
+  rdfs:subClassOf mmco:Utility ;
+.
+mmco:Department
+  rdf:type owl:Class ;
+  rdfs:label "Department"@en ;
+  rdfs:subClassOf mmco:Organization ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Department"@en ;
+.
+mmco:Depiction
+  rdf:type owl:Class ;
+  rdfs:label "Depiction"@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmco:hasDepictor ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmco:isDepictionOf ;
+    ] ;
+  skos:prefLabel "Depiction"@en ;
+.
+mmco:DigitalDataClass
+  rdf:type owl:Class ;
+  rdfs:label "Digital data class"@en ;
+  rdfs:subClassOf mmco:AssetStructuralClass ;
+  skos:definition """Used to represent the structural characteristic of an Asset that is composed of digital data and that is not one of the other structural categories. This is primarily used as a superclass for data-only Assets, such as Camera Metadata. Digital Assets can be innately digital (e.g. a spreadsheet or JSON metadata) or the result of quantizing an analog or real-world source (e.g. digitally recorded audio or video.) For most Digital Assets the physical nature of the medium on which they are stored is not important. However, there are some special cases where the actual physical storage of a Digital Asset is important.  For instance, the day’s takes may still be on the camera mag, in which case getting that data requires knowing where the camera mag is. Similarly, there are tape formats for digital data (e.g. DAT for audio) and knowing that a particular Digital Asset is on a particular tape can be important, especially for archival systems.
+
+This is not intended to cover abstract intellectual property, e.g. Characters and Narrative Props.""" ;
+  skos:prefLabel "Digital data class"@en ;
+.
+mmco:DocumentClass
+  rdf:type owl:Class ;
+  rdfs:label "Document class"@en ;
+  rdfs:subClassOf mmco:AssetStructuralClass ;
+  skos:definition "Communicates the fact that the asset is a human readable object containing text and/or images." ;
+  skos:prefLabel "Document class"@en ;
+.
+mmco:EditorialSequence
+  rdf:type owl:Class ;
+  rdfs:label "Editorial sequence"@en ;
+  rdfs:subClassOf mmco:ProductionSequence ;
+.
+mmco:Female
+  rdf:type mmco:GenderVocabTerm ;
+  rdfs:label "Female Gender"@en ;
+.
+mmco:Gender
+  rdf:type owl:Class ;
+  rdfs:label "Gender"@en ;
+  rdfs:subClassOf mmco:Utility ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Gender"@en ;
+.
+mmco:GenderVocabTerm
+  rdf:type owl:Class ;
+  rdfs:comment "A description of a persons declared gender"@en ;
+  rdfs:label "Gender vocabulary term"@en ;
+  rdfs:subClassOf mmco:VocabularyTerm ;
+.
+mmco:Identifier
+  rdf:type owl:Class ;
+  rdfs:label "Identifier"@en ;
+  rdfs:subClassOf mmco:Utility ;
+  skos:prefLabel "Identifier"@en ;
+.
+mmco:Infrastructure
+  rdf:type owl:Class ;
+  rdfs:label "Infrastructure"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Infrastructure"@en ;
+.
+mmco:LatLon
+  rdf:type owl:Class ;
+  rdfs:label "Latitude and Longitude"@en ;
+  rdfs:subClassOf mmco:Utility ;
+.
+mmco:Location
+  rdf:type owl:Class ;
+  rdfs:label "Location"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+  skos:prefLabel "Location"@en ;
+.
+mmco:Male
+  rdf:type mmco:GenderVocabTerm ;
+  rdfs:label "Male Gender"@en ;
+.
+mmco:MediaCreationContext
+  rdf:type owl:Class ;
+  rdfs:label "Context"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmco:MediaCreationContextComponent
+  rdf:type owl:Class ;
+  rdfs:label "Context component"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmco:MovingImageClass
+  rdf:type owl:Class ;
+  rdfs:label "Moving image class"@en ;
+  rdfs:subClassOf mmco:AssetStructuralClass ;
+  skos:definition "Communicates the fact that an Asset is a temporally ordered sequence of images. Such Assets may be digital or analog, so an instance of this would likely also be an instance of DigitalData, or of PhysicalObject with isAnalogData = true." ;
+  skos:prefLabel "Moving image class"@en ;
+.
+mmco:NarrativeContext
+  rdf:type owl:Class ;
+  rdfs:label "Narrative context"@en ;
+  rdfs:subClassOf mmco:MediaCreationContext ;
+  skos:prefLabel "Narrative context"@en ;
+.
+mmco:NarrativeContextComponent
+  rdf:type owl:Class ;
+  rdfs:label "Narrative context component"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+.
+mmco:NarrativeLocation
+  rdf:type owl:Class ;
+  rdfs:label "Narrative Location"@en ;
+  rdfs:subClassOf mmco:Location ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+.
+mmco:NarrativeProp
+  rdf:type owl:Class ;
+  rdfs:label "Narrative prop"@en ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+  rdfs:subClassOf mmco:Prop ;
+.
+mmco:NarrativeScene
+  rdf:type owl:Class ;
+  rdfs:label "Narrative scene"@en ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+  rdfs:subClassOf mmco:Scene ;
+.
+mmco:NarrativeScript
+  rdf:type owl:Class ;
+  rdfs:label "Narrative script"@en ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+  rdfs:subClassOf mmco:Script ;
+.
+mmco:NarrativeSequence
+  rdf:type owl:Class ;
+  rdfs:label "Narrative sequence"@en ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+  rdfs:subClassOf mmco:Sequence ;
+.
+mmco:NarrativeSetDressing
+  rdf:type owl:Class ;
+  rdfs:label "Narrative set dressing"@en ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+  rdfs:subClassOf mmco:SetDressing ;
+.
+mmco:NarrativeShot
+  rdf:type owl:Class ;
+  rdfs:label "Narrative shot"@en ;
+  rdfs:subClassOf mmco:NarrativeContextComponent ;
+  rdfs:subClassOf mmco:Shot ;
+  skos:prefLabel "Narrative shot"@en ;
+.
+mmco:NeutralGender
+  rdf:type mmco:GenderVocabTerm ;
+  rdfs:label "Gender not applicable"@en ;
+.
+mmco:Organization
+  rdf:type owl:Class ;
+  rdfs:label "Organization"@en ;
+  rdfs:subClassOf mmco:Participant ;
+  skos:prefLabel "Organization"@en ;
+.
+mmco:OrganizationDepartmenVocabTerm
+  rdf:type owl:Class ;
+  rdfs:label "Organization Department Vocabulary Term"@en ;
+  rdfs:subClassOf mmco:VocabularyTerm ;
+.
+mmco:OtherGender
+  rdf:type mmco:GenderVocabTerm ;
+  rdfs:label "Other Gender"@en ;
+.
+mmco:Participant
+  rdf:type owl:Class ;
+  rdfs:label "Participant"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Participant"@en ;
+.
+mmco:Person
+  rdf:type owl:Class ;
+  rdfs:label "Person"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:Participant ;
+  rdfs:subClassOf mmco:Portrayer ;
+  skos:prefLabel "Person"@en ;
+.
+mmco:PersonTitleVocabTerm
+  rdf:type owl:Class ;
+  rdfs:label "A Person's Job Title Vocabulary Terms"@en ;
+  rdfs:subClassOf mmco:VocabularyTerm ;
+.
+mmco:PhysicalAssetClass
+  rdf:type owl:Class ;
+  rdfs:label "Physical asset class"@en ;
+  rdfs:subClassOf mmco:AssetStructuralClass ;
+  skos:definition "A physical Asset will have an instance of this as its structural characteristic. This is used to represent the fact that an asset is, for example, a Sword or a Volleyball (which would be instances of PhysicalObject). A physical asset is one where the tangible reality of the Asset is its defining feature. Physical Assets include anything that can be touched or handled , including things used to store digital data (but excluding the data itself.)" ;
+  skos:prefLabel "Physical asset class"@en ;
+.
+mmco:Portrayal
+  rdf:type owl:Class ;
+  rdfs:label "Portrayal"@en ;
+  rdfs:subClassOf mmco:Depiction ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmco:hasPortrayer ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmco:isPortrayalOf ;
+    ] ;
+  skos:prefLabel "Portrayal"@en ;
+.
+mmco:PortrayalByPerson
+  rdf:type owl:Class ;
+  rdfs:label "Portrayal by person" ;
+  rdfs:subClassOf mmco:Contribution ;
+  rdfs:subClassOf mmco:Portrayer ;
+  owl:equivalentClass [
+      rdf:type owl:Class ;
+      owl:intersectionOf (
+          mmco:Portrayal
+          [
+            rdf:type owl:Restriction ;
+            owl:allValuesFrom mmco:Person ;
+            owl:onProperty mmco:hasPortrayer ;
+          ]
+        ) ;
+    ] ;
+  skos:prefLabel "Portrayal by person" ;
+.
+mmco:Portrayer
+  rdf:type owl:Class ;
+  rdfs:comment "This is the production correlate of Character (which is a NarrativeContextComponent). An Actor could be defined as something that is an instance of both Person and Portrayer. However, there can be non-human portrayers also, such as animals or VFX entities." ;
+  rdfs:label "Portrayer"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  skos:prefLabel "Portrayer"@en ;
+.
+mmco:ProductionContext
+  rdf:type owl:Class ;
+  rdfs:label "Production context"@en ;
+  rdfs:subClassOf mmco:MediaCreationContext ;
+  skos:prefLabel "Production context"@en ;
+.
+mmco:ProductionContextComponent
+  rdf:type owl:Class ;
+  rdfs:label "Production context component"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+.
+mmco:ProductionLocation
+  rdf:type owl:Class ;
+  rdfs:label "Production location"@en ;
+  rdfs:subClassOf mmco:Location ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+.
+mmco:ProductionProp
+  rdf:type owl:Class ;
+  rdfs:label "Production prop"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  rdfs:subClassOf mmco:Prop ;
+.
+mmco:ProductionPropClass
+  rdf:type owl:Class ;
+  rdfs:label "Production prop class"@en ;
+  rdfs:subClassOf mmco:AssetFunctionalClass ;
+  skos:example "A snow globe would have an instance of this as its functional characteristic and an instance of PhysicalObject as its structural characteristic. A CG model of a snow globe would, instead, have a CG-specific instance of DigitalDataType as its structural characteristic." ;
+  skos:prefLabel "Production prop class"@en ;
+.
+mmco:ProductionRole
+  rdf:type owl:Class ;
+  rdfs:label "Production role"@en ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Production role"@en ;
+.
+mmco:ProductionScene
+  rdf:type owl:Class ;
+  rdfs:label "Production scene"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  rdfs:subClassOf mmco:Scene ;
+  skos:prefLabel "Production scene"@en ;
+.
+mmco:ProductionScript
+  rdf:type owl:Class ;
+  rdfs:label "Production script"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  rdfs:subClassOf mmco:Script ;
+.
+mmco:ProductionSequence
+  rdf:type owl:Class ;
+  rdfs:label "Production sequence"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  rdfs:subClassOf mmco:Sequence ;
+.
+mmco:ProductionSetDressing
+  rdf:type owl:Class ;
+  rdfs:label "Production set dressing"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  rdfs:subClassOf mmco:SetDressing ;
+.
+mmco:ProductionShot
+  rdf:type owl:Class ;
+  rdfs:label "Production shot"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  rdfs:subClassOf mmco:Shot ;
+  skos:prefLabel "Production shot"@en ;
+.
+mmco:ProductionSlate
+  rdf:type owl:Class ;
+  rdfs:label "Production slate"@en ;
+  rdfs:subClassOf mmco:ProductionContextComponent ;
+  skos:prefLabel "Production slate"@en ;
+.
+mmco:Prop
+  rdf:type owl:Class ;
+  rdfs:label "Prop"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+.
+mmco:Scene
+  rdf:type owl:Class ;
+  rdfs:label "Scene"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+  skos:prefLabel "Scene"@en ;
+.
+mmco:Script
+  rdf:type owl:Class ;
+  rdfs:label "Script"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+  skos:prefLabel "Script"@en ;
+.
+mmco:ScriptClass
+  rdf:type owl:Class ;
+  rdfs:label "Script class"@en ;
+  rdfs:subClassOf mmco:AssetFunctionalClass ;
+  skos:example "A paper script would have an instance of this as its functional characteristic and an instance of PhysicalObject - such as Paper - as its structural characteristic. A PDF script would instead have an instance of DigitalDataType - presumably PDF - as its structural characteristic." ;
+  skos:prefLabel "Script class"@en ;
+.
+mmco:Sequence
+  rdf:type owl:Class ;
+  rdfs:label "Sequence"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+  skos:prefLabel "Sequence"@en ;
+.
+mmco:SequenceClass
+  rdf:type owl:Class ;
+  rdfs:label "Sequence class"@en ;
+  rdfs:subClassOf mmco:AssetFunctionalClass ;
+  skos:example "An asset with this as its functional characteristic would have an instance of MovingImage as its structural characteristic. It would also likely be an instance of AssetGroup, with its contained assets being individual shots (i.e., Assets whose functional characteristic is an instance of Shot)." ;
+  skos:prefLabel "Sequence class"@en ;
+.
+mmco:Service
+  rdf:type owl:Class ;
+  rdfs:label "Service"@en ;
+  rdfs:subClassOf mmco:Participant ;
+  skos:prefLabel "Service"@en ;
+.
+mmco:SetDressing
+  rdf:type owl:Class ;
+  rdfs:label "Set dressing"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+.
+mmco:SetDressingClass
+  rdf:type owl:Class ;
+  mmco:hasDescription "An asset with this an instance of this as its FunctionalType will often be part of an AssetGroup." ;
+  rdfs:label "Set dressing class"@en ;
+  rdfs:subClassOf mmco:AssetFunctionalClass ;
+  skos:prefLabel "Set dressing class"@en ;
+.
+mmco:Shot
+  rdf:type owl:Class ;
+  rdfs:label "Shot"@en ;
+  rdfs:subClassOf mmco:MediaCreationContextComponent ;
+  skos:prefLabel "Shot"@en ;
+.
+mmco:ShotClass
+  rdf:type owl:Class ;
+  rdfs:label "Shot class"@en ;
+  rdfs:subClassOf mmco:AssetFunctionalClass ;
+  skos:example "A particular shot will have an instance of this as its functional characteristic, and an instance of MovingImageClass as is structural characteristic." ;
+  skos:prefLabel "Shot class"@en ;
+.
+mmco:StilImageClass
+  rdf:type owl:Class ;
+  rdfs:label "Still image class"@en ;
+  rdfs:subClassOf mmco:AssetStructuralClass ;
+  skos:definition "Communicates that an Asset is a representation of a 2-dimensional picture, or a two-dimensional visual representation. Such Assets may be physical or digital. So an instance of this class would likely also be an instnce of DigitalData or PhysicalObject." ;
+  skos:prefLabel "Still image class"@en ;
+.
+mmco:StructuredDocumentClass
+  rdf:type owl:Class ;
+  rdfs:label "Structured document class"@en ;
+  rdfs:subClassOf mmco:DocumentClass ;
+  skos:definition "Communicates the fact that the asset is a document structured according to a set of rules which are used to parse or understand the document." ;
+  skos:prefLabel "Structured document class"@en ;
+.
+mmco:Task
+  rdf:type owl:Class ;
+  rdfs:label "Task"@en ;
+  rdfs:subClassOf mmco:AnythingWithAName ;
+  rdfs:subClassOf mmco:AnythingWithAnIdentifier ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Task"@en ;
+.
+mmco:Utility
+  rdf:type owl:Class ;
+  rdfs:label "Utility"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Utility"@en ;
+.
+mmco:VFX_Sequence
+  rdf:type owl:Class ;
+  rdfs:label "VFX sequence"@en ;
+  rdfs:subClassOf mmco:ProductionSequence ;
+.
+mmco:VFX_Shot
+  rdf:type owl:Class ;
+  rdfs:label "VFX shot"@en ;
+  rdfs:subClassOf mmco:ProductionShot ;
+  skos:prefLabel "VFX shot"@en ;
+.
+mmco:VocabularyTerm
+  rdf:type owl:Class ;
+  rdfs:label "Vocabulary Terms"@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmco:containsAsset
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:AssetGroup ;
+  rdfs:label "contains asset"@en ;
+  rdfs:range mmco:Asset ;
+  skos:prefLabel "contains asset"@en ;
+.
+mmco:hasAKAName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has AKA name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasPersonName ;
+  skos:prefLabel "has AKA name"@en ;
+.
+mmco:hasAddress
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Location ;
+  rdfs:label "has address"@en ;
+  rdfs:range mmco:Address ;
+  skos:prefLabel "has address"@en ;
+.
+mmco:hasAssetAsInput
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Task ;
+  rdfs:label "has asset as input"@en ;
+  rdfs:range mmco:Asset ;
+  skos:prefLabel "has asset as input"@en ;
+.
+mmco:hasAssetStructuralCharacteristic
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Asset ;
+  rdfs:label "has asset structural characteristic"@en ;
+  rdfs:range mmco:AssetStructuralClass ;
+  skos:prefLabel "has asset structural characteristic"@en ;
+.
+mmco:hasCharacterName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Character ;
+  rdfs:subPropertyOf mmco:hasName ;
+.
+mmco:hasCity
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Address ;
+  rdfs:label "has city"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has city"@en ;
+.
+mmco:hasCompanyName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Organization ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasOrganizationName ;
+.
+mmco:hasContextComponent
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:MediaCreationContext ;
+  rdfs:label "has context component"@en ;
+  rdfs:range mmco:MediaCreationContextComponent ;
+  skos:prefLabel "has context component"@en ;
+.
+mmco:hasContributionType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Contribution ;
+  rdfs:label "has contribution type" ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has contribution type" ;
+.
+mmco:hasContributor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Contribution ;
+  rdfs:label "has contributor"@en ;
+  rdfs:range mmco:Person ;
+  owl:inverseOf mmco:isContributorTo ;
+  skos:prefLabel "has contributor"@en ;
+.
+mmco:hasCoords
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Location ;
+  rdfs:label "has long/lat coordinates"@en ;
+  rdfs:range mmco:LatLon ;
+  skos:definition "latitude and longitude" ;
+  skos:prefLabel "has long/lat coordinates"@en ;
+.
+mmco:hasCountry
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Address ;
+  rdfs:domain mmco:Location ;
+  rdfs:label "has country"@en ;
+  rdfs:range mmco:Country ;
+  skos:prefLabel "has country"@en ;
+.
+mmco:hasCountryCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Country ;
+  rdfs:label "has country code"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has country code"@en ;
+.
+mmco:hasCountryName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasName ;
+.
+mmco:hasCreativeWorkName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasName ;
+.
+mmco:hasCreditName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has credit name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasPersonName ;
+  skos:prefLabel "has credit name"@en ;
+.
+mmco:hasDateTime
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:DateAndTime ;
+  rdfs:label "has date-time"@en ;
+  rdfs:range xsd:dateTime ;
+  skos:prefLabel "has date-time"@en ;
+.
+mmco:hasDepartment
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Organization ;
+  rdfs:label "has department"@en ;
+  rdfs:range mmco:Department ;
+  rdfs:subPropertyOf mmco:hasSubOrganization ;
+  owl:inverseOf mmco:isDepartmentOf ;
+  skos:prefLabel "has department"@en ;
+.
+mmco:hasDepiction
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmco:NarrativeContextComponent
+          mmco:Character
+          mmco:Person
+        ) ;
+    ] ;
+  rdfs:label "has depiction"@en ;
+  rdfs:range mmco:Depiction ;
+  owl:inverseOf mmco:isDepictionOf ;
+  skos:prefLabel "has depiction"@en ;
+.
+mmco:hasDepictionType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Depiction ;
+  rdfs:label "has depiction type"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has depiction type"@en ;
+.
+mmco:hasDepictor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Depiction ;
+  rdfs:label "has depictor"@en ;
+  rdfs:range mmco:ProductionContextComponent ;
+  owl:inverseOf mmco:isDepictorOf ;
+  skos:prefLabel "has depictor"@en ;
+.
+mmco:hasDescription
+  rdf:type owl:AnnotationProperty ;
+  rdfs:label "has description" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf rdfs:comment ;
+  skos:definition "This property can be used to provide a description of the entity to which  it is attached." ;
+  skos:prefLabel "has description" ;
+.
+mmco:hasEpisodeName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasName ;
+.
+mmco:hasEpisodeNumber
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has episode number"@en ;
+  rdfs:range xsd:integer ;
+  skos:prefLabel "has epicode number"@en ;
+.
+mmco:hasExternalURI
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Identifier ;
+  rdfs:label "has external URI"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has external URI"@en ;
+.
+mmco:hasFirstName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Character ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has first name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasCharacterName ;
+  rdfs:subPropertyOf mmco:hasPersonName ;
+  skos:prefLabel "has first name"@en ;
+.
+mmco:hasFullName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Character ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has full name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasCharacterName ;
+  rdfs:subPropertyOf mmco:hasPersonName ;
+  skos:prefLabel "has full name"@en ;
+.
+mmco:hasFunctionalCharacteristic
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Asset ;
+  rdfs:label "has asset functional characteristic"@en ;
+  rdfs:range mmco:AssetFunctionalClass ;
+  skos:prefLabel "has asset functional characteristic"@en ;
+.
+mmco:hasGuildName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Organization ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasOrganizationName ;
+.
+mmco:hasIdentifier
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:AnythingWithAnIdentifier ;
+  rdfs:label "has identifier"@en ;
+  rdfs:range mmco:Identifier ;
+  skos:prefLabel "has identifier"@en ;
+.
+mmco:hasIdentifierValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Identifier ;
+  rdfs:label "has Identifier value"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has identifier value"@en ;
+.
+mmco:hasLastName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Character ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has last name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasCharacterName ;
+  rdfs:subPropertyOf mmco:hasPersonName ;
+  skos:prefLabel "has last name"@en ;
+.
+mmco:hasLatitude
+  rdf:type owl:DatatypeProperty ;
+  rdf:type owl:FunctionalProperty ;
+  rdfs:domain mmco:LatLon ;
+  rdfs:label "has latitude"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has latitude"@en ;
+.
+mmco:hasLongitude
+  rdf:type owl:DatatypeProperty ;
+  rdf:type owl:FunctionalProperty ;
+  rdfs:domain mmco:LatLon ;
+  rdfs:label "has longitude"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has longitude"@en ;
+.
+mmco:hasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has name"@en ;
+  skos:prefLabel "has name"@en ;
+.
+mmco:hasOrganizationMember
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Organization ;
+  rdfs:label "has organization member"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmco:Person
+          mmco:Organization
+        ) ;
+    ] ;
+  owl:inverseOf mmco:isMemberOfOrganization ;
+  skos:prefLabel "has organization member"@en ;
+.
+mmco:hasOrganizationName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Organization ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasName ;
+.
+mmco:hasPersonDOB
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Person ;
+  rdfs:range xsd:date ;
+.
+mmco:hasPersonGender
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has person gender"@en ;
+  rdfs:range mmco:Gender ;
+  skos:prefLabel "has person gender"@en ;
+.
+mmco:hasPersonName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has person name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasName ;
+  skos:prefLabel "has person name"@en ;
+.
+mmco:hasPersonTitle
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Person ;
+  rdfs:label "has person title"@en ;
+  rdfs:range mmco:PersonTitleVocabTerm ;
+  skos:editorialNote "Do we want to crete  class PersonTitle, and make that the range of this property? The range of hasVocabularyTerm on this new class would then be PersonTitleVocabTerm." ;
+  skos:prefLabel "has person title"@en ;
+.
+mmco:hasPhysicalObject
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:DigitalDataClass ;
+  rdfs:label "has physical object"@en ;
+  rdfs:range mmco:PhysicalAssetClass ;
+  skos:prefLabel "has physical object"@en ;
+.
+mmco:hasPortrayal
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmco:Character
+          mmco:Person
+        ) ;
+    ] ;
+  rdfs:label "has portrayal"@en ;
+  rdfs:range mmco:Portrayal ;
+  rdfs:subPropertyOf mmco:hasDepiction ;
+  owl:inverseOf mmco:isPortrayalOf ;
+  skos:prefLabel "has portrayal"@en ;
+.
+mmco:hasPortrayer
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Portrayal ;
+  rdfs:range mmco:Portrayer ;
+  rdfs:subPropertyOf mmco:hasDepictor ;
+  owl:inverseOf mmco:isPortrayerOf ;
+.
+mmco:hasPostalCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+.
+mmco:hasProductionRole
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Participant ;
+  rdfs:label "has production role"@en ;
+  rdfs:range mmco:ProductionRole ;
+  skos:prefLabel "has production role"@en ;
+.
+mmco:hasRoleValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:ProductionRole ;
+  rdfs:range xsd:string ;
+.
+mmco:hasSceneNumber
+  rdf:type owl:DatatypeProperty ;
+  rdf:type owl:FunctionalProperty ;
+  rdfs:range xsd:string ;
+.
+mmco:hasSeasonName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasName ;
+.
+mmco:hasShotNumber
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has shot number" ;
+  rdfs:range xsd:integer ;
+  skos:prefLabel "has shot number" ;
+.
+mmco:hasStreetNumberAndName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Address ;
+  rdfs:range xsd:string ;
+.
+mmco:hasSubOrganization
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Organization ;
+  rdfs:label "has sub-organization"@en ;
+  rdfs:range mmco:Organization ;
+  skos:prefLabel "has sub-organization"@en ;
+.
+mmco:hasTaskName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmco:hasName ;
+.
+mmco:hasVocabularyTerm
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has vocabulary term"@en ;
+  rdfs:range mmco:VocabularyTerm ;
+  skos:definition "Identifies the formal vocabulary term used to represent the entity to which this is attached. For example, is there is an instance of AssetStructuralImage called \"JPEGimage\" then this property would have, as its value, the vocabulary term that repreent jpeg images. The instance \"JPEGimage\" would probably contain additional properties, which is why we distinguish it from the vocabulary term itself." ;
+  skos:prefLabel "has vocabulary term"@en ;
+.
+mmco:isAnalog
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:PhysicalAssetClass ;
+  rdfs:label "is analog"@en ;
+  rdfs:range xsd:boolean ;
+  skos:definition "True if the Asset is an Analog Asset" ;
+  skos:prefLabel "is analog"@en ;
+.
+mmco:isContributorTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "is contributor to"@en ;
+  owl:inverseOf mmco:hasContributor ;
+  skos:prefLabel "is contributor to"@en ;
+.
+mmco:isCreatedByTask
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Asset ;
+  rdfs:label "is created by task"@en ;
+  rdfs:range mmco:Task ;
+  skos:prefLabel "is created by task"@en ;
+.
+mmco:isDepartmentOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Department ;
+  rdfs:label "is department of"@en ;
+  rdfs:range mmco:Organization ;
+  owl:inverseOf mmco:hasDepartment ;
+  skos:prefLabel "is department of"@en ;
+.
+mmco:isDepictionOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Depiction ;
+  rdfs:label "is depiction of"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmco:NarrativeContextComponent
+          mmco:Character
+          mmco:Person
+        ) ;
+    ] ;
+  owl:inverseOf mmco:hasDepiction ;
+  skos:prefLabel "is depiction of"@en ;
+.
+mmco:isDepictorOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:ProductionContextComponent ;
+  rdfs:label "is depictor of"@en ;
+  rdfs:range mmco:Depiction ;
+  owl:inverseOf mmco:hasDepictor ;
+  skos:prefLabel "is depictor of"@en ;
+.
+mmco:isMemberOfOrganization
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmco:Person
+          mmco:Organization
+        ) ;
+    ] ;
+  rdfs:label "is member of organization"@en ;
+  rdfs:range mmco:Organization ;
+  owl:inverseOf mmco:hasOrganizationMember ;
+  skos:prefLabel "is member of organization"@en ;
+.
+mmco:isPortrayalOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Portrayal ;
+  rdfs:label "is portrayal of"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmco:Character
+          mmco:Person
+        ) ;
+    ] ;
+  rdfs:subPropertyOf mmco:isDepictionOf ;
+  owl:inverseOf mmco:hasPortrayal ;
+  skos:prefLabel "is portrayal of"@en ;
+.
+mmco:isPortrayerOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmco:Portrayer ;
+  rdfs:label "is portrayer of"@en ;
+  rdfs:range mmco:Portrayal ;
+  rdfs:subPropertyOf mmco:isDepictorOf ;
+  owl:inverseOf mmco:hasPortrayer ;
+  skos:prefLabel "is portrayer of"@en ;
+.
+mmco:isTransgender
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmco:Gender ;
+  rdfs:label "is transgender"@en ;
+  rdfs:range xsd:boolean ;
+  skos:prefLabel "is transgender"@en ;
+.

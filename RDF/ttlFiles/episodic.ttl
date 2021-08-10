@@ -1,0 +1,142 @@
+# baseURI: http://mcw.movielabs.com/ontology/episodic
+# imports: http://mcw.movielabs.com/ontology
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: episodic
+
+@prefix episodic: <http://mcw.movielabs.com/ontology/episodic#> .
+@prefix mcw: <http://mcw.movielabs.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://mcw.movielabs.com/ontology/episodic>
+  rdf:type owl:Ontology ;
+  owl:imports <http://mcw.movielabs.com/ontology> ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://mcw.movielabs.com/ontology#AdjunctSeason>
+  rdf:type owl:Class ;
+  rdfs:label "Adjunct season" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Season> ;
+  skos:definition "An additional Season not part of the main sequence of Seasons." ;
+.
+<http://mcw.movielabs.com/ontology#Anthology>
+  rdf:type owl:Class ;
+  rdfs:label "Anthology" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Series> ;
+  skos:definition "Series made up of standalone works such as documentaries. Anthology triggers de- duplication of its Episodes." ;
+.
+<http://mcw.movielabs.com/ontology#Episode>
+  rdf:type owl:Class ;
+  rdfs:label "Episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#CreativeWork> ;
+.
+<http://mcw.movielabs.com/ontology#EpisodicSeries>
+  rdf:type owl:Class ;
+  rdfs:label "Episodic series" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Series> ;
+  skos:definition "Most Series are Episodic. " ;
+.
+<http://mcw.movielabs.com/ontology#MainEpisode>
+  rdf:type owl:Class ;
+  rdfs:label "Main episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Episode> ;
+.
+<http://mcw.movielabs.com/ontology#MainSeason>
+  rdf:type owl:Class ;
+  rdfs:label "Main season" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Season> ;
+.
+<http://mcw.movielabs.com/ontology#MiniSeries>
+  rdf:type owl:Class ;
+  rdfs:label "Mini-series" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Series> ;
+.
+<http://mcw.movielabs.com/ontology#MiniSeriesSeason>
+  rdf:type owl:Class ;
+  rdfs:label "Mini-series season" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Season> ;
+  skos:definition "The original constitution of a mini-series, e.g. 7-night vs. 5-night seasons. Subsequent re-edited versions may be listed as Recut Seasons." ;
+.
+<http://mcw.movielabs.com/ontology#OmnibusEpisode>
+  rdf:type owl:Class ;
+  rdfs:label "Omnibus episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Episode> ;
+  skos:definition "An edited down synopsis of other Episodes, such as a recap of the prior week’s episodes. " ;
+.
+<http://mcw.movielabs.com/ontology#PilotEpisode>
+  rdf:type owl:Class ;
+  rdfs:label "Pilot episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Episode> ;
+.
+<http://mcw.movielabs.com/ontology#ProFormaSeason>
+  rdf:type owl:Class ;
+  rdfs:label "Pro forma season" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Season> ;
+  skos:definition "The Series does not have Seasons, e.g. a soap opera, daily program, or film serial, but the Registrant needs a placeholder. All Episodes of all Pro Forma Seasons of a Series are evaluated during de-duplication." ;
+.
+<http://mcw.movielabs.com/ontology#RecutEpisode>
+  rdf:type owl:Class ;
+  rdfs:label "Recut episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Episode> ;
+  skos:definition "Recut (2-night from original 7-night), split, merged, derived webisodes." ;
+.
+<http://mcw.movielabs.com/ontology#RecutSeason>
+  rdf:type owl:Class ;
+  rdfs:label "Recut season" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Season> ;
+  skos:definition "Consists of recut Episodes from an existing Season (often associated with mini-series)." ;
+.
+<http://mcw.movielabs.com/ontology#Season>
+  rdf:type owl:Class ;
+  rdfs:label "Season" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#CreativeWork> ;
+.
+<http://mcw.movielabs.com/ontology#SegmentEpisode>
+  rdf:type owl:Class ;
+  rdfs:label "Segment episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Episode> ;
+  skos:definition "An individual part that that can stand on its own or be combined into a whole episode (e.g., the two 15-minute stories aired together in a 30-minute animated program)." ;
+.
+<http://mcw.movielabs.com/ontology#Series>
+  rdf:type owl:Class ;
+  rdfs:label "Series" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#CreativeWork> ;
+.
+<http://mcw.movielabs.com/ontology#SpecialEpisode>
+  rdf:type owl:Class ;
+  rdfs:label "Special episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Episode> ;
+  skos:definition "An Episode outside the usual sequence such as a Christmas special." ;
+.
+<http://mcw.movielabs.com/ontology#StandaloneEpisode>
+  rdf:type owl:Class ;
+  rdfs:label "Standalone episode" ;
+  rdfs:subClassOf <http://mcw.movielabs.com/ontology#Episode> ;
+  skos:definition "Was or is in distribution as a standalone TV show (e.g. Pilot), TV Movie (e.g., merged mini-series), theatrical release (e.g. Anthology series), etc." ;
+.
+<http://mcw.movielabs.com/ontology#containsEpisode>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain <http://mcw.movielabs.com/ontology#Season> ;
+  rdfs:label "contains episode" ;
+  rdfs:range <http://mcw.movielabs.com/ontology#Episode> ;
+  owl:inverseOf <http://mcw.movielabs.com/ontology#isContainedInSeason> ;
+.
+<http://mcw.movielabs.com/ontology#isContainedInSeason>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain <http://mcw.movielabs.com/ontology#Episode> ;
+  rdfs:label "is contained in season" ;
+  rdfs:range <http://mcw.movielabs.com/ontology#Season> ;
+  owl:inverseOf <http://mcw.movielabs.com/ontology#containsEpisode> ;
+.
+<http://mcw.movielabs.com/ontology#isContainedInSeasonlessSeries>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain <http://mcw.movielabs.com/ontology#Episode> ;
+  rdfs:label "is contained in seasonless series" ;
+  rdfs:range <http://mcw.movielabs.com/ontology#Series> ;
+  owl:inverseOf <http://mcw.movielabs.com/ontology#containsSeasonlessEpisode> ;
+.
+

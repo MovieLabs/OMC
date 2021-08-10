@@ -1,0 +1,34 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "Utility#Name",
+	"title": "Name",
+	"description": "A general purpose class for naming things",
+	"type": "object",
+	"properties": {
+		"name": {
+			"description": "",
+			"type": "string",
+			"title": "fullName"
+		},
+		"fullName": {
+			"description": "",
+			"type": "string",
+			"title": "fullName"
+		},
+		"firstName": {
+			"description": "",
+			"type": "string",
+			"title": "firstName"
+		},
+		"lastName": {
+			"description": "",
+			"type": "string",
+			"title": "lastName"
+		},
+		"assetName": {
+			"description": "",
+			"type": "string",
+			"title": "scriptName"
+		}
+	}
+}

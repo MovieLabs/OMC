@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<TITLE>'Bracketed value'</TITLE>
+</HEAD>
+<BODY>
+<FONT face="Verdana, Helvetica, sans-serif">
+<H2>
+<FONT SIZE="-1">http://mmc.movielabs.com/ontology#BracketedValue</FONT><BR>
+Class 'Bracketed value'</H2>
+<CENTER><IMG border="0" src="diagrams/mmco_BracketedValue.jpg"></CENTER><P>
+<HR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">type</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/RDFSClass.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Class  [owl:Class]</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">label</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/XSDstring.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Bracketed value
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1">subClassOf</FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+mmco:hasLowScale max 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLMaxCardinality.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+mmco:hasHighScale max 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLCardinality.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+mmco:hasNumericValue exactly 1
+</FONT></TD></TR></TABLE>
+</DD>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/OWLNamedClassPrimitive.greyed.gif" width="16" height="16"></TD><TD><FONT size="-1">
+Thing</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1"><A href="skos_definition.html">definition</A></FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/XSDstring.gif" width="16" height="16"></TD><TD><FONT size="-1">
+A numerical value, along with high and low limits for the potential range of such a value.
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TR BGCOLOR="white">
+<TD>
+<B><FONT size="-1"><A href="skos_editorialNote.html">editorial note</A></FONT></B>
+<DL>
+<DD>
+<TABLE><TR><TD VALIGN="TOP">
+<IMG border="0" src="icons/XSDstring.gif" width="16" height="16"></TD><TD><FONT size="-1">
+The notion of a bracketed value is not ideal. The low and high limits are really properties of the kind of value being spoken of, not properties a particular value. 
+ 
+That is the case in an ideally modeled world. But modeling an open world is sometimes less than ideal.  The point of carrying the high and low limits along with the value is to be able to express statements such as the following:
+ 
+               "On a scale of 1 to 10, this film's mood is creepy level 7."
+               "On a scale of 1 to 100, this film's mood is sunny 60%."
+ 
+In other words, since we're not formally modeling 'mood' as a subclass of Keyword, and not modeling the possible moods (creepy, sunny) as instances of such a class, we probably also don't want to (maybe even can't) model the range formally either. So instead, we carry it along with the value, to give the value more meaning.
+</FONT></TD></TR></TABLE>
+</DD>
+</DL>
+</TD></TR>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+1">
+<B>References</B></FONT></TH>
+</TR>
+<TR><TD><FONT size="-1"><UL>
+<LI>as range (<A href="mmco_hasBracketedValue.html">has bracketed value</A>)</LI><LI>as subClassOf (<A href="mmco_Percentage.html">Percentage</A>,&nbsp;<A href="mmco_Ordinal.html">Ordinal</A>)</LI></UL></FONT></TABLE><P>
+</FONT>
+<P align="right"><FONT size="-1" face="Verdana, Helvetica, sans-serif">Generated with <A href="http://www.topbraidcomposer.com" target="_top">TopBraid Composer</A>
+ by <A href="http://www.topquadrant.com" target="_top">TopQuadrant, Inc.</A></P>
+</BODY>
+</HTML>

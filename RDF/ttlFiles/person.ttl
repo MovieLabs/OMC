@@ -1,0 +1,62 @@
+# baseURI: http://mcw.movielabs.com/ontology/person
+# imports: http://mmc.movielabs.com/ontology
+
+@prefix mcw: <http://mcw.movielabs.com/ontology#> .
+@prefix mmc: <http://mmc.movielabs.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mcw:hasBirthplace
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has birthplace" ;
+  rdfs:range mcw:Location ;
+  rdfs:subPropertyOf mcw:hasLocation ;
+.
+mcw:hasCountryOfCitizenship
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has country of citizenship" ;
+  rdfs:range mcw:Location ;
+  rdfs:subPropertyOf mcw:hasLocation ;
+.
+mcw:hasPersonIdentifier
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has person identifier" ;
+  rdfs:range mcw:Identifier ;
+  rdfs:subPropertyOf mcw:hasIdentifier ;
+  skos:editorialNote "There is an open issue about how to specify which kinds of identifiers apply to people, which to creative works, and which to both." ;
+.
+mcw:hasSpecificGender
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has specific gender" ;
+  rdfs:range xsd:string ;
+  skos:definition "In the case of Gender = OtherGender, this property allows for a specification of what exactly that is for this person" ;
+.
+mcw:isSeenAsStar
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "is seen as star" ;
+  rdfs:range xsd:boolean ;
+  skos:editorialNote "This will not be present (usually) if the person doesn;t have a star ranking from some source.  IMDB and AFI are possible sources for this." ;
+.
+mcw:isTransgender
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "is transgender" ;
+  rdfs:range xsd:boolean ;
+.
+<http://mcw.movielabs.com/ontology/person>
+  rdf:type owl:Ontology ;
+  owl:imports <http://mmc.movielabs.com/ontology> ;
+.
+mmc:Person
+  rdf:type owl:Class ;
+  rdfs:label "Person" ;
+  rdfs:subClassOf mcw:AnythingWithAnID ;
+.

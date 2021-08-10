@@ -1,0 +1,1184 @@
+# baseURI: http://www.movielabs.org/creativeworks/model
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: cw
+
+@prefix cw: <http://www.movielabs.org/creativeworks/model#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.movielabs.org/creativeworks/model>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+cw:AKA_Title
+  rdf:type owl:Class ;
+  rdfs:label "Also known as title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "Also Known As. Could be used for a Series that has changed its name, such as 'The Hollywood Squares' which later became simply 'Hollywood Squares'. Could be used for a retitled home entertainment release in the original language. May or may not be official." ;
+.
+cw:AMPAS
+  rdf:type cw:AwardGrantor ;
+  rdfs:label "AMPAS" ;
+  skos:definition "Academy of Motion Picture Arts and Sciences" ;
+  skos:editorialNote "Oscars" ;
+.
+cw:ATAS
+  rdf:type cw:AwardGrantor ;
+  rdfs:label "ATAS" ;
+  skos:definition "Academy of Television Arts and Sciences" ;
+  skos:editorialNote "Emmy awards" ;
+.
+cw:AbbreviatedTitle
+  rdf:type owl:Class ;
+  rdfs:label "Abbreviated title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "Shortened version of a longer title. Example: 'Prince Caspian' for 'The Chronicles of Narnia: Prince Caspian'. Usually not official" ;
+.
+cw:AcronymTitle
+  rdf:type owl:Class ;
+  rdfs:label "Acronym title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "SATC for 'Sex and the City'. Provide only if commonly used. Almost always not official." ;
+.
+cw:AdHoc
+  rdf:type owl:Class ;
+  rdfs:label "AdHoc" ;
+  rdfs:subClassOf cw:Group ;
+.
+cw:AnythingWithACountry
+  rdf:type owl:Class ;
+  rdfs:label "Anything with a country" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Umbrella class for anything that can have a country property (cw:hasCountry). The rationale for this is to keep track of the kinds of things that have a country property." ;
+.
+cw:AnythingWithAnID
+  rdf:type owl:Class ;
+  rdfs:label "Anything with an ID" ;
+  rdfs:subClassOf owl:Thing ;
+.
+cw:Attributable
+  rdf:type owl:Class ;
+  rdfs:label "Attributable" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Anything that may have provenance is an Attributable" ;
+  skos:scopeNote "CreativeWorks and People may not have a 'source' attribute if they are created from a set of multi-sourced data. Indeed, they usually don't - so maybe they shoudln;t be attributable?" ;
+.
+cw:AttributedProperty
+  rdf:type owl:Class ;
+  rdfs:label "Attributed property" ;
+  rdfs:subClassOf cw:Attributable ;
+  skos:definition "This is a sligthly lighter-weight version of reification, for use with property cw:hasPredicate. To create a sourced statement of the form \"X pred true\", where pred is a boolean property, do the following: create an instance A of AttributedProperty, and add the statements \"X hasAttributedProperty A\" and \"A hasPredicate pred\". Then identify the source via \"A hasSource ...\" We could extend this to non-boolean properties by creating a property cw:hasObject - this is one step closer to full reification (except that we don't specify the subject of the AttributedProperty - instead, hanging the AttirbutedProperty off the instance that would be the subject in full reification)." ;
+.
+cw:Award
+  rdf:type owl:Class ;
+  rdfs:label "Award" ;
+  rdfs:subClassOf cw:AnythingWithAnID ;
+  rdfs:subClassOf cw:Attributable ;
+.
+cw:AwardCategory
+  rdf:type owl:Class ;
+  rdfs:label "Award category" ;
+  rdfs:subClassOf cw:VocabularyTerm ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "The subject of an award, e.g., best film, best screenplay, best song, best supporting actor ..." ;
+.
+cw:AwardGrantor
+  rdf:type owl:Class ;
+  rdfs:label "Award grantor" ;
+  rdfs:subClassOf cw:VocabularyTerm ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "The organization granting an award, e.g., BAFTA, AMPAS ..." ;
+.
+cw:Awardable
+  rdf:type owl:Class ;
+  rdfs:label "Awardable" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Anything capable of receiving an award." ;
+.
+cw:AwardingBody
+  rdf:type owl:Class ;
+  rdfs:label "AwardingBody" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Any organization that can issue an award." ;
+.
+cw:BAFTA
+  rdf:type cw:AwardGrantor ;
+  rdfs:label "BAFTA" ;
+  skos:definition "British Academy of Film and Television Arts" ;
+.
+cw:BasedOnThis
+  rdf:type owl:Class ;
+  rdfs:label "Based on this" ;
+  rdfs:subClassOf cw:RelatedThing ;
+  skos:definition "Thing on which a Creative Work is based. BasedOnThis is not a subclass of RelatedWork, because the latter is a Creative Work, while BasedOnThis points to, for example, the novel a film is based on." ;
+.
+cw:BaselineIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "Baseline ID" ;
+  rdfs:subClassOf cw:Identifier ;
+.
+cw:BestActor
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1927/28 ACTOR" ;
+  rdfs:label "Best actor" ;
+.
+cw:BestActress
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1927/28 ACTOR" ;
+  rdfs:label "Best actress" ;
+.
+cw:BestAdaptedScreenplay
+  rdf:type cw:AwardCategory ;
+  rdfs:comment " since 1927/28 WRITER" ;
+  rdfs:label "Best adapted screenplay" ;
+.
+cw:BestAnimatedFeatureFilm
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 2001 CREATIVEWORK" ;
+  rdfs:label "Best animated feature film" ;
+.
+cw:BestAnimatedShortFilm
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1930/31 CREATIVEWORK" ;
+  rdfs:label "Best animated short film" ;
+.
+cw:BestAssistantDirector
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1932/33 to 1937 [ADDED ASSISTANTDIRECTOR]" ;
+  rdfs:label "Best assistant director" ;
+.
+cw:BestCinematography
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1927/28 DIRECTOROFPHOTOGRAPHY" ;
+  rdfs:label "Best cinematography" ;
+.
+cw:BestCostumeDesign
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1948 COSTUMEDESIGNER" ;
+  rdfs:label "Best costume design" ;
+.
+cw:BestDanceDirection
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1935 to 1937 [ADDED CHOREOGRAPHER]" ;
+  rdfs:label "Best dance direction" ;
+.
+cw:BestDirector
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1927/28 DIRECTOR" ;
+  rdfs:label "Best director" ;
+.
+cw:BestDirectorComedyPicture
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1927/28 DIRECTOR" ;
+  rdfs:label "Best director, comedy picture" ;
+.
+cw:BestDirectorDramaticPicture
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1927/28 DIRECTOR" ;
+  rdfs:label "Best director, dramatic picture" ;
+.
+cw:BestDocumentaryFeature
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1943 CREATIVEWORK" ;
+  rdfs:label "Best documentary feature" ;
+.
+cw:BestDocumentaryShortSubject
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1941 CREATIVEWORK" ;
+  rdfs:label "Best documentary short subject" ;
+.
+cw:BestEngineeringEffects
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1927/28 SPECIALEFFECTSSUPERVISOR" ;
+  rdfs:label "Best engineering effects" ;
+.
+cw:BestFilm
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "" ;
+  rdfs:label "Best film" ;
+.
+cw:BestFilmEditing
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1934 EDITOR" ;
+  rdfs:label "Best film editing" ;
+.
+cw:BestInternationalFeatureFilm
+  rdf:type cw:AwardCategory ;
+  rdfs:comment " since 1947 CREATIVEWORK" ;
+  rdfs:label "Best international feature film" ;
+.
+cw:BestLiveActionShortFilm
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1931/32 CREATIVEWORK" ;
+  rdfs:label "Best live action short film" ;
+.
+cw:BestMakeupAndHairStyling
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1981 MAKEUP, HAIR" ;
+  rdfs:label "Best makeup and hair styling" ;
+.
+cw:BestOriginalMusical
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1984 CREATIVEWORK" ;
+  rdfs:label "Best original musical" ;
+.
+cw:BestOriginalMusicalOrComedyScore
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1995 to 1998 COMPOSER" ;
+  rdfs:label "Best original musical or comedy score" ;
+.
+cw:BestOriginalScore
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1934 [ADED SONGCOMPOSER]" ;
+  rdfs:label "Best original score" ;
+.
+cw:BestOriginalScreenplay
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1940 WRITER" ;
+  rdfs:label "Best original screenplay" ;
+.
+cw:BestOriginalSong
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1934 [ADDED LYRICS]" ;
+  rdfs:label "Best original song" ;
+.
+cw:BestOriginalStory
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1927/28 to 1956 WRITER" ;
+  rdfs:label "Best original story" ;
+.
+cw:BestPicture
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1927/28 CREATIVEWORK" ;
+  rdfs:label "Best picture" ;
+.
+cw:BestProductionDesign
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1927/28 [ADDED PRODUCTIONDESIGNER]" ;
+  rdfs:label "Best production design" ;
+.
+cw:BestShortSubjectColor
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1936 to 1937 CREATIVEWORK" ;
+  rdfs:label "Best short subject - color" ;
+.
+cw:BestShortSubjectComedy
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1931/32 to 1935 CREATIVEWORK" ;
+  rdfs:label "Best short subject - comedy" ;
+.
+cw:BestShortSubjectNovelty
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1931/32 to 1935 CREATIVEWORK" ;
+  rdfs:label "Best short subject - novelty" ;
+.
+cw:BestShortSubjectOneReel
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1936 to 1956 CREATIVEWORK" ;
+  rdfs:label "Best short subject - 1 reel" ;
+.
+cw:BestShortSubjectTwoReel
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1936 to 1956  CREATIVEWORK" ;
+  rdfs:label "Best short subject - 2 reel" ;
+.
+cw:BestSong
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "" ;
+  rdfs:label "Best song" ;
+.
+cw:BestSoundEditing
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1963 SOUNDEDITOR" ;
+  rdfs:label "Best sound editing" ;
+.
+cw:BestSoundMixing
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1929/30 [ADDED SOUNDMIXER]" ;
+  rdfs:label "Best sound mixing" ;
+.
+cw:BestSupportingActor
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "" ;
+  rdfs:label "Best supporting actor" ;
+.
+cw:BestTitleWritingAcademyAward
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1927/28 [DID NOT INCLUDE]" ;
+  rdfs:label "Best title writing" ;
+.
+cw:BestUniqueAndArtisticProductionAcademyAward
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "1927/28 [DID NOT INCLUDE]" ;
+  rdfs:label "Best unique and artistic production" ;
+.
+cw:BestVisualEffects
+  rdf:type cw:AwardCategory ;
+  rdfs:comment "since 1939 VISUALEFFECTSSUPERVISOR" ;
+  rdfs:label "Best visual effects" ;
+.
+cw:Brand
+  rdf:type owl:Class ;
+  rdfs:label "Brand" ;
+  rdfs:subClassOf cw:Group ;
+.
+cw:CharacterGroup
+  rdf:type owl:Class ;
+  rdfs:label "CharacterGroup" ;
+  rdfs:subClassOf cw:Group ;
+.
+cw:Copyright
+  rdf:type owl:Class ;
+  rdfs:label "Copyright" ;
+  rdfs:subClassOf cw:Text ;
+.
+cw:CreativeWork
+  rdf:type owl:Class ;
+  rdfs:label "Creative work" ;
+  rdfs:subClassOf cw:AnythingWithAnID ;
+  rdfs:subClassOf cw:Attributable ;
+  rdfs:subClassOf cw:Awardable ;
+  skos:definition "Within this ontology, the notion of a CreativeWork is limited to a movie, video, TV program, or similar \"playable\" media. It does not include books, plays, etc." ;
+.
+cw:Display
+  rdf:type owl:Class ;
+  rdfs:label "Display" ;
+  rdfs:subClassOf cw:Group ;
+.
+cw:Edit
+  rdf:type owl:Class ;
+  rdfs:label "Edit" ;
+  rdfs:subClassOf owl:Thing ;
+.
+cw:FKA_Title
+  rdf:type owl:Class ;
+  rdfs:label "Formerly known as title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "Formerly Known As. Could be used if a Work has changed its name and you know this one came earlier. May be official" ;
+.
+cw:FanBasedTitle
+  rdf:type owl:Class ;
+  rdfs:label "Fan-based title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "What fans call the work. Provide only if commonly used. Probably never official." ;
+.
+cw:Franchise
+  rdf:type owl:Class ;
+  rdfs:label "Franchise" ;
+  rdfs:subClassOf cw:Group ;
+.
+cw:Genre
+  rdf:type owl:Class ;
+  rdfs:label "Genre" ;
+  rdfs:subClassOf cw:Keyword ;
+.
+cw:Group
+  rdf:type owl:Class ;
+  rdfs:label "Group" ;
+  rdfs:subClassOf cw:AnythingWithAnID ;
+  rdfs:subClassOf cw:Attributable ;
+  skos:definition "A group of creative works" ;
+.
+cw:Identifier
+  rdf:type owl:Class ;
+  rdfs:label "Identifier" ;
+  rdfs:subClassOf cw:Attributable ;
+  skos:editorialNote "Resolvable identifiers have one or more cw:ExternalURI." ;
+.
+cw:InternalTitle
+  rdf:type owl:Class ;
+  rdfs:label "Internal title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "Any internal or code name. Use only if necessary." ;
+.
+cw:Keyword
+  rdf:type owl:Class ;
+  rdfs:label "Keyword" ;
+  rdfs:subClassOf cw:AnythingWithACountry ;
+  rdfs:subClassOf cw:Attributable ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty cw:hasBracketedValue ;
+    ] ;
+  skos:definition "Name/value data: genre, keyword, subject. Used for simple name/value pairs, not for more complex things like reviews and synopsis." ;
+.
+cw:LatLon
+  rdf:type owl:Class ;
+  rdfs:label "Latitude and longitude" ;
+  rdfs:subClassOf owl:Thing ;
+.
+cw:Location
+  rdf:type owl:Class ;
+  rdfs:label "Location" ;
+  rdfs:subClassOf cw:AnythingWithACountry ;
+  rdfs:subClassOf cw:AnythingWithAnID ;
+  rdfs:subClassOf cw:Attributable ;
+.
+cw:Measurement
+  rdf:type owl:Class ;
+  rdfs:label "Measurement" ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty cw:hasNumericValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty cw:hasUnitOfMeasurement ;
+    ] ;
+  skos:definition "An amount of some type of thing - in other words, a measurement comprises an amount and a unit of measure." ;
+.
+cw:Movie
+  rdf:type cw:ReferentType ;
+  rdfs:label "Movie" ;
+.
+cw:Note
+  rdf:type owl:Class ;
+  rdfs:label "Note" ;
+  rdfs:subClassOf cw:Text ;
+.
+cw:OfficialTitle
+  rdf:type owl:Class ;
+  rdfs:label "Official title" ;
+  rdfs:subClassOf cw:Title ;
+  owl:equivalentClass [
+      rdf:type owl:Restriction ;
+      owl:hasValue "true"^^xsd:boolean ;
+      owl:onProperty cw:isOfficialTitle ;
+    ] ;
+.
+cw:OtherTitle
+  rdf:type owl:Class ;
+  rdfs:label "Other title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "Used when no other type fits. Might be used for a descriptive title given by an archive to an actuality. Probably never official, except possibly for archival works." ;
+.
+cw:OtherTypeOfIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "Other type of identifier" ;
+  rdfs:subClassOf cw:Identifier ;
+  skos:definition "An Identifier for whic h other subclass exists" ;
+.
+cw:ProprietaryIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "Proprietary identifier" ;
+  rdfs:subClassOf cw:Identifier ;
+.
+cw:ReferentType
+  rdf:type owl:Class ;
+  rdfs:label "ReferentType" ;
+  rdfs:subClassOf cw:VocabularyTerm ;
+  skos:definition "From EIDR_2.0_DataFields: The ReferentType describes the abstract nature of the content: Series, Season, TV, Movie, Short, Web, Compilation, Interactive Material, Supplemental." ;
+.
+cw:RelatedThing
+  rdf:type owl:Class ;
+  rdfs:label "Related thing" ;
+  rdfs:subClassOf cw:AnythingWithAnID ;
+  rdfs:subClassOf cw:Attributable ;
+  skos:definition "This is an umbrella concept to group the similar, but different, concepts of RelatedWork and BasedOnThis. A RelatedWork is a CreativeWork to which some other CreativeWork stands in some relation. A BasedOnThis is an entity that served as the basis for a CreativeWork, e.g., a novel that is the basis for a movie. Even though such entities are creative works in a more general sense, within this ontology the notion of a CreativeWork is limited to a movie, video, TV program, or similar \"playable\" media." ;
+.
+cw:RelatedWork
+  rdf:type owl:Class ;
+  rdfs:label "Related work" ;
+  rdfs:subClassOf cw:CreativeWork ;
+  rdfs:subClassOf cw:RelatedThing ;
+  skos:definition "A CreativeWork to which another CreativeWork is related" ;
+  skos:editorialNote "This is a generic expression of the existence of some kind of relationship between two 'creative' things, i.e. not between a creative work and company or a person.  If we're lucky, there will be an identifier for the related item, via cw:hasIdentifier. " ;
+.
+cw:ResolvableUrl
+  rdf:type owl:Class ;
+  rdfs:label "Resolvable URL" ;
+  rdfs:subClassOf cw:Uri ;
+.
+cw:Review
+  rdf:type owl:Class ;
+  rdfs:label "Review" ;
+  rdfs:subClassOf cw:Text ;
+.
+cw:Sales
+  rdf:type owl:Class ;
+  rdfs:label "Sales" ;
+  rdfs:subClassOf cw:Group ;
+.
+cw:Scope
+  rdf:type owl:Class ;
+  rdfs:label "Scope" ;
+  rdfs:subClassOf cw:VocabularyTerm ;
+  skos:definition "An attribute that narrows the concept represented by a CreativeWork. This has the practical effect of limiting the set of Renditions of the CreativeWork. But unlike an arbitrary VocabularyTerm, which when used as a search term can also narrow the set of Renditions satisfying the term, a Scope refers to the narrowing of the concept represented by one CreativeWork, to yield another CreativeWork." ;
+  skos:prefLabel "Scope" ;
+.
+cw:SetOfProperties
+  rdf:type owl:Class ;
+  rdfs:label "Attribute set" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "This is a mechanism for representing differences between versions, editions, etc. of a creative work. A creative work may have different values for an attribute, such as approximate length, depending on, for example, what country it is released in. To support this, we can attach different attribute sets to the creative work. For example, we could have one attribute set with hasCountry = U.S. and hasApproximateLength = 90 minutes, and another attribute set with hasCountry = Germany and hasApproximateLength = 100 minutes. Both of these attribute sets may describe the same creative work. " ;
+.
+cw:Short
+  rdf:type cw:ReferentType ;
+  rdfs:label "Short" ;
+.
+cw:SortTitle
+  rdf:type owl:Class ;
+  rdfs:label "Sort title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "Title used by some user interfaces, e.g. Matrix, The. Usually not official." ;
+.
+cw:Subject
+  rdf:type owl:Class ;
+  rdfs:label "Subject" ;
+  rdfs:subClassOf cw:Keyword ;
+.
+cw:Synopsis
+  rdf:type owl:Class ;
+  rdfs:label "Synopsis" ;
+  rdfs:subClassOf cw:Text ;
+.
+cw:TV
+  rdf:type cw:ReferentType ;
+  rdfs:label "TV" ;
+.
+cw:Tagline
+  rdf:type owl:Class ;
+  rdfs:label "Tagline" ;
+  rdfs:subClassOf cw:Text ;
+.
+cw:Text
+  rdf:type owl:Class ;
+  rdfs:label "Text" ;
+  rdfs:subClassOf cw:AnythingWithACountry ;
+  rdfs:subClassOf cw:Attributable ;
+  skos:definition "Longer piece of text, or reference thereto: synopsis, review, etc. Used for more complex things like reviews and synopsis." ;
+.
+cw:Title
+  rdf:type owl:Class ;
+  rdfs:label "Title" ;
+  rdfs:subClassOf cw:AnythingWithACountry ;
+  rdfs:subClassOf cw:Attributable ;
+.
+cw:URNIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "URN ID" ;
+  rdfs:subClassOf cw:Identifier ;
+.
+cw:UUIDIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "UUID" ;
+  rdfs:subClassOf cw:Identifier ;
+.
+cw:Universe
+  rdf:type owl:Class ;
+  rdfs:label "Universe" ;
+  rdfs:subClassOf cw:Group ;
+.
+cw:Uri
+  rdf:type owl:Class ;
+  rdfs:label "URI" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:editorialNote "This is intended to enable distinctions between different kinds of URI, such as URL or other resolvable identifiers." ;
+.
+cw:VocabularyTerm
+  rdf:type owl:Class ;
+  rdfs:label "Vocabulary term" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:editorialNote "Subclasses of this class are vocabularies. One of the uses of a vocabulary is to define \"types\" of things - for example, AwardCategory defines types of Awards. This use of vocabularies is an alternative to subclassing. In general, in this ontology we favor subclassing for reasons of usability and ease of understanding, and also for ensuring accurate specification of property domains or ranges without resorting to OWL restrictions. One reason to use a vocabulary, instead, is that when the \"types\" are subject to change (due to different stakeholders, or to evolution), modifying a vocabulary does not entail a structural change to the ontology, while changing the subclass structure does." ;
+.
+cw:Web
+  rdf:type cw:ReferentType ;
+  rdfs:label "Web" ;
+.
+cw:WikidataIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "Wikidata ID" ;
+  rdfs:subClassOf cw:Identifier ;
+.
+cw:WikipediaIdentifier
+  rdf:type owl:Class ;
+  rdfs:label "Wikipedia ID" ;
+  rdfs:subClassOf cw:Identifier ;
+.
+cw:WorkingTitle
+  rdf:type owl:Class ;
+  rdfs:label "Working title" ;
+  rdfs:subClassOf cw:Title ;
+  skos:definition "Working title such as 'Eight Arms to Hold You' for 'Help!'. Might be used for a pre-release that is later replaced with the actual title. SOme may consider this an official title." ;
+.
+cw:belongsToGroup
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "belongs to group" ;
+  rdfs:range cw:Group ;
+  owl:inverseOf cw:containsGroupElement ;
+.
+cw:containsEpisode
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Season ;
+  rdfs:label "contains episode" ;
+  rdfs:range cw:Episode ;
+  owl:inverseOf cw:isContainedInSeason ;
+.
+cw:containsGroupElement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Group ;
+  rdfs:label "contains group element" ;
+  rdfs:range cw:CreativeWork ;
+  owl:inverseOf cw:belongsToGroup ;
+  skos:definition "a member of the group" ;
+.
+cw:containsSeason
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Series ;
+  rdfs:label "contains season" ;
+  rdfs:range cw:Season ;
+  owl:inverseOf cw:isContainedInSeries ;
+.
+cw:containsSeasonlessEpisode
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Series ;
+  rdfs:label "contains seasonless episode" ;
+  rdfs:range cw:Episode ;
+  owl:inverseOf cw:isContainedInSeasonlessSeries ;
+.
+cw:grantsAward
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:AwardGrantor ;
+  rdfs:label "grants award" ;
+  rdfs:range cw:Award ;
+  owl:inverseOf cw:isAwardedBy ;
+.
+cw:hasApproximateLength
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          cw:CreativeWork
+          cw:SetOfProperties
+        ) ;
+    ] ;
+  rdfs:label "has approximate length" ;
+  rdfs:range xsd:duration ;
+  skos:definition "Approximate Length of creative work" ;
+.
+cw:hasAssociatedLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has associated location" ;
+  rdfs:range cw:Location ;
+  skos:definition "This property can be used to specify a location that is in some way associated with the subject, but is not necessarily where the subject resides/exists." ;
+.
+cw:hasAttributedProperty
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has attributed property" ;
+  rdfs:range cw:AttributedProperty ;
+  skos:definition "This is a sligthly lighter-weight version of reification, for use with class AttributedProperty. To create a sourced statement of the form \"X pred true\", where pred is a boolean property, do the following: create an instance A of AttributedProperty, and add the statements \"X hasAttributedProperty A\" and \"A hasPredicate pred\". Then identify the source via \"A hasSource ...\"" ;
+.
+cw:hasAwardDetail
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Award ;
+  rdfs:label "has award detail" ;
+  rdfs:range xsd:string ;
+  skos:definition "Specifics about award" ;
+.
+cw:hasAwardSequence
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Award ;
+  rdfs:label "has award sequence" ;
+  rdfs:range xsd:integer ;
+  skos:definition "Award ordinal number" ;
+  skos:editorialNote "For things like 'The Nth Academy Awards'" ;
+.
+cw:hasBracketedValue
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has bracketed value" ;
+.
+cw:hasCoords
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Location ;
+  rdfs:label "has coordinates" ;
+  rdfs:range cw:LatLon ;
+  skos:definition "latitiude and longitude" ;
+.
+cw:hasCountry
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          cw:AnythingWithACountry
+          cw:SetOfProperties
+        ) ;
+    ] ;
+  rdfs:label "has country" ;
+  rdfs:range xsd:string ;
+  skos:definition "Country Code" ;
+.
+cw:hasDomain
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Identifier ;
+  rdfs:label "has domain" ;
+  rdfs:range xsd:string ;
+  skos:definition "Specifies the domain within which the identifier is  valid, e.g. bfi.org.uk or bfi.org.uk/gifford." ;
+.
+cw:hasEndDate
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has end date" ;
+  rdfs:range xsd:date ;
+  skos:definition "General purpose property to specify the end date of something" ;
+.
+cw:hasExternalURI
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Identifier ;
+  rdfs:label "has external URI" ;
+  rdfs:range xsd:anyURI ;
+  skos:editorialNote "Many identifiers have resolvable forms, most of them not machine readable but still useful. For example, the ExternalURI  for an EIDR ID is https://doi.org/10.53240/XXXX-...-XXXX-C." ;
+.
+cw:hasGroupDescription
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Group ;
+  rdfs:label "has group description" ;
+  rdfs:range xsd:string ;
+  skos:definition "a description of the group" ;
+.
+cw:hasHighScale
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Ordinal ;
+  rdfs:label "has high scale" ;
+  rdfs:range xsd:int ;
+  skos:definition "Maximum ranking for a source." ;
+.
+cw:hasIdentifier
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:AnythingWithAnID ;
+  rdfs:label "has identifier" ;
+  rdfs:range cw:Identifier ;
+.
+cw:hasIdentifierValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Identifier ;
+  rdfs:label "has identifier value" ;
+  rdfs:range xsd:string ;
+  skos:definition "The value of the identifier, independent of any URL-ification. If the ID itself is a URI, this will be a URI, but many (most?) IDs are not currently URIs. For example, the Value for an EIDR ID is 10.5240/XXXX--XXXX-C." ;
+.
+cw:hasKeyword
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "has keyword" ;
+  rdfs:range cw:Keyword ;
+  skos:definition "simple keyword" ;
+  skos:editorialNote "Used for simple name/value pairs, not for more complex things like reviews and synopsis." ;
+.
+cw:hasKeywordLanguage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Keyword ;
+  rdfs:label "has keyword language" ;
+  rdfs:range xsd:string ;
+  skos:definition "language of the keyword" ;
+.
+cw:hasKeywordName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Keyword ;
+  rdfs:label "has keyword name" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf cw:hasName ;
+.
+cw:hasKeywordType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Keyword ;
+  rdfs:label "has keyword type" ;
+  rdfs:range xsd:string ;
+  skos:definition "oiginal keyword type" ;
+  skos:editorialNote "Some sources may not call 'Subject' 'subject' (for example). An application should make those SubjectClass objects and keep the original keyword type here." ;
+.
+cw:hasKeywordValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Keyword ;
+  rdfs:label "has keyword value" ;
+  rdfs:range xsd:string ;
+.
+cw:hasLanguage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has language" ;
+  rdfs:range xsd:string ;
+  skos:definition "Language Code 2 alpha" ;
+.
+cw:hasLatitude
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Latitude" ;
+  owl:equivalentProperty geo:lat ;
+.
+cw:hasLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has location" ;
+  rdfs:range cw:Location ;
+.
+cw:hasLocationCountry
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Location ;
+  rdfs:label "has location country" ;
+  rdfs:range xsd:string ;
+.
+cw:hasLocationCountryCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Location ;
+  rdfs:label "has country code" ;
+  rdfs:range xsd:string ;
+.
+cw:hasLocationDetails
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Location ;
+  rdfs:label "has location details" ;
+  rdfs:range xsd:string ;
+  skos:definition "A fuller description, e.g. London or Trafalgar Square" ;
+.
+cw:hasLongitude
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Longitude" ;
+  owl:equivalentProperty geo:long ;
+.
+cw:hasLowScale
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Ordinal ;
+  rdfs:label "has low scale" ;
+  rdfs:range xsd:int ;
+  skos:definition "Minimum ranking for a source." ;
+.
+cw:hasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has name" ;
+  rdfs:range xsd:string ;
+.
+cw:hasNominee
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Award ;
+  rdfs:label "has nominee" ;
+  rdfs:range cw:Awardable ;
+  owl:inverseOf cw:isNominatedFor ;
+.
+cw:hasNote
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has note" ;
+  rdfs:range cw:Note ;
+  rdfs:subPropertyOf cw:hasText ;
+.
+cw:hasNumericValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has numeric value" ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          xsd:integer
+          xsd:decimal
+        ) ;
+    ] ;
+.
+cw:hasObject
+  rdf:type rdf:Property ;
+  rdfs:domain cw:AttributedProperty ;
+  rdfs:label "has object" ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          owl:Thing
+          xsd:anySimpleType
+        ) ;
+    ] ;
+  skos:definition "This is a sligthly lighter-weight version of reification, for use with class AttributedProperty. To create a sourced statement of the form \"X pred obj\", where pred is a property and obj is an owl:Thing, do the following: create an instance A of AttributedProperty, and add the statements \"X hasAttributedProperty A\", \"A hasPredicate pred\", and \"A hasObject obj\". Then identify the source via \"A hasSource ...\"" ;
+.
+cw:hasOriginalLanguage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "has original language" ;
+  rdfs:subPropertyOf cw:hasLanguage ;
+  skos:definition "original language of the work" ;
+.
+cw:hasPredicate
+  rdf:type rdf:Property ;
+  rdfs:domain cw:AttributedProperty ;
+  rdfs:label "has predicate" ;
+  rdfs:range rdf:Property ;
+  skos:definition "This is a sligthly lighter-weight version of reification, for use with class AttributedProperty. To create a sourced statement of the form \"X pred true\", where pred is a boolean property, do the following: create an instance A of AttributedProperty, and add the statements \"X hasAttributedProperty A\" and \"A hasPredicate pred\". Then identify the source via \"A hasSource ...\". If pred is an object property or datatype property other than boolean, also add the statement \"A hasObject obj\"." ;
+.
+cw:hasReferentType
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "has referent type" ;
+  rdfs:range cw:ReferentType ;
+.
+cw:hasRelation
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Identifier ;
+  rdfs:label "has relation" ;
+  rdfs:range xsd:string ;
+.
+cw:hasRelationshipType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:RelatedWork ;
+  rdfs:label "has relationship type" ;
+  rdfs:range xsd:string ;
+  skos:definition "How the Creative Work is related to this item. Note that this assumes there is only one relationship pointing to a given RelatedThing." ;
+.
+cw:hasReleaseNote
+  rdf:type owl:AnnotationProperty ;
+  rdfs:label "has release note" ;
+  rdfs:range xsd:string ;
+.
+cw:hasResolvableUrl
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has URL" ;
+  rdfs:range cw:ResolvableUrl ;
+.
+cw:hasScope
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "has scope" ;
+  rdfs:range cw:Scope ;
+.
+cw:hasSource
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Attributable ;
+  rdfs:label "has source" ;
+  rdfs:range xsd:string ;
+.
+cw:hasStartDate
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has start date" ;
+  rdfs:range xsd:date ;
+  skos:definition "General purpose property to specify the start date of something" ;
+.
+cw:hasText
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "has text" ;
+  rdfs:range cw:Text ;
+  skos:definition "longer text" ;
+.
+cw:hasTextCountry
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Text ;
+  rdfs:label "has text country" ;
+  rdfs:range xsd:string ;
+  skos:definition "Country Code 2 alpha" ;
+.
+cw:hasTextDate
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Text ;
+  rdfs:label "has text date" ;
+  rdfs:range xsd:date ;
+  skos:definition "date of the text" ;
+.
+cw:hasTextLanguage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Text ;
+  rdfs:label "has text language" ;
+  rdfs:range xsd:string ;
+  skos:definition "language of the text" ;
+.
+cw:hasTextType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Text ;
+  rdfs:label "has text type" ;
+  rdfs:range xsd:string ;
+  skos:definition "text type - use this is none of the subclasses of Text are appropriate" ;
+  skos:editorialNote "Some sources may not call 'Review' 'review' (for example); an application should make those instances of Review, and keep the original type as the value of this property." ;
+.
+cw:hasTextValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Text ;
+  rdfs:label "has text value" ;
+  rdfs:range xsd:string ;
+.
+cw:hasTitle
+  rdf:type owl:ObjectProperty ;
+  cw:hasDomain cw:CreativeWork ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "has title" ;
+  rdfs:range cw:Title ;
+  skos:definition "a title for the work" ;
+.
+cw:hasTitleClass
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Title ;
+  rdfs:label "has title class" ;
+.
+cw:hasTitleLanguage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Title ;
+  rdfs:label "has title language" ;
+  rdfs:range xsd:string ;
+.
+cw:hasTitleValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Title ;
+  rdfs:label "has title value" ;
+  rdfs:range xsd:string ;
+.
+cw:hasUnit
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has unit" ;
+.
+cw:hasUnitOfMeasurement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Measurement ;
+  rdfs:label "has unit of measurement" ;
+  rdfs:range cw:UnitOfMeasurement ;
+  rdfs:subPropertyOf cw:hasUnit ;
+  skos:definition "Boxoffice units -  things like 'tickets' or 'gross'. If there is a currency with no accompaning units it is assumed to be gross." ;
+.
+cw:hasUnitOfTime
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:TimePeriod ;
+  rdfs:label "has unit of time" ;
+  rdfs:range cw:UnitOfTime ;
+  rdfs:subPropertyOf cw:hasUnit ;
+.
+cw:hasYearOfAward
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Award ;
+  rdfs:label "has year of award" ;
+  rdfs:range xsd:gYear ;
+  skos:definition "Year of award" ;
+.
+cw:isAwardFor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Award ;
+  rdfs:label "is award for" ;
+  rdfs:range cw:AwardCategory ;
+  owl:inverseOf cw:isCategoryOfAward ;
+  skos:definition "The subject of the award, e.g., best film, best screenplay, best song, best supporting actor ..." ;
+.
+cw:isAwardedBy
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Award ;
+  rdfs:label "is awarded by" ;
+  rdfs:range cw:AwardGrantor ;
+  owl:inverseOf cw:grantsAward ;
+.
+cw:isAwardedTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Award ;
+  rdfs:label "is awarded to" ;
+  rdfs:range cw:Awardable ;
+  owl:inverseOf cw:isRecipientOfAward ;
+.
+cw:isBasedOn
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "is based on" ;
+  rdfs:range cw:BasedOnThis ;
+  skos:definition "Something on which the CreativeWork is based (book, play, ride, game, another creative work, character, song,....)" ;
+.
+cw:isCategoryOfAward
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:AwardCategory ;
+  rdfs:label "is subject of award" ;
+  rdfs:range cw:Award ;
+  owl:inverseOf cw:isAwardFor ;
+.
+cw:isContainedInSeason
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Episode ;
+  rdfs:label "is contained in season" ;
+  rdfs:range cw:Season ;
+  owl:inverseOf cw:containsEpisode ;
+.
+cw:isContainedInSeasonlessSeries
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Episode ;
+  rdfs:label "is contained in seasonless series" ;
+  rdfs:range cw:Series ;
+  owl:inverseOf cw:containsSeasonlessEpisode ;
+.
+cw:isContainedInSeries
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Season ;
+  rdfs:label "is contained in series" ;
+  rdfs:range cw:Series ;
+  owl:inverseOf cw:containsSeason ;
+.
+cw:isEditOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Edit ;
+  rdfs:label "is edit of" ;
+  rdfs:range cw:CreativeWork ;
+.
+cw:isLandmark
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Location ;
+  rdfs:label "is a landmark" ;
+  rdfs:range xsd:boolean ;
+  skos:editorialNote "If we need to specify who identified the location as a landmark, we could replace this property by a new property, identifiedAsLandmarkBy, with range either xs:string or cw:Person (or their union). Another approach would be a property that relates a cw:Location to a geonames Feature (see http:sws.geonames.org)." ;
+.
+cw:isNominatedFor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Awardable ;
+  rdfs:label "is nominated for" ;
+  rdfs:range cw:Award ;
+  skos:definition "Nominated for award" ;
+.
+cw:isOfficialGroup
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Group ;
+  rdfs:label "is official group" ;
+  rdfs:range xsd:boolean ;
+  skos:definition "Whether or not the group has some canonical status" ;
+.
+cw:isOfficialTitle
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Title ;
+  rdfs:label "is official title" ;
+  rdfs:range xsd:boolean ;
+  skos:definition "This title is deemed ot be 'official' in some way. This is usually based on a nderstanding of the source of the data. Most Release titles will be official; most FKA and AKA titles will not be; a regional title could beofficial, or it might not be." ;
+.
+cw:isRecipientOfAward
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:Awardable ;
+  rdfs:label "is recipient of award" ;
+  rdfs:range cw:Award ;
+  owl:inverseOf cw:isAwardedTo ;
+.
+cw:isRelatedTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain cw:CreativeWork ;
+  rdfs:label "is related to" ;
+  rdfs:range cw:RelatedWork ;
+  skos:definition "Another creative work that the creative work is related to in some way" ;
+  skos:editorialNote "This is a generic expression of some kind of relationship between two 'creative' things, i.e. not between a creative work and company or a person." ;
+.
+cw:isTranslatedTitle
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain cw:Title ;
+  rdfs:label "is translated title" ;
+  rdfs:range xsd:boolean ;
+.
+rdf:label
+  rdf:type owl:AnnotationProperty ;
+.
+rdfs:Property
+  rdf:type owl:Class ;
+.
+xsd:date
+  rdf:type rdfs:Datatype ;
+.
+xsd:duration
+  rdf:type rdfs:Datatype ;
+.
+xsd:gYear
+  rdf:type rdfs:Datatype ;
+.
+owl:
+  rdf:type owl:Ontology ;
+  owl:imports geo: ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+skos:definition
+  rdf:type owl:AnnotationProperty ;
+.
+skos:prefLabel
+  rdf:type owl:AnnotationProperty ;
+.

@@ -1,0 +1,45 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "MediaCreationContext#Character",
+	"title": "Character",
+	"description": "A sentient entity (usually a person but not always) in the script whose specific identity is consequential to the narrative. A Character is generally identified by a specific name.",
+	"type": "object",
+	"properties": {
+		"Identifier": {
+				"$ref": "../Utility/Identifier.schema.json"
+		},
+		"Name": {
+			"$ref": "../Utility/Name.schema.json#"
+		},
+		"Profile": {
+			"title": "Character profile",
+			"type": "object",
+			"properties": {
+				"Gender": {
+					"$ref": "../Utility/Gender.schema.json#"
+				},
+				"physical": {
+					"$ref": "#/definitions/physical"
+				},
+				"background": {
+					"$ref": "#/definitions/background"
+				}
+			}
+		},
+		"description": {
+			"title": "Description",
+			"type" : "string",
+			"description": "A brief description of the character"
+		}
+	},
+	"definitions": {
+		"physical": {
+			"description": "A set of attributes that describe a characters physical features",
+			"type": "object"
+		},
+		"background": {
+			"description": "A set of attributes that describes a characters background and story",
+			"type": "object"
+		}
+	}
+}

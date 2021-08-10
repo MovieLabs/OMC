@@ -1,0 +1,32 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "MediaCreationContext#Sequence",
+	"title": "Sequence",
+	"description": "Add a description of Sequence",
+	"type": "object",
+	"properties": {
+		"sequenceName": {
+			"type": "string"
+		},
+		"sequenceDescription": {
+			"type": "string"
+		},
+		"Identifier": {
+			"title": "Identifier",
+			"type": "array",
+			"items": {
+				"$ref": "../Utility/Identifier.schema.json#"
+			}
+		},
+		"sequenceShot": {
+			"type": "array",
+			"items": {
+				"$ref": "Shot.schema.json#"
+			}
+		}
+	},
+	"required": [
+		"sequenceName"
+	],
+	"additionalProperties": false
+}

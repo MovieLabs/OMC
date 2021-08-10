@@ -1,0 +1,1718 @@
+# baseURI: http://mmc.movielabs.com/ontology
+# imports: http://www.w3.org/2004/02/skos/core
+# prefix: mmco
+
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix mmc: <http://mmc.movielabs.com/ontology#> .
+@prefix mmc: <http://mmc.movielabs.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://mmc.movielabs.com/ontology>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+mmc:AKA_PersonName
+  rdf:type owl:Class ;
+  rdfs:label "Also known as person name" ;
+  rdfs:subClassOf mmc:PersonName ;
+.
+mmc:Actor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Actor" ;
+.
+mmc:AdHoc
+  rdf:type owl:Class ;
+  rdfs:label "AdHoc" ;
+  rdfs:subClassOf mmc:Group ;
+.
+mmc:Address
+  rdf:type owl:Class ;
+  rdfs:label "Address"@en ;
+  rdfs:subClassOf mmc:Utility ;
+  skos:prefLabel "Address"@en ;
+.
+mmc:AnimationShot
+  rdf:type owl:Class ;
+  rdfs:label "Animation shot"@en ;
+  rdfs:subClassOf mmc:ProductionShot ;
+  skos:prefLabel "Animation shot"@en ;
+.
+mmc:AnythingWithACountry
+  rdf:type owl:Class ;
+  rdfs:label "Anything with a country" ;
+  rdfs:subClassOf mmc:Utility ;
+  skos:definition "Umbrella class for anything that can have a country property (mmc:hasCountry). The rationale for this is to keep track of the kinds of things that have a country property." ;
+.
+mmc:AnythingWithAName
+  rdf:type owl:Class ;
+  rdfs:label "Anything with a name"@en ;
+  rdfs:subClassOf mmc:Utility ;
+.
+mmc:AnythingWithAnID
+  rdf:type owl:Class ;
+  rdfs:label "Anything with an ID" ;
+  rdfs:subClassOf mmc:Utility ;
+.
+mmc:Archives
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Archives" ;
+.
+mmc:ArtDepartment
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Art department" ;
+.
+mmc:ArtDirector
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "Oscar category 1927-2011, renamed Production Design" ;
+  rdfs:label "Art director" ;
+.
+mmc:Asset
+  rdf:type owl:Class ;
+  rdfs:label "Asset"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom mmc:AssetFunctionalClass ;
+      owl:onProperty mmc:hasFunctionalCharacteristic ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom mmc:AssetStructuralClass ;
+      owl:onProperty mmc:hasStructuralCharacteristic ;
+    ] ;
+  skos:definition "A physical or digital object or collection of objects specific to the creation of a Creative Work." ;
+  skos:prefLabel "Asset"@en ;
+.
+mmc:AssetClassVocabTerm
+  rdf:type owl:Class ;
+  rdfs:isDefinedBy <http://movielabs.org/vocab/s-FunctionalAsset> ;
+  rdfs:label "Asset Class Vocabulary Term"@en ;
+  rdfs:subClassOf mmc:VocabularyTerm ;
+.
+mmc:AssetFunctionalClass
+  rdf:type owl:Class ;
+  rdfs:label "Asset functional class"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Asset Functional Class describes how an Asset is used in the production process. A Script is always a Script (its Functional Class), but its Structural Class might be a physical document or a digital document. Thinking of a video file as a Daily or an image as a VFX plate is more natural and useful to the participants in the production. The ontology uses this pattern, rather than directly creating subclasses of Asset, in order to support a potentially large and evolving set of different structural classes." ;
+  skos:prefLabel "Asset functional class"@en ;
+.
+mmc:AssetGroup
+  rdf:type owl:Class ;
+  rdfs:label "Asset group"@en ;
+  rdfs:subClassOf mmc:Asset ;
+  skos:definition "An asset that consists of a group of other assets. For example, a 3D model of a Production Prop has geometry, textures, materials, and so on. The components can be made by different specialists, and managed separately. The fact that an Asset is an Asset Group may not be known when the Asset is created. In the physical world, Set Dressing is a good example of an Asset Group. Each individual element is an Asset, and can be purchased, on loan, or taken from a Prop warehouse, and will have different tracking and budgetary need. " ;
+  skos:prefLabel "Asset group"@en ;
+.
+mmc:AssetStructuralClass
+  rdf:type owl:Class ;
+  rdfs:label "Asset structural class"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "Describes the underlying nature of an Asset, independent of its use. For example, an image is always an image (and thus will have an instance of Image as its structural characteristic), whether it is used as concept art, reference art, or a texture for computer graphics. The ontology uses this pattern, rather than directly creating subclasses of Asset, in order to support a potentially large and evolving set of different structural classes." ;
+  skos:prefLabel "Asset structural class"@en ;
+.
+mmc:AssistantDirector
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "EBU has first and second assistant director" ;
+  rdfs:label "Assistant director" ;
+.
+mmc:Attributable
+  rdf:type owl:Class ;
+  rdfs:label "Attributable" ;
+  rdfs:subClassOf mmc:Utility ;
+  skos:definition "Anything that may have provenance is an Attributable" ;
+  skos:scopeNote "CreativeWorks and People may not have a 'source' attribute if they are created from a set of multi-sourced data. Indeed, they usually don't - so maybe they shoudln;t be attributable?" ;
+.
+mmc:AttributedProperty
+  rdf:type owl:Class ;
+  rdfs:label "Attributed property" ;
+  rdfs:subClassOf mmc:Attributable ;
+  skos:definition "This is a sligthly lighter-weight version of reification, for use with property mmc:hasPredicate. To create a sourced statement of the form \"X pred true\", where pred is a boolean property, do the following: create an instance A of AttributedProperty, and add the statements \"X hasAttributedProperty A\" and \"A hasPredicate pred\". Then identify the source via \"A hasSource ...\" We could extend this to non-boolean properties by creating a property mmc:hasObject - this is one step closer to full reification (except that we don't specify the subject of the AttributedProperty - instead, hanging the AttirbutedProperty off the instance that would be the subject in full reification)." ;
+.
+mmc:AudioClass
+  rdf:type owl:Class ;
+  rdfs:label "Audio class"@en ;
+  rdfs:subClassOf mmc:AssetStructuralClass ;
+  skos:definition "Represents the fact that an Asset is a representation of sound." ;
+  skos:prefLabel "Audio class"@en ;
+.
+mmc:AudioVisualClass
+  rdf:type owl:Class ;
+  rdfs:label "Audio visual class"@en ;
+  rdfs:subClassOf mmc:AssetStructuralClass ;
+  skos:definition "Represents the fact that the Asset is a  moving Image with audio synchronized to the images." ;
+  skos:prefLabel "Audio visual class"@en ;
+.
+mmc:AuthorOfSource
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "author of a work onwhich the creative work is based; EBU seems not to have this" ;
+  rdfs:label "Author of source" ;
+.
+mmc:BilledName
+  rdf:type owl:Class ;
+  rdfs:label "Billed name" ;
+  rdfs:subClassOf mmc:PersonName ;
+.
+mmc:BracketedValue
+  rdf:type owl:Class ;
+  rdfs:label "Bracketed value" ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasNumericValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasHighScale ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasLowScale ;
+    ] ;
+  skos:definition "A numerical value, along with high and low limits for the potential range of such a value." ;
+  skos:editorialNote """The notion of a bracketed value is not ideal. The low and high limits are really properties of the kind of value being spoken of, not properties a particular value. 
+ 
+That is the case in an ideally modeled world. But modeling an open world is sometimes less than ideal.  The point of carrying the high and low limits along with the value is to be able to express statements such as the following:
+ 
+               \"On a scale of 1 to 10, this film's mood is creepy level 7.\"
+               \"On a scale of 1 to 100, this film's mood is sunny 60%.\"
+ 
+In other words, since we're not formally modeling 'mood' as a subclass of Keyword, and not modeling the possible moods (creepy, sunny) as instances of such a class, we probably also don't want to (maybe even can't) model the range formally either. So instead, we carry it along with the value, to give the value more meaning.""" ;
+.
+mmc:Brand
+  rdf:type owl:Class ;
+  rdfs:label "Brand" ;
+  rdfs:subClassOf mmc:Group ;
+.
+mmc:CameraDepartment
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Camera department" ;
+.
+mmc:CastMember
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Cast member" ;
+.
+mmc:CastingDirector
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "Person responsible for picking talent for the production" ;
+  rdfs:label "Casting director" ;
+.
+mmc:Character
+  rdf:type owl:Class ;
+  rdfs:label "Character"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Character"@en ;
+.
+mmc:Choreographer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "EBU has separate dance director and choreographer, IAF combines them" ;
+  rdfs:label "Choreographer" ;
+.
+mmc:Composer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Composer" ;
+.
+mmc:ContractualName
+  rdf:type owl:Class ;
+  rdfs:label "Contractual name" ;
+  rdfs:subClassOf mmc:PersonName ;
+.
+mmc:Contribution
+  rdf:type owl:Class ;
+  rdfs:label "Contribution"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Contribution"@en ;
+.
+mmc:CostumeDepartment
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Costume department" ;
+.
+mmc:CostumeDesigner
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Costume designer" ;
+.
+mmc:Country
+  rdf:type owl:Class ;
+  rdfs:label "Country"@en ;
+  rdfs:subClassOf mmc:Utility ;
+.
+mmc:CreativeWork
+  rdf:type owl:Class ;
+  rdfs:label "Creative work"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  skos:prefLabel "Creative work"@en ;
+.
+mmc:CreditedName
+  rdf:type owl:Class ;
+  rdfs:label "Credited name" ;
+  rdfs:subClassOf mmc:PersonName ;
+.
+mmc:CrewMember
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Crew member" ;
+.
+mmc:DateAndTime
+  rdf:type owl:Class ;
+  rdfs:label "Date and Time"@en ;
+  rdfs:subClassOf mmc:Utility ;
+.
+mmc:Department
+  rdf:type owl:Class ;
+  rdfs:label "Department"@en ;
+  rdfs:subClassOf mmc:Organization ;
+  skos:prefLabel "Department"@en ;
+.
+mmc:Depiction
+  rdf:type owl:Class ;
+  rdfs:label "Depiction"@en ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasDepictor ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:isDepictionOf ;
+    ] ;
+  skos:prefLabel "Depiction"@en ;
+.
+mmc:DialogueEditor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Dialogue editor" ;
+.
+mmc:DigitalDataClass
+  rdf:type owl:Class ;
+  rdfs:label "Digital data class"@en ;
+  rdfs:subClassOf mmc:AssetStructuralClass ;
+  skos:definition """Used to represent the structural characteristic of an Asset that is composed of digital data and that is not one of the other structural categories. This is primarily used as a superclass for data-only Assets, such as Camera Metadata. Digital Assets can be innately digital (e.g. a spreadsheet or JSON metadata) or the result of quantizing an analog or real-world source (e.g. digitally recorded audio or video.) For most Digital Assets the physical nature of the medium on which they are stored is not important. However, there are some special cases where the actual physical storage of a Digital Asset is important.  For instance, the day’s takes may still be on the camera mag, in which case getting that data requires knowing where the camera mag is. Similarly, there are tape formats for digital data (e.g. DAT for audio) and knowing that a particular Digital Asset is on a particular tape can be important, especially for archival systems.
+
+This is not intended to cover abstract intellectual property, e.g. Characters and Narrative Props.""" ;
+  skos:prefLabel "Digital data class"@en ;
+.
+mmc:Director
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "Often called 'Producer' in documentaries" ;
+  rdfs:label "Director" ;
+.
+mmc:DirectorOfPhotography
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "Director Of Photography,  Cinematographer, and Camera are treated as equivalent ." ;
+  rdfs:label "Director of photography" ;
+.
+mmc:DocumentClass
+  rdf:type owl:Class ;
+  rdfs:label "Document class"@en ;
+  rdfs:subClassOf mmc:AssetStructuralClass ;
+  skos:definition "Communicates the fact that the asset is a human readable object containing text and/or images." ;
+  skos:prefLabel "Document class"@en ;
+.
+mmc:DubbingActor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "Adding new dialogue either in a different language or in place of the original" ;
+  rdfs:label "Dubbing actor" ;
+  skos:broader mmc:Actor ;
+  skos:editorialNote "We use skos:broader rather than subclassing (e.g., an ActorRole subclass of ContributorRole) so that searches can just be across class ContributorRole. Otherwise SPARQL queries might have to contain patterns like \"?role a ?cls . ?cls rdfs:subClassOf* mmc:ParticipantFunctionalClass\" which can get messy and confusing for users." ;
+.
+mmc:Editor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Editor" ;
+.
+mmc:EditorialDepartment
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Editorial department" ;
+.
+mmc:EditorialSequence
+  rdf:type owl:Class ;
+  rdfs:label "Editorial sequence"@en ;
+  rdfs:subClassOf mmc:ProductionSequence ;
+.
+mmc:Encoding
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Encoding" ;
+.
+mmc:ExecutiveProducer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Executive producer" ;
+.
+mmc:Female
+  rdf:type mmc:Gender ;
+  rdf:type mmc:GenderVocabTerm ;
+  rdfs:label "Female Gender"@en ;
+  rdfs:label "Female" ;
+.
+mmc:Gender
+  rdf:type owl:Class ;
+  rdfs:label "Gender" ;
+  rdfs:label "Gender"@en ;
+  rdfs:subClassOf mmc:Utility ;
+  rdfs:subClassOf mmc:VocabularyTerm ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Gender"@en ;
+.
+mmc:GenderVocabTerm
+  rdf:type owl:Class ;
+  rdfs:comment "A description of a persons declared gender"@en ;
+  rdfs:label "Gender vocabulary term"@en ;
+  rdfs:subClassOf mmc:VocabularyTerm ;
+.
+mmc:Group
+  rdf:type owl:Class ;
+  rdfs:label "Group" ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf mmc:Attributable ;
+  skos:definition "A group of creative works" ;
+.
+mmc:Hair
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Hair" ;
+.
+mmc:Identifier
+  rdf:type owl:Class ;
+  rdfs:label "Identifier"@en ;
+  rdfs:subClassOf mmc:Attributable ;
+  skos:editorialNote "Resolvable identifiers have one or more mmc:ExternalURI." ;
+  skos:prefLabel "Identifier"@en ;
+.
+mmc:Infrastructure
+  rdf:type owl:Class ;
+  rdfs:label "Infrastructure"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Infrastructure"@en ;
+.
+mmc:Iri
+  rdf:type owl:Class ;
+  rdfs:label "IRI" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:editorialNote "This is intended to enable distinctions between different kinds of IRI, such as URL or other resolvable identifiers." ;
+.
+mmc:Keyword
+  rdf:type owl:Class ;
+  rdfs:label "Keyword" ;
+  rdfs:subClassOf mmc:AnythingWithACountry ;
+  rdfs:subClassOf mmc:Attributable ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasBracketedValue ;
+    ] ;
+  skos:definition "Name/value data: genre, keyword, subject. Used for simple name/value pairs, not for more complex things like reviews and synopsis." ;
+.
+mmc:LatLon
+  rdf:type owl:Class ;
+  rdfs:label "Latitude and Longitude"@en ;
+  rdfs:label "Latitude and longitude" ;
+  rdfs:subClassOf mmc:Utility ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmc:Location
+  rdf:type owl:Class ;
+  rdfs:label "Location"@en ;
+  rdfs:subClassOf mmc:AnythingWithACountry ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf mmc:Attributable ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+  skos:prefLabel "Location"@en ;
+.
+mmc:Lyrics
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Lyrics" ;
+.
+mmc:Makeup
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Makeup" ;
+.
+mmc:Male
+  rdf:type mmc:Gender ;
+  rdf:type mmc:GenderVocabTerm ;
+  rdfs:label "Male Gender"@en ;
+  rdfs:label "Male" ;
+.
+mmc:Measurement
+  rdf:type owl:Class ;
+  rdfs:label "Measurement" ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasNumericValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:cardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasUnitOfMeasurement ;
+    ] ;
+  skos:definition "An amount of some type of thing - in other words, a measurement comprises an amount and a unit of measure." ;
+.
+mmc:MediaCreationContext
+  rdf:type owl:Class ;
+  rdfs:label "Context"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmc:MediaCreationContextComponent
+  rdf:type owl:Class ;
+  rdfs:label "Context component"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmc:MovingImageClass
+  rdf:type owl:Class ;
+  rdfs:label "Moving image class"@en ;
+  rdfs:subClassOf mmc:AssetStructuralClass ;
+  skos:definition "Communicates the fact that an Asset is a temporally ordered sequence of images. Such Assets may be digital or analog, so an instance of this would likely also be an instance of DigitalData, or of PhysicalObject with isAnalogData = true." ;
+  skos:prefLabel "Moving image class"@en ;
+.
+mmc:NarrativeContext
+  rdf:type owl:Class ;
+  rdfs:label "Narrative context"@en ;
+  rdfs:subClassOf mmc:MediaCreationContext ;
+  skos:prefLabel "Narrative context"@en ;
+.
+mmc:NarrativeContextComponent
+  rdf:type owl:Class ;
+  rdfs:label "Narrative context component"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+.
+mmc:NarrativeLocation
+  rdf:type owl:Class ;
+  rdfs:label "Narrative Location"@en ;
+  rdfs:subClassOf mmc:Location ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+.
+mmc:NarrativeProp
+  rdf:type owl:Class ;
+  rdfs:label "Narrative prop"@en ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+  rdfs:subClassOf mmc:Prop ;
+.
+mmc:NarrativeScene
+  rdf:type owl:Class ;
+  rdfs:label "Narrative scene"@en ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+  rdfs:subClassOf mmc:Scene ;
+.
+mmc:NarrativeScript
+  rdf:type owl:Class ;
+  rdfs:label "Narrative script"@en ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+  rdfs:subClassOf mmc:Script ;
+.
+mmc:NarrativeSequence
+  rdf:type owl:Class ;
+  rdfs:label "Narrative sequence"@en ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+  rdfs:subClassOf mmc:Sequence ;
+.
+mmc:NarrativeSetDressing
+  rdf:type owl:Class ;
+  rdfs:label "Narrative set dressing"@en ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+  rdfs:subClassOf mmc:SetDressing ;
+.
+mmc:NarrativeShot
+  rdf:type owl:Class ;
+  rdfs:label "Narrative shot"@en ;
+  rdfs:subClassOf mmc:NarrativeContextComponent ;
+  rdfs:subClassOf mmc:Shot ;
+  skos:prefLabel "Narrative shot"@en ;
+.
+mmc:NeutralGender
+  rdf:type mmc:Gender ;
+  rdf:type mmc:GenderVocabTerm ;
+  rdfs:label "Gender not applicable" ;
+  rdfs:label "Gender not applicable"@en ;
+.
+mmc:Ordinal
+  rdf:type owl:Class ;
+  rdfs:label "Ordinal" ;
+  rdfs:subClassOf mmc:BracketedValue ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:int ;
+      owl:onProperty mmc:hasNumericValue ;
+    ] ;
+  skos:definition "Indication of where in a series an item falls" ;
+.
+mmc:Organization
+  rdf:type owl:Class ;
+  rdfs:label "Organization"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:ParticipantStructuralClass ;
+  skos:prefLabel "Organization"@en ;
+.
+mmc:OrganizationDepartmenVocabTerm
+  rdf:type owl:Class ;
+  rdfs:label "Organization Department Vocabulary Term"@en ;
+  rdfs:subClassOf mmc:VocabularyTerm ;
+.
+mmc:OtherGender
+  rdf:type mmc:Gender ;
+  rdf:type mmc:GenderVocabTerm ;
+  rdfs:label "Other Gender"@en ;
+  rdfs:label "OtherGender" ;
+.
+mmc:Participant
+  rdf:type owl:Class ;
+  rdfs:label "Participant"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom mmc:ParticipantFunctionalClass ;
+      owl:onProperty mmc:hasFunctionalCharacteristic ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom mmc:ParticipantStructuralClass ;
+      owl:onProperty mmc:hasStructuralCharacteristic ;
+    ] ;
+  skos:prefLabel "Participant"@en ;
+.
+mmc:ParticipantFunctionalClass
+  rdf:type owl:Class ;
+  rdfs:label "Participant role" ;
+  rdfs:label "Prticipant functional class"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "The combination of a Task and the Participant responsible for it. All Participants have a job to do – otherwise they would not be Participants. From the producer and director through to VFX artists, gaffers, and caterers,  every Participant has a role to fill, a job to do, a task to perform." ;
+  skos:definition "The use or purpose of a Participant within the production process. The Participant Functional Class describes the formal title of the Participant within a production. Thinking of a given person as the first assistant director as opposed to John Doe is very useful to the Participants in a production. " ;
+  skos:prefLabel "Participant functional class"@en ;
+.
+mmc:ParticipantGroup
+  rdf:type owl:Class ;
+  rdfs:label "Participant group"@en ;
+  rdfs:subClassOf mmc:Participant ;
+  skos:definition "A Participant made of other Participants, where the assemblage is treated as a single unit. Participant Groups cover both composition and decomposition. The fact that a Participant is a Participant Group may not be known when the Participant is created; any Participant can be made into a Participant Group by adding a Participant Group element to it. For decomposition, consider a Production Company. The production company has key people (Producers, Directors), Organizations (Art Department, Location), and Services (Encoding, Transfer). These components might be managed separately by IT systems, financial budgeting systems and production management tools but at the highest level they are (and always have been) parts of the production company." ;
+  skos:prefLabel "Participant group"@en ;
+.
+mmc:ParticipantStructuralClass
+  rdf:type owl:Class ;
+  rdfs:label "Participant structural class"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition """Describes the form of a Participant along with the attributes specific to that Participant's form. 
+Film and television production has always been done by people in combination with technology or infrastructure. Originally, a few people did everything, but very soon specialization emerged.  Over time, organizations formed to represent people’s needs and requirements, and regulate the production and distribution of content – these evolved into unions, guilds, trade associations, and standards bodies, which in turn developed their own specializations. As production became more complex, producers turned to external suppliers for some parts of the process, resulting in today’s large ecosystem of vendors and service providers. 
+The newest entry into the class is the notion of services (cloud or on-prem) that do not require human intervention to perform their task. They benefit from standardized input and infrastructure and are the key to leveraging automation and cloud to increase the output of creative works to meet the oncoming demand for scripted content.
+Each of kind of Participant – Person, Organization, Service – is defined by a Participant Structural Class.""" ;
+  skos:prefLabel "Participant structural class"@en ;
+.
+mmc:ParticipantTitleVocabTerm
+  rdf:type owl:Class ;
+  rdfs:label "A Person's Job Title Vocabulary Terms"@en ;
+  rdfs:subClassOf mmc:VocabularyTerm ;
+.
+mmc:Percentage
+  rdf:type owl:Class ;
+  rdfs:label "Percentage" ;
+  rdfs:subClassOf mmc:BracketedValue ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:int ;
+      owl:onProperty mmc:hasNumericValue ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:hasValue 0 ;
+      owl:onProperty mmc:hasLowScale ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:hasValue 100 ;
+      owl:onProperty mmc:hasHighScale ;
+    ] ;
+  skos:definition "Measures the degree of something" ;
+.
+mmc:Person
+  rdf:type owl:Class ;
+  rdfs:label "Person"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:ParticipantStructuralClass ;
+  rdfs:subClassOf mmc:Portrayer ;
+  skos:prefLabel "Person"@en ;
+.
+mmc:PersonName
+  rdf:type owl:Class ;
+  rdfs:label "Person name" ;
+  rdfs:subClassOf mmc:Attributable ;
+  rdfs:subClassOf owl:Thing ;
+.
+mmc:PhysicalAssetClass
+  rdf:type owl:Class ;
+  rdfs:label "Physical asset class"@en ;
+  rdfs:subClassOf mmc:AssetStructuralClass ;
+  skos:definition "A physical Asset will have an instance of this as its structural characteristic. This is used to represent the fact that an asset is, for example, a Sword or a Volleyball (which would be instances of PhysicalObject). A physical asset is one where the tangible reality of the Asset is its defining feature. Physical Assets include anything that can be touched or handled , including things used to store digital data (but excluding the data itself.)" ;
+  skos:prefLabel "Physical asset class"@en ;
+.
+mmc:Portrayal
+  rdf:type owl:Class ;
+  rdfs:label "Portrayal"@en ;
+  rdfs:subClassOf mmc:Depiction ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:hasPortrayer ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onProperty mmc:isPortrayalOf ;
+    ] ;
+  skos:prefLabel "Portrayal"@en ;
+.
+mmc:PortrayalByPerson
+  rdf:type owl:Class ;
+  rdfs:label "Portrayal by person" ;
+  rdfs:subClassOf mmc:Contribution ;
+  rdfs:subClassOf mmc:Portrayer ;
+  owl:equivalentClass [
+      rdf:type owl:Class ;
+      owl:intersectionOf (
+          mmc:Portrayal
+          [
+            rdf:type owl:Restriction ;
+            owl:allValuesFrom mmc:Person ;
+            owl:onProperty mmc:hasPortrayer ;
+          ]
+        ) ;
+    ] ;
+  skos:prefLabel "Portrayal by person" ;
+.
+mmc:Portrayer
+  rdf:type owl:Class ;
+  rdfs:comment "This is the production correlate of Character (which is a NarrativeContextComponent). An Actor could be defined as something that is an instance of both Person and Portrayer. However, there can be non-human portrayers also, such as animals or VFX entities." ;
+  rdfs:label "Portrayer"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  skos:prefLabel "Portrayer"@en ;
+.
+mmc:PreferredName
+  rdf:type owl:Class ;
+  rdfs:label "Preferred name" ;
+  rdfs:subClassOf mmc:PersonName ;
+.
+mmc:Producer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Producer" ;
+.
+mmc:ProductionContext
+  rdf:type owl:Class ;
+  rdfs:label "Production context"@en ;
+  rdfs:subClassOf mmc:MediaCreationContext ;
+  skos:prefLabel "Production context"@en ;
+.
+mmc:ProductionContextComponent
+  rdf:type owl:Class ;
+  rdfs:label "Production context component"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+.
+mmc:ProductionDesigner
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "Oscar category since 2012" ;
+  rdfs:label "Production designer" ;
+.
+mmc:ProductionLocation
+  rdf:type owl:Class ;
+  rdfs:label "Production location"@en ;
+  rdfs:subClassOf mmc:Location ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+.
+mmc:ProductionOffice
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Production office" ;
+.
+mmc:ProductionProp
+  rdf:type owl:Class ;
+  rdfs:label "Production prop"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  rdfs:subClassOf mmc:Prop ;
+.
+mmc:ProductionPropClass
+  rdf:type owl:Class ;
+  rdfs:label "Production prop class"@en ;
+  rdfs:subClassOf mmc:AssetFunctionalClass ;
+  skos:example "A snow globe would have an instance of this as its functional characteristic and an instance of PhysicalObject as its structural characteristic. A CG model of a snow globe would, instead, have a CG-specific instance of DigitalDataType as its structural characteristic." ;
+  skos:prefLabel "Production prop class"@en ;
+.
+mmc:ProductionRole
+  rdf:type owl:Class ;
+  rdfs:label "Production role"@en ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Production role"@en ;
+.
+mmc:ProductionScene
+  rdf:type owl:Class ;
+  rdfs:label "Production scene"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  rdfs:subClassOf mmc:Scene ;
+  skos:prefLabel "Production scene"@en ;
+.
+mmc:ProductionScript
+  rdf:type owl:Class ;
+  rdfs:label "Production script"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  rdfs:subClassOf mmc:Script ;
+.
+mmc:ProductionSequence
+  rdf:type owl:Class ;
+  rdfs:label "Production sequence"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  rdfs:subClassOf mmc:Sequence ;
+.
+mmc:ProductionSetDressing
+  rdf:type owl:Class ;
+  rdfs:label "Production set dressing"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  rdfs:subClassOf mmc:SetDressing ;
+.
+mmc:ProductionShot
+  rdf:type owl:Class ;
+  rdfs:label "Production shot"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  rdfs:subClassOf mmc:Shot ;
+  skos:prefLabel "Production shot"@en ;
+.
+mmc:ProductionSlate
+  rdf:type owl:Class ;
+  rdfs:label "Production slate"@en ;
+  rdfs:subClassOf mmc:ProductionContextComponent ;
+  skos:prefLabel "Production slate"@en ;
+.
+mmc:Prop
+  rdf:type owl:Class ;
+  rdfs:label "Prop"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+.
+mmc:RealName
+  rdf:type owl:Class ;
+  rdfs:label "Real name" ;
+  rdfs:subClassOf mmc:PersonName ;
+.
+mmc:Rendering
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Rendering" ;
+.
+mmc:ResolvableIrl
+  rdf:type owl:Class ;
+  rdfs:label "Resolvable URL" ;
+  rdfs:subClassOf mmc:Iri ;
+.
+mmc:Scene
+  rdf:type owl:Class ;
+  rdfs:label "Scene"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+  skos:prefLabel "Scene"@en ;
+.
+mmc:Screenwriter
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Screenwriter" ;
+.
+mmc:Script
+  rdf:type owl:Class ;
+  rdfs:label "Script"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+  skos:prefLabel "Script"@en ;
+.
+mmc:ScriptClass
+  rdf:type owl:Class ;
+  rdfs:label "Script class"@en ;
+  rdfs:subClassOf mmc:AssetFunctionalClass ;
+  skos:example "A paper script would have an instance of this as its functional characteristic and an instance of PhysicalObject - such as Paper - as its structural characteristic. A PDF script would instead have an instance of DigitalDataType - presumably PDF - as its structural characteristic." ;
+  skos:prefLabel "Script class"@en ;
+.
+mmc:Self
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment """\"Subclass of cw:Actor
+Use when a person appears as him/herself, e.g. on a chat show, in a cameo in a movie, and so on.
+Not present in FIAF or EBU, but seen in some sources.\"""" ;
+  rdfs:label "Self" ;
+  skos:broader mmc:Actor ;
+  skos:editorialNote "We use skos:broader rather than subclassing (e.g., an ActorRole subclass of ContributorRole) so that searches can just be across class ContributorRole. Otherwise SPARQL queries might have to contain patterns like \"?role a ?cls . ?cls rdfs:subClassOf* cw:ContributorRole\" which can get messy and confusing for users." ;
+.
+mmc:Sequence
+  rdf:type owl:Class ;
+  rdfs:label "Sequence"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+  skos:prefLabel "Sequence"@en ;
+.
+mmc:SequenceClass
+  rdf:type owl:Class ;
+  rdfs:label "Sequence class"@en ;
+  rdfs:subClassOf mmc:AssetFunctionalClass ;
+  skos:example "An asset with this as its functional characteristic would have an instance of MovingImage as its structural characteristic. It would also likely be an instance of AssetGroup, with its contained assets being individual shots (i.e., Assets whose functional characteristic is an instance of Shot)." ;
+  skos:prefLabel "Sequence class"@en ;
+.
+mmc:Service
+  rdf:type owl:Class ;
+  rdfs:label "Service"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:ParticipantStructuralClass ;
+  skos:prefLabel "Service"@en ;
+.
+mmc:SetDesigner
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Set designer" ;
+.
+mmc:SetDressing
+  rdf:type owl:Class ;
+  rdfs:label "Set dressing"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+.
+mmc:SetDressingClass
+  rdf:type owl:Class ;
+  mmc:hasDescription "An asset with this an instance of this as its FunctionalType will often be part of an AssetGroup." ;
+  rdfs:label "Set dressing class"@en ;
+  rdfs:subClassOf mmc:AssetFunctionalClass ;
+  skos:prefLabel "Set dressing class"@en ;
+.
+mmc:SetOfProperties
+  rdf:type owl:Class ;
+  rdfs:label "Attribute set" ;
+  rdfs:subClassOf owl:Thing ;
+  skos:definition "This is a mechanism for representing differences between versions, editions, etc. of a creative work. A creative work may have different values for an attribute, such as approximate length, depending on, for example, what country it is released in. To support this, we can attach different attribute sets to the creative work. For example, we could have one attribute set with hasCountry = U.S. and hasApproximateLength = 90 minutes, and another attribute set with hasCountry = Germany and hasApproximateLength = 100 minutes. Both of these attribute sets may describe the same creative work. " ;
+.
+mmc:Shot
+  rdf:type owl:Class ;
+  rdfs:label "Shot"@en ;
+  rdfs:subClassOf mmc:MediaCreationContextComponent ;
+  skos:prefLabel "Shot"@en ;
+.
+mmc:ShotClass
+  rdf:type owl:Class ;
+  rdfs:label "Shot class"@en ;
+  rdfs:subClassOf mmc:AssetFunctionalClass ;
+  skos:example "A particular shot will have an instance of this as its functional characteristic, and an instance of MovingImageClass as is structural characteristic." ;
+  skos:prefLabel "Shot class"@en ;
+.
+mmc:Showrunner
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Showrunner" ;
+.
+mmc:SongComposer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "EBU does not distinguish the kinds of composer" ;
+  rdfs:label "Song composer" ;
+.
+mmc:SoundEditor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "Do we want supervising sound editor too?" ;
+  rdfs:label "Sound editor" ;
+.
+mmc:SoundMixer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "EBU and FIAF definition differ slightly" ;
+  rdfs:label "Sound mixer" ;
+.
+mmc:SpecialEffectsSupervisor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment "The Oscar category for this has also been called Engineering Effects and Special Effacts" ;
+  rdfs:label "Special effects supervisor" ;
+.
+mmc:StilImageClass
+  rdf:type owl:Class ;
+  rdfs:label "Still image class"@en ;
+  rdfs:subClassOf mmc:AssetStructuralClass ;
+  skos:definition "Communicates that an Asset is a representation of a 2-dimensional picture, or a two-dimensional visual representation. Such Assets may be physical or digital. So an instance of this class would likely also be an instnce of DigitalData or PhysicalObject." ;
+  skos:prefLabel "Still image class"@en ;
+.
+mmc:StructuredDocumentClass
+  rdf:type owl:Class ;
+  rdfs:label "Structured document class"@en ;
+  rdfs:subClassOf mmc:DocumentClass ;
+  skos:definition "Communicates the fact that the asset is a document structured according to a set of rules which are used to parse or understand the document." ;
+  skos:prefLabel "Structured document class"@en ;
+.
+mmc:StuntActor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment """\"Subclass of Actor
+Use this for Stunt Double (EBU 24.5) as well\"""" ;
+  rdfs:label "Stunt actor" ;
+  skos:broader mmc:Actor ;
+  skos:editorialNote "We use skos:broader rather than subclassing (e.g., an ActorRole subclass of ContributorRole) so that searches can just be across class ContributorRole. Otherwise SPARQL queries might have to contain patterns like \"?role a ?cls . ?cls rdfs:subClassOf* cw:ContributorRole\" which can get messy and confusing for users." ;
+.
+mmc:StuntCoordinator
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Stunt coordinator" ;
+.
+mmc:Task
+  rdf:type owl:Class ;
+  rdfs:label "Task"@en ;
+  rdfs:subClassOf mmc:AnythingWithAName ;
+  rdfs:subClassOf mmc:AnythingWithAnID ;
+  rdfs:subClassOf owl:Thing ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom mmc:TaskFunctionalClass ;
+      owl:onProperty mmc:hasFunctionalCharacteristic ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom mmc:TaskStructuralClass ;
+      owl:onProperty mmc:hasStructuralCharacteristic ;
+    ] ;
+  skos:prefLabel "Task"@en ;
+.
+mmc:TaskFunctionalClass
+  rdf:type owl:Class ;
+  rdfs:label "Task functional class"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Task functional class"@en ;
+.
+mmc:TaskStructuralClass
+  rdf:type owl:Class ;
+  rdfs:label "Task structural class"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Task structural class"@en ;
+.
+mmc:Text
+  rdf:type owl:Class ;
+  rdfs:label "Text" ;
+  rdfs:subClassOf mmc:AnythingWithACountry ;
+  rdfs:subClassOf mmc:Attributable ;
+  skos:definition "Longer piece of text, or reference thereto: synopsis, review, etc. Used for more complex things like reviews and synopsis." ;
+.
+mmc:Transfer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Transfer" ;
+.
+mmc:TranslatedName
+  rdf:type owl:Class ;
+  rdfs:label "Translated name" ;
+  rdfs:subClassOf mmc:PersonName ;
+.
+mmc:Utility
+  rdf:type owl:Class ;
+  rdfs:label "Utility"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:prefLabel "Utility"@en ;
+.
+mmc:VFX_Sequence
+  rdf:type owl:Class ;
+  rdfs:label "VFX sequence"@en ;
+  rdfs:subClassOf mmc:ProductionSequence ;
+.
+mmc:VFX_Shot
+  rdf:type owl:Class ;
+  rdfs:label "VFX shot"@en ;
+  rdfs:subClassOf mmc:ProductionShot ;
+  skos:prefLabel "VFX shot"@en ;
+.
+mmc:VisualEffects
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Visual effects" ;
+.
+mmc:VocabularyTerm
+  rdf:type owl:Class ;
+  rdfs:label "Vocabulary Terms"@en ;
+  rdfs:subClassOf owl:Thing ;
+  skos:editorialNote "Subclasses of this class are vocabularies. One of the uses of a vocabulary is to define \"types\" of things - for example, AwardCategory defines types of Awards. This use of vocabularies is an alternative to subclassing. In general, in this ontology we favor subclassing for reasons of usability and ease of understanding, and also for ensuring accurate specification of property domains or ranges without resorting to OWL restrictions. One reason to use a vocabulary, instead, is that when the \"types\" are subject to change (due to different stakeholders, or to evolution), modifying a vocabulary does not entail a structural change to the ontology, while changing the subclass structure does." ;
+.
+mmc:VoiceActor
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:comment """\"Subclass of cw:Actor
+Used for animated films, puppets etc.
+Can't find EBU code for this\"""" ;
+  rdfs:label "Voice actor" ;
+  skos:broader mmc:Actor ;
+  skos:editorialNote "We use skos:broader rather than subclassing (e.g., an ActorRole subclass of ContributorRole) so that searches can just be across class ContributorRole. Otherwise SPARQL queries might have to contain patterns like \"?role a ?cls . ?cls rdfs:subClassOf* cw:ContributorRole\" which can get messy and confusing for users." ;
+.
+mmc:Writer
+  rdf:type mmc:ParticipantTitleVocabTerm ;
+  rdfs:label "Writer" ;
+  skos:definition "Includes scriptwriter, screenwriter, author of underlying work" ;
+.
+mmc:containsAsset
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:AssetGroup ;
+  rdfs:label "contains asset"@en ;
+  rdfs:range mmc:Asset ;
+  skos:prefLabel "contains asset"@en ;
+.
+mmc:contributesTo
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "contributes to" ;
+  rdfs:range mmc:CreativeWork ;
+  owl:propertyChainAxiom (
+      mmc:isPersonContributing
+      mmc:isContributionTo
+    ) ;
+.
+mmc:hasAKAName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has AKA name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasPersonName ;
+  skos:prefLabel "has AKA name"@en ;
+.
+mmc:hasAddress
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Location ;
+  rdfs:label "has address"@en ;
+  rdfs:range mmc:Address ;
+  skos:prefLabel "has address"@en ;
+.
+mmc:hasAssetAsInput
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Task ;
+  rdfs:label "has asset as input"@en ;
+  rdfs:range mmc:Asset ;
+  skos:prefLabel "has asset as input"@en ;
+.
+mmc:hasAssetStructuralCharacteristic
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Asset ;
+  rdfs:label "has asset structural characteristic"@en ;
+  rdfs:range mmc:AssetStructuralClass ;
+  skos:prefLabel "has asset structural characteristic"@en ;
+.
+mmc:hasAssociatedLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has associated location" ;
+  rdfs:range mmc:Location ;
+  skos:definition "This property can be used to specify a location that is in some way associated with the subject, but is not necessarily where the subject resides/exists." ;
+.
+mmc:hasAttributedProperty
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has attributed property" ;
+  rdfs:range mmc:AttributedProperty ;
+  skos:definition "This is a sligthly lighter-weight version of reification, for use with class AttributedProperty. To create a sourced statement of the form \"X pred true\", where pred is a boolean property, do the following: create an instance A of AttributedProperty, and add the statements \"X hasAttributedProperty A\" and \"A hasPredicate pred\". Then identify the source via \"A hasSource ...\"" ;
+.
+mmc:hasBracketedValue
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has bracketed value" ;
+  rdfs:range mmc:BracketedValue ;
+.
+mmc:hasCharacterName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Character ;
+  rdfs:subPropertyOf mmc:hasName ;
+.
+mmc:hasCity
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Address ;
+  rdfs:label "has city"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has city"@en ;
+.
+mmc:hasCompanyName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Organization ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasOrganizationName ;
+.
+mmc:hasContextComponent
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:MediaCreationContext ;
+  rdfs:label "has context component"@en ;
+  rdfs:range mmc:MediaCreationContextComponent ;
+  skos:prefLabel "has context component"@en ;
+.
+mmc:hasContributingPerson
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Contribution ;
+  rdfs:label "has contributing person" ;
+  rdfs:range mmc:Person ;
+  owl:inverseOf mmc:isPersonContributing ;
+  skos:definition "The underlying person that is the contributor's identity" ;
+.
+mmc:hasContribution
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:CreativeWork ;
+  rdfs:label "has contributor" ;
+  rdfs:range mmc:Contribution ;
+  owl:inverseOf mmc:isContributionTo ;
+.
+mmc:hasContributionType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Contribution ;
+  rdfs:label "has contribution type" ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has contribution type" ;
+.
+mmc:hasContributor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Contribution ;
+  rdfs:label "has contributor"@en ;
+  rdfs:range mmc:Person ;
+  owl:inverseOf mmc:isContributorTo ;
+  skos:prefLabel "has contributor"@en ;
+.
+mmc:hasCoords
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Location ;
+  rdfs:label "has coordinates" ;
+  rdfs:label "has long/lat coordinates"@en ;
+  rdfs:range mmc:LatLon ;
+  skos:definition "latitiude and longitude" ;
+  skos:definition "latitude and longitude" ;
+  skos:prefLabel "has long/lat coordinates"@en ;
+.
+mmc:hasCountry
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Address ;
+  rdfs:domain mmc:Location ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:AnythingWithACountry
+          mmc:SetOfProperties
+        ) ;
+    ] ;
+  rdfs:label "has country"@en ;
+  rdfs:range mmc:Country ;
+  skos:prefLabel "has country"@en ;
+.
+mmc:hasCountryCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Country ;
+  rdfs:label "has country code"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has country code"@en ;
+.
+mmc:hasCountryName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasName ;
+.
+mmc:hasCreativeWorkName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasName ;
+.
+mmc:hasCreditName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has credit name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasPersonName ;
+  skos:prefLabel "has credit name"@en ;
+.
+mmc:hasDateOfBirth
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has date of birth" ;
+  rdfs:range xsd:string ;
+.
+mmc:hasDateTime
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:DateAndTime ;
+  rdfs:label "has date-time"@en ;
+  rdfs:range xsd:dateTime ;
+  skos:prefLabel "has date-time"@en ;
+.
+mmc:hasDepartment
+  rdf:type owl:DatatypeProperty ;
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Organization ;
+  rdfs:domain mmc:ParticipantFunctionalClass ;
+  rdfs:label "has department" ;
+  rdfs:label "has department"@en ;
+  rdfs:range mmc:Department ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasSubOrganization ;
+  owl:inverseOf mmc:isDepartmentOf ;
+  skos:prefLabel "has department"@en ;
+.
+mmc:hasDepiction
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:NarrativeContextComponent
+          mmc:Character
+          mmc:Person
+        ) ;
+    ] ;
+  rdfs:label "has depiction"@en ;
+  rdfs:range mmc:Depiction ;
+  owl:inverseOf mmc:isDepictionOf ;
+  skos:prefLabel "has depiction"@en ;
+.
+mmc:hasDepictionType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Depiction ;
+  rdfs:label "has depiction type"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has depiction type"@en ;
+.
+mmc:hasDepictor
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Depiction ;
+  rdfs:label "has depictor"@en ;
+  rdfs:range mmc:ProductionContextComponent ;
+  owl:inverseOf mmc:isDepictorOf ;
+  skos:prefLabel "has depictor"@en ;
+.
+mmc:hasDescription
+  rdf:type owl:AnnotationProperty ;
+  rdfs:label "has description" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf rdfs:comment ;
+  skos:definition "This property can be used to provide a description of the entity to which  it is attached." ;
+  skos:prefLabel "has description" ;
+.
+mmc:hasDomain
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Identifier ;
+  rdfs:label "has domain" ;
+  rdfs:range xsd:string ;
+  skos:definition "Specifies the domain within which the identifier is  valid, e.g. bfi.org.uk or bfi.org.uk/gifford." ;
+.
+mmc:hasEpisodeName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasName ;
+.
+mmc:hasEpisodeNumber
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has episode number"@en ;
+  rdfs:range xsd:integer ;
+  skos:prefLabel "has epicode number"@en ;
+.
+mmc:hasExternalIRI
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Identifier ;
+  rdfs:label "has external IRI" ;
+  rdfs:range xsd:anyURI ;
+  skos:editorialNote "Many identifiers have resolvable forms, most of them not machine readable but still useful. For example, the ExternalURI  for an EIDR ID is https://doi.org/10.53240/XXXX-...-XXXX-C." ;
+.
+mmc:hasExternalURI
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Identifier ;
+  rdfs:label "has external URI"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has external URI"@en ;
+.
+mmc:hasFirstName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Character ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has first name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasCharacterName ;
+  rdfs:subPropertyOf mmc:hasPersonName ;
+  skos:prefLabel "has first name"@en ;
+.
+mmc:hasFullName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Character ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has full name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasCharacterName ;
+  rdfs:subPropertyOf mmc:hasPersonName ;
+  skos:prefLabel "has full name"@en ;
+.
+mmc:hasFunctionalCharacteristic
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:Asset
+          mmc:Participant
+          mmc:Task
+        ) ;
+    ] ;
+  rdfs:label "has asset functional characteristic"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:AssetFunctionalClass
+          mmc:ParticipantFunctionalClass
+          mmc:TaskFunctionalClass
+        ) ;
+    ] ;
+  skos:prefLabel "has asset functional characteristic"@en ;
+.
+mmc:hasGender
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has gender" ;
+  rdfs:range mmc:Gender ;
+.
+mmc:hasGuildName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Organization ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasOrganizationName ;
+.
+mmc:hasIdentifier
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:AnythingWithAnIdentifier ;
+  rdfs:label "has identifier"@en ;
+  rdfs:range mmc:Identifier ;
+  skos:prefLabel "has identifier"@en ;
+.
+mmc:hasIdentifierType
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Identifier ;
+  rdfs:label "has domain" ;
+  rdfs:range xsd:string ;
+  skos:definition "Specifies the domain within which the identifier is  valid, e.g. bfi.org.uk or bfi.org.uk/gifford." ;
+.
+mmc:hasIdentifierValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Identifier ;
+  rdfs:label "has Identifier value"@en ;
+  rdfs:range xsd:string ;
+  skos:definition "The value of the identifier, independent of any URL-ification. If the ID itself is a URI, this will be a URI, but many (most?) IDs are not currently URIs. For example, the Value for an EIDR ID is 10.5240/XXXX--XXXX-C." ;
+  skos:prefLabel "has identifier value"@en ;
+.
+mmc:hasIri
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has IRI"@en ;
+  rdfs:range xsd:anyURI ;
+  skos:prefLabel "has IRI"@en ;
+.
+mmc:hasLastName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Character ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has last name"@en ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasCharacterName ;
+  rdfs:subPropertyOf mmc:hasPersonName ;
+  skos:prefLabel "has last name"@en ;
+.
+mmc:hasLatitude
+  rdf:type owl:DatatypeProperty ;
+  rdf:type owl:FunctionalProperty ;
+  rdfs:domain mmc:LatLon ;
+  rdfs:label "has latitude"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has latitude"@en ;
+.
+mmc:hasLocation
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has location" ;
+  rdfs:range mmc:Location ;
+.
+mmc:hasLongitude
+  rdf:type owl:DatatypeProperty ;
+  rdf:type owl:FunctionalProperty ;
+  rdfs:domain mmc:LatLon ;
+  rdfs:label "has longitude"@en ;
+  rdfs:range xsd:string ;
+  skos:prefLabel "has longitude"@en ;
+.
+mmc:hasName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has name"@en ;
+  skos:prefLabel "has name"@en ;
+.
+mmc:hasOrganizationMember
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Organization ;
+  rdfs:label "has organization member"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:Person
+          mmc:Organization
+        ) ;
+    ] ;
+  owl:inverseOf mmc:isMemberOfOrganization ;
+  skos:prefLabel "has organization member"@en ;
+.
+mmc:hasOrganizationName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Organization ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasName ;
+.
+mmc:hasPartipantTitle
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Participant ;
+  rdfs:label "has participant title"@en ;
+  rdfs:range mmc:ParticipantTitleVocabTerm ;
+  skos:prefLabel "has participant title"@en ;
+.
+mmc:hasPersonDOB
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:range xsd:date ;
+.
+mmc:hasPersonGender
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has person gender"@en ;
+  rdfs:range mmc:Gender ;
+  skos:prefLabel "has person gender"@en ;
+.
+mmc:hasPersonName
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Person ;
+  rdfs:label "has person name" ;
+  rdfs:label "has person name"@en ;
+  rdfs:range mmc:PersonName ;
+  skos:prefLabel "has person name"@en ;
+.
+mmc:hasPersonNameLanguage
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:PersonName ;
+  rdfs:label "has person name language" ;
+  rdfs:range xsd:string ;
+  skos:definition "Language of the name" ;
+.
+mmc:hasPersonNameValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:PersonName ;
+  rdfs:label "has person name value" ;
+  rdfs:range xsd:string ;
+  skos:changeNote "We will eventually create more structure to distinguish, for example, between given name, surname, etc." ;
+  skos:definition "The actual name" ;
+.
+mmc:hasPhysicalObject
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:DigitalDataClass ;
+  rdfs:label "has physical object"@en ;
+  rdfs:range mmc:PhysicalAssetClass ;
+  skos:prefLabel "has physical object"@en ;
+.
+mmc:hasPortrayal
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:Character
+          mmc:Person
+        ) ;
+    ] ;
+  rdfs:label "has portrayal"@en ;
+  rdfs:range mmc:Portrayal ;
+  rdfs:subPropertyOf mmc:hasDepiction ;
+  owl:inverseOf mmc:isPortrayalOf ;
+  skos:prefLabel "has portrayal"@en ;
+.
+mmc:hasPortrayer
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Portrayal ;
+  rdfs:range mmc:Portrayer ;
+  rdfs:subPropertyOf mmc:hasDepictor ;
+  owl:inverseOf mmc:isPortrayerOf ;
+.
+mmc:hasPostalCode
+  rdf:type owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+.
+mmc:hasProductionRole
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Participant ;
+  rdfs:label "has production role"@en ;
+  rdfs:range mmc:ProductionRole ;
+  skos:prefLabel "has production role"@en ;
+.
+mmc:hasRelation
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Identifier ;
+  rdfs:label "has relation" ;
+  rdfs:range xsd:string ;
+.
+mmc:hasResolvableIrl
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has IRI" ;
+  rdfs:range mmc:ResolvableIrl ;
+.
+mmc:hasRoleValue
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:ProductionRole ;
+  rdfs:range xsd:string ;
+.
+mmc:hasSceneNumber
+  rdf:type owl:DatatypeProperty ;
+  rdf:type owl:FunctionalProperty ;
+  rdfs:range xsd:string ;
+.
+mmc:hasSeasonName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasName ;
+.
+mmc:hasShotNumber
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "has shot number" ;
+  rdfs:range xsd:integer ;
+  skos:prefLabel "has shot number" ;
+.
+mmc:hasStreetNumberAndName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Address ;
+  rdfs:range xsd:string ;
+.
+mmc:hasStructuralCharacteristic
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:Asset
+          mmc:Participant
+          mmc:Task
+        ) ;
+    ] ;
+  rdfs:label "has structural characteristic"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:AssetStructuralClass
+          mmc:ParticipantStructuralClass
+          mmc:TaskStructuralClass
+        ) ;
+    ] ;
+  skos:prefLabel "has structural characteristic"@en ;
+.
+mmc:hasSubOrganization
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Organization ;
+  rdfs:label "has sub-organization"@en ;
+  rdfs:range mmc:Organization ;
+  skos:prefLabel "has sub-organization"@en ;
+.
+mmc:hasTaskName
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:AnythingWithAName ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf mmc:hasName ;
+.
+mmc:hasUnit
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has unit" ;
+.
+mmc:hasUnitOfMeasurement
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Measurement ;
+  rdfs:label "has unit of measurement" ;
+  rdfs:range mmc:UnitOfMeasurement ;
+  rdfs:subPropertyOf mmc:hasUnit ;
+  skos:definition "Boxoffice units -  things like 'tickets' or 'gross'. If there is a currency with no accompaning units it is assumed to be gross." ;
+.
+mmc:hasUnitOfTime
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:TimePeriod ;
+  rdfs:label "has unit of time" ;
+  rdfs:range mmc:UnitOfTime ;
+  rdfs:subPropertyOf mmc:hasUnit ;
+.
+mmc:hasVocabularyTerm
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "has vocabulary term"@en ;
+  rdfs:range mmc:VocabularyTerm ;
+  skos:definition "Identifies the formal vocabulary term used to represent the entity to which this is attached. For example, is there is an instance of AssetStructuralImage called \"JPEGimage\" then this property would have, as its value, the vocabulary term that repreent jpeg images. The instance \"JPEGimage\" would probably contain additional properties, which is why we distinguish it from the vocabulary term itself." ;
+  skos:prefLabel "has vocabulary term"@en ;
+.
+mmc:isAnalog
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:PhysicalAssetClass ;
+  rdfs:label "is analog"@en ;
+  rdfs:range xsd:boolean ;
+  skos:definition "True if the Asset is an Analog Asset" ;
+  skos:prefLabel "is analog"@en ;
+.
+mmc:isCreatedByTask
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Asset ;
+  rdfs:label "is created by task"@en ;
+  rdfs:range mmc:Task ;
+  skos:prefLabel "is created by task"@en ;
+.
+mmc:isDepartmentOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Department ;
+  rdfs:label "is department of"@en ;
+  rdfs:range mmc:Organization ;
+  owl:inverseOf mmc:hasDepartment ;
+  skos:prefLabel "is department of"@en ;
+.
+mmc:isDepictionOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Depiction ;
+  rdfs:label "is depiction of"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:NarrativeContextComponent
+          mmc:Character
+          mmc:Person
+        ) ;
+    ] ;
+  owl:inverseOf mmc:hasDepiction ;
+  skos:prefLabel "is depiction of"@en ;
+.
+mmc:isDepictorOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:ProductionContextComponent ;
+  rdfs:label "is depictor of"@en ;
+  rdfs:range mmc:Depiction ;
+  owl:inverseOf mmc:hasDepictor ;
+  skos:prefLabel "is depictor of"@en ;
+.
+mmc:isMemberOfOrganization
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:Person
+          mmc:Organization
+        ) ;
+    ] ;
+  rdfs:label "is member of organization"@en ;
+  rdfs:range mmc:Organization ;
+  owl:inverseOf mmc:hasOrganizationMember ;
+  skos:prefLabel "is member of organization"@en ;
+.
+mmc:isPortrayalOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Portrayal ;
+  rdfs:label "is portrayal of"@en ;
+  rdfs:range [
+      rdf:type owl:Class ;
+      owl:unionOf (
+          mmc:Character
+          mmc:Person
+        ) ;
+    ] ;
+  rdfs:subPropertyOf mmc:isDepictionOf ;
+  owl:inverseOf mmc:hasPortrayal ;
+  skos:prefLabel "is portrayal of"@en ;
+.
+mmc:isPortrayerOf
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain mmc:Portrayer ;
+  rdfs:label "is portrayer of"@en ;
+  rdfs:range mmc:Portrayal ;
+  rdfs:subPropertyOf mmc:isDepictorOf ;
+  owl:inverseOf mmc:hasPortrayer ;
+  skos:prefLabel "is portrayer of"@en ;
+.
+mmc:isTransgender
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain mmc:Gender ;
+  rdfs:label "is transgender"@en ;
+  rdfs:range xsd:boolean ;
+  skos:prefLabel "is transgender"@en ;
+.

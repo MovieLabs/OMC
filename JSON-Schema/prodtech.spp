@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="Asset" JsonKind="JsonSchema">
+		<Folder FolderName="StructuralCharacteristics" JsonKind="JsonInstance">
+			<File FilePath="Asset\StructuralCharacteristics\Analog-Image.schema.json" HomeFolder="Yes"/>
+			<File FilePath="Asset\StructuralCharacteristics\Analog-MovingImage.schema.json" HomeFolder="Yes"/>
+			<File FilePath="Asset\StructuralCharacteristics\Digital-Image.schema.json" HomeFolder="Yes"/>
+			<File FilePath="Asset\StructuralCharacteristics\Digital-MovingImage.schema.json" HomeFolder="Yes"/>
+		</Folder>
+		<File FilePath="Asset\Asset.schema.json" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="mmc">
+		<Folder FolderName="Asset">
+			<Folder FolderName="StructuralCharacteristics">
+				<File FilePath="mmc\Asset\StructuralCharacteristics\Analog-Image.schema.json" HomeFolder="Yes"/>
+				<File FilePath="mmc\Asset\StructuralCharacteristics\Analog-MovingImage.schema.json" HomeFolder="Yes"/>
+				<File FilePath="mmc\Asset\StructuralCharacteristics\Digital-Image.schema.json" HomeFolder="Yes"/>
+				<File FilePath="mmc\Asset\StructuralCharacteristics\Digital-MovingImage.schema.json" HomeFolder="Yes"/>
+			</Folder>
+			<File FilePath="mmc\Asset\Asset.schema.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="Utility">
+			<File FilePath="mmc\Utility\Gender.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\Utility\Identifier.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\Utility\Name.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\Utility\SchemaDetail.schema.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="MediaCreationContext">
+			<File FilePath="mmc\MediaCreationContext\Character.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\MediaCreationContext\Prop.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\MediaCreationContext\Scene.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\MediaCreationContext\Sequence.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\MediaCreationContext\SetDressing.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\MediaCreationContext\Shot.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\MediaCreationContext\Slate.schema.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="Participant">
+			<File FilePath="mmc\Participant\Person.schema.json" HomeFolder="Yes"/>
+		</Folder>
+	</Folder>
+</Project>
