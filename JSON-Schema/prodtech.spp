@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
-	<Folder FolderName="Asset" JsonKind="JsonSchema">
-		<Folder FolderName="StructuralCharacteristics" JsonKind="JsonInstance">
-			<File FilePath="Asset\StructuralCharacteristics\Analog-Image.schema.json" HomeFolder="Yes"/>
-			<File FilePath="Asset\StructuralCharacteristics\Analog-MovingImage.schema.json" HomeFolder="Yes"/>
-			<File FilePath="Asset\StructuralCharacteristics\Digital-Image.schema.json" HomeFolder="Yes"/>
-			<File FilePath="Asset\StructuralCharacteristics\Digital-MovingImage.schema.json" HomeFolder="Yes"/>
-		</Folder>
-		<File FilePath="Asset\Asset.schema.json" HomeFolder="Yes"/>
-	</Folder>
 	<Folder FolderName="mmc">
 		<Folder FolderName="Asset">
 			<Folder FolderName="StructuralCharacteristics">
@@ -36,6 +27,9 @@
 		</Folder>
 		<Folder FolderName="Participant">
 			<File FilePath="mmc\Participant\Person.schema.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="Relationship" JsonKind="JsonSchema">
+			<File FilePath="mmc\Relationship\Relationship.schema.json" HomeFolder="Yes"/>
 		</Folder>
 	</Folder>
 </Project>
