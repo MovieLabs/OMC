@@ -1,21 +1,33 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "Utility#Identifier",
+	"$id": "#Identifier",
 	"title": "Identifier",
 	"description": "An identifier uniquely identifies an entity within a particular domain.",
-
+	"oneOf": [
+		{
+			"description": "An array where an entity has multiple identifiers",
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/Identifier"
+			}
+		},
+		{
+			"description": "Optionally a single object where an entity has only one identifier",
+			"$ref": "#/definitions/Identifier"
+		}
+	],
 	"definitions": {
 		"Identifier": {
 			"type": "object",
 			"properties": {
-					"schemaDetail": {
-				"$ref": "schemaDetail.schema.json"
+				"schemaDetail": {
+					"$ref": "SchemaDetail.schema.json#"
 				},
 				"identifierValue": {
 					"description": "The value of the identifier itself independent of it's IRI-ification.",
 					"type": "string"
 				},
-				"identifierDomain": {
+				"identifierScope": {
 					"description": "The domain of the identifier, indicating a system where the identifier value applies",
 					"type": "string"
 				},
@@ -28,17 +40,5 @@
 				}
 			}
 		}
-	},
-	
-	"oneOf": [
-		{
-			"description": "An array where an entity has multiple identifiers",
-			"type": "array",
-			"items": { "$ref": "#/definitions/Identifier" }	
-		},
-		{
-			"description": "Optionally a single object where an entity has only one identifier",
-			"$ref": "#/definitions/Identifier"
-		}
-	]
+	}
 }

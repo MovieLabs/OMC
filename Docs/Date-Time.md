@@ -8,7 +8,7 @@ Dates and time should conform to the ISO 8601 standard
 
 | **Property** | **Type** | **Definition**                              |
 | ------------ | -------- | ------------------------------------------- |
-| date-time    | string   | A date and time (2018-11-13T20:20:39+00:00) |
+| dateTime     | string   | A date and time (2018-11-13T20:20:39+00:00) |
 | date         | string   | A date only (2018-11-13)                    |
 | time         | string   | A time only (20:20:39+00:00)                |
 | creationDate |          |                                             |
@@ -28,15 +28,25 @@ Dates and time should conform to the ISO 8601 standard
     time: hh:mm:ss
     dateTime: yyyy-mm-dd
 
+**(Missing the 8601 'type' designation (PT, T))
+
+## TimeStamp
+
+Unix timestamp (just a number)
+
+
+
 ## Period of Time
 
 A measurement of time from a fixed starting point
 
-| **Property** | **Type** | **Definition**                                                                                    |
-| ------------ | -------- | ------------------------------------------------------------------------------------------------- |
-| startTime    | string   | A date and time in ISO 8601 format                                                                |
-| unitOfTime   | string   | The unit of time to be used as the basis for measuring the relevant period, e.g. 1 hour or 1 day. |
-| offset       | string   | The number of units of time, since the start time                                                 |
+| **Property**       | **Type** | **Definition**                     |
+| ------------------ | -------- | ---------------------------------- |
+| startTime/end      | string   | A date and time in ISO 8601 format |
+|                    |          |                                    |
+| startTime/duration |          |                                    |
+| duration/endTime   |          |                                    |
+|                    |          |                                    |
 
 ** *Make use of ISO 8601 duration naming for the unitOfTime, provide examples (Y, M, W, D, H, etc.)*
 
@@ -65,7 +75,7 @@ Many of these relate to the story and script, which may not allows make referenc
 | **Property** | **Type** | **Definition**                                               |
 | ------------ | -------- | ------------------------------------------------------------ |
 | periodOfDay  | string   | Morning, noon, afternoon night                               |
-| nTime        | string   | Later, continuous, 6 months earlier, a long time ago         |
+| relativeTime | string   | Later, continuous, 6 months earlier, a long time ago         |
 | periodInTime | string   | Ming dynasty, World War II, Jurassic period                  |
 | eventInTime  | string   | Hindenburg disaster, World Trade Center Attack, Queen Elizabeth coronation. |
 

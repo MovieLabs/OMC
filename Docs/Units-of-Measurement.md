@@ -43,3 +43,15 @@ Distance ( imperial / Metric )
 Weight ( imperial / Metric )
 
 Encoding ( images / moving images )
+
+
+
+## Physical measurements
+
+Height
+
+Weight
+
+Width
+
+Length

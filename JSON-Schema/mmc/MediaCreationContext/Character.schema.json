@@ -6,10 +6,10 @@
 	"type": "object",
 	"properties": {
 		"Identifier": {
-				"$ref": "../Utility/Identifier.schema.json"
+			"$ref": "../Utility/Identifier.schema.json"
 		},
 		"Name": {
-			"$ref": "../Utility/Name.schema.json#"
+			"$ref": "../Utility/Name.schema.json"
 		},
 		"Profile": {
 			"title": "Character profile",
@@ -30,7 +30,10 @@
 			"title": "Description",
 			"type" : "string",
 			"description": "A brief description of the character"
-		}
+		},
+		"Relationship": {
+			"$ref": "../Relationship/Relationship.schema.json"
+			}
 	},
 	"definitions": {
 		"physical": {

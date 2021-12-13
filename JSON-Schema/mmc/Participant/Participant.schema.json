@@ -1,0 +1,53 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "#Participant",
+	"title": "Participant",
+	"description": "",
+	"type": "object",
+	"properties": {
+		"participantType": {
+			"title": "participantType",
+			"description": "The type of Participant",
+			"type": "string"
+		},
+		"Identifier": {
+			"$ref": "../Utility/Identifier.schema.json"
+		},
+		"StructuralCharacteristics": {
+			"title": "Structural Characteristics",
+			"oneOf": [
+				{
+					"anyOf": [
+						{
+							"$ref": "StructuralCharacteristics/Person.schema.json"
+						}
+					]
+				},
+				{
+					"type": "array",
+					"items": [
+						{
+							"$ref": "StructuralCharacteristics/Person.schema.json"
+						}
+					]
+				}
+			]
+		},
+		"FunctionalCharacteristics": {
+			"title": "Functional",
+			"type": "object",
+			"properties": {
+				"Name": {
+					"$ref": "../Utility/Name.schema.json"
+				}
+			}
+		}
+	},
+	"required": [
+		"participantType",
+		"Identifier",
+		"StructuralCharacteristics",
+		"FunctionalCharacteristics"
+	],
+	"additionalProperties": false
+}

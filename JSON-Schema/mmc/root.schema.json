@@ -1,0 +1,14 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "#mmc",
+	"description": "Comment describing your JSON Schema",
+	"type": "object",
+	"properties": {
+		"entity": {
+		"oneOf": [
+				{"$ref": "Asset/Asset.schema.json"},
+				{"$ref": "Participant/Participant.schema.json"}
+			]
+		}
+	}
+}
