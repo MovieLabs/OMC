@@ -1,13 +1,59 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "#StructuralDigitalImage",
-	"description": "Structural Characteristics of an Digital Image",
+	"description": "Structural Characteristics of an Analog Image",
 	"type": "object",
 	"properties": {
 		"structuralType": {
 			"title": "structuralType",
 			"type": "string",
-			"pattern": "Digital-Image"
+			"const": "image.analog"
+		},
+		"Size": {
+			"description": "The physical dimensions of the image",
+			"$ref": "../../Utility/Size.schema.json"
+		},
+		"color": {
+			"title": "Analog Image color",
+			"description": "",
+			"oneOf": [
+				{
+					"description": "Prefered controlled terms",
+					"enum": ["color", "monochrome", "colorized"]
+				},
+				{
+					"description": "Use if no appropriate controled term",
+					"type": "string"
+				}
+			]
+		},
+		"format": {
+			"title": "",
+			"description": "The format of the analog image",
+			"oneOf": [
+				{
+					"description": "Prefered controlled terms",
+					"enum": ["paper", "negative", "slide", "glass plate"]
+				},
+				{
+					"description": "Use if no appropriate controled term",
+					"type": "string"
+				}
+			]
+		},
+		"sourceReference": {
+			"title": "",
+			"description": "",
+			"oneOf": [
+				{
+					"description": "Prefered controlled terms",
+					"enum": ["book", "newspaper", "poster"]
+				},
+				{
+					"description": "Use if no appropriate controled term",
+					"type": "string"
+				}
+			]
 		},
 		"assetHash": {
 			"title": "assetHash",
@@ -15,18 +61,6 @@
 				"string",
 				"null"
 			]
-		},
-		"attributes": {
-			"title": "attributes",
-			"type": "object",
-			"properties": {
-				"imageWidth": {
-					"type": "integer"
-				},
-				"imageHeight": {
-					"type": "integer"
-				}
-			}
 		}
 	}
 }

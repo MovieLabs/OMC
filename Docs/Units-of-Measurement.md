@@ -1,6 +1,6 @@
 # Units of Measurement
 
-
+## Utility Types
 
 ### Time
 
@@ -20,33 +20,61 @@ Normative reference SMPTE xxxxxx
 
 ### Locations
 
-GPS Coordinate
+#### Geo Coordinates - Ignore for now
 
-Distance ( imperial / metric )
+#### GPS Coordinate
+  
+  Latitude (degrees, minutes, seconds / decimal minutes / decimal degrees / signed direction N & W are plus, E & S 
+  minus )
 
-Country, State, Provence
+  Longitude
 
-Address
+Schema.org: https://schema.org/GeoCoordinates
+
+
+#### Linear measurement ( imperial / metric )
+km/m/cm/mm
+
+#### Weight ( imperial / Metric )
+
+
+#### Country, State, Provence, Region
+ISO Country codes
+ISO Region code
+State: String
+Provence: String
+
+##### Address
+vCard (Does it exist in JSON)
+
+schema.org https://schema.org/PostalAddress
+
+
+### Currency
+ISO 4217
+
+#### Pixels
+Aspect ratio
+Color depth
+
+### Color Space
+
+
+#### Encoding
+
+Audio/Video/3D
+
 
 
 
 ### Structural characteristics
 
-Pixels
-
-Color depth ( digital bits )
-
-Color space
-
-Distance ( imperial / Metric )
-
-Weight ( imperial / Metric )
 
 Encoding ( images / moving images )
 
 
 
-## Physical measurements
+### Physical measurements
 
 Height
 
@@ -55,3 +83,6 @@ Weight
 Width
 
 Length
+
+
+

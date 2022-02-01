@@ -8,13 +8,19 @@
 				<File FilePath="mmc\Asset\StructuralCharacteristics\Digital-Image.schema.json" HomeFolder="Yes"/>
 				<File FilePath="mmc\Asset\StructuralCharacteristics\Digital-MovingImage.schema.json" HomeFolder="Yes"/>
 			</Folder>
+			<Folder FolderName="FunctionalCharacteristics">
+				<File FilePath="mmc\Asset\FunctionalCharacteristics\ConceptArtwork.schema.json" HomeFolder="Yes"/>
+				<File FilePath="mmc\Asset\FunctionalCharacteristics\ReferenceArtwork.schema.json" HomeFolder="Yes"/>
+			</Folder>
 			<File FilePath="mmc\Asset\Asset.schema.json" HomeFolder="Yes"/>
 		</Folder>
 		<Folder FolderName="Utility">
+			<Folder FolderName="UnitsOfMeasurment"/>
 			<File FilePath="mmc\Utility\Gender.schema.json" HomeFolder="Yes"/>
 			<File FilePath="mmc\Utility\Identifier.schema.json" HomeFolder="Yes"/>
 			<File FilePath="mmc\Utility\Name.schema.json" HomeFolder="Yes"/>
 			<File FilePath="mmc\Utility\SchemaDetail.schema.json" HomeFolder="Yes"/>
+			<File FilePath="mmc\Utility\Size.schema.json" HomeFolder="Yes"/>
 		</Folder>
 		<Folder FolderName="MediaCreationContext">
 			<File FilePath="mmc\MediaCreationContext\Character.schema.json" HomeFolder="Yes"/>

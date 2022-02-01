@@ -1,23 +1,54 @@
-# Structuring schemas
+# JSON Schema Overview
 
-The ontology provides an overriding data model, with a set of entities and the relationships that bind them together. However for practical purposes this model needs to be serialized, generally as either JSON or XML. The following document describes a set of best practices and guidelines when designing application or class specific schemas.
+The formal ontology created in RDF provides an overriding data model, with a set of entities and the relationships that bind them together. However,  it is more common that  JSON is used to send and receive data between applications . The following document describes a set of best practices and guidelines when designing application or class specific schemas.
 
+## Composition vs Inheritence
 
+RDF is a class based system, however JSON does not inherently have a class based structure. The goal behind the JSON model is to provide a flexible mechanism to communicate. To achieve this the JSON data model defines a collection of Entities that are in turn composed from a sets of Properties. These Properties are either other Entities or Attributes.
 
-An object within a JSON document is composed of keys, each with a corresponding value ``<key>: <value>``
+**Entity**: A set of properties that together describe a single concept within the model.
 
+**Property**: May be <key><value> pair describing a single Attribute or an Entity.
+
+**Attribute**: A primitive value (or array of primitive values), i.e. a string, number, Boolean or null.
+
+This allows new Entities to be created by composing a combination of individual Property and to re-use
+
+By convention we capitalize the first letter of any defined Entity. Properties that describe an Attribute are camel cased (first letter is lower case). Entities can therefore be easily identified by their being capitalized, and each Entity will have it's own JSON schema defining it.
+
+##### Examples:
+
+The Entity that represents an identifier is used in many situations and has the form:
+
+```json
+    {
+        "Identifier": {
+          "identifierValue": "1234",
+          "identifierScope": "Movielabs"
+        }
+    }
 ```
+
+Here identifierValue and identifierScope are primitive values of type string.
+
+The Identifier can then be used to compose other entities:
+
+```JSON
 {
-	"Slate": {
-		"SlateUID":  "1234",
-		"shootDay": 4
-	}
+    "Character": {
+        "Identifier": [{
+            "identifierValue": "1234",
+            "identifierScope": "Movielabs"
+        }],
+        characterName: "Sven",
+        description: "The protagonist"
+    }
 }
 ```
 
-The keys are always strings, the values can be a objects, arrays, or primitives such as strings, numbers or Booleans.
+In this example the Character entity has the Identifier Property, which is itself and entity and additional Properties that are unique to itself.
 
-The following schema provides a set of conventions and definitions for building data representations using JSON. Schemas can be constructed from a set of components that can assembled together in a variety of ways to suit particular needs.
+
 
 
 

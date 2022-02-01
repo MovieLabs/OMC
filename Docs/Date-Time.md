@@ -11,6 +11,12 @@ Dates and time should conform to the ISO 8601 standard
 | dateTime     | string   | A date and time (2018-11-13T20:20:39+00:00) |
 | date         | string   | A date only (2018-11-13)                    |
 | time         | string   | A time only (20:20:39+00:00)                |
+
+
+These are the uses of date/time (they use the types above)
+
+| **Property** | **Type** | **Definition**                              |
+| ------------ | -------- | ------------------------------------------- |
 | creationDate |          |                                             |
 | creationTime |          |                                             |
 | modifiedDate |          |                                             |
@@ -70,14 +76,19 @@ Durations of time should conform to the ISO 8601 standard
 
 There are several ways that time or periods in time can be described outside of the literal contexts above.
 
-Many of these relate to the story and script, which may not allows make reference to specific dates and times
+Many of these relate to the story and script, which may not always make reference to specific dates and times
 
 | **Property** | **Type** | **Definition**                                               |
 | ------------ | -------- | ------------------------------------------------------------ |
-| periodOfDay  | string   | Morning, noon, afternoon night                               |
+| periodInDay  | string   | Morning, noon, midnight, afternoon, night                 |
 | relativeTime | string   | Later, continuous, 6 months earlier, a long time ago         |
-| periodInTime | string   | Ming dynasty, World War II, Jurassic period                  |
+| periodInTime | string   | Ming dynasty, World War II, Jurassic period, 20th century |
 | eventInTime  | string   | Hindenburg disaster, World Trade Center Attack, Queen Elizabeth coronation. |
+
+** _Does relative time need a structure that allows for it to relative to some other point in time_
+
+
+
 
 ## Timecodes
     SMPTE
