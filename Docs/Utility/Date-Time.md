@@ -1,4 +1,4 @@
-# Date & Time
+# Measurements of Time
 
 ## Date & Time
 
@@ -6,25 +6,13 @@ A date with optional time stamp related to an entity. Can be used to denote star
 
 Dates and time should conform to the ISO 8601 standard
 
-| **Property** | **Type** | **Definition**                              |
-| ------------ | -------- | ------------------------------------------- |
-| dateTime     | string   | A date and time (2018-11-13T20:20:39+00:00) |
-| date         | string   | A date only (2018-11-13)                    |
-| time         | string   | A time only (20:20:39+00:00)                |
+| Attribute | **Type** | **Definition**                              |
+| --------- | -------- | ------------------------------------------- |
+| dateTime  | string   | A date and time (2018-11-13T20:20:39+00:00) |
+| date      | string   | A date only (2018-11-13)                    |
+| time      | string   | A time only (20:20:39+00:00)                |
 
-
-These are the uses of date/time (they use the types above)
-
-| **Property** | **Type** | **Definition**                              |
-| ------------ | -------- | ------------------------------------------- |
-| creationDate |          |                                             |
-| creationTime |          |                                             |
-| modifiedDate |          |                                             |
-| modifiedTime |          |                                             |
-| startDate    |          |                                             |
-| endDate      |          |                                             |
-
-*** Should we have separate named terms for year, date, time and dateTime - added complication but covers widest range of use cases.*
+** *Should we have separate named terms for year, date, time and dateTime - added complication but covers widest range of use cases.*
 ** *Need to provide a more extensive list of examples, use of +- for dates prior to year 0(BC).*
 ** *Best practices around use of local time or UTC*
 
@@ -38,7 +26,15 @@ These are the uses of date/time (they use the types above)
 
 ## TimeStamp
 
-Unix timestamp (just a number)
+The Unix timestamp tracks time as running total of seconds starting from the Unix Epoch of January 1st, 1970 UTC. It is commonly used in computers to generate a number to represent a point in time, and many operating systems, tools and libraries offer a means to convert this to a specific time/date.
+
+
+
+| Attribute | **Type** | **Definition**                                               |
+| --------- | -------- | ------------------------------------------------------------ |
+| timestamp | number   | A count of the number of seconds since the Unix Epoch if January 1st, 1970 UTC. |
+
+
 
 
 
@@ -46,7 +42,7 @@ Unix timestamp (just a number)
 
 A measurement of time from a fixed starting point
 
-| **Property**       | **Type** | **Definition**                     |
+| Attribute          | **Type** | **Definition**                     |
 | ------------------ | -------- | ---------------------------------- |
 | startTime/end      | string   | A date and time in ISO 8601 format |
 |                    |          |                                    |
@@ -58,7 +54,7 @@ A measurement of time from a fixed starting point
 
 
 
-## Duration Time
+## Duration of Time
 
 A duration of time, some period of time
 
@@ -70,6 +66,7 @@ Durations of time should conform to the ISO 8601 standard
 | durationTime | string   | A duration of time in ISO 8601 format |
 
 *** Need to provide examples*
+
 
 
 ## Descriptive Time
