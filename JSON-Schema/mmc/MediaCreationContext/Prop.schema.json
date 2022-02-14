@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "MediaCreationContext#Prop",
+	"$id": "/mmc/MediaCreationContext/Prop",
 	"title": "Prop",
 	"description": "A named object related to or interacting with characters that is implied or understood to be necessary for the narrative",
 	"type": "object",

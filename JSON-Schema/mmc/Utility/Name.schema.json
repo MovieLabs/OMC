@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "Utility#Name",
+	"$id": "/mmc/Utility/Name",
 	"title": "Name",
 	"description": "A general purpose class for naming things",
 	"type": "object",

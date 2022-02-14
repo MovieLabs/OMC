@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "#Participant",
+	"$id": "/mmc/Participant/Participant",
 	"title": "Participant",
 	"description": "",
 	"type": "object",

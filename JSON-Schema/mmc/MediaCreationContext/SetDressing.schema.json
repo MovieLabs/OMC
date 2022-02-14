@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "MediaCreationContext#SetDressing",
+	"$id": "/mmc/MediaCreationContext/SetDressing",
 	"title": "SetDressing",
 	"description": "Objects used on set to create and enhance the environment. Set dressing differs from a prop because the characters’ interaction with it may not be explicitly mentioned in, or required by, the narrative.",
 	"type": "object",

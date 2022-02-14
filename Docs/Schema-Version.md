@@ -9,8 +9,19 @@ are using draft 7, specified here:
 As part of the specification this included in each schema definition using the $schema keyword
 
 
+
 ## MovieLabs schema version
-Each individual schema may evolve
+
+In addition schema's are versioned within the namespace of mc (Media Creation)
+
+
+
+
+
+
+
+
+
 
 
 With the exception of required fields the inclusion or exclusion of any given field in an instance is optional.

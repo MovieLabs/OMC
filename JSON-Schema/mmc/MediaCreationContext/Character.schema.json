@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "MediaCreationContext#Character",
+	"$id": "/mmc/MediaCreationContext/Character",
 	"title": "Character",
 	"description": "A sentient entity (usually a person but not always) in the script whose specific identity is consequential to the narrative. A Character is generally identified by a specific name.",
 	"type": "object",

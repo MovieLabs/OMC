@@ -5,20 +5,23 @@
 ## Naming Conventions
 
 **Ambiguous naming**
-Avoid the use of names that can be ambiguous or apply to multiple types, key names like ‘date’ or ‘id’ should encode a specific reference to their type in the name ‘creationDate’, ‘distributionId’, etc.
 
-** Outline the reasoning for this
+Generally ambiguous naming of attributes is be avoided. Certain terms can often be relevant in many different situations or uses, for example, lots of things have a 'name'. In large schema we feel it is important to be able to differentiate and explicitly identify what an attribute is describing.
 
+Therefore the functional use of an attributes term should be encoded as part of the term, for example terms like 'date' or 'name' should be named birthDate or firstName.
 
-
-** Identifiers that are part of an existing class (person) could be called ‘id’ or ‘identifier’?
+The exception to this where an entity may include an arbitrary attribute, such as 'name', used primarily to help humans identify it. For example, an asset may be given an arbitrary name and description.
 
 **Plurals**
-We should discuss, but this is my position.
-** Avoid the use of plurals, it creates inconsistencies in naming i.e. parties vs dates vs classes.
-** In the event a field name that initially only has a single entry is later updated to allow for multiple entries the field name itself should also be modified to reflect this, which potentially introduces a potential breaking change to people parsing the data.
+
+Avoid the use of plurals.
+
+- It creates inconsistencies in naming, i.e. parties vs dates vs classes (ies, s, es). This can be hard for some people, especially those for whom English is not a first language to remember.
+
+- If plurals are used to indicate an attribute can have multiple values, it is then inconsistent if it only has one. Or if there is an update to a schema that takes an attribute that was singular to allow multiple values, the renaming would break the schema.
 
 **Capitalization**
+
 Capital letters for classes, lower case for properties.
 
 Standardizing here between lower-cased first letter for JSON and upper-cased first letter for XML would also be acceptable in that it gives an easy conversion between the two if required.
@@ -28,9 +31,9 @@ Standardizing here between lower-cased first letter for JSON and upper-cased fir
 
 
 **Punctuation**
-Punctuation should be avoided in all naming, do not use hyphens, spaces, underscores, etc. Some database systems require these to be escaped and there is variability across systems in how punctuation is treated as well as how it is sometime represent on screen.
+Punctuation should be avoided in all attribute terms, do not use hyphens, spaces, underscores, etc.. Some systems require these to be escaped or removed and there is variability across systems in how punctuation is treated as well as how it is sometimes represent ed on screen.
 
-Avoid the use of additional symbols prepended or appended to names. For example, it is not uncommon to see $ prepended in JSON schemas ($id). However what is convention in one system rarely translates to other forms of serialization or databases.
+Avoid the use of additional symbols prepended or appended to names. For example, it is not uncommon to see $ prepended in JSON schemas ($id). However what is convention in one system rarely translates to other forms of serialization or databases. JSON schema itself uses this convention, this helps avoids any confusion between a the schema itself and the schema definition.
 
 
 

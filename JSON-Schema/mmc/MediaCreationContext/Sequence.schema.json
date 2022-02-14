@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "MediaCreationContext#Sequence",
+	"$id": "/mmc/MediaCreationContext/Sequence",
 	"title": "Sequence",
 	"description": "Add a description of Sequence",
 	"type": "object",

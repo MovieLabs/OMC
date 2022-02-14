@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "#Identifier",
+	"$id": "/mmc/Utility/Identifier",
 	"title": "Identifier",
 	"description": "An identifier uniquely identifies an entity within a particular domain.",
 	"oneOf": [

@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "MediaCreationContext#Slate",
+	"$id": "/mmc/MediaCreationContext/Slate",
 	"description": "Used to capture key identifying information about what is being recorded on any given setup and take. ",
 	"type": "object",
 	"properties": {

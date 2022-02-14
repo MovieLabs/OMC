@@ -6,7 +6,7 @@
 
 ISO 3166
 
-| Property | Type   | Definition            |
+| Property | Type   | **Description**       |
 | -------- | ------ | --------------------- |
 | country  | string | 2 letter country code |
 
@@ -26,7 +26,7 @@ BCP 47
 
 
 
-| Property | Type   | Definition                           |
+| Property | Type   | **Description**                      |
 | -------- | ------ | ------------------------------------ |
 | language | string | Language code, ,may include dialects |
 

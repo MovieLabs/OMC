@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "#Address",
+	"$id": "/mmc/Utility/Address",
 	"title": "Address",
 	"description": "",
 	"type": "object",
