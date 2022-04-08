@@ -1,0 +1,45 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "Infrastructure",
+	"properties": {
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "Participant"
+		},
+		"schemaVersion": {"$ref":"../Model/definitions.json#/properties/schemaVersion"},
+		"instance": {"$ref":"../Model/definitions.json#/properties/instance"},
+		"identifier": {"$ref":"../Utility/identifier.json#/properties/identifier"},
+		"name": {
+			"type": ["string","null"],
+			"title": "Infrastructure Name"
+		},
+		"description": {
+			"type": ["string","null"],
+			"title": "Infrastructure Description"
+		}
+	},
+	"definitions": {
+		"StructuralCharacteristics": {
+			"type": "array",
+			"title": "Structural Characteristics",
+			"additionalItems": true,
+			"oneOf": [
+				{
+					"type": "array",
+					"additionalItems": true
+				},
+				{
+					"type": "array",
+					"additionalItems": true
+				},
+				{
+					"type": "array",
+					"additionalItems": true
+				}
+			]
+		}
+	},
+	"additionalProperties": false
+}

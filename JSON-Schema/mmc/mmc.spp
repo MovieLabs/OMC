@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="mmc">
+		<Folder FolderName="Asset">
+			<File FilePath="Asset\Asset.json" HomeFolder="Yes"/>
+			<File FilePath="Asset\AssetFC.json" HomeFolder="Yes"/>
+			<File FilePath="Asset\AssetSC.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="Infrastructure">
+			<File FilePath="Infrastructure\Infrastructure.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="MediaCreationContext">
+			<File FilePath="MediaCreationContext\Character.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\Context.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\Costume.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\CreativeWork.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\NarrativeLocation.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\NarrativeProp.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\NarrativeScene.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\NarrativeWardrobe.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\ProductionLocation.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\ProductionProp.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\ProductionScene.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\SetDressing.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\Shot.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\Slate.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="Model">
+			<File FilePath="Model\definitions.json" HomeFolder="Yes"/>
+			<File FilePath="Model\instance.json" HomeFolder="Yes"/>
+			<File FilePath="Model\schema.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="Participant">
+			<File FilePath="Participant\Participant.json" HomeFolder="Yes"/>
+			<File FilePath="Participant\ParticipantFC.json" HomeFolder="Yes"/>
+			<File FilePath="Participant\ParticipantSC.json" HomeFolder="Yes"/>
+			<File FilePath="Participant\Person.json" HomeFolder="Yes"/>
+			<File FilePath="Participant\Role.json" HomeFolder="Yes"/>
+		</Folder>
+		<Folder FolderName="Task"/>
+		<Folder FolderName="Utility">
+			<File FilePath="Utility\address.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\completeName.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\contact.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\gender.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\identifier.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\Location.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\time.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\unitOfMeasurement.json" HomeFolder="Yes"/>
+		</Folder>
+	</Folder>
+</Project>

@@ -24,7 +24,7 @@ Avoid the use of plurals.
 
 Capital letters for classes, lower case for properties.
 
-Standardizing here between lower-cased first letter for JSON and upper-cased first letter for XML would also be acceptable in that it gives an easy conversion between the two if required.
+
 
 ** camel case
 
@@ -100,20 +100,20 @@ Should use typed definition where applicable
     "creationDate": "string"
 
 
+## Required vs Non-Required fields
+With the exception of required fields the inclusion or exclusion of any given field in an instance is optional.
+
+
 
 
 
 ## Definitions
 
-Class: 
-
-Entity: An instance of Class
-
-Element: The values in an instance. An Element can be an Entity or a Property
-
-Property: A key value pair with a field name and primative type (String, Number, Integer or Array of primatives).
-
-Field: The key for an Element or Property
+| Term     | Definition                                                   |
+| -------- | ------------------------------------------------------------ |
+| Entity   | A collection of Properties that together describe a fundamental building block of the model. Each instance of an Entity must have a unique Identifier that allows it to be related to other Entities. An Entity is typically analogous with one of the RDF classes in the ontology, or a complex type in GraphQL. |
+| Property | Properties are <key><value> pairs that collectively create the structure and characteristics of an Entity. The value of a Property can be scalar type (string, number) or complex types (objects, arrays) or and Entity |
+|          |                                                              |
 
 Type: A property has an assigned type which defines it's structure and provide clear semantics
 
@@ -140,10 +140,4 @@ NEIM JSON Spec
 https://github.com/NIEM/NIEM-JSON-Spec
 
 
-
-## Versioning
-
-The schema allows for versioning at several levels
-
-JSON Schema: Defines the version number of the JSON schema specification
 

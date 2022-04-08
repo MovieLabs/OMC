@@ -1,0 +1,44 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "Asset Functional Characteristics",
+	"description": "A set of Functional Characteristics for Assets",
+	"required": ["identifier", "entityType"],
+	"properties": {
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "AssetFC"
+		},
+		"schemaVersion": { "$ref": "../Model/definitions.json#/properties/schemaVersion" },
+		"instance": { "$ref": "../Model/definitions.json#/properties/instance" },
+		"identifier": { "$ref": "../Utility/identifier.json#/properties/identifier" },
+		"characteristics": {
+			"anyOf": [
+				{
+					"type": "array",
+					"additionalItems": true,
+					"items": {
+						"type": "object",
+						"properties": {
+							"functionalType": {
+								"type": "string",
+								"title": "Functional Type"
+							},
+							"functionalName": {
+								"type": "string",
+								"title": "Name"
+							},
+							"description": {
+								"type": "string",
+								"title": "Description"
+							}
+						},
+						"additionalProperties": true
+					}
+				}
+			]
+		}
+	},
+	"$defs": {}
+}

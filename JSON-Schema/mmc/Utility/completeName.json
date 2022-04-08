@@ -1,0 +1,87 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "completeName",
+	"description": "A set if name types, that can be used together or alone",
+	"properties": {
+		"firstGivenName": {
+			"type": ["string", "null"],
+			"title": "First Given Name",
+			"description": "A person's first name, also referred to as given name"
+		},
+		"secondGivenName": {
+			"type": "string",
+			"title": "Second Given Name",
+			"description": "A persons second given name, also referred to as middle name"
+		},
+		"familyName": {
+			"type": ["string", "null"],
+			"title": "Family Name",
+			"description": "A persons family name, also referred to as surname"
+		},
+		"birthName": {
+			"type": ["string", "null"],
+			"title": "Birth Name",
+			"description": "A persons name at birth, also referred to as maiden name"
+		},
+		"primaryName": {
+			"type": ["string", "null"],
+			"title": "Primary Name",
+			"description": "A persons primary name, one they typically use, also often a combination of first, second and family name"
+		},
+		"pseudonym": {
+			"type": ["string", "null"],
+			"title": "Pseudonym"
+		},
+		"alternateName": {
+			"type": ["string", "null"],
+			"title": "Alternate Name"
+		},
+		"translatedName": {
+			"type": ["string", "null"],
+			"title": "Translated Name"
+		},
+		"nickname": {
+			"type": ["string", "null"],
+			"title": "Nickname"
+		},
+		"moniker": {
+			"type": ["string", "null"],
+			"title": "Moniker"
+		},
+		"alias": {
+			"type": ["string", "null"],
+			"title": "Alias",
+			"description": "An alias being used by a person often used to disguse someones real identity, sometimes used when booking hotel rooms or restaurants "
+		},
+		"contractualName": {
+			"type": ["string", "null"],
+			"title": "Contractual Name"
+		},
+		"displayName": {
+			"type": ["string", "null"],
+			"title": "Display Name"
+		},
+		"sortName": {
+			"type": ["string", "null"],
+			"title": "Sort Name"
+		},
+		"scriptName": {
+			"type": ["string", "null"],
+			"title": "Script Name"
+		},
+		"prefix": {
+			"type": ["string", "null"],
+			"title": "Prefix",
+			"description": "A prefix that can indicate a persons gender or title",
+			"examples": ["Mrs", "Mr", "Dr", "General"]
+		},
+		"suffix": {
+			"type": ["string", "null"],
+			"title": "Suffix",
+			"description": "A suffix, often used to indicate a title or classification",
+			"examples": ["MBE", "MD", "RN", "II", "IV"]
+		}
+	},
+	"additionalProperties": true
+}

@@ -1,0 +1,40 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "Participant",
+	"description": "The entities (people, organizations, and services) that are responsible for the production of the Creative Work.",
+	"required": ["identifier","entityType"],
+	"properties": {
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "Participant"
+		},
+		"schemaVersion": {"$ref":"../Model/definitions.json#/properties/schemaVersion"},
+		"instance": {"$ref":"../Model/definitions.json#/properties/instance"},
+		"identifier": {"$ref":"../Utility/identifier.json#/properties/identifier"},
+		"description": {
+			"type": ["string","null"],
+			"title": "Description"
+		},
+		"participantGroup": {
+			"type": "array",
+			"description": "The group of Participants that jointly comprise this Participant",
+			"items": {"$ref":"./Participant.json"}
+		},
+		"roleGroup": {
+			"type": "array",
+			"description": "A group of Roles this Participant can perform",
+			"items": {"$ref":"./Role.json"}
+		},
+		"StructuralCharacteristics": {
+			"title": "Participant Structural Characteristics",
+			"$ref": "./ParticipantSC.json"
+		},
+		"FunctionalCharacteristics": {
+			"title": "Participant Functional Characteristics",
+			"$ref": "./ParticipantFC.json"
+		}
+	},
+	"$defs": {}
+}

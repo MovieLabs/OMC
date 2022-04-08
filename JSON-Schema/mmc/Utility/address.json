@@ -1,0 +1,39 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Address",
+	"description": "An address of a location, addresses can be real or fictional and used in a production or narrative context",
+	"type": "object",
+	"properties": {
+		"street": {
+			"type": "string",
+			"title": "Street Address",
+			"description": "The street address",
+			"examples": ["1600 Ampitheatre Parkway"]
+		},
+		"locality": {
+			"type": "string",
+			"title": "Address locality",
+			"description": "The locality in which the street address is, and which is in the region.",
+			"examples": ["Mountain View"]
+		},
+		"region": {
+			"type": "string",
+			"title": "Address region",
+			"description": "The region in which the locality is, and which is in the country",
+			"examples": ["California"]
+		},
+		"postalCode": {
+			"title": "Zip or Postal Code",
+			"type": "string",
+			"description": "A zip or postal code",
+			"examples": ["94534"]
+		},
+		"country": {
+			"title": "Country",
+			"type": "string",
+			"description": "The country, as an ISO 3166-1 alpha-2 country code",
+			"examples": ["US"]
+		}
+	},
+	"additionalProperties": true
+}

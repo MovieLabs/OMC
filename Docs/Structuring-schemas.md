@@ -54,21 +54,28 @@ In this example the Character entity has the Identifier Property, which is itsel
 
 ## Identifiers and referencing
 
-The use of identifiers is a central tenet of all the schemas, any entity should be uniquely identifiable with an Identifier class. Using identifiers allows any other entity to be included by reference as well as by inclusion. 
+The use of identifiers is a central tenet of all the schemas, any entity should be uniquely identifiable with an Identifier. Using identifiers allows any other entity to be included by reference as well as by inclusion, a decision that is left to the application. Where only an identifier is included in a payload the presumption is that this would allow the receiving party to make a secondary lookup to retrieve the full set of attributes.
 
 ##### Example 1
 
 This shows a Character with attributes encoded inline, given the attributes should include an Identifier, this could be used to do a secondary lookup, in case data has been updated between the time this encoded and used.
 
 ```JSON
-"hasCharacter": [
+"Character": [
     {
     "Identifier": {
       "identifierValue": "1234",
       "identifierScope": "Movielabs"
     },
-    "name": "Daniel",
-    "height": "6'3"
+    "name": "Sven",
+    "description": "The protagonist",
+    "CompleteName": {
+        "scriptName": "SVEN",
+        "firstName": "Sven",
+    }
+    "profile": {
+        height: "6ft3in"
+	    }
 	}
  ]
 ```
@@ -77,10 +84,10 @@ This shows a Character with attributes encoded inline, given the attributes shou
 
 ###### Example 2
 
-This only includes the references to the Characters by use of their identifiers, to retrieve the relevant information about them, they must be looked up.
+This only includes the references to the Characters by use of their identifiers. To retrieve the relevant information about them, they must be looked up in separate action.
 
 ```JSON
-  "hasCharacter": [
+  "Character": [
  	{
     	"Identifier": {
         	"identifierValue": "1234",
@@ -95,4 +102,34 @@ This only includes the references to the Characters by use of their identifiers,
   	}   
 ]
 ```
+
+
+
+## Standard Properties
+
+There are some properties that are used fairly consistently throughout each of the entities
+
+##### Schema Version
+
+Blah
+
+##### Instance
+
+
+
+##### Entity Type
+
+An optional property that enumerates the type of the entity within the structure of the entity itself. This is an optional field for convenience, it is human readable, it can be useful when programmatically parsing the entity to know what it is and be able to apply the correct function and finally it provides an easy way to setup an index in a database.
+
+##### name
+
+For entities where a name is not an intrinsic part of the entity itself it can be useful to have a human readable name for something. For example a name would be an intrinsic property of a person or character, but something like an asset does not by definition need a name (that is what identifiers are for), however people like names not long strings of random characters.
+
+##### description
+
+A human readable (preferably short) description of the entity
+
+##### unstructuredData
+
+This schema does not attempt to define every attribute that might ever be associated with any given entity, the purpose is to surface enough to allow a production to track and relate enough attributes to find things. An asset such as the camera metadata file, and image or video file may contain dozens or hundreds of specific metadata fields in multiple formats. This data could be embeded in a file format like IMF or JPG, or as a separate Asset file, like a sidecar. However if it is desirable to include additional data in the payload it can be included here. It is presumed that the receiving application will know how to process and interpret this data.
 
