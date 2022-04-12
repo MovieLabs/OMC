@@ -1,37 +1,1 @@
-{
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"description": "Project definitions",
-	"properties": {
-		"extension": { "description": "A user defined set of data or to the schema extension to the schema." },
-		"instance": {
-			"type": "object",
-			"title": "Instance",
-			"description": "A set of properties that describe this specific instance of the entity",
-			"additionalProperties": true,
-			"properties": {
-				"instanceVersion": {
-					"type": "string",
-					"title": "Instance version",
-					"pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
-					"examples": [ "1.2.3" ]
-				},
-				"createdBy": {
-					"title": "Created by",
-					"description": "The Participant responsible for the original creation of the entity",
-					"$ref": "../Participant/Participant.json"
-				},
-				"createdOn": {
-					"title": "Created on",
-					"$ref": "../Utility/time.json#/properties/dateTime"
-				}
-			}
-		},
-		"schemaVersion": {
-			"type": "string",
-			"description": "The version of the schema this instance was created with",
-			"pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
-			"examples": [ "1.0.0" ]
-		}
-	}
-}
+{	"$schema": "http://json-schema.org/draft-07/schema#",	"description": "Project definitions",	"type": "object",	"properties": {		"extension": {			"description": "A user defined set of data or to the schema extension to the schema."		},		"instance": {			"title": "Instance",			"description": "A set of properties that describe this specific instance of the entity",			"type": "object",			"properties": {				"instanceVersion": {					"title": "Instance version",					"type": "string",					"pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",					"examples": [						"1.2.3"					]				},				"createdBy": {					"title": "Created by",					"description": "The Participant responsible for the original creation of the entity",					"$ref": "../Participant/Participant.json"				},				"createdOn": {					"title": "Created on",					"$ref": "../Utility/time.json#/properties/dateTime"				}			}		},		"schemaVersion": {			"description": "The version of the schema this instance was created with",			"type": "string",			"pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",			"examples": [				"1.0.0"			]		}	}}
