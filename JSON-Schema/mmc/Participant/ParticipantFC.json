@@ -1,45 +1,1 @@
-{
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"title": "Participant Functional Characteristics",
-	"description": "A set of Functional Characteristics for Participants",
-	"required": [
-		"identifier",
-		"entityType"
-	],
-	"properties": {
-		"entityType": {
-			"type": "string",
-			"title": "Entity Type",
-			"const": "ParticipantFC"
-		},
-		"schemaVersion": {
-			"$ref": "../Model/definitions.json#/properties/schemaVersion"
-		},
-		"instance": {
-			"$ref": "../Model/definitions.json#/properties/instance"
-		},
-		"identifier": {
-			"$ref": "../Utility/identifier.json#/properties/identifier"
-		},
-		"characteristics": {
-			"type": "object",
-			"properties": {
-				"name": {
-					"type": "string",
-					"title": "Name",
-					"description": "A name used to describe what this Participant does, often a job title"
-				},
-				"description": {
-					"type": "string",
-					"title": "Description",
-					"description": "A brisf description of what this Participant does on the production"
-				},
-				"Role": {
-					"type": "array",
-					"items": {"$ref": "./Role.json"}
-				}
-			}
-		}
-	}
-}
+{	"$schema": "http://json-schema.org/draft-07/schema#",	"type": "object",	"title": "Participant Functional Characteristics",	"description": "A set of Functional Characteristics for Participants",	"required": [		"identifier",		"entityType"	],	"properties": {		"entityType": {			"type": "string",			"title": "Entity Type",			"const": "ParticipantFC"		},		"schemaVersion": {			"$ref": "../Model/definitions.json#/properties/schemaVersion"		},		"instance": {			"$ref": "../Model/definitions.json#/properties/instance"		},		"identifier": {			"$ref": "../Utility/identifier.json#/properties/identifier"		},		"characteristics": {			"type": "object",			"properties": {				"name": {					"type": "string",					"title": "Name",					"description": "A name used to describe what this Participant does, often a job title"				},				"description": {					"type": "string",					"title": "Description",					"description": "A brisf description of what this Participant does on the production"				},				"Role": {					"type": "array",					"items": {"$ref": "./Role.json"}				}			}		}	}}

@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "time",
+  "properties": {
+    "timestamp": {
+      "type": "number",
+      "title": "Timestamp"
+    },
+    "periodInTime": {
+      "type": "object",
+      "title": "Period in Time",
+      "properties": {
+        "startTime": {
+          "type": "string",
+          "title": "Start Time"
+        },
+        "durationTime": {
+          "type": "string",
+          "title": "Duration of Time"
+        },
+        "endTime": {
+          "type": "string",
+          "title": "End Time"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "startTime"
+      ]
+    },
+    "descriptiveTime": {
+      "type": "object",
+      "title": "Descriptive Time",
+      "properties": {
+        "periodInDay": {
+          "type": "string",
+          "title": "Period in Day",
+          "examples": [
+            "Morning",
+            "Noon",
+            "Midnight",
+            "Afternoon",
+            "Night"
+          ]
+        },
+        "relativeTime": {
+          "type": "string",
+          "title": "Relative Time",
+          "examples": [
+            "Later",
+            "Continuous",
+            "6 months earlier",
+            "A long time ago"
+          ]
+        },
+        "periodInTime": {
+          "type": "string",
+          "title": "Period in Time",
+          "examples": [
+            "Ming dynasty",
+            "World War II",
+            "Jurassic period",
+            "20th century"
+          ]
+        },
+        "eventInTime": {
+          "type": "string",
+          "title": "Event in Time",
+          "description": "Describes a specific event that occurred",
+          "examples": [
+            "Hindenburg disaster",
+            "World Trade Center attack",
+            "Queen Elizabeth coronation"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "dateTime": {
+      "type": "string",
+      "title": "Date & Time",
+      "pattern": "\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d(?:\\.\\d+)?Z?"
+    },
+    "date": {
+      "type": "string",
+      "title": "Date",
+      "pattern": "\\d{4}-[01]\\d-[0-3]\\d",
+      "examples": [
+        "2020-11-21"
+      ]
+    },
+    "durationTime": {
+      "type": "string",
+      "title": "Duration of Time",
+      "pattern": "^(-?)P(?=.)((\\d+)Y)?((\\d+)M)?((\\d+)D)?(T(?=.)((\\d+)H)?((\\d+)M)?(\\d*(\\.\\d+)?S)?)?$",
+      "examples": [
+        "P2Y12M3D"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "$id": "https://movielabs.com/mmc/Utility/time"
+}

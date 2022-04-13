@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Slate",
+  "description": "Used to capture key identifying information about what is being recorded on any given setup and take.",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "Slate"
+    },
+    "identifier": {
+      "title": "identifier",
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "CreativeWork": {
+      "type": "string",
+      "title": "Creative Work"
+    },
+    "slateUID": {
+      "type": "string",
+      "title": "Slate UID",
+      "description": "Slate Unique Identifier"
+    },
+    "productionScene": {
+      "type": "string",
+      "title": "Production Scene",
+      "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
+    },
+    "cameraUnit": {
+      "type": "string",
+      "title": "Camera Unit",
+      "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
+    },
+    "cameraRoll": {
+      "type": "string",
+      "title": "Camera Roll",
+      "description": "Identifier for a group of events captured together on the same camera on the same media."
+    },
+    "soundRoll": {
+      "type": "string",
+      "title": "Sound Roll",
+      "description": "Identifier for a group of audio events captured together on the same recording device and same media."
+    },
+    "shootDate": {
+      "type": "string",
+      "title": "Shoot Date",
+      "description": "The date of capture."
+    },
+    "shootDay": {
+      "type": "string",
+      "title": "Shoot Day",
+      "description": "The number of the day on the shooting schedule."
+    },
+    "Director": {
+      "$ref": "../Participant/Participant.json"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "slateUID"
+  ]
+}

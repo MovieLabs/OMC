@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ProductionLocation",
+  "description": "A real place that is used to depict the Narrative Location or used for creating the production.",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "ProductionLocation"
+    },
+    "identifier": {
+      "title": "identifier",
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "Location": {
+      "$ref": "../Utility/Location.json"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "Context": {
+      "type": "object",
+      "properties": {
+        "Set": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

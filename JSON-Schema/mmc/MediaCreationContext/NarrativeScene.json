@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NarrativeScene",
+  "description": "Taken from the narrative itself and traditionally defined by creative intent and typically a unity of time, place, action, or theme.",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "NarrativeScene"
+    },
+    "identifier": {
+      "title": "identifier",
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "name": {
+      "type": "string",
+      "title": "Scene Name"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "slugline": {
+      "type": "array",
+      "title": "Slugline",
+      "additionalItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "Context": {
+      "type": "object",
+      "title": "Context",
+      "properties": {
+        "entityType": {
+          "type": "string",
+          "title": "Entity Type",
+          "const": "Context"
+        },
+        "identifier": {
+          "title": "identifier",
+          "$ref": "../Utility/identifier.json#/properties/identifier"
+        },
+        "usesProp": {
+          "type": "object",
+          "title": "usesProp",
+          "properties": {
+            "NarrativeProp": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeProp.json"
+              }
+            }
+          }
+        },
+        "usesWardrobe": {
+          "type": "object",
+          "title": "usesWardrobe",
+          "properties": {
+            "NarrativeWardrobe": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeWardrobe.json"
+              }
+            }
+          }
+        },
+        "usesSetDressing": {
+          "type": "object",
+          "properties": {
+            "SetDressing": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/SetDressing.json"
+              }
+            }
+          }
+        },
+        "features": {
+          "type": "object",
+          "title": "features",
+          "properties": {
+            "Character": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/Character.json"
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

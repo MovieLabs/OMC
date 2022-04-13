@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "NarrativeProp",
+  "description": "A Prop as specified or implied by the narrative.",
+  "properties": {
+    "schemaVersion": {
+      "title": "schemaVersion",
+      "$ref": "../Model/schema.json#/properties/schemaVersion"
+    },
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "NarrativeProp"
+    },
+    "instance": {
+      "$ref": "../Model/instance.json"
+    },
+    "identifier": {
+      "title": "identifier",
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "name": {
+      "type": "string",
+      "title": "Narrative Prop Name"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "Context": {
+      "type": "object",
+      "title": "Context",
+      "properties": {
+        "entityType": {
+          "type": "string",
+          "title": "Entity Type",
+          "const": "Context"
+        },
+        "identifier": {
+          "title": "identifier",
+          "$ref": "../Utility/identifier.json#/properties/identifier"
+        },
+        "isUsedIn": {
+          "type": "object",
+          "title": "isUsedIn",
+          "additionalItems": true,
+          "properties": {
+            "NarrativeScene": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeScene.json"
+              }
+            }
+          }
+        },
+        "isDepictedBy": {
+          "type": "object",
+          "title": "isDepictedBy",
+          "additionalItems": true,
+          "properties": {
+            "NarrativeWardrobe": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeWardrobe.json"
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

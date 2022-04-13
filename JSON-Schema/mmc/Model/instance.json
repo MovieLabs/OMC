@@ -1,1 +1,19 @@
-{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","title":"instance","properties":{"version":{"type":"string","title":"Version"},"Created By":{"$ref":"../Participant/Participant.json"},"createdOn":{"title":"createdOn","$ref":"../Utility/time.json#/properties/dateTime"}},"additionalProperties":false}
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "instance",
+  "properties": {
+    "version": {
+      "type": "string",
+      "title": "Version"
+    },
+    "createdBy": {
+      "$ref": "../Participant/Participant.json"
+    },
+    "createdOn": {
+      "title": "createdOn",
+      "$ref": "../Utility/time.json#/properties/dateTime"
+    }
+  },
+  "additionalProperties": false
+}

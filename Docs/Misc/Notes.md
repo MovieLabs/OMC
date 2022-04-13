@@ -84,3 +84,21 @@ Do we need a way to enter data, edit data, enrich existing data?
 
 Do we need a way to view data, beyond a view into a database or graphql front end
 
+
+
+
+
+
+
+NEIM JSON LD/RDF/XML/Normalized
+
+https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html
+
+https://github.com/NIEM/NIEM-JSON-Spec/wiki/NIEM-JSON-normalization
+
+NEIM JSON Spec
+
+https://github.com/NIEM/NIEM-JSON-Spec
+
+
+

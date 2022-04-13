@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Context",
+  "description": "Informs scope within the construction process of a Creative Work.",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "Context"
+    },
+    "identifier": {
+      "title": "identifier",
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    }
+  },
+  "additionalProperties": false
+}

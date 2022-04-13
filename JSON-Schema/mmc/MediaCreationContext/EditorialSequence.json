@@ -1,0 +1,44 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "Editorial Sequence",
+	"description": "A sequence of shots linked to creative intent.",
+	"properties": {
+		"entityType": {
+			"title": "Entity Type",
+			"type": "string",
+			"const": "EditorialSequence"
+		},
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"instance": {
+			"$ref": "../Model/definitions.json#/properties/instance"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json#/properties/identifier"
+		},
+		"description": {
+			"title": "Description",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"name": {
+			"type": "string"
+		},
+		"sequenceChronologyDescriptor": {
+			"type": "array",
+			"items": {
+				"properties": {
+					"order": {
+						"type": "number"
+					},
+					"Shot": {"$ref": "./Shot.json"}
+				}
+			}
+		}
+	},
+	"additionalProperties": true
+}

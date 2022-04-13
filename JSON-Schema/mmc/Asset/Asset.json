@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Asset",
+  "description": "A physical or digital object or collection of objects specific to the creation of the Creative Work.",
+  "required": [
+    "identifier",
+    "entityType"
+  ],
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "Asset"
+    },
+    "schemaVersion": {
+      "$ref": "../Model/definitions.json#/properties/schemaVersion"
+    },
+    "instance": {
+      "$ref": "../Model/definitions.json#/properties/instance"
+    },
+    "identifier": {
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Name"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Description"
+    },
+    "assetGroup": {
+      "type": "array",
+      "description": "The group of Assets that jointly comprise this Asset",
+      "items": {
+        "$ref": "./Asset.json"
+      }
+    },
+    "StructuralCharacteristics": {
+      "title": "StructuralCharacteristics",
+      "$ref": "./AssetSC.json"
+    },
+    "FunctionalCharacteristics": {
+      "title": "Functional Characteristics",
+      "$ref": "./AssetFC.json"
+    }
+  },
+  "$defs": {}
+}

@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Character",
+  "description": "A sentient entity (usually a person but not always) in the script whose specific identity is consequential to the narrative. A Character is generally identified by a specific name.",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "Character"
+    },
+    "identifier": {
+      "title": "identifier",
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "characterName": {
+      "title": "Character Name",
+      "$ref": "../Utility/completeName.json"
+    },
+    "description": {
+      "type": "string",
+      "title": "Character Description",
+      "description": "A brief description of the character"
+    },
+    "profile": {
+      "type": "object",
+      "title": "Profile",
+      "properties": {
+        "physicalCharacteristics": {
+          "type": "object",
+          "title": "Physical Characteristics",
+          "description": "Allows for the the description of certain physical characteristics on a character, things that might be useful to an art department, wardrobe or casting for example.",
+          "properties": {
+            "species": {
+              "type": "string",
+              "title": "Species",
+              "description": "A species to which this character belongs",
+              "examples": [
+                "Human",
+                "Borg",
+                "Goblin",
+                "Frog"
+              ]
+            },
+            "hairColor": {
+              "type": "string",
+              "title": "Hair Color",
+              "description": "The hair color of the character",
+              "examples": [
+                "Brown",
+                "Pink",
+                "Blonde",
+                ""
+              ]
+            },
+            "hairLength": {
+              "type": "string",
+              "title": "Hair Length",
+              "description": "The length of hair of the character"
+            },
+            "eyeColor": {
+              "type": "string",
+              "title": "Eye Color",
+              "description": "The color of the characters eyes"
+            },
+            "height": {
+              "title": "height",
+              "$ref": "../Utility/unitOfMeasurement.json#/properties/linearDistance"
+            },
+            "weight": {
+              "title": "weight",
+              "$ref": "../Utility/unitOfMeasurement.json#/properties/weight"
+            }
+          },
+          "additionalProperties": false
+        },
+        "gender": {
+          "$ref": "../Utility/gender.json"
+        },
+        "background": {
+          "type": "object",
+          "title": "background",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "Context": {
+      "type": "object",
+      "title": "Context",
+      "properties": {
+        "entityType": {
+          "type": "string",
+          "title": "Entity Type",
+          "const": "Context"
+        },
+        "identifier": {
+          "title": "identifier",
+          "$ref": "../Utility/identifier.json#/properties/identifier"
+        },
+        "hasRelatedAsset": {
+          "type": "object",
+          "title": "hasRelatedAsset",
+          "properties": {
+            "Asset": {
+              "type": "array",
+              "items": {
+                "$ref": "../Asset/Asset.json"
+              }
+            }
+          }
+        },
+        "uses": {
+          "type": "object",
+          "title": "uses",
+          "properties": {
+            "NarrativeProp": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeProp.json"
+              }
+            }
+          }
+        },
+        "usesWardrobe": {
+          "type": "object",
+          "title": "usesWardrobe",
+          "properties": {
+            "NarrativeWardrobe": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeWardrobe.json"
+              }
+            }
+          }
+        },
+        "appearsIn": {
+          "type": "object",
+          "title": "appearsIn",
+          "properties": {
+            "NarrativeScene": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeScene.json"
+              }
+            }
+          },
+          "additionalItems": true
+        },
+        "isPortrayedBy": {
+          "type": "object",
+          "title": "isPortrayedBy",
+          "properties": {
+            "Participant": {
+              "type": "array",
+              "items": {
+                "$ref": "../Participant/Participant.json"
+              }
+            }
+          }
+        },
+        "hasCostume": {
+          "type": "object",
+          "title": "hasCostume",
+          "properties": {
+            "Costume": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/Costume.json"
+              }
+            }
+          },
+          "additionalItems": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

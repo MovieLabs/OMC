@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Shot",
+  "description": "A discrete unit of visual narrative with a specified beginning and end.",
+  "properties": {
+		"entityType": {
+			"title": "Entity Type",
+			"type": "string",
+			"const": "Shot"
+		},
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"instance": {
+			"$ref": "../Model/definitions.json#/properties/instance"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json#/properties/identifier"
+		},
+		"description": {
+			"title": "A brief description of this shot",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"shotName": {
+			"type": "string",
+			"description": "A human readable name for the shot"
+		},
+		"Context": {
+			"type": "object",
+			"properties": {
+				"hasRelatedAsset": {
+					"$ref": "../Asset/Asset.json"
+				},
+				"inProductionScene": {
+					"$ref": "./ProductionScene.json"
+				}
+			}
+			
+		}
+  },
+  "additionalProperties": true
+}

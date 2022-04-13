@@ -14,6 +14,7 @@
 			<File FilePath="MediaCreationContext\Context.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\Costume.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\CreativeWork.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\EditorialSequence.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\NarrativeLocation.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\NarrativeProp.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\NarrativeScene.json" HomeFolder="Yes"/>

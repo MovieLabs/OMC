@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Role",
+  "description": "A set of properties that define the role of a participant within the production",
+  "required": [
+    "identifier",
+    "entityType"
+  ],
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "Role"
+    },
+    "schemaVersion": {
+      "$ref": "../Model/definitions.json#/properties/schemaVersion"
+    },
+    "instance": {
+      "$ref": "../Model/definitions.json#/properties/instance"
+    },
+    "identifier": {
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "name": {
+      "type": "string",
+      "title": "Role Name",
+      "examples": [
+        "Director",
+        "Producer",
+        "Composer",
+        "Art Department"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "title": "Role Description"
+    },
+    "taskGroup": {
+      "type": "array",
+      "items": {
+        "$ref": "../Task/Task.json"
+      }
+    },
+    "participantGroup": {
+      "type": "array",
+      "items": {
+        "$ref": "../Participant/Participant.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Creative Work",
+  "description": "A uniquely identified production.",
+  "properties": {
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "CreativeWork"
+    },
+    "identifier": {
+      "title": "identifier",
+      "$ref": "../Utility/identifier.json#/properties/identifier"
+    },
+    "title": {
+      "type": "string",
+      "title": "Title"
+    },
+    "approximateLength": {
+      "type": "string",
+      "title": "Approximate Length"
+    },
+    "countryOfOrigin": {
+      "type": "string",
+      "title": "Country of Origin"
+    },
+    "originalLanguage": {
+      "type": "array",
+      "title": "Original Languages",
+      "additionalItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "Context": {
+      "type": "object",
+      "title": "Context",
+      "properties": {
+        "entityType": {
+          "type": "string",
+          "title": "Entity Type",
+          "const": "Context"
+        },
+        "identifier": {
+          "title": "identifier",
+          "$ref": "../Utility/identifier.json#/properties/identifier"
+        },
+        "hasProductionCompany": {
+          "type": "object",
+          "title": "hasProductionCompany",
+          "properties": {
+            "Participany": {
+              "type": "array",
+              "items": {
+                "$ref": "../Participant/Participant.json"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
