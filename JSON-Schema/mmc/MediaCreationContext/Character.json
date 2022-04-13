@@ -11,7 +11,7 @@
     },
     "identifier": {
       "title": "identifier",
-      "$ref": "../Utility/identifier.json#/properties/identifier"
+      "$ref": "../Utility/identifier.json"
     },
     "characterName": {
       "title": "Character Name",
@@ -96,7 +96,7 @@
         },
         "identifier": {
           "title": "identifier",
-          "$ref": "../Utility/identifier.json#/properties/identifier"
+          "$ref": "../Utility/identifier.json"
         },
         "hasRelatedAsset": {
           "type": "object",

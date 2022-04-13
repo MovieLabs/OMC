@@ -10,7 +10,7 @@
 		},
 		"schemaVersion": {"$ref":"../Model/definitions.json#/properties/schemaVersion"},
 		"instance": {"$ref":"../Model/definitions.json#/properties/instance"},
-		"identifier": {"$ref":"../Utility/identifier.json#/properties/identifier"},
+		"identifier": {"$ref":"../Utility/identifier.json"},
 		"name": {
 			"type": ["string","null"],
 			"title": "Infrastructure Name"

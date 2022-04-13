@@ -11,7 +11,7 @@
     },
     "identifier": {
       "title": "identifier",
-      "$ref": "../Utility/identifier.json#/properties/identifier"
+      "$ref": "../Utility/identifier.json"
     },
     "title": {
       "type": "string",
@@ -44,7 +44,7 @@
         },
         "identifier": {
           "title": "identifier",
-          "$ref": "../Utility/identifier.json#/properties/identifier"
+          "$ref": "../Utility/identifier.json"
         },
         "hasProductionCompany": {
           "type": "object",

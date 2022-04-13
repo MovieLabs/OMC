@@ -11,7 +11,7 @@
     },
     "identifier": {
       "title": "identifier",
-      "$ref": "../Utility/identifier.json#/properties/identifier"
+      "$ref": "../Utility/identifier.json"
     }
   },
   "additionalProperties": false

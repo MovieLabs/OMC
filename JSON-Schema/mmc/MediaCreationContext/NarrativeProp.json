@@ -18,7 +18,7 @@
     },
     "identifier": {
       "title": "identifier",
-      "$ref": "../Utility/identifier.json#/properties/identifier"
+      "$ref": "../Utility/identifier.json"
     },
     "name": {
       "type": "string",
@@ -39,7 +39,7 @@
         },
         "identifier": {
           "title": "identifier",
-          "$ref": "../Utility/identifier.json#/properties/identifier"
+          "$ref": "../Utility/identifier.json"
         },
         "isUsedIn": {
           "type": "object",
