@@ -1,31 +1,28 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"title": "identifier",
-	"description": "An identifier uniquely identifies an entity within a particular scope.",
-	"properties": {
-		"identifier": {
-			"type": "array",
-			"title": "identifier",
-			"additionalItems": true,
-			"items": {
-				"type": "object",
-				"required": ["identifierScope", "identifierValue"],
-				"properties": {
-					"identifierScope": {
-						"type": "string",
-						"title": "Identifier Scope",
-						"description": "The universe within which an identifier is valid and unique."
-					},
-					"identifierValue": {
-						"type": "string",
-						"title": "Identifier Value",
-						"description": "A string of characters that uniquely identifies an object within a particular scope."
-					}
-				},
-				"additionalProperties": false
-			}
-		}
-	},
-	"additionalProperties": false
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "identifier",
+  "description": "An identifier uniquely identifies an entity within a particular scope.",
+  "additionalItems": false,
+  "items": {
+    "type": "object",
+    "required": [
+      "identifierScope",
+      "identifierValue"
+    ],
+    "properties": {
+      "identifierScope": {
+        "type": "string",
+        "title": "Identifier Scope",
+        "description": "The universe within which an identifier is valid and unique."
+      },
+      "identifierValue": {
+        "type": "string",
+        "title": "Identifier Value",
+        "description": "A string of characters that uniquely identifies an object within a particular scope."
+      }
+    },
+    "additionalProperties": false
+  },
+  "additionalProperties": false
 }
