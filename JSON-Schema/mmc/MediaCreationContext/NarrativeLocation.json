@@ -1,29 +1,35 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "NarrativeLocation",
-  "description": "A location specified or implied by the narrative.",
-  "properties": {
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "NarrativeLocation"
-    },
-    "identifier": {
-      "title": "identifier",
-      "$ref": "../Utility/identifier.json"
-    },
-    "Location": {
-      "$ref": "../Utility/Location.json"
-    },
-    "name": {
-      "type": "string",
-      "title": "Name"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description"
-    }
-  },
-  "additionalProperties": false
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "NarrativeLocation",
+	"description": "A location specified or implied by the narrative.",
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"instance": {
+			"$ref": "../Model/definitions.json#/properties/instance"
+		},
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "NarrativeLocation"
+		},
+		"identifier": {
+			"title": "identifier",
+			"$ref": "../Utility/identifier.json"
+		},
+		"Location": {
+			"$ref": "../Utility/Location.json"
+		},
+		"name": {
+			"type": "string",
+			"title": "Name"
+		},
+		"description": {
+			"type": "string",
+			"title": "Description"
+		}
+	},
+	"additionalProperties": true
 }

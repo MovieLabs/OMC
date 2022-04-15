@@ -31,7 +31,31 @@
       "title": "Scene Number",
       "description": "A number tied to a Slugline when a Script is locked"
     },
-    "Context": {}
+    "Context": {
+      "type": "object",
+      "properties": {
+        "entityType": {
+          "type": "string",
+          "title": "Entity Type",
+          "const": "Context"
+        },
+        "schemaVersion": {
+          "$ref": "../Model/definitions.json#/properties/schemaVersion"
+        },
+        "instance": {
+          "$ref": "../Model/definitions.json#/properties/instance"
+        },
+        "identifier": {
+          "$ref": "../Utility/identifier.json"
+        },
+        "hasStoryBoard": {
+          "type": "object",
+          "properties": {
+            "ProductionScene": {"$ref": "./StoryBoard.json"}
+          }
+        }
+      }
+    }
   },
   "additionalProperties": true
 }

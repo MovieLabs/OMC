@@ -15,9 +15,11 @@
 			<File FilePath="MediaCreationContext\Costume.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\CreativeWork.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\EditorialSequence.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\NarrativeGreenery.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\NarrativeLocation.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\NarrativeProp.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\NarrativeScene.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\NarrativeVehicle.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\NarrativeWardrobe.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\ProductionLocation.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\ProductionProp.json" HomeFolder="Yes"/>
@@ -25,6 +27,7 @@
 			<File FilePath="MediaCreationContext\SetDressing.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\Shot.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\Slate.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\StoryBoard.json" HomeFolder="Yes"/>
 		</Folder>
 		<Folder FolderName="Model">
 			<File FilePath="Model\definitions.json" HomeFolder="Yes"/>

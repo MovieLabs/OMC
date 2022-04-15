@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Story Board",
+  "description": "A series of images that forms a visual representation of some part of the narrative.",
+  "required": [
+    "identifier",
+    "entityType"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "entityType": {
+      "title": "Entity Type",
+      "type": "string",
+      "const": "StoryBoard"
+    },
+    "schemaVersion": {
+      "$ref": "../Model/definitions.json#/properties/schemaVersion"
+    },
+    "instance": {
+      "$ref": "../Model/definitions.json#/properties/instance"
+    },
+    "identifier": {
+      "$ref": "../Utility/identifier.json"
+    },
+    "description": {
+      "title": "Storyboard Description",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "name": {
+      "title": "Storyboard name",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chronologyDescriptor": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "order": {
+            "type": "number"
+          },
+          "Asset": {
+            "$ref": "../Asset/Asset.json"
+          }
+        }
+      }
+    },
+    "Context": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "entityType": {
+          "type": "string",
+          "title": "Entity Type",
+          "const": "Context"
+        },
+        "schemaVersion": {
+          "$ref": "../Model/definitions.json#/properties/schemaVersion"
+        },
+        "instance": {
+          "$ref": "../Model/definitions.json#/properties/instance"
+        },
+        "identifier": {
+          "$ref": "../Utility/identifier.json"
+        },
+        "isStoryBoardFor": {
+          "type": "object",
+          "title": "isStoryBoardFor",
+          "properties": {
+            "ProductionScene": {
+              "type": "array",
+              "items": {
+                "$ref": "./ProductionScene.json"
+              }
+            },
+            "NarrativeScene": {
+              "type": "array",
+              "items": {
+                "$ref": "./NarrativeScene.json"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

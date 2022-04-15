@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "title": "NarrativeVehicle",
-  "description": "A Vehicle as specified or implied by the narrative.",
+  "title": "NarrativeProp",
+  "description": "A Prop as specified or implied by the narrative.",
   "properties": {
     "schemaVersion": {
       "title": "schemaVersion",
@@ -11,7 +11,7 @@
     "entityType": {
       "type": "string",
       "title": "Entity Type",
-      "const": "NarrativeProp"
+      "const": "NarrativeVehicle"
     },
     "instance": {
       "$ref": "../Model/instance.json"
@@ -50,6 +50,19 @@
               "type": "array",
               "items": {
                 "$ref": "../MediaCreationContext/NarrativeScene.json"
+              }
+            }
+          }
+        },
+        "isDepictedBy": {
+          "type": "object",
+          "title": "isDepictedBy",
+          "additionalItems": true,
+          "properties": {
+            "NarrativeWardrobe": {
+              "type": "array",
+              "items": {
+                "$ref": "../MediaCreationContext/NarrativeWardrobe.json"
               }
             }
           }

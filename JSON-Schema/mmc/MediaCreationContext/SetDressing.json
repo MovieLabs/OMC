@@ -4,10 +4,17 @@
   "title": "SetDressing",
   "description": "Objects used on set to create and enhance the environment.",
   "properties": {
+    "schemaVersion": {
+      "title": "schemaVersion",
+      "$ref": "../Model/schema.json#/properties/schemaVersion"
+    },
     "entityType": {
       "type": "string",
       "title": "Entity Type",
       "const": "SetDressing"
+    },
+    "instance": {
+      "$ref": "../Model/instance.json"
     },
     "identifier": {
       "title": "identifier",
@@ -47,8 +54,8 @@
           }
         }
       },
-      "additionalProperties": false
+      "additionalProperties": true
     }
   },
-  "additionalProperties": false
+  "additionalProperties": true
 }

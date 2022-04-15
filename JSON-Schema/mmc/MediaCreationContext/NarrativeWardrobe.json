@@ -4,10 +4,17 @@
   "title": "NarrativeWardrobe",
   "description": "The clothing for a Character in the narrative.",
   "properties": {
+  	"schemaVersion": {
+      "title": "schemaVersion",
+      "$ref": "../Model/schema.json#/properties/schemaVersion"
+    },
     "entityType": {
       "type": "string",
       "title": "Entity Type",
       "const": "NarrativeWardrobe"
+    },
+    "instance": {
+      "$ref": "../Model/instance.json"
     },
     "identifier": {
       "title": "identifier",
@@ -22,5 +29,5 @@
       "title": "Description"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": true
 }

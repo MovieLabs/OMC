@@ -7,10 +7,15 @@
     "entityType": {
       "type": "string",
       "title": "Entity Type",
-      "const": "Context"
+      "const": "Asset"
+    },
+    "schemaVersion": {
+      "$ref": "../Model/definitions.json#/properties/schemaVersion"
+    },
+    "instance": {
+      "$ref": "../Model/definitions.json#/properties/instance"
     },
     "identifier": {
-      "title": "identifier",
       "$ref": "../Utility/identifier.json"
     }
   },

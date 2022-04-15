@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "title": "NarrativeVehicle",
-  "description": "A Vehicle as specified or implied by the narrative.",
+  "title": "NarrativeGreenery",
+  "description": "Greenery as specified or implied by the narrative.",
   "properties": {
     "schemaVersion": {
       "title": "schemaVersion",
@@ -11,7 +11,7 @@
     "entityType": {
       "type": "string",
       "title": "Entity Type",
-      "const": "NarrativeProp"
+      "const": "NarrativeGreenery"
     },
     "instance": {
       "$ref": "../Model/instance.json"
@@ -22,7 +22,7 @@
     },
     "name": {
       "type": "string",
-      "title": "Narrative Prop Name"
+      "title": "Narrative Greenery Name"
     },
     "description": {
       "type": "string",
@@ -60,3 +60,4 @@
   },
   "additionalProperties": true
 }
+
