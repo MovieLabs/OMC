@@ -67,7 +67,7 @@
 					"type": "object",
 					"title": "hasStoryBoard",
 					"properties": {
-						"StoryBoard": {
+						"Storyboard": {
 							"type": "array",
 							"items": {
 								"$ref": "../MediaCreationContext/Storyboard.json"

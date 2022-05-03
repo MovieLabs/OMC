@@ -72,6 +72,18 @@
 							}
 						}
 					}
+				},
+				"isWardrobeFor": {
+					"title": "isWardrobeFor",
+					"type": "object",
+					"properties": {
+						"Character": {
+							"type": "array",
+							"items": {
+								"$ref": "../MediaCreationContext/Character.json"
+							}
+						}
+					}
 				}
 			},
 			"additionalProperties": true
