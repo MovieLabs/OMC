@@ -6,10 +6,10 @@
     "schemaVersion": {
       "type": "string",
       "title": "schemaVersion",
-      "description": "The version number of the schema in MODEL-ADDITION-REVISION",
+      "description": "The version number of the schema in use for this instance",
       "pattern": "^[0-9]{1,}.[0-9]{1,}.[0-9]{1,}$",
       "examples": [
-        "1.2.1"
+        "1.2.1", "6.0.0"
       ]
     }
   },

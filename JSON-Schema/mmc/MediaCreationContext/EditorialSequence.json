@@ -1,16 +1,20 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
 	"title": "Editorial Sequence",
 	"description": "A sequence of shots linked to creative intent.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier"
+	],
 	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
 		"entityType": {
 			"title": "Entity Type",
 			"type": "string",
 			"const": "EditorialSequence"
-		},
-		"schemaVersion": {
-			"$ref": "../Model/definitions.json#/properties/schemaVersion"
 		},
 		"instance": {
 			"$ref": "../Model/definitions.json#/properties/instance"
@@ -18,15 +22,21 @@
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
 		},
-		"description": {
-			"title": "Description",
+		"name": {
+			"title": "Editorial Sequence Name",
+			"description": "A human readable name for the editorial sequence",
 			"type": [
 				"string",
 				"null"
 			]
 		},
-		"name": {
-			"type": "string"
+		"description": {
+			"title": "Editorial Sequence Description",
+			"description": "A brief description of the editorial sequence",
+			"type": [
+				"string",
+				"null"
+			]
 		},
 		"sequenceChronologyDescriptor": {
 			"type": "array",
@@ -35,9 +45,37 @@
 					"order": {
 						"type": "number"
 					},
-					"Shot": {"$ref": "./Shot.json"}
+					"Shot": {
+						"$ref": "./Shot.json"
+					}
 				}
 			}
+		},
+		"Context": {
+			"title": "Editorial Sequence Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				}
+			},
+			"additionalProperties": true
 		}
 	},
 	"additionalProperties": true

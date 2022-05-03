@@ -1,63 +1,134 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "Slate",
-  "description": "Used to capture key identifying information about what is being recorded on any given setup and take.",
-  "properties": {
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "Slate"
-    },
-    "identifier": {
-      "title": "identifier",
-      "$ref": "../Utility/identifier.json"
-    },
-    "CreativeWork": {
-      "type": "string",
-      "title": "Creative Work"
-    },
-    "slateUID": {
-      "type": "string",
-      "title": "Slate UID",
-      "description": "Slate Unique Identifier"
-    },
-    "productionScene": {
-      "type": "string",
-      "title": "Production Scene",
-      "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
-    },
-    "cameraUnit": {
-      "type": "string",
-      "title": "Camera Unit",
-      "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
-    },
-    "cameraRoll": {
-      "type": "string",
-      "title": "Camera Roll",
-      "description": "Identifier for a group of events captured together on the same camera on the same media."
-    },
-    "soundRoll": {
-      "type": "string",
-      "title": "Sound Roll",
-      "description": "Identifier for a group of audio events captured together on the same recording device and same media."
-    },
-    "shootDate": {
-      "type": "string",
-      "title": "Shoot Date",
-      "description": "The date of capture."
-    },
-    "shootDay": {
-      "type": "string",
-      "title": "Shoot Day",
-      "description": "The number of the day on the shooting schedule."
-    },
-    "Director": {
-      "$ref": "../Participant/Participant.json"
-    }
-  },
-  "additionalProperties": false,
-  "required": [
-    "slateUID"
-  ]
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Slate",
+	"description": "Used to capture key identifying information about what is being recorded on any given setup and take.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier",
+		"slateUID"
+	],
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "Slate"
+		},
+		"instance": {
+			"$ref": "../Model/instance.json"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
+		"CreativeWork": {
+			"$ref": "./CreativeWork.json"
+		},
+		"slateUID": {
+			"title": "Slate UID",
+			"description": "Slate Unique Identifier",
+			"type": "string"
+		},
+		"productionScene": {
+			"title": "Production Scene",
+			"description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit.",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"cameraUnit": {
+			"title": "Camera Unit",
+			"description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit.",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"cameraRoll": {
+			"title": "Camera Roll",
+			"description": "Identifier for a group of events captured together on the same camera on the same media.",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"soundRoll": {
+			"title": "Sound Roll",
+			"description": "Identifier for a group of audio events captured together on the same recording device and same media.",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"shootDate": {
+			"title": "Shoot Date",
+			"description": "The date of capture.",
+			"oneOf": [
+				{
+					"$ref": "../Utility/time.json#/properties/dateTime"
+				},
+				{
+					"type": "null"
+				}
+			]
+		},
+		"shootDay": {
+			"title": "Shoot Day",
+			"description": "The number of the day on the shooting schedule.",
+			"type": [
+				"number",
+				"null"
+			]
+		},
+		"Director": {
+			"type": "array",
+			"items": [
+				{
+					"$ref": "../Participant/Participant.json"
+				}
+			]
+		},
+		"Context": {
+			"title": "Slate Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
+				"isSlateFor": {
+					"title": "isSlateFor",
+					"type": "object",
+					"properties": {
+						"ProductionScene": {
+							"type": "array",
+							"items": {
+								"$ref": "../MediaCreationContext/ProductionScene.json"
+							}
+						}
+					}
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
 }

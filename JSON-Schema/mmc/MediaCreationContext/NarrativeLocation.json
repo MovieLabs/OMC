@@ -1,34 +1,71 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
 	"title": "NarrativeLocation",
 	"description": "A location specified or implied by the narrative.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier"
+	],
 	"properties": {
 		"schemaVersion": {
 			"$ref": "../Model/definitions.json#/properties/schemaVersion"
-		},
-		"instance": {
-			"$ref": "../Model/definitions.json#/properties/instance"
 		},
 		"entityType": {
 			"type": "string",
 			"title": "Entity Type",
 			"const": "NarrativeLocation"
 		},
+		"instance": {
+			"$ref": "../Model/instance.json"
+		},
 		"identifier": {
-			"title": "identifier",
 			"$ref": "../Utility/identifier.json"
+		},
+		"name": {
+			"title": "Narrative Location Name",
+			"description": "A human readable name for the location",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"description": {
+			"title": "Narrative Location Description",
+			"description": "A brief description of the narrative location",
+			"type": [
+				"string",
+				"null"
+			]
 		},
 		"Location": {
 			"$ref": "../Utility/Location.json"
 		},
-		"name": {
-			"type": "string",
-			"title": "Name"
-		},
-		"description": {
-			"type": "string",
-			"title": "Description"
+		"Context": {
+			"title": "Narrative Location Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				}
+			},
+			"additionalProperties": true
 		}
 	},
 	"additionalProperties": true

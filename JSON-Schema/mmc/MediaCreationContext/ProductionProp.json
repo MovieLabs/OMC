@@ -1,26 +1,81 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "ProductionProp",
-  "description": "A Depiction of the Narrative Prop.",
-  "properties": {
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "ProductionProp"
-    },
-    "identifier": {
-      "title": "identifier",
-      "$ref": "../Utility/identifier.json"
-    },
-    "productionPropName": {
-      "type": "string",
-      "title": "Name"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description"
-    }
-  },
-  "additionalProperties": false
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "ProductionProp",
+	"description": "A Depiction of the Narrative Prop.",
+	"required": [
+		"entityType",
+		"identifier"
+	],
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"entityType": {
+			"title": "Entity Type",
+			"type": "string",
+			"const": "ProductionProp"
+		},
+		"instance": {
+			"$ref": "../Model/instance.json"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
+		"name": {
+			"title": "Production Prop Name",
+			"description": "A human readable name for the prop",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"description": {
+			"title": "Production Prop Description",
+			"description": "A brief description of the production prop",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"Context": {
+			"title": "Production Prop Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
+				"isUsedIn": {
+					"title": "isUsedIn",
+					"type": "object",
+					"properties": {
+						"ProductionScene": {
+							"type": "array",
+							"items": {
+								"$ref": "../MediaCreationContext/ProductionScene.json"
+							}
+						}
+					}
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
 }

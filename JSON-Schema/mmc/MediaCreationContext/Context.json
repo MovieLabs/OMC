@@ -1,23 +1,27 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "Context",
-  "description": "Informs scope within the construction process of a Creative Work.",
-  "properties": {
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "Asset"
-    },
-    "schemaVersion": {
-      "$ref": "../Model/definitions.json#/properties/schemaVersion"
-    },
-    "instance": {
-      "$ref": "../Model/definitions.json#/properties/instance"
-    },
-    "identifier": {
-      "$ref": "../Utility/identifier.json"
-    }
-  },
-  "additionalProperties": false
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "Context",
+	"description": "Informs scope within the construction process of a Creative Work.",
+	"required": [
+		"entityType",
+		"identifier"
+	],
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "Context"
+		},
+		"instance": {
+			"$ref": "../Model/definitions.json#/properties/instance"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		}
+	},
+	"additionalProperties": true
 }

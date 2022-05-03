@@ -1,12 +1,15 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"title": "NarrativeScene",
+	"title": "Narrative Scene",
 	"description": "Taken from the narrative itself and traditionally defined by creative intent and typically a unity of time, place, action, or theme.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier"
+	],
 	"properties": {
 		"schemaVersion": {
-			"title": "schemaVersion",
-			"$ref": "../Model/schema.json#/properties/schemaVersion"
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
 		},
 		"entityType": {
 			"type": "string",
@@ -17,16 +20,23 @@
 			"$ref": "../Model/instance.json"
 		},
 		"identifier": {
-			"title": "identifier",
 			"$ref": "../Utility/identifier.json"
 		},
 		"name": {
-			"type": "string",
-			"title": "Scene Name"
+			"title": "Narrative Scene Name",
+			"description": "A human readable name for the scene",
+			"type": [
+				"string",
+				"null"
+			]
 		},
 		"description": {
-			"type": "string",
-			"title": "Description"
+			"title": "Narrative Scene Description",
+			"description": "A brief description of the narrative scene",
+			"type": [
+				"string",
+				"null"
+			]
 		},
 		"slugline": {
 			"type": "array",
@@ -37,38 +47,36 @@
 			}
 		},
 		"Context": {
+			"title": "Narrative Scene Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
 			"type": "object",
-			"title": "Context",
+			"required": [
+				"entityType",
+				"identifier"
+			],
 			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
 				"entityType": {
 					"type": "string",
 					"title": "Entity Type",
 					"const": "Context"
 				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
 				"identifier": {
-					"title": "identifier",
 					"$ref": "../Utility/identifier.json"
 				},
 				"uses": {
 					"type": "object",
 					"title": "usesProp",
 					"properties": {
-						"NarrativeGreenery": {
-							"type": "array",
-							"items": {
-								"$ref": "../MediaCreationContext/NarrativeGreenery.json"
-							}
-						},
 						"SetDressing": {
 							"type": "array",
 							"items": {
 								"$ref": "../MediaCreationContext/SetDressing.json"
-							}
-						},
-						"NarrativeVehicle": {
-							"type": "array",
-							"items": {
-								"$ref": "../MediaCreationContext/NarrativeVehicle.json"
 							}
 						}
 					}
@@ -113,10 +121,10 @@
 					"type": "object",
 					"title": "hasStoryBoard",
 					"properties": {
-						"Character": {
+						"StoryBoard": {
 							"type": "array",
 							"items": {
-								"$ref": "../MediaCreationContext/StoryBoard.json"
+								"$ref": "../MediaCreationContext/Storyboard.json"
 							}
 						}
 					}

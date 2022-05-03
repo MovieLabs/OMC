@@ -1,61 +1,82 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "ProductionScene",
-  "description": "Defined either by explicit divisions in the structure of the Script, e.g., by a Slugline, or by additional capture for use in the Creative Work that is not tied to any particular Scene in the Script.",
-  "properties": {
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "ProductionScene"
-    },
-    "identifier": {
-      "title": "identifier",
-      "$ref": "../Utility/identifier.json"
-    },
-    "sceneHeader": {
-      "type": "string",
-      "title": "Scene Header"
-    },
-    "sceneDescriptor": {
-      "type": "string",
-      "title": "Scene Descriptor",
-      "description": "An alphanumeric reference to a Production Scene"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description"
-    },
-    "sceneNumber": {
-      "type": "string",
-      "title": "Scene Number",
-      "description": "A number tied to a Slugline when a Script is locked"
-    },
-    "Context": {
-      "type": "object",
-      "properties": {
-        "entityType": {
-          "type": "string",
-          "title": "Entity Type",
-          "const": "Context"
-        },
-        "schemaVersion": {
-          "$ref": "../Model/definitions.json#/properties/schemaVersion"
-        },
-        "instance": {
-          "$ref": "../Model/definitions.json#/properties/instance"
-        },
-        "identifier": {
-          "$ref": "../Utility/identifier.json"
-        },
-        "hasStoryBoard": {
-          "type": "object",
-          "properties": {
-            "ProductionScene": {"$ref": "./StoryBoard.json"}
-          }
-        }
-      }
-    }
-  },
-  "additionalProperties": true
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "ProductionScene",
+	"description": "Defined either by explicit divisions in the structure of the Script, e.g., by a Slugline, or by additional capture for use in the Creative Work that is not tied to any particular Scene in the Script.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier"
+	],
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "ProductionScene"
+		},
+		"instance": {
+			"$ref": "../Model/instance.json"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
+		"sceneHeader": {
+			"type": "string",
+			"title": "Scene Header"
+		},
+		"sceneDescriptor": {
+			"type": "string",
+			"title": "Scene Descriptor",
+			"description": "An alphanumeric reference to a Production Scene"
+		},
+		"description": {
+			"type": "string",
+			"title": "Description"
+		},
+		"sceneNumber": {
+			"type": "string",
+			"title": "Scene Number",
+			"description": "A number tied to a Slugline when a Script is locked"
+		},
+		"Context": {
+			"title": "Production Scene Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
+				"hasStoryBoard": {
+					"type": "object",
+					"title": "hasStoryBoard",
+					"properties": {
+						"StoryBoard": {
+							"type": "array",
+							"items": {
+								"$ref": "../MediaCreationContext/Storyboard.json"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"additionalProperties": true
 }

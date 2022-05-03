@@ -1,65 +1,80 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "Creative Work",
-  "description": "A uniquely identified production.",
-  "properties": {
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "CreativeWork"
-    },
-    "identifier": {
-      "title": "identifier",
-      "$ref": "../Utility/identifier.json"
-    },
-    "title": {
-      "type": "string",
-      "title": "Title"
-    },
-    "approximateLength": {
-      "type": "string",
-      "title": "Approximate Length"
-    },
-    "countryOfOrigin": {
-      "type": "string",
-      "title": "Country of Origin"
-    },
-    "originalLanguage": {
-      "type": "array",
-      "title": "Original Languages",
-      "additionalItems": true,
-      "items": {
-        "type": "string"
-      }
-    },
-    "Context": {
-      "type": "object",
-      "title": "Context",
-      "properties": {
-        "entityType": {
-          "type": "string",
-          "title": "Entity Type",
-          "const": "Context"
-        },
-        "identifier": {
-          "title": "identifier",
-          "$ref": "../Utility/identifier.json"
-        },
-        "hasProductionCompany": {
-          "type": "object",
-          "title": "hasProductionCompany",
-          "properties": {
-            "Participany": {
-              "type": "array",
-              "items": {
-                "$ref": "../Participant/Participant.json"
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-  "additionalProperties": false
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Creative Work",
+	"description": "A uniquely identified production.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier"
+	],
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "CreativeWork"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
+		"title": {
+			"title": "Creative Work Title",
+			"type": "string"
+		},
+		"approximateLength": {
+			"title": "Approximate Length",
+			"type": "string"
+		},
+		"countryOfOrigin": {
+			"title": "Country of Origin",
+			"type": "string"
+		},
+		"originalLanguage": {
+			"title": "Original Languages",
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"Context": {
+			"title": "Creative Work Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
+				"hasProductionCompany": {
+					"title": "hasProductionCompany",
+					"type": "object",
+					"properties": {
+						"Participant": {
+							"type": "array",
+							"items": {
+								"$ref": "../Participant/Participant.json"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"additionalProperties": true
 }

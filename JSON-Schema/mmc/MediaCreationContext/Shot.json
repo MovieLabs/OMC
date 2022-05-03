@@ -1,46 +1,90 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "Shot",
-  "description": "A discrete unit of visual narrative with a specified beginning and end.",
-  "properties": {
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Shot",
+	"description": "A discrete unit of visual narrative with a specified beginning and end.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier"
+	],
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
 		"entityType": {
 			"title": "Entity Type",
 			"type": "string",
 			"const": "Shot"
 		},
-		"schemaVersion": {
-			"$ref": "../Model/definitions.json#/properties/schemaVersion"
-		},
 		"instance": {
-			"$ref": "../Model/definitions.json#/properties/instance"
+			"$ref": "../Model/instance.json"
 		},
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
 		},
+		"shotName": {
+			"title": "Shot Name",
+			"description": "A human readable name for the shot",
+			"type": "string"
+		},
 		"description": {
-			"title": "A brief description of this shot",
+			"title": "Shot Description",
+			"description": "A brief description of the shot",
 			"type": [
 				"string",
 				"null"
 			]
 		},
-		"shotName": {
-			"type": "string",
-			"description": "A human readable name for the shot"
-		},
 		"Context": {
+			"title": "Shot Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
 			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
 			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
 				"hasRelatedAsset": {
-					"$ref": "../Asset/Asset.json"
+					"title": "hasRelatedAsset",
+					"type": "object",
+					"properties": {
+						"Asset": {
+							"type": "array",
+							"items": {
+								"$ref": "../Asset/Asset.json"
+							}
+						}
+					}
 				},
 				"inProductionScene": {
-					"$ref": "./ProductionScene.json"
+					"title": "inProductionScene",
+					"type": "object",
+					"properties": {
+						"ProductionScene": {
+							"type": "array",
+							"items": {
+								"$ref": "./ProductionScene.json"
+							}
+						}
+					}
 				}
-			}
-
+			},
+			"additionalProperties": true
 		}
-  },
-  "additionalProperties": true
+	},
+	"additionalProperties": true
 }

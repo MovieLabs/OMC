@@ -1,92 +1,99 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "Story Board",
-  "description": "A series of images that forms a visual representation of some part of the narrative.",
-  "required": [
-    "identifier",
-    "entityType"
-  ],
-  "additionalProperties": true,
-  "properties": {
-    "entityType": {
-      "title": "Entity Type",
-      "type": "string",
-      "const": "StoryBoard"
-    },
-    "schemaVersion": {
-      "$ref": "../Model/definitions.json#/properties/schemaVersion"
-    },
-    "instance": {
-      "$ref": "../Model/definitions.json#/properties/instance"
-    },
-    "identifier": {
-      "$ref": "../Utility/identifier.json"
-    },
-    "description": {
-      "title": "Storyboard Description",
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "name": {
-      "title": "Storyboard name",
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "chronologyDescriptor": {
-      "type": "array",
-      "items": {
-        "properties": {
-          "order": {
-            "type": "number"
-          },
-          "Asset": {
-            "$ref": "../Asset/Asset.json"
-          }
-        }
-      }
-    },
-    "Context": {
-      "type": "object",
-      "additionalProperties": true,
-      "properties": {
-        "entityType": {
-          "type": "string",
-          "title": "Entity Type",
-          "const": "Context"
-        },
-        "schemaVersion": {
-          "$ref": "../Model/definitions.json#/properties/schemaVersion"
-        },
-        "instance": {
-          "$ref": "../Model/definitions.json#/properties/instance"
-        },
-        "identifier": {
-          "$ref": "../Utility/identifier.json"
-        },
-        "isStoryBoardFor": {
-          "type": "object",
-          "title": "isStoryBoardFor",
-          "properties": {
-            "ProductionScene": {
-              "type": "array",
-              "items": {
-                "$ref": "./ProductionScene.json"
-              }
-            },
-            "NarrativeScene": {
-              "type": "array",
-              "items": {
-                "$ref": "./NarrativeScene.json"
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Storyboard",
+	"description": "A series of images that forms a visual representation of some part of the narrative.",
+	"type": "object",
+	"required": [
+		"identifier",
+		"entityType"
+	],
+	"additionalProperties": true,
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"entityType": {
+			"title": "Entity Type",
+			"type": "string",
+			"const": "Storyboard"
+		},
+		"instance": {
+			"$ref": "../Model/instance.json"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
+		"name": {
+			"title": "Storyboard name",
+			"description": "A human readable name for the storyboard",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"description": {
+			"title": "Storyboard Description",
+			"description": "A brief description of the storyboard",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"chronologyDescriptor": {
+			"type": "array",
+			"items": {
+				"properties": {
+					"order": {
+						"type": "number"
+					},
+					"Asset": {
+						"$ref": "../Asset/Asset.json"
+					}
+				}
+			}
+		},
+		"Context": {
+			"title": "Storyboard Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
+				"isStoryboardFor": {
+					"title": "isStoryboardFor",
+					"type": "object",
+					"properties": {
+						"ProductionScene": {
+							"type": "array",
+							"items": {
+								"$ref": "./ProductionScene.json"
+							}
+						},
+						"NarrativeScene": {
+							"type": "array",
+							"items": {
+								"$ref": "./NarrativeScene.json"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

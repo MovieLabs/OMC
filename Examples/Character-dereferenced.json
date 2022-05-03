@@ -1,0 +1,177 @@
+{
+  "entityType": "Character",
+  "identifier": [
+    {
+      "identifierScope": "Celtx",
+      "identifierValue": "a39c79cbddf4219b83b91e3822134d3420a85423"
+    },
+    {
+      "identifierScope": "labkoat",
+      "identifierValue": "chr/j3uDueymOfsLwnE1H1BDI"
+    }
+  ],
+  "characterName": {
+    "scriptName": "Sven"
+  },
+  "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
+  "profile": {
+    "physicalCharacteristics": {
+      "species": null,
+      "hairColor": "Brown",
+      "hairLength": null,
+      "eyeColor": "Green",
+      "height": "1m90cm",
+      "weight": "80kg"
+    },
+    "gender": {
+      "gender": null,
+      "genderPronoun": null
+    },
+    "background": {
+      "likes": "Kiera, Space, Nature",
+      "dislikes": "War, big space cities, Conflict",
+      "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
+      "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
+    }
+  },
+  "Context": {
+    "entityType": "Context",
+    "appearsIn": {
+      "_NarrativeScene": [
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "YTTQHAUY"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/6OTfX8rmiAyijBYJKnHVE"
+            }
+          ],
+          "description": null,
+          "sceneDescriptor": null,
+          "slugline": [
+            "EXT",
+            "JUNGLE"
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "BaY2hfaJ"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/iw2fLMKb5YMuJ-znj0_H7"
+            }
+          ],
+          "description": null,
+          "sceneDescriptor": null,
+          "slugline": [
+            "EXT",
+            "JUNGLE"
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "ZVP8G8Y5"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/lzg7vBEguf-NNzSTuHUcN"
+            }
+          ],
+          "description": null,
+          "sceneDescriptor": null,
+          "slugline": [
+            "EXT",
+            "SPACE"
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "QTDbXQbm"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/p7aNmpZy2nu6zSI-zBdGv"
+            }
+          ],
+          "description": null,
+          "sceneDescriptor": null,
+          "slugline": [
+            "EXT",
+            "BEACH"
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "e2RJsdgs"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/SycR0dXbmp5l8lGMH1EvA"
+            }
+          ],
+          "description": null,
+          "sceneDescriptor": null,
+          "slugline": [
+            "EXT",
+            "PLATEAU"
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "XoitNs1U"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/WOtCfI1FHQ2xMFNzaQtj6"
+            }
+          ],
+          "description": null,
+          "sceneDescriptor": null,
+          "slugline": [
+            "EXT",
+            "SPACE"
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "R2AJJ7nB"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/ypw33iIrX2S7X_Q27mBrB"
+            }
+          ],
+          "description": null,
+          "sceneDescriptor": null,
+          "slugline": [
+            "EXT",
+            "ATMOSPHERE"
+          ]
+        }
+      ]
+    }
+  }
+}

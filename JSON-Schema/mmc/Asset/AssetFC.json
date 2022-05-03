@@ -3,16 +3,25 @@
 	"type": "object",
 	"title": "Asset Functional Characteristics",
 	"description": "A set of Functional Characteristics for Assets",
-	"required": ["identifier", "entityType"],
+	"required": [
+		"identifier",
+		"entityType"
+	],
 	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
 		"entityType": {
 			"type": "string",
 			"title": "Entity Type",
 			"const": "AssetFC"
 		},
-		"schemaVersion": { "$ref": "../Model/definitions.json#/properties/schemaVersion" },
-		"instance": { "$ref": "../Model/definitions.json#/properties/instance" },
-		"identifier": { "$ref": "../Utility/identifier.json" },
+		"instance": {
+			"$ref": "../Model/definitions.json#/properties/instance"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
 		"characteristics": {
 			"anyOf": [
 				{
@@ -40,5 +49,6 @@
 			]
 		}
 	},
-	"$defs": {}
+	"$defs": {
+	}
 }

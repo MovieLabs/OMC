@@ -1,33 +1,81 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "NarrativeWardrobe",
-  "description": "The clothing for a Character in the narrative.",
-  "properties": {
-  	"schemaVersion": {
-      "title": "schemaVersion",
-      "$ref": "../Model/schema.json#/properties/schemaVersion"
-    },
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "NarrativeWardrobe"
-    },
-    "instance": {
-      "$ref": "../Model/instance.json"
-    },
-    "identifier": {
-      "title": "identifier",
-      "$ref": "../Utility/identifier.json"
-    },
-    "name": {
-      "type": "string",
-      "title": "Name"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description"
-    }
-  },
-  "additionalProperties": true
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Narrative Wardrobe",
+	"description": "The clothing for a Character in the narrative.",
+	"type": "object",
+	"required": [
+		"entityType",
+		"identifier"
+	],
+	"properties": {
+		"schemaVersion": {
+			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		},
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "NarrativeWardrobe"
+		},
+		"instance": {
+			"$ref": "../Model/instance.json"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
+		"name": {
+			"title": "Narrative Wardrobe Name",
+			"description": "A human readable name for the narrative wardrobe",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"description": {
+			"title": "Narrative Wardrobe Description",
+			"description": "A brief description of the narrative wardrobe",
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"Context": {
+			"title": "Narrative Wardrobe Context",
+			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"schemaVersion": {
+					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"instance": {
+					"$ref": "../Model/instance.json"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
+				"isUsedIn": {
+					"title": "isUsedIn",
+					"type": "object",
+					"properties": {
+						"NarrativeScene": {
+							"type": "array",
+							"items": {
+								"$ref": "../MediaCreationContext/NarrativeScene.json"
+							}
+						}
+					}
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
 }
