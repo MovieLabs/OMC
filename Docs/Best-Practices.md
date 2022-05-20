@@ -1,6 +1,8 @@
 # Best Practices
 
+***[these are practices we follow, rather than practices people using the schema need, i think. i guess if they ad extension they should follow these, but maybe this should be renamed as 'Schema Practices' or some such]***
 
+***[some of this overlaps with th e'covnetions' seciton of th eintroductory document, and we shoudl decide where they go]***
 
 ## Schema Construction
 
@@ -10,11 +12,13 @@ Generally ambiguous naming of properties is avoided. Certain terms can often be 
 
 To that end properties are generally named unambiguously. For example, even though dates will all share the same format their property name will describe the context of their use, createdOn, birthDate, shootDate, etc.
 
-The exception to this is when a property is not intrinsic to the entity. We sometimes include a 'name' property that is used primarily to help humans identify it. For example, an asset may be given an arbitrary name and description.
+The exception to this is when a property is not intrinsic to the entity. We **sometimes** include a 'name' property that is used primarily to help humans identify it. For example, an asset may be given an arbitrary name and description.
+
+***[for such properties, is it 'sometimes, 'usually, or 'always'?]***
 
 ### **Plurals**
 
-Avoid the use of plurals.
+***Avoid the use of plurals. [rephrase to 'We avoid the use of plurals', i think]'***
 
 - It creates inconsistencies in naming, i.e. parties vs dates vs classes (ies, s, es). This can be hard for some people to remember, especially those for whom English is not a first language.
 
