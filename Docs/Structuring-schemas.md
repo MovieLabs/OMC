@@ -10,7 +10,7 @@ The goal behind the JSON model is to provide a flexible mechanism to communicate
 
 **Entity**: A set of properties that together describe a single concept within the model.
 
-**Property**: A <key> <value> pair where the value can be an entity, complex type (object or array of objects)   or an attribute.
+**Property**: A ```<key> <value>``` pair where the value can be an entity, complex type (object or array of objects)   or an attribute.
 
 **Attribute**: A primitive value (or array of primitive values), i.e. a string, number, Boolean or null.
 

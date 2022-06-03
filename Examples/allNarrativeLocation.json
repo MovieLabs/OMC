@@ -1,0 +1,106 @@
+{
+  "allNarrativeLocations": [
+    {
+      "entityType": "NarrativeLocation",
+      "identifier": [
+        {
+          "identifierScope": "Celtx",
+          "identifierValue": "rxruSCUa"
+        },
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "nloc/_kOllFjjfag-YPmkT5pMY"
+        }
+      ],
+      "name": "Jungle (second half)",
+      "Context": {
+        "isLocationFor": null
+      }
+    },
+    {
+      "entityType": "NarrativeLocation",
+      "identifier": [
+        {
+          "identifierScope": "Celtx",
+          "identifierValue": "tt1p5IOX"
+        },
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "nloc/C1Yqi2Mq6ruQ6vZQNANCJ"
+        }
+      ],
+      "name": "Jungle (first half)",
+      "Context": {
+        "isLocationFor": null
+      }
+    },
+    {
+      "entityType": "NarrativeLocation",
+      "identifier": [
+        {
+          "identifierScope": "Celtx",
+          "identifierValue": "n6D2UQF4"
+        },
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "nloc/zSOlRB8x3av8pSc27udUg"
+        }
+      ],
+      "name": "Outer space / Field of stars",
+      "Context": {
+        "isLocationFor": null
+      }
+    },
+    {
+      "entityType": "NarrativeLocation",
+      "identifier": [
+        {
+          "identifierScope": "Celtx",
+          "identifierValue": "xUwyKw9l"
+        },
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "nloc/ts0V3bEKV44Ij4Nzm3X_m"
+        }
+      ],
+      "name": "Edge of Jungle/Crater",
+      "Context": {
+        "isLocationFor": null
+      }
+    },
+    {
+      "entityType": "NarrativeLocation",
+      "identifier": [
+        {
+          "identifierScope": "Celtx",
+          "identifierValue": "FI4mz3Vy"
+        },
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "nloc/pLlvyKp0KS2dGWubcYNpe"
+        }
+      ],
+      "name": "Beach",
+      "Context": {
+        "isLocationFor": null
+      }
+    },
+    {
+      "entityType": "NarrativeLocation",
+      "identifier": [
+        {
+          "identifierScope": "Celtx",
+          "identifierValue": "6cwEHUWR"
+        },
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "nloc/dhr77z48LSmS61aonHF5C"
+        }
+      ],
+      "name": "Atmosphere",
+      "Context": {
+        "isLocationFor": null
+      }
+    }
+  ]
+}
