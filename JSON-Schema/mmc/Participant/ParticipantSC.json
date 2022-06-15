@@ -3,16 +3,23 @@
 	"type": "object",
 	"title": "Participant Structural Characteristics",
 	"description": "A set of Structural Characteristics for Participants",
-	"required": ["identifier","entityType"],
+	"required": [
+		"identifier",
+		"entityType"
+	],
 	"properties": {
+		"entityInfo": {
+			"title": "Entity Information",
+			"$ref": "../Model/definitions.json#/properties/entityInfo"
+		},
 		"entityType": {
 			"type": "string",
 			"title": "Entity Type",
 			"const": "ParticipantSC"
 		},
-		"schemaVersion": {"$ref":"../Model/definitions.json#/properties/schemaVersion"},
-		"instance": {"$ref":"../Model/definitions.json#/properties/instance"},
-		"identifier": {"$ref":"../Utility/identifier.json"},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
 		"characteristics": {
 			"oneOf": [
 				{
@@ -28,8 +35,12 @@
 							"type": "string",
 							"title": "Organization Name"
 						},
-						"Location": {"$ref":"../Utility/Location.json"},
-						"contact": {"$ref":"../Utility/contact.json"}
+						"Location": {
+							"$ref": "../Utility/Location.json"
+						},
+						"contact": {
+							"$ref": "../Utility/contact.json"
+						}
 					}
 				},
 				{
@@ -45,8 +56,12 @@
 							"type": "string",
 							"title": "Department Name"
 						},
-						"Location": {"$ref":"../Utility/Location.json"},
-						"contact": {"$ref":"../Utility/contact.json"}
+						"Location": {
+							"$ref": "../Utility/Location.json"
+						},
+						"contact": {
+							"$ref": "../Utility/contact.json"
+						}
 					}
 				},
 				{
@@ -58,9 +73,15 @@
 							"type": "string",
 							"const": "person"
 						},
-						"personName": {"$ref":"../Utility/completeName.json"},
-						"Location": {"$ref":"../Utility/Location.json"},
-						"contact": {"$ref":"../Utility/contact.json"}
+						"personName": {
+							"$ref": "../Utility/completeName.json"
+						},
+						"Location": {
+							"$ref": "../Utility/Location.json"
+						},
+						"contact": {
+							"$ref": "../Utility/contact.json"
+						}
 					}
 				},
 				{
@@ -76,8 +97,12 @@
 							"type": "string",
 							"title": "Service Name"
 						},
-						"Location": {"$ref":"../Utility/Location.json"},
-						"contact": {"$ref":"../Utility/contact.json"}
+						"Location": {
+							"$ref": "../Utility/Location.json"
+						},
+						"contact": {
+							"$ref": "../Utility/contact.json"
+						}
 					}
 				}
 			]

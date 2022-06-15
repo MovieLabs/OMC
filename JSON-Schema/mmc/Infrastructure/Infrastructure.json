@@ -3,13 +3,15 @@
 	"type": "object",
 	"title": "Infrastructure",
 	"properties": {
+		"entityInfo": {
+			"title": "Entity Information",
+			"$ref": "../Model/definitions.json#/properties/entityInfo"
+		},
 		"entityType": {
 			"type": "string",
 			"title": "Entity Type",
 			"const": "Participant"
 		},
-		"schemaVersion": {"$ref":"../Model/definitions.json#/properties/schemaVersion"},
-		"instance": {"$ref":"../Model/definitions.json#/properties/instance"},
 		"identifier": {"$ref":"../Utility/identifier.json"},
 		"name": {
 			"type": ["string","null"],

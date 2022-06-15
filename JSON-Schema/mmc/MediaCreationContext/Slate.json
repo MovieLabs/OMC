@@ -9,16 +9,14 @@
 		"slateUID"
 	],
 	"properties": {
-		"schemaVersion": {
-			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		"entityInfo": {
+			"title": "Entity Information",
+			"$ref": "../Model/definitions.json#/properties/entityInfo"
 		},
 		"entityType": {
 			"type": "string",
 			"title": "Entity Type",
 			"const": "Slate"
-		},
-		"instance": {
-			"$ref": "../Model/instance.json"
 		},
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
@@ -91,6 +89,10 @@
 				}
 			]
 		},
+		"customData": {
+			"title": "Custom Data",
+			"$ref": "../Model/definitions.json#/properties/customData"
+		},
 		"Context": {
 			"title": "Slate Context",
 			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
@@ -100,16 +102,14 @@
 				"identifier"
 			],
 			"properties": {
-				"schemaVersion": {
-					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				"entityInfo": {
+					"title": "Entity Information",
+					"$ref": "../Model/definitions.json#/properties/entityInfo"
 				},
 				"entityType": {
 					"type": "string",
 					"title": "Entity Type",
 					"const": "Context"
-				},
-				"instance": {
-					"$ref": "../Model/instance.json"
 				},
 				"identifier": {
 					"$ref": "../Utility/identifier.json"

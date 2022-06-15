@@ -8,16 +8,14 @@
 		"identifier"
 	],
 	"properties": {
-		"schemaVersion": {
-			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		"entityInfo": {
+			"title": "Entity Information",
+			"$ref": "../Model/definitions.json#/properties/entityInfo"
 		},
 		"entityType": {
 			"type": "string",
 			"title": "Entity Type",
 			"const": "NarrativeScene"
-		},
-		"instance": {
-			"$ref": "../Model/instance.json"
 		},
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
@@ -46,6 +44,10 @@
 				"type": "string"
 			}
 		},
+		"customData": {
+			"title": "Custom Data",
+			"$ref": "../Model/definitions.json#/properties/customData"
+		},
 		"Context": {
 			"title": "Narrative Scene Context",
 			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
@@ -55,16 +57,14 @@
 				"identifier"
 			],
 			"properties": {
-				"schemaVersion": {
-					"$ref": "../Model/definitions.json#/properties/schemaVersion"
+				"entityInfo": {
+					"title": "Entity Information",
+					"$ref": "../Model/definitions.json#/properties/entityInfo"
 				},
 				"entityType": {
 					"type": "string",
 					"title": "Entity Type",
 					"const": "Context"
-				},
-				"instance": {
-					"$ref": "../Model/instance.json"
 				},
 				"identifier": {
 					"$ref": "../Utility/identifier.json"
@@ -121,10 +121,10 @@
 					"type": "object",
 					"title": "hasStoryBoard",
 					"properties": {
-						"Storyboard": {
+						"Asset": {
 							"type": "array",
 							"items": {
-								"$ref": "../MediaCreationContext/Storyboard.json"
+								"$ref": "../Asset/Asset.json"
 							}
 						}
 					}

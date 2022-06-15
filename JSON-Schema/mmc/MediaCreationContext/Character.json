@@ -8,8 +8,9 @@
 		"entityType"
 	],
 	"properties": {
-		"schemaVersion": {
-			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		"entityInfo": {
+			"title": "Entity Information",
+			"$ref": "../Model/definitions.json#/properties/entityInfo"
 		},
 		"entityType": {
 			"type": "string",
@@ -19,7 +20,7 @@
 		"identifier": {
 			"title": "identifier",
 			"$ref": "../Utility/identifier.json"
-		},
+		}, 
 		"characterName": {
 			"title": "Character Name",
 			"$ref": "../Utility/completeName.json"
@@ -94,6 +95,10 @@
 				}
 			},
 			"additionalProperties": false
+		},
+		"customData": {
+			"title": "Custom Data",		
+			"$ref": "../Model/definitions.json#/properties/customData"
 		},
 		"Context": {
 			"type": "object",

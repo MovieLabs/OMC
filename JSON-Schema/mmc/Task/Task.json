@@ -1,53 +1,50 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "Task",
-  "description": "",
-  "required": [
-    "identifier",
-    "entityType"
-  ],
-  "properties": {
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "Task"
-    },
-    "schemaVersion": {
-      "$ref": "../Model/definitions.json#/properties/schemaVersion"
-    },
-    "instance": {
-      "$ref": "../Model/definitions.json#/properties/instance"
-    },
-    "identifier": {
-      "$ref": "../Utility/identifier.json"
-    },
-    "name": {
-      "type": [
-        "string",
-        "null"
-      ]
-    },
-    "description": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "title": "Description"
-    },
-    "roleGroup": {
-      "type": "array",
-      "description": "The set of Participants that jointly comprise this Participant",
-      "items": {
-        "$ref": "../Participant/Role.json"
-      }
-    },
-    "StructuralCharacteristics": {
-      "title": "Task Structural Characteristics"
-    },
-    "FunctionalCharacteristics": {
-      "title": "Task Functional Characteristics"
-    }
-  },
-  "$defs": {}
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"title": "Task",
+	"description": "",
+	"required": [
+		"identifier",
+		"entityType"
+	],
+	"properties": {
+		"entityInfo": {
+			"title": "Entity Information",
+			"$ref": "../Model/definitions.json#/properties/entityInfo"
+		},
+		"entityType": {
+			"type": "string",
+			"title": "Entity Type",
+			"const": "Task"
+		},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
+		"name": {
+			"type": [
+				"string",
+				"null"
+			]
+		},
+		"description": {
+			"type": [
+				"string",
+				"null"
+			],
+			"title": "Description"
+		},
+		"roleGroup": {
+			"type": "array",
+			"description": "The set of Participants that jointly comprise this Participant",
+			"items": {
+				"$ref": "../Participant/Role.json"
+			}
+		},
+		"StructuralCharacteristics": {
+			"title": "Task Structural Characteristics"
+		},
+		"FunctionalCharacteristics": {
+			"title": "Task Functional Characteristics"
+		}
+	}
 }

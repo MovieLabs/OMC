@@ -4,6 +4,7 @@
 		<Folder FolderName="Asset">
 			<File FilePath="Asset\Asset.json" HomeFolder="Yes"/>
 			<File FilePath="Asset\AssetFC.json" HomeFolder="Yes"/>
+			<File FilePath="Asset\AssetGroup.json" HomeFolder="Yes"/>
 			<File FilePath="Asset\AssetSC.json" HomeFolder="Yes"/>
 		</Folder>
 		<Folder FolderName="Infrastructure">
@@ -25,18 +26,15 @@
 			<File FilePath="MediaCreationContext\SetDressing.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\Shot.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\Slate.json" HomeFolder="Yes"/>
-			<File FilePath="MediaCreationContext\Storyboard.json" HomeFolder="Yes"/>
 		</Folder>
 		<Folder FolderName="Model">
 			<File FilePath="Model\definitions.json" HomeFolder="Yes"/>
-			<File FilePath="Model\instance.json" HomeFolder="Yes"/>
-			<File FilePath="Model\schema.json" HomeFolder="Yes"/>
 		</Folder>
 		<Folder FolderName="Participant">
 			<File FilePath="Participant\Participant.json" HomeFolder="Yes"/>
 			<File FilePath="Participant\ParticipantFC.json" HomeFolder="Yes"/>
+			<File FilePath="Participant\ParticipantGroup.json" HomeFolder="Yes"/>
 			<File FilePath="Participant\ParticipantSC.json" HomeFolder="Yes"/>
-			<File FilePath="Participant\Person.json" HomeFolder="Yes"/>
 			<File FilePath="Participant\Role.json" HomeFolder="Yes"/>
 		</Folder>
 		<Folder FolderName="Task"/>

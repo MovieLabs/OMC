@@ -8,8 +8,9 @@
 		"identifier"
 	],
 	"properties": {
-		"schemaVersion": {
-			"$ref": "../Model/definitions.json#/properties/schemaVersion"
+		"entityInfo": {
+			"title": "Entity Information",
+			"$ref": "../Model/definitions.json#/properties/entityInfo"
 		},
 		"entityType": {
 			"type": "string",
@@ -38,25 +39,26 @@
 				"type": "string"
 			}
 		},
+		"customData": {
+			"title": "Custom Data",
+			"$ref": "../Model/definitions.json#/properties/customData"
+		},
 		"Context": {
 			"title": "Creative Work Context",
-			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
 			"type": "object",
 			"required": [
 				"entityType",
 				"identifier"
 			],
 			"properties": {
-				"schemaVersion": {
-					"$ref": "../Model/definitions.json#/properties/schemaVersion"
-				},
 				"entityType": {
 					"type": "string",
 					"title": "Entity Type",
 					"const": "Context"
 				},
-				"instance": {
-					"$ref": "../Model/instance.json"
+				"entityInfo": {
+					"title": "Entity Information",
+					"$ref": "../Model/definitions.json#/properties/entityInfo"
 				},
 				"identifier": {
 					"$ref": "../Utility/identifier.json"
