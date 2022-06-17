@@ -1,0 +1,111 @@
+{
+  "entityType": "CreativeWork",
+  "identifier": [
+    {
+      "identifierScope": "labkoat",
+      "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+    },
+    {
+      "identifierScope": "eidr",
+      "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
+    },
+    {
+      "identifierScope": "imdb",
+      "identifierValue": "tt19632706"
+    }
+  ],
+  "title": "Hyperspace Madness",
+  "description": "Sven is a bumbling intergalactic repair man sent off to investigate a malfunctioning satellite.. He is quickly ambushed by the dreaded Killamari who have taken over the planet and plan to use it as a base to invade earth.",
+  "approximateLength": "PT5M",
+  "originalLanguage": [
+    "en"
+  ],
+  "countryOfOrigin": "US",
+  "Context": {
+    "entityType": "Context",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
+      }
+    ],
+    "hasContributor": {
+      "Participant": [
+        {
+          "entityType": "Participant",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+            },
+            {
+              "identifierScope": "imdb",
+              "identifierValue": "nm0872514"
+            }
+          ],
+          "description": "Stunt actor doing mo-cap for Sven",
+          "StructuralCharacteristics": {
+            "structuralType": "participant.person"
+          },
+          "FunctionalCharacteristics": {
+            "functionalType": "person.actor"
+          }
+        }
+      ]
+    },
+    "hasProductionCompany": {
+      "Participant": [
+        {
+          "entityType": "Participant",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptc/VjEdQ7NPqpO-rYxWhQOQI"
+            }
+          ],
+          "description": "Labkoat Media is the production company",
+          "StructuralCharacteristics": {
+            "structuralType": "participant.organization"
+          },
+          "FunctionalCharacteristics": {
+            "functionalType": "company.production"
+          }
+        }
+      ]
+    },
+    "hasContributionCharacter": {
+      "Character": [
+        {
+          "entityType": "Character",
+          "identifier": [
+            {
+              "identifierScope": "Celtx",
+              "identifierValue": "a39c79cbddf4219b83b91e3822134d3420a85423"
+            },
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+            }
+          ],
+          "characterName": {
+            "fullName": "Sven"
+          },
+          "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
+        }
+      ]
+    },
+    "hasScript": {
+      "Asset": [
+        {
+          "entityType": "Asset",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

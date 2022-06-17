@@ -15,7 +15,7 @@
 		"entityType": {
 			"title": "Entity Type",
 			"type": "string",
-			"const": "NarrativeProp"
+			"const": "Location"
 		},
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
