@@ -2,12 +2,8 @@
   "entityType": "Character",
   "identifier": [
     {
-      "identifierScope": "Celtx",
-      "identifierValue": "a39c79cbddf4219b83b91e3822134d3420a85423"
-    },
-    {
       "identifierScope": "labkoat",
-      "identifierValue": "chr/j3uDueymOfsLwnE1H1BDI"
+      "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
     }
   ],
   "characterName": {
@@ -16,160 +12,220 @@
   "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
   "profile": {
     "physicalCharacteristics": {
-      "species": null,
+      "species": "Human",
       "hairColor": "Brown",
-      "hairLength": null,
+      "hairLength": "Short",
       "eyeColor": "Green",
       "height": "1m90cm",
       "weight": "80kg"
     },
-    "gender": {
-      "gender": null,
-      "genderPronoun": null
-    },
     "background": {
       "likes": "Kiera, Space, Nature",
-      "dislikes": "War, big space cities, Conflict",
+      "dislikes": "War, Big space cities, Conflict",
       "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
       "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
     }
   },
   "Context": {
     "entityType": "Context",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cxt/377RXIREHUj5MPzsl-Sba"
+      }
+    ],
     "appearsIn": {
       "NarrativeScene": [
         {
           "entityType": "NarrativeScene",
           "identifier": [
             {
-              "identifierScope": "Celtx",
-              "identifierValue": "YTTQHAUY"
-            },
-            {
               "identifierScope": "labkoat",
-              "identifierValue": "nscn/6OTfX8rmiAyijBYJKnHVE"
+              "identifierValue": "wrd/wz_MHOLYI3VwYx_0AX47Y"
             }
           ],
-          "description": null,
-          "sceneDescriptor": null,
+          "sceneName": {
+            "fullName": "EXT - Jungle",
+            "altName": "JGL"
+          },
+          "sceneNumber": "1",
+          "description": "Title sequence with Sven bursting out of the jungle to the title sequence.",
           "slugline": [
-            "EXT",
-            "JUNGLE"
+            {
+              "title": "INT/EXT",
+              "text": "EXT"
+            },
+            {
+              "title": "time",
+              "text": "DAY"
+            }
           ]
         },
         {
           "entityType": "NarrativeScene",
           "identifier": [
             {
-              "identifierScope": "Celtx",
-              "identifierValue": "BaY2hfaJ"
-            },
-            {
               "identifierScope": "labkoat",
-              "identifierValue": "nscn/iw2fLMKb5YMuJ-znj0_H7"
+              "identifierValue": "wrd/St_Hh-LxAQo4ICUAtbZ0v"
             }
           ],
-          "description": null,
-          "sceneDescriptor": null,
+          "sceneName": {
+            "fullName": "EXT- Space",
+            "altName": "SPC"
+          },
+          "sceneNumber": "2",
+          "description": "Sven repairs satellite and is ambushed by Trilobot",
           "slugline": [
-            "EXT",
-            "JUNGLE"
+            {
+              "title": "INT/EXT",
+              "text": "EXT"
+            },
+            {
+              "title": "time",
+              "text": "NIGHT"
+            }
           ]
         },
         {
           "entityType": "NarrativeScene",
           "identifier": [
             {
-              "identifierScope": "Celtx",
-              "identifierValue": "ZVP8G8Y5"
-            },
-            {
               "identifierScope": "labkoat",
-              "identifierValue": "nscn/lzg7vBEguf-NNzSTuHUcN"
+              "identifierValue": "wrd/xJpXtpM0G2QQM92TITfTf"
             }
           ],
-          "description": null,
-          "sceneDescriptor": null,
+          "sceneName": {
+            "fullName": "EXT -Space Moments Later",
+            "altName": "SPC"
+          },
+          "sceneNumber": "3",
+          "description": "Sven reaches spaceship and climbs in.",
           "slugline": [
-            "EXT",
-            "SPACE"
+            {
+              "title": "INT/EXT",
+              "text": "EXT"
+            },
+            {
+              "title": "time",
+              "text": "NIGHT"
+            }
           ]
         },
         {
           "entityType": "NarrativeScene",
           "identifier": [
             {
-              "identifierScope": "Celtx",
-              "identifierValue": "QTDbXQbm"
-            },
-            {
               "identifierScope": "labkoat",
-              "identifierValue": "nscn/p7aNmpZy2nu6zSI-zBdGv"
+              "identifierValue": "wrd/3EF7fR-xOJ7IamLr2iYsg"
             }
           ],
-          "description": null,
-          "sceneDescriptor": null,
+          "sceneName": {
+            "fullName": "EXT - Atmosphere - DAY",
+            "altName": "ATMO"
+          },
+          "sceneNumber": "4",
+          "description": "Sven crashes into atmosphere and water",
           "slugline": [
-            "EXT",
-            "BEACH"
+            {
+              "title": "INT/EXT",
+              "text": "EXT"
+            },
+            {
+              "title": "time",
+              "text": "DAY"
+            }
           ]
         },
         {
           "entityType": "NarrativeScene",
           "identifier": [
             {
-              "identifierScope": "Celtx",
-              "identifierValue": "e2RJsdgs"
-            },
-            {
               "identifierScope": "labkoat",
-              "identifierValue": "nscn/SycR0dXbmp5l8lGMH1EvA"
+              "identifierValue": "wrd/lmPkGo1nXjJgfeNnoxArq"
             }
           ],
-          "description": null,
-          "sceneDescriptor": null,
+          "sceneName": {
+            "fullName": "EXT - Beach - DAY",
+            "altName": "BECH"
+          },
+          "sceneNumber": "5",
+          "description": "Sven swims to surface and walks into beach.",
           "slugline": [
-            "EXT",
-            "PLATEAU"
+            {
+              "title": "INT/EXT",
+              "text": "EXT"
+            },
+            {
+              "title": "time",
+              "text": "DAY"
+            }
           ]
         },
         {
           "entityType": "NarrativeScene",
           "identifier": [
             {
-              "identifierScope": "Celtx",
-              "identifierValue": "XoitNs1U"
-            },
-            {
               "identifierScope": "labkoat",
-              "identifierValue": "nscn/WOtCfI1FHQ2xMFNzaQtj6"
+              "identifierValue": "wrd/zH9BzX8cjf-wY6N-HE6fg"
             }
           ],
-          "description": null,
-          "sceneDescriptor": null,
+          "sceneName": {
+            "fullName": "EXT- Jungle - Day",
+            "altName": "JGL"
+          },
+          "sceneNumber": "6",
+          "description": "Sven retreats to the jungle and destroys the Trilobot using exploding fruit native to the planet.",
           "slugline": [
-            "EXT",
-            "SPACE"
+            {
+              "title": "INT/EXT",
+              "text": "EXT"
+            },
+            {
+              "title": "time",
+              "text": "DAY"
+            }
           ]
         },
         {
           "entityType": "NarrativeScene",
           "identifier": [
             {
-              "identifierScope": "Celtx",
-              "identifierValue": "R2AJJ7nB"
-            },
-            {
               "identifierScope": "labkoat",
-              "identifierValue": "nscn/ypw33iIrX2S7X_Q27mBrB"
+              "identifierValue": "wrd/1icPnKZ4LRliFd3WI9urA"
             }
           ],
-          "description": null,
-          "sceneDescriptor": null,
+          "sceneName": {
+            "fullName": "EXT - Plateau - Day",
+            "altName": "PLAT"
+          },
+          "sceneNumber": "7",
+          "description": "Sven discovers city",
           "slugline": [
-            "EXT",
-            "ATMOSPHERE"
+            {
+              "title": "INT/EXT",
+              "text": "EXT"
+            },
+            {
+              "title": "time",
+              "text": "DAY"
+            }
           ]
+        }
+      ]
+    },
+    "usesProp": null,
+    "usesWardrobe": {
+      "NarrativeWardrobe": [
+        {
+          "entityType": "NarrativeWardrobe",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+            }
+          ],
+          "name": "Spacesuit",
+          "description": "RD-12 Envrionmental Protection Suit"
         }
       ]
     }

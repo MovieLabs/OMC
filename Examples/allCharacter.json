@@ -1,254 +1,66 @@
-{
-  "allCharacters": [
-    {
-      "entityType": "Character",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "fdc6a14be2adbf88564c3ee9a85874bf49208d87"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "chr/LC4nrtxXR3CVPDUr8DAOJ"
-        }
-      ],
-      "characterName": {
-        "scriptName": "Killimari"
-      },
-      "description": "A heartless race of squid like creatures that live to take the natural resources from every planet in the galaxy.\n",
-      "profile": {
-        "physicalCharacteristics": {
-          "species": null,
-          "hairColor": null,
-          "hairLength": null,
-          "eyeColor": null,
-          "height": null,
-          "weight": null
-        },
-        "background": {
-          "likes": null,
-          "dislikes": null,
-          "habits": null,
-          "traits": null
-        }
-      },
-      "Context": null
-    },
-    {
-      "entityType": "Character",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "b72886e5a77fff483e87c229784770e4ed99f914"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "chr/wK6exLR9lnleMcJjc3Ceq"
-        }
-      ],
-      "characterName": {
-        "scriptName": "Juggernaut"
-      },
-      "description": "The war machines of the Killmari. They crush planets and help the klllimari control vast swathes of the galaxy.",
-      "profile": {
-        "physicalCharacteristics": {
-          "species": null,
-          "hairColor": "N/A",
-          "hairLength": null,
-          "eyeColor": "Red",
-          "height": "3m",
-          "weight": "1000kg"
-        },
-        "background": {
-          "likes": null,
-          "dislikes": null,
-          "habits": null,
-          "traits": "These machines have one goal: destruction. They are slow and clumsy but once they train on their targets they are unstoppable"
-        }
-      },
-      "Context": null
-    },
-    {
-      "entityType": "Character",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "887e0c1362c34eb281ef6bd000a8b975bab10bd8"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
-        }
-      ],
-      "characterName": {
-        "scriptName": "Keira"
-      },
-      "description": "Kiera is the ever present voice in the sky overseeing Sven's operations from central command. We never see her on camera but she is Sven's secret love and they both dream of a day when they can be together.",
-      "profile": {
-        "physicalCharacteristics": {
-          "species": null,
-          "hairColor": "Multi-color",
-          "hairLength": null,
-          "eyeColor": "Green",
-          "height": "1m60cm",
-          "weight": "60kg"
-        },
-        "background": {
-          "likes": "Sven. Space. Adventure.",
-          "dislikes": "Corporate life. Liars.",
-          "habits": "Kiera is a dreamer and loves to support the people she loves.",
-          "traits": "Kiera is kind and thoughtful. She is curious and longs for adventure."
-        }
-      },
-      "Context": {
-        "entityType": "Context",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "cxt/IgjTeg0QDrQLLe9D-kBNO"
-          }
-        ],
-        "appearsIn": {
-          "NarrativeScene": [
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/7HJc7GZ0kalidxdyWyUC4"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/IaIkM7FEByCws5K3iX4Gq"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/nZ-UVglWcXdBLFy7OTB8c"
-                }
-              ]
-            }
-          ]
-        }
+[
+  {
+    "entityType": "ShootingLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/DBMKDFZ5G7PBwtgK2PXBG"
       }
-    },
-    {
-      "entityType": "Character",
+    ],
+    "name": "Game On ",
+    "description": "Motion Capture Stage",
+    "Location": {
+      "entityType": "Location",
       "identifier": [
         {
-          "identifierScope": "Celtx",
-          "identifierValue": "a39c79cbddf4219b83b91e3822134d3420a85423"
-        },
-        {
           "identifierScope": "labkoat",
-          "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+          "identifierValue": "loc/CJXwmiWy3cXV802h-5fWI"
         }
       ],
-      "characterName": {
-        "scriptName": "Sven"
+      "address": {
+        "street": "405 Av. Ogilvy B",
+        "locality": "Montréal",
+        "region": null,
+        "postalCode": "QC H3N 1M3",
+        "country": "CA"
       },
-      "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
-      "profile": {
-        "physicalCharacteristics": {
-          "species": null,
-          "hairColor": "Brown",
-          "hairLength": null,
-          "eyeColor": "Green",
-          "height": "1m90cm",
-          "weight": "80kg"
-        },
-        "background": {
-          "likes": "Kiera, Space, Nature",
-          "dislikes": "War, big space cities, Conflict",
-          "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
-          "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
-        }
-      },
-      "Context": {
-        "entityType": "Context",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "cxt/einleUCH56KI8AL9gdIwU"
-          }
-        ],
-        "appearsIn": {
-          "NarrativeScene": [
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/7HJc7GZ0kalidxdyWyUC4"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/FRBT-_ufecjrvEcE5ohmU"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/IaIkM7FEByCws5K3iX4Gq"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/j1O8jVVB1NZLuM-OiA349"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/nZ-UVglWcXdBLFy7OTB8c"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/q8jfBGQYkubbHjl_HgOaB"
-                }
-              ]
-            },
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/QjmuGm40_pmjxaLy4fup8"
-                }
-              ]
-            }
-          ]
-        }
+      "coordinates": {
+        "longitude": -73.62522,
+        "latitude": 45.53072,
+        "elevation": null
       }
     }
-  ]
-}
+  },
+  {
+    "entityType": "ShootingLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ez1rAHkRw7ebLPNnXY1Q_"
+      }
+    ],
+    "name": "Lightstorm",
+    "description": "Virtual Production Stage",
+    "Location": {
+      "entityType": "Location",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/Qz7LGOejU7-NybYTJDofq"
+        }
+      ],
+      "address": {
+        "street": "1600 Rosecrans Avenue",
+        "locality": "Manhattan Beach",
+        "region": "California",
+        "postalCode": "CA 90266",
+        "country": "US"
+      },
+      "coordinates": {
+        "longitude": 119.0496,
+        "latitude": 36.12361,
+        "elevation": null
+      }
+    }
+  }
+]

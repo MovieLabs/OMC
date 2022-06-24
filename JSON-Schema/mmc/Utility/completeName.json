@@ -19,6 +19,11 @@
 			"title": "Family Name",
 			"description": "A persons family name, also referred to as surname"
 		},
+		"fullName": {
+			"type": ["string", "null"],
+			"title": "Full Name",
+			"description": "A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields."
+		},
 		"birthName": {
 			"type": ["string", "null"],
 			"title": "Birth Name",

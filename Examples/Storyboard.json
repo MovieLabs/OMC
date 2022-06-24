@@ -1,0 +1,352 @@
+{
+  "entityType": "Asset",
+  "identifier": [
+    {
+      "identifierScope": "labkoat",
+      "identifierValue": "ast/VvEtLxRZy0o-fQGLiKBQW"
+    }
+  ],
+  "name": "Jungle Run",
+  "description": null,
+  "StructuralCharacteristics": {
+    "structuralType": "AssetGroup"
+  },
+  "FunctionalCharacteristics": {
+    "functionalType": "artwork.storyboard",
+    "storyboardName": "Jungle Run"
+  },
+  "AssetGroup": {
+    "entityType": "AssetGroup",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "astg/B35EFoE5Cu-UZG80dYPM7"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "isOrdered": true,
+    "Asset": [
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/8YQ_cI851WHiTxfq3duZn"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven emerge",
+          "cameraFraming": "Wide",
+          "description": "Sven emerging from brush"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/1C8cWfGYQpt9VdiROAnvS"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven flip jungle",
+          "cameraFraming": "Close Up",
+          "description": "Back to title frame. Sven flying through air"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/HM6BlyV4AAulA3zTd28Ji"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven fall ground",
+          "cameraFraming": "Medium",
+          "description": "Sven slams onto the jungle floor"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/AK9GiZ74Ugb9jLlMNwwaO"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Fruit Explode",
+          "cameraFraming": "Medium",
+          "description": "Sven sees fruit explode"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/jQnXaZLZxE0mqKmMH13zE"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Trilobot close",
+          "cameraFraming": "Wide",
+          "description": "Trilobot closes in"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/3VhtMUmku1syheTjFRlOW"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven fires back",
+          "cameraFraming": "Medium",
+          "description": "Sven fires back with his blaster"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/Pfcils4hdMRxiWXVe0Cqp"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven fire wild",
+          "cameraFraming": "Wide",
+          "description": "Sven runs and fires wildly"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/C31Qr09Hr3eMEdhG7OsR3"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven opening",
+          "cameraFraming": "Medium",
+          "description": "Sven heads towards an opening"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/Fa3Idk7zdakcsd-RKxPqa"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven trees",
+          "cameraFraming": "Wide",
+          "description": "Sven stops when he sees something in the trees. a plant full of exploding fruit"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/2g7kG3T9KSXrN4E9Ava4U"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven last stand",
+          "cameraFraming": "Wide",
+          "description": "Sven prepares for his last stand."
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/wCYjciJAAtzrtcey3hXd-"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven tree hit",
+          "cameraFraming": "Wide",
+          "description": "Sven shoots at the tree just as the Trilobot passes"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/QgPb11cCCDyuR7crjXE1S"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Trilobot crunch",
+          "cameraFraming": "Wide",
+          "description": "The shot is timed perfectly"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/vsVrDdWZCf0TjKVXWHsUz"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Tree explode",
+          "cameraFraming": "Wide",
+          "description": "The fruit swell up and explode"
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/P3dOHPiQjhmSJAIi551UL"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Trilobot explode",
+          "cameraFraming": "Medium",
+          "description": "The Trilobot is destroyed."
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/cBO9lQkgGRDr4j37vOvTD"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "Sven Stunned",
+          "cameraFraming": "Close Up",
+          "description": "Sven is stunned but alive."
+        }
+      },
+      {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ast/5M1XTwxeJEbb0KxBm9scW"
+          }
+        ],
+        "StructuralCharacteristics": {
+          "structuralType": "digital.image",
+          "structuralFormat": "image/jpeg",
+          "fileExtension": "jpeg"
+        },
+        "FunctionalCharacteristics": {
+          "functionalType": "artwork.storyboard.frame",
+          "frameName": "City Noise",
+          "cameraFraming": "Close Up",
+          "description": "Sven hears more sounds in the distance"
+        }
+      }
+    ]
+  }
+}

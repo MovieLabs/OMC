@@ -43,13 +43,8 @@
               "identifierValue": "nm0872514"
             }
           ],
-          "description": "Stunt actor doing mo-cap for Sven",
-          "StructuralCharacteristics": {
-            "structuralType": "participant.person"
-          },
-          "FunctionalCharacteristics": {
-            "functionalType": "person.actor"
-          }
+          "name": "J. Warren Trezevant",
+          "description": "Stunt actor doing mo-cap for Sven"
         }
       ]
     },
@@ -63,13 +58,8 @@
               "identifierValue": "ptc/VjEdQ7NPqpO-rYxWhQOQI"
             }
           ],
-          "description": "Labkoat Media is the production company",
-          "StructuralCharacteristics": {
-            "structuralType": "participant.organization"
-          },
-          "FunctionalCharacteristics": {
-            "functionalType": "company.production"
-          }
+          "name": "Labkoat Media",
+          "description": "Labkoat Media is the production company"
         }
       ]
     },
@@ -78,10 +68,6 @@
         {
           "entityType": "Character",
           "identifier": [
-            {
-              "identifierScope": "Celtx",
-              "identifierValue": "a39c79cbddf4219b83b91e3822134d3420a85423"
-            },
             {
               "identifierScope": "labkoat",
               "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
@@ -109,3 +95,4 @@
     }
   }
 }
+

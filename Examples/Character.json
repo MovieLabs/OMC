@@ -1,107 +1,121 @@
 {
-  "entityType": "Character",
-  "identifier": [
-    {
-      "identifierScope": "Celtx",
-      "identifierValue": "a39c79cbddf4219b83b91e3822134d3420a85423"
+  "getCharacter": {
+    "entityType": "Character",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+      }
+    ],
+    "characterName": {
+      "scriptName": "Sven"
     },
-    {
-      "identifierScope": "labkoat",
-      "identifierValue": "chr/j3uDueymOfsLwnE1H1BDI"
-    }
-  ],
-  "characterName": {
-    "scriptName": "Sven"
-  },
-  "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
-  "profile": {
-    "physicalCharacteristics": {
-      "species": null,
-      "hairColor": "Brown",
-      "hairLength": null,
-      "eyeColor": "Green",
-      "height": "1m90cm",
-      "weight": "80kg"
+    "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
+    "profile": {
+      "physicalCharacteristics": {
+        "species": "Human",
+        "hairColor": "Brown",
+        "hairLength": "Short",
+        "eyeColor": "Green",
+        "height": "1m90cm",
+        "weight": "80kg"
+      },
+      "background": {
+        "likes": "Kiera, Space, Nature",
+        "dislikes": "War, Big space cities, Conflict",
+        "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
+        "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
+      }
     },
-    "gender": {
-      "gender": null,
-      "genderPronoun": null
-    },
-    "background": {
-      "likes": "Kiera, Space, Nature",
-      "dislikes": "War, big space cities, Conflict",
-      "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
-      "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
-    }
-  },
-  "Context": {
-    "entityType": "Context",
-    "appearsIn": {
-      "NarrativeScene": [
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
         {
-          "entityType": "NarrativeScene",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "nscn/6OTfX8rmiAyijBYJKnHVE"
-            }
-          ]
-        },
-        {
-          "entityType": "NarrativeScene",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "nscn/iw2fLMKb5YMuJ-znj0_H7"
-            }
-          ]
-        },
-        {
-          "entityType": "NarrativeScene",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "nscn/lzg7vBEguf-NNzSTuHUcN"
-            }
-          ]
-        },
-        {
-          "entityType": "NarrativeScene",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "nscn/p7aNmpZy2nu6zSI-zBdGv"
-            }
-          ]
-        },
-        {
-          "entityType": "NarrativeScene",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "nscn/SycR0dXbmp5l8lGMH1EvA"
-            }
-          ]
-        },
-        {
-          "entityType": "NarrativeScene",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "nscn/WOtCfI1FHQ2xMFNzaQtj6"
-            }
-          ]
-        },
-        {
-          "entityType": "NarrativeScene",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "nscn/ypw33iIrX2S7X_Q27mBrB"
-            }
-          ]
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/377RXIREHUj5MPzsl-Sba"
         }
-      ]
+      ],
+      "appearsIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/wz_MHOLYI3VwYx_0AX47Y"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/xJpXtpM0G2QQM92TITfTf"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/3EF7fR-xOJ7IamLr2iYsg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/lmPkGo1nXjJgfeNnoxArq"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/zH9BzX8cjf-wY6N-HE6fg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "usesProp": null,
+      "usesWardrobe": {
+        "NarrativeWardrobe": [
+          {
+            "entityType": "NarrativeWardrobe",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }

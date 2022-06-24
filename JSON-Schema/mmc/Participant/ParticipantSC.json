@@ -29,11 +29,23 @@
 					"properties": {
 						"structuralType": {
 							"type": "string",
-							"const": "organization"
+							"const": "participant.organization"
 						},
-						"organizationName": {
-							"type": "string",
-							"title": "Organization Name"
+						"participantName": {
+							"type": "object",
+							"title": "Organization Name",
+							"properties": {
+								"fullName": {
+									"type": "string",
+									"title": "Organization full name",
+									"description": "Organizations full name"						
+								},
+								"altName": {
+									"type": "string",
+									"title": "Organization alternate name",
+									"description": "An alternate or shortend name"						
+								}
+							}
 						},
 						"Location": {
 							"$ref": "../Utility/Location.json"
@@ -50,11 +62,23 @@
 					"properties": {
 						"structuralType": {
 							"type": "string",
-							"const": "department"
+							"const": "participant.department"
 						},
 						"departmentName": {
-							"type": "string",
-							"title": "Department Name"
+							"type": "object",
+							"title": "Department Name",
+							"properties": {
+								"fullName": {
+									"type": "string",
+									"title": "Department full name",
+									"description": "Department's full name"						
+								},
+								"altName": {
+									"type": "string",
+									"title": "Department alternate name",
+									"description": "An alternate or shortend name"						
+								}
+							}
 						},
 						"Location": {
 							"$ref": "../Utility/Location.json"
@@ -71,10 +95,13 @@
 					"properties": {
 						"structuralType": {
 							"type": "string",
-							"const": "person"
+							"const": "participant.person"
 						},
-						"personName": {
+						"participantName": {
 							"$ref": "../Utility/completeName.json"
+						},
+						"gender": {
+							"$ref": "../Utility/gender.json"
 						},
 						"Location": {
 							"$ref": "../Utility/Location.json"
@@ -91,11 +118,23 @@
 					"properties": {
 						"structuralType": {
 							"type": "string",
-							"const": "servcie"
+							"const": "participant.servcie"
 						},
-						"serviceName": {
-							"type": "string",
-							"title": "Service Name"
+						"participantName": {
+							"type": "object",
+							"title": "Service Name",
+							"properties": {
+								"fullName": {
+									"type": "string",
+									"title": "Service full name",
+									"description": "Service's full name"						
+								},
+								"altName": {
+									"type": "string",
+									"title": "Service alternate name",
+									"description": "An alternate or shortend name"						
+								}
+							}
 						},
 						"Location": {
 							"$ref": "../Utility/Location.json"

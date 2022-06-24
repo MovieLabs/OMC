@@ -1,137 +1,56 @@
-{
-  "allNarrativeWardrobes": [
-    {
-      "entityType": "NarrativeWardrobe",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "EfH5aZVn"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "nwrd/UxZGg7nWQQKG02VDcY0Vq"
-        }
-      ],
-      "name": "Helmet (signature clear dome)",
-      "Context": {
-        "appearsIn": {
-          "NarrativeScene": [
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/IaIkM7FEByCws5K3iX4Gq"
-                }
-              ]
-            }
-          ]
-        }
+[
+  {
+    "entityType": "NarrativeWardrobe",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "wrd/Hex65mL3RTBcLiGmAVh8d"
       }
-    },
-    {
-      "entityType": "NarrativeWardrobe",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "FMENLSrg"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "nwrd/msApCJDMHCUg3E03iCD2d"
-        }
-      ],
-      "name": "Blue space suit",
-      "Context": {
-        "appearsIn": {
-          "NarrativeScene": [
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/IaIkM7FEByCws5K3iX4Gq"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "entityType": "NarrativeWardrobe",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "2PINcfvG"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "nwrd/2z-a9Ax-qOFxgkfkZxi-x"
-        }
-      ],
-      "name": "Water drips off his suit",
-      "Context": {
-        "appearsIn": {
-          "NarrativeScene": [
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/nZ-UVglWcXdBLFy7OTB8c"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "entityType": "NarrativeWardrobe",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "3v5SQypA"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "nwrd/lITAEe3mth3i4fwKTJNMW"
-        }
-      ],
-      "name": "Helmet (powers off)",
-      "Context": {
-        "appearsIn": {
-          "NarrativeScene": [
-            {
-              "entityType": "NarrativeScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/nZ-UVglWcXdBLFy7OTB8c"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "entityType": "NarrativeWardrobe",
-      "identifier": [
-        {
-          "identifierScope": "Celtx",
-          "identifierValue": "bPLayQGy"
-        },
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "nwrd/Y8X6iUSYYQ8DFFPcOERTU"
-        }
-      ],
-      "name": "Blue space suit (w/ fruit splatters)",
-      "Context": {
-        "appearsIn": null
+    ],
+    "name": "Killamari exo-skeleton",
+    "description": "The life long container of the dreaded Killamari.",
+    "Context": {
+      "appearsIn": null,
+      "isWardrobeFor": {
+        "Character": [
+          {
+            "entityType": "Character",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "chr/LC4nrtxXR3CVPDUr8DAOJ"
+              }
+            ]
+          }
+        ]
       }
     }
-  ]
-}
+  },
+  {
+    "entityType": "NarrativeWardrobe",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+      }
+    ],
+    "name": "Spacesuit",
+    "description": "RD-12 Envrionmental Protection Suit",
+    "Context": {
+      "appearsIn": null,
+      "isWardrobeFor": {
+        "Character": [
+          {
+            "entityType": "Character",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

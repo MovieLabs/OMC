@@ -24,6 +24,7 @@
 			<File FilePath="MediaCreationContext\ProductionProp.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\ProductionScene.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\SetDressing.json" HomeFolder="Yes"/>
+			<File FilePath="MediaCreationContext\ShootingLocation.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\Shot.json" HomeFolder="Yes"/>
 			<File FilePath="MediaCreationContext\Slate.json" HomeFolder="Yes"/>
 		</Folder>
@@ -37,7 +38,9 @@
 			<File FilePath="Participant\ParticipantSC.json" HomeFolder="Yes"/>
 			<File FilePath="Participant\Role.json" HomeFolder="Yes"/>
 		</Folder>
-		<Folder FolderName="Task"/>
+		<Folder FolderName="Task">
+			<File FilePath="Task\Task.json" HomeFolder="Yes"/>
+		</Folder>
 		<Folder FolderName="Utility">
 			<File FilePath="Utility\address.json" HomeFolder="Yes"/>
 			<File FilePath="Utility\completeName.json" HomeFolder="Yes"/>
@@ -45,6 +48,7 @@
 			<File FilePath="Utility\gender.json" HomeFolder="Yes"/>
 			<File FilePath="Utility\identifier.json" HomeFolder="Yes"/>
 			<File FilePath="Utility\Location.json" HomeFolder="Yes"/>
+			<File FilePath="Utility\note.json" HomeFolder="Yes"/>
 			<File FilePath="Utility\time.json" HomeFolder="Yes"/>
 			<File FilePath="Utility\unitOfMeasurement.json" HomeFolder="Yes"/>
 		</Folder>

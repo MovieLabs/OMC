@@ -20,7 +20,7 @@
 		"identifier": {
 			"title": "identifier",
 			"$ref": "../Utility/identifier.json"
-		}, 
+		},
 		"characterName": {
 			"title": "Character Name",
 			"$ref": "../Utility/completeName.json"
@@ -97,13 +97,17 @@
 			"additionalProperties": false
 		},
 		"customData": {
-			"title": "Custom Data",		
+			"title": "Custom Data",
 			"$ref": "../Model/definitions.json#/properties/customData"
 		},
 		"Context": {
 			"type": "object",
 			"title": "Context",
 			"properties": {
+				"entityInfo": {
+					"title": "Entity Information",
+					"$ref": "../Model/definitions.json#/properties/entityInfo"
+				},
 				"entityType": {
 					"type": "string",
 					"title": "Entity Type",

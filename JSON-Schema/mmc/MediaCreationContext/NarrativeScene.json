@@ -20,13 +20,28 @@
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
 		},
-		"name": {
+		"sceneName": {
+			"type": "object",
 			"title": "Narrative Scene Name",
 			"description": "A human readable name for the scene",
-			"type": [
-				"string",
-				"null"
-			]
+			"properties": {
+				"fullName": {
+					"type": [
+						"string",
+						"null"
+					],
+					"title": "Scene full name",
+					"description": "A full descriptive name for the scene"					
+				},
+				"altName": {
+					"type": [
+						"string",
+						"null"
+					],
+					"title": "Scene alternate name",
+					"description": "An alternate, often shorter, name used in applications to identify the scens"
+				}
+			}
 		},
 		"description": {
 			"title": "Narrative Scene Description",
@@ -37,12 +52,14 @@
 			]
 		},
 		"slugline": {
-			"type": "array",
 			"title": "Slugline",
-			"additionalItems": true,
-			"items": {
-				"type": "string"
-			}
+			"description": "The slugline for the scene from the script. Multiple sluglines, or a breakdown of a slugline may be recorded as indivdual notes",
+			"$ref": "../Utility/note.json"
+		},
+		"sceneNumber": {
+			"type": ["string", "null"],
+			"title": "Scene Number",
+			"description": "A number used in the script to refer to the scene"
 		},
 		"customData": {
 			"title": "Custom Data",
