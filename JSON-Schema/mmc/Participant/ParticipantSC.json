@@ -20,17 +20,21 @@
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
 		},
-		"characteristics": {
-			"oneOf": [
+		"structuralType": {
+			"type": "string"
+		},
+		"structuralProperties": {
+			"$ref": "#/definitions/structuralProperties"
+		}
+	},
+	"definitions": {
+		"structuralProperties": {
+			"anyOf": [
 				{
 					"title": "Organization",
 					"type": "object",
 					"additionalProperties": false,
 					"properties": {
-						"structuralType": {
-							"type": "string",
-							"const": "participant.organization"
-						},
 						"participantName": {
 							"type": "object",
 							"title": "Organization Name",
@@ -38,12 +42,12 @@
 								"fullName": {
 									"type": "string",
 									"title": "Organization full name",
-									"description": "Organizations full name"						
+									"description": "Organizations full name"
 								},
 								"altName": {
 									"type": "string",
 									"title": "Organization alternate name",
-									"description": "An alternate or shortend name"						
+									"description": "An alternate or shortend name"
 								}
 							}
 						},
@@ -60,23 +64,19 @@
 					"title": "Department",
 					"additionalProperties": false,
 					"properties": {
-						"structuralType": {
-							"type": "string",
-							"const": "participant.department"
-						},
-						"departmentName": {
+						"participantName": {
 							"type": "object",
 							"title": "Department Name",
 							"properties": {
 								"fullName": {
 									"type": "string",
 									"title": "Department full name",
-									"description": "Department's full name"						
+									"description": "Department's full name"
 								},
 								"altName": {
 									"type": "string",
 									"title": "Department alternate name",
-									"description": "An alternate or shortend name"						
+									"description": "An alternate or shortend name"
 								}
 							}
 						},
@@ -93,12 +93,16 @@
 					"title": "Person",
 					"additionalProperties": false,
 					"properties": {
-						"structuralType": {
-							"type": "string",
-							"const": "participant.person"
-						},
 						"participantName": {
 							"$ref": "../Utility/completeName.json"
+						},
+						"jobTitle": {
+							"type": [
+								"string",
+								"null"
+							],
+							"title": "Job Title",
+							"description": "A persons job title (as distinct from a specific role)"
 						},
 						"gender": {
 							"$ref": "../Utility/gender.json"
@@ -116,10 +120,6 @@
 					"title": "Service",
 					"additionalProperties": false,
 					"properties": {
-						"structuralType": {
-							"type": "string",
-							"const": "participant.servcie"
-						},
 						"participantName": {
 							"type": "object",
 							"title": "Service Name",
@@ -127,12 +127,12 @@
 								"fullName": {
 									"type": "string",
 									"title": "Service full name",
-									"description": "Service's full name"						
+									"description": "Service's full name"
 								},
 								"altName": {
 									"type": "string",
 									"title": "Service alternate name",
-									"description": "An alternate or shortend name"						
+									"description": "An alternate or shortend name"
 								}
 							}
 						},

@@ -22,7 +22,33 @@
 		},
 		"title": {
 			"title": "Creative Work Title",
-			"type": "string"
+			"type": "object",
+			"properties": {
+				"workingTitle": {
+					"type": [
+						"string",
+						"null"
+					],
+					"title": "Creative Work Working Title",
+					"description": "The working title of the work"
+				},
+				"officialTitle": {
+					"type": [
+						"string",
+						"null"
+					],
+					"title": "Creative Work Official Title",
+					"description": "The offical title of the work"
+				},
+				"internalTitle": {
+					"type": [
+						"string",
+						"null"
+					],
+					"title": "Creative Work Internal Title",
+					"description": "The internal title of the work"
+				}
+			}
 		},
 		"description": {
 			"title": "Creative Work Description",
@@ -34,17 +60,35 @@
 		},
 		"approximateLength": {
 			"title": "Approximate Length",
-			"type": "string"
+			"type": [
+				"string",
+				"null"
+			]
 		},
 		"countryOfOrigin": {
 			"title": "Country of Origin",
-			"type": "string"
+			"type": [
+				"array",
+				"null"
+			],
+			"items": {
+				"type": [
+					"string",
+					"null"
+				]
+			}
 		},
 		"originalLanguage": {
 			"title": "Original Languages",
-			"type": "array",
+			"type": [
+				"array",
+				"null"
+			],
 			"items": {
-				"type": "string"
+				"type": [
+					"string",
+					"null"
+				]
 			}
 		},
 		"customData": {

@@ -20,31 +20,15 @@
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
 		},
-		"characteristics": {
-			"anyOf": [
-				{
-					"type": "array",
-					"additionalItems": true,
-					"items": {
-						"type": "object",
-						"properties": {
-							"functionalType": {
-								"type": "string",
-								"title": "Functional Type"
-							},
-							"functionalName": {
-								"type": "string",
-								"title": "Name"
-							},
-							"description": {
-								"type": "string",
-								"title": "Description"
-							}
-						},
-						"additionalProperties": true
-					}
-				}
-			]
+		"functionalType": {
+			"type": "string",
+			"title": "Functional Type"
+		},
+		"functionalProperties": {
+			"type": "object",
+			"title": "Functional Properties",
+			"description": "A set of properties that describe this specific Asset",
+			"additionalProperties": true
 		}
 	},
 	"$defs": {

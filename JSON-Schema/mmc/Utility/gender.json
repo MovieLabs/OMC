@@ -1,47 +1,30 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "description": "Describe an individual, person or characters, prefered gender",
-  "title": "gender",
-  "properties": {
-    "gender": {
-      "title": "Identifies as gender",
-      "description": "The gender by which an individual identifies",
-      "oneOf": [
-        {
-          "type": "string",
-          "nullable": true
-        },
-        {
-          "enum": [
-            "male",
-            "female",
-            "other",
-            "unkown",
-            null
-          ]
-        }
-      ]
-    },
-    "genderPronoun": {
-      "title": "Prefered pronoun",
-      "description": "An individuals pronoun of choice",
-      "oneOf": [
-        {
-          "type": "string",
-          "nullable": true
-        },
-        {
-          "enum": [
-            "he/him",
-            "she/her",
-            "ze/hir",
-            "they/their",
-            null
-          ]
-        }
-      ]
-    }
-  },
-  "additionalProperties": true
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"description": "Describe an individual, person or characters, gender",
+	"title": "gender",
+	"properties": {
+		"gender": {
+			"title": "Identifies as gender",
+			"description": "The gender by which an individual identifies",
+			"enum": [
+				"male",
+				"female",
+				"other",
+				"unkown",
+				null
+			]
+		},
+		"genderPronoun": {
+			"title": "Prefered pronoun",
+			"description": "An individuals pronoun of choice",
+			"enum": [
+				"he/him",
+				"she/her",
+				"ze/hir",
+				"they/their",
+				null
+			]
+		}
+	}
 }
