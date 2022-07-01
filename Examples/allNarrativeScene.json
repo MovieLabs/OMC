@@ -1,490 +1,283 @@
-[
-  {
-    "entityType": "NarrativeScene",
-    "identifier": [
+{
+  "data": {
+    "allNarrativeScenes": [
       {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/zH9BzX8cjf-wY6N-HE6fg"
-      }
-    ],
-    "sceneName": {
-      "fullName": "EXT- Jungle - Day",
-      "altName": "JGL"
-    },
-    "description": "Sven retreats to the jungle and destroys the Trilobot using exploding fruit native to the planet.",
-    "sceneNumber": "6",
-    "slugline": [
-      {
-        "title": "INT/EXT",
-        "text": "EXT"
-      },
-      {
-        "title": "time",
-        "text": "DAY"
-      }
-    ],
-    "Context": {
-      "features": {
-        "Character": [
+        "entityType": "NarrativeScene",
+        "identifier": [
           {
-            "entityType": "Character",
-            "identifier": [
+            "identifierScope": "labkoat",
+            "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+          }
+        ],
+        "Context": {
+          "features": {
+            "Character": [
               {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                  }
+                ]
+              },
+              {
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                  }
+                ]
               }
-            ],
-            "characterName": {
-              "fullName": "Sven"
-            },
-            "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
+            ]
           },
-          {
-            "entityType": "Character",
-            "identifier": [
+          "isFromWork": {
+            "CreativeWork": [
               {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                "entityType": "CreativeWork",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+                  }
+                ]
               }
-            ],
-            "characterName": {
-              "fullName": "Trilobot"
-            },
-            "description": "The advanced scouts of the Kilimari roam the universe looking for planets to consume."
+            ]
           }
-        ]
-      },
-      "isFromWork": {
-        "CreativeWork": [
-          {
-            "entityType": "CreativeWork",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
-              },
-              {
-                "identifierScope": "eidr",
-                "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
-              },
-              {
-                "identifierScope": "imdb",
-                "identifierValue": "tt19632706"
-              }
-            ],
-            "title": "Hyperspace Madness"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeScene",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/3EF7fR-xOJ7IamLr2iYsg"
-      }
-    ],
-    "sceneName": {
-      "fullName": "EXT - Atmosphere - DAY",
-      "altName": "ATMO"
-    },
-    "description": "Sven crashes into atmosphere and water",
-    "sceneNumber": "4",
-    "slugline": [
-      {
-        "title": "INT/EXT",
-        "text": "EXT"
+        }
       },
       {
-        "title": "time",
-        "text": "DAY"
-      }
-    ],
-    "Context": {
-      "features": {
-        "Character": [
+        "entityType": "NarrativeScene",
+        "identifier": [
           {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ],
-            "characterName": {
-              "fullName": "Sven"
-            },
-            "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
+            "identifierScope": "labkoat",
+            "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
           }
-        ]
-      },
-      "isFromWork": {
-        "CreativeWork": [
-          {
-            "entityType": "CreativeWork",
-            "identifier": [
+        ],
+        "Context": {
+          "features": {
+            "Character": [
               {
-                "identifierScope": "labkoat",
-                "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
-              },
-              {
-                "identifierScope": "eidr",
-                "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
-              },
-              {
-                "identifierScope": "imdb",
-                "identifierValue": "tt19632706"
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                  }
+                ]
               }
-            ],
-            "title": "Hyperspace Madness"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeScene",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/lmPkGo1nXjJgfeNnoxArq"
-      }
-    ],
-    "sceneName": {
-      "fullName": "EXT - Beach - DAY",
-      "altName": "BECH"
-    },
-    "description": "Sven swims to surface and walks into beach.",
-    "sceneNumber": "5",
-    "slugline": [
-      {
-        "title": "INT/EXT",
-        "text": "EXT"
-      },
-      {
-        "title": "time",
-        "text": "DAY"
-      }
-    ],
-    "Context": {
-      "features": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ],
-            "characterName": {
-              "fullName": "Sven"
-            },
-            "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
-          }
-        ]
-      },
-      "isFromWork": {
-        "CreativeWork": [
-          {
-            "entityType": "CreativeWork",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
-              },
-              {
-                "identifierScope": "eidr",
-                "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
-              },
-              {
-                "identifierScope": "imdb",
-                "identifierValue": "tt19632706"
-              }
-            ],
-            "title": "Hyperspace Madness"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeScene",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/wz_MHOLYI3VwYx_0AX47Y"
-      }
-    ],
-    "sceneName": {
-      "fullName": "EXT - Jungle",
-      "altName": "JGL"
-    },
-    "description": "Title sequence with Sven bursting out of the jungle to the title sequence.",
-    "sceneNumber": "1",
-    "slugline": [
-      {
-        "title": "INT/EXT",
-        "text": "EXT"
-      },
-      {
-        "title": "time",
-        "text": "DAY"
-      }
-    ],
-    "Context": {
-      "features": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ],
-            "characterName": {
-              "fullName": "Sven"
-            },
-            "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
-          }
-        ]
-      },
-      "isFromWork": {
-        "CreativeWork": [
-          {
-            "entityType": "CreativeWork",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
-              },
-              {
-                "identifierScope": "eidr",
-                "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
-              },
-              {
-                "identifierScope": "imdb",
-                "identifierValue": "tt19632706"
-              }
-            ],
-            "title": "Hyperspace Madness"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeScene",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/xJpXtpM0G2QQM92TITfTf"
-      }
-    ],
-    "sceneName": {
-      "fullName": "EXT -Space Moments Later",
-      "altName": "SPC"
-    },
-    "description": "Sven reaches spaceship and climbs in.",
-    "sceneNumber": "3",
-    "slugline": [
-      {
-        "title": "INT/EXT",
-        "text": "EXT"
-      },
-      {
-        "title": "time",
-        "text": "NIGHT"
-      }
-    ],
-    "Context": {
-      "features": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ],
-            "characterName": {
-              "fullName": "Sven"
-            },
-            "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
-          }
-        ]
-      },
-      "isFromWork": {
-        "CreativeWork": [
-          {
-            "entityType": "CreativeWork",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
-              },
-              {
-                "identifierScope": "eidr",
-                "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
-              },
-              {
-                "identifierScope": "imdb",
-                "identifierValue": "tt19632706"
-              }
-            ],
-            "title": "Hyperspace Madness"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeScene",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/1icPnKZ4LRliFd3WI9urA"
-      }
-    ],
-    "sceneName": {
-      "fullName": "EXT - Plateau - Day",
-      "altName": "PLAT"
-    },
-    "description": "Sven discovers city",
-    "sceneNumber": "7",
-    "slugline": [
-      {
-        "title": "INT/EXT",
-        "text": "EXT"
-      },
-      {
-        "title": "time",
-        "text": "DAY"
-      }
-    ],
-    "Context": {
-      "features": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ],
-            "characterName": {
-              "fullName": "Sven"
-            },
-            "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
-          }
-        ]
-      },
-      "isFromWork": {
-        "CreativeWork": [
-          {
-            "entityType": "CreativeWork",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
-              },
-              {
-                "identifierScope": "eidr",
-                "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
-              },
-              {
-                "identifierScope": "imdb",
-                "identifierValue": "tt19632706"
-              }
-            ],
-            "title": "Hyperspace Madness"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeScene",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/St_Hh-LxAQo4ICUAtbZ0v"
-      }
-    ],
-    "sceneName": {
-      "fullName": "EXT- Space",
-      "altName": "SPC"
-    },
-    "description": "Sven repairs satellite and is ambushed by Trilobot",
-    "sceneNumber": "2",
-    "slugline": [
-      {
-        "title": "INT/EXT",
-        "text": "EXT"
-      },
-      {
-        "title": "time",
-        "text": "NIGHT"
-      }
-    ],
-    "Context": {
-      "features": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ],
-            "characterName": {
-              "fullName": "Sven"
-            },
-            "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
+            ]
           },
-          {
-            "entityType": "Character",
-            "identifier": [
+          "isFromWork": {
+            "CreativeWork": [
               {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                "entityType": "CreativeWork",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+                  }
+                ]
               }
-            ],
-            "characterName": {
-              "fullName": "Trilobot"
-            },
-            "description": "The advanced scouts of the Kilimari roam the universe looking for planets to consume."
+            ]
           }
-        ]
+        }
       },
-      "isFromWork": {
-        "CreativeWork": [
+      {
+        "entityType": "NarrativeScene",
+        "identifier": [
           {
-            "entityType": "CreativeWork",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
-              },
-              {
-                "identifierScope": "eidr",
-                "identifierValue": "10.5240/96C6-A678-E011-B059-77AA-2"
-              },
-              {
-                "identifierScope": "imdb",
-                "identifierValue": "tt19632706"
-              }
-            ],
-            "title": "Hyperspace Madness"
+            "identifierScope": "labkoat",
+            "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
           }
-        ]
+        ],
+        "Context": {
+          "features": {
+            "Character": [
+              {
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                  }
+                ]
+              }
+            ]
+          },
+          "isFromWork": {
+            "CreativeWork": [
+              {
+                "entityType": "CreativeWork",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "NarrativeScene",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+          }
+        ],
+        "Context": {
+          "features": {
+            "Character": [
+              {
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                  }
+                ]
+              }
+            ]
+          },
+          "isFromWork": {
+            "CreativeWork": [
+              {
+                "entityType": "CreativeWork",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "NarrativeScene",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+          }
+        ],
+        "Context": {
+          "features": {
+            "Character": [
+              {
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                  }
+                ]
+              }
+            ]
+          },
+          "isFromWork": {
+            "CreativeWork": [
+              {
+                "entityType": "CreativeWork",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "NarrativeScene",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+          }
+        ],
+        "Context": {
+          "features": {
+            "Character": [
+              {
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                  }
+                ]
+              }
+            ]
+          },
+          "isFromWork": {
+            "CreativeWork": [
+              {
+                "entityType": "CreativeWork",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "NarrativeScene",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+          }
+        ],
+        "Context": {
+          "features": {
+            "Character": [
+              {
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                  }
+                ]
+              },
+              {
+                "entityType": "Character",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                  }
+                ]
+              }
+            ]
+          },
+          "isFromWork": {
+            "CreativeWork": [
+              {
+                "entityType": "CreativeWork",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+                  }
+                ]
+              }
+            ]
+          }
+        }
       }
-    }
+    ]
   }
-]
+}

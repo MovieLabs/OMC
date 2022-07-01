@@ -17,13 +17,17 @@
             "identifierValue": "tt19632706"
           }
         ],
-        "title": "Hyperspace Madness",
+        "title": {
+          "workingTitle": "Hyperspace Madness"
+        },
         "description": "Sven is a bumbling intergalactic repair man sent off to investigate a malfunctioning satellite.. He is quickly ambushed by the dreaded Killamari who have taken over the planet and plan to use it as a base to invade earth.",
         "approximateLength": "PT5M",
         "originalLanguage": [
           "en"
         ],
-        "countryOfOrigin": "US",
+        "countryOfOrigin": [
+          "US"
+        ],
         "Context": {
           "entityType": "Context",
           "identifier": [
@@ -90,7 +94,16 @@
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
-                    "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+                    "identifierValue": "ast/G6BarQj7bzfRkKv42hhwV"
+                  }
+                ]
+              },
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
                   }
                 ]
               }

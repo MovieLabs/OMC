@@ -27,20 +27,22 @@
               "firstGivenName": "John",
               "familyName": "Rene"
             },
-            "Location": {
-              "entityType": "Location",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "loc/WHG9AVNa92FOreMHjj5Zz"
+            "Location": [
+              {
+                "entityType": "Location",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "loc/WHG9AVNa92FOreMHjj5Zz"
+                  }
+                ],
+                "address": {
+                  "street": "319 North Squaw Creek Dr.",
+                  "locality": "La Puente",
+                  "region": "California"
                 }
-              ],
-              "address": {
-                "street": "319 North Squaw Creek Dr.",
-                "locality": "La Puente",
-                "region": "California"
               }
-            },
+            ],
             "contact": {
               "email": {
                 "business": "rene@labkoat.media"
@@ -59,7 +61,7 @@
               "identifierValue": "ptfc/zMHMDLktboZFV4Q9l0637"
             }
           ],
-          "functionalType": "person.writer"
+          "functionalType": "writer"
         }
       },
       {
@@ -88,20 +90,22 @@
               "firstGivenName": "Max",
               "familyName": "Powers"
             },
-            "Location": {
-              "entityType": "Location",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "loc/DVzzIcqf35RQQtkvwNueQ"
+            "Location": [
+              {
+                "entityType": "Location",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "loc/DVzzIcqf35RQQtkvwNueQ"
+                  }
+                ],
+                "address": {
+                  "street": "29 Tallwood Dr.",
+                  "locality": "Porterville",
+                  "region": "California"
                 }
-              ],
-              "address": {
-                "street": "29 Tallwood Dr.",
-                "locality": "Porterville",
-                "region": "California"
               }
-            },
+            ],
             "contact": {
               "email": {
                 "business": "powers@labkoat.media"
@@ -120,68 +124,7 @@
               "identifierValue": "ptfc/WE7aIODtF4wnsXkT8CYjU"
             }
           ],
-          "functionalType": "person.producer"
-        }
-      },
-      {
-        "entityType": "Participant",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
-          }
-        ],
-        "name": "Ioseph Karin",
-        "description": null,
-        "Participant": null,
-        "StructuralCharacteristics": {
-          "entityType": "ParticipantSC",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "ptsc/xP9-Ambvs4JklyFiSVA8H"
-            }
-          ],
-          "structuralType": "participant.person",
-          "structuralProperties": {
-            "participantName": {
-              "fullName": "Ioseph Karin",
-              "firstGivenName": "Ioseph",
-              "familyName": "Karin"
-            },
-            "Location": {
-              "entityType": "Location",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "loc/tPj0PR3mVVG8y25uO_q-H"
-                }
-              ],
-              "address": {
-                "street": "8654 E. Ridge Lane",
-                "locality": "Sunnyvale",
-                "region": "California"
-              }
-            },
-            "contact": {
-              "email": {
-                "business": "karin@labkoat.media"
-              },
-              "telephone": {
-                "business": "213-555-0125"
-              }
-            }
-          }
-        },
-        "FunctionalCharacteristics": {
-          "entityType": "ParticipantFC",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "ptfc/0IcJty7Cy861yeAlWiStB"
-            }
-          ],
-          "functionalType": "person.artDirector"
+          "functionalType": "producer"
         }
       },
       {
@@ -210,20 +153,22 @@
               "firstGivenName": "Herman",
               "familyName": "Malinalli"
             },
-            "Location": {
-              "entityType": "Location",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "loc/g0E83PzoaZEuxq04ZbpVP"
+            "Location": [
+              {
+                "entityType": "Location",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "loc/g0E83PzoaZEuxq04ZbpVP"
+                  }
+                ],
+                "address": {
+                  "street": "60 Bank Dr.",
+                  "locality": "Oxnard",
+                  "region": "California"
                 }
-              ],
-              "address": {
-                "street": "60 Bank Dr.",
-                "locality": "Oxnard",
-                "region": "California"
               }
-            },
+            ],
             "contact": {
               "email": {
                 "business": "malinalli@labkoat.media"
@@ -242,7 +187,70 @@
               "identifierValue": "ptfc/7EdFxI0xaHHruB97KA9Ni"
             }
           ],
-          "functionalType": "person.director"
+          "functionalType": "director"
+        }
+      },
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
+          }
+        ],
+        "name": "Ioseph Karin",
+        "description": null,
+        "Participant": null,
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/xP9-Ambvs4JklyFiSVA8H"
+            }
+          ],
+          "structuralType": "participant.person",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "Ioseph Karin",
+              "firstGivenName": "Ioseph",
+              "familyName": "Karin"
+            },
+            "Location": [
+              {
+                "entityType": "Location",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "loc/tPj0PR3mVVG8y25uO_q-H"
+                  }
+                ],
+                "address": {
+                  "street": "8654 E. Ridge Lane",
+                  "locality": "Sunnyvale",
+                  "region": "California"
+                }
+              }
+            ],
+            "contact": {
+              "email": {
+                "business": "karin@labkoat.media"
+              },
+              "telephone": {
+                "business": "213-555-0125"
+              }
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/0IcJty7Cy861yeAlWiStB"
+            }
+          ],
+          "functionalType": "artDirector"
         }
       },
       {
@@ -271,20 +279,22 @@
               "firstGivenName": "Grosvner",
               "familyName": "Eudora"
             },
-            "Location": {
-              "entityType": "Location",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "loc/iOF-phOmPTd7MtRhl9nrm"
+            "Location": [
+              {
+                "entityType": "Location",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "loc/iOF-phOmPTd7MtRhl9nrm"
+                  }
+                ],
+                "address": {
+                  "street": "7310 Miller Lane",
+                  "locality": "Lompoc",
+                  "region": "California"
                 }
-              ],
-              "address": {
-                "street": "7310 Miller Lane",
-                "locality": "Lompoc",
-                "region": "California"
               }
-            },
+            ],
             "contact": {
               "email": {
                 "business": "Eudora@labkoat.media"
@@ -303,7 +313,7 @@
               "identifierValue": "ptfc/bh5Xf6qbTw-thvVkmIsvG"
             }
           ],
-          "functionalType": "person.artist"
+          "functionalType": "artist"
         }
       },
       {
@@ -332,19 +342,11 @@
           "structuralType": "participant.person",
           "structuralProperties": {
             "participantName": {
-              "fullName": "J. Warren Trezevant",
-              "firstGivenName": "Warren",
-              "familyName": "Trezevant"
+              "fullName": "J. Warren Trezevant"
             },
-            "Location": null,
-            "contact": {
-              "email": {
-                "business": null
-              },
-              "telephone": {
-                "business": null
-              }
-            }
+            "Location": [
+              null
+            ]
           }
         },
         "FunctionalCharacteristics": {
@@ -355,7 +357,7 @@
               "identifierValue": "ptfc/0wTyS1wlxQqE2aVG2D_qp"
             }
           ],
-          "functionalType": "person.actor"
+          "functionalType": "actor"
         }
       },
       {
@@ -373,7 +375,7 @@
             "entityType": "Participant",
             "identifier": [
               {
-                "identifierScope": null,
+                "identifierScope": "labkoat",
                 "identifierValue": "ptc/VbOgsFchWaIJU4XFKfzSs"
               }
             ]
@@ -382,7 +384,7 @@
             "entityType": "Participant",
             "identifier": [
               {
-                "identifierScope": null,
+                "identifierScope": "labkoat",
                 "identifierValue": "ptc/X_jT_v3bnC5_mdT8WyJ56"
               }
             ]
@@ -391,7 +393,7 @@
             "entityType": "Participant",
             "identifier": [
               {
-                "identifierScope": null,
+                "identifierScope": "labkoat",
                 "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
               }
             ]
@@ -400,7 +402,7 @@
             "entityType": "Participant",
             "identifier": [
               {
-                "identifierScope": null,
+                "identifierScope": "labkoat",
                 "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
               }
             ]
@@ -419,20 +421,22 @@
             "participantName": {
               "fullName": "Labkoat Media"
             },
-            "Location": {
-              "entityType": "Location",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "loc/DVzzIcqf35RQQtkvwNueQ"
+            "Location": [
+              {
+                "entityType": "Location",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "loc/DVzzIcqf35RQQtkvwNueQ"
+                  }
+                ],
+                "address": {
+                  "street": "29 Tallwood Dr.",
+                  "locality": "Porterville",
+                  "region": "California"
                 }
-              ],
-              "address": {
-                "street": "29 Tallwood Dr.",
-                "locality": "Porterville",
-                "region": "California"
               }
-            }
+            ]
           }
         },
         "FunctionalCharacteristics": {
@@ -443,7 +447,7 @@
               "identifierValue": "ptfc/BFQye6ZaPFH-lEPnrtEcA"
             }
           ],
-          "functionalType": "company.production"
+          "functionalType": "productionCompany"
         }
       }
     ]

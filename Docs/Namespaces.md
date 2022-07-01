@@ -23,7 +23,7 @@ The individual components inside a namespace are typically referred to by their 
 
 ```json
 {
-    "mmc": "https://mc.movielabs.com/mmc",
+    "mmc": "https://mc.movielabs.com/omc",
     "mcw": "https://mc.movielabs.com/mcw"
 }
 ```

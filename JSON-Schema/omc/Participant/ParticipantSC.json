@@ -44,7 +44,7 @@
 									"title": "Organization full name",
 									"description": "Organizations full name"
 								},
-								"altName": {
+								"alternateName": {
 									"type": "string",
 									"title": "Organization alternate name",
 									"description": "An alternate or shortend name"
@@ -73,7 +73,7 @@
 									"title": "Department full name",
 									"description": "Department's full name"
 								},
-								"altName": {
+								"alternateName": {
 									"type": "string",
 									"title": "Department alternate name",
 									"description": "An alternate or shortend name"
@@ -129,7 +129,7 @@
 									"title": "Service full name",
 									"description": "Service's full name"
 								},
-								"altName": {
+								"alternateName": {
 									"type": "string",
 									"title": "Service alternate name",
 									"description": "An alternate or shortend name"
