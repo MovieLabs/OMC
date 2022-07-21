@@ -1,0 +1,446 @@
+{
+  "data": {
+    "getCharacter": {
+      "entityType": "Character",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+        }
+      ],
+      "characterName": {
+        "scriptName": "Sven"
+      },
+      "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
+      "Context": {
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/377RXIREHUj5MPzsl-Sba"
+          }
+        ],
+        "hasConceptArt": {
+          "Asset": [
+            {
+              "entityType": "Asset",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "asgp/6ijmAYmCMY86OQtX4cZ_y"
+                }
+              ],
+              "StructuralCharacteristics": {
+                "structuralType": "AssetGroup"
+              },
+              "FunctionalCharacteristics": {
+                "functionalType": "artwork.conceptArt"
+              },
+              "Asset": [
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/c4RM18FQt719w5P8H4ZmG"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vbelt_v002.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/2Qh4vKSLwOo8cvkLDSKJD"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vconcept_v003.png",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/png",
+                      "fileExtension": "png"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/UpHqxfO3q2AV6tUH0xeDd"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vconcept_v006.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/vqpm6WQziTNvCZ1fuA8rh"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vconcept_v006.psd",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image",
+                      "fileExtension": "psd"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/ic3z6uvr8gM88tUOr8RFe"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vconcept_v007.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/nwQVrzhB2cB0eStS5fcRc"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vconcept_v008.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/GYMM6O0KAHuwLTp7UPbqW"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vconcept_v008.png",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/png",
+                      "fileExtension": "png"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/vjx_0MVW3K05FLpjQKXrS"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vexpressions_v005.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/IgVnfGB_VYxzM47hpRsSE"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vhead_v002.png",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/png",
+                      "fileExtension": "png"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/CD0WMH5GxxvsaSAW_VrlE"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vhelmet_v004.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/QoQwYF9wQFNpum2OFiquz"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vhelmet_v006.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/EzoQO_vOkpp8kkBUrUJWs"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vnogear_v002.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/D2hQc-s4iRQF_IClrX6rI"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vnogear_v006.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/OZouakXzJnBoytKkVz5bL"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vold_v003.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/29Cm_KKmxew59YvlU-AcK"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vold_v004.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/w9p_C7Pn2gwaBVOEYZgtl"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vsculpt_v004.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/6KwPEKD2h3RexrSvaVIOS"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vsmall_v002.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/i82gJBSfDa0nNjdfxpsBP"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_sven_vtitle_v002.png",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/png",
+                      "fileExtension": "png"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                },
+                {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "ast/V1JpO7-zVQcdnQ5hk5JJy"
+                    }
+                  ],
+                  "name": "mls-hsm_character_art_Juggernaut_v002.jpg",
+                  "description": null,
+                  "StructuralCharacteristics": {
+                    "structuralType": "digital.image",
+                    "structuralProperties": {
+                      "structuralFormat": "image/jpeg",
+                      "fileExtension": "jpg"
+                    }
+                  },
+                  "FunctionalCharacteristics": {
+                    "functionalType": "artwork.conceptArt"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
