@@ -1,6 +1,6 @@
 {
   "data": {
-    "getAssetType": [
+    "getStoryboards": [
       {
         "entityType": "Asset",
         "identifier": [
@@ -19,6 +19,9 @@
         },
         "FunctionalCharacteristics": {
           "functionalType": "artwork.storyboard"
+        },
+        "Context": {
+          "isStoryboardFor": null
         },
         "Asset": [
           {
@@ -119,6 +122,37 @@
         },
         "FunctionalCharacteristics": {
           "functionalType": "artwork.storyboard"
+        },
+        "Context": {
+          "isStoryboardFor": {
+            "NarrativeScene": [
+              {
+                "entityType": "NarrativeScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                  }
+                ],
+                "sceneName": {
+                  "fullName": "EXT -Space Moments Later",
+                  "altName": "SPC"
+                },
+                "sceneNumber": "3",
+                "description": "Sven reaches spaceship and climbs in.",
+                "slugline": [
+                  {
+                    "title": "INT/EXT",
+                    "text": "EXT"
+                  },
+                  {
+                    "title": "time",
+                    "text": "NIGHT"
+                  }
+                ]
+              }
+            ]
+          }
         },
         "Asset": [
           {
@@ -609,6 +643,37 @@
         },
         "FunctionalCharacteristics": {
           "functionalType": "artwork.storyboard"
+        },
+        "Context": {
+          "isStoryboardFor": {
+            "NarrativeScene": [
+              {
+                "entityType": "NarrativeScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                  }
+                ],
+                "sceneName": {
+                  "fullName": "EXT- Space",
+                  "altName": "SPC"
+                },
+                "sceneNumber": "2",
+                "description": "Sven repairs satellite and is ambushed by Trilobot",
+                "slugline": [
+                  {
+                    "title": "INT/EXT",
+                    "text": "EXT"
+                  },
+                  {
+                    "title": "time",
+                    "text": "NIGHT"
+                  }
+                ]
+              }
+            ]
+          }
         },
         "Asset": [
           {
@@ -1125,6 +1190,37 @@
         },
         "FunctionalCharacteristics": {
           "functionalType": "artwork.storyboard"
+        },
+        "Context": {
+          "isStoryboardFor": {
+            "NarrativeScene": [
+              {
+                "entityType": "NarrativeScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                  }
+                ],
+                "sceneName": {
+                  "fullName": "EXT - Beach - DAY",
+                  "altName": "BECH"
+                },
+                "sceneNumber": "5",
+                "description": "Sven swims to surface and walks into beach.",
+                "slugline": [
+                  {
+                    "title": "INT/EXT",
+                    "text": "EXT"
+                  },
+                  {
+                    "title": "time",
+                    "text": "DAY"
+                  }
+                ]
+              }
+            ]
+          }
         },
         "Asset": [
           {
@@ -1746,6 +1842,37 @@
         "FunctionalCharacteristics": {
           "functionalType": "artwork.storyboard"
         },
+        "Context": {
+          "isStoryboardFor": {
+            "NarrativeScene": [
+              {
+                "entityType": "NarrativeScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                  }
+                ],
+                "sceneName": {
+                  "fullName": "EXT- Jungle - Day",
+                  "altName": "JGL"
+                },
+                "sceneNumber": "6",
+                "description": "Sven retreats to the jungle and destroys the Trilobot using exploding fruit native to the planet.",
+                "slugline": [
+                  {
+                    "title": "INT/EXT",
+                    "text": "EXT"
+                  },
+                  {
+                    "title": "time",
+                    "text": "DAY"
+                  }
+                ]
+              }
+            ]
+          }
+        },
         "Asset": [
           {
             "entityType": "Asset",
@@ -2183,6 +2310,37 @@
         },
         "FunctionalCharacteristics": {
           "functionalType": "artwork.storyboard"
+        },
+        "Context": {
+          "isStoryboardFor": {
+            "NarrativeScene": [
+              {
+                "entityType": "NarrativeScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                  }
+                ],
+                "sceneName": {
+                  "fullName": "EXT - Plateau - Day",
+                  "altName": "PLAT"
+                },
+                "sceneNumber": "7",
+                "description": "Sven discovers city",
+                "slugline": [
+                  {
+                    "title": "INT/EXT",
+                    "text": "EXT"
+                  },
+                  {
+                    "title": "time",
+                    "text": "DAY"
+                  }
+                ]
+              }
+            ]
+          }
         },
         "Asset": [
           {
