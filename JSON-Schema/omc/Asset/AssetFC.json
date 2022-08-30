@@ -1,36 +1,72 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"title": "Asset Functional Characteristics",
-	"description": "A set of Functional Characteristics for Assets",
-	"required": [
-		"identifier",
-		"entityType"
-	],
-	"properties": {
-		"entityInfo": {
-			"title": "Entity Information",
-			"$ref": "../Model/definitions.json#/properties/entityInfo"
-		},
-		"entityType": {
-			"type": "string",
-			"title": "Entity Type",
-			"const": "AssetFC"
-		},
-		"identifier": {
-			"$ref": "../Utility/identifier.json"
-		},
-		"functionalType": {
-			"type": "string",
-			"title": "Functional Type"
-		},
-		"functionalProperties": {
-			"type": "object",
-			"title": "Functional Properties",
-			"description": "A set of properties that describe this specific Asset",
-			"additionalProperties": true
-		}
-	},
-	"$defs": {
-	}
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Asset Functional Characteristics",
+  "description": "A set of Functional Characteristics for Assets",
+  "required": [
+    "identifier",
+    "entityType"
+  ],
+  "properties": {
+    "entityInfo": {
+      "title": "Entity Information",
+      "$ref": "../Model/definitions.json#/properties/entityInfo"
+    },
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "AssetFC"
+    },
+    "identifier": {
+      "$ref": "../Utility/identifier.json"
+    },
+    "functionalType": {
+      "type": "string",
+      "title": "Functional Type"
+    },
+    "functionalProperties": {
+      "type": "object",
+      "title": "Functional Properties",
+      "description": "A set of properties that describe this specific Asset",
+      "additionalProperties": true,
+      "properties": {
+        "representation": {
+          "type": "string",
+          "title": "Asset Representation",
+          "description": ""
+        }
+      }
+    }
+  },
+  "$defs": {
+    "functionalProperties": {
+      "title": "Functional Properties",
+      "description": "A set of properties that describe attributes specific to particular Assets",
+      "anyOf": [
+        {
+          "type": "object",
+          "title": "Shot",
+          "description": "functionalType: Shot",
+          "additionalProperties": true,
+          "properties": {
+            "representation": {
+              "type": "string",
+              "title": "Asset Representation",
+              "description": ""
+            },
+            "start": {
+              "type": "string",
+              "title": "Start point in capture",
+              "description": ""
+            },
+            "end": {
+              "type": "string",
+              "title": "End point in capture",
+              "description": ""
+            }
+          }
+        }
+      ]
+    }
+  }
 }

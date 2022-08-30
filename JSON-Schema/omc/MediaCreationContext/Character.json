@@ -19,11 +19,11 @@
 		},
 		"identifier": {
 			"title": "identifier",
-			"$ref": "../Utility/identifier.json"
+			"$ref": "../Utility/identifier.json#"
 		},
 		"characterName": {
 			"title": "Character Name",
-			"$ref": "../Utility/completeName.json"
+			"$ref": "../Utility/completeName.json#"
 		},
 		"description": {
 			"title": "Character Description",
@@ -127,7 +127,8 @@
 								"$ref": "../Asset/Asset.json"
 							}
 						}
-					}
+					},
+					"additionalItems": false
 				},
 				"uses": {
 					"type": "object",
@@ -139,7 +140,8 @@
 								"$ref": "../MediaCreationContext/NarrativeProp.json"
 							}
 						}
-					}
+					},
+					"additionalItems": true
 				},
 				"usesWardrobe": {
 					"type": "object",
@@ -151,7 +153,8 @@
 								"$ref": "../MediaCreationContext/NarrativeWardrobe.json"
 							}
 						}
-					}
+					},
+					"additionalItems": false
 				},
 				"appearsIn": {
 					"type": "object",
@@ -176,7 +179,8 @@
 								"$ref": "../Participant/Participant.json"
 							}
 						}
-					}
+					},
+					"additionalItems": false
 				},
 				"hasCostume": {
 					"type": "object",
@@ -189,7 +193,7 @@
 							}
 						}
 					},
-					"additionalItems": true
+					"additionalItems": false
 				}
 			},
 			"additionalProperties": true

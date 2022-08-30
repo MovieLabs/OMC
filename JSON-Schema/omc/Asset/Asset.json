@@ -8,47 +8,58 @@
     "entityType"
   ],
   "properties": {
-	"entityInfo": {
-			"title": "Entity Information",
-			"$ref": "../Model/definitions.json#/properties/entityInfo"
-		},
-		"entityType": {
-		  "type": "string",
-		  "title": "Entity Type",
-		  "const": "Asset"
-		},
-		"identifier": {
-		  "$ref": "../Utility/identifier.json"
-		},
-		"name": {
-		  "type": [
-			"string",
-			"null"
-		  ],
-		  "title": "Name"
-		},
-		"description": {
-		  "type": [
-			"string",
-			"null"
-		  ],
-		  "title": "Description"
-		},
-		"customData": {
-			"title": "Custom Data",		
-			"$ref": "../Model/definitions.json#/properties/customData"
-		},
-		"AssetGroup": {
-			"title": "Asset Group",
-			"$ref": "./AssetGroup.json"
-		},
-		"StructuralCharacteristics": {
-		  "title": "StructuralCharacteristics",
-		  "$ref": "./AssetSC.json"
-		},
-		"FunctionalCharacteristics": {
-		  "title": "Functional Characteristics",
-		  "$ref": "./AssetFC.json"
-		}
-	}
+    "entityInfo": {
+      "title": "Entity Information",
+      "$ref": "../Model/definitions.json#/properties/entityInfo"
+    },
+    "entityType": {
+      "type": "string",
+      "title": "Entity Type",
+      "const": "Asset"
+    },
+    "identifier": {
+      "$ref": "../Utility/identifier.json"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Asset name",
+      "description": "A human readable name for the asset"
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "title": "Asset description",
+      "description": "A human readable description of the asset"
+    },
+    "assetInfo": {
+      "type": "object",
+      "title": "Asset Information",
+      "description": "Properties describing the instance of this asset including version, provenance, variant"
+    },
+    "customData": {
+      "title": "Custom Data",
+      "$ref": "../Model/definitions.json#/properties/customData"
+    },
+    "Asset": {
+      "type": "array",
+      "title": "Asset Group",
+      "description": "The set of Assets that make up an an asset group and has a structuralType of 'AssetGroup",
+      "items": {
+        "$ref": "./Asset.json"
+      }
+    },
+    "StructuralCharacteristics": {
+      "title": "StructuralCharacteristics",
+      "$ref": "./AssetSC.json"
+    },
+    "FunctionalCharacteristics": {
+      "title": "Functional Characteristics",
+      "$ref": "./AssetFC.json"
+    }
+  }
 }

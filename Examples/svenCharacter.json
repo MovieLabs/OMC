@@ -1,0 +1,349 @@
+{
+  "entityType": "Character",
+  "identifier": [
+    {
+      "identifierScope": "labkoat",
+      "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+    }
+  ],
+  "characterName": {
+    "fullName": "Sven"
+  },
+  "profile": {
+    "physicalCharacteristics": {
+      "species": "Human",
+      "height": "1m90cm",
+      "weight": "80kg",
+      "hairColor": "Brown",
+      "hairLength": "Short",
+      "eyeColor": "blue"
+    },
+    "background": {
+      "likes": 4,
+      "dislikes": "War, Big space cities, Conflict",
+      "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
+      "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
+    },
+    "gender": null
+  },
+  "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
+  "Context": {
+    "isPortrayedBy": {
+      "Participant": [
+        {
+          "entityType": "Participant",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+            }
+          ]
+        }
+      ]
+    },
+    "appearsIn": {
+      "NarrativeScene": [
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeScene",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+            }
+          ]
+        }
+      ]
+    },
+    "usesWardrobe": {
+      "NarrativeWardrobe": [
+        {
+          "entityType": "NarrativeWardrobe",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+            }
+          ]
+        }
+      ]
+    },
+    "usesProp": {
+      "NarrativeProp": [
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/YESjEAVPVMJL2edrroe2o"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/4ADqu_vf7ji85PLYOott1"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/jpiWPupPSRvHyAiUSyn0_"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/9ezqw5mMlPLoloD86u6aI"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/cqDBPztY_8fCs3mjU2Tq9"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/aAZTJ26A0mCCLosGQ3Ryg"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/R7wfwv6cSPc6d1t1_glgJ"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/5is74zVxCRl5hipIHfMzB"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/vgGK6PF2s1FGziyehshia"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/Lp5AP7ZQiwfRpeB_qIrXf"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/zVJeW6nTeg8PKVJ_F0t5C"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/eM2Njo6EK-OEIzEL9xDlr"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/PFYNfswZXdTqm1l62DfSr"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/BtBYAFQ_Moo4PQlqSztGz"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/XkxEwUpJGpxExmXj6FBv_"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/ryhQTqM7Dpo0fe-9PJhQh"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/HL9EpbbzFK320fweoiFsM"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/OAjeFuQtL5Au4DHJMu6Uz"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/PAWDCz64zEthoQVVWivOd"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/nsLRumyU2pd_7DPTFCpoj"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/c7UXpl1eerrigqaZaLTSi"
+            }
+          ]
+        },
+        {
+          "entityType": "NarrativeProp",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "nprp/psNDy6gpu-aVkc79Jdb0c"
+            }
+          ]
+        }
+      ]
+    },
+    "hasConceptArt": {
+      "Asset": [
+        {
+          "entityType": "Asset",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "asgp/6ijmAYmCMY86OQtX4cZ_y"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -66,6 +66,9 @@
 			"description": "The date of capture.",
 			"oneOf": [
 				{
+					"$ref": "../Utility/time.json#/properties/date"
+				},
+				{
 					"$ref": "../Utility/time.json#/properties/dateTime"
 				},
 				{
