@@ -53,11 +53,11 @@
         "$ref": "./Asset.json"
       }
     },
-    "StructuralCharacteristics": {
+    "structuralCharacteristics": {
       "title": "StructuralCharacteristics",
       "$ref": "./AssetSC.json"
     },
-    "FunctionalCharacteristics": {
+    "functionalCharacteristics": {
       "title": "Functional Characteristics",
       "$ref": "./AssetFC.json"
     }

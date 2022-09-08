@@ -3,23 +3,7 @@
   "type": "object",
   "title": "Asset Functional Characteristics",
   "description": "A set of Functional Characteristics for Assets",
-  "required": [
-    "identifier",
-    "entityType"
-  ],
   "properties": {
-    "entityInfo": {
-      "title": "Entity Information",
-      "$ref": "../Model/definitions.json#/properties/entityInfo"
-    },
-    "entityType": {
-      "type": "string",
-      "title": "Entity Type",
-      "const": "AssetFC"
-    },
-    "identifier": {
-      "$ref": "../Utility/identifier.json"
-    },
     "functionalType": {
       "type": "string",
       "title": "Functional Type"

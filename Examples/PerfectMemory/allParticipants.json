@@ -1,0 +1,721 @@
+{
+  "data": {
+    "allParticipants": [
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/VbOgsFchWaIJU4XFKfzSs"
+          }
+        ],
+        "name": "Max Powers",
+        "description": null,
+        "Participant": null,
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/aEwg8NyveKLPKYfnCdsE6"
+            }
+          ],
+          "structuralType": "participant.person",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "Max Powers",
+              "firstGivenName": "Max",
+              "familyName": "Powers"
+            },
+            "Location": {
+              "entityType": null,
+              "identifier": null,
+              "address": null
+            },
+            "contact": {
+              "email": {
+                "business": "powers@labkoat.media"
+              },
+              "telephone": {
+                "business": "213-555-0172"
+              }
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/WE7aIODtF4wnsXkT8CYjU"
+            }
+          ],
+          "functionalType": "producer"
+        },
+        "Context": {
+          "isDirectorFor": null
+        }
+      },
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/X_jT_v3bnC5_mdT8WyJ56"
+          }
+        ],
+        "name": "John Rene",
+        "description": null,
+        "Participant": null,
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGH"
+            }
+          ],
+          "structuralType": "participant.person",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "John Rene",
+              "firstGivenName": "John",
+              "familyName": "Rene"
+            },
+            "Location": {
+              "entityType": null,
+              "identifier": null,
+              "address": null
+            },
+            "contact": {
+              "email": {
+                "business": "rene@labkoat.media"
+              },
+              "telephone": {
+                "business": "213-555-0161"
+              }
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/zMHMDLktboZFV4Q9l0637"
+            }
+          ],
+          "functionalType": "writer"
+        },
+        "Context": {
+          "isDirectorFor": null
+        }
+      },
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+          }
+        ],
+        "name": "Herman Malinalli",
+        "description": null,
+        "Participant": null,
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/iX7B9lnq14SUfTe_swwAy"
+            }
+          ],
+          "structuralType": "participant.person",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "Herman Malinalli",
+              "firstGivenName": "Herman",
+              "familyName": "Malinalli"
+            },
+            "Location": {
+              "entityType": null,
+              "identifier": null,
+              "address": null
+            },
+            "contact": {
+              "email": {
+                "business": "malinalli@labkoat.media"
+              },
+              "telephone": {
+                "business": "213-555-0101"
+              }
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/7EdFxI0xaHHruB97KA9Ni"
+            }
+          ],
+          "functionalType": "director"
+        },
+        "Context": {
+          "isDirectorFor": {
+            "Slate": [
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/SSkF3Waf7xDm68bi30EdS"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/uOKge8nJKPQM9y9IVkDIz"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/Qo2HAl2znKMgTynijAw8Y"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/F7VzO1vos4ClQk0pEkGY5"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/ItLiCV5TjZp5ghzv9Qb6f"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/qCzFX48GcpettnBdeX1xb"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/HIkGA3TeiaVR5j8fzQTti"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/vGJgSTs3CQsM5xO38khNB"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/61FL1wt-zc_S6DFvaD0EN"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/CUue5855wy93gGhRhXYGq"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/B1UQ_TNCHq4H6V7aL9iHu"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/VFjlKJ4bdkewIJzN3ft-Q"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/EtyisWNoFVPrhXms1Mb0O"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/DrmTw2ygks0JpY03p7fxw"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/FsvZ_dxSMz3boxezVX5tN"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/AovkCGOGbhjEl3q0cInTm"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/IkLswNdujEvsIsWvyAPfb"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/-PNy6443MxM22n0tYFH-I"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/wmua7DYsqu-McKKF-yUTp"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/kQeYrOpCXM6JhhQdLRGyy"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/pmpaZVD_pO6olere95n8Y"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/-_uuk-2huzJsMKQvdkAFT"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/gGhsjPdmldXyDbp-tC1Vb"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/jgrqwpjYtw90S0Bpu_cjc"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/mXcZWbTWpEy9CJTllVIHs"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/N0pyGc_cKbNgvsTaHWNk6"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/3JmaJQsxsjpMRf03y7d9H"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/IzmrFhZ3_oiEZrnbYHr7q"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/XdWMQ7EikkKAqPYc_acSm"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/h_NPTbN6mbb1JDhtbgnet"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/Z6ff8doSlXzNbjQd73Zc1"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/8ZBdBu1OcNiBOHbMRlv4N"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/ZLVzmYzooVoM41g59ylll"
+                  }
+                ]
+              },
+              {
+                "entityType": "Slate",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "slt/LPaOwIcNapJh1XpMVycwV"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/Ax3lSFU1XSBWJX7YnaReB"
+          }
+        ],
+        "name": "Grosvenor Eudora",
+        "description": null,
+        "Participant": null,
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/GQVi8I91cdCwDjJpI3rjU"
+            }
+          ],
+          "structuralType": "participant.person",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "Grosvenor Eudora",
+              "firstGivenName": "Grosvner",
+              "familyName": "Eudora"
+            },
+            "Location": {
+              "entityType": null,
+              "identifier": null,
+              "address": null
+            },
+            "contact": {
+              "email": {
+                "business": "Eudora@labkoat.media"
+              },
+              "telephone": {
+                "business": "213-555-0127"
+              }
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/bh5Xf6qbTw-thvVkmIsvG"
+            }
+          ],
+          "functionalType": "artist"
+        },
+        "Context": {
+          "isDirectorFor": null
+        }
+      },
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+          },
+          {
+            "identifierScope": "imdb",
+            "identifierValue": "nm0872514"
+          }
+        ],
+        "name": "J. Warren Trezevant",
+        "description": "Stunt actor doing mo-cap for Sven",
+        "Participant": null,
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/sUkiSYaQ5CoMfaHNL5-tE"
+            }
+          ],
+          "structuralType": "participant.person",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "J. Warren Trezevant"
+            },
+            "Location": {
+              "entityType": null,
+              "identifier": null,
+              "address": null
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/0wTyS1wlxQqE2aVG2D_qp"
+            }
+          ],
+          "functionalType": "actor"
+        },
+        "Context": {
+          "isDirectorFor": null
+        }
+      },
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
+          }
+        ],
+        "name": "Ioseph Karin",
+        "description": null,
+        "Participant": null,
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/xP9-Ambvs4JklyFiSVA8H"
+            }
+          ],
+          "structuralType": "participant.person",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "Ioseph Karin",
+              "firstGivenName": "Ioseph",
+              "familyName": "Karin"
+            },
+            "Location": {
+              "entityType": null,
+              "identifier": null,
+              "address": null
+            },
+            "contact": {
+              "email": {
+                "business": "karin@labkoat.media"
+              },
+              "telephone": {
+                "business": "213-555-0125"
+              }
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/0IcJty7Cy861yeAlWiStB"
+            }
+          ],
+          "functionalType": "artDirector"
+        },
+        "Context": {
+          "isDirectorFor": null
+        }
+      },
+      {
+        "entityType": "Participant",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/VjEdQ7NPqpO-rYxWhQOQI"
+          }
+        ],
+        "name": "Labkoat Media",
+        "description": "Labkoat Media is the production company",
+        "Participant": [
+          {
+            "entityType": "Participant",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ptc/VbOgsFchWaIJU4XFKfzSs"
+              }
+            ]
+          },
+          {
+            "entityType": "Participant",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ptc/X_jT_v3bnC5_mdT8WyJ56"
+              }
+            ]
+          },
+          {
+            "entityType": "Participant",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+              }
+            ]
+          },
+          {
+            "entityType": "Participant",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
+              }
+            ]
+          }
+        ],
+        "StructuralCharacteristics": {
+          "entityType": "ParticipantSC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptsc/ywFTQVU00xUh8GUYdMsRR"
+            }
+          ],
+          "structuralType": "participant.organization",
+          "structuralProperties": {
+            "participantName": {
+              "fullName": "Labkoat Media"
+            },
+            "Location": {
+              "entityType": null,
+              "identifier": null,
+              "address": null
+            }
+          }
+        },
+        "FunctionalCharacteristics": {
+          "entityType": "ParticipantFC",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "ptfc/BFQye6ZaPFH-lEPnrtEcA"
+            }
+          ],
+          "functionalType": "productionCompany"
+        },
+        "Context": {
+          "isDirectorFor": null
+        }
+      }
+    ]
+  }
+}
