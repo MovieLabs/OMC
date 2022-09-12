@@ -1,0 +1,2420 @@
+{
+  "data": {
+    "allSlates": [
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/SSkF3Waf7xDm68bi30EdS"
+          }
+        ],
+        "slateUID": "2A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/eQupS2gql9sd-x9uSQ8Cf"
+                  }
+                ],
+                "name": "SATL-R_2A-001",
+                "description": "Sven working on satellite ",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-R_2A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/Wu7bLX7wJoV0PbyqjidHz"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/Qo2HAl2znKMgTynijAw8Y"
+          }
+        ],
+        "slateUID": "2A-3",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/f3bG34z6hhuXS4sbqGJ2E"
+                  }
+                ],
+                "name": "SATL-R_2A-003",
+                "description": "Sven working on satellite ",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-R_2A-003.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/Wu7bLX7wJoV0PbyqjidHz"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/uOKge8nJKPQM9y9IVkDIz"
+          }
+        ],
+        "slateUID": "2A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
+                  }
+                ],
+                "name": "SATL-R_2A-002",
+                "description": "Sven working on satellite ",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-R_2A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/Wu7bLX7wJoV0PbyqjidHz"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/HIkGA3TeiaVR5j8fzQTti"
+          }
+        ],
+        "slateUID": "2A-4",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/Uwr55Q_Ml4hu5rW1_rSXn"
+                  }
+                ],
+                "name": "SATL-R_2A-004",
+                "description": "Sven working on satellite ",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-R_2A-004..mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/Wu7bLX7wJoV0PbyqjidHz"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/ItLiCV5TjZp5ghzv9Qb6f"
+          }
+        ],
+        "slateUID": "3A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/xD1tgk1htc6a26R1Ku4Qm"
+                  }
+                ],
+                "name": "SATL-A_3A-001",
+                "description": "Sven attacked by Trilobot at satellite",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-A_3A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/U1J-mrA2p_1BUfZUL3_oo"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/F7VzO1vos4ClQk0pEkGY5"
+          }
+        ],
+        "slateUID": "3A-4",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/DNiDqikSEmFbOAQX3KAvM"
+                  }
+                ],
+                "name": "SATL-A_3A-004",
+                "description": "Sven attacked by Trilobot at satellite",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-A_3A-004.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/U1J-mrA2p_1BUfZUL3_oo"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/vGJgSTs3CQsM5xO38khNB"
+          }
+        ],
+        "slateUID": "3A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/jquZdAHLQUrr_zaxVyFXn"
+                  }
+                ],
+                "name": "SATL-A_3A-002",
+                "description": "Sven attacked by Trilobot at satellite",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-A_3A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/U1J-mrA2p_1BUfZUL3_oo"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/qCzFX48GcpettnBdeX1xb"
+          }
+        ],
+        "slateUID": "3A-3",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/NQ8bNQWo9ZEaJFMVe3Uwe"
+                  }
+                ],
+                "name": "SATL-A_3A-003",
+                "description": "Sven attacked by Trilobot at satellite",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-A_3A-003.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/U1J-mrA2p_1BUfZUL3_oo"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/CUue5855wy93gGhRhXYGq"
+          }
+        ],
+        "slateUID": "5A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/2ar51_8fL9amWaZi_rqw3"
+                  }
+                ],
+                "name": "FALL-W_5A_001",
+                "description": "Sven crashing towards surface in ship",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "FALL-W_5A_001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/MXKY7B8PtFZHrBilkphbM"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/EtyisWNoFVPrhXms1Mb0O"
+          }
+        ],
+        "slateUID": "7A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/0sZxrhoHypKX91LGhGQNF"
+                  }
+                ],
+                "name": "BECH-S_7A-002",
+                "description": "Sven swims toward the beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-S_7A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/J9TFwwR0fICXWtv008338"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/61FL1wt-zc_S6DFvaD0EN"
+          }
+        ],
+        "slateUID": "6A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/KL6edXyX4xcBK5dxbsvfB"
+                  }
+                ],
+                "name": "FALL-S_6A-001",
+                "description": "Sven ejecting from ship",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "FALL-S_6A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/n5jZBStI2GE0GO5wLlNFa"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/DrmTw2ygks0JpY03p7fxw"
+          }
+        ],
+        "slateUID": "7A-3",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/bW4whKECBQ4BeWmqXIcZo"
+                  }
+                ],
+                "name": "BECH-S_7A-003",
+                "description": "Sven swims toward the beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-S_7A-003.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/J9TFwwR0fICXWtv008338"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/B1UQ_TNCHq4H6V7aL9iHu"
+          }
+        ],
+        "slateUID": "3A-5",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/M3EnG4Wzz1-dnECrk0mcX"
+                  }
+                ],
+                "name": "SATL-A_3A-005",
+                "description": "Sven attacked by Trilobot at satellite",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "SATL-A_3A-005.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/U1J-mrA2p_1BUfZUL3_oo"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/VFjlKJ4bdkewIJzN3ft-Q"
+          }
+        ],
+        "slateUID": "7A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/0DXPOqFnaEsjYXTJUWoqn"
+                  }
+                ],
+                "name": "BECH-S_7A-001",
+                "description": "Sven swims toward the beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-S_7A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/J9TFwwR0fICXWtv008338"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/FsvZ_dxSMz3boxezVX5tN"
+          }
+        ],
+        "slateUID": "8A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/IEaXmzUCzGDfSL6WzmZtS"
+                  }
+                ],
+                "name": "BECH-C_8A-001",
+                "description": "Sven talks to Kiera on the beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-C_8A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/O_8jsFUYTH6i0_mthLMxm"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/AovkCGOGbhjEl3q0cInTm"
+          }
+        ],
+        "slateUID": "7A-4",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/vxFCl4biEKTjc7WoRhHep"
+                  }
+                ],
+                "name": "BECH-S_7A-004",
+                "description": "Sven swims toward the beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-S_7A-004.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/J9TFwwR0fICXWtv008338"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/-PNy6443MxM22n0tYFH-I"
+          }
+        ],
+        "slateUID": "8A-3",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
+                  }
+                ],
+                "name": "BECH-C_8A-003",
+                "description": "Sven talks to Kiera on the beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-C_8A-003.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/O_8jsFUYTH6i0_mthLMxm"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/IkLswNdujEvsIsWvyAPfb"
+          }
+        ],
+        "slateUID": "8A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/mcpe0vuCR28t7XiVseDsG"
+                  }
+                ],
+                "name": "BECH-C_8A-002",
+                "description": "Sven talks to Kiera on the beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-C_8A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/O_8jsFUYTH6i0_mthLMxm"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/wmua7DYsqu-McKKF-yUTp"
+          }
+        ],
+        "slateUID": "9A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/urkTWT5sEIru-v3818NwU"
+                  }
+                ],
+                "name": "BECH-T_9A-001",
+                "description": "Sven runs for cover on beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-T_9A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/Q2QrLLQVQz2t8sd8CUG9j"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/gGhsjPdmldXyDbp-tC1Vb"
+          }
+        ],
+        "slateUID": "10A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/4fSdq1OXYp3igRsYGMYvU"
+                  }
+                ],
+                "name": "JNGLE-R_10A-001",
+                "description": "Sven running through the jungle",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGLE-R_10A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/p7dsZBxu1YrYqd_JZJeBF"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/jgrqwpjYtw90S0Bpu_cjc"
+          }
+        ],
+        "slateUID": "10A-3",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+                  }
+                ],
+                "name": "JNGLE-R_10A-003",
+                "description": "Sven running through the jungle",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGLE-R_10A-003.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/p7dsZBxu1YrYqd_JZJeBF"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/kQeYrOpCXM6JhhQdLRGyy"
+          }
+        ],
+        "slateUID": "9A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/b_2Gl0xx5gHMMmAWb0z1Y"
+                  }
+                ],
+                "name": "BECH-T_9A-002",
+                "description": "Sven runs for cover on beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-T_9A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/Q2QrLLQVQz2t8sd8CUG9j"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/N0pyGc_cKbNgvsTaHWNk6"
+          }
+        ],
+        "slateUID": "11A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/cXd8WtS9Qm76QT_we6IOk"
+                  }
+                ],
+                "name": "JNGL-F_11A-002",
+                "description": "Explosion",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-F_11A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/mXcZWbTWpEy9CJTllVIHs"
+          }
+        ],
+        "slateUID": "11A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/EZc28t2KzSbIg3NueBf8A"
+                  }
+                ],
+                "name": "JNGL-F_11A-001",
+                "description": "Explosion",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-F_11A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/pmpaZVD_pO6olere95n8Y"
+          }
+        ],
+        "slateUID": "9A-3",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/RT_zYxVnunQfgFYG53JB2"
+                  }
+                ],
+                "name": "BECH-T_9A-003",
+                "description": "Sven runs for cover on beach",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "BECH-T_9A-003.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/Q2QrLLQVQz2t8sd8CUG9j"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/IzmrFhZ3_oiEZrnbYHr7q"
+          }
+        ],
+        "slateUID": "11A-3",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/37dlDGT3uqLsSnBDSK7YO"
+                  }
+                ],
+                "name": "JNGL-F_11A-003",
+                "description": "Explosion",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-F_11A-003.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/3JmaJQsxsjpMRf03y7d9H"
+          }
+        ],
+        "slateUID": "11A-4",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/RWQ2PGFjSBS9pibCOdBAL"
+                  }
+                ],
+                "name": "JNGL-F_11A-004",
+                "description": "Explosion",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-F_11A-004.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/ZLVzmYzooVoM41g59ylll"
+          }
+        ],
+        "slateUID": "14A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/wVf-WdNqBaHXXGsvMjePc"
+                  }
+                ],
+                "name": "PLAT_13A-001",
+                "description": "Sven walks out onto plateau to see the city",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "PLAT_13A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/m6FoqLtHiLy4vq1JaFD8_"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/LPaOwIcNapJh1XpMVycwV"
+          }
+        ],
+        "slateUID": "14A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/Fn8o5siy2IuMVgVHLHpPT"
+                  }
+                ],
+                "name": "PLAT_13A-002",
+                "description": "Sven walks out onto plateau to see the city",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "PLAT_13A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/m6FoqLtHiLy4vq1JaFD8_"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/XdWMQ7EikkKAqPYc_acSm"
+          }
+        ],
+        "slateUID": "11A-5",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/f8hQ4lP1Q_iG9ETfS6a7V"
+                  }
+                ],
+                "name": "JNGL-F_11A-005",
+                "description": "Explosion",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-F_11A-005.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/-_uuk-2huzJsMKQvdkAFT"
+          }
+        ],
+        "slateUID": "10A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/X3DJFL-7rWWhX7TQH1f8b"
+                  }
+                ],
+                "name": "JNGLE-R_10A-002",
+                "description": "Sven running through the jungle",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGLE-R_10A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/p7dsZBxu1YrYqd_JZJeBF"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/h_NPTbN6mbb1JDhtbgnet"
+          }
+        ],
+        "slateUID": "12A-1",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
+                  }
+                ],
+                "name": "JNGL-L-12A-001",
+                "description": "Sven blasts fruit",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-L-12A-001.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/KLQ4h8dJ451xc2ifEGxP2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/Z6ff8doSlXzNbjQd73Zc1"
+          }
+        ],
+        "slateUID": "12A-2",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/I_wjcoEvm7BDY2osFjo3Y"
+                  }
+                ],
+                "name": "JNGL-L-12A-002",
+                "description": "Sven blasts fruit",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-L-12A-002.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/KLQ4h8dJ451xc2ifEGxP2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entityType": "Slate",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "slt/8ZBdBu1OcNiBOHbMRlv4N"
+          }
+        ],
+        "slateUID": "11A-6",
+        "shootDay": 1,
+        "soundRoll": "SRA",
+        "Context": {
+          "hasDirector": {
+            "Participant": [
+              {
+                "entityType": "Participant",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+                  }
+                ],
+                "description": null
+              }
+            ]
+          },
+          "isSlateFor": {
+            "Asset": [
+              {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/Xe7p9QvRy23W235C8MoxB"
+                  }
+                ],
+                "name": "JNGL-F_11A-006",
+                "description": "Explosion",
+                "structuralCharacteristics": {
+                  "structuralType": "digital.movingImage",
+                  "structuralProperties": {
+                    "linkset": {
+                      "referentType": "item",
+                      "mediaType": "video/quicktime"
+                    },
+                    "fileDetails": {
+                      "fileName": "JNGL-F_11A-006.mov",
+                      "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                      "fileExtension": "mov"
+                    }
+                  }
+                },
+                "functionalCharacteristics": {
+                  "functionalType": "capture"
+                }
+              }
+            ],
+            "ProductionScene": [
+              {
+                "entityType": "ProductionScene",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

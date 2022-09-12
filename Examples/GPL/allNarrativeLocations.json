@@ -1,0 +1,126 @@
+{
+  "data": {
+    "allNarrativeLocations": [
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+          }
+        ],
+        "name": "Headquarters",
+        "description": "The galactic federation home base of operations",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/z_GgQuQK8JOzOygofIAwU"
+          }
+        ],
+        "name": "Atmosphere",
+        "description": "The upper atmoshere of SR-232",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/ym4RXT4JbXxIAAc1uTUXX"
+          }
+        ],
+        "name": "Ocean",
+        "description": "Quadrant 4 of Planet SR-232",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/L5VqKriC9OFF2DsaLc66u"
+          }
+        ],
+        "name": "Planet",
+        "description": "Planet SR-232",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/ujQpZcShX7y6Do114nXNp"
+          }
+        ],
+        "name": "Space",
+        "description": "The vast infintite nothingness",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/4h-qk9I4CW6nVIbHjpBEr"
+          }
+        ],
+        "name": "Coastline",
+        "description": "Rocky outcrops of Quadrant 4 of Planet SR-232",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/50DwTikSnhJViFrABXvGF"
+          }
+        ],
+        "name": "Beach",
+        "description": "Sandy beach leading into jungle on coastline",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/ryfjgiLuoYBZePKoW9Yxy"
+          }
+        ],
+        "name": "Plateau",
+        "description": "Volcanic ridge above valley",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/JR_953OF4aawPxxjrhQgS"
+          }
+        ],
+        "name": "Jungle",
+        "description": "Deep thick brush, trees and fruits on rocky terrain",
+        "Location": null
+      },
+      {
+        "entityType": "NarrativeLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/EZ4G2BwwADdGAYwsJZprm"
+          }
+        ],
+        "name": "Killamari City",
+        "description": "Hidden mining and headquarters of Killamari on Planet SR-232",
+        "Location": null
+      }
+    ]
+  }
+}

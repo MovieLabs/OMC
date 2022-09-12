@@ -1,0 +1,171 @@
+{
+  "data": {
+    "allProductionLocations": [
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/TK4E45u-dwswyB7yCGgnX"
+          }
+        ],
+        "name": "space ",
+        "description": "environment for space and atmoshpere",
+        "Location": null
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/06CvKXkLgN8shz9PpRGQr"
+          }
+        ],
+        "name": "MovieLabs Studio",
+        "description": "Headquarters of MovieLabs Studio",
+        "Location": {
+          "entityType": "Location",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "loc/LymvJ1GP6RbuhtgjlJY7j"
+            }
+          ],
+          "address": {
+            "street": "222 Kearny St, Ste 300",
+            "locality": "San Francisco",
+            "region": "California",
+            "postalCode": "CA 94108",
+            "country": "US"
+          },
+          "coordinates": {
+            "latitude": 37.79018,
+            "longitude": -122.40367
+          }
+        }
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/Ac3o-dmyEs8AglFKDLoT5"
+          }
+        ],
+        "name": "Labkoat.media",
+        "description": "Headquarters of Labkoat.media",
+        "Location": {
+          "entityType": "Location",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "loc/DVzzIcqf35RQQtkvwNueQ"
+            }
+          ],
+          "address": {
+            "street": "29 Tallwood Dr.",
+            "locality": "Porterville",
+            "region": "California",
+            "postalCode": "CA 93257",
+            "country": "US"
+          },
+          "coordinates": {
+            "latitude": 36.123611,
+            "longitude": -119.049599
+          }
+        }
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/MuCFCfVeCv0mXeXdnpYSi"
+          }
+        ],
+        "name": "coastline ",
+        "description": "environment for coastline",
+        "Location": null
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/d1_XXxQ9T3lXXWEdKwG6x"
+          }
+        ],
+        "name": "beach ",
+        "description": "environment for ocean and beach",
+        "Location": null
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/VbTKuVcICZLzvr2ShHj8c"
+          }
+        ],
+        "name": "FX-DMZ",
+        "description": "Headquarters of FX-DMZ",
+        "Location": {
+          "entityType": "Location",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "loc/vwVy1ZHlo8b-GdDE3pC76"
+            }
+          ],
+          "address": {
+            "street": "2231 Quesnel",
+            "locality": "Montreal",
+            "region": "Quebec",
+            "postalCode": "H3J1G3",
+            "country": "CA"
+          },
+          "coordinates": {
+            "latitude": 45.48736,
+            "longitude": -73.57545
+          }
+        }
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/ScUo2IEIMqiAJDSxvSP7Y"
+          }
+        ],
+        "name": "Killamari City",
+        "description": "Environment for Killmari city",
+        "Location": null
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/RVmDAT-qUwjudelEx3rkF"
+          }
+        ],
+        "name": "plateau",
+        "description": "Environment for plateau",
+        "Location": null
+      },
+      {
+        "entityType": "ProductionLocation",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "loc/tJXXp9Pbza0q6roZNHp2b"
+          }
+        ],
+        "name": "jungle ",
+        "description": "environment for jungle",
+        "Location": null
+      }
+    ]
+  }
+}
