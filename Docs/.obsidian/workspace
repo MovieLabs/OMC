@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Overview/Namespaces.md",
+            "file": "Overview/Schema-Version.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overview/Namespaces.md",
+                "file": "Overview/Schema Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overview/Namespaces.md",
+                "file": "Overview/Schema Structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overview/Namespaces.md"
+                "file": "Overview/Schema Structure.md"
               }
             }
           }
@@ -139,17 +139,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0c1e93eec6f22b07",
+  "active": "6a135c50f55c7dab",
   "lastOpenFiles": [
-    "Tech Notes/Narrative & Production.md",
-    "Tech Notes/Depictions & Portrayals.md",
-    "Tech Notes/Assets.md",
-    "Tech Notes/Functional & Structural.md",
-    "Schema Docs/Asset/Asset.md",
     "Overview/Schema-Version.md",
-    "Overview/Schema Structure.md",
-    "Overview/Schema Practices.md",
     "Overview/Overview.md",
-    "Index.md"
+    "Tech Notes/Depictions & Portrayals.md",
+    "Overview/Schema Structure.md",
+    "Tech Notes/Functional & Structural.md",
+    "Overview/Namespaces.md",
+    "Tech Notes/Narrative & Production.md",
+    "Tech Notes/Assets.md",
+    "Schema Docs/Asset/Asset.md",
+    "Overview/Schema Practices.md"
   ]
 }

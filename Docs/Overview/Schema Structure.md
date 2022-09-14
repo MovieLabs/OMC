@@ -1,13 +1,10 @@
 # JSON Schema Overview
-
 OMC is written in RDF, which provides a useful degree of formality, especially for relationships and complex classes. JSON, of course, can also be used for data modelling, but it has different mechanics for classes, properties, and types, and less emphasis on relationships than RDF.
 
 The JSON schema retains the vocabulary, concepts, and top-level structures of the RDF, although some changes are necessary to support expressing the details of the concepts in JSON. In particular, the JSON schema provides standard mechanisms for relationships (in the RDF sense) and complex classes.
 
 ## Key Concepts
-
 There are three pervasive concepts in the JSON schema:
-
 - Entities
 - Identifiers and references
 - Relationships
@@ -42,9 +39,6 @@ Here is section of the schema for Narrative Location, which illustrates how the 
         "title": "identifier",
         "$ref": "../Utility/identifier.json#/properties/identifier"
     },
-    "Location": {
-        "$ref": "../Utility/Location.json"
-    },
     "name": {
         "type": "string",
         "title": "Name"
@@ -52,6 +46,9 @@ Here is section of the schema for Narrative Location, which illustrates how the 
     "description": {
         "type": "string",
         "title": "Description"
+    },
+	"Location": {
+        "$ref": "../Utility/Location.json"
     }
 }
 ```
@@ -68,9 +65,9 @@ Here is section of the schema for Narrative Location, which illustrates how the 
         "identifier": [{
             "identifierValue": "5678",
             "identifierScope": "Movielabs"
-        }],
+        }]
     },
-    "name": "221B Baker Street - exterior"
+    "name": "221B Baker Street - exterior",
     "description": "Sherlock Holmes' residence"
 }
 ```
@@ -116,12 +113,12 @@ There is a JSON schema for an identifier/scope pair, as shown here, followed by 
 
 **JSON Instance**
 ```json
-    {
-        "identifier": [{
-          "identifierValue": "1234",
-          "identifierScope": "MovieLabs"
-        }]
-    }
+{
+	"identifier": [{
+	  "identifierValue": "1234",
+	  "identifierScope": "MovieLabs"
+	}]
+}
 ```
 
 
@@ -145,7 +142,7 @@ The example below shows a Narrative Location, where the Location itself is only 
         "identifier": [{
             "identifierValue": "221B",
             "identifierScope": "LocationDB"
-        }],
+        }]
     },
     "description": "Sherlock Holmes' residence"
 }
@@ -171,7 +168,7 @@ The next example shows how the Location entity can be de-referenced and included
         "address": {
             "street": "221b Baker St.",
             "region": "London",
-            "postalCode": "NW1 6XE"
+            "postalCode": "NW1 6XE",
             "country": "uk"
         }
     },
@@ -192,16 +189,25 @@ There are not really standard mechansims for encoding relationships in JSON, we 
 - When another entity is an intrinsic property of an entity
 - When you wish to use a named relationship, typically as part of a Context
 
-When another entity is an intrinsic property then the entity type to which you are refering is often the name of the property, this can be seen for Location in the example above. However, another name can be used, such as the propery ``source`` in a shot
+When another entity is an intrinsic property then the entity type to which you are refering is often the name of the property,an example of this can be seen for Location above. However, another property name can be used, such as the propery ``source`` in a shot, this refers to an Asset.
 ```JSON
-"functionalProperties": {
-	"source": {
-		"entityType": "Asset",
-		"identifier": [{
-		}]
+{
+	"entityType": "Asset",
+	"functionalCharacteristics": {
+		"funcionalType": "shot",
+		"functionalProperties": {
+			"source": {
+				"entityType": "Asset",
+				"identifier": [{
+					"identifierScope": "labkoat",
+					"identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+				}]
+			},
+			"start": "0:10",
+			"end": "0:17"
+		}
 	}
 }
-
 ```
 
 
@@ -219,7 +225,7 @@ The Context entity demonstrates the use of named relationships, the following ex
     },
     "identifier": {
         "title": "identifier",
-        "$ref": "../Utility/identifier.json#/properties/identifier"
+        "$ref": "../Utility/identifier.json#/properties/identifier",
     "name": {
         "type": "string",
         "title": "Name"
@@ -227,7 +233,7 @@ The Context entity demonstrates the use of named relationships, the following ex
     "description": {
         "type": "string",
         "title": "Description"
-    }
+    },
 	"Context": {  
 	      "type": "object",  
 	      "required": [  
@@ -279,102 +285,102 @@ The Context entity demonstrates the use of named relationships, the following ex
 
 **JSON Instance**
 ```JSON
-      {
-        "entityType": "NarrativeScene",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-          }
-        ],
-        "name": "Space",
-        "description": "Sven repairs satellite and is ambushed by Trilobot",
-        "sceneNumber": "2",
-        "Context": {
-          "isFromScript": {
-            "Asset": [
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
-                  }
-                ],
-                "name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-                "description": null,
-                "structuralCharacteristics": {
-                  "structuralType": "document",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
-                    }
-                  ],
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "application/pdf"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-                      "filePath": "/1_pre-production/story",
-                      "fileExtension": "pdf"
-                    }
-                  }
-                },
-                "functionalCharacteristics": {
-                  "functionalType": "script"
-                }
-              }
-            ]
-          },
-          "features": {
-            "Character": [
-              {
-                "entityType": "Character",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-                  }
-                ]
-              },
-              {
-                "entityType": "Character",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
-                  }
-                ]
-              }
-            ]
-          },
-          "usesProp": {
-            "NarrativeProp": [
-              {
-                "entityType": "NarrativeProp",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
-                  }
-                ]
-              },
-              {
-                "entityType": "NarrativeProp",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "nprp/YESjEAVPVMJL"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      }
+{
+"entityType": "NarrativeScene",
+"identifier": [
+  {
+	"identifierScope": "labkoat",
+	"identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+  }
+],
+"name": "Space",
+"description": "Sven repairs satellite and is ambushed by Trilobot",
+"sceneNumber": "2",
+"Context": {
+  "isFromScript": {
+	"Asset": [
+	  {
+		"entityType": "Asset",
+		"identifier": [
+		  {
+			"identifierScope": "labkoat",
+			"identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
+		  }
+		],
+		"name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+		"description": null,
+		"structuralCharacteristics": {
+		  "structuralType": "document",
+		  "identifier": [
+			{
+			  "identifierScope": "labkoat",
+			  "identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
+			}
+		  ],
+		  "structuralProperties": {
+			"linkset": {
+			  "recordType": "item",
+			  "mediaType": "application/pdf"
+			},
+			"fileDetails": {
+			  "fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+			  "filePath": "/1_pre-production/story",
+			  "fileExtension": "pdf"
+			}
+		  }
+		},
+		"functionalCharacteristics": {
+		  "functionalType": "script"
+		}
+	  }
+	]
+  },
+  "features": {
+	"Character": [
+	  {
+		"entityType": "Character",
+		"identifier": [
+		  {
+			"identifierScope": "labkoat",
+			"identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+		  }
+		]
+	  },
+	  {
+		"entityType": "Character",
+		"identifier": [
+		  {
+			"identifierScope": "labkoat",
+			"identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
+		  }
+		]
+	  }
+	]
+  },
+  "usesProp": {
+	"NarrativeProp": [
+	  {
+		"entityType": "NarrativeProp",
+		"identifier": [
+		  {
+			"identifierScope": "labkoat",
+			"identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
+		  }
+		]
+	  },
+	  {
+		"entityType": "NarrativeProp",
+		"identifier": [
+		  {
+			"identifierScope": "labkoat",
+			"identifierValue": "nprp/YESjEAVPVMJL"
+		  }
+		]
+	  }
+	]
+  }
+}
+}
 ```
 
 

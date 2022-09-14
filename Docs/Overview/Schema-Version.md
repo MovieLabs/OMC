@@ -52,8 +52,7 @@ https://snowplowanalytics.com/blog/2014/05/13/introducing-schemaver-for-semantic
 
 ## Instance version
 
-Each instance of any entity can be versioned. The version will be increased whenever the values of any 
-properties are updated, added or deleted.
+We foresee that it would be convenient for clients of OMC-JSON data to have the ability to easily find the entities that have changed from document to document, or to encode changes only in a message body. This is an area for future work.
 
 *Note: This only applies to the values in an instance. It does not refer to changes in an object the instance might be referencing. For example an Asset describes an image and its functional and 
 structural characteristics. The image itself may undergo a revision without its underlying characteristics changing. 
