@@ -48,7 +48,7 @@ This helps simplify parsing the recieved payload, the expectation is that the va
 For example the commonly used identifier property is always an array, even if there is just one value.
 ```json
 "identifer": [{
-	"identifierScope": "Movielabs",
+    "identifierScope": "Movielabs",
     "identifierValue": "1234"
 }]
 ```
