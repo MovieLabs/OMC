@@ -1,56 +1,82 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "title": "Asset Functional Characteristics",
-  "description": "A set of Functional Characteristics for Assets",
-  "properties": {
-    "functionalType": {
-      "type": "string",
-      "title": "Functional Type"
-    },
-    "functionalProperties": {
-      "type": "object",
-      "title": "Functional Properties",
-      "description": "A set of properties that describe this specific Asset",
-      "additionalProperties": true,
-      "properties": {
-        "representation": {
-          "type": "string",
-          "title": "Asset Representation",
-          "description": ""
-        }
-      }
-    }
-  },
-  "$defs": {
-    "functionalProperties": {
-      "title": "Functional Properties",
-      "description": "A set of properties that describe attributes specific to particular Assets",
-      "anyOf": [
-        {
-          "type": "object",
-          "title": "Shot",
-          "description": "functionalType: Shot",
-          "additionalProperties": true,
-          "properties": {
-            "representation": {
-              "type": "string",
-              "title": "Asset Representation",
-              "description": ""
-            },
-            "start": {
-              "type": "string",
-              "title": "Start point in capture",
-              "description": ""
-            },
-            "end": {
-              "type": "string",
-              "title": "End point in capture",
-              "description": ""
-            }
-          }
-        }
-      ]
-    }
-  }
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
+	"type": "object",
+	"title": "Asset Functional Characteristics",
+	"description": "A set of Functional Characteristics for Assets",
+	"properties": {
+		"functionalType": {
+			"type": "string",
+			"title": "Functional Type",
+			"desctiption": "A description (typically from a controlled vocbulary of the asset function, or what it is used for"
+		},
+		"functionalProperties": {
+			"$ref": "#/$defs/functionalProperties"
+		}
+	},
+	"$defs": {
+		"functionalProperties": {
+			"title": "Functional Properties",
+			"description": "A set of properties that describe properties specific to particular Assets types",
+			"anyOf": [
+				{
+					"type": "object",
+					"title": "Shot",
+					"description": "functionalType: Shot",
+					"properties": {
+						"source": {
+							"description": "",
+							"$ref": "./Asset.json"
+						},
+						"start": {
+							"type": "string",
+							"title": "Start point in capture",
+							"description": ""
+						},
+						"end": {
+							"type": "string",
+							"title": "End point in capture",
+							"description": ""
+						}
+					}
+				},
+				{
+					"type": "object",
+					"title": "Production Prop",
+					"description": "functionalType: prop",
+					"properties": {
+						"noteSize": {
+							"type": "string",
+							"description": ""
+						},
+						"noteQuantity": {
+							"type": "string",
+							"description": ""
+						}
+					}
+				},
+				{
+					"type": "object",
+					"title": "Storyboard",
+					"description": "functionalType: artwork.storyboard.frame",
+					"properties": {
+						"cameraFraming": {
+							"type": "string",
+							"description": ""
+						}
+					}
+				},
+				{
+					"type": "object",
+					"title": "Custom Data",
+					"description": "",
+					"properties": {
+						"customData": {
+							"$ref": "../Model/definitions.json#/properties/customData"
+						}
+					}
+				}
+			]
+		}
+	}
 }

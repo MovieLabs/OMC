@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "Location",
 	"description": "A particular place or position either in either the real world or the narrative world.",
 	"type": "object",

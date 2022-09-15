@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"type": "object",
 	"title": "Participant Structural Characteristics",
 	"description": "A set of Structural Characteristics for Participants",

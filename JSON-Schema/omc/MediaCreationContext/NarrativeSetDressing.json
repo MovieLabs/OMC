@@ -1,8 +1,9 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"title": "Set Dressing",
-	"description": "Objects used on set to create and enhance the environment.",
+	"$id": "",
 	"type": "object",
+	"title": "Narrative Set Dressing",
+	"description": "Objects used on set to create and enhance the environment",
 	"required": [
 		"entityType",
 		"identifier"
@@ -15,13 +16,13 @@
 		"entityType": {
 			"title": "Entity Type",
 			"type": "string",
-			"const": "SetDressing"
+			"const": "NarrativeSetDressing"
 		},
 		"identifier": {
 			"$ref": "../Utility/identifier.json"
 		},
 		"name": {
-			"title": "Set Dressing Name",
+			"title": "Narrative Set Dressing Name",
 			"description": "A human readable name for the set dressing",
 			"type": [
 				"string",
@@ -29,20 +30,11 @@
 			]
 		},
 		"description": {
-			"title": "Set Dressing Description",
-			"description": "A brief description of the set dressing",
+			"title": "Narrative Set Dressing Description",
+			"description": "A brief description of the narrative set dressing",
 			"type": [
 				"string",
 				"null"
-			]
-		},
-		"setDressingType": {
-			"title": "Prop type",
-			"description": "A departmental catagorization for the set dressing.",
-			"enum": [
-				"prop",
-				"greenery",
-				"vehicle"
 			]
 		},
 		"customData": {
@@ -50,7 +42,7 @@
 			"$ref": "../Model/definitions.json#/properties/customData"
 		},
 		"Context": {
-			"title": "Set Dressing Context",
+			"title": "Narrative Set Dressing Context",
 			"description": "Informs scope within the construction process of a Creative Work by describing related entities",
 			"type": "object",
 			"required": [
@@ -58,20 +50,20 @@
 				"identifier"
 			],
 			"properties": {
-				"entityInfo": {
-					"title": "Entity Information",
-					"$ref": "../Model/definitions.json#/properties/entityInfo"
-				},
 				"entityType": {
 					"type": "string",
 					"title": "Entity Type",
 					"const": "Context"
 				},
+				"entityInfo": {
+					"title": "Entity Information",
+					"$ref": "../Model/definitions.json#/properties/entityInfo"
+				},
 				"identifier": {
 					"$ref": "../Utility/identifier.json"
 				},
-				"appearsIn": {
-					"title": "appearsIn",
+				"isUsedIn": {
+					"title": "isUsedIn",
 					"type": "object",
 					"properties": {
 						"NarrativeScene": {

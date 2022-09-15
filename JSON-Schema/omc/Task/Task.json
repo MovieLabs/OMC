@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"type": "object",
 	"title": "Task",
 	"description": "",
@@ -33,7 +34,7 @@
 			],
 			"title": "Description"
 		},
-		"roleGroup": {
+		"Role": {
 			"type": "array",
 			"description": "The set of Participants that jointly comprise this Participant",
 			"items": {

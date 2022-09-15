@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "ProductionLocation",
 	"description": "A real place that is used to depict the Narrative Location or used for creating the production.",
 	"type": "object",

@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "Narrative Scene",
 	"description": "Taken from the narrative itself and traditionally defined by creative intent and typically a unity of time, place, action, or theme.",
 	"type": "object",
@@ -86,14 +87,14 @@
 				"identifier": {
 					"$ref": "../Utility/identifier.json"
 				},
-				"uses": {
+				"usesSetDressing": {
 					"type": "object",
 					"title": "usesProp",
 					"properties": {
 						"SetDressing": {
 							"type": "array",
 							"items": {
-								"$ref": "../MediaCreationContext/SetDressing.json"
+								"$ref": "../MediaCreationContext/NarrativeSetDressing.json"
 							}
 						}
 					}

@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "Creative Work",
 	"description": "A uniquely identified production.",
 	"type": "object",

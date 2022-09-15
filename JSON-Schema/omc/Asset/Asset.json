@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "",
   "type": "object",
   "title": "Asset",
   "description": "A physical or digital object or collection of objects specific to the creation of the Creative Work.",

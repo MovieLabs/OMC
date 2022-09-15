@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "Address",
 	"description": "An address of a location, addresses can be real or fictional and used in a production or narrative context",
 	"type": "object",

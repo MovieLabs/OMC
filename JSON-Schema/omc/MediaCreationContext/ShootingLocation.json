@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "ShhotingLocation",
 	"description": "A fixed physical location for shooting/filming",
 	"type": "object",

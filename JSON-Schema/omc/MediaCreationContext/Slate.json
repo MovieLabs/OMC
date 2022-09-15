@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "Slate",
 	"description": "Used to capture key identifying information about what is being recorded on any given setup and take.",
 	"type": "object",

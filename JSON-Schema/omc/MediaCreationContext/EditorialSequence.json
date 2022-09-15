@@ -1,5 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
 	"title": "Editorial Sequence",
 	"description": "A sequence of shots linked to creative intent.",
 	"type": "object",
@@ -43,8 +44,8 @@
 					"order": {
 						"type": "number"
 					},
-					"Shot": {
-						"$ref": "./Shot.json"
+					"source": {
+						"$ref": "../Asset/Asset.json"
 					}
 				}
 			}
