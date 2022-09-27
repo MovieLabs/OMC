@@ -6,9 +6,9 @@
 	"description": "A set of Functional Characteristics for Assets",
 	"properties": {
 		"functionalType": {
-			"type": "string",
+			"type": ["string", "null"],
 			"title": "Functional Type",
-			"desctiption": "A description (typically from a controlled vocbulary of the asset function, or what it is used for"
+			"description": "A description (typically from a controlled vocabulary of the asset function, or what it is used for"
 		},
 		"functionalProperties": {
 			"$ref": "#/$defs/functionalProperties"
@@ -19,6 +19,9 @@
 			"title": "Functional Properties",
 			"description": "A set of properties that describe properties specific to particular Assets types",
 			"anyOf": [
+				{
+					"type": "null"
+				},
 				{
 					"type": "object",
 					"title": "Shot",

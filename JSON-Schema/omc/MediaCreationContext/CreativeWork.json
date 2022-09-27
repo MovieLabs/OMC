@@ -98,38 +98,7 @@
 		},
 		"Context": {
 			"title": "Creative Work Context",
-			"type": "object",
-			"required": [
-				"entityType",
-				"identifier"
-			],
-			"properties": {
-				"entityType": {
-					"type": "string",
-					"title": "Entity Type",
-					"const": "Context"
-				},
-				"entityInfo": {
-					"title": "Entity Information",
-					"$ref": "../Model/definitions.json#/properties/entityInfo"
-				},
-				"identifier": {
-					"$ref": "../Utility/identifier.json"
-				},
-				"hasProductionCompany": {
-					"title": "hasProductionCompany",
-					"type": "object",
-					"properties": {
-						"Participant": {
-							"type": "array",
-							"items": {
-								"$ref": "../Participant/Participant.json"
-							}
-						}
-					}
-				}
-			}
+			"$ref": "./Context.json"
 		}
-	},
-	"additionalProperties": true
+	}
 }

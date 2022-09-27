@@ -3,7 +3,7 @@
 1. [Overview](./Overview/Overview.md) 
 2. [Schema Structure](./Overview/Schema%20Structure.md)
 3. [Versions](./Overview/Schema-Version.md)
-5. [Best Practices](./Overview/Schema%20Practices.md)
+5. [Schema Practices](./Overview/Schema%20Practices.md)
 5. [Namespace](./Overview/Namespaces.md)
 
 

@@ -10,6 +10,8 @@
 			"identifierScope",
 			"identifierValue"
 		],
+		"minItems": 1,
+		"additionalProperties": false,
 		"properties": {
 			"identifierScope": {
 				"type": "string",
@@ -21,8 +23,7 @@
 				"title": "Identifier Value",
 				"description": "A string of characters that uniquely identifies an object within a particular scope."
 			}
-		},
-		"additionalProperties": false
+		}
 	},
 	"additionalItems": false
 }

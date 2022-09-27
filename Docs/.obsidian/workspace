@@ -6,10 +6,11 @@
       {
         "id": "0c1e93eec6f22b07",
         "type": "leaf",
+        "dimension": 53.10226786478391,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Overview/Schema-Version.md",
+            "file": "Overview/Overview.md",
             "mode": "source",
             "source": false
           }
@@ -18,11 +19,12 @@
       {
         "id": "6a135c50f55c7dab",
         "type": "leaf",
+        "dimension": 46.89773213521609,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Overview/Schema Structure.md",
-            "mode": "preview",
+            "file": "Overview/Schema Practices.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -89,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overview/Schema Structure.md",
+                "file": "Overview/Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overview/Schema Structure.md",
+                "file": "Overview/Overview.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overview/Schema Structure.md"
+                "file": "Overview/Overview.md"
               }
             }
           }
@@ -139,17 +141,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "6a135c50f55c7dab",
+  "active": "0c1e93eec6f22b07",
   "lastOpenFiles": [
-    "Overview/Schema-Version.md",
+    "Overview/Schema Practices.md",
     "Overview/Overview.md",
+    "Index.md",
     "Tech Notes/Depictions & Portrayals.md",
-    "Overview/Schema Structure.md",
     "Tech Notes/Functional & Structural.md",
-    "Overview/Namespaces.md",
-    "Tech Notes/Narrative & Production.md",
     "Tech Notes/Assets.md",
-    "Schema Docs/Asset/Asset.md",
-    "Overview/Schema Practices.md"
+    "Overview/Schema-Version.md",
+    "Tech Notes/Narrative & Production.md",
+    "Overview/Schema Structure.md",
+    "Overview/Namespaces.md"
   ]
 }

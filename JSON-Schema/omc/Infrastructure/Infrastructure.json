@@ -2,7 +2,12 @@
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "",
 	"type": "object",
+	"description": "The underlying systems and framework required for the production of the Creative Work; it is generally not specific to a particular Creative Work.",
 	"title": "Infrastructure",
+	"required": [
+		"identifier",
+		"entityType"
+	],
 	"properties": {
 		"entityInfo": {
 			"title": "Entity Information",
@@ -11,38 +16,42 @@
 		"entityType": {
 			"type": "string",
 			"title": "Entity Type",
-			"const": "Participant"
+			"const": "Infrastructure"
 		},
-		"identifier": {"$ref":"../Utility/identifier.json"},
+		"identifier": {
+			"$ref": "../Utility/identifier.json"
+		},
 		"name": {
-			"type": ["string","null"],
-			"title": "Infrastructure Name"
+			"type": [
+				"string",
+				"null"
+			],
+			"title": "Infrastructure name",
+			"description": "A human readable name for the infrastructure"
 		},
 		"description": {
-			"type": ["string","null"],
-			"title": "Infrastructure Description"
+			"type": [
+				"string",
+				"null"
+			],
+			"title": "Infrastructure description",
+			"description": "A human readable description of the infrastructure"
+		},
+		"customData": {
+			"title": "Custom Data",
+			"$ref": "../Model/definitions.json#/properties/customData"
+		},
+		"structuralCharacteristics": {
+			"title": "StructuralCharacteristics",
+			"$ref": "./InfrastructureSC.json"
+		},
+		"functionalCharacteristics": {
+			"title": "Functional Characteristics",
+			"$ref": "./InfrastructureFC.json"
+		},
+		"Context": {
+			"title": "Asset Context",
+			"$ref": "../MediaCreationContext/Context.json"
 		}
-	},
-	"definitions": {
-		"StructuralCharacteristics": {
-			"type": "array",
-			"title": "Structural Characteristics",
-			"additionalItems": true,
-			"oneOf": [
-				{
-					"type": "array",
-					"additionalItems": true
-				},
-				{
-					"type": "array",
-					"additionalItems": true
-				},
-				{
-					"type": "array",
-					"additionalItems": true
-				}
-			]
-		}
-	},
-	"additionalProperties": false
+	}
 }

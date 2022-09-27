@@ -65,9 +65,7 @@
 				"identifier": {
 					"$ref": "../Utility/identifier.json"
 				}
-			},
-			"additionalProperties": true
+			}
 		}
-	},
-	"additionalProperties": true
+	}
 }

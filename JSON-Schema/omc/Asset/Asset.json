@@ -37,7 +37,7 @@
       "title": "Asset description",
       "description": "A human readable description of the asset"
     },
-    "assetInfo": {
+    "assetInfo": { 
       "type": "object",
       "title": "Asset Information",
       "description": "Properties describing the instance of this asset including version, provenance, variant"
@@ -61,6 +61,10 @@
     "functionalCharacteristics": {
       "title": "Functional Characteristics",
       "$ref": "./AssetFC.json"
+    },
+    "Context": {
+      "title": "Asset Context",
+      "$ref": "../MediaCreationContext/Context.json"
     }
   }
 }

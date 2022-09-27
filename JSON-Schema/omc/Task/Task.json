@@ -3,7 +3,7 @@
 	"$id": "",
 	"type": "object",
 	"title": "Task",
-	"description": "",
+	"description": "A piece of work to be done and completed as a step in the production process.",
 	"required": [
 		"identifier",
 		"entityType"
@@ -46,6 +46,10 @@
 		},
 		"FunctionalCharacteristics": {
 			"title": "Task Functional Characteristics"
+		},
+		"Context": {
+			"title": "Asset Context",
+			"$ref": "../MediaCreationContext/Context.json"
 		}
 	}
 }
