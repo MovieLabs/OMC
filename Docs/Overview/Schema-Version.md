@@ -2,21 +2,17 @@
 
 In this section we address only the issues related to the versioning of the schema and the versioning of an instance of an entity built with the schema. The versioning of actual assets used in the production will be addressed separately as that is specific to individual production workflows,  different types of assets, and so on.
 
-
-
 ## JSON Schema Version
+The version of schema specification that this schema is using. This will be a version of JSON Schema, currently we are using draft 7, specified here:
 
-The version of schema specification that this schema is using. This will be a version of JSON Schema, currently we 
-are using draft 7, specified here:
-
-```angular2html
+```
 "$schema": "http://json-schema.org/draft-07/schema#",
 ```
 
+*Note: There is the consideration that we should move toward using JSON-Schema 2020-12, there is some additional functionality through extra keywords, and there is more formailzed mechanism for bundling schemas (which would be useful). However there does seem to be less support in some of the tooling for 2020-12 over JSON-7*
 
-## MovieLabs Schema Version
-
-This schema uses the semver conventions for versioning
+## OMC Schema Version (Proposal)
+We have not adopted a formal versioning mechanism yet, this seemed premptive in light of this being a closed release and the rapid rate of change during initial development. The following represents a starting point for discusion with the implementors group
 
 **Major**
 
@@ -34,29 +30,18 @@ A patch has been issued that corrects aspects of the schema that do not directly
 
 Example: Changes to description or title text, or the addition of enumerated values.
 
-***[this next section is something to discuss with the implementers'' group]***
 
-Given that the schema for each entity can advance independently does this mean we need have a schema version for each of them. This potentially creates a lot of additional payload and complexity in parsing the object as schema versions must be checked all through the object.
+Given that the schema for each entity can advance independently would this mean we need a schema version for each. This potentially creates a lot of additional payload and complexity in parsing the object as schema versions must be checked for each entity all throughout the payload.
 
 - Have a system that groups changes together and advances versions of all entities in the group.
-- Have a system that by inherits a version from the parent, unless overridden. Since many changes 
-  would be non-breaking this could be done at ***(minor?)*** version level possibly.
-- The spec allows entities to serialize related entities, so there may well be different versions in related 
-  entities, so there must be some way of overriding a parent version.
+- Have a system that by inherits a version from the parent, unless overridden. Since many changes would be non-breaking this could be done at the ***(minor?)*** version level possibly.
+- The spec allows entities to serialize related entities, there may well be different versions in related entities, so there must be some way of overriding a parent version.
 
-
-
-https://snowplowanalytics.com/blog/2014/05/13/introducing-schemaver-for-semantic-versioning-of-schemas/
-
-
+[Introducing SchemaVer for semantic versioning of schemas](https://snowplowanalytics.com/blog/2014/05/13/introducing-schemaver-for-semantic-versioning-of-schemas/)
 
 ## Instance version
+It may be useful to version the instance of any given entity, i.e. if any of the properties are updated. For example if a characters height or weight properties were updated, you would want to update any systems that are using that data. In the event an application had conflicting records with the same identifier, it would need to disambiguate them and presumably adopt the more recent version.
 
-We foresee that it would be convenient for clients of OMC-JSON data to have the ability to easily find the entities that have changed from document to document, or to encode changes only in a message body. This is an area for future work.
+*Note: This only applies to the properties values of an instance, in the case of an asset there is also the version of the essence itself to consider. This would be considered part of the structural characteristics of an Asset, we will be addressing the versioning of assets in a seperate working group.
 
-*Note: This only applies to the values in an instance. It does not refer to changes in an object the instance might be referencing. For example an Asset describes an image and its functional and 
-structural characteristics. The image itself may undergo a revision without its underlying characteristics changing. 
-This may result in a version change to the Asset, that is tracked separately.* 
-
-***[needs a better, simpler example, perhaps just changing or adding a description]***
 

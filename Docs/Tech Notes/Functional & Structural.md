@@ -1,6 +1,4 @@
-
-### Functional & Structural
-
+# Functional & Structural
 The ontology uses a similar paradigm in several of the entity types that separates what we call its functional and structural characteristics. The structural characteristics describe what it's underlying nature, what it is, whereas the functional characteristics describe what or how it is used.
 
 It is useful to separate and think of these separately because sometimes the same thing can be used for more than one purpose, or something with the same use can have more than one form.

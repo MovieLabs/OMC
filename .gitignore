@@ -106,4 +106,5 @@ dist
 .tern-port
 
 #obsidian
-Docs/.obsidian
+/Docs/.obsidian/
+/.vs/

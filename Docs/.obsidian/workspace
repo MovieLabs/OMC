@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Overview/Overview.md",
+            "file": "Tech Notes/Depictions & Portrayals.md",
             "mode": "source",
             "source": false
           }
@@ -23,7 +23,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Overview/Schema Practices.md",
+            "file": "Tech Notes/Narrative & Production.md",
             "mode": "source",
             "source": false
           }
@@ -91,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Overview/Overview.md",
+                "file": "Tech Notes/Narrative & Production.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Overview/Overview.md",
+                "file": "Tech Notes/Narrative & Production.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Overview/Overview.md"
+                "file": "Tech Notes/Narrative & Production.md"
               }
             }
           }
@@ -141,17 +141,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0c1e93eec6f22b07",
+  "active": "6a135c50f55c7dab",
   "lastOpenFiles": [
-    "Overview/Schema Practices.md",
-    "Overview/Overview.md",
+    "Schema Docs/Utility/CompleteName.md",
+    "Schema Docs/Participant/Participant.md",
+    "Schema Docs/MediaCreationContext/Character.md",
+    "Schema Docs/MediaCreationContext/ProductionProp.md",
+    "Schema Docs/MediaCreationContext/NarrativeProp.md",
     "Index.md",
     "Tech Notes/Depictions & Portrayals.md",
-    "Tech Notes/Functional & Structural.md",
     "Tech Notes/Assets.md",
-    "Overview/Schema-Version.md",
     "Tech Notes/Narrative & Production.md",
-    "Overview/Schema Structure.md",
-    "Overview/Namespaces.md"
+    "Tech Notes/Functional & Structural.md"
   ]
 }

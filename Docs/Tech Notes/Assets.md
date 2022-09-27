@@ -1,4 +1,4 @@
-## Assets
+# Assets
 Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of the OMC-JSON is not to replace this but to provide a common mechanism for communicating what assets are needed for a given workflow and provide a means for the applications and services to find and access the files they need.
 
 The 2030 vision establishes some core ideas behind the handling of assets:

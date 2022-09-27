@@ -1,7 +1,7 @@
 # JSON Schema Overview
 OMC is written in RDF, which provides a useful degree of formality, especially for relationships and complex classes. JSON, of course, can also be used for data modelling, but it has different mechanics for classes, properties, and types, and less emphasis on relationships than RDF.
 
-The JSON schema retains the vocabulary, concepts, and top-level structures of the RDF, although some changes are necessary to support expressing the details of the concepts in JSON. In particular, the JSON schema provides standard mechanisms for relationships (in the RDF sense) and complex classes.
+The JSON schema retains the vocabulary, concepts, and top-level structures of the RDF, although some changes are necessary to support expressing the details of the concepts in JSON. In particular, the JSON schema provides mechanisms for encoding relationships (in the RDF sense) and complex classes.
 
 ## Key Concepts
 There are three pervasive concepts in the JSON schema:
@@ -14,18 +14,18 @@ RDF is a class based system. JSON does not use a class based model or the idea o
 
 For the JSON schema we use a compositional model, where a set of individual schemas are used to create entities that align with the RDF classes. These schemas can then be composed (via referencing) to create new entities. Each entity can be nested or included in sets.
 
-Each entity requires a property of ``entityType``, knowing the entityType allows for applications to reference the correct schema when validating or a parsing function to act on the data.
+Each entity requires the property ``entityType``, knowing the entityType allows for applications to reference the correct schema when validating or using a parsing function to consume the data.
 
-**Entity**: A top level concept in the ontology that includes a set of properties with associated values.
+> **Entity**: A top level concept in the ontology that includes a set of properties with associated values.
 
-**Property**: A ``<key> <value>`` pair where the value can be an entity, complex type (object or array of objects) or primative value (string, number, Boolean or null)
+> **Property**: A ``<key> <value>`` pair where the value can be an entity, complex type (object or array of objects) or primative value (string, number, Boolean or null)
 
-The schema follow some general conventions:
+The schema follows some general conventions:
 - Each entity is defined as its own JSON schema.
-- The first letter of any defined entity is capitalized.
-- Entities are required to declare their ``entityType`` and have a unique ``identifier``
+- The first letter of defined entity is capitalized.
+- Entities are required to declare their ``entityType`` and have a unique ``identifier``.
 
-Here is section of the schema for Narrative Location, which illustrates how the identifier subSchema is included by reference. The Location is itself an entity and therefore capitalized; it includes an identifier for for the Location ***(see Identifiers and references)*** and two attribute, a name and a description.
+Below we show a section of the schema for Narrative Location, which illustrates how the ``identifier`` sub-Schema is included by reference. The Location is itself an entity and therefore capitalized; it includes an identifier for the Location ***(see Identifiers and references)*** as well as the properies ``name`` and ``description``.
 
 **JSON Schema**
 ```JSON
@@ -37,7 +37,7 @@ Here is section of the schema for Narrative Location, which illustrates how the 
     },
     "identifier": {
         "title": "identifier",
-        "$ref": "../Utility/identifier.json#/properties/identifier"
+        "$ref": "../Utility/identifier#/properties/identifier"
     },
     "name": {
         "type": "string",
@@ -48,7 +48,7 @@ Here is section of the schema for Narrative Location, which illustrates how the 
         "title": "Description"
     },
 	"Location": {
-        "$ref": "../Utility/Location.json"
+        "$ref": "../Utility/Location"
     }
 }
 ```
@@ -77,11 +77,11 @@ Here is section of the schema for Narrative Location, which illustrates how the 
 ## Identifiers and References
 
 ### Identifiers
-The example above used an identifier. In the ontology, an Identifier is "a string of characters that uniquely identifies an object within a particular scope." An identifier is really just a way of referring to something; undifferentiated strings and URIs/IRIs are common forms for an identifier, and there are many more specialized ones as well. 
+The example above uses an identifier. In the ontology, an Identifier is "a string of characters that uniquely identifies an object within a particular scope." An identifier is really just a way of referring to something; undifferentiated strings and URIs/IRIs are common forms for an identifier, and there are many more specialized ones as well. 
 
 For the production system (and any system that consists of multiple cooperating systems) it is essential to know the *scope* of the identifier - the universe within which the identifier is valid and unique. For example, "42" is a perfectly good identifier, but without knowing the scope, there is no way of knowing what it represents. See [OMC Part 9: Utilities](https://mc.movielabs.com/docs/omc/utilities/concepts) for further details, including some meanings of "42".
 
-There is a JSON schema for an identifier/scope pair, as shown here, followed by an example of an instance.
+Below is the JSON schema for an identifier/scope pair, as shown here, followed by an example of an instance.
 
 **JSON Schema**
 ``` JSON
@@ -89,7 +89,6 @@ There is a JSON schema for an identifier/scope pair, as shown here, followed by 
     "identifier": {
         "type": "array",
         "title": "identifier",
-        "additionalItems": true,
         "items": {
             "type": "object",
             "required": ["identifierScope", "identifierValue"],
@@ -107,7 +106,8 @@ There is a JSON schema for an identifier/scope pair, as shown here, followed by 
             },
             "additionalProperties": false
         }
-    }
+    },
+    "addtionalItems": false
 }
 ```
 
@@ -115,8 +115,8 @@ There is a JSON schema for an identifier/scope pair, as shown here, followed by 
 ```json
 {
 	"identifier": [{
-	  "identifierValue": "1234",
-	  "identifierScope": "MovieLabs"
+		"identifierScope": "MovieLabs",
+		"identifierValue": "1234"
 	}]
 }
 ```
@@ -176,16 +176,16 @@ The next example shows how the Location entity can be de-referenced and included
 }
 ```
 
-The schemas are structured in such a way that objects could be nested *ad infinitum*, it is the decision of the sending and recieving applications to decide how and what is exchanged, however developers should be aware that given the graph based nature circular references can be easily created.
+The schemas are structured in such a way that objects could be nested *ad infinitum*, it is the decision of the sending and recieving applications to decide how and what is exchanged, however developers should be aware that given the graph based nature, circular references can be easily created.
 
-When the decision is made to pass just a reference it is likely that the recieving client may want to make a follow up request for additional information. This does raise some potential issues, a decoupled system may not even know which application prepared the data and the client will need to know API endpoints and have required credentials etc.
+When the decision is made to pass just a reference it is likely that the recieving client may want to make a follow up request for additional information. This does raise some potential issues, a decoupled system may not even know which application prepared the data and the client will need to know API endpoints with the required credentials etc.
 
 The 2030 vision also proposes the use of a resolution mechanism. A resolver can be used for both retrieving files and/or additional data. When an identifier is resolved with a resolver the response is one or more URL's that can then be used to retrieve information. ==For more on resolvers go here==
 
 ## Relationships
 Relationships are a fundamental construct in the ontolgy.
 
-There are not really standard mechansims for encoding relationships in JSON, we do not use JSONLD, so we have adopted the following patterns for referencing other entities. There are primarily two situations where you may wish to include references:
+There are not really standard mechansims for encoding relationships in JSON, (this is not a  JSONLD), so we have adopted the following patterns for referencing other entities. There are primarily two situations where you may wish to include references:
 - When another entity is an intrinsic property of an entity
 - When you wish to use a named relationship, typically as part of a Context
 
@@ -211,7 +211,7 @@ When another entity is an intrinsic property then the entity type to which you a
 ```
 
 
-The Context entity demonstrates the use of named relationships, the following example shows how a NarrativeScene is related to entities such as props or characters that appear in that scene. This follows the pattern:
+The Context example below demonstrates the use of named relationships, this shows how a NarrativeScene is related to entities such as props or characters that appear in that scene. This follows the pattern:
 
 ``<Context>.<relationship>.[<entity>]``
 
@@ -253,7 +253,7 @@ The Context entity demonstrates the use of named relationships, the following ex
 	         "identifier": {  
 	            "$ref": "../Utility/identifier.json"  
 	         },  
-	         "usesProp": {  
+	         "features": {  
 	            "type": "object",  
 	            "title": "usesProp",  
 	            "properties": {  
@@ -262,21 +262,15 @@ The Context entity demonstrates the use of named relationships, the following ex
 	                  "items": {  
 	                     "$ref": "../MediaCreationContext/NarrativeProp.json"  
 	                  }  
-	               }  
-	            }  
-	         },  
-	         "features": {  
-	            "type": "object",  
-	            "title": "features",  
-	            "properties": {  
-	               "Character": {  
+	               },
+				   "Character": {  
 	                  "type": "array",  
 	                  "items": {  
 	                     "$ref": "../MediaCreationContext/Character.json"  
-	                  }  
-	               }  
-	            }  
-	         }
+					}    
+		          }  
+		       }
+		    }
 		 }
 	   }  
 	}
@@ -286,100 +280,98 @@ The Context entity demonstrates the use of named relationships, the following ex
 **JSON Instance**
 ```JSON
 {
-"entityType": "NarrativeScene",
-"identifier": [
-  {
-	"identifierScope": "labkoat",
-	"identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-  }
-],
-"name": "Space",
-"description": "Sven repairs satellite and is ambushed by Trilobot",
-"sceneNumber": "2",
-"Context": {
-  "isFromScript": {
-	"Asset": [
-	  {
-		"entityType": "Asset",
-		"identifier": [
-		  {
-			"identifierScope": "labkoat",
-			"identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
-		  }
-		],
-		"name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-		"description": null,
-		"structuralCharacteristics": {
-		  "structuralType": "document",
-		  "identifier": [
-			{
-			  "identifierScope": "labkoat",
-			  "identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
-			}
-		  ],
-		  "structuralProperties": {
-			"linkset": {
-			  "recordType": "item",
-			  "mediaType": "application/pdf"
-			},
-			"fileDetails": {
-			  "fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-			  "filePath": "/1_pre-production/story",
-			  "fileExtension": "pdf"
-			}
-		  }
-		},
-		"functionalCharacteristics": {
-		  "functionalType": "script"
-		}
-	  }
-	]
-  },
-  "features": {
-	"Character": [
-	  {
-		"entityType": "Character",
-		"identifier": [
-		  {
-			"identifierScope": "labkoat",
-			"identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-		  }
-		]
-	  },
-	  {
-		"entityType": "Character",
-		"identifier": [
-		  {
-			"identifierScope": "labkoat",
-			"identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
-		  }
-		]
-	  }
-	]
-  },
-  "usesProp": {
-	"NarrativeProp": [
-	  {
-		"entityType": "NarrativeProp",
-		"identifier": [
-		  {
-			"identifierScope": "labkoat",
-			"identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
-		  }
-		]
-	  },
-	  {
-		"entityType": "NarrativeProp",
-		"identifier": [
-		  {
-			"identifierScope": "labkoat",
-			"identifierValue": "nprp/YESjEAVPVMJL"
-		  }
-		]
-	  }
-	]
-  }
-}
+    "entityType": "NarrativeScene",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+      }
+    ],
+    "name": "Space",
+    "description": "Sven repairs satellite and is ambushed by Trilobot",
+    "sceneNumber": "2",
+    "Context": {
+      "isFromScript": {
+        "Asset": [
+          {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
+              }
+            ],
+            "name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+            "description": null,
+            "structuralCharacteristics": {
+              "structuralType": "document",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "recordType": "item",
+                  "mediaType": "application/pdf"
+                },
+                "fileDetails": {
+                  "fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+                  "filePath": "/1_pre-production/story",
+                  "fileExtension": "pdf"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "script"
+            }
+          }
+        ]
+      },
+      "features": {
+        "Character": [
+          {
+            "entityType": "Character",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+              }
+            ]
+          },
+          {
+            "entityType": "Character",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
+              }
+            ]
+          }
+        ],
+        "NarrativeProp": [
+          {
+            "entityType": "NarrativeProp",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeProp",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/YESjEAVPVMJL"
+              }
+            ]
+          }
+        ]
+      }
+    }
 }
 ```
 
