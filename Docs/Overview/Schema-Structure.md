@@ -12,7 +12,7 @@ There are three pervasive concepts in the JSON schema:
 ### Entities
 RDF is a class based system. JSON does not use a class based model or the idea of class inheritance.
 
-For the JSON schema we use a compositional model, where a set of individual schemas are used to create entities that align with the RDF classes. These schemas can then be composed (via referencing) to create new entities. Each entity can be nested inside other entities or included in sets of entities.
+For the JSON schema we use a compositional model, where a set of individual schemas are used to create entities that align with the RDF classes. These schemas can then be composed (via referencing) to create new entities. Each entity can be nested inside other entities or included in an array of entities.
 
 Each entity requires the property ``entityType``. Knowing the entityType allows applications to reference the correct schema when validating or parsing the data.
 
@@ -180,7 +180,9 @@ The schemas are structured in such a way that objects can be nested *ad infinitu
 
 When the decision is made to pass just a reference and the receiving client wants to make a follow up request for additional information there are some potential issues: a decoupled system may not even know which application prepared the data and the client will need to know API endpoints, have the required credentials, and so on to collect the extra data.  (Sometimes all that a particular application wants is an identifier so it can anchor the portions of the graph it cares about in a broader structure.)
 
-The 2030 vision also proposes the use of a resolution mechanism. A resolver can be used for both retrieving files and/or additional data. When an identifier is resolved with a resolver the response is one or more URL's that can then be used to retrieve information. ==For more on resolvers go here==
+The 2030 vision also proposes the use of a resolution mechanism. A resolver can be used for both retrieving files and/or additional data. When an identifier is resolved with a resolver the response is one or more URL's that can then be used to retrieve information.
+
+[Read more about resolvers here](https://movielabs.com/through-the-looking-glass/)
 
 ## Relationships
 Relationships are a fundamental construct in the ontology.
@@ -401,11 +403,12 @@ The schema does not attempt to define every property that you might be associate
 
 However, sometimes it may be desirable to embed data beyond the defined properties of an entity. This property is unrestricted, beyond the constraints imposed by JSON itself, allowing additional JSON, other serialized encodings, or base64 for example. It is the responsibility of the sending and receiving parties to know what to do with the data.
 
-Generally we recommend that more extensive metadata be held separately, as its own object and  probably in a standardized format like IMF, JPG, etc. These blobs of data can be uniquely identified as assets in their own right and in turn be related or grouped using relationships or asset groups.
+Generally we recommend that more extensive metadata be identified separately as a standalone object often in standardized formats like IMF, JPG, etc. These blobs of data are assets in their own right and therefore can be uniquely identified with the data as essence, they can then be related or grouped with the assets they describe.
 
 ##### entityInfo
-This is for encoding information specific to the entity itself, not what it is representing.
-
-This can include properties like the version of the schema used, a version of the contained data, provenance, creation or update times.
+This is for encoding information specific to the entity itself, not what it is representing. It might include one or all of the following:
+ - Version of the schema used when creating the instance 
+ - Version of the instance itself
+ - Provenance of the instance
 
 

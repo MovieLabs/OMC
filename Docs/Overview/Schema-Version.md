@@ -9,7 +9,7 @@ The version of schema specification that this schema is using. This will be a ve
 "$schema": "http://json-schema.org/draft-07/schema#",
 ```
 
-*Note: There is the consideration that we should move toward using JSON-Schema 2020-12, there is some additional functionality through extra keywords, and there is more formalized mechanism for bundling schemas (which would be useful). However there does seem to be less support in some of the tooling for 2020-12 over JSON-7*
+*Note: A topic for consideration by the working group is to migrate to using JSON-Schema 2020-12. There is some additional functionality through extra keywords, and there is more formalized mechanism for bundling schemas (which would be useful). However there does seem to be less support in some of the tooling for 2020-12 over JSON-7*
 
 ## OMC Schema Version (Proposal)
 We have not adopted a formal versioning mechanism yet, this seemed premature in light of this being a closed release and the rapid rate of change during initial development. The following represents a starting point for discussion with the implementers group

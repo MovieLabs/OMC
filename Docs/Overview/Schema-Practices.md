@@ -54,7 +54,7 @@ For example, the commonly used identifier property is always an array, even if t
 ```
 
 
-### Required vs Non-Required fields
+## Required vs Non-Required fields
 There is limited use of required properties, to allow for flexibility,
 
 At this point we have adopted a philosophy of placing limited restraints on the use, inclusion and naming of properties. We are mindful that a schema with rigid constraints may be a barrier to adoption if someone feels they need to include some specific attribute that is not in the schema. In JSON schema the inclusion of additional properties is the default setting and instances will pass validation. The downside of this is that validation becomes weaker - if someone misspells a property 'filename', instead of 'fileName', it would still pass validation, but the receiving party would not parse the value correctly.
@@ -66,13 +66,13 @@ It should be noted that the absence of a property does not mean that there is no
 ## Extending the schema
 Extensions and modifications to the schema can create compatibility problems; see [schema versioning](Schema-Version.md). The goal therefore is to be able to extend without introducing breaking changes.
 
-To support this the JSON property of 'additionalProperties' is generally left in its default state of true. This means that if properties are added to a schema at a later date, validation will still pass for an instance that is validated with an older schema. Setting this value to false, would cause validation to fail if any additional properties were present.
+To support this the JSON schema keyword, 'additionalProperties', is generally left in its default state of 'true'. This means that if properties are added to a schema at a later date, validation will still pass for an instance that is validated with an older schema. Setting this value to false, would cause validation to fail if any additional properties were present.
 
 This does mean that anyone adding their own properties is at risk of later conflicts if a schema introduces a property with the same name. We therefore do not recommend doing this in production environments.
 
 To allow for bespoke extensions we include the ``customData`` property. Individual applications can include any data as a value for this. It is up to the sending and receiving parties to know how to interpret this field. We recommend that some sort of identifying key or namespace is used as an additional safeguard against collisions.
 
-Custom data can be useful for including additional metadata directly in a payload. For example you may want to include additional fields from EXIF data as part of the structural characteristics of an image. In this case you might encode it like this:
+[Custom data](./Schema-Structure#Standard%20Properties) can be useful for including additional metadata directly in a payload. For example you may want to include additional fields from EXIF data as part of the structural characteristics of an image. In this case you might encode it like this:
 
 ```
 "customData": {

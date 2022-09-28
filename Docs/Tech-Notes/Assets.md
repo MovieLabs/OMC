@@ -2,7 +2,7 @@
 Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of the OMC-JSON is not to replace this but to provide a common mechanism for communicating what assets are needed for a given workflow and provide a means for the applications and services to find and access the files they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., the OCF form which a proxy is derived), and some aren't (e.g., the scene in which the asset is used.) 
 
 The 2030 vision establishes some core ideas behind the handling of assets:
-- Separating of its structural and functional characteristics (describe this in a separate piece)
+- Separating of its [structural and functional characteristics](Functional&Structural.md)
 - That the specific location of an asset can be abstracted and resolved when it is needed. This involves the use of a resolution service that returns a specific location on request. (point to resolver explanation)
 
 In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of assets, each asset contains one or more identifiers. The identifiers are then passed to a resolution service which will return back the URL of the required resource.
@@ -11,8 +11,8 @@ Often the process of deciding exactly which set of assets a person or service ne
 
 The intent in the OMC-JSON is that a set of assets needed for a task can be communicated and unambiguously resolved.
 
-- The main identifier identifies the 'whole' asset, both its structural and functional properties.
-- The identifier within an asset's structural characteristics identifies the
+- The main identifier identifies the 'whole' asset, including its structural and functional properties.
+- The identifier within an asset's structural characteristics identifies the essence
 
 > The OMC-JSON is often just an array of objects. Therefore there is not a uniqueness constraint on identifiers within the array. Unlike a database where there is often a uniqueness constraint an identifier.
 
