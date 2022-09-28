@@ -1,18 +1,18 @@
 # Assets
-Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of the OMC-JSON is not to replace this but to provide a common mechanism for communicating what assets are needed for a given workflow and provide a means for the applications and services to find and access the files they need.
+Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of the OMC-JSON is not to replace this but to provide a common mechanism for communicating what assets are needed for a given workflow and provide a means for the applications and services to find and access the files they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., the OCF form which a proxy is derived), and some aren't (e.g., the scene in which the asset is used.) 
 
 The 2030 vision establishes some core ideas behind the handling of assets:
-- Separating of it's structural and functional characteristics (describe this in a separate piece)
+- Separating of its structural and functional characteristics (describe this in a separate piece)
 - That the specific location of an asset can be abstracted and resolved when it is needed. This involves the use of a resolution service that returns a specific location on request. (point to resolver explanation)
 
-In practical terms the general expected pattern for using the OMV-JSON is that the payload would describe a set of assets, each asset contains one or more identifiers. The identifiers are then passed to a resolution service which will return back the URL of the required resource.
+In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of assets, each asset contains one or more identifiers. The identifiers are then passed to a resolution service which will return back the URL of the required resource.
 
 Often the process of deciding exactly which set of assets a person or service needs for a particular task is a complex one. Assets typically advance through multiple versions, there might be different variants or representations of the same asset, etc.
 
-The intent with the OMC-JSON is that a set of assets needed for a task can be communicated and unambiguously resolved.
+The intent in the OMC-JSON is that a set of assets needed for a task can be communicated and unambiguously resolved.
 
-- The main identifier identifies the 'whole' asset, this is it's structural and functional properties.
-- The identifier within an assets structural characteristics identifies the
+- The main identifier identifies the 'whole' asset, both its structural and functional properties.
+- The identifier within an asset's structural characteristics identifies the
 
 > The OMC-JSON is often just an array of objects. Therefore there is not a uniqueness constraint on identifiers within the array. Unlike a database where there is often a uniqueness constraint an identifier.
 
@@ -26,7 +26,9 @@ Is Proxy a variant or a representation - you decide (we think it variant, make i
 ### Conventions
 
 **Structural and functional types**
-The specification only requires these be strings and as such they are not controlled. However, movielabs is developing guidelines for the structure and a set of recommended terms that if used would help in cross platform interchange.
+The specification only requires these be strings and as such they are not controlled. However, MovieLabs is developing guidelines for them and a set of recommended terms that if used would help in cross platform interchange.
+
+-- old
 
 Individual terms should be written in camel case, separated using dot notation
 digital.image
@@ -36,10 +38,22 @@ The ordering is somewhat arbitrary, it is helpful to have an ordained order, but
 artwork.storyboard
 artwork.storyboard.frame
 
+-- new
+
+Individual terms should be written in camel case, separated using dot notation, going from more general to more specific, e.g. for structural classes:
+digital.image
+
+And for functional classes:
+
+artwork.storyboard
+artwork.storyboard.frame
+
+
+
 **Identifiers**
 How to construct an asset and use the different identifiers.
-- The identifier for the entity uniquely identifies the 'whole' asset, that being the combination of it's structural and functional characteristics.
-- The identifier in the structural characteristics references the essence of the asset, typically the asset can be resolved with this identifier.
+- The identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics.
+- The identifier in the structural characteristics references the essence of the asset. In many cases the asset can be resolved with this identifier.
 
 - *A variant is new entity, it gets it's own identifier*
 - *Representations share an asset identifier, each instance of any essence has a unique id, representation is a property of the structural characteristics*
@@ -135,7 +149,7 @@ functionalCharacteristics
 
 
 Resolver
-identifierVale: ascId1
+identifierVale: E1
 recordType: item
 mediaType: image/jpg
 
@@ -238,15 +252,15 @@ Other Use Cases
 
 
 ## Asset Groups
-Asset groups provide for arbitrary grouping of other Assets into a single entity. Asset groups are Assets themselves, and so they can contain other Asset groups, allowing for a hierarchical structure of Assets that are made up of other assets.
+Asset groups provide for grouping of other Assets into a single entity. Asset groups are Assets themselves, so they can contain other Asset groups, allowing for a structure of Assets that are made up of other assets.
 
-Asset groups are deliberately simple, the intent is to communicate sets of assets needed in a workflow or application. Often how that group is used in an application can be complex and application dependent. Other mechanisms like USD, EDL's or AAF's carry complex information about how multiple assets interrelate within specific applications, these files are Assets themselves and it would expected that these would be sent to a relevant workflow.
+Asset groups are deliberately simple. The intent is to communicate sets of assets needed in a workflow or application. How that group is used in an application can be complex and application-dependent. Other mechanisms like USD, EDL's or AAF's carry complex information about how multiple assets interrelate within specific applications,; these files are Assets themselves and can be sent to a relevant workflow.
 
-Asset groups can be useful as simple organizing construct, put all the concept art for a particular character together or putting a series of storyboard frames into an ordered group. They can also be used for things like a 3D Model that is composed of meshes, textures, rigging, or an image that is comprised of several layers.
+Asset groups can be useful as a simple organizing construct: put all the concept art for a particular character together or put a series of storyboard frames into an ordered group. They can also be used for things like a 3D Model that is composed of meshes, textures, and rigging.
 
-Using groups can simplify managing the relationships that exist between the assets and other pieces of context, by enclosing multiple images of concept art in a group it is only the group that need be related back to the character, rather than each image.
+Using groups can simplify managing the relationships that exist between the assets and other pieces of context. If multiple images of concept art in a group together, the character only has to relate to the group, not each individual image.
 
-> This Asset Group allows all three, pieces of information to be grouped into a single entity for convenience. One relationship is maintained to the storyboard itself but references to the physical drawing, it's digitized version and it's separate metadata are all exchanged.
+> This storyboard is represented as an Asset Group with three elements. The scene it represents only has to have a single relationship to the group. However, each frame is still itself an Asset, so each frame can still use the standard mechanisms for supporting, e.g., physical and diital representaitons.
 ```
 identifier
 	identifierValue: AG1
@@ -271,11 +285,11 @@ Asset: [
 
 
 ### Analogue & Digital
-Data has to be stored somewhere, the ontology states that analog data is bound to the media on which it has been recorded, i.e. something shot on film is essentially bound and carried on the physical film it recorded on.
+Data has to be stored somewhere. IN the ontology, analog data is bound to the media on which it has been recorded. Something shot on film is essentially bound and carried on the physical film it recorded on.
 
 Digital data is a little different, in that it is often moved or copied to different devices. Something recorded on the camera Mag may be moved onto some sort of hard drive, then later onto long term tape. Digital data has the distinct advantage that it does not degrade in quality when it transferred across storage devices. 
 
-For this reason, the ontology allows for digital data to optionally to specify a 'carrier', which is the piece of Infrastructure being used to hold the data, this might be something like a thumb-drive, DVD, LTO tape, etc. With this being a separate piece of infrastructure it has it's own identifier and things like location can be tracked. For data stored natively in a cloud type environment this is not really required, since it's location is tracked through a URL, indeed often you don't even really know exactly what the carrier itself is, or where it is physically located.
+For this reason, the ontology allows for digital data to optionally to specify a 'carrier', which is the piece of Infrastructure being used to hold the data. This might be something like a thumb-drive, DVD, LTO tape, etc. This separate piece of infrastructure it has its own identifier and things like location can be tracked. For data stored natively in a cloud type environment this is not really required, since its location is tracked through a URL; in many cases you don't even really know exactly what the carrier itself is, or where it is physically located.
 
 ### Carrier
 The documentation says the carrier is an Asset and not Infrastructure, isn't the data the Asset not what it is stored on. Data always has a carrier, it's just not always worth explicitly naming it, data in the cloud is still on a hard drive.
