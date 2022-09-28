@@ -12,20 +12,20 @@ There are three pervasive concepts in the JSON schema:
 ### Entities
 RDF is a class based system. JSON does not use a class based model or the idea of class inheritance.
 
-For the JSON schema we use a compositional model, where a set of individual schemas are used to create entities that align with the RDF classes. These schemas can then be composed (via referencing) to create new entities. Each entity can be nested or included in sets.
+For the JSON schema we use a compositional model, where a set of individual schemas are used to create entities that align with the RDF classes. These schemas can then be composed (via referencing) to create new entities. Each entity can be nested inside other entities or included in sets of entities.
 
-Each entity requires the property ``entityType``, knowing the entityType allows for applications to reference the correct schema when validating or using a parsing function to consume the data.
+Each entity requires the property ``entityType``. Knowing the entityType allows applications to reference the correct schema when validating or parsing the data.
 
 > **Entity**: A top level concept in the ontology that includes a set of properties with associated values.
 
-> **Property**: A ``<key> <value>`` pair where the value can be an entity, complex type (object or array of objects) or primative value (string, number, Boolean or null)
+> **Property**: A ``<key> <value>`` pair where the value can be an entity, complex type (object or array of objects), or primitive value (string, number, Boolean or null)
 
 The schema follows some general conventions:
-- Each entity is defined as its own JSON schema.
-- The first letter of defined entity is capitalized.
+- Each entity is defined in its own JSON schema.
+- The first letter of a defined entity is capitalized.
 - Entities are required to declare their ``entityType`` and have a unique ``identifier``.
 
-Below we show a section of the schema for Narrative Location, which illustrates how the ``identifier`` sub-Schema is included by reference. The Location is itself an entity and therefore capitalized; it includes an identifier for the Location ***(see Identifiers and references)*** as well as the properies ``name`` and ``description``.
+Below we show a section of the schema for Narrative Location, which illustrates how the ``identifier`` sub-Schema is included by reference. The Location is itself an entity and therefore capitalized; it includes an identifier for the Location ***(see Identifiers and references)*** as well as the ``name`` and ``description`` properties.
 
 **JSON Schema**
 ```JSON
@@ -124,11 +124,11 @@ Below is the JSON schema for an identifier/scope pair, as shown here, followed b
 
 
 ### References
-The use of identifiers is a central component of all entities; an entity must be uniquely identifiable with an identifier.
+The use of identifiers is a central component of all entities; an entity must be uniquely identified with an identifier.
 
-Using identifiers allows any entity to be included by reference or by inclusion; the decision is left to the application. Where only an identifier is included in a payload the presumption is the receiving party would make a follow up request to retrieve additional information.
+Using identifiers allows any entity to be included either by reference or by inclusion; the decision is left to the application. Where only an identifier is included in a payload the presumption is the receiving party would make a follow up request if it needs more detailed information.
 
-The example below shows a Narrative Location, where the Location itself is only referenced by it's identifier. A client receiving this could then make a request using the Location's identifier to get the full set of attributes.
+The example below shows a Narrative Location, where the Location itself is only referenced by its identifier. A client receiving this could then make a request using the Location's identifier to get the full set of attributes.
 
 **JSON Instance, example 1**
 ```JSON
@@ -176,25 +176,25 @@ The next example shows how the Location entity can be de-referenced and included
 }
 ```
 
-The schemas are structured in such a way that objects could be nested *ad infinitum*, it is the decision of the sending and recieving applications to decide how and what is exchanged, however developers should be aware that given the graph based nature, circular references can be easily created.
+The schemas are structured in such a way that objects can be nested *ad infinitum*. It is up to the sending and receiving applications to decide how and what is exchanged. However, developers should be aware that given the graph based nature of production data, circular references can be easily created.
 
-When the decision is made to pass just a reference it is likely that the recieving client may want to make a follow up request for additional information. This does raise some potential issues, a decoupled system may not even know which application prepared the data and the client will need to know API endpoints with the required credentials etc.
+When the decision is made to pass just a reference and the receiving client wants to make a follow up request for additional information there are some potential issues: a decoupled system may not even know which application prepared the data and the client will need to know API endpoints, have the required credentials, and so on to collect the extra data.  (Sometimes all that a particular application wants is an identifier so it can anchor the portions of the graph it cares about in a broader structure.)
 
 The 2030 vision also proposes the use of a resolution mechanism. A resolver can be used for both retrieving files and/or additional data. When an identifier is resolved with a resolver the response is one or more URL's that can then be used to retrieve information. ==For more on resolvers go here==
 
 ## Relationships
-Relationships are a fundamental construct in the ontolgy.
+Relationships are a fundamental construct in the ontology.
 
-There are not really standard mechansims for encoding relationships in JSON, (this is not a  JSONLD), so we have adopted the following patterns for referencing other entities. There are primarily two situations where you may wish to include references:
+There are not really standard mechanisms for encoding relationships in JSON. We are using JSON Schema rather than JSON-LD, so we have adopted the following patterns for referencing other entities. There are two common situations where you may wish to include references:
 - When another entity is an intrinsic property of an entity
 - When you wish to use a named relationship, typically as part of a Context
 
-When another entity is an intrinsic property then the entity type to which you are refering is often the name of the property,an example of this can be seen for Location above. However, another property name can be used, such as the propery ``source`` in a shot, this refers to an Asset.
+When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the properly ``source`` in a shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard.)
 ```JSON
 {
 	"entityType": "Asset",
 	"functionalCharacteristics": {
-		"funcionalType": "shot",
+		"functionalType": "shot",
 		"functionalProperties": {
 			"source": {
 				"entityType": "Asset",
@@ -211,7 +211,7 @@ When another entity is an intrinsic property then the entity type to which you a
 ```
 
 
-The Context example below demonstrates the use of named relationships, this shows how a NarrativeScene is related to entities such as props or characters that appear in that scene. This follows the pattern:
+The Context example below demonstrates the use of named relationships. It shows how a NarrativeScene is related to entities such as props and characters that appear in that scene. This follows the pattern:
 
 ``<Context>.<relationship>.[<entity>]``
 
@@ -377,21 +377,21 @@ The Context example below demonstrates the use of named relationships, this show
 
 
 ## Standard Properties
-There are some properties that are used consistently throughout the schema
+There are some properties that are used throughout the schema
 
 
 ##### entityType
 A required property that enumerates the type of the entity.
 
-A client recieving the OMC-JSON will need to know what any given entity is, so that it can parse it correctly.
+A client receiving the OMC-JSON will need to know what any given entity is, so that it can parse it correctly.
 
 ##### identifier
-The identifier, or identifiers unqiuely identify this entity within the described scope.
+The identifier, or identifiers uniquely identify this entity within the described scope.
 
-An entity can have multiple idetifiers, for example a Creative Work may have an identifier with the production company, the studio, imdb or EIDR.
+An entity can have multiple identifiers. For example a Creative Work may have an identifier with the production company's ID, the studio's ID, and IMDb ID, or an EIDR ID..
 
 ##### name
-A human readable name for the entity, helpful for people consuming the data, maybe used as a label or tag. There is no requirement that it be unique and should not be used as structured information or an identifier.
+A human readable name for the entity, helpful for people consuming the data, maybe used as a label or tag. There is no requirement that it be unique and it should not be used as structured information or an identifier.
 
 ##### description
 A human readable (preferably short) description of the entity. As with name, this is really meant for human consumption and should not be used for encoding structured information.
@@ -399,13 +399,13 @@ A human readable (preferably short) description of the entity. As with name, thi
 ##### customData
 The schema does not attempt to define every property that you might be associate with any given entity, our goal is to surface enough to allow a production to track, relate and find things across distinct parts of the workflow.
 
-However, sometimes it may be desirable to embed data beyond the defined properties of an entity. This propery is unrestriced, beyond those imposed by JSON itself, allowing additional JSON, other serialized encodings or base64 for example. It is the responsibility of the sending and receiving parties to know what to do with the data.
+However, sometimes it may be desirable to embed data beyond the defined properties of an entity. This property is unrestricted, beyond the constraints imposed by JSON itself, allowing additional JSON, other serialized encodings, or base64 for example. It is the responsibility of the sending and receiving parties to know what to do with the data.
 
-Generally we recommend that more extensive metadata be held separately, as its own object a probably in a standardized format like IMF, JPG, etc. These blobs of data can be uniquely identified as assets in their own right and in turn be related or grouped using relationships or asset groups for example.
+Generally we recommend that more extensive metadata be held separately, as its own object and  probably in a standardized format like IMF, JPG, etc. These blobs of data can be uniquely identified as assets in their own right and in turn be related or grouped using relationships or asset groups.
 
 ##### entityInfo
-For encoding information specific to the entity itself, not what it is representing that may need to be communicated.
+This is for encoding information specific to the entity itself, not what it is representing.
 
-This can include properties like the version of the schema used, a version of the contained data, provenance, creatation or updated times.
+This can include properties like the version of the schema used, a version of the contained data, provenance, creation or update times.
 
 
