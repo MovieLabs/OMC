@@ -1,9 +1,13 @@
 # Relationships
-Relationships between entities are a critical part of the ontology. JSON does not natively have a mechanism for expressing relationships so the JSON implementation needs to define one.
+Relationships between entities are an essential part of the ontology. JSON does not have a native mechanism for expressing relationships so the OMC- JSON implementation needs to define one.
 
-Relationships are contained within a Context. A Context is itself an entity and so Contexts can be constructed and used in multiple places, most entities support the inclusion of a Context.
+Relationships are contained within a Context. A Context is itself an entity and so Contexts can be constructed and used in multiple places. Most entities support the inclusion of a Context.
 
-Conceptually a context takes the following format, an identifier the named relationships, the entityType to which it's related and then the entity instance itself
+Conceptually a Context looks like this: 
+
+- an identifier (of the Context)
+-  the named relationships, which are properties with an array of objects as their value, Each object has
+  -  the entityType to which it is related as a property, whose value is an array of entities of the appropriate type.
 
 ```
 <identifier>,
@@ -12,7 +16,7 @@ Conceptually a context takes the following format, an identifier the named relat
 			[<entityInstance>]
 ```
 
-The example below shows how a Character entity may look (other properties were omitted for clarity)
+The example below shows how a Character entity with a Context can look. The Character has two pieces of concept art and one narrative prop. Other properties were omitted for clarity.
 
 ```JSON
 {
@@ -35,7 +39,14 @@ The example below shows how a Character entity may look (other properties were o
 						"identifierScope": "movielabs",
 						"identifierValue": "ast/1234"
 					}]
-				}
+				},
+				{
+					"entityType": "Asset",
+					"identifier": [{
+						"identifierScope": "movielabs",
+						"identifierValue": "ast/1235"
+					}]
+                }    
 			]
 		},
 		"hasProp": {
@@ -54,7 +65,7 @@ The example below shows how a Character entity may look (other properties were o
 
 ```
 
-Relationships are typically bidirectional and almost always have a direction, i.e. the name of the relationship indicates how A is related to B, which is not the same as how B is related to A. Therefore it is generally true that for any given relationship there is an inverse relationship also. 
+Relationships are typically bidirectional and almost always have a direction. The name of the relationship indicates how A is related to B, which is not the same as how B is related to A. It is generally true that for any given relationship there is an inverse relationship also. 
 
 The name of the relationship carries semantic meaning and therefore can be used to infer the nature of the relation between two entities.
 
@@ -126,5 +137,5 @@ The following table describes entity types and the relationships they have to ot
 
 *Note: This is not a complete list, and new relationships will be added as development continues*
 
-*Note: Some relationships have been updated and may differ from the published ontology, this will be corrected in a future version*
+*Note: Some relationships have been updated and may differ from the published ontology; this will be corrected in a future version*
 
