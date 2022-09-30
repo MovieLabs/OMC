@@ -9,7 +9,7 @@ Asset -> depicts -> NarrativeProp
 The Asset's ``functionalType`` describes the thing, i.e. a prop or production set.
 
 
-Portrayals are a little different. A Character may be portrayed by several different people, and it is the combination of a person and their role. For example a character may have a principal actor, a stunt double and someone else doing voiceover work. In addition a person may have more than one role on the production, i.e. and actor/director, the portrayal connects the Participant (the combination of the person with the role of actor) and the Character.
+Portrayals are a little different. A Character may be portrayed by several different people, and it is the combination of a person and their role. For example a character may have a principal actor, a stunt double and someone else doing voiceover work. In addition a person may have more than one role on the production, i.e. an actor/director, the portrayal connects the Participant (the combination of the person with the role of actor) and the Character.
 
 It is necessary to be able to disambiguate all these; for example, you would not want the schedule the voiceover artist instead of the principal actor on the day of a shoot.
 
