@@ -43,11 +43,11 @@
 		},
 		"structuralCharacteristics": {
 			"title": "StructuralCharacteristics",
-			"$ref": "./InfrastructureSC.json"
+			"$ref": "infrastructureSC.json"
 		},
 		"functionalCharacteristics": {
 			"title": "Functional Characteristics",
-			"$ref": "./InfrastructureFC.json"
+			"$ref": "infrastructureFC.json"
 		},
 		"Context": {
 			"title": "Asset Context",

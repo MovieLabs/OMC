@@ -12,12 +12,12 @@
 				"male",
 				"female",
 				"other",
-				"unkown",
+				"unknown",
 				null
 			]
 		},
 		"genderPronoun": {
-			"title": "Prefered pronoun",
+			"title": "Preferred pronoun",
 			"description": "An individuals pronoun of choice",
 			"enum": [
 				"he/him",
