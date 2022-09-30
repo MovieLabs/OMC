@@ -11,4 +11,4 @@ Tech Notes
 2. [Functional & Structural](./Docs/Tech-Notes/Functional&Structural.md)
 3. [Assets](./Docs/Tech-Notes/Assets.md)
 4. [Depictions & Portrayals](./Docs/Tech-Notes/Depictions&Portrayals.md)
-5. [Realationships](./Docs/Tech-Notes/Relationships.md)
+5. [Relationships](./Docs/Tech-Notes/Relationships.md)

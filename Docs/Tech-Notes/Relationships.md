@@ -1,9 +1,9 @@
 # Relationships
-Relationships between entities are an essential part of the ontology. JSON does not have a native mechanism for expressing relationships so the OMC- JSON implementation needs to define one.
+Relationships between entities are an essential part of the ontology. JSON does not have a native mechanism for expressing relationships so the OMC-JSON implementation needs to define one.
 
 Relationships are contained within a Context. A Context is itself an entity and so Contexts can be constructed and used in multiple places. Most entities support the inclusion of a Context.
 
-Conceptually a Context looks like this: 
+Conceptually a Context looks like this:
 
 - an identifier (of the Context)
 -  the named relationships, which are properties with an array of objects as their value, Each object has
@@ -46,7 +46,7 @@ The example below shows how a Character entity with a Context can look. The Char
 						"identifierScope": "movielabs",
 						"identifierValue": "ast/1235"
 					}]
-                }    
+				}
 			]
 		},
 		"hasProp": {
@@ -65,7 +65,7 @@ The example below shows how a Character entity with a Context can look. The Char
 
 ```
 
-Relationships are typically bidirectional and almost always have a direction. The name of the relationship indicates how A is related to B, which is not the same as how B is related to A. It is generally true that for any given relationship there is an inverse relationship also. 
+Relationships are typically bidirectional and almost always have a direction. The name of the relationship indicates how A is related to B, which is not the same as how B is related to A. It is generally true that for any given relationship there is an inverse relationship also.
 
 The name of the relationship carries semantic meaning and therefore can be used to infer the nature of the relation between two entities.
 
