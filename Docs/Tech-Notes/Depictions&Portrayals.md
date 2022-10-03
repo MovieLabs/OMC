@@ -1,16 +1,75 @@
 # Depictions & Portrayals
-Depictions are the mechanism used to relate narrative concepts to their production counterparts. Narrative elements are generally depicted by a production asset. A Portrayal is the depiction of a Character.
+Depictions are the mechanism used to relate narrative concepts to their production counterparts. Narrative elements are generally depicted by a production asset, a portrayal is the depiction of a Character.
 
 In the RDF ontology depictions and portrayals are reified relationships. In OMC-JSON we do not need to do this when dealing with objects such as props or locations; we can represent these using a named relationship:
 ```
-NarrativeProp isDepictedBy -> Asset
+NarrativeProp -> isDepictedBy -> Asset
 Asset -> depicts -> NarrativeProp
+
+Character -> isPortrayedBy -> Participant
+Participant -> portrays - Character
+Character -> isPortrayedBy -> Asset
 ```
-The Asset's ``functionalType`` describes the thing, i.e. a prop or production set.
+
+When depicting Assets, it is the Assets ``functionalType`` that describes the thing, i.e. it is a prop or production set.
+
+For portrayals it is a similar mechanism, but portrayals may be either a Participant or Asset. For example when a character is modeled in 3D, the portrayal will refer to an Asset. More often than not a character will be portrayed by a person, which is a Participant, but this would also be the case if an animal were portraying the character, potentially as service might be portray one also, for example an AI driven voiceover.
+
+The functional type of the Asset or Participant describes the nature of the portrayal, for example:
+```
+actor
+voiceover
+stunt
+```
+
+```JSON
+{
+	Character: {
+	    "entityType": "Character",
+	    "identifier": [{
+	        "identifierValue": "1234",
+	        "identifierScope": "Movielabs"
+	    }],
+	    "name": "Sven",
+	    "description": "An unassuming sattelite repair man"
+	    "Context":
+		    "isPortrayedBy": {
+				"entityType": "Participant",
+			    "identifier": [{
+			        "identifierValue": "5678",
+			        "identifierScope": "Movielabs"
+	    }],
+		    }
+	},
+	Participant: {
+	    "entityType": "Participant",
+	    "identifier": [{
+	        "identifierValue": "5678",
+	        "identifierScope": "Movielabs"
+	    }],
+	    "name": "J. Warren Trezevant",
+	    "description": "Stunt actor doing mo-cap for Sven"
+	    "structuralCharacteristics":{
+		    "structuralType": "person"
+		},
+		"functionalCharacteristics":{
+			"functionalType": "stunts"
+		},
+	    "Context":
+		    "portrays": {
+				"entityType": "Character",
+			    "identifier": [{
+			        "identifierValue": "1234",
+			        "identifierScope": "Movielabs"
+			    }],
+		    }
+		}
+	}
+}
+```
 
 
-Portrayals are a little different. A Character may be portrayed by several different people, and it is the combination of a person and their role. For example a character may have a principal actor, a stunt double and someone else doing voiceover work. In addition a person may have more than one role on the production, i.e. an actor/director, the portrayal connects the Participant (the combination of the person with the role of actor) and the Character.
 
-It is necessary to be able to disambiguate all these; for example, you would not want the schedule the voiceover artist instead of the principal actor on the day of a shoot.
 
-Therefore the Portrayal entity combines a Participant and a role.
+
+
