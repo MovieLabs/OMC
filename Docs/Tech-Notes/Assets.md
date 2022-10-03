@@ -12,7 +12,7 @@ Often the process of deciding exactly which set of assets a person or service ne
 The intent in the OMC-JSON is that a set of assets needed for a task can be communicated and unambiguously resolved.
 
 ### Conventions
-**Identifiers**
+#### Identifiers
 How to construct an asset and use the different identifiers.
 
 - The asset identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics.
@@ -23,27 +23,8 @@ How to construct an asset and use the different identifiers.
 - *A new version maintains the same main identifier across versions, each essence had a unique id. Version is property of the structural characteristics, as the other aspects of the asset do not change (i.e. it's functional characteristics).
 
 
-**Structural and functional types**
-Structural and functional types are specified as strings, and thereby are not currently a controlled or enumerated vocabulary. As part of ongoing development MovieLabs intends on developing a vocabulary with a set of recommended terms, which would help in cross platform interchange.
-
-Individual terms should be written in camel case, separated using dot notation, going from more general to more specific.
-
-Example structural type:
-```
-digital.image
-physical.image
-digital.movingImage
-```
-
-Example functional types:
-```
-artwork.storyboard
-artwork.storyboard.frame
-prop
-prop.vehichle
-```
-
-Separating key characteristics of the type allows for easier searching and categorization, terms can be used singularly or in combination.
+#### Structural and Functional
+[*Structural and functional types*](./Functional&Structural.md)
 
 **Structural and functional properties**
 Along with a structural type specific properties related to it's structural and functional type may also be included.
@@ -60,7 +41,7 @@ For systems that do not employ a resolver but are file based, the structural pro
 
 Similarly functional properties can optionally be included, these may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information.
 
-#### Examples
+### Examples
 The following examples use a pseudo representation of the JSON and a similar pseudo example of how parameters in the current resolver spec would be represented.
 
 *[Need to point this to the resolver spec/code and blog]*
@@ -230,7 +211,7 @@ Asset: [
 ---
 -- Separate Doc?
 
-### Analogue & Digital
+## Analogue & Digital
 Data has to be stored somewhere. In the ontology, analog data is bound to the media on which it has been recorded. Something shot on film is essentially bound and carried on the physical film it recorded on.
 
 Digital data is a little different, in that it is often moved or copied to different devices. Something recorded on the camera Mag may be moved onto some sort of hard drive, then later onto long term tape. Digital data has the distinct advantage that it does not degrade in quality when it transferred across storage devices. 
@@ -302,7 +283,7 @@ Location: Location
 ---
 -- Separate Doc?
 
-### Variant / Version / Representation
+## Variant / Version / Representation
 What they mean and when to use them.
 Is Proxy a variant or a representation - you decide (we think it variant, make it it's own thing)
 - This can be a question as to how you want to relate something, I am probably happy to relate the proxy directly to the slate, but a thumbnail is probably easier to contain that relationship at the upper level. Also separate from a security standpoint (access control - appropriate granularity).
