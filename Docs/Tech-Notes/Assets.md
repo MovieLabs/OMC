@@ -39,14 +39,14 @@ For systems that do not employ a resolver but are file based, the structural pro
 
 *Note: Should we also say, these could be used to encode what a file should be named along with a file path, for use when hydrating a system that uses a resolver. Typically when you retrieve a file from a bucket the URL will describe a path and name used for the cloud system, this may not be how you want to setup files in an application*
 
-Similarly functional properties can optionally be included.These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information.
+Similarly functional properties can optionally be included. These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information.
 
 ### Examples
 The following examples use a pseudo representation of the JSON and a similar pseudo example of how parameters in the current resolver spec would be represented.
 
 *[Need to point this to the resolver spec/code and blog]*
 
-> A single digital asset, the essence is identified with E1
+A single digital asset, the essence is identified with E1
 ```
 OMC
 identifier
@@ -171,7 +171,6 @@ When a production requires multiple copies of the same thing how does this manif
 - For digital versions we can leave that up to the production.
 
 
-
 ---
 -- Separate Doc?
 
@@ -287,7 +286,6 @@ Location: Location
 What they mean and when to use them.
 Is Proxy a variant or a representation - you decide (we think it variant, make it it's own thing)
 - This can be a question as to how you want to relate something, I am probably happy to relate the proxy directly to the slate, but a thumbnail is probably easier to contain that relationship at the upper level. Also separate from a security standpoint (access control - appropriate granularity).
-
 
 
 > An asset where the essence has different representations

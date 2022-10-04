@@ -10,10 +10,11 @@ Conceptually a Context looks like this:
   -  the entityType to which it is related as a property, whose value is an array of entities of the appropriate type.
 
 ```
-<identifier>,
-<relationship>
-	<entityType>
-			[<entityInstance>]
+identifier
+	identifierValue
+relationship
+	entityType
+			[entityInstance]
 ```
 
 The example below shows how a Character entity with a Context can look. The Character has two pieces of concept art and one narrative prop. Other properties were omitted for clarity.
@@ -26,7 +27,7 @@ The example below shows how a Character entity with a Context can look. The Char
 		"identifierValue": "chr/1234"
 	}],
 	"Context": {
-		"entityType": "Character",
+		"entityType": "Context",
 		"identifier": [{
 			"identifierScope": "movielabs",
 			"identifierValue": "cxt/1234"
