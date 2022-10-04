@@ -180,7 +180,9 @@ The schemas are structured in such a way that objects can be nested *ad infinitu
 
 When the decision is made to pass just a reference and the receiving client wants to make a follow up request for additional information there are some potential issues: a decoupled system may not even know which application prepared the data and the client will need to know API endpoints, have the required credentials, and so on to collect the extra data.  (Sometimes all that a particular application wants is an identifier so it can anchor the portions of the graph it cares about in a broader structure.)
 
-The 2030 vision also proposes the use of a resolution mechanism. A resolver can be used for both retrieving files and/or additional data. When an identifier is resolved with a resolver the response is one or more URL's that can then be used to retrieve information.
+URLs can be used as identifiers but can be fragile in complex production systems: thins can move or can exist in more than one location. A `file:` URL can be used as an identifier, but this can make workflows fraile, since even a shared filesystem can be mounted diffrnetly on different systems.
+
+The 2030 vision proposes the use of a resolution mechanism. A resolver can be used for both retrieving files and/or additional data. When an identifier is resolved with a resolver the response is one or more URL's that can then be used to retrieve information.
 
 [Read more about resolvers here](https://movielabs.com/through-the-looking-glass/)
 
@@ -191,7 +193,7 @@ There are not really standard mechanisms for encoding relationships in JSON. We 
 - When another entity is an intrinsic property of an entity
 - When you wish to use a named relationship, typically as part of a Context
 
-When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the properly ``source`` in a shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard.)
+When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the property ``source`` in a Shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard.)
 ```JSON
 {
 	"entityType": "Asset",
@@ -408,7 +410,6 @@ Generally we recommend that more extensive metadata be identified separately as 
 ##### entityInfo
 This is for encoding information specific to the entity itself, not what it is representing. It might include one or all of the following:
  - Version of the schema used when creating the instance 
- - Version of the instance itself
- - Provenance of the instance
-
+ - Version of the instance itself (under development; will change)
+ - Provenance of the instance (under development; will change)
 

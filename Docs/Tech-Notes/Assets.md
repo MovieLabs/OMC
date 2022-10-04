@@ -1,13 +1,13 @@
 # Assets
-Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of the OMC-JSON is not to replace this but to provide a common mechanism for communicating what assets are needed for a given workflow and provide a means for the applications and services to find and access the files they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., a proxy that is derived from the OCF), and some aren't (e.g., the scene in which the asset is used.) 
+Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets needed for a given workflow and provide a means for the applications and services to find and access the files and other assets they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., a proxy that is derived from the OCF), and some aren't (e.g., the scene in which the asset is used.) 
 
 The 2030 vision establishes some core ideas behind the handling of assets:
 - Separation of its [structural and functional characteristics](Functional&Structural.md)
-- That the specific location of an asset can be abstracted and resolved when needed. This involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets]([Through the Looking Glass - MovieLabs](https://movielabs.com/through-the-looking-glass/))
+- The specific location of an asset can be abstracted and resolved when needed. This involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets]([Through the Looking Glass - MovieLabs](https://movielabs.com/through-the-looking-glass/))
 
-In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of assets, each asset contains one or more identifiers. The identifiers are then passed to a resolution service which will return back the URL of the required resource.
+In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of assets and each asset contains one or more identifiers. The identifiers can be passed to a resolution service which will return a URL for the required resource. Applications may not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL.)
 
-Often the process of deciding exactly which set of assets a person or service needs for a particular task is a complex one. Assets typically advance through multiple versions and there might be different variants or representations of the same asset, etc.
+Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. Assets advance through multiple versions and there might be different variants or representations of the same asset. Note: a formal extension to OMC for managing versions is underway; one if its most important features is that a version is itself just another Asset that can be used independently.
 
 The intent in the OMC-JSON is that a set of assets needed for a task can be communicated and unambiguously resolved.
 
@@ -15,8 +15,8 @@ The intent in the OMC-JSON is that a set of assets needed for a task can be comm
 #### Identifiers
 How to construct an asset and use the different identifiers.
 
-- The asset identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics.
-- The structural identifier in the structural characteristics references the essence of the asset. In many cases the asset itself (i.e. a file) would located or resolved with this identifier.
+- The asset identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics. [LINK: See Functional& Structural for an explanation of this concept]
+- The structural identifier in the structural characteristics references the essence of the asset. In many cases the asset itself (e.g., a fileor a URL-accessible resource) can be located or resolved with this identifier.
 
 - *A variant is new entity, it gets it's own identifier*
 - *Representations share an asset identifier, each instance of any essence has a unique id, representation is a property of the structural characteristics*
@@ -27,7 +27,7 @@ How to construct an asset and use the different identifiers.
 [*Structural and functional types*](./Functional&Structural.md)
 
 **Structural and functional properties**
-Along with a structural type specific properties related to it's structural and functional type may also be included.
+Along with a structural type specific properties related to its structural and functional type may also be included.
 
 Structural properties describe details of the asset that are independent of it's use, for example the size or color depth of an image, or the gps coordinates of where it was captured. 
 
@@ -39,7 +39,7 @@ For systems that do not employ a resolver but are file based, the structural pro
 
 *Note: Should we also say, these could be used to encode what a file should be named along with a file path, for use when hydrating a system that uses a resolver. Typically when you retrieve a file from a bucket the URL will describe a path and name used for the cloud system, this may not be how you want to setup files in an application*
 
-Similarly functional properties can optionally be included, these may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information.
+Similarly functional properties can optionally be included.These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information.
 
 ### Examples
 The following examples use a pseudo representation of the JSON and a similar pseudo example of how parameters in the current resolver spec would be represented.
@@ -91,7 +91,7 @@ mediaType: application/json
 ```
 *Note: This example uses the same asset identifier and essence identifier, the resolver will return a URL to either the file, or the metadata based on the requested mediaType
 
---- 
+---
 
 An asset where the essence serves 2 functional uses, in this case the resolver would be return the same result (as it is the same file), an application would determine how to present and use the asset.
 ```

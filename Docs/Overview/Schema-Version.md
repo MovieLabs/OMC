@@ -12,7 +12,7 @@ The version of schema specification that this schema is using. This will be a ve
 *Note: A topic for consideration by the working group is to migrate to using JSON-Schema 2020-12. There is some additional functionality through extra keywords, and there is more formalized mechanism for bundling schemas (which would be useful). However there does seem to be less support in some of the tooling for 2020-12 over JSON-7*
 
 ## OMC Schema Version (Proposal)
-We have not adopted a formal versioning mechanism yet, this seemed premature in light of this being a closed release and the rapid rate of change during initial development. The following represents a starting point for discussion with the implementers group
+We have not adopted a formal versioning mechanism yet; this seemed premature in light of this being a closed release and the rapid rate of change during initial development. The following represents a starting point for discussion with the implementers group
 
 **Major**
 
@@ -43,5 +43,4 @@ Given that the schema for each entity can advance independently would this mean 
 It may be useful to version the instance of any given entity, i.e. if any of the properties are updated. For example if a characters height or weight properties were updated, you would want to update any systems that are using that data. In the event an application had conflicting records with the same identifier, it would need to disambiguate them and presumably adopt the more recent version.
 
 *Note: This only applies to the properties values of an instance, in the case of an asset there is also the version of the essence itself to consider. This would be considered part of the structural characteristics of an Asset, we will be addressing the versioning of assets in a separate working group.
-
 

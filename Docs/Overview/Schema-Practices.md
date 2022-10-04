@@ -34,7 +34,7 @@ Examples of property naming (lower camel case):
 ### **Punctuation**
 We avoid punctuation in all attribute terms and do not use hyphens, spaces, underscores, etc.. Some systems require these to be escaped or removed and there is variability across systems in how punctuation is treated as well as how it is sometimes represented on screen.
 
-Avoid the use of additional symbols prepended or appended to names. For example, it is not uncommon to see $ prepended in JSON schemas ($id). However what is convention in one system rarely translates to other forms of serialization or databases. JSON schema itself uses this convention, which helps avoid confusion between the schema itself and the schema definition.
+JSON OMC does not use additional symbols prepended or appended to names. For example, it is not uncommon to see $ prepended in JSON schemas ($id). However what is convention in one system rarely translates to other forms of serialization or databases. JSON schema itself uses this convention, which helps avoid confusion between the schema itself and the schema definition.
 
 ### **Multiple Values**
 Where a property can contain a set of values the schema will specify an array, even if only a single value is present.
@@ -57,7 +57,7 @@ For example, the commonly used identifier property is always an array, even if t
 ## Required vs Non-Required fields
 There is limited use of required properties, to allow for flexibility,
 
-At this point we have adopted a philosophy of placing limited restraints on the use, inclusion and naming of properties. We are mindful that a schema with rigid constraints may be a barrier to adoption if someone feels they need to include some specific attribute that is not in the schema. In JSON schema the inclusion of additional properties is the default setting and instances will pass validation. The downside of this is that validation becomes weaker - if someone misspells a property 'filename', instead of 'fileName', it would still pass validation, but the receiving party would not parse the value correctly.
+At this point we have adopted a philosophy of placing limited constraints on the use, inclusion, and naming of properties. We are mindful that a schema with rigid constraints may be a barrier to adoption if someone feels they need to include some specific attribute that is not in the schema. In JSON Schema the inclusion of additional properties is the default setting and instances will pass validation. The downside of this is that validation becomes weaker - if someone misspells a property 'filename', instead of 'fileName', it would still pass validation, but the receiving party would not parse the value correctly.
 
 In addition, different languages will behave differently if they attempt to access non-existent properties. It is therefore the responsibility of the party parsing the data to catch and handle errors related to absent properties in the object.
 
@@ -66,7 +66,7 @@ It should be noted that the absence of a property does not mean that there is no
 ## Extending the schema
 Extensions and modifications to the schema can create compatibility problems; see [schema versioning](Schema-Version.md). The goal therefore is to be able to extend without introducing breaking changes.
 
-To support this the JSON schema keyword, 'additionalProperties', is generally left in its default state of 'true'. This means that if properties are added to a schema at a later date, validation will still pass for an instance that is validated with an older schema. Setting this value to false, would cause validation to fail if any additional properties were present.
+To support this the JSON schema keyword 'additionalProperties' is generally left in its default state of 'true'. This means that if properties are added to a schema at a later date, validation will still pass for an instance that is validated with an older schema. Setting this value to false would cause validation to fail if any additional properties were present.
 
 This does mean that anyone adding their own properties is at risk of later conflicts if a schema introduces a property with the same name. We therefore do not recommend doing this in production environments.
 
@@ -87,7 +87,6 @@ This same mechanism works for application-specific custom data.
 `"customData": {`
 	`"PopularApplication": "<data>"`
 `}`
-
 
 
 
