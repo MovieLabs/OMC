@@ -11,3 +11,14 @@ Key Points:
 - The model and schema rely heavily on the use of identifiers to uniquely identify instances of individual entities and the assets those entities describe. The schema allows entities to be passed either as a reference  or as fully realized entities. In the first case the receiving application can dereference the identifiers if it needs more information.
 - The model treats relationships as first class citizens . In production, everything is connected to something, and most things are connected to many other things; this results in a graph, not a tree. Therefore, we built the schema so it can represent graphs and recursion, even though JSON itself is strictly hierarchical.
 
+# Status
+
+OMC JSON is currently a pre-alpha release. Areas under development are:
+
+- It does not implement all of OMC. We are filling in the missing parts based on application requirements and user feedback.
+- The mechanism for versions, variants, and representations is being defined, and will be implemented in JSON when the model is complete.
+- The formal definitions of structural characteristics for CG assets are underway.
+
+
+
+Please provide feedback and send any suggestions and questions to <<<need email address, or team channel or something >>>
