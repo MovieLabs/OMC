@@ -124,9 +124,11 @@ Below is the JSON schema for an identifier/scope pair, as shown here, followed b
 
 
 ### References
-The use of identifiers is a central component of all entities; an entity must be uniquely identified with an identifier.
+The use of identifiers is a central component of all entities; every entity must be uniquely identified with an identifier.
 
-Using identifiers allows any entity to be included either by reference or by inclusion; the decision is left to the application. Where only an identifier is included in a payload the presumption is the receiving party would make a follow up request if it needs more detailed information.
+Using identifiers allows any entity to be included either by reference or by inclusion; the decision is left to the application. Where only an identifier is included in a payload the presumption is the receiving party can make a follow up request if it needs more detailed information.
+
+Which of the two methods to use (identifier vs full data) will differ across applications and workflows, thinking about things like latency (or even availability) of identifier resolution, caching behavior in applications, etc.  It is always possible to send full data for any entity to any depth, with the usual warnings about the size of the data and th fact that it is graph-based. 
 
 The example below shows a Narrative Location, where the Location itself is only referenced by its identifier. A client receiving this could then make a request using the Location's identifier to get the full set of attributes.
 
@@ -148,9 +150,10 @@ The example below shows a Narrative Location, where the Location itself is only 
 }
 ```
 
-The next example shows how the Location entity can be de-referenced and included in the payload.
+The next example shows a full Location entity included directly in the payload. 
 
 **JSON Instance, example 2**
+
 ```JSON
 {
     "entityType": "NarrativeLocation",
