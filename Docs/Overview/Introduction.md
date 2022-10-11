@@ -11,6 +11,14 @@ Key Points:
 - The model and schema rely heavily on the use of identifiers to uniquely identify instances of individual entities and the assets those entities describe. The schema allows entities to be passed either as a reference  or as fully realized entities. In the first case the receiving application can dereference the identifiers if it needs more information.
 - The model treats relationships as first class citizens . In production, everything is connected to something, and most things are connected to many other things; this results in a graph, not a tree. Therefore, we built the schema so it can represent graphs and recursion, even though JSON itself is strictly hierarchical.
 
+# Repo Structure
+
+There are example JSON files in *[....]* 
+
+The *[LINK]*Tech Notes cover some common concepts and use cases.
+
+Any notes on usin the schema, which is located in *[...]*
+
 # Status
 
 OMC JSON is currently a pre-alpha release. Areas under development are:
