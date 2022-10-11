@@ -14,7 +14,7 @@ identifier
 	identifierValue
 relationship
 	entityType
-			[entityInstance]
+		[entityInstance]
 ```
 
 The example below shows how a Character entity with a Context can look. The Character has two pieces of concept art and one narrative prop. Other properties were omitted for clarity.

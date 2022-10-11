@@ -37,7 +37,7 @@ The tooling for JSON schema on occasion can be a little inconsistent in it's int
 
 The files in this repo therefore leave the $id field empty, the tooling then resolves relative references to other schemas from the current path, which works for development. If you are just browsing the schema we would suggest using the individual files, it is a little easier to find and view specific concepts.
 
-When deploying it makes sense to include the $id field. Included in the the ``/JSON-Schema/omc`` directory is a bundled version of the schema ``omcBundle.json``. If you plan on using the schema programmatically we suggest importing this.  We use [AJV JSON Schema validator]((https://ajv.js.org/) and [HyperJump](https://github.com/hyperjump-io/json-schema-validator) is also a good choice.
+When deploying it makes sense to include the $id field. Included in the the ``/JSON-Schema/omc`` directory is a bundled version of the schema ``omcBundle.json``. If you plan on using the schema programmatically we suggest importing this.  We use [AJV JSON Schema validator](https://ajv.js.org/) and [HyperJump](https://github.com/hyperjump-io/json-schema-validator).
 
 The examples use data from the MovieLabs internal POC project, these are generally arrays of entities. The schema is designed to validate a single instance, so be aware that if using these examples single instances should be used when testing, not an array of multiple instances.
 

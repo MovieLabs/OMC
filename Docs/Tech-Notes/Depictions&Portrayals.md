@@ -11,7 +11,7 @@ Participant -> portrays - Character
 Character -> isPortrayedBy -> Asset
 ```
 
-When depicting Assets, it is the Assets ``functionalType`` that describes the thing, i.e. it is a prop or production set.
+When depicting Assets, it is the Assets ``functionalType`` that describes the thing, i.e. whether it is a prop or production set.
 
 For portrayals it is a similar mechanism, but portrayals can be done by either a Participant or an Asset. For example when a character is modeled in 3D, the portrayal will refer to an Asset. More often than not a character will be portrayed by a person, which is a Participant, but this would also be the case if an animal were portraying the character. A service might be used to portray a character, for example an AI driven voiceover.
 
@@ -24,7 +24,7 @@ stunt
 
 ```JSON
 {
-	Character: {
+	"Character": {
 	    "entityType": "Character",
 	    "identifier": [{
 	        "identifierValue": "1234",
@@ -41,7 +41,7 @@ stunt
 	    }],
 		    }
 	},
-	Participant: {
+	"Participant": {
 	    "entityType": "Participant",
 	    "identifier": [{
 	        "identifierValue": "5678",

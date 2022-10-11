@@ -187,7 +187,7 @@ URLs can be used as identifiers but can be fragile in complex production systems
 
 The 2030 vision proposes the use of a resolution mechanism. A resolver can be used for both retrieving files and/or additional data. When an identifier is resolved with a resolver the response is one or more URL's that can then be used to retrieve information.
 
-[Read more about resolvers here](https://movielabs.com/through-the-looking-glass/)
+For more information on resolvers see here: [Through the Looking Glass](https://movielabs.com/through-the-looking-glass/)
 
 ## Relationships
 Relationships are a fundamental construct in the ontology.
