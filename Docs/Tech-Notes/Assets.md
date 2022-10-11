@@ -7,53 +7,55 @@ The 2030 vision establishes some core ideas behind the handling of assets:
 
 In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of entities and each entity contains one or more identifiers. This tech note focuses on Assets. 
 
-If there is only an identifier in the Assets, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL.) See *[LINK: Identifiers and References in Schema-Structure]* for more on identifiers vs fully formed entities.
+If there is only an identifier in the Assets, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL.) See [Identifiers and References](../Overview/Schema-Structure#Identifiers%20and%20References) for more on identifiers vs fully formed entities.
 
 Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. Assets advance through multiple versions and there might be different variants or representations of the same asset. *Note*: An extension to OMC for managing versions is underway; one if its most important features is that a version is itself just another Asset that can be used independently.
 
-### Conventions
-#### Identifiers
- *[LINK: Identifiers and References in Schema-Structure]* 
+## Conventions
+### Identifiers
+Identifiers are used to identify what we refer to as the 'whole' asset, this includes both the essence of an object and metadata about that object. A separate identifier is typically used to identify the essence itself (the essence is the collection of bits or the specific file). These are separate because it is possible for there to be more than one essence for asset, also sometimes you only want the metadata not the essence itself.
+
+For a more information see here: [Identifiers and References](../Overview/Schema-Structure#Identifiers%20and%20References)
 
 How to construct an asset and use the different identifiers:
+- The identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics. 
+- The identifier in the structural characteristics is identifies the essence of the asset. In many cases the essence (e.g., a file or a URL-accessible resource) can be located or resolved with this identifier.
 
-- The asset identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics. [LINK: See Functional& Structural for an explanation of this concept]
+*Note: A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more clearly delineates metadata and object, allowing security authorization to be more easily separated. This can allow applications and participants to view metadata about assets, without being granted access to the asset itself, for example a system admin can provision, move or migrate files without being allowed direct access to the sensitive content itself*
 
-- The structural identifier in the structural characteristics is for the essence of the asset. In many cases the essence (e.g., a file or a URL-accessible resource) can be located or resolved with this identifier.
+### Structural and Functional Characteristics
+In simplified terms the functional attributes of an Asset describe to how it is used, and the structural properties describe what it is.
 
-  
-
-
-#### Structural and Functional
-[*Structural and functional types*](./Functional&Structural.md)
-
-Roughly speaking, the functional attributes of an Asset relate to how it is used, and the structural properties relate to what it is.
+For a more detailed explanation with examples, see here: [*Structural and functional types*](./Functional&Structural.md)
 
 **Structural and functional properties**
-Along with a functional and structural type, specific properties related to its structural and functional type may also be included.
+Along with a functional and structural type, an Asset may also carry additional properties that further describe the structural and functional characteristics.
 
-Structural properties describe details of the asset that are independent of its use, for example the size or color depth of an image, or the gps coordinates of where it was captured. 
+Structural properties describe details of the asset that are independent of its use, for example the size or color depth of an image, or the GPS coordinates of where it was captured. 
 
-Given the large array of structural types and the number of potential properties involved it should be remembered the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key properties that may be useful in finding, identifying or disambiguating assets in a workflow without the need to explicitly parse the underlying formats.
+Given the large array of structural types and the number of potential properties involved it should be remembered the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key properties that may be useful in finding, identifying or disambiguating assets in a workflow without the need to explicitly access or parse the underlying formats.
 
-This can be especially useful where these properties are embedded as part of a file. Where metadata is not embedded it would generally  *RGD: is htis really 'generally'?* be considered an asset in its own right, identified and made available accordingly.
+This can be especially useful where these properties are embedded as part of the essence file, as this can avoid having to read and load the file. Where metadata is not embedded with the essence this should generally be considered an asset in its own right, given it's own identifier and made available accordingly.
 
-For systems that are file based, the structural properties can encode a file path and name for the essence.
+For file based systems, the structural properties can encode a file path and name for the essence.
 
-*Note: Should we also say, these could be used to encode what a file should be named along with a file path, for use when hydrating a system that uses a resolver. Typically when you retrieve a file from a bucket the URL will describe a path and name used for the cloud system, this may not be how you want to setup files in an application RGD: i think this is a separate note on 'using cloud storage with a resolver',*
+*Note: Should we also say, these could be used to encode what a file should be named along with a file path, for use when hydrating a system that uses a resolver. Typically when you retrieve a file from a bucket the URL will describe a path and name used for the cloud system, this may not be how you want to setup files in an application
 
-Similarly functional properties can be included. These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information, and informaiton related to a particular functional use.
+** RGD: I think this is a separate note on 'using cloud storage with a resolver', **
+** DML: Where is that going? **
 
-### Examples
+Similarly functional properties can be included. These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information, and information related to a particular functional use.
+
+## Examples
 The following examples use a pseudo representation of the JSON and a similar pseudo example of how parameters in the current resolver spec can be represented.
 
-*[Need to point this to the resolver spec/code and blog]*
+As part of the 2030 vision we advocate for the use of a resolution system, where identifiers are used to resolve a location of a resource, we include examples of how the JSON can map to resolver entries, for more details on how resolvers work and implementation see here: [Through the Looking Glass]([Through the Looking Glass - MovieLabs](https://movielabs.com/through-the-looking-glass/)). If you are note using a resolver, this can be ignored.
 
-*[move resolver-specific stuff to another document?]*
+---
+### Single Digital Asset
+This shows the simplest case of single digital asset (A1) and single essence (E1).
 
-#### Single Digital Asset
-
-A single digital asset, identifier A1; essence identifier E1. A1 can be resolved asking for metadata or for essence, and E1 can be resolved to the essence.  
+A1 can be resolved asking for metadata, E1 can be resolved for the URL of the essence.  
 
 ```
 OMC
@@ -72,11 +74,6 @@ recordType: metadata
 mediaType: application/json
 ==> returns URL for the Asset metadata
 
-id: A1
-recordType: item
-mediaType: image/jpg
-==> returns URL for the essence itself,  using the Asset identfier.
-
 id: E1
 recordType: item
 mediaType: image/jpg
@@ -85,44 +82,15 @@ mediaType: image/jpg
 
 ---
 
- A single digital asset where metadata about the asset is encoded and can be resolved separately.
+### Digital Asset, two functional uses
 
-*[ do we need this? if so, is it really a separate example?']*
+This shows two Assets which use the same essence; one uses the image as reference art and the other uses it as a texture.
 
-```
-OMC
-identifier
-	identifierValue: A1
-structuralCharacteristics
-	structuralType: digital.image
-	identifier
-		identifierValue: E1
-functionalCharacteristics
-	functionalType: artwork.concept
+As with the example above, each Asset can resolve to its metadata or to it's essence.
 
-
-Resolver
-id: E1
-recordType: item
-mediaType: image/jpg
-
-id: E1
-recordType: item
-mediaType: application/json
-```
-#### 
-
-
-
----
-
-#### Digital Asset, two functional uses
-
-This shows two Assets which use the same essence; one uses the image as reference art and the other ruses it as a texture. As with the example above, each Asset can resolve to its metadata or to its essence, and the essence identifier resolves to the essence itself. It is possible to have a metadata request on the Essence identifier return URLs for both the Assets that refer to it, but that is dependent on the funcitonality and flexibility of the resolution mechanism, and so is not included here.
+It is possible to have a metadata request on the essence identifier return URLs, this would be structural metadata, but that is dependent on the functionality and flexibility of the resolution mechanism, and so is not included here.
 
 There does not have to be any formal relationship between A1 and A2, though of course one can be added.
-
-
 
 ```
 OMC
@@ -152,9 +120,9 @@ recordType: metadata
 mediaType: application/json
 ==> returns URL for metadata for A1
 
-identifierValue: A1
+identifierValue: E1
 recordType: item
-mediaType: img/jpeg
+mediaType: image/jpeg
 ==> returns URL for E1 essence
 
 identifierValue: A2
@@ -162,25 +130,17 @@ recordType: metadata
 mediaType: application/json
 ==> returns URL for metadata for A2
 
-identifierValue: A2
-recordType: item
-mediaType: img/jpeg
-==> returns URL for E1 essence
-
 identifierVale: E1
 recordType: item
 mediaType: image/jpg
 ==> returns URL for E1 essence
 ```
 
-
 ---
 
-#### Single Asset with two different sets of structural characteristics 
+### Single Asset with two different sets of structural characteristics 
 
-This is a single Asset that exists in two different forms, one digital and one physical. The physical copy has a barcode and a database entry that returns information about its physical location. The Asset identifier is the same for both copies, with two different Essence IDs.
-
-*OPEN: what about resolving A1?*
+This shows a single Asset that exists in two different forms, one digital and one physical. The physical copy has a barcode and a database entry that returns information about its physical location. The Asset identifier is the same for both copies, with two different essence IDs.
 
 ```
 OMC
@@ -207,8 +167,8 @@ functionalCharacteristics
 Resolver
 id: E1
 recordType: item
-mediaType: image/json
-==> returns URL for the barcode
+mediaType: image/png
+==> returns URL for the barcode (barcodes are images)
 
 id: E1
 recordType: location
@@ -219,14 +179,8 @@ id: E2
 recordType: item
 mediaType: image/jpg
 ==> returns URL for the digital copy of the Asset
-
 ```
-*Note: The asset identifier is the same for both, here the application would decide which structural form is preferred, the physical or digital copy*
-
-When a production requires multiple copies of the same thing how does this manifest.
-- For physical props, each instance would need a unique essence id, because each can be physically in separate places. Do they have a unique asset id?
-- For digital versions we can leave that up to the production.
-
+*Note: The asset identifier is the same for both, the application would need to determine which structural form is preferred, the physical or digital copy*
 
 ---
 
@@ -240,7 +194,7 @@ Asset groups can be useful as a simple organizing construct; group the concept a
 Using groups can simplify managing the relationships that exist between assets and other pieces of context. If multiple images of concept art in a group together, the character only has to relate to the group, not each individual image. A set of 3D assets may be reused in multiple scenes, each group can be related independently to a scene, or a group representing 3D model can itself be in multiple groups
 
 ---
-An Asset that is structurally an AssetGroup, with three other Assets as elements. 
+An Asset that is structurally an AssetGroup, with three other Assets as elements of that group. 
 ```
 identifier
 	identifierValue: A1
@@ -257,99 +211,6 @@ Asset: [
 		identifierValue: A4
 ]
 ```
-
-
-
-
-
----
-*-- Separate Doc?*
-
-## Analogue & Digital
-Data has to be stored somewhere. In the ontology, analog data is bound to the media on which it has been recorded. Something shot on film is essentially bound and carried on the physical film it recorded on.
-
-Digital data is a little different, in that it is often moved or copied to different devices. Something recorded on the camera Mag may be moved onto some sort of hard drive, then later onto long term tape. Digital data has the distinct advantage that it does not degrade in quality when it transferred across storage devices. 
-
-For this reason, the ontology allows for digital data to optionally to specify a 'carrier', which is the piece of Infrastructure being used to hold the data. This might be something like a thumb-drive, DVD, LTO tape, etc. This separate piece of infrastructure has its own identifier and specifics  like its physical location, or who has custody of it, are part of its structural properties. For data stored natively in a cloud environment location is tracked through a URL; in many cases you don't really know (or care) exactly what the carrier itself is or the exact physical location.
-
-### Carrier
-The documentation says the carrier is an Asset and not Infrastructure, isn't the data the Asset not what it is stored on. Data always has a carrier, it's just not always worth explicitly naming it, data in the cloud is still on a hard drive.
-
-A asset that is structurally digital with a carrier
-```
-identifier
-	identifierValue: A1
-structuralCharacteristics
-	structuralType: digital.image
-	identifier
-		identifierValue: E1
-	carrier: Infrastructure
-				identifier
-					identifierValue: I1
-functionalCharacteristics
-	functionalType: referenceMaterial
-
-
-Resolver
-id: E1
-recordType: digital.image
-mediaType: image/jpg
-
-```
-
-- What does E1 resolve to, the URI on the file system of the carrier or whatever mechanism is used to retrieve the essence from the carrier?
-- Presumably any structural properties that describe a file location would be doing that in relation to the carrier. If an asset is in two or more locations, a carrier and the cloud, how do we differentiate. Is it not the resolver that should tell us where the file is, i.e. that it is on a carrier (not the OMC-JSON)?
-- I would think the Infrastructure should carry things like its physical location as one its properties. To me this feels you should resolve the asset and the resolver should return 'the carrier'?
-
-
-A piece of digital media with a carrier
-```
-identifier
-	identifierValue: A1
-structuralCharacteristics
-	structuralType: digital.image
-	identifier: E1
-functionalCharacteristics
-	functionalType: referenceMaterial
-carrier: Asset/Infrastructure
-
-Resolver
-id: E1
-recordType: thumbdrive
-mediaType: image/jpg
-
-
-INFRASTRUCTURE
-identifier
-	identifierValue: I1
-structuralCharacteristics
-	structuralType: thumbdrive
-	identifier: E1
-Location: Location
-
-# If you resolve this you need to infer from the referent format that you are likely going to get metadata back, but is this metadata about the image (as in prior examples) or about the carrier. Or does the app have to figure this out, and if you want/need both how do you disambiguate
-
-```
-
-** There is no mention of carrier in the RDF
-
-
----
-
-
-*-- for later*
-
-Other Use Cases
-- Multiple instances of the same thing
-	- Multiple physical props
-	- Multiple digital instances *(this is no different in mechanism from hain a physical copy and a diital copy)*
-- Any issues with versions or variants when it comes to asset groups?
-
-
-*General Notes:*
-- *Functional and structural characteristics are not themselves entities, they do not have their own identifiers*
-- *An asset entity only has one functional and structural characteristic, this is no longer an array*
-- *A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more clearly delineates information and item, meaning security authorization can be more easily separated, some applications may only need access to metadata*
 
 
 

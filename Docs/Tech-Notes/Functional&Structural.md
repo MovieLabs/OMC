@@ -29,18 +29,18 @@ There is of course the inevitable discussion as to whether something is a digita
 
 Our conventions for the types go from more general on the right of the string to more specific towards the left of the string.
 
-#### Assets
+## Assets
 - A storyboard often starts life as a hand drawn sketch. Structurally this is a physical object. However, if you were to digitize it then it becomes a digital object, but it is still functionally the same thing: a storyboard. The structural properties will be different, e.g., the physical drawing may have physical location or dimensions in inches, whereas the digital object might contain the URL of cloud storage bucket and measurements in pixels. 
 
 - Objects like a digital images will share many of the same structural properties, such as size, color depth, and encoding. However, their functional uses can vary dramatically and are independent of all these attributes. They may textures for a 3D model, concept artwork, technical reference material, continuity photos, an so on. A single item may be more than one of those things in different parts of the workflow: a technical reference photo may become a texture at some point.
 
-#### Participants
+## Participants
 - A Participant that is structurally a person can have several different functional jobs in a production, such as a Director who also acts, produces or writes.
 
-#### Tasks
+## Tasks
 - Tasks are currently in development.
 
-#### Infrastructure
+## Infrastructure
 - Infrastructure is currently in development
 
 

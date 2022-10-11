@@ -10,9 +10,6 @@ In general, a version is a particular form of something. It can be used in the s
 For example, a changed drawing is a version of the original drawing, and a CG model of a spaceship with a different engine exhaust is a new version of the original spaceship.
 
 
-
-
-
 ## Variant
 
 A variant is a distinct new thing that is still innately related to the thing from which it is derived. A model of a car with dents is a variant of the model of the car without dents.

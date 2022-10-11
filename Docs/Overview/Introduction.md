@@ -11,22 +11,37 @@ Key Points:
 - The model and schema rely heavily on the use of identifiers to uniquely identify instances of individual entities and the assets those entities describe. The schema allows entities to be passed either as a reference  or as fully realized entities. In the first case the receiving application can dereference the identifiers if it needs more information.
 - The model treats relationships as first class citizens . In production, everything is connected to something, and most things are connected to many other things; this results in a graph, not a tree. Therefore, we built the schema so it can represent graphs and recursion, even though JSON itself is strictly hierarchical.
 
-# Repo Structure
+## Repo Structure
 
-There are example JSON files in *[....]* 
+**Docs**
+A set of documents describing key constructs of the JSON schema and a set of tech-notes that cover how top concepts are represented in JSON. 
 
-The *[LINK]*Tech Notes cover some common concepts and use cases.
+**Examples**
+A set of example JSON instances from the MovieLabs internal POC that demonstrate the initial set of entities included in the schema. 
 
-Any notes on usin the schema, which is located in *[...]*
+**JSON-Schema**
+The individual JSON schemas for each entity, and a bundled version suitable for use in test code or online validators (see below for more details). 
 
-# Status
+**RDF** 
+The original RDF based version of the ontology
 
+## Status
 OMC JSON is currently a pre-alpha release. Areas under development are:
 
 - It does not implement all of OMC. We are filling in the missing parts based on application requirements and user feedback.
 - The mechanism for versions, variants, and representations is being defined, and will be implemented in JSON when the model is complete.
-- The formal definitions of structural characteristics for CG assets are underway.
+- The formal definitions of more structural and functional characteristics are underway, a working group for CG assets is being setup.
 
+## How to use
+The tooling for JSON schema on occasion can be a little inconsistent in it's interpretation and application of the spec. Schema editors often use the $id field to resolve the schema (the spec specifically says there should be no expectation the $id be resolvable). When developing schema on local file system, this means file based paths must be used, which are not as desirable for deployment.
 
+The files in this repo therefore leave the $id field empty, the tooling then resolves relative references to other schemas from the current path, which works for development. If you are just browsing the schema we would suggest using the individual files, it is a little easier to find and view specific concepts.
 
+When deploying it makes sense to include the $id field. Included in the the ``/JSON-Schema/omc`` directory is a bundled version of the schema ``omcBundle.json``. If you plan on using the schema programmatically we suggest importing this.  We use [AJV JSON Schema validator]([Ajv JSON schema validator](https://ajv.js.org/))) and [HyperJump]([hyperjump-io/json-schema-validator: A JSON Schema Validator that supports Draft 04, 06, 07, 2019-09, and 2020-12 (github.com)](https://github.com/hyperjump-io/json-schema-validator)) is also a good choice.
+
+The examples use data from the MovieLabs internal POC project, these are generally arrays of entities. The schema is designed to validate a single instance, so be aware that if using these examples single instances should be used when testing, not an array of multiple instances.
+
+If you wish to explore this with an online validator, we suggest [HyperJump - JSON Schema Validator]([Hyperjump - JSON Schema Validator](https://json-schema.hyperjump.io/)). Post the bundled schema into the schema window (left) and an example into the instance window (right).
+
+## Contact and feedback
 Please provide feedback and send any suggestions and questions to <<<need email address, or team channel or something >>>
