@@ -1,8 +1,6 @@
 # Versions
 
-A more complete position paper on versioning is currently under development, below we outline some basic definitions.
-
-Support for expressing a version, variant and representation will be included in future revisions of the schema.
+An OMC extension for expressing versions, variants and representations is underway and will be included in future revisions of the schema.
 
 ## Version
 In general, a version is a particular form of something. It can be used in the same circumstances as the thing of which it is a version - its differences are not enough to fundamentally change what it is. Some systems call these "revisions" or "iterations."
