@@ -43,6 +43,3 @@ Given that the schema for each entity can advance independently would this mean 
 
 ## Instance version
 It may be useful to version the instance of any given entity, i.e. if any of the properties are updated. For example if a characters height or weight properties were updated, you would want to update any systems that are using that data. In the event an application had conflicting records with the same identifier, it would need to disambiguate them and presumably adopt the more recent version.
-
-*Note: This only applies to the properties values of an instance, in the case of an asset there is also the version of the essence itself to consider. This would be considered part of the structural characteristics of an Asset, we will be addressing the versioning of assets in a separate working group.
-
