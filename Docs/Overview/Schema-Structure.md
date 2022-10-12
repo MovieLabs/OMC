@@ -30,45 +30,45 @@ Below we show a section of the schema for Narrative Location, which illustrates 
 **JSON Schema**
 ```JSON
 {
-    "entityType": {
-        "type": "string",
-        "title": "Entity Type",
-        "const": "NarrativeLocation"
-    },
-    "identifier": {
-        "title": "identifier",
-        "$ref": "../Utility/identifier#/properties/identifier"
-    },
-    "name": {
-        "type": "string",
-        "title": "Name"
-    },
-    "description": {
-        "type": "string",
-        "title": "Description"
-    },
-    "Location": {
-        "$ref": "../Utility/Location"
-    }
+	"entityType": {
+		"type": "string",
+		"title": "Entity Type",
+		"const": "NarrativeLocation"
+	},
+	"identifier": {
+		"title": "identifier",
+		"$ref": "../Utility/identifier#/properties/identifier"
+	},
+	"name": {
+		"type": "string",
+		"title": "Name"
+	},
+	"description": {
+		"type": "string",
+		"title": "Description"
+	},
+	"Location": {
+		"$ref": "../Utility/Location"
+	}
 }
 ```
 
 **JSON Instance**
 ```JSON
 {
-    "entityType": "NarrativeLocation",
-    "identifier": [{
-        "identifierValue": "1234",
-        "identifierScope": "Movielabs"
-    }],
-    "Location": {
-        "identifier": [{
-            "identifierValue": "5678",
-            "identifierScope": "Movielabs"
-        }]
-    },
-    "name": "221B Baker Street - exterior",
-    "description": "Sherlock Holmes' residence"
+	"entityType": "NarrativeLocation",
+	"identifier": [{
+		"identifierValue": "1234",
+		"identifierScope": "Movielabs"
+	}],
+	"Location": {
+		"identifier": [{
+			"identifierValue": "5678",
+			"identifierScope": "Movielabs"
+		}]
+	},
+	"name": "221B Baker Street - exterior",
+	"description": "Sherlock Holmes' residence"
 }
 ```
 
@@ -86,38 +86,38 @@ Below is the JSON schema for an identifier/scope pair, as shown here, followed b
 **JSON Schema**
 ``` JSON
 {
-    "identifier": {
-        "type": "array",
-        "title": "identifier",
-        "items": {
-            "type": "object",
-            "required": ["identifierScope", "identifierValue"],
-            "properties": {
-                "identifierScope": {
-                    "type": "string",
-                    "title": "Identifier Scope",
-                    "description": "The universe within which an identifier is valid and unique."
-                },
-                "identifierValue": {
-                    "type": "string",
-                    "title": "Identifier Value",
-                    "description": "A string of characters that uniquely identifies an object within a particular scope."
-                }
-            },
-            "additionalProperties": false
-        }
-    },
-    "customData": false
+	"identifier": {
+		"type": "array",
+		"title": "identifier",
+		"items": {
+			"type": "object",
+			"required": ["identifierScope", "identifierValue"],
+			"properties": {
+				"identifierScope": {
+					"type": "string",
+					"title": "Identifier Scope",
+					"description": "The universe within which an identifier is valid and unique."
+				},
+				"identifierValue": {
+					"type": "string",
+					"title": "Identifier Value",
+					"description": "A string of characters that uniquely identifies an object within a particular scope."
+				}
+			},
+			"additionalProperties": false
+		}
+	},
+	"customData": false
 }
 ```
 
 **JSON Instance**
 ```json
 {
-  "identifier": [{
-    "identifierScope": "MovieLabs",
-    "identifierValue": "1234"
-  }]
+	"identifier": [{
+		"identifierScope": "MovieLabs",
+		"identifierValue": "1234"
+  	}]
 }
 ```
 
@@ -135,18 +135,18 @@ The example below shows a Narrative Location, where the Location itself is only 
 **JSON Instance, example 1**
 ```JSON
 {
-    "entityType": "NarrativeLocation",
-    "identifier": [{
-        "identifierValue": "1234",
-        "identifierScope": "Movielabs"
-    }],
-    "Location": {
-        "identifier": [{
-            "identifierValue": "221B",
-            "identifierScope": "LocationDB"
-        }]
-    },
-    "description": "Sherlock Holmes' residence"
+	"entityType": "NarrativeLocation",
+	"identifier": [{
+		"identifierValue": "1234",
+		"identifierScope": "Movielabs"
+	}],
+	"Location": {
+		"identifier": [{
+			"identifierValue": "221B",
+			"identifierScope": "LocationDB"
+		}]
+	},
+	"description": "Sherlock Holmes' residence"
 }
 ```
 
@@ -156,26 +156,26 @@ The next example shows a full Location entity de-referenced and included directl
 
 ```JSON
 {
-    "entityType": "NarrativeLocation",
-    "identifier": [{
-        "identifierValue": "1234",
-        "identifierScope": "Movielabs"
-    }],
-    "Location": {
-        "entityType": "Location",
-        "identifier": [{
-            "identifierValue": "221B",
-            "identifierScope": "LocationDB"
-        }],
-        "name": "Sherlock Holmes' residence",
-        "address": {
-            "street": "221b Baker St.",
-            "region": "London",
-            "postalCode": "NW1 6XE",
-            "country": "uk"
-        }
-    },
-    "description": "Sherlock Holmes' residence"
+	"entityType": "NarrativeLocation",
+	"identifier": [{
+		"identifierValue": "1234",
+		"identifierScope": "Movielabs"
+	}],
+	"Location": {
+		"entityType": "Location",
+		"identifier": [{
+			"identifierValue": "221B",
+			"identifierScope": "LocationDB"
+		}],
+		"name": "Sherlock Holmes' residence",
+		"address": {
+			"street": "221b Baker St.",
+			"region": "London",
+			"postalCode": "NW1 6XE",
+			"country": "uk"
+		}
+	},
+	"description": "Sherlock Holmes' residence"
 }
 ```
 
@@ -199,21 +199,21 @@ There are not really standard mechanisms for encoding relationships in JSON. We 
 When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the property ``source`` in a Shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard.)
 ```JSON
 {
-  "entityType": "Asset",
-  "functionalCharacteristics": {
-    "functionalType": "shot",
-    "functionalProperties": {
-      "source": {
-        "entityType": "Asset",
-        "identifier": [{
-          "identifierScope": "labkoat",
-          "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-        }]
-      },
-      "start": "0:10",
-      "end": "0:17"
-    }
-  }
+	"entityType": "Asset",
+	"functionalCharacteristics": {
+		"functionalType": "shot",
+		"functionalProperties": {
+			"source": {
+				"entityType": "Asset",
+				"identifier": [{
+					"identifierScope": "labkoat",
+					"identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+				}]
+			},
+			"start": "0:10",
+			"end": "0:17"
+		}
+	}
 }
 ```
 
@@ -225,160 +225,146 @@ The Context example below demonstrates the use of named relationships. It shows 
 **JSON Schema**
 ```JSON
 {
-    "entityType": {
-        "type": "string",
-        "title": "Entity Type",
-        "const": "NarrativeLocation"
-    },
-    "identifier": {
-        "title": "identifier",
-        "$ref": "../Utility/identifier.json#/properties/identifier",
-        "name": {
-            "type": "string",
-            "title": "Name"
-        },
-        "description": {
-            "type": "string",
-            "title": "Description"
-        },
-        "Context": {
-            "type": "object",
-            "required": [
-                "entityType",
-                "identifier"
-            ],
-            "properties": {
-                "entityInfo": {
-                    "title": "Entity Information",
-                    "$ref": "../Model/definitions.json#/properties/entityInfo"
-                },
-                "entityType": {
-                    "type": "string",
-                    "title": "Entity Type",
-                    "const": "Context"
-                },
-                "identifier": {
-                    "$ref": "../Utility/identifier.json"
-                },
-                "features": {
-                    "type": "object",
-                    "title": "usesProp",
-                    "properties": {
-                        "NarrativeProp": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "../MediaCreationContext/NarrativeProp.json"
-                            }
-                        },
-                        "Character": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "../MediaCreationContext/Character.json"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+	"entityType": {
+		"type": "string",
+		"title": "Entity Type",
+		"const": "NarrativeLocation"
+	},
+	"identifier": {
+		"title": "identifier",
+		"$ref": "../Utility/identifier.json#/properties/identifier",
+		"name": {
+			"type": "string",
+			"title": "Name"
+		},
+		"description": {
+			"type": "string",
+			"title": "Description"
+		},
+		"Context": {
+			"type": "object",
+			"required": [
+				"entityType",
+				"identifier"
+			],
+			"properties": {
+				"entityInfo": {
+					"title": "Entity Information",
+					"$ref": "../Model/definitions.json#/properties/entityInfo"
+				},
+				"entityType": {
+					"type": "string",
+					"title": "Entity Type",
+					"const": "Context"
+				},
+				"identifier": {
+					"$ref": "../Utility/identifier.json"
+				},
+				"features": {
+					"type": "object",
+					"title": "usesProp",
+					"properties": {
+						"NarrativeProp": {
+							"type": "array",
+							"items": {
+								"$ref": "../MediaCreationContext/NarrativeProp.json"
+							}
+						},
+						"Character": {
+							"type": "array",
+							"items": {
+								"$ref": "../MediaCreationContext/Character.json"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 ```
 
 **JSON Instance**
 ```JSON
 {
-    "entityType": "NarrativeScene",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-      }
-    ],
-    "name": "Space",
-    "description": "Sven repairs satellite and is ambushed by Trilobot",
-    "sceneNumber": "2",
-    "Context": {
-      "isFromScript": {
-        "Asset": [
-          {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
-              }
-            ],
-            "name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-            "description": null,
-            "structuralCharacteristics": {
-              "structuralType": "document",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "recordType": "item",
-                  "mediaType": "application/pdf"
-                },
-                "fileDetails": {
-                  "fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-                  "filePath": "/1_pre-production/story",
-                  "fileExtension": "pdf"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "script"
-            }
-          }
-        ]
-      },
-      "features": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
-              }
-            ]
-          }
-        ],
-        "NarrativeProp": [
-          {
-            "entityType": "NarrativeProp",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeProp",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nprp/YESjEAVPVMJL"
-              }
-            ]
-          }
-        ]
-      }
-    }
+	"entityType": "NarrativeScene",
+	"identifier": [{
+		"identifierScope": "labkoat",
+		"identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+	}],
+	"name": "Space",
+	"description": "Sven repairs satellite and is ambushed by Trilobot",
+	"sceneNumber": "2",
+	"Context": {
+		"isFromScript": {
+			"Asset": [
+			{
+				"entityType": "Asset",
+				"identifier": [{
+					"identifierScope": "labkoat",
+					"identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
+				}],
+				"name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+				"description": null,
+				"structuralCharacteristics": {
+					"structuralType": "document",
+					"identifier": [{
+						"identifierScope": "labkoat",
+						"identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
+					}],
+					"structuralProperties": {
+						"linkset": {
+							"recordType": "item",
+							"mediaType": "application/pdf"
+						},
+						"fileDetails": {
+							"fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+							"filePath": "/1_pre-production/story",
+							"fileExtension": "pdf"
+						}
+					}
+				},
+				"functionalCharacteristics": {
+					"functionalType": "script"
+				}
+			}
+			]
+		},
+		"features": {
+			"Character": [
+			{
+				"entityType": "Character",
+				"identifier": [{
+					"identifierScope": "labkoat",
+					"identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+				}]
+			},
+			{
+				"entityType": "Character",
+				"identifier": [{
+					"identifierScope": "labkoat",
+					"identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
+				}]
+			}
+			],
+			"NarrativeProp": [
+				{
+					"entityType": "NarrativeProp",
+					"identifier": [{
+						"identifierScope": "labkoat",
+						"identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
+					}]
+				},
+				{
+					"entityType": "NarrativeProp",
+					"identifier": [{
+						"identifierScope": "labkoat",
+						"identifierValue": "nprp/YESjEAVPVMJL"
+					}]
+				}
+			]
+		}
+	}
 }
 ```
 
