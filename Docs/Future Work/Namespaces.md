@@ -23,8 +23,8 @@ The individual components inside a namespace are typically referred to by their 
 
 ```json
 {
-    "mmc": "https://mc.movielabs.com/omc",
-    "mcw": "https://mc.movielabs.com/mcw"
+	"mmc": "https://mc.movielabs.com/omc",
+	"mcw": "https://mc.movielabs.com/mcw"
 }
 ```
 
@@ -40,8 +40,8 @@ mmc.movielabs.com/schema/
 
 
 
-*Are we including the namespace in the definitions, this reduces overal readabiliity and adds to the payload, but if 
-there is a need to expand or use other ontologies in our payloads in the future we are limiting ourselves, if not 
+*Are we including the namespace in the definitions, this reduces overal readabiliity and adds to the payload, but if
+there is a need to expand or use other ontologies in our payloads in the future we are limiting ourselves, if not
 how are we going to include creative works classes now?*
 
 *We could rev the schema version in the future to include namespaces if we need it*

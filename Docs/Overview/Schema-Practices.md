@@ -44,12 +44,10 @@ This helps simplify parsing the payload. Code can be written to expect that a va
 For example, the commonly used identifier property is always an array, even if there is just one value.
 ```json
 {
-  "identifer": [
-    {
-      "identifierScope": "Movielabs",
-      "identifierValue": "1234"
-    }
-  ]
+	"identifer": [{
+		"identifierScope": "Movielabs",
+		"identifierValue": "1234"
+	}]
 }
 ```
 
