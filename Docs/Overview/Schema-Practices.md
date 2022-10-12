@@ -61,7 +61,7 @@ At this point we have adopted a philosophy of placing limited constraints on the
 
 In addition, different languages will behave differently if they attempt to access non-existent properties. It is therefore the responsibility of the party parsing the data to catch and handle errors related to absent properties in the object.
 
-It should be noted that the absence of a property does not mean that there is no value associated with it. It may just mean the sending party choose not to include it, or the requesting party did not explicitly request it. We therefore consider it good practice to set a property's value to ``null`` if you wish to specifically communicate the absence of a value.
+It should be noted that the absence of a property does not mean that there is no value associated with it. It may just mean the sending party chose not to include it, or the requesting party did not explicitly request it. We therefore consider it good practice to set a property's value to ``null`` if you wish to specifically communicate the absence of a value.
 
 ## Extending the schema
 Extensions and modifications to the schema can create compatibility problems; see [schema versioning](Schema-Version.md). The goal therefore is to be able to extend without introducing breaking changes.
