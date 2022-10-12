@@ -33,11 +33,13 @@ OMC JSON is currently a pre-alpha release. Areas under development are:
 - The formal definitions of more structural and functional characteristics are underway, a working group for CG assets is being setup.
 
 ## How to use
-The tooling for JSON Schema can be a little inconsistent in its interpretation and application of the spec. Schema editors often use the $id field to resolve the schema (the spec specifically says there should be no expectation the $id be resolvable). When developing schema on local file system, this means file based paths must be used, which are not as desirable for deployment.
+The tooling for JSON Schema can be a little inconsistent in its interpretation and application of the spec. Schema editors often use the $id field to resolve the schema (the spec specifically says there should be no expectation the $id be resolvable). When developing schemas on a local file system, this means file based paths must be used, which are not as desirable for deployment.
 
 The files in this repo therefore leave the $id field empty. The tooling then resolves relative references to other schemas from the current path, which works for development. If you are just browsing the schema we would suggest using the individual files, which is a little easier for finding and viewing specific concepts.
 
-When deploying it makes sense to include the $id field. Included in the the ``/JSON-Schema/omc`` directory is a bundled version of the schema ``omcBundle.json``. If you plan on using the schema programmatically we suggest importing this.  We have tested the bundled schema in:
+When deploying it makes sense to include the $id field. Included in the the ``/JSON-Schema/omc`` directory is a bundled version of the schema ``omcBundle.json`` If you plan on using the schema programmatically, we suggest importing this file.
+
+We have tested schema validation with the bundled schema in:
 * JavaScript: [AJV JSON Schema validator](https://ajv.js.org/), [HyperJump](https://github.com/hyperjump-io/json-schema-validator)
 * Python: [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/)
 * Web: [HyperJump - JSON Schema Validator](https://json-schema.hyperjump.io/)
