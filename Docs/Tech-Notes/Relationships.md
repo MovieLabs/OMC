@@ -66,15 +66,15 @@ The example below shows how a Character entity with a Context can look. The Char
 
 ```
 
-Relationships almost always have a direction (from one entity to another) and typically have inverses (they can be traversed from either end.)  The name of the relationship indicates how A is related to B, which is not the same as how B is related to A.
+Relationships are typically bidirectional and almost always have a direction. The name of the relationship indicates how A is related to B, which is not the same as how B is related to A. It is generally true that for any given relationship there is an inverse relationship also.
 
 The name of the relationship carries semantic meaning and therefore can be used to infer the nature of the relation between two entities.
 
 The following table describes entity types and the relationships they have to other entity types.
 
-| Entity Type          | Relationship            | Entity Type           | Inverse                 |
+| Entity Type (functional type)          | Relationship            | Entity Type           | Inverse                 |
 |:-------------------- |:----------------------- |:--------------------- |:----------------------- |
-| Asset                | hasNarrativeScene       | NarrativeScene        | isFromScript            |
+| Asset (script)                | hasNarrativeScene       | NarrativeScene        | isFromScript            |
 |                      | isConceptArtFor         | Character             | hasConceptArt           |
 |                      |                         | NarrativeLocation     |                         |
 |                      |                         | NarrativeProp         |                         |
@@ -99,12 +99,12 @@ The following table describes entity types and the relationships they have to ot
 | CreativeWork         | hasScript               | Asset                 | isScriptFor             |
 |                      | hasDirector             | Participant           | isDirectorFor           |
 |                      | hasProductionCompany    |                       | isProductionCompanyFor  |
-| NarrativeLocation    | hasProductionLocation    | ProductionLocation    | isProductionLocationFor |
+| NarrativeLocation    | hasProductioLocation    | ProductionLocation    | isProductionLocationFor |
 |                      | hasConceptArt           | Asset                 | isConceptArtFor         |
 | NarrativeProp        | appearsIn               | NarrativeScene        | features                |
 |                      | isPropFor               | Character             | hasProp                 |
 |                      | isDepictedBy            | Asset                 | depicts                 |
-| NarrativeScene       | hasConceptArt            | Asset                 | isConceptArtFor         |
+| NarrativeScene       | hasConcepArt            | Asset                 | isConceptArtFor         |
 |                      | hasNarrativeLocation    | NarrativeLocation     | isNarrativeLocationFor  |
 |                      | hasProductionScene      | ProductionScene       | isProductionSceneFor    |
 |                      | hasStoryboard           | Asset                 | isStoryboardFor         |
@@ -112,7 +112,7 @@ The following table describes entity types and the relationships they have to ot
 |                      | isFromWork              | CreativeWork          | hasNarrativeScene       |
 |                      | features                | Character             | appearsIn               |
 |                      |                         | NarrativeProp         |                         |
-|                      |                         | NarrativeSetDressing |                         |
+|                      |                         | NarrativeSetDresssing |                         |
 |                      |                         | NarrativeWardrobe     |                         |
 | NarrativeSetDressing | appearsIn               | NarrativeScene        | features                |
 |                      | isDepictedBy            | Asset                 | depicts                 |

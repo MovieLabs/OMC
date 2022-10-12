@@ -9,7 +9,7 @@ Certain terms are often relevant in many different situations or uses, e.g. ``ty
 
 To that end properties are generally named unambiguously. For example, even though dates share the same format their property name will describe the context of their use, ``createdOn, birthDate, shootDate``, etc.
 
-The exception to this is when a property is not specific to the entity. For example, many entities include ``name`` and ``description`` properties; these are used primarily to help humans identify the entity, and UI construction is simple if those two are common across all entities..
+The exception to this is when a property is not intrinsic to the entity. For example, many entities include ``name`` and ``description`` properties; these are used primarily to help humans identify the entity, and UI construction is simple if those two are common across all entities..
 
 ### **Plurals**
 We avoid the use of plurals.
@@ -25,14 +25,14 @@ Camel case is the practice of not including spaces or punctuation in property na
 
 The core entities themselves are named using upper camel case; Regular properties use the lower camel case (first letter is lower case).
 
-Entity naming uses upper camel case. Most uses of this (and all of the examples given) represent top-level class definitions in the formal definition of OMC:
+Examples of entity naming (upper camel case)  Most uses of this (and all of the example given) represent top-level class definitions in the formal definition of OMC:
 ``NarrativeProp, Shot, Character``
 
-Property naming uses lower camel case:
+Examples of property naming (lower camel case):
 ``characterName, shootDay, identifier``
 
 ### **Punctuation**
-We avoid punctuation in all attribute names and do not use hyphens, spaces, underscores, etc. Some systems require these to be escaped or removed and there is variability across systems in how punctuation is treated and sometimes how it is represented on screen.
+We avoid punctuation in all attribute terms and do not use hyphens, spaces, underscores, etc.. Some systems require these to be escaped or removed and there is variability across systems in how punctuation is treated as well as how it is sometimes represented on screen.
 
 JSON OMC does not use additional symbols prepended or appended to names. For example, it is not uncommon to see $ prepended in JSON schemas ($id). However what is convention in one system rarely translates to other forms of serialization or databases. JSON schema itself uses this convention, which helps avoid confusion between the schema itself and the schema definition.
 
@@ -44,10 +44,12 @@ This helps simplify parsing the payload. Code can be written to expect that a va
 For example, the commonly used identifier property is always an array, even if there is just one value.
 ```json
 {
-	"identifer": [{
-		"identifierScope": "Movielabs",
-		"identifierValue": "1234"
-	}]
+  "identifer": [
+    {
+      "identifierScope": "Movielabs",
+      "identifierValue": "1234"
+    }
+  ]
 }
 ```
 
@@ -55,7 +57,7 @@ For example, the commonly used identifier property is always an array, even if t
 ## Required vs Non-Required fields
 There is limited use of required properties, to allow for flexibility,
 
-At this point we have adopted a philosophy of placing limited constraints on the use, inclusion, and naming of properties. We are mindful that a schema with rigid constraints may be a barrier to adoption if someone feels they need to include some specific attribute that is not in the schema. In JSON Schema the inclusion of additional properties is the default setting and instances will pass validation. The downside of this is that validation becomes weaker - if someone misspells a property `filename`, instead of `fileName`, it would still pass validation, but the receiving party would not parse the value correctly.
+At this point we have adopted a philosophy of placing limited constraints on the use, inclusion, and naming of properties. We are mindful that a schema with rigid constraints may be a barrier to adoption if someone feels they need to include some specific attribute that is not in the schema. In JSON Schema the inclusion of additional properties is the default setting and instances will pass validation. The downside of this is that validation becomes weaker - if someone misspells a property 'filename', instead of 'fileName', it would still pass validation, but the receiving party would not parse the value correctly.
 
 In addition, different languages will behave differently if they attempt to access non-existent properties. It is therefore the responsibility of the party parsing the data to catch and handle errors related to absent properties in the object.
 
@@ -64,15 +66,15 @@ It should be noted that the absence of a property does not mean that there is no
 ## Extending the schema
 Extensions and modifications to the schema can create compatibility problems; see [schema versioning](Schema-Version.md). The goal therefore is to be able to extend without introducing breaking changes.
 
-To support this the JSON schema keyword `additionalProperties` is generally left in its default state of 'true'. This means that if properties are added to a schema at a later date, validation will still pass for an instance that is validated with an older schema. Setting this value to false would cause validation to fail if any additional properties were present.
+To support this the JSON schema keyword 'additionalProperties' is generally left in its default state of 'true'. This means that if properties are added to a schema at a later date, validation will still pass for an instance that is validated with an older schema. Setting this value to false would cause validation to fail if any additional properties were present.
 
 This does mean that anyone adding their own properties is at risk of later conflicts if a schema introduces a property with the same name. We therefore do not recommend doing this in production environments.
 
-To allow for custom extensions we include the ``customData`` property. Individual applications can include any data as a value for this. It is up to the sending and receiving parties to know how to interpret this field. We recommend that some sort of identifying key or namespace is used as an additional safeguard against collisions.
+To allow for bespoke extensions we include the ``customData`` property. Individual applications can include any data as a value for this. It is up to the sending and receiving parties to know how to interpret this field. We recommend that some sort of identifying key or namespace is used as an additional safeguard against collisions.
 
 [Custom data](./Schema-Structure#Standard%20Properties) can be useful for including additional metadata directly in a payload. For example you may want to include additional fields from EXIF data as part of the structural characteristics of an image. In this case you might encode it like this:
 
-```json
+```
 "customData": {
 	"exif": "<data>"
 }
@@ -82,11 +84,9 @@ The data itself does not need to be JSON; other serialized formats could be used
 
 This same mechanism works for application-specific custom data.
 
-```json
-"customData": {
-	"PopularApplication": "<data>"
-}
-```
+`"customData": {`
+	`"PopularApplication": "<data>"`
+`}`
 
 
 
