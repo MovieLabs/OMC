@@ -1,6 +1,6 @@
 # Introduction
 
-The [Ontology for Media Creation](https://mc.movielabs.com/docs/omc) (OMC) was originally created in RDF and provides formal definitions and a data model for a set of classes and the relationships that bind them together. OMC is designed to simplify communication between different components in a media creation workflow by a using common data model and terminology.  This project implements the classes and relationships from  RDF OMC as a JSON schema.
+The [Ontology for Media Creation](https://mc.movielabs.com/docs/omc) (OMC) was originally created in RDF and provides formal definitions and a data model for a set of classes and the relationships that bind them together. OMC is designed to simplify communication between different components in a media creation workflow by using a common data model and terminology.  This project implements the classes and relationships from  RDF OMC as a [JSON Schema](https://json-schema.org/).
 
 It is worth reiterating that a primary goal of OMC is to establish a common mechanism for exchanging data among applications and services, reducing the effort and work required to integrate new applications and components into production workflows. In the data plane, applications and services can integrate using OMC once, rather than having multiple pairwise integrations with other components.
 
@@ -33,7 +33,7 @@ OMC JSON is currently a pre-alpha release. Areas under development are:
 - The formal definitions of more structural and functional characteristics are underway, a working group for CG assets is being setup.
 
 ## How to use
-The tooling for JSON Schema can be a little inconsistent in its interpretation and application of the spec. Schema editors often use the $id field to resolve the schema (the spec specifically says there should be no expectation the $id be resolvable). When developing schemas on a local file system, this means file based paths must be used, which are not as desirable for deployment.
+The tooling for [JSON Schema](https://json-schema.org/) can be a little inconsistent in its interpretation and application of the spec. Schema editors often use the $id field to resolve the schema (the spec specifically says there should be no expectation the $id be resolvable). When developing schemas on a local file system, this means file based paths must be used, which are not as desirable for deployment.
 
 The files in this repo therefore leave the $id field empty. The tooling then resolves relative references to other schemas from the current path, which works for development. If you are just browsing the schema we would suggest using the individual files, which is a little easier for finding and viewing specific concepts.
 
