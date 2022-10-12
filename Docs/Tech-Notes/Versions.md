@@ -1,6 +1,6 @@
 # Versions
 
-An OMC extension for expressing  version, variant and representation is underway and will be included in future revisions of the schema.
+An OMC extension for expressing versions, variants and representations is underway and will be included in future revisions of the schema.
 
 ## Version
 In general, a version is a particular form of something. It can be used in the same circumstances as the thing of which it is a version - its differences are not enough to fundamentally change what it is. Some systems call these "revisions" or "iterations."
