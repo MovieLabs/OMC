@@ -1,11 +1,11 @@
 # Assets
-Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets needed for a given workflow and provide a means for the applications and services to find and access the files and other assets they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., a proxy that is derived from the OCF), and some aren't (e.g., the scene in which the asset is used.) 
+Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets needed for a given workflow and provide a means for the applications and services to find and access the files and other assets they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., a proxy that is derived from the OCF), and some aren't (e.g., the scene in which the asset is used.)
 
 The 2030 vision establishes some core ideas behind the handling of assets:
 - Separation of its [structural and functional characteristics](./Functional&Structural.md)
 - The specific location of an asset can be abstracted and resolved when needed. This involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets](https://movielabs.com/through-the-looking-glass/)
 
-In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of entities and each entity contains one or more identifiers. This tech note focuses on Assets. 
+In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of entities and each entity contains one or more identifiers. This tech note focuses on Assets.
 
 If there is only an identifier in the Asset, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL.) See  the [Identifiers section in Schema Structure](../Overview/Schema%20Structure.md#Identifiers%20and%20References) for more information.
 
@@ -18,7 +18,7 @@ Identifiers are used to identify what we refer to as the 'whole' asset, this inc
 For a more information see here: [Identifiers and References](../Overview/Schema-Structure.md#Identifiers%20and%20References)
 
 How to construct an asset and use the different identifiers:
-- The identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics. 
+- The identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics.
 - The identifier in the structural characteristics identifies the essence of the asset. In many cases the essence (e.g., a file or a URL-accessible resource) can be located or resolved with this identifier.
 
 *Note: A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more clearly delineates metadata and object, allowing security authorization to be more easily separated. This allows applications and participants to view metadata about assets without being granted access to the asset itself. For example a system admin can provision, move or migrate files without being allowed direct access to the sensitive content itself*
@@ -31,7 +31,7 @@ For a more detailed explanation with examples, see here: [Structural and functio
 **Structural and functional properties**
 Along with a functional and structural type, an Asset may also carry additional properties that further describe the structural and functional characteristics.
 
-Structural properties describe details of the asset that are independent of its use, for example the size or color depth of an image, or the GPS coordinates of where it was captured. 
+Structural properties describe details of the asset that are independent of its use, for example the size or color depth of an image, or the GPS coordinates of where it was captured.
 
 Given the large array of structural types and the number of potential properties involved it should be remembered the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key properties that may be useful in finding, identifying, or disambiguating assets in a workflow without the need to explicitly access or parse the underlying formats.
 
@@ -47,15 +47,15 @@ For file based systems, the structural properties can encode a file path and nam
 Similarly, functional properties can be included. They can include, for example, the ordering for a set of assets in some sort of sequence or timing information, and information related to a particular functional use.
 
 ## Examples
-The following examples use a pseudo representation of the JSON and a similar pseudo example of how parameters in the current resolver spec can be represented. 
+The following examples use a pseudo representation of the JSON and a similar pseudo example of how parameters in the current resolver spec can be represented.
 
-As part of the 2030 vision we advocate for the use of a resolution system, where identifiers are used to resolve a location of a resource, we include examples of how the JSON can map to resolver entries, for more details on how resolvers work and implementation see here: [Through the Looking Glass](https://movielabs.com/through-the-looking-glass/). If you are note using a resolver, this can be ignored. The resolver examples do not cover all possible ways of usin the resolver with Assets.
+As part of the 2030 vision we advocate for the use of a resolution system, where identifiers are used to resolve a location of a resource, we include examples of how the JSON can map to resolver entries, for more details on how resolvers work and implementation see here: [Through the Looking Glass](https://movielabs.com/through-the-looking-glass/). If you are not using a resolver, this can be ignored. The resolver examples do not cover all possible ways of using the resolver with Assets.
 
 ---
 ### Single Digital Asset
 This shows the simplest case of single digital asset (A1) and single essence (E1).
 
-A1 can be resolved asking for metadata, E1 can be resolved for the URL of the essence.  
+A1 can be resolved asking for metadata, E1 can be resolved for the URL of the essence.
 
 ```
 OMC
@@ -138,7 +138,7 @@ mediaType: image/jpg
 
 ---
 
-### Single Asset with two different sets of structural characteristics 
+### Single Asset with two different sets of structural characteristics
 
 This shows a single Asset that exists in two different forms, one digital and one physical. The physical copy has a barcode and a database entry that returns information about its physical location. The Asset identifier is the same for both copies, with two different essence IDs.
 
@@ -194,7 +194,7 @@ Asset groups can be useful as a simple organizing construct; group the concept a
 Using groups can simplify managing the relationships that exist between assets and other pieces of context. If multiple images of concept art in a group together, the character only has to relate to the group, not each individual image. A set of 3D assets may be reused in multiple scenes, each group can be related independently to a scene, or a group representing 3D model can itself be in multiple groups
 
 ---
-An Asset that is structurally an AssetGroup, with three other Assets as elements of that group. 
+An Asset that is structurally an AssetGroup, with three other Assets as elements of that group.
 ```
 identifier
 	identifierValue: A1

@@ -23,7 +23,7 @@ A set of example JSON instances from the MovieLabs internal POC that demonstrate
 The individual JSON schemas for each entity, and a bundled version suitable for use in test code or online validators (see below for more details).
 
 **RDF**
-The original RDF based version of the ontology
+The original RDF based version of the ontology.
 
 ## Status
 OMC JSON is currently a pre-alpha release. Areas under development are:
