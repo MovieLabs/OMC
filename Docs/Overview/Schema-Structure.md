@@ -106,8 +106,7 @@ Below is the JSON schema for an identifier/scope pair, as shown here, followed b
 			},
 			"additionalProperties": false
 		}
-	},
-	"customData": false
+	}
 }
 ```
 
@@ -298,54 +297,54 @@ The Context example below demonstrates the use of named relationships. It shows 
 	"Context": {
 		"isFromScript": {
 			"Asset": [
-			{
-				"entityType": "Asset",
-				"identifier": [{
-					"identifierScope": "labkoat",
-					"identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
-				}],
-				"name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-				"description": null,
-				"structuralCharacteristics": {
-					"structuralType": "document",
+				{
+					"entityType": "Asset",
 					"identifier": [{
 						"identifierScope": "labkoat",
-						"identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
+						"identifierValue": "ast/lHz-ua3XG-xQzDyCDbbKZ"
 					}],
-					"structuralProperties": {
-						"linkset": {
-							"recordType": "item",
-							"mediaType": "application/pdf"
-						},
-						"fileDetails": {
-							"fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-							"filePath": "/1_pre-production/story",
-							"fileExtension": "pdf"
+					"name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+					"description": null,
+					"structuralCharacteristics": {
+						"structuralType": "document",
+						"identifier": [{
+							"identifierScope": "labkoat",
+							"identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
+						}],
+						"structuralProperties": {
+							"linkset": {
+								"recordType": "item",
+								"mediaType": "application/pdf"
+							},
+							"fileDetails": {
+								"fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
+								"filePath": "/1_pre-production/story",
+								"fileExtension": "pdf"
+							}
 						}
+					},
+					"functionalCharacteristics": {
+						"functionalType": "script"
 					}
-				},
-				"functionalCharacteristics": {
-					"functionalType": "script"
 				}
-			}
 			]
 		},
 		"features": {
 			"Character": [
-			{
-				"entityType": "Character",
-				"identifier": [{
-					"identifierScope": "labkoat",
-					"identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-				}]
-			},
-			{
-				"entityType": "Character",
-				"identifier": [{
-					"identifierScope": "labkoat",
-					"identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
-				}]
-			}
+				{
+					"entityType": "Character",
+					"identifier": [{
+						"identifierScope": "labkoat",
+						"identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+					}]
+				},
+				{
+					"entityType": "Character",
+					"identifier": [{
+						"identifierScope": "labkoat",
+						"identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
+					}]
+				}
 			],
 			"NarrativeProp": [
 				{
