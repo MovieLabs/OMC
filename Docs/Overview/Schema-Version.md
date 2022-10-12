@@ -2,7 +2,7 @@
 
 In this section we address only the issues related to the versioning of the schema and the versioning of an instance of an entity built with the schema. The versioning of actual assets used in the production will be addressed separately as that is specific to individual production workflows,  different types of assets, and so on.
 
-For more information see here: [Versions](../Tech-Notes/Versions)
+For more information see here: [Versions](../Tech-Notes/Versions.md)
 
 ## JSON Schema Version
 The version of schema specification that this schema is using. This will be a version of JSON Schema. Currently we are using draft 7, specified here:
