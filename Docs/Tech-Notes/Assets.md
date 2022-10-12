@@ -88,7 +88,7 @@ This shows two Assets which use the same essence; one uses the image as referenc
 
 As with the example above, each Asset can resolve to its metadata or to its essence.
 
-It is possible to have a metadata request on the essence identifier return URLs for the asset or the sturctual metadata but that is dependent on the functionality and flexibility of the resolution mechanism, and so is not included here.
+It is possible to have a metadata request on the essence identifier return URLs for the asset or the structural metadata but that is dependent on the functionality and flexibility of the resolution mechanism, and so is not included here.
 
 There does not have to be any formal relationship between A1 and A2, though of course one can be added.
 
