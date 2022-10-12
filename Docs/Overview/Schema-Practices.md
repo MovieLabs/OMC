@@ -72,7 +72,7 @@ To allow for custom extensions we include the ``customData`` property. Individua
 
 [Custom data](./Schema-Structure#Standard%20Properties) can be useful for including additional metadata directly in a payload. For example you may want to include additional fields from EXIF data as part of the structural characteristics of an image. In this case you might encode it like this:
 
-```
+```json
 "customData": {
 	"exif": "<data>"
 }
@@ -82,9 +82,11 @@ The data itself does not need to be JSON; other serialized formats could be used
 
 This same mechanism works for application-specific custom data.
 
-`"customData": {`
-	`"PopularApplication": "<data>"`
-`}`
+```json
+"customData": {
+	"PopularApplication": "<data>"
+}
+```
 
 
 
