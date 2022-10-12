@@ -47,7 +47,7 @@ Below we show a section of the schema for Narrative Location, which illustrates 
         "type": "string",
         "title": "Description"
     },
-	"Location": {
+  "Location": {
         "$ref": "../Utility/Location"
     }
 }
@@ -114,10 +114,10 @@ Below is the JSON schema for an identifier/scope pair, as shown here, followed b
 **JSON Instance**
 ```json
 {
-	"identifier": [{
-		"identifierScope": "MovieLabs",
-		"identifierValue": "1234"
-	}]
+  "identifier": [{
+    "identifierScope": "MovieLabs",
+    "identifierValue": "1234"
+  }]
 }
 ```
 
@@ -199,21 +199,21 @@ There are not really standard mechanisms for encoding relationships in JSON. We 
 When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the property ``source`` in a Shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard.)
 ```JSON
 {
-	"entityType": "Asset",
-	"functionalCharacteristics": {
-		"functionalType": "shot",
-		"functionalProperties": {
-			"source": {
-				"entityType": "Asset",
-				"identifier": [{
-					"identifierScope": "labkoat",
-					"identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-				}]
-			},
-			"start": "0:10",
-			"end": "0:17"
-		}
-	}
+  "entityType": "Asset",
+  "functionalCharacteristics": {
+    "functionalType": "shot",
+    "functionalProperties": {
+      "source": {
+        "entityType": "Asset",
+        "identifier": [{
+          "identifierScope": "labkoat",
+          "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+        }]
+      },
+      "start": "0:10",
+      "end": "0:17"
+    }
+  }
 }
 ```
 
@@ -233,54 +233,54 @@ The Context example below demonstrates the use of named relationships. It shows 
     "identifier": {
         "title": "identifier",
         "$ref": "../Utility/identifier.json#/properties/identifier",
-    "name": {
-        "type": "string",
-        "title": "Name"
-    },
-    "description": {
-        "type": "string",
-        "title": "Description"
-    },
-	"Context": {
-	      "type": "object",
-	      "required": [
-	         "entityType",
-	         "identifier"
-	      ],
-	      "properties": {
-	         "entityInfo": {
-	            "title": "Entity Information",
-	            "$ref": "../Model/definitions.json#/properties/entityInfo"
-	         },
-	         "entityType": {
-	            "type": "string",
-	            "title": "Entity Type",
-	            "const": "Context"
-	         },
-	         "identifier": {
-	            "$ref": "../Utility/identifier.json"
-	         },
-	         "features": {
-	            "type": "object",
-	            "title": "usesProp",
-	            "properties": {
-	               "NarrativeProp": {
-	                  "type": "array",
-	                  "items": {
-	                     "$ref": "../MediaCreationContext/NarrativeProp.json"
-	                  }
-	               },
-				   "Character": {
-	                  "type": "array",
-	                  "items": {
-	                     "$ref": "../MediaCreationContext/Character.json"
-					}
-		          }
-		       }
-		    }
-		 }
-	   }
-	}
+        "name": {
+            "type": "string",
+            "title": "Name"
+        },
+        "description": {
+            "type": "string",
+            "title": "Description"
+        },
+        "Context": {
+            "type": "object",
+            "required": [
+                "entityType",
+                "identifier"
+            ],
+            "properties": {
+                "entityInfo": {
+                    "title": "Entity Information",
+                    "$ref": "../Model/definitions.json#/properties/entityInfo"
+                },
+                "entityType": {
+                    "type": "string",
+                    "title": "Entity Type",
+                    "const": "Context"
+                },
+                "identifier": {
+                    "$ref": "../Utility/identifier.json"
+                },
+                "features": {
+                    "type": "object",
+                    "title": "usesProp",
+                    "properties": {
+                        "NarrativeProp": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "../MediaCreationContext/NarrativeProp.json"
+                            }
+                        },
+                        "Character": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "../MediaCreationContext/Character.json"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 ```
 
