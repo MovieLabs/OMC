@@ -15,4 +15,6 @@ Tech Notes
 6. [Versions](./Docs/Tech-Notes/Versions.md)
 
 ## License
-[MIT](./LICENSE.txt)
+
+All files in this repository are Copyright 2021 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the LICENSE file.
+[Appache 2.0](./LICENSE.txt)
