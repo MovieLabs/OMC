@@ -62,6 +62,7 @@ Below we show a section of the schema for Narrative Location, which illustrates 
 		"identifierScope": "Movielabs"
 	}],
 	"Location": {
+		"entityType": "Location",
 		"identifier": [{
 			"identifierValue": "5678",
 			"identifierScope": "Movielabs"
@@ -199,6 +200,10 @@ When another entity is an intrinsic property then the entity type to which you a
 ```JSON
 {
 	"entityType": "Asset",
+	"identifier": [{
+		"identifierValue": "1234",
+		"identifierScope": "Movielabs"
+	}],
 	"functionalCharacteristics": {
 		"functionalType": "shot",
 		"functionalProperties": {
@@ -295,6 +300,11 @@ The Context example below demonstrates the use of named relationships. It shows 
 	"description": "Sven repairs satellite and is ambushed by Trilobot",
 	"sceneNumber": "2",
 	"Context": {
+		"entityType": "Context",
+		"identifier": [{
+			"identifierScope": "labkoat",
+			"identifierValue": "cxt-4567"
+		}],
 		"isFromScript": {
 			"Asset": [
 				{

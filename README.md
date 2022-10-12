@@ -13,3 +13,6 @@ Tech Notes
 4. [Depictions & Portrayals](./Docs/Tech-Notes/Depictions&Portrayals.md)
 5. [Relationships](./Docs/Tech-Notes/Relationships.md)
 6. [Versions](./Docs/Tech-Notes/Versions.md)
+
+## License
+[MIT](./LICENSE.txt)

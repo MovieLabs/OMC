@@ -72,69 +72,69 @@ The name of the relationship carries semantic meaning and therefore can be used 
 
 The following table describes entity types and the relationships they have to other entity types.
 
-| Entity Type (functional type)          | Relationship            | Entity Type           | Inverse                 |
-|:-------------------- |:----------------------- |:--------------------- |:----------------------- |
-| Asset (script)                | hasNarrativeScene       | NarrativeScene        | isFromScript            |
-|                      | isConceptArtFor         | Character             | hasConceptArt           |
-|                      |                         | NarrativeLocation     |                         |
-|                      |                         | NarrativeProp         |                         |
-|                      |                         | NarrativeScene        |                         |
-|                      |                         | NarrativeWardrobe     |                         |
-|                      | isScriptFor             | CreativeWork          | hasScript               |
-|                      | isStoryboardFor         | NarrativeScene        | hasStoryboard           |
-|                      |                         | ProductionScene       |                         |
-|                      | isUsedIn                | ProductionScene       | uses                    |
-|                      |                         |                       | usesCostume             |
-|                      |                         |                       | usesProp                |
-|                      |                         |                       | usesSetDressing         |
-|                      |                         | Sequence              | usesShot                |
-|                      | depicts                 | NarrativeProp         | isDepictedBy            |
-|                      |                         | NarrativeSetDressing  |                         |
-|                      |                         | NarrativeWardrobe     |                         |
-| Character            | appearsIn               | NarrativeScene        | features                |
-|                      | hasConceptArt           | Asset                 | isConceptArtFor         |
-|                      | hasProp                 | NarrativeProp         | isPropFor               |
-|                      | hasWardrobe             | NarrativeWardrobe     | isWardrobeFor           |
-|                      | isPortrayedBy           | Portrayal             | portrays                |
-| CreativeWork         | hasScript               | Asset                 | isScriptFor             |
-|                      | hasDirector             | Participant           | isDirectorFor           |
-|                      | hasProductionCompany    |                       | isProductionCompanyFor  |
-| NarrativeLocation    | hasProductionLocation    | ProductionLocation    | isProductionLocationFor |
-|                      | hasConceptArt           | Asset                 | isConceptArtFor         |
-| NarrativeProp        | appearsIn               | NarrativeScene        | features                |
-|                      | isPropFor               | Character             | hasProp                 |
-|                      | isDepictedBy            | Asset                 | depicts                 |
-| NarrativeScene       | hasConceptArt            | Asset                 | isConceptArtFor         |
-|                      | hasNarrativeLocation    | NarrativeLocation     | isNarrativeLocationFor  |
-|                      | hasProductionScene      | ProductionScene       | isProductionSceneFor    |
-|                      | hasStoryboard           | Asset                 | isStoryboardFor         |
-|                      | isFromScript            | Asset                 | isScriptFor             |
-|                      | isFromWork              | CreativeWork          | hasNarrativeScene       |
-|                      | features                | Character             | appearsIn               |
-|                      |                         | NarrativeProp         |                         |
-|                      |                         | NarrativeSetDressing |                         |
-|                      |                         | NarrativeWardrobe     |                         |
-| NarrativeSetDressing | appearsIn               | NarrativeScene        | features                |
-|                      | isDepictedBy            | Asset                 | depicts                 |
-| NarrativeWardrobe    | appearsIn               | NarrativeScene        | features                |
-|                      | hasConceptArt           | Asset                 | isConceptArtFor         |
-|                      | isDepictedBy            | Asset                 | depicts                 |
-|                      | isWardrobeFor           | Character             | hasWardrobe             |
-| Participant          | isDirectorFor           | CreativeWork          | hasDirector             |
-|                      | isProductionCompanyFor  | CreativeWork          | hasProductionCompany    |
-| Portrayal            | portrays                | Character             | isPortrayedBy           |
-| ProductionLocation   | isProductionLocationFor | NarrativeScene        | hasProductionLocation   |
-|                      |                         | ProductionScene       |                         |
-| ProductionScene      | hasSlate                | Slate                 | isSlateFor              |
-|                      | hasNarrativeScene       | NarrativeScene        | hasProductionScene      |
-|                      | hasStoryboard           | Asset                 | isStoryboardFor         |
-|                      | uses                    |                       | isUsedIn                |
-|                      | usesCostume             |                       |                         |
-|                      | usesProp                |                       |                         |
-|                      | usesSetDressing         |                       |                         |
-| Sequence             | usesShot                | Asset                 | isUsedIn                |
-| Slate                | isSlateFor              | Asset                 | hasSlate                |
-|                      |                         | ProductionScene       |                         |
+| Entity Type (functional type) | Relationship            | Entity Type          | Inverse                 |
+|:----------------------------- |:----------------------- |:-------------------- |:----------------------- |
+| Asset (script)                | hasNarrativeScene       | NarrativeScene       | isFromScript            |
+| Asset (conceptArt)            | isConceptArtFor         | Character            | hasConceptArt           |
+|                               |                         | NarrativeLocation    |                         |
+|                               |                         | NarrativeProp        |                         |
+|                               |                         | NarrativeScene       |                         |
+|                               |                         | NarrativeWardrobe    |                         |
+| Asset (script)                | isScriptFor             | CreativeWork         | hasScript               |
+| Asset (storyboard)            | isStoryboardFor         | NarrativeScene       | hasStoryboard           |
+|                               |                         | ProductionScene      |                         |
+| Asset (script)                | isUsedIn                | ProductionScene      | uses                    |
+| Asset (costume)               |                         |                      | usesCostume             |
+| Asset (prop)                  |                         |                      | usesProp                |
+| Asset (setDressing)           |                         |                      | usesSetDressing         |
+| Asset (sequence)              |                         | Sequence             | usesShot                |
+| Asset (prop)                  | depicts                 | NarrativeProp        | isDepictedBy            |
+| Asset (setDressing)           |                         | NarrativeSetDressing |                         |
+| Asset (costume)               |                         | NarrativeWardrobe    |                         |
+| Character                     | appearsIn               | NarrativeScene       | features                |
+|                               | hasConceptArt           | Asset                | isConceptArtFor         |
+|                               | hasProp                 | NarrativeProp        | isPropFor               |
+|                               | hasWardrobe             | NarrativeWardrobe    | isWardrobeFor           |
+|                               | isPortrayedBy           | Portrayal            | portrays                |
+| CreativeWork                  | hasScript               | Asset                | isScriptFor             |
+|                               | hasDirector             | Participant          | isDirectorFor           |
+|                               | hasProductionCompany    |                      | isProductionCompanyFor  |
+| NarrativeLocation             | hasProductionLocation   | ProductionLocation   | isProductionLocationFor |
+|                               | hasConceptArt           | Asset                | isConceptArtFor         |
+| NarrativeProp                 | appearsIn               | NarrativeScene       | features                |
+|                               | isPropFor               | Character            | hasProp                 |
+|                               | isDepictedBy            | Asset                | depicts                 |
+| NarrativeScene                | hasConceptArt           | Asset                | isConceptArtFor         |
+|                               | hasNarrativeLocation    | NarrativeLocation    | isNarrativeLocationFor  |
+|                               | hasProductionScene      | ProductionScene      | isProductionSceneFor    |
+|                               | hasStoryboard           | Asset                | isStoryboardFor         |
+|                               | isFromScript            | Asset                | isScriptFor             |
+|                               | isFromWork              | CreativeWork         | hasNarrativeScene       |
+|                               | features                | Character            | appearsIn               |
+|                               |                         | NarrativeProp        |                         |
+|                               |                         | NarrativeSetDressing |                         |
+|                               |                         | NarrativeWardrobe    |                         |
+| NarrativeSetDressing          | appearsIn               | NarrativeScene       | features                |
+|                               | isDepictedBy            | Asset                | depicts                 |
+| NarrativeWardrobe             | appearsIn               | NarrativeScene       | features                |
+|                               | hasConceptArt           | Asset                | isConceptArtFor         |
+|                               | isDepictedBy            | Asset                | depicts                 |
+|                               | isWardrobeFor           | Character            | hasWardrobe             |
+| Participant (person)          | isDirectorFor           | CreativeWork         | hasDirector             |
+| Participant (organization)    | isProductionCompanyFor  | CreativeWork         | hasProductionCompany    |
+| Portrayal                     | portrays                | Character            | isPortrayedBy           |
+| ProductionLocation            | isProductionLocationFor | NarrativeScene       | hasProductionLocation   |
+|                               |                         | ProductionScene      |                         |
+| ProductionScene               | hasSlate                | Slate                | isSlateFor              |
+|                               | hasNarrativeScene       | NarrativeScene       | hasProductionScene      |
+|                               | hasStoryboard           | Asset                | isStoryboardFor         |
+|                               | uses                    |                      | isUsedIn                |
+|                               | usesCostume             |                      |                         |
+|                               | usesProp                |                      |                         |
+|                               | usesSetDressing         |                      |                         |
+| Sequence                      | usesShot                | Asset                | isUsedIn                |
+| Slate                         | isSlateFor              | Asset                | hasSlate                |
+|                               |                         | ProductionScene      |                         |
 
 *Note: This is not a complete list, and new relationships will be added as development continues*
 

@@ -22,49 +22,75 @@ voiceover
 stunt
 ```
 
+The example shows a Character that references the Participant portraying it. A depiction follows the same pattern but would use the 'isDepictedBy' and 'depicts' relationships to reference an Asset.
+
 ```JSON
-{
-	"Character": {
-	    "entityType": "Character",
-	    "identifier": [{
-	        "identifierValue": "1234",
-	        "identifierScope": "Movielabs"
-	    }],
-	    "name": "Sven",
-	    "description": "An unassuming sattelite repair man"
-	    "Context":
-		    "isPortrayedBy": {
-				"entityType": "Participant",
-			    "identifier": [{
-			        "identifierValue": "5678",
-			        "identifierScope": "Movielabs"
-	    }],
-		    }
-	},
-	"Participant": {
-	    "entityType": "Participant",
-	    "identifier": [{
-	        "identifierValue": "5678",
-	        "identifierScope": "Movielabs"
-	    }],
-	    "name": "J. Warren Trezevant",
-	    "description": "Stunt actor doing mo-cap for Sven"
-	    "structuralCharacteristics":{
-		    "structuralType": "person"
-		},
-		"functionalCharacteristics":{
-			"functionalType": "stunts"
-		},
-	    "Context":
-		    "portrays": {
-				"entityType": "Character",
-			    "identifier": [{
-			        "identifierValue": "1234",
-			        "identifierScope": "Movielabs"
-			    }],
-		    }
-		}
-	}
+{  
+  "entityType": "Character",  
+  "identifier": [  
+    {  
+      "identifierValue": "chr-1234",  
+      "identifierScope": "Movielabs"  
+    }  
+  ],  
+  "name": "Sven",  
+  "description": "An unassuming sattelite repair man",  
+  "Context": {  
+    "entityType": "Context",  
+    "identifier": [  
+      {  
+        "identifierValue": "cxt-1234",  
+        "identifierScope": "Movielabs"  
+      }  
+    ],  
+    "isPortrayedBy": {  
+      "entityType": "Participant",  
+      "identifier": [  
+        {  
+          "identifierValue": "pct-5678",  
+          "identifierScope": "Movielabs"  
+        }  
+      ]  
+    }  
+  }  
+}
+```
+
+```JSON
+{  
+  "entityType": "Participant",  
+  "identifier": [  
+    {  
+      "identifierValue": "pct-5678",  
+      "identifierScope": "Movielabs"  
+    }  
+  ],  
+  "name": "J. Warren Trezevant",  
+  "description": "Stunt actor doing mo-cap for Sven",  
+  "structuralCharacteristics": {  
+    "structuralType": "person"  
+  },  
+  "functionalCharacteristics": {  
+    "functionalType": "stunts"  
+  },  
+  "Context": {  
+    "entityType": "Context",  
+    "identifier": [  
+      {  
+        "identifierValue": "cxt-4567",  
+        "identifierScope": "Movielabs"  
+      }  
+    ],  
+    "portrays": {  
+      "entityType": "Character",  
+      "identifier": [  
+        {  
+          "identifierValue": "chr-1234",  
+          "identifierScope": "Movielabs"  
+        }  
+      ]  
+    }  
+  }  
 }
 ```
 
