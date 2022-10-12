@@ -35,11 +35,14 @@ Structural properties describe details of the asset that are independent of its 
 
 Given the large array of structural types and the number of potential properties involved it should be remembered the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key properties that may be useful in finding, identifying or disambiguating assets in a workflow without the need to explicitly access or parse the underlying formats.
 
-This can be especially useful where these properties are embedded as part of the essence file, as this can avoid having to read and load the file. Metadata can be essence, e.g. metadata in sidecar.
+This can be especially useful where these properties are embedded as part of the essence file, as this can avoid having to read and load the file. Where metadata is not embedded with the essence this should generally be considered an asset in its own right, given it's own identifier and made available accordingly.
 
 For file based systems, the structural properties can encode a file path and name for the essence.
 
-*Note: These can be used to encode what a file should be named along with a file path, for use when hydrating a system that uses a resolver. Typically when you retrieve a file from a bucket the URL will describe a path and name used for the cloud system, this may not be how you want to setup files in an application, (we will add additional notes on using file systems in the future).
+*Note: Should we also say, these could be used to encode what a file should be named along with a file path, for use when hydrating a system that uses a resolver. Typically when you retrieve a file from a bucket the URL will describe a path and name used for the cloud system, this may not be how you want to setup files in an application
+
+** RGD: I think this is a separate note on 'using cloud storage with a resolver', **
+** DML: Where is that going? **
 
 Similarly functional properties can be included. These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information, and information related to a particular functional use.
 
@@ -182,7 +185,7 @@ mediaType: image/jpg
 ---
 
 ## Asset Groups
-Asset groups provide for logical groupings of Assets into a single entity. Asset groups are Assets themselves. They can refer to other Assets or Asset groups. This supports a hierarchical structure of Assets.
+Asset groups provide for logical groupings of Assets into a single entity. Asset groups are Assets themselves. They can refer to other Asset groups or to the essence of an asset as described above, this allows for a hierarchical structure of Assets to be constructed.
 
 Asset groups are deliberately simple. The intent is to communicate sets of assets needed in a workflow or application. How that group is used in an application can be complex and application-dependent. Other mechanisms like USD, EDL's or AAF's carry complex information about how multiple assets interrelate within specific applications, the OMC-JSON acts more as a manifest, the expectation is that the files describing how an application deploys these files is included as part of this manifest.
 

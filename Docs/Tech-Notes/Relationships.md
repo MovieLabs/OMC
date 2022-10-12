@@ -72,9 +72,9 @@ The name of the relationship carries semantic meaning and therefore can be used 
 
 The following table describes entity types and the relationships they have to other entity types.
 
-| Entity Type (functional type)          | Relationship            | Entity Type           | Inverse                 |
+| Entity Type          | Relationship            | Entity Type           | Inverse                 |
 |:-------------------- |:----------------------- |:--------------------- |:----------------------- |
-| Asset (script)                | hasNarrativeScene       | NarrativeScene        | isFromScript            |
+| Asset                | hasNarrativeScene       | NarrativeScene        | isFromScript            |
 |                      | isConceptArtFor         | Character             | hasConceptArt           |
 |                      |                         | NarrativeLocation     |                         |
 |                      |                         | NarrativeProp         |                         |
