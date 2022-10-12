@@ -47,7 +47,7 @@ Below we show a section of the schema for Narrative Location, which illustrates 
         "type": "string",
         "title": "Description"
     },
-  "Location": {
+    "Location": {
         "$ref": "../Utility/Location"
     }
 }
