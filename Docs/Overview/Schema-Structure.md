@@ -77,7 +77,7 @@ Below we show a section of the schema for Narrative Location, which illustrates 
 ## Identifiers and References
 
 ### Identifiers
-The example above uses an identifier in two places. In the ontology, an Identifier is "a string of characters that uniquely identifies an object within a particular scope." An identifier is really just a way of referring to something; undifferentiated strings and URIs/IRIs are common forms for an identifier, and there are many more specialized ones as well. 
+The example above uses an identifier in two places. In the ontology, an Identifier is "a string of characters that uniquely identifies an object within a particular scope." An identifier is really just a way of referring to something; undifferentiated strings and URIs/IRIs are common forms for an identifier, and there are many more specialized ones as well.
 
 For the production system (and any system that consists of multiple cooperating systems) it is essential to know the *scope* of the identifier - the universe within which the identifier is valid and unique. For example, "42" is a perfectly good identifier, but without knowing the scope, there is no way of knowing what it represents. See [OMC Part 9: Utilities](https://mc.movielabs.com/docs/omc/utilities/concepts) for further details, including some meanings of "42".
 
@@ -128,7 +128,7 @@ The use of identifiers is a central component of all entities; every entity must
 
 Using identifiers allows any entity to be included either by reference or by inclusion; the decision is left to the application. Where only an identifier is included in a payload the presumption is the receiving party can make a follow up request using the reference identifier if it needs more detailed information.
 
-Which of the two methods to use (identifier vs full data) will differ across applications and workflows, thinking about things like latency (or even availability) of identifier resolution, caching behavior in applications, etc.  It is always possible to send full data for any entity to any depth, with the usual warnings about the size of the data and the fact that it is graph-based. 
+Which of the two methods to use (identifier vs full data) will differ across applications and workflows, thinking about things like latency (or even availability) of identifier resolution, caching behavior in applications, etc.  It is always possible to send full data for any entity to any depth, with the usual warnings about the size of the data and the fact that it is graph-based.
 
 The example below shows a Narrative Location, where the Location itself is only referenced by its identifier. A client receiving this could then make a request using the Location's identifier to get the full set of attributes if it needs them.
 
@@ -150,7 +150,7 @@ The example below shows a Narrative Location, where the Location itself is only 
 }
 ```
 
-The next example shows a full Location entity de-referenced and included directly in the payload. 
+The next example shows a full Location entity de-referenced and included directly in the payload.
 
 **JSON Instance, example 2**
 
@@ -181,7 +181,7 @@ The next example shows a full Location entity de-referenced and included directl
 
 The schemas are structured in such a way that objects can be nested *ad infinitum*. It is up to the sending and receiving applications to decide how and what to exchange. However, developers should be aware that given the graph based nature of production data, circular references can be easily created.
 
-When the decision is made to pass just a reference and the receiving client wants to make a follow up request for additional information there are some potential issues: a decoupled system may not even know which application prepared the data and the client will need to know API endpoints, have the required credentials, and so on to acquire the additional data.  Sometimes all that a particular application wants is an identifier so it can anchor the portions of the graph it cares about in a broader structure, in which case th e identifier doesn't need to be dereferenced.
+When the decision is made to pass just a reference and the receiving client wants to make a follow up request for additional information there are some potential issues: a decoupled system may not even know which application prepared the data and the client will need to know API endpoints, have the required credentials, and so on to acquire the additional data.  Sometimes all that a particular application wants is an identifier so it can anchor the portions of the graph it cares about in a broader structure, in which case the identifier doesn't need to be dereferenced.
 
 URLs can be used as identifiers but can be fragile in complex production systems: things can move or exist in more than one location. A `file:` URL can be used as an identifier, but this can make workflows fragile, since even a shared filesystem can be mounted differently on different systems.
 
@@ -241,45 +241,45 @@ The Context example below demonstrates the use of named relationships. It shows 
         "type": "string",
         "title": "Description"
     },
-	"Context": {  
-	      "type": "object",  
-	      "required": [  
-	         "entityType",  
-	         "identifier"  
-	      ],  
-	      "properties": {  
-	         "entityInfo": {  
-	            "title": "Entity Information",  
-	            "$ref": "../Model/definitions.json#/properties/entityInfo"  
-	         },  
-	         "entityType": {  
-	            "type": "string",  
-	            "title": "Entity Type",  
-	            "const": "Context"  
-	         },  
-	         "identifier": {  
-	            "$ref": "../Utility/identifier.json"  
-	         },  
-	         "features": {  
-	            "type": "object",  
-	            "title": "usesProp",  
-	            "properties": {  
-	               "NarrativeProp": {  
-	                  "type": "array",  
-	                  "items": {  
-	                     "$ref": "../MediaCreationContext/NarrativeProp.json"  
-	                  }  
+	"Context": {
+	      "type": "object",
+	      "required": [
+	         "entityType",
+	         "identifier"
+	      ],
+	      "properties": {
+	         "entityInfo": {
+	            "title": "Entity Information",
+	            "$ref": "../Model/definitions.json#/properties/entityInfo"
+	         },
+	         "entityType": {
+	            "type": "string",
+	            "title": "Entity Type",
+	            "const": "Context"
+	         },
+	         "identifier": {
+	            "$ref": "../Utility/identifier.json"
+	         },
+	         "features": {
+	            "type": "object",
+	            "title": "usesProp",
+	            "properties": {
+	               "NarrativeProp": {
+	                  "type": "array",
+	                  "items": {
+	                     "$ref": "../MediaCreationContext/NarrativeProp.json"
+	                  }
 	               },
-				   "Character": {  
-	                  "type": "array",  
-	                  "items": {  
-	                     "$ref": "../MediaCreationContext/Character.json"  
-					}    
-		          }  
+				   "Character": {
+	                  "type": "array",
+	                  "items": {
+	                     "$ref": "../MediaCreationContext/Character.json"
+					}
+		          }
 		       }
 		    }
 		 }
-	   }  
+	   }
 	}
 }
 ```
@@ -413,7 +413,7 @@ See [Schema-Practices](./Schema-Practices#Extending%20the%20schema) for more inf
 
 ##### entityInfo
 This is encodes information specific to the entity itself, not what it is representing. It might include one or all of the following:
- - Version of the schema used to create the instance 
+ - Version of the schema used to create the instance
  - Version of the instance itself (under development; will change)
  - Provenance of the instance (under development; will change)
 
