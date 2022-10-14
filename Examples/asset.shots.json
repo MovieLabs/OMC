@@ -5,6 +5,120 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
+          "identifierValue": "sht/k_QZB_TR7sf9lLoBsjofk"
+        }
+      ],
+      "name": "TITL_0010",
+      "description": "Sven explode freeze frame",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/EZc28t2KzSbIg3NueBf8A"
+              }
+            ],
+            "name": "JNGL-F_11A-001",
+            "description": "Explosion",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/ATM6xERJqL26iN7UYzS7N"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGL-F_11A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "0:00",
+          "end": "0:17",
+          "duration": "0:17"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/OUvbY4lTNuu1_P22T_S-2"
+        }
+      ],
+      "name": "SATL_0050",
+      "description": "Closeup on welder",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
+              }
+            ],
+            "name": "SATL-R_2A-002",
+            "description": "Sven working on satellite ",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/MgnIHyBSl7qQweA5DInY3"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "SATL-R_2A-002.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "0:51",
+          "end": "0:52",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
           "identifierValue": "sht/Y9iyr066dBee0t9tHfe5B"
         }
       ],
@@ -109,11 +223,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/RcLlIg-SdvvgDMpnRrsg6"
+          "identifierValue": "sht/FpAepX3uh6LSPdFZaUnWs"
         }
       ],
-      "name": "SATL_0020",
-      "description": "Just wrapping up ",
+      "name": "SATL_0090",
+      "description": "Satellite back online",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -155,123 +269,9 @@
               "functionalType": "capture"
             }
           },
-          "start": "0:38",
-          "end": "0:44",
-          "duration": "0:06"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/c0DPhFczdzomgRobE8z8X"
-        }
-      ],
-      "name": "SATL_0070",
-      "description": "Welds circuit",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
-              }
-            ],
-            "name": "SATL-R_2A-002",
-            "description": "Sven working on satellite ",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/MgnIHyBSl7qQweA5DInY3"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "SATL-R_2A-002.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "0:53",
-          "end": "0:57",
-          "duration": "0:04"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/SXVadL9QqNYlROzREa65v"
-        }
-      ],
-      "name": "SATL_0080",
-      "description": "All done and powering up",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
-              }
-            ],
-            "name": "SATL-R_2A-002",
-            "description": "Sven working on satellite ",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/MgnIHyBSl7qQweA5DInY3"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "SATL-R_2A-002.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "0:57",
-          "end": "1:01",
-          "duration": "0:04"
+          "start": "1:01",
+          "end": "1:04",
+          "duration": "0:03"
         }
       }
     },
@@ -337,11 +337,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/OUvbY4lTNuu1_P22T_S-2"
+          "identifierValue": "sht/c0DPhFczdzomgRobE8z8X"
         }
       ],
-      "name": "SATL_0050",
-      "description": "Closeup on welder",
+      "name": "SATL_0070",
+      "description": "Welds circuit",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -383,123 +383,9 @@
               "functionalType": "capture"
             }
           },
-          "start": "0:51",
-          "end": "0:52",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/k_QZB_TR7sf9lLoBsjofk"
-        }
-      ],
-      "name": "TITL_0010",
-      "description": "Sven explode freeze frame",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/EZc28t2KzSbIg3NueBf8A"
-              }
-            ],
-            "name": "JNGL-F_11A-001",
-            "description": "Explosion",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/ATM6xERJqL26iN7UYzS7N"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGL-F_11A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "0:00",
-          "end": "0:17",
-          "duration": "0:17"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/PqskaHwvcV1SIQBuisONm"
-        }
-      ],
-      "name": "SATL_0120",
-      "description": "Closing up hatch - we talked about that",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/jquZdAHLQUrr_zaxVyFXn"
-              }
-            ],
-            "name": "SATL-A_3A-002",
-            "description": "Sven attacked by Trilobot at satellite",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/HKL9ULPZjj72UBDnTNiYV"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "SATL-A_3A-002.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "1:10",
-          "end": "1:12",
-          "duration": "0:02"
+          "start": "0:53",
+          "end": "0:57",
+          "duration": "0:04"
         }
       }
     },
@@ -565,6 +451,110 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
+          "identifierValue": "sht/RcLlIg-SdvvgDMpnRrsg6"
+        }
+      ],
+      "name": "SATL_0020",
+      "description": "Just wrapping up ",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
+              }
+            ],
+            "name": "SATL-R_2A-002",
+            "description": "Sven working on satellite ",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/MgnIHyBSl7qQweA5DInY3"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "SATL-R_2A-002.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "0:38",
+          "end": "0:44",
+          "duration": "0:06"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/Iy4HS9d5i6TeltImumRZ-"
+        }
+      ],
+      "name": "SATL_0100",
+      "description": "Planet view - nice job Sven",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/EmNH5JMgrRWJP5eK1aW3d"
+              }
+            ],
+            "name": "SATL_0100",
+            "description": "Planet view - nice job Sven",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/G3R_neOVhN-XFvU5EasOg"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:04",
+          "end": "1:07",
+          "duration": "0:03"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
           "identifierValue": "sht/R_K_Bpmm1JrZaH8e-piOi"
         }
       ],
@@ -613,308 +603,6 @@
           },
           "start": "0:52",
           "end": "0:53",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/FpAepX3uh6LSPdFZaUnWs"
-        }
-      ],
-      "name": "SATL_0090",
-      "description": "Satellite back online",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
-              }
-            ],
-            "name": "SATL-R_2A-002",
-            "description": "Sven working on satellite ",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/MgnIHyBSl7qQweA5DInY3"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "SATL-R_2A-002.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "1:01",
-          "end": "1:04",
-          "duration": "0:03"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/VAKOVkMaLkT8dHEb5L6f6"
-        }
-      ],
-      "name": "SATL_0130",
-      "description": "Trilobot cresting satellite",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/02SPlYy3zCi14L_q5LdT3"
-              }
-            ],
-            "name": "SATL_0130",
-            "description": "Trilobot cresting satellite",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/X5puZin9W0rZMO4Mky37q"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:12",
-          "end": "1:13",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/saQ5oEUS3XU3ajuIV5iS2"
-        }
-      ],
-      "name": "SATL_0160",
-      "description": "Long shot Sven spinning - Are you there?",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/NQ8bNQWo9ZEaJFMVe3Uwe"
-              }
-            ],
-            "name": "SATL-A_3A-003",
-            "description": "Sven attacked by Trilobot at satellite",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/srp-4F3cUuQ5h4B2fL_p7"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "SATL-A_3A-003.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "1:15",
-          "end": "1:16",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/xt8cC0ztTzGo7MhL3fPxM"
-        }
-      ],
-      "name": "SATL_0110",
-      "description": "Trilobot POV going over Satellite - Nova",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/99gehfDC-VLrzeR12J17A"
-              }
-            ],
-            "name": "SATL_0110",
-            "description": "Trilobot POV going over Satellite - Nova",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/sCtiiFcEBV9oVTMG9PEU9"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:07",
-          "end": "1:10",
-          "duration": "0:03"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/21XLXyQBLYzd6Brm_qwaW"
-        }
-      ],
-      "name": "SATL_0170",
-      "description": "Trilobot chases",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/eNeaLbyqm9EqS_T_NtNIq"
-              }
-            ],
-            "name": "SATL_0170",
-            "description": "Trilobot chases",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/IwIZuG-vgSt7y9vlRNeN8"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:16",
-          "end": "1:17",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/hhjjfz9PPs39dQZqdTAet"
-        }
-      ],
-      "name": "SATL_0220",
-      "description": "Closeup on thruster hammer down",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/zGaKtusIY0T70pHbp0SuR"
-              }
-            ],
-            "name": "SATL_0220",
-            "description": "Closeup on thruster hammer down",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/T7ETbiTXXD8VxqRSyrxrG"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:24",
-          "end": "1:25",
           "duration": "0:01"
         }
       }
@@ -981,11 +669,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/Iy4HS9d5i6TeltImumRZ-"
+          "identifierValue": "sht/VAKOVkMaLkT8dHEb5L6f6"
         }
       ],
-      "name": "SATL_0100",
-      "description": "Planet view - nice job Sven",
+      "name": "SATL_0130",
+      "description": "Trilobot cresting satellite",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -998,17 +686,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/EmNH5JMgrRWJP5eK1aW3d"
+                "identifierValue": "ast/02SPlYy3zCi14L_q5LdT3"
               }
             ],
-            "name": "SATL_0100",
-            "description": "Planet view - nice job Sven",
+            "name": "SATL_0130",
+            "description": "Trilobot cresting satellite",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/G3R_neOVhN-XFvU5EasOg"
+                  "identifierValue": "astsc/X5puZin9W0rZMO4Mky37q"
                 }
               ],
               "structuralProperties": null
@@ -1017,9 +705,217 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:04",
-          "end": "1:07",
+          "start": "1:12",
+          "end": "1:13",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/SXVadL9QqNYlROzREa65v"
+        }
+      ],
+      "name": "SATL_0080",
+      "description": "All done and powering up",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
+              }
+            ],
+            "name": "SATL-R_2A-002",
+            "description": "Sven working on satellite ",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/MgnIHyBSl7qQweA5DInY3"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "SATL-R_2A-002.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "0:57",
+          "end": "1:01",
+          "duration": "0:04"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/PqskaHwvcV1SIQBuisONm"
+        }
+      ],
+      "name": "SATL_0120",
+      "description": "Closing up hatch - we talked about that",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/jquZdAHLQUrr_zaxVyFXn"
+              }
+            ],
+            "name": "SATL-A_3A-002",
+            "description": "Sven attacked by Trilobot at satellite",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/HKL9ULPZjj72UBDnTNiYV"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "SATL-A_3A-002.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "1:10",
+          "end": "1:12",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/xt8cC0ztTzGo7MhL3fPxM"
+        }
+      ],
+      "name": "SATL_0110",
+      "description": "Trilobot POV going over Satellite - Nova",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/99gehfDC-VLrzeR12J17A"
+              }
+            ],
+            "name": "SATL_0110",
+            "description": "Trilobot POV going over Satellite - Nova",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/sCtiiFcEBV9oVTMG9PEU9"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:07",
+          "end": "1:10",
           "duration": "0:03"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/jtCDKjpy1XnCso2HaBNfp"
+        }
+      ],
+      "name": "SATL_0200",
+      "description": "Sven gets to ship",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/DA-WEDkIHJHM08o9C45sx"
+              }
+            ],
+            "name": "SATL_0200",
+            "description": "Sven gets to ship",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/nFNg6LjlXmXW-IVVjFO93"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:19",
+          "end": "1:23",
+          "duration": "0:04"
         }
       }
     },
@@ -1085,11 +981,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/-xtfc3eRN9Iral29Dgm8P"
+          "identifierValue": "sht/hhjjfz9PPs39dQZqdTAet"
         }
       ],
-      "name": "SATL_0250",
-      "description": "Trilbot firing at ship",
+      "name": "SATL_0220",
+      "description": "Closeup on thruster hammer down",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1102,17 +998,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/SvUnIGFrc8DbW3qB4meaj"
+                "identifierValue": "ast/zGaKtusIY0T70pHbp0SuR"
               }
             ],
-            "name": "SATL_0250",
-            "description": "Trilbot firing at ship",
+            "name": "SATL_0220",
+            "description": "Closeup on thruster hammer down",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/RIEgZQoUC767P6WKPI02a"
+                  "identifierValue": "astsc/T7ETbiTXXD8VxqRSyrxrG"
                 }
               ],
               "structuralProperties": null
@@ -1121,8 +1017,8 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:29",
-          "end": "1:30",
+          "start": "1:24",
+          "end": "1:25",
           "duration": "0:01"
         }
       }
@@ -1132,11 +1028,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/jtCDKjpy1XnCso2HaBNfp"
+          "identifierValue": "sht/21XLXyQBLYzd6Brm_qwaW"
         }
       ],
-      "name": "SATL_0200",
-      "description": "Sven gets to ship",
+      "name": "SATL_0170",
+      "description": "Trilobot chases",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1149,17 +1045,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/DA-WEDkIHJHM08o9C45sx"
+                "identifierValue": "ast/eNeaLbyqm9EqS_T_NtNIq"
               }
             ],
-            "name": "SATL_0200",
-            "description": "Sven gets to ship",
+            "name": "SATL_0170",
+            "description": "Trilobot chases",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/nFNg6LjlXmXW-IVVjFO93"
+                  "identifierValue": "astsc/IwIZuG-vgSt7y9vlRNeN8"
                 }
               ],
               "structuralProperties": null
@@ -1168,9 +1064,113 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:19",
-          "end": "1:23",
-          "duration": "0:04"
+          "start": "1:16",
+          "end": "1:17",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/saQ5oEUS3XU3ajuIV5iS2"
+        }
+      ],
+      "name": "SATL_0160",
+      "description": "Long shot Sven spinning - Are you there?",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/NQ8bNQWo9ZEaJFMVe3Uwe"
+              }
+            ],
+            "name": "SATL-A_3A-003",
+            "description": "Sven attacked by Trilobot at satellite",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/srp-4F3cUuQ5h4B2fL_p7"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "SATL-A_3A-003.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "1:15",
+          "end": "1:16",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/6zvh0unEd_JQVHENj5-h9"
+        }
+      ],
+      "name": "SATL_0210",
+      "description": "Sven closes hatch",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/WL35NUWXf4Hgx68t3Mrvt"
+              }
+            ],
+            "name": "SATL_0210",
+            "description": "Sven closes hatch",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/XLxGXepTGnvjBHHmUSglq"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:23",
+          "end": "1:24",
+          "duration": "0:01"
         }
       }
     },
@@ -1226,6 +1226,53 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
+          "identifierValue": "sht/UO35Ql8_amcPGWMJhYNuJ"
+        }
+      ],
+      "name": "SATL_0230",
+      "description": "Ship powers up and heads towards planet",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/gRn3aL23uCJGy-DOpeufp"
+              }
+            ],
+            "name": "SATL_0230",
+            "description": "Ship powers up and heads towards planet",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/NJCwWJ5L6f8SITUm9-q1d"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:25",
+          "end": "1:27",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
           "identifierValue": "sht/iR37TeJW7NH4y40DHA1on"
         }
       ],
@@ -1273,11 +1320,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/6zvh0unEd_JQVHENj5-h9"
+          "identifierValue": "sht/bQiAIdDUmNVf0ShqEz15J"
         }
       ],
-      "name": "SATL_0210",
-      "description": "Sven closes hatch",
+      "name": "FALL_0010",
+      "description": "Ship gets direct hit",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1290,17 +1337,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/WL35NUWXf4Hgx68t3Mrvt"
+                "identifierValue": "ast/iJAWmW3-Z-SRxc2XINmZC"
               }
             ],
-            "name": "SATL_0210",
-            "description": "Sven closes hatch",
+            "name": "FALL_0010",
+            "description": "Ship gets direct hit",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/XLxGXepTGnvjBHHmUSglq"
+                  "identifierValue": "astsc/p6fP7wkvuDAbgbxDfJEOz"
                 }
               ],
               "structuralProperties": null
@@ -1309,9 +1356,9 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:23",
-          "end": "1:24",
-          "duration": "0:01"
+          "start": "1:30",
+          "end": "1:32",
+          "duration": "0:02"
         }
       }
     },
@@ -1377,11 +1424,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/bQiAIdDUmNVf0ShqEz15J"
+          "identifierValue": "sht/-xtfc3eRN9Iral29Dgm8P"
         }
       ],
-      "name": "FALL_0010",
-      "description": "Ship gets direct hit",
+      "name": "SATL_0250",
+      "description": "Trilbot firing at ship",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1394,17 +1441,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/iJAWmW3-Z-SRxc2XINmZC"
+                "identifierValue": "ast/SvUnIGFrc8DbW3qB4meaj"
               }
             ],
-            "name": "FALL_0010",
-            "description": "Ship gets direct hit",
+            "name": "SATL_0250",
+            "description": "Trilbot firing at ship",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/p6fP7wkvuDAbgbxDfJEOz"
+                  "identifierValue": "astsc/RIEgZQoUC767P6WKPI02a"
                 }
               ],
               "structuralProperties": null
@@ -1413,9 +1460,9 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:30",
-          "end": "1:32",
-          "duration": "0:02"
+          "start": "1:29",
+          "end": "1:30",
+          "duration": "0:01"
         }
       }
     },
@@ -1424,11 +1471,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/UO35Ql8_amcPGWMJhYNuJ"
+          "identifierValue": "sht/oLimcTHblVuL4FcXohaCX"
         }
       ],
-      "name": "SATL_0230",
-      "description": "Ship powers up and heads towards planet",
+      "name": "FALL_0040",
+      "description": "Ship goes into tailspin",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1441,17 +1488,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/gRn3aL23uCJGy-DOpeufp"
+                "identifierValue": "ast/yTujkc4q1lBAYk97LDLcc"
               }
             ],
-            "name": "SATL_0230",
-            "description": "Ship powers up and heads towards planet",
+            "name": "FALL_0040",
+            "description": "Ship goes into tailspin",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/NJCwWJ5L6f8SITUm9-q1d"
+                  "identifierValue": "astsc/RRSURzyZNNH6I5gEF3kIM"
                 }
               ],
               "structuralProperties": null
@@ -1460,9 +1507,9 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:25",
-          "end": "1:27",
-          "duration": "0:02"
+          "start": "1:35",
+          "end": "1:38",
+          "duration": "0:03"
         }
       }
     },
@@ -1471,11 +1518,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/lNaVfg3l8G-g2_Q986pdR"
+          "identifierValue": "sht/ILyIxYzfcrrxaP2Hb0Hdq"
         }
       ],
-      "name": "FALL_0030",
-      "description": "I am hit",
+      "name": "FALL_0060",
+      "description": "Cockpit view spinning planet",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1488,17 +1535,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/9FxPDLkbNq0l66cEDeVtW"
+                "identifierValue": "ast/UBwTUAXNUrdctlGlc2wAx"
               }
             ],
-            "name": "FALL_0030",
-            "description": "I am hit",
+            "name": "FALL_0060",
+            "description": "Cockpit view spinning planet",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/Fmu7Es2TxuXx8M_lkT3Oi"
+                  "identifierValue": "astsc/-cMffM6PbRZ4EQvJ781A3"
                 }
               ],
               "structuralProperties": null
@@ -1507,8 +1554,55 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:33",
-          "end": "1:35",
+          "start": "1:40",
+          "end": "1:41",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/i-C-3o6Skpv7LnyieUCCc"
+        }
+      ],
+      "name": "FALL_0050",
+      "description": "Sven screams and pulls up stick",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/pyrly86PUtWWTz2Pzpaoz"
+              }
+            ],
+            "name": "FALL_0050",
+            "description": "Sven screams and pulls up stick",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/HrguJDFE2tPf7rJJV9Sfx"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:38",
+          "end": "1:40",
           "duration": "0:02"
         }
       }
@@ -1565,11 +1659,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/UZTJgz1lxoCB80JZSzffK"
+          "identifierValue": "sht/dmdQ8HdnSMcX9IOpTJobB"
         }
       ],
-      "name": "FALL_0080",
-      "description": "Sven spots eject button",
+      "name": "FALL_0070",
+      "description": "Sven face closeup panicking",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1582,17 +1676,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/_HnQpeW4NSSy5KdL9JKDC"
+                "identifierValue": "ast/GAXY0AmxbH5TbB2s1Ao8j"
               }
             ],
-            "name": "FALL_0080",
-            "description": "Sven spots eject button",
+            "name": "FALL_0070",
+            "description": "Sven face closeup panicking",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/JYDKFMEebmCEhoruskCcD"
+                  "identifierValue": "astsc/OSppDGNVvcSAUE4DRJBFd"
                 }
               ],
               "structuralProperties": null
@@ -1601,196 +1695,8 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:43",
-          "end": "1:44",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/2ZJmeocNlzieMKYdzFfzY"
-        }
-      ],
-      "name": "FALL_0090",
-      "description": "Sven ejects",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/phjBMqEu4DLJ-prSlpqQO"
-              }
-            ],
-            "name": "FALL_0090",
-            "description": "Sven ejects",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/qg2RRSPF0oUw523PTg-Ar"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:44",
-          "end": "1:45",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/U216vAqsTiueMwxb6VXhl"
-        }
-      ],
-      "name": "BECH_0010",
-      "description": "Sven lands in water",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/0HJDhrZEEtdmlX_lmTA4p"
-              }
-            ],
-            "name": "BECH_0010",
-            "description": "Sven lands in water",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/4odwa5zeCb9Igh3xuI3Pj"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:48",
-          "end": "1:50",
-          "duration": "0:02"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/oLimcTHblVuL4FcXohaCX"
-        }
-      ],
-      "name": "FALL_0040",
-      "description": "Ship goes into tailspin",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/yTujkc4q1lBAYk97LDLcc"
-              }
-            ],
-            "name": "FALL_0040",
-            "description": "Ship goes into tailspin",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/RRSURzyZNNH6I5gEF3kIM"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:35",
-          "end": "1:38",
-          "duration": "0:03"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/i-C-3o6Skpv7LnyieUCCc"
-        }
-      ],
-      "name": "FALL_0050",
-      "description": "Sven screams and pulls up stick",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/pyrly86PUtWWTz2Pzpaoz"
-              }
-            ],
-            "name": "FALL_0050",
-            "description": "Sven screams and pulls up stick",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/HrguJDFE2tPf7rJJV9Sfx"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:38",
-          "end": "1:40",
+          "start": "1:41",
+          "end": "1:43",
           "duration": "0:02"
         }
       }
@@ -1857,11 +1763,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/ILyIxYzfcrrxaP2Hb0Hdq"
+          "identifierValue": "sht/J_CAdaLeCXtcqrNqAEpRL"
         }
       ],
-      "name": "FALL_0060",
-      "description": "Cockpit view spinning planet",
+      "name": "BECH_0020",
+      "description": "Sven surfaces in water",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -1874,17 +1780,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/UBwTUAXNUrdctlGlc2wAx"
+                "identifierValue": "ast/b_oqj0kNKNSGZM9T1Wt-8"
               }
             ],
-            "name": "FALL_0060",
-            "description": "Cockpit view spinning planet",
+            "name": "BECH_0020",
+            "description": "Sven surfaces in water",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/-cMffM6PbRZ4EQvJ781A3"
+                  "identifierValue": "astsc/taQ3gSNIi3afE6QDGDm3K"
                 }
               ],
               "structuralProperties": null
@@ -1893,55 +1799,8 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "1:40",
-          "end": "1:41",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/dmdQ8HdnSMcX9IOpTJobB"
-        }
-      ],
-      "name": "FALL_0070",
-      "description": "Sven face closeup panicking",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/GAXY0AmxbH5TbB2s1Ao8j"
-              }
-            ],
-            "name": "FALL_0070",
-            "description": "Sven face closeup panicking",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/OSppDGNVvcSAUE4DRJBFd"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:41",
-          "end": "1:43",
+          "start": "1:50",
+          "end": "1:52",
           "duration": "0:02"
         }
       }
@@ -2008,6 +1867,100 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
+          "identifierValue": "sht/lNaVfg3l8G-g2_Q986pdR"
+        }
+      ],
+      "name": "FALL_0030",
+      "description": "I am hit",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/9FxPDLkbNq0l66cEDeVtW"
+              }
+            ],
+            "name": "FALL_0030",
+            "description": "I am hit",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/Fmu7Es2TxuXx8M_lkT3Oi"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:33",
+          "end": "1:35",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/U216vAqsTiueMwxb6VXhl"
+        }
+      ],
+      "name": "BECH_0010",
+      "description": "Sven lands in water",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/0HJDhrZEEtdmlX_lmTA4p"
+              }
+            ],
+            "name": "BECH_0010",
+            "description": "Sven lands in water",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/4odwa5zeCb9Igh3xuI3Pj"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:48",
+          "end": "1:50",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
           "identifierValue": "sht/LMVd3CfjrHmoSg6sjLMDS"
         }
       ],
@@ -2065,167 +2018,6 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/BoqugPcuZPr7URcYNmsm-"
-        }
-      ],
-      "name": "BECH_0100",
-      "description": "Sven talks to Kiera as Trilobot approaches",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
-              }
-            ],
-            "name": "BECH-C_8A-003",
-            "description": "Sven talks to Kiera on the beach",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/VskaBnuSkUVdVlRuUB14Q"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "BECH-C_8A-003.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "2:08",
-          "end": "2:23",
-          "duration": "0:15"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/zZf3WglgHPl6AAjPXp1UA"
-        }
-      ],
-      "name": "BECH_0070",
-      "description": "Sven surveys beach",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
-              }
-            ],
-            "name": "BECH-C_8A-003",
-            "description": "Sven talks to Kiera on the beach",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/VskaBnuSkUVdVlRuUB14Q"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "BECH-C_8A-003.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "2:04",
-          "end": "2:06",
-          "duration": "0:02"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/J_CAdaLeCXtcqrNqAEpRL"
-        }
-      ],
-      "name": "BECH_0020",
-      "description": "Sven surfaces in water",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/b_oqj0kNKNSGZM9T1Wt-8"
-              }
-            ],
-            "name": "BECH_0020",
-            "description": "Sven surfaces in water",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/taQ3gSNIi3afE6QDGDm3K"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "1:50",
-          "end": "1:52",
-          "duration": "0:02"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
           "identifierValue": "sht/VX55q6h7bAvlusfsbNfW2"
         }
       ],
@@ -2273,11 +2065,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/JcFgx460TVYNrIymSNHN0"
+          "identifierValue": "sht/UZTJgz1lxoCB80JZSzffK"
         }
       ],
-      "name": "BECH_0110",
-      "description": "Sven turns to see Trilobot",
+      "name": "FALL_0080",
+      "description": "Sven spots eject button",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -2290,38 +2082,28 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/b_2Gl0xx5gHMMmAWb0z1Y"
+                "identifierValue": "ast/_HnQpeW4NSSy5KdL9JKDC"
               }
             ],
-            "name": "BECH-T_9A-002",
-            "description": "Sven runs for cover on beach",
+            "name": "FALL_0080",
+            "description": "Sven spots eject button",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/ia2Pqhx8ljfuJRh1shaLZ"
+                  "identifierValue": "astsc/JYDKFMEebmCEhoruskCcD"
                 }
               ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "BECH-T_9A-002.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
+              "structuralProperties": null
             },
             "functionalCharacteristics": {
-              "functionalType": "capture"
+              "functionalType": "cgi.render"
             }
           },
-          "start": "2:23",
-          "end": "2:25",
-          "duration": "0:02"
+          "start": "1:43",
+          "end": "1:44",
+          "duration": "0:01"
         }
       }
     },
@@ -2330,11 +2112,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/78k3SGVdjhrtprSZJv_IQ"
+          "identifierValue": "sht/QtOKRGMNV0--OFMY4o99A"
         }
       ],
-      "name": "BECH_0080",
-      "description": "Sven tries communicator",
+      "name": "BECH_0120",
+      "description": "Trilobot opens fire",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -2347,37 +2129,74 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
+                "identifierValue": "ast/JUKq7aPMsCbpS7AhKBMHu"
               }
             ],
-            "name": "BECH-C_8A-003",
-            "description": "Sven talks to Kiera on the beach",
+            "name": "BECH_0120",
+            "description": "Trilobot opens fire",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/VskaBnuSkUVdVlRuUB14Q"
+                  "identifierValue": "astsc/VZU-o2JThimNRCEiqHUNF"
                 }
               ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "BECH-C_8A-003.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
+              "structuralProperties": null
             },
             "functionalCharacteristics": {
-              "functionalType": "capture"
+              "functionalType": "cgi.render"
             }
           },
-          "start": "2:06",
-          "end": "2:07",
+          "start": "2:25",
+          "end": "2:26",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/2ZJmeocNlzieMKYdzFfzY"
+        }
+      ],
+      "name": "FALL_0090",
+      "description": "Sven ejects",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/phjBMqEu4DLJ-prSlpqQO"
+              }
+            ],
+            "name": "FALL_0090",
+            "description": "Sven ejects",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/qg2RRSPF0oUw523PTg-Ar"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "1:44",
+          "end": "1:45",
           "duration": "0:01"
         }
       }
@@ -2444,162 +2263,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/QtOKRGMNV0--OFMY4o99A"
+          "identifierValue": "sht/zZf3WglgHPl6AAjPXp1UA"
         }
       ],
-      "name": "BECH_0120",
-      "description": "Trilobot opens fire",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/JUKq7aPMsCbpS7AhKBMHu"
-              }
-            ],
-            "name": "BECH_0120",
-            "description": "Trilobot opens fire",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/VZU-o2JThimNRCEiqHUNF"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "2:25",
-          "end": "2:26",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/8tDnAddXxNbIZqu_9m4g3"
-        }
-      ],
-      "name": "BECH_0180",
-      "description": "Sven looks to Jungle",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/w2sS-a4naWAQWRRw_vcsW"
-              }
-            ],
-            "name": "BECH_0180",
-            "description": "Sven looks to Jungle",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/wISM5DwTA1ZIw1TU-eW25"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "2:34",
-          "end": "2:35",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/u1uQ-SL8myMVO1MWVuzwa"
-        }
-      ],
-      "name": "BECH_0140",
-      "description": "Sven runs behind rock",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/b_2Gl0xx5gHMMmAWb0z1Y"
-              }
-            ],
-            "name": "BECH-T_9A-002",
-            "description": "Sven runs for cover on beach",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/ia2Pqhx8ljfuJRh1shaLZ"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "BECH-T_9A-002.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "2:27",
-          "end": "2:28",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/R1xQtfJ386uvl5ptyH6vD"
-        }
-      ],
-      "name": "BECH_0090",
-      "description": "Sven dials in Kiera",
+      "name": "BECH_0070",
+      "description": "Sven surveys beach",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -2641,8 +2309,65 @@
               "functionalType": "capture"
             }
           },
-          "start": "2:07",
-          "end": "2:08",
+          "start": "2:04",
+          "end": "2:06",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/78k3SGVdjhrtprSZJv_IQ"
+        }
+      ],
+      "name": "BECH_0080",
+      "description": "Sven tries communicator",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
+              }
+            ],
+            "name": "BECH-C_8A-003",
+            "description": "Sven talks to Kiera on the beach",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/VskaBnuSkUVdVlRuUB14Q"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "BECH-C_8A-003.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "2:06",
+          "end": "2:07",
           "duration": "0:01"
         }
       }
@@ -2709,6 +2434,63 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
+          "identifierValue": "sht/BoqugPcuZPr7URcYNmsm-"
+        }
+      ],
+      "name": "BECH_0100",
+      "description": "Sven talks to Kiera as Trilobot approaches",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
+              }
+            ],
+            "name": "BECH-C_8A-003",
+            "description": "Sven talks to Kiera on the beach",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/VskaBnuSkUVdVlRuUB14Q"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "BECH-C_8A-003.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "2:08",
+          "end": "2:23",
+          "duration": "0:15"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
           "identifierValue": "sht/xL7uP6iY1h6EDRA5-zD1N"
         }
       ],
@@ -2757,6 +2539,214 @@
           },
           "start": "2:28",
           "end": "2:29",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/JcFgx460TVYNrIymSNHN0"
+        }
+      ],
+      "name": "BECH_0110",
+      "description": "Sven turns to see Trilobot",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/b_2Gl0xx5gHMMmAWb0z1Y"
+              }
+            ],
+            "name": "BECH-T_9A-002",
+            "description": "Sven runs for cover on beach",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/ia2Pqhx8ljfuJRh1shaLZ"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "BECH-T_9A-002.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "2:23",
+          "end": "2:25",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/xG7Q3JGVxOgM8bywXvs3u"
+        }
+      ],
+      "name": "BECH_0170",
+      "description": "Trilobot hovers and shoots",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/zCFsFZUviUutDU2XFJkTa"
+              }
+            ],
+            "name": "BECH_0170",
+            "description": "Trilobot hovers and shoots",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/MNw4-rhVkmSKP2H51HOm9"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "2:33",
+          "end": "2:34",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/8tDnAddXxNbIZqu_9m4g3"
+        }
+      ],
+      "name": "BECH_0180",
+      "description": "Sven looks to Jungle",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/w2sS-a4naWAQWRRw_vcsW"
+              }
+            ],
+            "name": "BECH_0180",
+            "description": "Sven looks to Jungle",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/wISM5DwTA1ZIw1TU-eW25"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "2:34",
+          "end": "2:35",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/R1xQtfJ386uvl5ptyH6vD"
+        }
+      ],
+      "name": "BECH_0090",
+      "description": "Sven dials in Kiera",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
+              }
+            ],
+            "name": "BECH-C_8A-003",
+            "description": "Sven talks to Kiera on the beach",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/VskaBnuSkUVdVlRuUB14Q"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "BECH-C_8A-003.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "2:07",
+          "end": "2:08",
           "duration": "0:01"
         }
       }
@@ -2823,11 +2813,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/xG7Q3JGVxOgM8bywXvs3u"
+          "identifierValue": "sht/u1uQ-SL8myMVO1MWVuzwa"
         }
       ],
-      "name": "BECH_0170",
-      "description": "Trilobot hovers and shoots",
+      "name": "BECH_0140",
+      "description": "Sven runs behind rock",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -2840,121 +2830,37 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/zCFsFZUviUutDU2XFJkTa"
+                "identifierValue": "ast/b_2Gl0xx5gHMMmAWb0z1Y"
               }
             ],
-            "name": "BECH_0170",
-            "description": "Trilobot hovers and shoots",
+            "name": "BECH-T_9A-002",
+            "description": "Sven runs for cover on beach",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/MNw4-rhVkmSKP2H51HOm9"
+                  "identifierValue": "astsc/ia2Pqhx8ljfuJRh1shaLZ"
                 }
               ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "2:33",
-          "end": "2:34",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/SlienppqHA06XfqPwu_CL"
-        }
-      ],
-      "name": "BECH_0220",
-      "description": "Trilobot firing",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/F7SDgWW5V4zQHjdZYS1bF"
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "BECH-T_9A-002.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
               }
-            ],
-            "name": "BECH_0220",
-            "description": "Trilobot firing",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/sICWWsrKQ0_WL-K8ZFjFW"
-                }
-              ],
-              "structuralProperties": null
             },
             "functionalCharacteristics": {
-              "functionalType": "cgi.render"
+              "functionalType": "capture"
             }
           },
-          "start": "2:38",
-          "end": "2:39",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/cduamxtRrj4NguwlYZ9uk"
-        }
-      ],
-      "name": "BECH_0190",
-      "description": "Sven sees opening",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/vt6jcOzWXnWiWDD-XIFbZ"
-              }
-            ],
-            "name": "BECH_0190",
-            "description": "Sven sees opening",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/ML_5fkfxmJFQbo682Cgu7"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "2:35",
-          "end": "2:36",
+          "start": "2:27",
+          "end": "2:28",
           "duration": "0:01"
         }
       }
@@ -3011,11 +2917,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/V5tFYVtsIQ5YlVyCpInc4"
+          "identifierValue": "sht/cduamxtRrj4NguwlYZ9uk"
         }
       ],
-      "name": "JRUN_0040",
-      "description": "Sven aims at Trilobot",
+      "name": "BECH_0190",
+      "description": "Sven sees opening",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -3028,74 +2934,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+                "identifierValue": "ast/vt6jcOzWXnWiWDD-XIFbZ"
               }
             ],
-            "name": "JNGLE-R_10A-003",
-            "description": "Sven running through the jungle",
+            "name": "BECH_0190",
+            "description": "Sven sees opening",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGLE-R_10A-003.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "2:46",
-          "end": "2:47",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/jyTuXXTT1_j1LB9H2ojYD"
-        }
-      ],
-      "name": "BECH_0250",
-      "description": "Trilobot takes pursuit in jungle",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/UivgXIG61mWFIhherqwIa"
-              }
-            ],
-            "name": "BECH_0250",
-            "description": "Trilobot takes pursuit in jungle",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/td9XjHbhEw18bxkgpFtCw"
+                  "identifierValue": "astsc/ML_5fkfxmJFQbo682Cgu7"
                 }
               ],
               "structuralProperties": null
@@ -3104,8 +2953,8 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "2:41",
-          "end": "2:42",
+          "start": "2:35",
+          "end": "2:36",
           "duration": "0:01"
         }
       }
@@ -3115,11 +2964,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/lH7vbw7YDl1l8rZ-AFIMa"
+          "identifierValue": "sht/SlienppqHA06XfqPwu_CL"
         }
       ],
-      "name": "JRUN_0020",
-      "description": "Sven stops and faces Trilobot",
+      "name": "BECH_0220",
+      "description": "Trilobot firing",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -3132,151 +2981,27 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+                "identifierValue": "ast/F7SDgWW5V4zQHjdZYS1bF"
               }
             ],
-            "name": "JNGLE-R_10A-003",
-            "description": "Sven running through the jungle",
+            "name": "BECH_0220",
+            "description": "Trilobot firing",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
+                  "identifierValue": "astsc/sICWWsrKQ0_WL-K8ZFjFW"
                 }
               ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGLE-R_10A-003.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
+              "structuralProperties": null
             },
             "functionalCharacteristics": {
-              "functionalType": "capture"
+              "functionalType": "cgi.render"
             }
           },
-          "start": "2:44",
-          "end": "2:45",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/DZLujYeIwP8SnClTQXzOw"
-        }
-      ],
-      "name": "BECH_0240",
-      "description": "More Sven running",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/4fSdq1OXYp3igRsYGMYvU"
-              }
-            ],
-            "name": "JNGLE-R_10A-001",
-            "description": "Sven running through the jungle",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/fpyTvL7jp5bk_HgwoxOCz"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGLE-R_10A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "2:40",
-          "end": "2:41",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/8TYfYSUa8c32tFm5G7oOf"
-        }
-      ],
-      "name": "BECH_0230",
-      "description": "Sven running through Jungle",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/4fSdq1OXYp3igRsYGMYvU"
-              }
-            ],
-            "name": "JNGLE-R_10A-001",
-            "description": "Sven running through the jungle",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/fpyTvL7jp5bk_HgwoxOCz"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGLE-R_10A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "2:39",
-          "end": "2:40",
+          "start": "2:38",
+          "end": "2:39",
           "duration": "0:01"
         }
       }
@@ -3343,11 +3068,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/F76Zt-hA35Jp4VG7kL997"
+          "identifierValue": "sht/V5tFYVtsIQ5YlVyCpInc4"
         }
       ],
-      "name": "JRUN_0030",
-      "description": "Sven adjusts welder",
+      "name": "JRUN_0040",
+      "description": "Sven aims at Trilobot",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -3389,8 +3114,8 @@
               "functionalType": "capture"
             }
           },
-          "start": "2:45",
-          "end": "2:46",
+          "start": "2:46",
+          "end": "2:47",
           "duration": "0:01"
         }
       }
@@ -3400,11 +3125,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/IVSvlipNczT0JpYHjJQ2j"
+          "identifierValue": "sht/DZLujYeIwP8SnClTQXzOw"
         }
       ],
-      "name": "JRUN_0090",
-      "description": "Sven desperately attacking",
+      "name": "BECH_0240",
+      "description": "More Sven running",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -3417,17 +3142,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+                "identifierValue": "ast/4fSdq1OXYp3igRsYGMYvU"
               }
             ],
-            "name": "JNGLE-R_10A-003",
+            "name": "JNGLE-R_10A-001",
             "description": "Sven running through the jungle",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
+                  "identifierValue": "astsc/fpyTvL7jp5bk_HgwoxOCz"
                 }
               ],
               "structuralProperties": {
@@ -3436,7 +3161,7 @@
                   "recordType": "item"
                 },
                 "fileDetails": {
-                  "fileName": "JNGLE-R_10A-003.mov",
+                  "fileName": "JNGLE-R_10A-001.mov",
                   "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
                   "fileExtension": "mov"
                 }
@@ -3446,55 +3171,8 @@
               "functionalType": "capture"
             }
           },
-          "start": "2:54",
-          "end": "2:57",
-          "duration": "0:03"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/qBGPqNLgIjHDYkjvbwIqS"
-        }
-      ],
-      "name": "JRUN_0070",
-      "description": "Trilobot closes in",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/5QV2CPwGjakzDlFBTYns2"
-              }
-            ],
-            "name": "JRUN_0070",
-            "description": "Trilobot closes in",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/zioY5Y9F0XY08VbiU2CCG"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "2:50",
-          "end": "2:51",
+          "start": "2:40",
+          "end": "2:41",
           "duration": "0:01"
         }
       }
@@ -3608,11 +3286,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/_3TwibG-ZprUOsSpkXZGC"
+          "identifierValue": "sht/jyTuXXTT1_j1LB9H2ojYD"
         }
       ],
-      "name": "JRUN_0100",
-      "description": "Trilobot POV shooting",
+      "name": "BECH_0250",
+      "description": "Trilobot takes pursuit in jungle",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -3625,17 +3303,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/dYhjk66oCQ1yI6mdosaHX"
+                "identifierValue": "ast/UivgXIG61mWFIhherqwIa"
               }
             ],
-            "name": "JRUN_0100",
-            "description": "Trilobot POV shooting",
+            "name": "BECH_0250",
+            "description": "Trilobot takes pursuit in jungle",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/hHAuC-i6rsfnOzpLa-yGe"
+                  "identifierValue": "astsc/td9XjHbhEw18bxkgpFtCw"
                 }
               ],
               "structuralProperties": null
@@ -3644,66 +3322,9 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "2:57",
-          "end": "2:59",
-          "duration": "0:02"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/oa7951Aw-QdHIhJ8rChTT"
-        }
-      ],
-      "name": "JRUN_0080",
-      "description": "Sven firing and trilobot avoiding",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
-              }
-            ],
-            "name": "JNGLE-R_10A-003",
-            "description": "Sven running through the jungle",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGLE-R_10A-003.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "2:51",
-          "end": "2:54",
-          "duration": "0:03"
+          "start": "2:41",
+          "end": "2:42",
+          "duration": "0:01"
         }
       }
     },
@@ -3769,68 +3390,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/SQgakx2igV7mVqoaxd3qo"
+          "identifierValue": "sht/IVSvlipNczT0JpYHjJQ2j"
         }
       ],
-      "name": "JPLAT_0030",
-      "description": "Sven gets an idea",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
-              }
-            ],
-            "name": "JNGL-L-12A-001",
-            "description": "Sven blasts fruit",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGL-L-12A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "3:08",
-          "end": "3:09",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/brZR5BZpBEv3bxSCoUmIQ"
-        }
-      ],
-      "name": "JRUN_0130",
-      "description": "Sven reacting to explosion",
+      "name": "JRUN_0090",
+      "description": "Sven desperately attacking",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -3872,8 +3436,216 @@
               "functionalType": "capture"
             }
           },
-          "start": "3:03",
-          "end": "3:05",
+          "start": "2:54",
+          "end": "2:57",
+          "duration": "0:03"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/qBGPqNLgIjHDYkjvbwIqS"
+        }
+      ],
+      "name": "JRUN_0070",
+      "description": "Trilobot closes in",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/5QV2CPwGjakzDlFBTYns2"
+              }
+            ],
+            "name": "JRUN_0070",
+            "description": "Trilobot closes in",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/zioY5Y9F0XY08VbiU2CCG"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "2:50",
+          "end": "2:51",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/oa7951Aw-QdHIhJ8rChTT"
+        }
+      ],
+      "name": "JRUN_0080",
+      "description": "Sven firing and trilobot avoiding",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+              }
+            ],
+            "name": "JNGLE-R_10A-003",
+            "description": "Sven running through the jungle",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGLE-R_10A-003.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "2:51",
+          "end": "2:54",
+          "duration": "0:03"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/F76Zt-hA35Jp4VG7kL997"
+        }
+      ],
+      "name": "JRUN_0030",
+      "description": "Sven adjusts welder",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+              }
+            ],
+            "name": "JNGLE-R_10A-003",
+            "description": "Sven running through the jungle",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGLE-R_10A-003.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "2:45",
+          "end": "2:46",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/_3TwibG-ZprUOsSpkXZGC"
+        }
+      ],
+      "name": "JRUN_0100",
+      "description": "Trilobot POV shooting",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/dYhjk66oCQ1yI6mdosaHX"
+              }
+            ],
+            "name": "JRUN_0100",
+            "description": "Trilobot POV shooting",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/hHAuC-i6rsfnOzpLa-yGe"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "2:57",
+          "end": "2:59",
           "duration": "0:02"
         }
       }
@@ -3940,6 +3712,120 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
+          "identifierValue": "sht/8TYfYSUa8c32tFm5G7oOf"
+        }
+      ],
+      "name": "BECH_0230",
+      "description": "Sven running through Jungle",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/4fSdq1OXYp3igRsYGMYvU"
+              }
+            ],
+            "name": "JNGLE-R_10A-001",
+            "description": "Sven running through the jungle",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/fpyTvL7jp5bk_HgwoxOCz"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGLE-R_10A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "2:39",
+          "end": "2:40",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/brZR5BZpBEv3bxSCoUmIQ"
+        }
+      ],
+      "name": "JRUN_0130",
+      "description": "Sven reacting to explosion",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+              }
+            ],
+            "name": "JNGLE-R_10A-003",
+            "description": "Sven running through the jungle",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGLE-R_10A-003.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "3:03",
+          "end": "3:05",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
           "identifierValue": "sht/0CvYFSefExhdQ_ZVPNwV_"
         }
       ],
@@ -3997,11 +3883,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/v0qn0kO0k4HNF8sJmtX2W"
+          "identifierValue": "sht/lH7vbw7YDl1l8rZ-AFIMa"
         }
       ],
-      "name": "JPLAT_0010",
-      "description": "Sven stops to see where he goes next",
+      "name": "JRUN_0020",
+      "description": "Sven stops and faces Trilobot",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -4014,17 +3900,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
+                "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
               }
             ],
-            "name": "JNGL-L-12A-001",
-            "description": "Sven blasts fruit",
+            "name": "JNGLE-R_10A-003",
+            "description": "Sven running through the jungle",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
+                  "identifierValue": "astsc/sr6X3QaS9VSNcDPxmDn5N"
                 }
               ],
               "structuralProperties": {
@@ -4033,7 +3919,7 @@
                   "recordType": "item"
                 },
                 "fileDetails": {
-                  "fileName": "JNGL-L-12A-001.mov",
+                  "fileName": "JNGLE-R_10A-003.mov",
                   "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
                   "fileExtension": "mov"
                 }
@@ -4043,65 +3929,8 @@
               "functionalType": "capture"
             }
           },
-          "start": "3:05",
-          "end": "3:06",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/gUTfqd0gc-b5DbCuDYzYD"
-        }
-      ],
-      "name": "JPLAT_0080",
-      "description": "Sven hits fruit",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
-              }
-            ],
-            "name": "JNGL-L-12A-001",
-            "description": "Sven blasts fruit",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGL-L-12A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "3:13",
-          "end": "3:14",
+          "start": "2:44",
+          "end": "2:45",
           "duration": "0:01"
         }
       }
@@ -4160,6 +3989,120 @@
           "start": "3:06",
           "end": "3:08",
           "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/SQgakx2igV7mVqoaxd3qo"
+        }
+      ],
+      "name": "JPLAT_0030",
+      "description": "Sven gets an idea",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
+              }
+            ],
+            "name": "JNGL-L-12A-001",
+            "description": "Sven blasts fruit",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGL-L-12A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "3:08",
+          "end": "3:09",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/v0qn0kO0k4HNF8sJmtX2W"
+        }
+      ],
+      "name": "JPLAT_0010",
+      "description": "Sven stops to see where he goes next",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
+              }
+            ],
+            "name": "JNGL-L-12A-001",
+            "description": "Sven blasts fruit",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGL-L-12A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "3:05",
+          "end": "3:06",
+          "duration": "0:01"
         }
       }
     },
@@ -4272,63 +4215,6 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/naJ_Pji3HqyBUMHr-Qizm"
-        }
-      ],
-      "name": "JPLAT_0050",
-      "description": "Sven gains his composure",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
-              }
-            ],
-            "name": "JNGL-L-12A-001",
-            "description": "Sven blasts fruit",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "JNGL-L-12A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "3:10",
-          "end": "3:11",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
           "identifierValue": "sht/rH_rEN3Frgku0AbF_yaAm"
         }
       ],
@@ -4386,11 +4272,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/bqvl0jZM0tDQ54CobuaVW"
+          "identifierValue": "sht/naJ_Pji3HqyBUMHr-Qizm"
         }
       ],
-      "name": "JPLAT_0090",
-      "description": "Sven takes his shot",
+      "name": "JPLAT_0050",
+      "description": "Sven gains his composure",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -4432,8 +4318,112 @@
               "functionalType": "capture"
             }
           },
-          "start": "3:14",
-          "end": "3:15",
+          "start": "3:10",
+          "end": "3:11",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/7WPlF8DzDoMwErcg2_kEW"
+        }
+      ],
+      "name": "JPLAT_0120",
+      "description": "Top angle of explosion",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/CrQZFvNE--lx_paNT3B6C"
+              }
+            ],
+            "name": "JPLAT_0120",
+            "description": "Top angle of explosion",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/VuBihduOK00kyRp24HSmW"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "3:17",
+          "end": "3:18",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/gUTfqd0gc-b5DbCuDYzYD"
+        }
+      ],
+      "name": "JPLAT_0080",
+      "description": "Sven hits fruit",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
+              }
+            ],
+            "name": "JNGL-L-12A-001",
+            "description": "Sven blasts fruit",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGL-L-12A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "3:13",
+          "end": "3:14",
           "duration": "0:01"
         }
       }
@@ -4537,6 +4527,120 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
+          "identifierValue": "sht/H265KLcXZ-QHAr6-E4vqY"
+        }
+      ],
+      "name": "JPLAT_0140",
+      "description": "Sven gets up and looks around",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/wVf-WdNqBaHXXGsvMjePc"
+              }
+            ],
+            "name": "PLAT_13A-001",
+            "description": "Sven walks out onto plateau to see the city",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/SVi-9fryEZ-4YK56DMbNj"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "PLAT_13A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "3:22",
+          "end": "3:28",
+          "duration": "0:06"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/csKWmIwuclUwYP2TMRmSX"
+        }
+      ],
+      "name": "JPLAT_0150",
+      "description": "Sven stumbles forward",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/wVf-WdNqBaHXXGsvMjePc"
+              }
+            ],
+            "name": "PLAT_13A-001",
+            "description": "Sven walks out onto plateau to see the city",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/SVi-9fryEZ-4YK56DMbNj"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "PLAT_13A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "3:28",
+          "end": "3:29",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
           "identifierValue": "sht/htYZq3JW4DpOUn2W8hXS0"
         }
       ],
@@ -4575,6 +4679,157 @@
           },
           "start": "3:16",
           "end": "3:17",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/bqvl0jZM0tDQ54CobuaVW"
+        }
+      ],
+      "name": "JPLAT_0090",
+      "description": "Sven takes his shot",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
+              }
+            ],
+            "name": "JNGL-L-12A-001",
+            "description": "Sven blasts fruit",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/Bus9nuWuEmwP5EwppE_i-"
+                }
+              ],
+              "structuralProperties": {
+                "linkset": {
+                  "mediaType": "video/quicktime",
+                  "recordType": "item"
+                },
+                "fileDetails": {
+                  "fileName": "JNGL-L-12A-001.mov",
+                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
+                  "fileExtension": "mov"
+                }
+              }
+            },
+            "functionalCharacteristics": {
+              "functionalType": "capture"
+            }
+          },
+          "start": "3:14",
+          "end": "3:15",
+          "duration": "0:01"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/W2edzt-vW-7Q5NdbjMgum"
+        }
+      ],
+      "name": "JPLAT_0190",
+      "description": "Over the shoulder view of valley",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/mVOvDGFpK82Kl5_J4p_cK"
+              }
+            ],
+            "name": "JPLAT_0190",
+            "description": "Over the shoulder view of valley",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/_Y6ofHG6ggz5rjndsWYGf"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "3:38",
+          "end": "3:40",
+          "duration": "0:02"
+        }
+      }
+    },
+    {
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "sht/e5encRXuHdIqALsGKEEoT"
+        }
+      ],
+      "name": "JPLAT_0210",
+      "description": "City view",
+      "structuralCharacteristics": {
+        "structuralType": null,
+        "structuralProperties": null
+      },
+      "functionalCharacteristics": {
+        "functionalType": "shot",
+        "functionalProperties": {
+          "source": {
+            "entityType": "Asset",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/RhB2vLn7FPlMs0J1S7ntk"
+              }
+            ],
+            "name": "JPLAT_0210",
+            "description": "City view",
+            "structuralCharacteristics": {
+              "structuralType": "digital.movingImage",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "astsc/GIrlQXh74QbcdjDT5g2uT"
+                }
+              ],
+              "structuralProperties": null
+            },
+            "functionalCharacteristics": {
+              "functionalType": "cgi.render"
+            }
+          },
+          "start": "3:43",
+          "end": "3:44",
           "duration": "0:01"
         }
       }
@@ -4633,63 +4888,6 @@
           "start": "3:32",
           "end": "3:34",
           "duration": "0:02"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/csKWmIwuclUwYP2TMRmSX"
-        }
-      ],
-      "name": "JPLAT_0150",
-      "description": "Sven stumbles forward",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/wVf-WdNqBaHXXGsvMjePc"
-              }
-            ],
-            "name": "PLAT_13A-001",
-            "description": "Sven walks out onto plateau to see the city",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/SVi-9fryEZ-4YK56DMbNj"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "PLAT_13A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "3:28",
-          "end": "3:29",
-          "duration": "0:01"
         }
       }
     },
@@ -4812,11 +5010,11 @@
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "sht/W2edzt-vW-7Q5NdbjMgum"
+          "identifierValue": "sht/SbYhrqegDK_gbpxfpbCT6"
         }
       ],
-      "name": "JPLAT_0190",
-      "description": "Over the shoulder view of valley",
+      "name": "JPLAT_0220",
+      "description": "Zoom out of Sven to city",
       "structuralCharacteristics": {
         "structuralType": null,
         "structuralProperties": null
@@ -4829,17 +5027,17 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "ast/mVOvDGFpK82Kl5_J4p_cK"
+                "identifierValue": "ast/AbSq1tToyZVR53uJWB9of"
               }
             ],
-            "name": "JPLAT_0190",
-            "description": "Over the shoulder view of valley",
+            "name": "JPLAT_0220",
+            "description": "Zoom out of Sven to city",
             "structuralCharacteristics": {
               "structuralType": "digital.movingImage",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
-                  "identifierValue": "astsc/_Y6ofHG6ggz5rjndsWYGf"
+                  "identifierValue": "astsc/whtvxjcW-blXI71_Bb74Y"
                 }
               ],
               "structuralProperties": null
@@ -4848,113 +5046,9 @@
               "functionalType": "cgi.render"
             }
           },
-          "start": "3:38",
-          "end": "3:40",
-          "duration": "0:02"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/H265KLcXZ-QHAr6-E4vqY"
-        }
-      ],
-      "name": "JPLAT_0140",
-      "description": "Sven gets up and looks around",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/wVf-WdNqBaHXXGsvMjePc"
-              }
-            ],
-            "name": "PLAT_13A-001",
-            "description": "Sven walks out onto plateau to see the city",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/SVi-9fryEZ-4YK56DMbNj"
-                }
-              ],
-              "structuralProperties": {
-                "linkset": {
-                  "mediaType": "video/quicktime",
-                  "recordType": "item"
-                },
-                "fileDetails": {
-                  "fileName": "PLAT_13A-001.mov",
-                  "filePath": "\\MovieLabs-Studio\\hyperspace-madness\\2_production\\Shoots\\Game-On\\Takes\\",
-                  "fileExtension": "mov"
-                }
-              }
-            },
-            "functionalCharacteristics": {
-              "functionalType": "capture"
-            }
-          },
-          "start": "3:22",
-          "end": "3:28",
-          "duration": "0:06"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/7WPlF8DzDoMwErcg2_kEW"
-        }
-      ],
-      "name": "JPLAT_0120",
-      "description": "Top angle of explosion",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/CrQZFvNE--lx_paNT3B6C"
-              }
-            ],
-            "name": "JPLAT_0120",
-            "description": "Top angle of explosion",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/VuBihduOK00kyRp24HSmW"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "3:17",
-          "end": "3:18",
-          "duration": "0:01"
+          "start": "3:44",
+          "end": "3:51",
+          "duration": "0:07"
         }
       }
     },
@@ -5012,100 +5106,6 @@
           "start": "3:34",
           "end": "3:38",
           "duration": "0:04"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/e5encRXuHdIqALsGKEEoT"
-        }
-      ],
-      "name": "JPLAT_0210",
-      "description": "City view",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/RhB2vLn7FPlMs0J1S7ntk"
-              }
-            ],
-            "name": "JPLAT_0210",
-            "description": "City view",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/GIrlQXh74QbcdjDT5g2uT"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "3:43",
-          "end": "3:44",
-          "duration": "0:01"
-        }
-      }
-    },
-    {
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "sht/SbYhrqegDK_gbpxfpbCT6"
-        }
-      ],
-      "name": "JPLAT_0220",
-      "description": "Zoom out of Sven to city",
-      "structuralCharacteristics": {
-        "structuralType": null,
-        "structuralProperties": null
-      },
-      "functionalCharacteristics": {
-        "functionalType": "shot",
-        "functionalProperties": {
-          "source": {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "ast/AbSq1tToyZVR53uJWB9of"
-              }
-            ],
-            "name": "JPLAT_0220",
-            "description": "Zoom out of Sven to city",
-            "structuralCharacteristics": {
-              "structuralType": "digital.movingImage",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/whtvxjcW-blXI71_Bb74Y"
-                }
-              ],
-              "structuralProperties": null
-            },
-            "functionalCharacteristics": {
-              "functionalType": "cgi.render"
-            }
-          },
-          "start": "3:44",
-          "end": "3:51",
-          "duration": "0:07"
         }
       }
     }

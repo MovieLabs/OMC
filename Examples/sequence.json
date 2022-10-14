@@ -1,0 +1,1548 @@
+{
+  "allSequences": [
+    {
+      "entityType": "Sequence",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "seq/nzVbXQShumpqiXA74GAMQ"
+        }
+      ],
+      "name": "SATL",
+      "description": "Sven working on satellite and attacked",
+      "sequenceType": "vfx",
+      "SCD": {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "scd/viy2Y49M8Q5FhptyXbXpv"
+          }
+        ],
+        "structuralCharacteristics": {
+          "structuralType": null
+        },
+        "functionalCharacteristics": {
+          "functionalType": "scd",
+          "functionalProperties": {
+            "component": [
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/Y9iyr066dBee0t9tHfe5B"
+                    }
+                  ]
+                },
+                "sourceStart": "0:20",
+                "sourceEnd": "0:18",
+                "duration": "0:18"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/RcLlIg-SdvvgDMpnRrsg6"
+                    }
+                  ]
+                },
+                "sourceStart": "0:38",
+                "sourceEnd": "0:06",
+                "duration": "0:06"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/HcUPrscGAEdfFvMu3S2pn"
+                    }
+                  ]
+                },
+                "sourceStart": "0:44",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/Q9_oc0p-NvqyAbR-SiCpK"
+                    }
+                  ]
+                },
+                "sourceStart": "0:47",
+                "sourceEnd": "0:04",
+                "duration": "0:04"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/OUvbY4lTNuu1_P22T_S-2"
+                    }
+                  ]
+                },
+                "sourceStart": "0:51",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/R_K_Bpmm1JrZaH8e-piOi"
+                    }
+                  ]
+                },
+                "sourceStart": "0:52",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/c0DPhFczdzomgRobE8z8X"
+                    }
+                  ]
+                },
+                "sourceStart": "0:53",
+                "sourceEnd": "0:04",
+                "duration": "0:04"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/SXVadL9QqNYlROzREa65v"
+                    }
+                  ]
+                },
+                "sourceStart": "0:57",
+                "sourceEnd": "0:04",
+                "duration": "0:04"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/FpAepX3uh6LSPdFZaUnWs"
+                    }
+                  ]
+                },
+                "sourceStart": "1:01",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/Iy4HS9d5i6TeltImumRZ-"
+                    }
+                  ]
+                },
+                "sourceStart": "1:04",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/xt8cC0ztTzGo7MhL3fPxM"
+                    }
+                  ]
+                },
+                "sourceStart": "1:07",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/PqskaHwvcV1SIQBuisONm"
+                    }
+                  ]
+                },
+                "sourceStart": "1:10",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/VAKOVkMaLkT8dHEb5L6f6"
+                    }
+                  ]
+                },
+                "sourceStart": "1:12",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/ZM3VMgGU8mOEltt6nTaNL"
+                    }
+                  ]
+                },
+                "sourceStart": "1:13",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/MkGptueVSEBp0w4Jjxn4B"
+                    }
+                  ]
+                },
+                "sourceStart": "1:14",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/saQ5oEUS3XU3ajuIV5iS2"
+                    }
+                  ]
+                },
+                "sourceStart": "1:15",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/21XLXyQBLYzd6Brm_qwaW"
+                    }
+                  ]
+                },
+                "sourceStart": "1:16",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/2BxyREiHl_bm9V2ORA1jq"
+                    }
+                  ]
+                },
+                "sourceStart": "1:17",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/iR37TeJW7NH4y40DHA1on"
+                    }
+                  ]
+                },
+                "sourceStart": "1:18",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/jtCDKjpy1XnCso2HaBNfp"
+                    }
+                  ]
+                },
+                "sourceStart": "1:19",
+                "sourceEnd": "0:04",
+                "duration": "0:04"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/6zvh0unEd_JQVHENj5-h9"
+                    }
+                  ]
+                },
+                "sourceStart": "1:23",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/hhjjfz9PPs39dQZqdTAet"
+                    }
+                  ]
+                },
+                "sourceStart": "1:24",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/UO35Ql8_amcPGWMJhYNuJ"
+                    }
+                  ]
+                },
+                "sourceStart": "1:25",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/9uzGmu3nPy2Kp5NJAYFjV"
+                    }
+                  ]
+                },
+                "sourceStart": "1:27",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/-xtfc3eRN9Iral29Dgm8P"
+                    }
+                  ]
+                },
+                "sourceStart": "1:29",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "entityType": "Sequence",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "seq/sXuUF7mjgNrnVsR_dZoQm"
+        }
+      ],
+      "name": "TITL",
+      "description": "Titles and open",
+      "sequenceType": "vfx",
+      "SCD": {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "scd/OJvQoGF7VCOgy3_Oldh-J"
+          }
+        ],
+        "structuralCharacteristics": {
+          "structuralType": null
+        },
+        "functionalCharacteristics": {
+          "functionalType": "scd",
+          "functionalProperties": {
+            "component": [
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/k_QZB_TR7sf9lLoBsjofk"
+                    }
+                  ]
+                },
+                "sourceStart": "0:00",
+                "sourceEnd": "0:17",
+                "duration": "0:17"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/ZDEOHGXQ-sESNFNXcGXgS"
+                    }
+                  ]
+                },
+                "sourceStart": "0:17",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "entityType": "Sequence",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "seq/qijGAkmZkl8A9_4EpyOuH"
+        }
+      ],
+      "name": "BECH",
+      "description": "Sven swims to beach, phones home and is cchased",
+      "sequenceType": "vfx",
+      "SCD": {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "scd/VVYtLvnVjBgpUV5aTd6Oq"
+          }
+        ],
+        "structuralCharacteristics": {
+          "structuralType": null
+        },
+        "functionalCharacteristics": {
+          "functionalType": "scd",
+          "functionalProperties": {
+            "component": [
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/U216vAqsTiueMwxb6VXhl"
+                    }
+                  ]
+                },
+                "sourceStart": "1:48",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/J_CAdaLeCXtcqrNqAEpRL"
+                    }
+                  ]
+                },
+                "sourceStart": "1:50",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/zptR8tLruaIoNGkZ11nby"
+                    }
+                  ]
+                },
+                "sourceStart": "1:52",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/VX55q6h7bAvlusfsbNfW2"
+                    }
+                  ]
+                },
+                "sourceStart": "1:53",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/LMVd3CfjrHmoSg6sjLMDS"
+                    }
+                  ]
+                },
+                "sourceStart": "1:54",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/gF-syZvXZwaX9okz_ekmi"
+                    }
+                  ]
+                },
+                "sourceStart": "1:56",
+                "sourceEnd": "0:08",
+                "duration": "0:08"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/zZf3WglgHPl6AAjPXp1UA"
+                    }
+                  ]
+                },
+                "sourceStart": "2:04",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/78k3SGVdjhrtprSZJv_IQ"
+                    }
+                  ]
+                },
+                "sourceStart": "2:06",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/R1xQtfJ386uvl5ptyH6vD"
+                    }
+                  ]
+                },
+                "sourceStart": "2:07",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/BoqugPcuZPr7URcYNmsm-"
+                    }
+                  ]
+                },
+                "sourceStart": "2:08",
+                "sourceEnd": "0:15",
+                "duration": "0:15"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/JcFgx460TVYNrIymSNHN0"
+                    }
+                  ]
+                },
+                "sourceStart": "2:23",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/QtOKRGMNV0--OFMY4o99A"
+                    }
+                  ]
+                },
+                "sourceStart": "2:25",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/49vCQ6VZ8rDTeqzsEr-z0"
+                    }
+                  ]
+                },
+                "sourceStart": "2:26",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/u1uQ-SL8myMVO1MWVuzwa"
+                    }
+                  ]
+                },
+                "sourceStart": "2:27",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/xL7uP6iY1h6EDRA5-zD1N"
+                    }
+                  ]
+                },
+                "sourceStart": "2:28",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/Ns_IpCiNLNVV9MiVea72O"
+                    }
+                  ]
+                },
+                "sourceStart": "2:29",
+                "sourceEnd": "0:04",
+                "duration": "0:04"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/xG7Q3JGVxOgM8bywXvs3u"
+                    }
+                  ]
+                },
+                "sourceStart": "2:33",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/8tDnAddXxNbIZqu_9m4g3"
+                    }
+                  ]
+                },
+                "sourceStart": "2:34",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/cduamxtRrj4NguwlYZ9uk"
+                    }
+                  ]
+                },
+                "sourceStart": "2:35",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/j12MgyDalDRVCx--R42dK"
+                    }
+                  ]
+                },
+                "sourceStart": "2:36",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/4qtpHC9Vbi-7DABE6fO_U"
+                    }
+                  ]
+                },
+                "sourceStart": "2:37",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/SlienppqHA06XfqPwu_CL"
+                    }
+                  ]
+                },
+                "sourceStart": "2:38",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/8TYfYSUa8c32tFm5G7oOf"
+                    }
+                  ]
+                },
+                "sourceStart": "2:39",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/DZLujYeIwP8SnClTQXzOw"
+                    }
+                  ]
+                },
+                "sourceStart": "2:40",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/jyTuXXTT1_j1LB9H2ojYD"
+                    }
+                  ]
+                },
+                "sourceStart": "2:41",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "entityType": "Sequence",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "seq/tWb4rZOunWWHUFktA2NpD"
+        }
+      ],
+      "name": "JPLAT",
+      "description": "Sven stumbles onto hidden base",
+      "sequenceType": "vfx",
+      "SCD": {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "scd/HoEZeP-xaO5J3UknRjREr"
+          }
+        ],
+        "structuralCharacteristics": {
+          "structuralType": null
+        },
+        "functionalCharacteristics": {
+          "functionalType": "scd",
+          "functionalProperties": {
+            "component": [
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/v0qn0kO0k4HNF8sJmtX2W"
+                    }
+                  ]
+                },
+                "sourceStart": "3:05",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/v0qn0kO0k4HNF8sJmtX2W"
+                    }
+                  ]
+                },
+                "sourceStart": "3:06",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/kgI7EexmpwNDEzrAuyBIm"
+                    }
+                  ]
+                },
+                "sourceStart": "3:08",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/SQgakx2igV7mVqoaxd3qo"
+                    }
+                  ]
+                },
+                "sourceStart": "3:09",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/ePoZnWaq0S_lRp-_eHLPt"
+                    }
+                  ]
+                },
+                "sourceStart": "3:10",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/naJ_Pji3HqyBUMHr-Qizm"
+                    }
+                  ]
+                },
+                "sourceStart": "3:11",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/w6qQIOJzNT08NqJ_j0-Pt"
+                    }
+                  ]
+                },
+                "sourceStart": "3:12",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/rH_rEN3Frgku0AbF_yaAm"
+                    }
+                  ]
+                },
+                "sourceStart": "3:13",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/gUTfqd0gc-b5DbCuDYzYD"
+                    }
+                  ]
+                },
+                "sourceStart": "3:14",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/bqvl0jZM0tDQ54CobuaVW"
+                    }
+                  ]
+                },
+                "sourceStart": "3:15",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/oDeZkECPZMa6FlBFB7jrv"
+                    }
+                  ]
+                },
+                "sourceStart": "3:16",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/htYZq3JW4DpOUn2W8hXS0"
+                    }
+                  ]
+                },
+                "sourceStart": "3:17",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/7WPlF8DzDoMwErcg2_kEW"
+                    }
+                  ]
+                },
+                "sourceStart": "3:18",
+                "sourceEnd": "0:04",
+                "duration": "0:04"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/kGeCS23HdZWnQewtIVDSd"
+                    }
+                  ]
+                },
+                "sourceStart": "3:22",
+                "sourceEnd": "0:06",
+                "duration": "0:06"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/H265KLcXZ-QHAr6-E4vqY"
+                    }
+                  ]
+                },
+                "sourceStart": "3:28",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/csKWmIwuclUwYP2TMRmSX"
+                    }
+                  ]
+                },
+                "sourceStart": "3:29",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/go3_yxDC6H4eBCiDXw0Ad"
+                    }
+                  ]
+                },
+                "sourceStart": "3:32",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/h6uJjz6dgeirle-Lu_r2q"
+                    }
+                  ]
+                },
+                "sourceStart": "3:34",
+                "sourceEnd": "0:04",
+                "duration": "0:04"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/TCq-UR99yB8w6U66e7n7R"
+                    }
+                  ]
+                },
+                "sourceStart": "3:38",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/W2edzt-vW-7Q5NdbjMgum"
+                    }
+                  ]
+                },
+                "sourceStart": "3:40",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/p4DdPtd7JCIDon4Rey6TD"
+                    }
+                  ]
+                },
+                "sourceStart": "3:43",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/e5encRXuHdIqALsGKEEoT"
+                    }
+                  ]
+                },
+                "sourceStart": "3:44",
+                "sourceEnd": "0:07",
+                "duration": "0:07"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "entityType": "Sequence",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "seq/Yss5Iv4RSEHahIu4NT7zj"
+        }
+      ],
+      "name": "FALL",
+      "description": "Sven is chased through the atmosphere and crashes",
+      "sequenceType": "vfx",
+      "SCD": {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "scd/HkhA5_jqtxAROg9HfQThj"
+          }
+        ],
+        "structuralCharacteristics": {
+          "structuralType": null
+        },
+        "functionalCharacteristics": {
+          "functionalType": "scd",
+          "functionalProperties": {
+            "component": [
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/bQiAIdDUmNVf0ShqEz15J"
+                    }
+                  ]
+                },
+                "sourceStart": "1:30",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/YPGzEZ3D2q7hgjE0HyftB"
+                    }
+                  ]
+                },
+                "sourceStart": "1:32",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/lNaVfg3l8G-g2_Q986pdR"
+                    }
+                  ]
+                },
+                "sourceStart": "1:33",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/oLimcTHblVuL4FcXohaCX"
+                    }
+                  ]
+                },
+                "sourceStart": "1:35",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/i-C-3o6Skpv7LnyieUCCc"
+                    }
+                  ]
+                },
+                "sourceStart": "1:38",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/ILyIxYzfcrrxaP2Hb0Hdq"
+                    }
+                  ]
+                },
+                "sourceStart": "1:40",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/dmdQ8HdnSMcX9IOpTJobB"
+                    }
+                  ]
+                },
+                "sourceStart": "1:41",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/UZTJgz1lxoCB80JZSzffK"
+                    }
+                  ]
+                },
+                "sourceStart": "1:43",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/2ZJmeocNlzieMKYdzFfzY"
+                    }
+                  ]
+                },
+                "sourceStart": "1:44",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/oR8tZCTznA-KwmdP0SZ1v"
+                    }
+                  ]
+                },
+                "sourceStart": "1:45",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "entityType": "Sequence",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "seq/oGZM8k4FDogutAY-NCURE"
+        }
+      ],
+      "name": "JRUN",
+      "description": "Sven runs into jungle and confronts Trilobot",
+      "sequenceType": "vfx",
+      "SCD": {
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "scd/gQtVLheG71slJIEnZe4Zz"
+          }
+        ],
+        "structuralCharacteristics": {
+          "structuralType": null
+        },
+        "functionalCharacteristics": {
+          "functionalType": "scd",
+          "functionalProperties": {
+            "component": [
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/7kHDbU7piSZxQXkJhOQjb"
+                    }
+                  ]
+                },
+                "sourceStart": "2:42",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/lH7vbw7YDl1l8rZ-AFIMa"
+                    }
+                  ]
+                },
+                "sourceStart": "2:44",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/F76Zt-hA35Jp4VG7kL997"
+                    }
+                  ]
+                },
+                "sourceStart": "2:45",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/V5tFYVtsIQ5YlVyCpInc4"
+                    }
+                  ]
+                },
+                "sourceStart": "2:46",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/ylWbSZ-hvXpKAVs968tC4"
+                    }
+                  ]
+                },
+                "sourceStart": "2:47",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/i8qn7g96zT0bI4HBb0LWY"
+                    }
+                  ]
+                },
+                "sourceStart": "2:49",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/qBGPqNLgIjHDYkjvbwIqS"
+                    }
+                  ]
+                },
+                "sourceStart": "2:50",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/oa7951Aw-QdHIhJ8rChTT"
+                    }
+                  ]
+                },
+                "sourceStart": "2:51",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/IVSvlipNczT0JpYHjJQ2j"
+                    }
+                  ]
+                },
+                "sourceStart": "2:54",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/_3TwibG-ZprUOsSpkXZGC"
+                    }
+                  ]
+                },
+                "sourceStart": "2:57",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/M6kE_lMBzXO1sG-VLusre"
+                    }
+                  ]
+                },
+                "sourceStart": "2:59",
+                "sourceEnd": "0:03",
+                "duration": "0:03"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/0CvYFSefExhdQ_ZVPNwV_"
+                    }
+                  ]
+                },
+                "sourceStart": "3:02",
+                "sourceEnd": "0:01",
+                "duration": "0:01"
+              },
+              {
+                "scdComponentSource": {
+                  "entityType": "Asset",
+                  "identifier": [
+                    {
+                      "identifierScope": "labkoat",
+                      "identifierValue": "sht/brZR5BZpBEv3bxSCoUmIQ"
+                    }
+                  ]
+                },
+                "sourceStart": "3:03",
+                "sourceEnd": "0:02",
+                "duration": "0:02"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

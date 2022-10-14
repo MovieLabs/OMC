@@ -1,12 +1,14 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "",
-	"title": "Editorial Sequence",
+	"title": "Sequence",
 	"description": "A sequence of shots linked to creative intent.",
 	"type": "object",
 	"required": [
 		"entityType",
-		"identifier"
+		"identifier",
+		"sequenceType",
+		"SCD"
 	],
 	"properties": {
 		"entityInfo": {
@@ -23,15 +25,15 @@
 		},
 		"name": {
 			"title": "Sequence Name",
-			"description": "A human readable name for the editorial sequence",
+			"description": "A human readable name for the sequence",
 			"type": [
 				"string",
 				"null"
 			]
 		},
 		"description": {
-			"title": "Editorial Sequence Description",
-			"description": "A brief description of the editorial sequence",
+			"title": "Sequence Description",
+			"description": "A brief description of the sequence",
 			"type": [
 				"string",
 				"null"
@@ -41,26 +43,19 @@
 			"description": "The specific type of sequence",
 			"enum": ["editorial", "image", "animation", "vfx", "color"]
 		},
-		"sequenceChronologyDescriptor": {
-			"type": "array",
-			"items": {
-				"properties": {
-					"order": {
-						"type": "number"
-					},
-					"source": {
-						"$ref": "../Asset/Asset.json"
-					}
-				}
-			}
+		"SCD": {
+			"title": "Sequence Chronology Descriptor",
+			"description": "Describes how a series of Shots is used to generate a Sequence",
+			"$ref": "../Asset/Asset.json"			
 		},
 		"customData": {
 			"title": "Custom Data",
 			"$ref": "../Model/definitions.json#/properties/customData"
 		},
 		"Context": {
-			"title": "Editorial Sequence Context",
+			"title": "Sequence Context",
 			"$ref": "./Context.json"
 		}
-	}
+	},
+	"additionalProperties": false
 }

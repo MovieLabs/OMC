@@ -24,10 +24,10 @@
       "$ref": "https://movielabs.com/omc/MediaCreationContext/NarrativeProp"
     },
     {
-      "$ref": "https://movielabs.com/omc/MediaCreationContext/NarrativeSetDressing"
+      "$ref": "https://movielabs.com/omc/MediaCreationContext/NarrativeScene"
     },
     {
-      "$ref": "https://movielabs.com/omc/MediaCreationContext/NarrativeScene"
+      "$ref": "https://movielabs.com/omc/MediaCreationContext/NarrativeSetDressing"
     },
     {
       "$ref": "https://movielabs.com/omc/MediaCreationContext/NarrativeWardrobe"
@@ -45,9 +45,6 @@
       "$ref": "https://movielabs.com/omc/MediaCreationContext/Slate"
     },
     {
-      "$ref": "https://movielabs.com/omc/Task/Task"
-    },
-    {
       "$ref": "https://movielabs.com/omc/Participant/Participant"
     },
     {
@@ -58,6 +55,9 @@
     },
     {
       "$ref": "https://movielabs.com/omc/Participant/Role"
+    },
+    {
+      "$ref": "https://movielabs.com/omc/Task/Task"
     },
     {
       "$ref": "https://movielabs.com/omc/Utility/Location"
@@ -1821,12 +1821,14 @@
     },
     "https://movielabs.com/omc/MediaCreationContext/Sequence": {
       "$id": "https://movielabs.com/omc/MediaCreationContext/Sequence",
-      "title": "Editorial Sequence",
+      "title": "Sequence",
       "description": "A sequence of shots linked to creative intent.",
       "type": "object",
       "required": [
         "entityType",
-        "identifier"
+        "identifier",
+        "sequenceType",
+        "SCD"
       ],
       "properties": {
         "entityInfo": {
@@ -1843,15 +1845,15 @@
         },
         "name": {
           "title": "Sequence Name",
-          "description": "A human readable name for the editorial sequence",
+          "description": "A human readable name for the sequence",
           "type": [
             "string",
             "null"
           ]
         },
         "description": {
-          "title": "Editorial Sequence Description",
-          "description": "A brief description of the editorial sequence",
+          "title": "Sequence Description",
+          "description": "A brief description of the sequence",
           "type": [
             "string",
             "null"
@@ -1867,28 +1869,21 @@
             "color"
           ]
         },
-        "sequenceChronologyDescriptor": {
-          "type": "array",
-          "items": {
-            "properties": {
-              "order": {
-                "type": "number"
-              },
-              "source": {
-                "$ref": "../Asset/Asset"
-              }
-            }
-          }
+        "SCD": {
+          "title": "Sequence Chronology Descriptor",
+          "description": "Describes how a series of Shots is used to generate a Sequence",
+          "$ref": "../Asset/Asset"
         },
         "customData": {
           "title": "Custom Data",
           "$ref": "../Model/definitions#/properties/customData"
         },
         "Context": {
-          "title": "Editorial Sequence Context",
+          "title": "Sequence Context",
           "$ref": "./Context"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "https://movielabs.com/omc/MediaCreationContext/CreativeWork": {
       "$id": "https://movielabs.com/omc/MediaCreationContext/CreativeWork",
