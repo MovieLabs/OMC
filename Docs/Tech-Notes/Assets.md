@@ -1,5 +1,5 @@
 # Assets
-Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets needed for a given workflow and provide a means for the applications and services to find and access the files and other assets they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., a proxy that is derived from the OCF), and some aren't (e.g., the scene in which the asset is used.)
+Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets needed for a given workflow and provide a means for the applications and services to find and access the files and other assets they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., a proxy that is derived from the OCF), and some aren't (e.g., the scene in which the asset is used).
 
 The 2030 vision establishes some core ideas behind the handling of assets:
 - Separation of its [structural and functional characteristics](./Functional&Structural.md)
@@ -7,7 +7,7 @@ The 2030 vision establishes some core ideas behind the handling of assets:
 
 In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of entities and each entity contains one or more identifiers. This tech note focuses on Assets.
 
-If there is only an identifier in the Asset, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL.) See  the [Identifiers section in Schema Structure](../Overview/Schema%20Structure.md#Identifiers%20and%20References) for more information.
+If there is only an identifier in the Asset, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL). See  the [Identifiers section in Schema Structure](../Overview/Schema%20Structure.md#Identifiers%20and%20References) for more information.
 
 Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. Assets advance through multiple versions and there might be different variants or representations of the same asset. *Note*: An extension to OMC for managing versions is underway; one if its most important features is that a version is itself just another Asset that can be used independently.
 
