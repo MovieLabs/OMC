@@ -1,5 +1,5 @@
 # Versions
-### 
+###
 
 This section is under development.
 
@@ -18,7 +18,7 @@ A variant is a distinct new thing that is still innately related to the thing fr
 
 A representation is another, equivalent form of something. For example, a low-res proxy of a video is a representation of a high-res original.
 
-In OMC JSON, representations of Assets can exist as separate objects connected by a relationships, or as a single object with two different sets of structural characteristics. (See Assets of an example of the latter.)
+In OMC JSON, representations of Assets can exist as separate objects connected by a relationships, or as a single object with two different sets of structural characteristics. (See Assets of an example of the latter).
 
 *Move all below here into 'stuff to use later'*
 

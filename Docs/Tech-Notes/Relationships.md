@@ -66,7 +66,7 @@ The example below shows how a Character entity with a Context can look. The Char
 
 ```
 
-Relationships almost always have a direction (from one entity to another) and typically have inverses (they can be traversed from either end.)  The name of the relationship indicates how A is related to B, which is not the same as how B is related to A.
+Relationships almost always have a direction (from one entity to another) and typically have inverses (they can be traversed from either end).  The name of the relationship indicates how A is related to B, which is not the same as how B is related to A.
 
 The name of the relationship carries semantic meaning and therefore can be used to infer the nature of the relation between two entities.
 

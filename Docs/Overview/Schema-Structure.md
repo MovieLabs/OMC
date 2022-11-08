@@ -196,7 +196,7 @@ There are not really standard mechanisms for encoding relationships in JSON. We 
 - When another entity is an intrinsic property of an entity
 - When you wish to use a named relationship, typically as part of a Context
 
-When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the property ``source`` in a Shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard.)
+When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the property ``source`` in a Shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard).
 ```JSON
 {
 	"entityType": "Asset",
