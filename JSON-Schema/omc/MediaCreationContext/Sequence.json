@@ -1,61 +1,82 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "",
-	"title": "Sequence",
-	"description": "A sequence of shots linked to creative intent.",
-	"type": "object",
-	"required": [
-		"entityType",
-		"identifier",
-		"sequenceType",
-		"SCD"
-	],
-	"properties": {
-		"entityInfo": {
-			"title": "Entity Information",
-			"$ref": "../Model/definitions.json#/properties/entityInfo"
-		},
-		"entityType": {
-			"title": "Entity Type",
-			"type": "string",
-			"const": "Sequence"
-		},
-		"identifier": {
-			"$ref": "../Utility/identifier.json"
-		},
-		"name": {
-			"title": "Sequence Name",
-			"description": "A human readable name for the sequence",
-			"type": [
-				"string",
-				"null"
-			]
-		},
-		"description": {
-			"title": "Sequence Description",
-			"description": "A brief description of the sequence",
-			"type": [
-				"string",
-				"null"
-			]
-		},
-		"sequenceType": {
-			"description": "The specific type of sequence",
-			"enum": ["editorial", "image", "animation", "vfx", "color"]
-		},
-		"SCD": {
-			"title": "Sequence Chronology Descriptor",
-			"description": "Describes how a series of Shots is used to generate a Sequence",
-			"$ref": "../Asset/Asset.json"			
-		},
-		"customData": {
-			"title": "Custom Data",
-			"$ref": "../Model/definitions.json#/properties/customData"
-		},
-		"Context": {
-			"title": "Sequence Context",
-			"$ref": "./Context.json"
-		}
-	},
-	"additionalProperties": false
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "",
+  "title": "Sequence",
+  "description": "A sequence of shots linked to creative intent.",
+  "type": "object",
+  "required": [
+    "entityType",
+    "identifier",
+    "sequenceType",
+    "SCD"
+  ],
+  "properties": {
+    "entityInfo": {
+      "title": "Entity Information",
+      "$ref": "../Model/definitions.json#/properties/entityInfo"
+    },
+    "entityType": {
+      "title": "Entity Type",
+      "type": "string",
+      "const": "Sequence"
+    },
+    "identifier": {
+      "$ref": "../Utility/identifier.json"
+    },
+    "name": {
+      "title": "Sequence Name",
+      "description": "A human readable name for the sequence",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "title": "Sequence Description",
+      "description": "A brief description of the sequence",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sequenceType": {
+      "description": "The specific type of sequence",
+      "enum": [
+        "editorial",
+        "image",
+        "animation",
+        "vfx",
+        "color"
+      ]
+    },
+    "shot": {
+      "title": "Shot manifest",
+      "description": "Describes all assets that may appear in the sequence",
+      "type": "array",
+      "items": [
+        {
+          "$ref": "../Asset/Asset.json"
+        }
+      ]
+    },
+    "SCD": {
+      "title": "Sequence Chronology Descriptor",
+      "description": "Describes how a series of Shots is used to generate a Sequence",
+      "type": "array",
+      "items": [
+        {
+          "$ref": "../Asset/Asset.json"
+        }
+      ]
+    },
+    "customData": {
+      "title": "Custom Data",
+      "$ref": "../Model/definitions.json#/properties/customData"
+    },
+    "Context": {
+      "title": "Sequence Context",
+      "$ref": "./Context.json"
+    }
+  },
+  "additionalProperties": false
 }
