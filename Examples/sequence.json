@@ -20,7 +20,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/EZc28t2KzSbIg3NueBf8A"
               }
-            ]
+            ],
+            "name": "JNGL-F_11A-001",
+            "description": "Explosion",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/U4oFc-znL61k5GckGfM8g"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/mXcZWbTWpEy9CJTllVIHs"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -29,7 +53,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/SzMlF2b2o7hgVORwmdX8j"
               }
-            ]
+            ],
+            "name": "TITL_0020",
+            "description": "Title Graphic",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/imJFAiui93yW4zdjUu2Da"
+                }
+              ],
+              "hasSlate": null
+            }
           }
         ],
         "SCD": [
@@ -110,7 +146,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/0HJDhrZEEtdmlX_lmTA4p"
               }
-            ]
+            ],
+            "name": "BECH_0010",
+            "description": "Sven lands in water",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/RPK1gJ_LS4SnVBQPOAB-n"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -119,7 +167,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/b_oqj0kNKNSGZM9T1Wt-8"
               }
-            ]
+            ],
+            "name": "BECH_0020",
+            "description": "Sven surfaces in water",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/rvJeusfoLUNpECFALg0Fe"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -128,7 +188,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/0sZxrhoHypKX91LGhGQNF"
               }
-            ]
+            ],
+            "name": "BECH-S_7A-002",
+            "description": "Sven swims toward the beach",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/hpvSW3KMsDViY5twUXuVq"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/EtyisWNoFVPrhXms1Mb0O"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -137,7 +221,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/xzHF2dXzEMJWfLHKGZlsq"
               }
-            ]
+            ],
+            "name": "BECH_0040",
+            "description": "Ship sinking",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/nkFfNf9lfRzeJY1lOa5A-"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -146,7 +242,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
               }
-            ]
+            ],
+            "name": "BECH-C_8A-003",
+            "description": "Sven talks to Kiera on the beach",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/jnNt3JqFsu2IuwiAWMoy6"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/-PNy6443MxM22n0tYFH-I"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -155,7 +275,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/b_2Gl0xx5gHMMmAWb0z1Y"
               }
-            ]
+            ],
+            "name": "BECH-T_9A-002",
+            "description": "Sven runs for cover on beach",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/3Io5VZm15wwsiSDehPeKx"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/kQeYrOpCXM6JhhQdLRGyy"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -164,7 +308,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/JUKq7aPMsCbpS7AhKBMHu"
               }
-            ]
+            ],
+            "name": "BECH_0120",
+            "description": "Trilobot opens fire",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/VVdgXnDYnoIDIGYZwXhQd"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -173,7 +329,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/zCFsFZUviUutDU2XFJkTa"
               }
-            ]
+            ],
+            "name": "BECH_0170",
+            "description": "Trilobot hovers and shoots",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/OlRBguvsBNu94igFQzVk_"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -182,7 +350,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/w2sS-a4naWAQWRRw_vcsW"
               }
-            ]
+            ],
+            "name": "BECH_0180",
+            "description": "Sven looks to Jungle",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/6NlWm8HY1dsGaDixNIZn5"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -191,7 +371,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/vt6jcOzWXnWiWDD-XIFbZ"
               }
-            ]
+            ],
+            "name": "BECH_0190",
+            "description": "Sven sees opening",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/i6nUtQip3sCWmNF8B8kWZ"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -200,7 +392,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/IXWKLsO_-l4wi-nLBpfrm"
               }
-            ]
+            ],
+            "name": "BECH_0200",
+            "description": "Sven makes his break",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/Cu3e75ipRhJQhR2Fwr6UK"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -209,7 +413,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/4fSdq1OXYp3igRsYGMYvU"
               }
-            ]
+            ],
+            "name": "JNGLE-R_10A-001",
+            "description": "Sven running through the jungle",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/4uwJhRNTqE3MoZaH6wFWS"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/gGhsjPdmldXyDbp-tC1Vb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -218,7 +446,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/F7SDgWW5V4zQHjdZYS1bF"
               }
-            ]
+            ],
+            "name": "BECH_0220",
+            "description": "Trilobot firing",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/n3WgCJBEWt2MfIXCRSPdq"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -227,7 +467,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/UivgXIG61mWFIhherqwIa"
               }
-            ]
+            ],
+            "name": "BECH_0250",
+            "description": "Trilobot takes pursuit in jungle",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/njFPLHGALqiUEWczlodh6"
+                }
+              ],
+              "hasSlate": null
+            }
           }
         ],
         "SCD": [
@@ -561,7 +813,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/DBAQ9Z6oaXmYZtq5nI4wS"
               }
-            ]
+            ],
+            "name": "JRUN_0010",
+            "description": "Trilobot in close pursuit",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/nLbsvYHFo5GGL4-NYDzsT"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -570,7 +834,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
               }
-            ]
+            ],
+            "name": "JNGLE-R_10A-003",
+            "description": "Sven running through the jungle",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/4wx7cAQ19gCov5Gy8A0dL"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/jgrqwpjYtw90S0Bpu_cjc"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -579,7 +867,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/5QV2CPwGjakzDlFBTYns2"
               }
-            ]
+            ],
+            "name": "JRUN_0070",
+            "description": "Trilobot closes in",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/LqpbZdXGpGCrvrb6IqskZ"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -588,7 +888,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/dYhjk66oCQ1yI6mdosaHX"
               }
-            ]
+            ],
+            "name": "JRUN_0100",
+            "description": "Trilobot POV shooting",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/t7618tSNSIFp88zkq6No-"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -597,7 +909,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/EZc28t2KzSbIg3NueBf8A"
               }
-            ]
+            ],
+            "name": "JNGL-F_11A-001",
+            "description": "Explosion",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/U4oFc-znL61k5GckGfM8g"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/mXcZWbTWpEy9CJTllVIHs"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           }
         ],
         "SCD": [
@@ -799,7 +1135,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
               }
-            ]
+            ],
+            "name": "JNGL-L-12A-001",
+            "description": "Sven blasts fruit",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/CsvLhuq1zmbeyXMlqxKuX"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/h_NPTbN6mbb1JDhtbgnet"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -808,7 +1168,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/ASnXpNRtaxf_NoLXPOQhA"
               }
-            ]
+            ],
+            "name": "JPLAT_0060",
+            "description": "Trilobot charges",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/evHDPR5-lmz6XSmd4Wa4h"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -817,7 +1189,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/HRn5fk8PMhbnl-WsOgJ4u"
               }
-            ]
+            ],
+            "name": "JPLAT_0100",
+            "description": "Tree explodes",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/4luJq86zOXtzlp7PN4V1O"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -826,7 +1210,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/D2PNb5IxLgYv0lfWg84yc"
               }
-            ]
+            ],
+            "name": "JPLAT_0110",
+            "description": "Tree falls on Trilobot and Sven is blown back",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/UA7ogjPRwzZUitAzmeLch"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -835,7 +1231,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/CrQZFvNE--lx_paNT3B6C"
               }
-            ]
+            ],
+            "name": "JPLAT_0120",
+            "description": "Top angle of explosion",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/vxLVdsNmC8f_jQpVrMplC"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -844,7 +1252,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/ppZqty7V5W-JLIj94LH8E"
               }
-            ]
+            ],
+            "name": "JPLAT_0130",
+            "description": "Sven lands",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/_lsCXoEhjsA_vGZHpo4EO"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -853,7 +1273,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/wVf-WdNqBaHXXGsvMjePc"
               }
-            ]
+            ],
+            "name": "PLAT_13A-001",
+            "description": "Sven walks out onto plateau to see the city",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/4gbZDIfWfw225A5H7Y1b6"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/ZLVzmYzooVoM41g59ylll"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -862,7 +1306,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/mVOvDGFpK82Kl5_J4p_cK"
               }
-            ]
+            ],
+            "name": "JPLAT_0190",
+            "description": "Over the shoulder view of valley",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/_djkIIivkQNU_Yft_xq8b"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -871,7 +1327,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/RhB2vLn7FPlMs0J1S7ntk"
               }
-            ]
+            ],
+            "name": "JPLAT_0210",
+            "description": "City view",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/_kKXqOIMX-eIZm4_RsF3S"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -880,7 +1348,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/AbSq1tToyZVR53uJWB9of"
               }
-            ]
+            ],
+            "name": "JPLAT_0220",
+            "description": "Zoom out of Sven to city",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/2fBBADIhV2udR_-Rl7Sc4"
+                }
+              ],
+              "hasSlate": null
+            }
           }
         ],
         "SCD": [
@@ -1181,7 +1661,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/iJAWmW3-Z-SRxc2XINmZC"
               }
-            ]
+            ],
+            "name": "FALL_0010",
+            "description": "Ship gets direct hit",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/N1t2Cwri_0vxA7MubBIEz"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1190,7 +1682,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/GhiHpkZeZJgGQzJSWHww8"
               }
-            ]
+            ],
+            "name": "FALL_0020",
+            "description": "Closeup of engine on fire",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/wQ1A0ZMUD4AKpOmE441w1"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1199,7 +1703,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/9FxPDLkbNq0l66cEDeVtW"
               }
-            ]
+            ],
+            "name": "FALL_0030",
+            "description": "I am hit",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/a3hh7YRJTE1g9PUX3rcSq"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1208,7 +1724,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/yTujkc4q1lBAYk97LDLcc"
               }
-            ]
+            ],
+            "name": "FALL_0040",
+            "description": "Ship goes into tailspin",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/VeprvoWaCgSNYnMYRv45L"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1217,7 +1745,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/pyrly86PUtWWTz2Pzpaoz"
               }
-            ]
+            ],
+            "name": "FALL_0050",
+            "description": "Sven screams and pulls up stick",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/LYE1o_zyFptt2_RYOYwu7"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1226,7 +1766,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/UBwTUAXNUrdctlGlc2wAx"
               }
-            ]
+            ],
+            "name": "FALL_0060",
+            "description": "Cockpit view spinning planet",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/anLnp9JFswhA5_Ist4PTf"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1235,7 +1787,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/GAXY0AmxbH5TbB2s1Ao8j"
               }
-            ]
+            ],
+            "name": "FALL_0070",
+            "description": "Sven face closeup panicking",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/YBUKWWL0_au9zLwKiziVt"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1244,7 +1808,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/_HnQpeW4NSSy5KdL9JKDC"
               }
-            ]
+            ],
+            "name": "FALL_0080",
+            "description": "Sven spots eject button",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/N9ozGiM_O7odY1rI5tm1U"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1253,7 +1829,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/phjBMqEu4DLJ-prSlpqQO"
               }
-            ]
+            ],
+            "name": "FALL_0090",
+            "description": "Sven ejects",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/X3oelEcmSBjkIuXLgBUFv"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1262,7 +1850,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/KL6edXyX4xcBK5dxbsvfB"
               }
-            ]
+            ],
+            "name": "FALL-S_6A-001",
+            "description": "Sven ejecting from ship",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/vEUepGYEi54EurYDxpkw7"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/61FL1wt-zc_S6DFvaD0EN"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           }
         ],
         "SCD": [
@@ -1431,7 +2043,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
               }
-            ]
+            ],
+            "name": "SATL-R_2A-002",
+            "description": "Sven working on satellite ",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/6J68VCW54pd494cMxWhn7"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/uOKge8nJKPQM9y9IVkDIz"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -1440,7 +2076,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/EmNH5JMgrRWJP5eK1aW3d"
               }
-            ]
+            ],
+            "name": "SATL_0100",
+            "description": "Planet view - nice job Sven",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/IaQ7vnyBfklzISw22O4f0"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1449,7 +2097,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/99gehfDC-VLrzeR12J17A"
               }
-            ]
+            ],
+            "name": "SATL_0110",
+            "description": "Trilobot POV going over Satellite - Nova",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/dQ39Y2Y6eCCujaCdu9BqF"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1458,7 +2118,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/jquZdAHLQUrr_zaxVyFXn"
               }
-            ]
+            ],
+            "name": "SATL-A_3A-002",
+            "description": "Sven attacked by Trilobot at satellite",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/ipiLTDMNF6I9qXxSE0T_e"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/vGJgSTs3CQsM5xO38khNB"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -1467,7 +2151,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/02SPlYy3zCi14L_q5LdT3"
               }
-            ]
+            ],
+            "name": "SATL_0130",
+            "description": "Trilobot cresting satellite",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/kDqGPTbsqUHkkaTrSfUTJ"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1476,7 +2172,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/NQ8bNQWo9ZEaJFMVe3Uwe"
               }
-            ]
+            ],
+            "name": "SATL-A_3A-003",
+            "description": "Sven attacked by Trilobot at satellite",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/2Nz_NM-TrkNEG7w75phzO"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/qCzFX48GcpettnBdeX1xb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -1485,7 +2205,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/eNeaLbyqm9EqS_T_NtNIq"
               }
-            ]
+            ],
+            "name": "SATL_0170",
+            "description": "Trilobot chases",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/Z_Iw_3afI1DnRPsC--2j4"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1494,7 +2226,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/pRL55cQYtYyowYNbySR2e"
               }
-            ]
+            ],
+            "name": "SATL_0180",
+            "description": "View of Trilobot firing",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/dYtLwdGaNDUZuAoSSgvL6"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1503,7 +2247,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/o3AcSQtNtrQS5etxEOzTY"
               }
-            ]
+            ],
+            "name": "SATL_0190",
+            "description": "Sven jet pack launch",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/HudYQN6L7esYFzH0gpKWM"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1512,7 +2268,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/DA-WEDkIHJHM08o9C45sx"
               }
-            ]
+            ],
+            "name": "SATL_0200",
+            "description": "Sven gets to ship",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/GlhYsKYwnaQ2cKr928zle"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1521,7 +2289,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/WL35NUWXf4Hgx68t3Mrvt"
               }
-            ]
+            ],
+            "name": "SATL_0210",
+            "description": "Sven closes hatch",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/HwhxLGoLHWDidAufMjXSn"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1530,7 +2310,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/zGaKtusIY0T70pHbp0SuR"
               }
-            ]
+            ],
+            "name": "SATL_0220",
+            "description": "Closeup on thruster hammer down",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/PbSwS0K8Xuf-uFVLItPuN"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1539,7 +2331,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/gRn3aL23uCJGy-DOpeufp"
               }
-            ]
+            ],
+            "name": "SATL_0230",
+            "description": "Ship powers up and heads towards planet",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/soyh7HYZIF1PsYsN1xM5G"
+                }
+              ],
+              "hasSlate": null
+            }
           },
           {
             "entityType": "Asset",
@@ -1548,7 +2352,31 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/2ar51_8fL9amWaZi_rqw3"
               }
-            ]
+            ],
+            "name": "FALL-W_5A_001",
+            "description": "Sven crashing towards surface in ship",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/0nwe1LeyMyZKBLGHw0JoR"
+                }
+              ],
+              "hasSlate": {
+                "Slate": [
+                  {
+                    "entityType": "Slate",
+                    "identifier": [
+                      {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "slt/CUue5855wy93gGhRhXYGq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
           },
           {
             "entityType": "Asset",
@@ -1557,7 +2385,19 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "ast/SvUnIGFrc8DbW3qB4meaj"
               }
-            ]
+            ],
+            "name": "SATL_0250",
+            "description": "Trilbot firing at ship",
+            "Context": {
+              "entityType": "Context",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "cxt/iyAEUSSCyab195rBrCrhw"
+                }
+              ],
+              "hasSlate": null
+            }
           }
         ],
         "SCD": [
