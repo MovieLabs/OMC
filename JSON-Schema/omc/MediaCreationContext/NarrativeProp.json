@@ -39,11 +39,12 @@
     },
     "propType": {
       "title": "Prop type",
-      "description": "A departmental catagorization for the prop.",
+      "description": "A departmental categorization for the prop.",
       "enum": [
         "prop",
         "greenery",
-        "vehicle"
+        "vehicle",
+        "object"
       ]
     },
     "customData": {

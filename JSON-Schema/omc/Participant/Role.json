@@ -35,6 +35,11 @@
 			"type": "string",
 			"title": "Role Description"
 		},
+		"roleType": {
+			"type": "string",
+			"title": "Role Type",
+			"description": "The specific role, typically used in authorization systems"
+		},
 		"Task": {
 			"type": "array",
 			"items": {
