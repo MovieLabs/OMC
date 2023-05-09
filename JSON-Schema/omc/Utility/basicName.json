@@ -1,0 +1,20 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "",
+	"type": "object",
+	"title": "basicName",
+	"description": "A set of simplified, basic, name types to define the canonical name for an entity",
+	"properties": {
+		"fullName": {
+			"type": ["string", "null"],
+			"title": "Full Name",
+			"description": "The full an complete name of the entity"
+		},
+		"alternateName": {
+			"type": ["string", "null"],
+			"title": "Alternate Name",
+			"description": "An alternate, often shortened name for the entity"
+		}
+	},
+	"additionalProperties": true
+}

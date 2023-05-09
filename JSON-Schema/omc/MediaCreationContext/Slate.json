@@ -88,6 +88,7 @@
       "description": "The number of the day on the shooting schedule.",
       "type": [
         "number",
+        "string",
         "null"
       ]
     },

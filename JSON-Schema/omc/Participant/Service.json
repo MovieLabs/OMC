@@ -26,7 +26,7 @@
         "string",
         "null"
       ],
-      "title": "Department name",
+      "title": "Service name",
       "description": "A human readable name for the service, primarily for use as a label"
     },
     "description": {
@@ -38,7 +38,7 @@
       ]
     },
     "serviceName": {
-      "$ref": "../Utility/completeName.json"
+      "$ref": "../Utility/basicName.json"
     },
     "contact": {
       "$ref": "../Utility/contact.json"

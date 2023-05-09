@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "",
+  "type": "object",
+  "title": "Narrative Action",
+  "description": "An action or set of actions that are performed and require additional choreography or supervision",
+  "required": [
+    "entityType",
+    "identifier"
+  ],
+  "properties": {
+    "entityInfo": {
+      "title": "Entity Information",
+      "$ref": "../Model/definitions.json#/properties/entityInfo"
+    },
+    "entityType": {
+      "title": "Entity Type",
+      "type": "string",
+      "const": "NarrativeAction"
+    },
+    "identifier": {
+      "$ref": "../Utility/identifier.json"
+    },
+    "name": {
+      "title": "Narrative Action Name",
+      "description": "A human readable name for the action",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "title": "Narrative Object Description",
+      "description": "A brief description of the narrative action",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "objectType": {
+      "title": "Object type",
+      "description": "A categorization of the type action.",
+      "enum": [
+        "action",
+        "stunt",
+        "choreography",
+        "fight",
+        "motionCapture",
+        "marine",
+        "air"
+      ]
+    },
+    "customData": {
+      "title": "Custom Data",
+      "$ref": "../Model/definitions.json#/properties/customData"
+    },
+    "Context": {
+      "title": "Narrative Action Context",
+      "$ref": "./Context.json"
+    }
+  }
+}

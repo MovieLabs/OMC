@@ -1,0 +1,2053 @@
+[
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/zTIxQjS-w7JoPS2_EuzYt"
+      }
+    ],
+    "name": "00174.MTS",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/Qfv7wP2K_sRklwiDRxT71"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/xGni-RF5NyGcQFBpQGzH4"
+      }
+    ],
+    "name": "00130.MTS",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/UbXMUAj8W-o-60nBqZA8M"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/PCQqpyfnfOMDJB2WwwSzC"
+      }
+    ],
+    "name": "GOPR0089.LRV",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/X_jIxQFrYMW0u9nTne_bw"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/P-Bp8CjvttDrn2_d1JLc-"
+      }
+    ],
+    "name": "00175.MTS",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/PyVJYjvtte8UmMI8n7HWM"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/5Wroy63faSCpmj0JJqwe-"
+      }
+    ],
+    "name": "GOPR0089.MP4",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/7jBU3Bdy4m2OdI7m3hNRU"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/z9eOb7XK0t29acnGV3ZQ9"
+      }
+    ],
+    "name": "GP010089.LRV",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/oU-lX4hX4rKyi6e8GLfY_"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/-rRUMGVCxyCXs_VTzZT82"
+      }
+    ],
+    "name": "00136.MTS",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/WSuQJW8DOftgHPY2gO7UZ"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/L0gWwx-HbN6VEwC3ZKHVM"
+      }
+    ],
+    "name": "00134.MTS",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/eO-ScG8-Eg8p1RwXGczhO"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/CFhUARX6aEhj_BULXxUXG"
+      }
+    ],
+    "name": "Video 12-12-2013, 4 45 14 PM.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/0U65pAETTH_5ae6A9kcM6"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/dPxs5lDviggzi2foATWJz"
+      }
+    ],
+    "name": "GP010091.MP4",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/LrHSiHkE9Jclcy4Xm-yG2"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/0mdO93oSqA6zTbarh4Rcb"
+      }
+    ],
+    "name": "BECH_A1_002_001.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/gWFPQyLA4LqP7-D5FewGC"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/z5hXZ3ZjItQvtrkbw6BId"
+      }
+    ],
+    "name": "BECH_A1_001_001.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/59VEozl9TjqGaIN0-gDI6"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/a_0CnU1aVB3bOiXMuS7mo"
+      }
+    ],
+    "name": "BECH_A2_001_001.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/Fb0ryXn3oYxj7--wki8KH"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/7bEECkqXxC_cnFPulWGPY"
+      }
+    ],
+    "name": "BECH_A2_002_001.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/tNNSGy9zxkNA-MYol2S-N"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/oRk9BBaPEWKHws0PfoT_Y"
+      }
+    ],
+    "name": "BECH_C1_001_001.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/d6d3GTLrpDZm8GRMKiGhS"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/-U5Bx3px_9LPi4HLLnLOq"
+      }
+    ],
+    "name": "GP010089.MP4",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/NE1Mo7iR2Y8ivTeAxXtS4"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/oSSgjTyDZ_DtfjoafpAhm"
+      }
+    ],
+    "name": "BECH_C1_003_001.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/1bSvLL1F2G1iCvor00xFB"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/S0eu5RdKWpIMKEvjwOb5z"
+      }
+    ],
+    "name": "GP010091.LRV",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/oP_wESBC_Iy1OokY1Klu2"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/VCzdJrKexqQyJfOiPkOdM"
+      }
+    ],
+    "name": "BECH_C1_004_001.mov",
+    "description": null,
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/xoaLPc-FYLivIaoypS0q2"
+        }
+      ],
+      "hasSlate": null
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/eQupS2gql9sd-x9uSQ8Cf"
+      }
+    ],
+    "name": "SATL-R_2A-001",
+    "description": "Sven working on satellite ",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/wnk9lQ8etEVHMGignjtji"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/SSkF3Waf7xDm68bi30EdS"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/MNfgKfj9wdSbXBOf5QbbY"
+      }
+    ],
+    "name": "SATL-R_2A-002",
+    "description": "Sven working on satellite ",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/6J68VCW54pd494cMxWhn7"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/uOKge8nJKPQM9y9IVkDIz"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/f3bG34z6hhuXS4sbqGJ2E"
+      }
+    ],
+    "name": "SATL-R_2A-003",
+    "description": "Sven working on satellite ",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/iBGlDPsqELEUdi2IzgF7Z"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/Qo2HAl2znKMgTynijAw8Y"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/Uwr55Q_Ml4hu5rW1_rSXn"
+      }
+    ],
+    "name": "SATL-R_2A-004",
+    "description": "Sven working on satellite ",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/Zt_roChlYXL-_yJDS1WUW"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/HIkGA3TeiaVR5j8fzQTti"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/xD1tgk1htc6a26R1Ku4Qm"
+      }
+    ],
+    "name": "SATL-A_3A-001",
+    "description": "Sven attacked by Trilobot at satellite",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/VJuVRpxz_BnZGDIsye713"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/ItLiCV5TjZp5ghzv9Qb6f"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/jquZdAHLQUrr_zaxVyFXn"
+      }
+    ],
+    "name": "SATL-A_3A-002",
+    "description": "Sven attacked by Trilobot at satellite",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/ipiLTDMNF6I9qXxSE0T_e"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/vGJgSTs3CQsM5xO38khNB"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/NQ8bNQWo9ZEaJFMVe3Uwe"
+      }
+    ],
+    "name": "SATL-A_3A-003",
+    "description": "Sven attacked by Trilobot at satellite",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/2Nz_NM-TrkNEG7w75phzO"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/qCzFX48GcpettnBdeX1xb"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/DNiDqikSEmFbOAQX3KAvM"
+      }
+    ],
+    "name": "SATL-A_3A-004",
+    "description": "Sven attacked by Trilobot at satellite",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/EaGUhhapedzwZx_ojdOi-"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/F7VzO1vos4ClQk0pEkGY5"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/M3EnG4Wzz1-dnECrk0mcX"
+      }
+    ],
+    "name": "SATL-A_3A-005",
+    "description": "Sven attacked by Trilobot at satellite",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/7OVZjjQmxhiK5Do8X_ZNS"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/B1UQ_TNCHq4H6V7aL9iHu"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/KL6edXyX4xcBK5dxbsvfB"
+      }
+    ],
+    "name": "FALL-S_6A-001",
+    "description": "Sven ejecting from ship",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/vEUepGYEi54EurYDxpkw7"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/61FL1wt-zc_S6DFvaD0EN"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/2ar51_8fL9amWaZi_rqw3"
+      }
+    ],
+    "name": "FALL-W_5A_001",
+    "description": "Sven crashing towards surface in ship",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/0nwe1LeyMyZKBLGHw0JoR"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/CUue5855wy93gGhRhXYGq"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/0DXPOqFnaEsjYXTJUWoqn"
+      }
+    ],
+    "name": "BECH-S_7A-001",
+    "description": "Sven swims toward the beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/zT25LrszGweiLY-Jp8qT4"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/VFjlKJ4bdkewIJzN3ft-Q"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/0sZxrhoHypKX91LGhGQNF"
+      }
+    ],
+    "name": "BECH-S_7A-002",
+    "description": "Sven swims toward the beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/hpvSW3KMsDViY5twUXuVq"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/EtyisWNoFVPrhXms1Mb0O"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/bW4whKECBQ4BeWmqXIcZo"
+      }
+    ],
+    "name": "BECH-S_7A-003",
+    "description": "Sven swims toward the beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/AOj2oisR85JARGlliDroc"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/DrmTw2ygks0JpY03p7fxw"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/IEaXmzUCzGDfSL6WzmZtS"
+      }
+    ],
+    "name": "BECH-C_8A-001",
+    "description": "Sven talks to Kiera on the beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/iPGcgLRa1zVJTV7lWiv9k"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/FsvZ_dxSMz3boxezVX5tN"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/vxFCl4biEKTjc7WoRhHep"
+      }
+    ],
+    "name": "BECH-S_7A-004",
+    "description": "Sven swims toward the beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/dxyULTCaeqgO07VyfnBUM"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/AovkCGOGbhjEl3q0cInTm"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/NjyVsjiXUCzQFbET4Mj3X"
+      }
+    ],
+    "name": "BECH-C_8A-003",
+    "description": "Sven talks to Kiera on the beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/jnNt3JqFsu2IuwiAWMoy6"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/-PNy6443MxM22n0tYFH-I"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/b_2Gl0xx5gHMMmAWb0z1Y"
+      }
+    ],
+    "name": "BECH-T_9A-002",
+    "description": "Sven runs for cover on beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/3Io5VZm15wwsiSDehPeKx"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/kQeYrOpCXM6JhhQdLRGyy"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/byUxY9M_MhZk3TMEnC55a"
+      }
+    ],
+    "name": "JNGLE-R_10A-003",
+    "description": "Sven running through the jungle",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/4wx7cAQ19gCov5Gy8A0dL"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/jgrqwpjYtw90S0Bpu_cjc"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/RT_zYxVnunQfgFYG53JB2"
+      }
+    ],
+    "name": "BECH-T_9A-003",
+    "description": "Sven runs for cover on beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/EP4-NGEsIOIp_At7IapFJ"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/pmpaZVD_pO6olere95n8Y"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/4fSdq1OXYp3igRsYGMYvU"
+      }
+    ],
+    "name": "JNGLE-R_10A-001",
+    "description": "Sven running through the jungle",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/4uwJhRNTqE3MoZaH6wFWS"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/gGhsjPdmldXyDbp-tC1Vb"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/X3DJFL-7rWWhX7TQH1f8b"
+      }
+    ],
+    "name": "JNGLE-R_10A-002",
+    "description": "Sven running through the jungle",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/5Ntmu9l7St0jzZGs2VxWp"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/-_uuk-2huzJsMKQvdkAFT"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/EZc28t2KzSbIg3NueBf8A"
+      }
+    ],
+    "name": "JNGL-F_11A-001",
+    "description": "Explosion",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/U4oFc-znL61k5GckGfM8g"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/mXcZWbTWpEy9CJTllVIHs"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/cXd8WtS9Qm76QT_we6IOk"
+      }
+    ],
+    "name": "JNGL-F_11A-002",
+    "description": "Explosion",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/vDJ2GgD6r6r9Par9ohyc_"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/N0pyGc_cKbNgvsTaHWNk6"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/37dlDGT3uqLsSnBDSK7YO"
+      }
+    ],
+    "name": "JNGL-F_11A-003",
+    "description": "Explosion",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/l_xaMdDyhnxKx_6M7Y_Y8"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/IzmrFhZ3_oiEZrnbYHr7q"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/f8hQ4lP1Q_iG9ETfS6a7V"
+      }
+    ],
+    "name": "JNGL-F_11A-005",
+    "description": "Explosion",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/_caOLL_brqAbG4sy1jSJS"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/XdWMQ7EikkKAqPYc_acSm"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/RWQ2PGFjSBS9pibCOdBAL"
+      }
+    ],
+    "name": "JNGL-F_11A-004",
+    "description": "Explosion",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/_2hrXLf3cFRpzXf-Y5O1R"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/3JmaJQsxsjpMRf03y7d9H"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/Xe7p9QvRy23W235C8MoxB"
+      }
+    ],
+    "name": "JNGL-F_11A-006",
+    "description": "Explosion",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/cWEsUAEDShVBv4ozP5fVA"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/8ZBdBu1OcNiBOHbMRlv4N"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/I_wjcoEvm7BDY2osFjo3Y"
+      }
+    ],
+    "name": "JNGL-L-12A-002",
+    "description": "Sven blasts fruit",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/3AKCcSj09NSBfmpQyItRb"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/Z6ff8doSlXzNbjQd73Zc1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/wVf-WdNqBaHXXGsvMjePc"
+      }
+    ],
+    "name": "PLAT_13A-001",
+    "description": "Sven walks out onto plateau to see the city",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/4gbZDIfWfw225A5H7Y1b6"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/ZLVzmYzooVoM41g59ylll"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/Fn8o5siy2IuMVgVHLHpPT"
+      }
+    ],
+    "name": "PLAT_13A-002",
+    "description": "Sven walks out onto plateau to see the city",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/jqhdsxCE2YVqovjhyiKoL"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/LPaOwIcNapJh1XpMVycwV"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/ItfxXjueE-T7egjeijkES"
+      }
+    ],
+    "name": "JNGL-L-12A-001",
+    "description": "Sven blasts fruit",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/CsvLhuq1zmbeyXMlqxKuX"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/h_NPTbN6mbb1JDhtbgnet"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/mcpe0vuCR28t7XiVseDsG"
+      }
+    ],
+    "name": "BECH-C_8A-002",
+    "description": "Sven talks to Kiera on the beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/UfHrJfflngS9uOQnJgqTF"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/IkLswNdujEvsIsWvyAPfb"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ast/urkTWT5sEIru-v3818NwU"
+      }
+    ],
+    "name": "BECH-T_9A-001",
+    "description": "Sven runs for cover on beach",
+    "structuralCharacteristics": {
+      "structuralType": "digital.movingImage",
+      "structuralProperties": {
+        "assetGroup": null
+      }
+    },
+    "functionalCharacteristics": {
+      "functionalType": "capture"
+    },
+    "Asset": null,
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/2kkqd59H3GvKU3W79FDjh"
+        }
+      ],
+      "hasSlate": {
+        "Slate": [
+          {
+            "entityType": "Slate",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "slt/wmua7DYsqu-McKKF-yUTp"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

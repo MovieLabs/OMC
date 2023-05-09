@@ -1,0 +1,99 @@
+[
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/7EdFxI0xaHHruB97KA9Ni"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "director"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/0IcJty7Cy861yeAlWiStB"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "artDirector"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/9MLbKNfnaUVj7u3n1Z4E6"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "admin"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/9XtlAb315qhNYw8qzDJGQ"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "production.company"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/bh5Xf6qbTw-thvVkmIsvG"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "artist"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/VZhjDSXi03fuiCGPlpDuL"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "actor"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/WE7aIODtF4wnsXkT8CYjU"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "producer"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/zMHMDLktboZFV4Q9l0637"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "screenWriter"
+  }
+]
+

@@ -44,20 +44,20 @@ OMC
 identifier
 	identifierValue: A1
 structuralCharacteristics
-	structuralType: digital.image
+	structuralType: digital.image.fullSize
 	identifier
 		identifierValue: E1
-	representation: fullSize
 functionalCharacteristics
 	functionalType: artwork.concept
+
+RELATED: isRepresentation
 
 identifier
 	identifierValue: A1
 structuralCharacteristics
-	structuralType: digital.image
+	structuralType: digital.image.thumbnail
 	identifier
 		identifierValue:E2
-	representation: thumbnail
 functionalCharacteristics
 	functionalType: artwork.concept
 
@@ -74,6 +74,41 @@ mediaType: image/jpg
 *Note: This uses the same main id, but a different identifier for each essence, the question is whether this could/should be done with two referent types and the same id*
 
 
+> A Proxy of the OCF
+```
+OMC
+identifier
+	identifierValue: A1
+structuralCharacteristics
+	structuralType: digital.movingImage
+	identifier
+		identifierValue: E1
+functionalCharacteristics
+	functionalType: capture.ocf
+
+RELATED: isDerivedFrom
+
+identifier
+	identifierValue: A2
+structuralCharacteristics
+	structuralType: digital.movingImage
+	identifier
+		identifierValue:E2
+functionalCharacteristics
+	functionalType: capture.proxy
+
+
+Resolver
+id: E1
+recordType: item
+mediaType: video/prores
+
+id: E2
+recordType: item
+mediaType: video/mp4
+```
+
+
 
 > An asset where two versions a represented
 ```
@@ -82,23 +117,27 @@ identifier
 	identifierValue: A1
 structuralCharacteristics
 	structuralType: digital.image
-	version: 1.0
+	revision: 1.0
 	identifier
 		identifierValue: E1
 functionalCharacteristics
 	functionalType: artwork.storyboard.frame
 
+RELATION: revisionOf, hasRevision 
 
 identifier
-	identifierValue: A1
+	identifierValue: A2
 structuralCharacteristics
 	structuralType: digital.image
-	version: 2.0
+	revision:
+		revisionNumber: 2.0
+		revisionOf: identifier
 	identifier
 		identifierValue: E2
 functionalCharacteristics
 	functionalType: artwork.storyboard.frame
 
+A new Identifier (A) could exist for each revision
 
 Resolver
 id: E1
@@ -122,7 +161,7 @@ Other Use Cases
 *General Notes:*
 - *Functional and structural characteristics are not themselves entities, they do not have their own identifiers*
 - *An asset entity only has one functional and structural characteristic, this is no longer an array*
-- *A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more clearly delineates information and item, meaning security authorization can be more easily separated, some applications may only need access to metadata*
+- *A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more clearly delineates information and item, meaning security authorization can be more easily separated, some applications may only need access to metadata. The seperate version on the essence also potentially allows for security based on version.*
 
 *[from assets doc]*
 

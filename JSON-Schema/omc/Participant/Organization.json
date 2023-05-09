@@ -38,7 +38,7 @@
       ]
     },
     "organizationName": {
-      "$ref": "../Utility/completeName.json"
+      "$ref": "../Utility/basicName.json"
     },
     "Location": {
       "$ref": "../Utility/Location.json"

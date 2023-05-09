@@ -8,7 +8,7 @@ For this reason, the ontology allows for digital data to optionally to specify a
 ### Carrier
 The documentation says the carrier is an Asset and not Infrastructure, isn't the data the Asset not what it is stored on. Data always has a carrier, it's just not always worth explicitly naming it, data in the cloud is still on a hard drive.
 
-A asset that is structurally digital with a carrier
+An asset that is structurally digital with a carrier
 ```
 identifier
 	identifierValue: A1
@@ -16,7 +16,7 @@ structuralCharacteristics
 	structuralType: digital.image
 	identifier
 		identifierValue: E1
-	carrier: Infrastructure
+	carri[Asset](..%2FJSON-Schema%2Fomc%2FAsset)er: Infrastructure
 				identifier
 					identifierValue: I1
 functionalCharacteristics
