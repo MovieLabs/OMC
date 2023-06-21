@@ -37,7 +37,7 @@
         "null"
       ]
     },
-    "objectType": {
+    "narrativeType": {
       "title": "Object type",
       "description": "A categorization of the type action.",
       "enum": [

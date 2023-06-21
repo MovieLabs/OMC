@@ -37,7 +37,7 @@
         "null"
       ]
     },
-    "objectType": {
+    "narrativeType": {
       "title": "Object type",
       "description": "A departmental categorization for the object.",
       "enum": [

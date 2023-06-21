@@ -42,12 +42,22 @@
 			"$ref": "../Model/definitions.json#/properties/customData"
 		},
 		"structuralCharacteristics": {
-			"title": "StructuralCharacteristics",
-			"$ref": "infrastructureSC.json"
+			"title": "Participant Structural Characteristics",
+			"properties": {
+				"structuralType": {
+					"title": "Structural Type",
+					"type": "string"
+				}
+			}
 		},
 		"functionalCharacteristics": {
-			"title": "Functional Characteristics",
-			"$ref": "infrastructureFC.json"
+			"title": "Participant Functional Characteristics",
+			"properties": {
+				"functionalType": {
+					"title": "Functional Type",
+					"type": "string"
+				}
+			}
 		},
 		"Context": {
 			"title": "Asset Context",

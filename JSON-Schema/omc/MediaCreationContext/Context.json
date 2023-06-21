@@ -3,7 +3,7 @@
   "title": "Context",
   "description": "Informs scope within the construction process of a Creative Work.",
   "type": "object",
-  "additionalProperties": false,
+  "additionalProperties": true,
   "required": [
     "entityType",
     "identifier"
