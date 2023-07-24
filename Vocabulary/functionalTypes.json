@@ -1,0 +1,41 @@
+{
+  "audio": {
+    "stem": {}
+  },
+  "camera": {
+    "setup": {},
+    "lens": {},
+    "shot": {}
+  },
+  "concept": {
+    "artwork": {}
+  },
+  "artwork": {
+    "storyboard": {
+      "animated": {},
+      "frame": {}
+    },
+    "character": {},
+    "prop": {},
+    "location": {}
+  },
+  "capture": {
+    "raw": {},
+    "audio": {}
+  },
+  "cgi": {
+    "render": {}
+  },
+  "color": {
+    "lut": {},
+    "transform": {}
+  },
+  "proxy": {},
+  "referenceMaterial": {
+    "artwork": {},
+    "technical": {}
+  },
+  "sequenceChronologyDescriptor": {
+  },
+  "script": {}
+}
