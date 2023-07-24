@@ -1,0 +1,240 @@
+[
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/DBMKDFZ5G7PBwtgK2PXBG"
+      }
+    ],
+    "name": "Game On ",
+    "description": "Motion Capture Stage",
+    "locationType": "shooting",
+    "Location": {
+      "entityType": "Location",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/CJXwmiWy3cXV802h-5fWI"
+        }
+      ],
+      "address": {
+        "street": "405 Av. Ogilvy B",
+        "locality": "Montréal",
+        "region": null,
+        "postalCode": "QC H3N 1M3",
+        "country": "CA"
+      },
+      "coordinates": {
+        "latitude": 45.53072,
+        "longitude": -73.62522
+      }
+    }
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ez1rAHkRw7ebLPNnXY1Q_"
+      }
+    ],
+    "name": "Lightstorm",
+    "description": "Virtual Production Stage",
+    "locationType": "shooting",
+    "Location": {
+      "entityType": "Location",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/Qz7LGOejU7-NybYTJDofq"
+        }
+      ],
+      "address": {
+        "street": "1600 Rosecrans Avenue",
+        "locality": "Manhattan Beach",
+        "region": "California",
+        "postalCode": "CA 90266",
+        "country": "US"
+      },
+      "coordinates": {
+        "latitude": 36.12361,
+        "longitude": 119.0496
+      }
+    }
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/Ac3o-dmyEs8AglFKDLoT5"
+      }
+    ],
+    "name": "Labkoat.media",
+    "description": "Headquarters of Labkoat.media",
+    "locationType": "production",
+    "Location": {
+      "entityType": "Location",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/DVzzIcqf35RQQtkvwNueQ"
+        }
+      ],
+      "address": {
+        "street": "29 Tallwood Dr.",
+        "locality": "Porterville",
+        "region": "California",
+        "postalCode": "CA 93257",
+        "country": "US"
+      },
+      "coordinates": {
+        "latitude": 36.123611,
+        "longitude": -119.049599
+      }
+    }
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/06CvKXkLgN8shz9PpRGQr"
+      }
+    ],
+    "name": "MovieLabs Studio",
+    "description": "Headquarters of MovieLabs Studio",
+    "locationType": "production",
+    "Location": {
+      "entityType": "Location",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/LymvJ1GP6RbuhtgjlJY7j"
+        }
+      ],
+      "address": {
+        "street": "222 Kearny St, Ste 300",
+        "locality": "San Francisco",
+        "region": "California",
+        "postalCode": "CA 94108",
+        "country": "US"
+      },
+      "coordinates": {
+        "latitude": 37.79018,
+        "longitude": -122.40367
+      }
+    }
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/VbTKuVcICZLzvr2ShHj8c"
+      }
+    ],
+    "name": "FX-DMZ",
+    "description": "Headquarters of FX-DMZ",
+    "locationType": "production",
+    "Location": {
+      "entityType": "Location",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/vwVy1ZHlo8b-GdDE3pC76"
+        }
+      ],
+      "address": {
+        "street": "2231 Quesnel",
+        "locality": "Montreal",
+        "region": "Quebec",
+        "postalCode": "H3J1G3",
+        "country": "CA"
+      },
+      "coordinates": {
+        "latitude": 45.48736,
+        "longitude": -73.57545
+      }
+    }
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/TK4E45u-dwswyB7yCGgnX"
+      }
+    ],
+    "name": "space ",
+    "description": "environment for space and atmoshpere",
+    "locationType": "production",
+    "Location": null
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/MuCFCfVeCv0mXeXdnpYSi"
+      }
+    ],
+    "name": "coastline ",
+    "description": "environment for coastline",
+    "locationType": "production",
+    "Location": null
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/d1_XXxQ9T3lXXWEdKwG6x"
+      }
+    ],
+    "name": "beach ",
+    "description": "environment for ocean and beach",
+    "locationType": "production",
+    "Location": null
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/RVmDAT-qUwjudelEx3rkF"
+      }
+    ],
+    "name": "plateau",
+    "description": "Environment for plateau",
+    "locationType": "production",
+    "Location": null
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/tJXXp9Pbza0q6roZNHp2b"
+      }
+    ],
+    "name": "jungle ",
+    "description": "environment for jungle",
+    "locationType": "production",
+    "Location": null
+  },
+  {
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ScUo2IEIMqiAJDSxvSP7Y"
+      }
+    ],
+    "name": "Killamari City",
+    "description": "Environment for Killmari city",
+    "locationType": "production",
+    "Location": null
+  }
+]
