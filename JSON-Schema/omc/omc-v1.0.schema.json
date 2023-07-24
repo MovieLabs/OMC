@@ -1,19 +1,8 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "https://movielabs.com/omc",
-    "type": "object",
     "title": "omc-v1.0.schema",
-    "additionalProperties": true,
-    "anyOf": [
-        {
-            "$ref": "#/$defs/core/properties/rootObject"
-        },
-        {
-            "title": "rootArray",
-            "$ref": "#/$defs/core/properties/rootArray"
-        }
-    ],
-    "$defs": {
+    "definitions": {
         "Asset": {
             "type": "object",
             "title": "Asset",
@@ -25,7 +14,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -38,7 +27,7 @@
                         },
                         "identifier": {
                             "title": "Identifier",
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -70,7 +59,7 @@
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Asset": {
                             "type": [
@@ -79,24 +68,22 @@
                             ],
                             "title": "Asset Group",
                             "description": "The set of Assets that make up an an asset group and has a structuralType of 'assetGroup'",
-                            "prefixItems": [
-                                {
-                                    "$ref": "#/$defs/Asset/properties/Asset"
-                                }
-                            ],
-                            "items": true
+                            "items": {
+                                "$ref": "#/definitions/Asset/properties/Asset"
+                            },
+                            "additionalItems": true
                         },
                         "AssetSC": {
                             "title": "Structural Characteristics",
-                            "$ref": "#/$defs/Asset/properties/AssetSC"
+                            "$ref": "#/definitions/Asset/properties/AssetSC"
                         },
                         "AssetFC": {
                             "title": "Functional Characteristics",
-                            "$ref": "#/$defs/Asset/properties/AssetFC"
+                            "$ref": "#/definitions/Asset/properties/AssetFC"
                         },
                         "Context": {
                             "title": "Asset Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -111,7 +98,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityType": {
                             "type": "string",
@@ -119,8 +106,7 @@
                             "const": "AssetSC"
                         },
                         "identifier": {
-                            "description": "Identifies the essence of the asset",
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "version": {
                             "type": "string"
@@ -162,7 +148,7 @@
                                     "type": "string"
                                 },
                                 "customData": {
-                                    "$ref": "#/$defs/core/properties/customData"
+                                    "$ref": "#/definitions/core/properties/customData"
                                 }
                             },
                             "additionalProperties": true
@@ -180,7 +166,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityType": {
                             "type": "string",
@@ -188,8 +174,7 @@
                             "const": "AssetFC"
                         },
                         "identifier": {
-                            "description": "Identifies the essence of the asset",
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "functionalType": {
                             "type": [
@@ -213,7 +198,7 @@
                             "description": "A set of properties that describe the asset functional use",
                             "properties": {
                                 "customData": {
-                                    "$ref": "#/$defs/core/properties/customData"
+                                    "$ref": "#/definitions/core/properties/customData"
                                 }
                             },
                             "additionalProperties": true
@@ -406,6 +391,7 @@
                     "type": "array",
                     "title": "Identifier",
                     "description": "An identifier uniquely identifies an entity within a particular scope.",
+                    "additionalItems": true,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -480,7 +466,7 @@
                         },
                         "country": {
                             "title": "Country",
-                            "$ref": "#/$defs/Utility/properties/country"
+                            "$ref": "#/definitions/Utility/properties/country"
                         }
                     },
                     "additionalProperties": false
@@ -513,7 +499,7 @@
                             "title": "Full Name",
                             "description": "The full an complete name of the entity"
                         },
-                        "alternateName": {
+                        "altName": {
                             "type": [
                                 "string",
                                 "null"
@@ -583,7 +569,7 @@
                             ],
                             "title": "Pseudonym"
                         },
-                        "alternateName": {
+                        "altName": {
                             "type": [
                                 "string",
                                 "null"
@@ -737,7 +723,7 @@
                         },
                         "identifier": {
                             "title": "Identifier",
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -757,15 +743,15 @@
                         },
                         "address": {
                             "title": "Address",
-                            "$ref": "#/$defs/Utility/properties/address"
+                            "$ref": "#/definitions/Utility/properties/address"
                         },
                         "coordinates": {
                             "title": "Coordinates",
-                            "$ref": "#/$defs/Utility/properties/coordinates"
+                            "$ref": "#/definitions/Utility/properties/coordinates"
                         },
                         "Context": {
                             "title": "Creative Work Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -936,11 +922,11 @@
                     "properties": {
                         "email": {
                             "title": "Email",
-                            "$ref": "#/$defs/Utility/properties/email"
+                            "$ref": "#/definitions/Utility/properties/email"
                         },
                         "telephone": {
                             "title": "Telephone",
-                            "$ref": "#/$defs/Utility/properties/telephone"
+                            "$ref": "#/definitions/Utility/properties/telephone"
                         }
                     },
                     "additionalProperties": false
@@ -1008,7 +994,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1020,7 +1006,7 @@
                             "const": "Character"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1040,8 +1026,7 @@
                         },
                         "characterName": {
                             "title": "Character Name",
-                            "description": "Detailed name, may include titles, alternate names, prefixes and suffixes.",
-                            "$ref": "#/$defs/Utility/properties/completeName"
+                            "$ref": "#/definitions/Utility/properties/completeName"
                         },
                         "profile": {
                             "type": "object",
@@ -1086,11 +1071,11 @@
                                         },
                                         "weight": {
                                             "title": "weight",
-                                            "$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/weight"
+                                            "$ref": "#/definitions/Utility/properties/unitOfMeasurement/properties/weight"
                                         },
                                         "height": {
                                             "title": "height",
-                                            "$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/linearDistance"
+                                            "$ref": "#/definitions/Utility/properties/unitOfMeasurement/properties/linearDistance"
                                         }
                                     },
                                     "additionalProperties": true
@@ -1107,11 +1092,11 @@
                             "additionalProperties": false
                         },
                         "customData": {
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Character Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1126,7 +1111,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1138,7 +1123,7 @@
                             "const": "Context"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1161,7 +1146,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1173,7 +1158,7 @@
                             "const": "CreativeWork"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "title": {
                             "type": "object",
@@ -1216,11 +1201,7 @@
                         },
                         "approximateLength": {
                             "title": "Approximate Length",
-                            "$ref": "#/$defs/Utility/properties/time/properties/periodInTime/properties/durationTime"
-                        },
-                        "countryOfOrigin": {
-                            "title": "Country of Origin",
-                            "$ref": "#/$defs/Utility/properties/country"
+                            "$ref": "#/definitions/Utility/properties/time/properties/periodInTime/properties/durationTime"
                         },
                         "originalLanguage": {
                             "type": [
@@ -1228,20 +1209,29 @@
                                 "null"
                             ],
                             "title": "Original Languages",
-                            "prefixItems": [
-                                {
-                                    "$ref": "#/$defs/Utility/properties/language"
-                                }
+                            "items": {
+                                "$ref": "#/definitions/Utility/properties/language"
+                            },
+                            "additionalItems": true
+                        },
+                        "countryOfOrigin": {
+                            "type": [
+                                "array",
+                                "null"
                             ],
-                            "items": true
+                            "title": "Country Of Origin",
+                            "items": {
+                                "$ref": "#/definitions/Utility/properties/country"
+                            },
+                            "additionalItems": true
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Creative Work Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1250,21 +1240,22 @@
                         "identifier"
                     ]
                 },
-                "EditorialSequence": {
+                "Sequence": {
                     "type": "object",
-                    "title": "Editorial Sequence",
+                    "title": "Sequence",
                     "properties": {
                         "entityInfo": {
                             "type": "string",
-                            "title": "Entity Information"
+                            "title": "Entity Information",
+                            "const": "Sequence"
                         },
                         "entityType": {
                             "type": "string",
                             "title": "Entity Type",
-                            "const": "EditorialSequence"
+                            "const": "Sequence"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1282,28 +1273,40 @@
                             "title": "Editorial Sequence Description",
                             "description": "A brief description of the editorial sequence"
                         },
-                        "sequenceChronologyDescriptor": {
+                        "sequenceType": {
+                            "type": "string",
+                            "title": "Sequence Type",
+                            "enum": [
+                                "vfx",
+                                "editorial",
+                                "image",
+                                "animation",
+                                "color"
+                            ]
+                        },
+                        "shot": {
                             "type": "array",
+                            "title": "Shot",
+                            "additionalItems": true,
                             "items": {
-                                "type": "object",
-                                "properties": {
-                                    "order": {
-                                        "type": "number"
-                                    },
-                                    "source": {
-                                        "type": "string"
-                                    }
-                                },
-                                "additionalProperties": true
+                                "$ref": "#/definitions/Asset/properties/Asset"
+                            }
+                        },
+                        "SCD": {
+                            "type": "array",
+                            "title": "Sequence Chronology Descriptor",
+                            "additionalItems": true,
+                            "items": {
+                                "$ref": "#/definitions/Asset/properties/Asset"
                             }
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Editorial Sequence Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1326,7 +1329,7 @@
                             "const": "NarrativeAction"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1360,11 +1363,11 @@
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Narrative Action Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1379,7 +1382,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1391,7 +1394,7 @@
                             "const": "NarrativeAudio"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1421,7 +1424,7 @@
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "type": "string",
@@ -1429,7 +1432,7 @@
                             "properties": {
                                 "Context": {
                                     "title": "Context",
-                                    "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                                    "$ref": "#/definitions/MediaCreationContext/properties/Context"
                                 }
                             }
                         }
@@ -1446,7 +1449,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1458,7 +1461,7 @@
                             "const": "NarrativeEffect"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1488,11 +1491,11 @@
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Narrative Effect Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1507,7 +1510,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1519,7 +1522,7 @@
                             "const": "NarrativeLocation"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1538,15 +1541,15 @@
                             "description": "A brief description of the narrative location"
                         },
                         "Location": {
-                            "$ref": "#/$defs/Utility/properties/Location"
+                            "$ref": "#/definitions/Utility/properties/Location"
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Creative Work Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1561,7 +1564,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1573,7 +1576,7 @@
                             "const": "NarrativeObject"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1606,11 +1609,25 @@
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Narrative Object Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
+                        },
+                        "size": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Size"
+                        },
+                        "quantity": {
+                            "type": [
+                                "string",
+                                "number"
+                            ],
+                            "title": "Quantity"
                         }
                     },
                     "additionalProperties": false,
@@ -1624,7 +1641,7 @@
                     "title": "Narrative Scene",
                     "properties": {
                         "schemaVersion": {
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityType": {
                             "type": "string",
@@ -1632,7 +1649,7 @@
                             "const": "NarrativeScene"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": "string",
@@ -1682,6 +1699,7 @@
                         "slugline": {
                             "type": "array",
                             "title": "Slugline",
+                            "additionalItems": true,
                             "items": {
                                 "type": "object",
                                 "title": "Slugline",
@@ -1708,11 +1726,11 @@
                             }
                         },
                         "customData": {
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Narrative Scene Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1726,7 +1744,7 @@
                     "title": "Narrative Styling",
                     "properties": {
                         "schemaVersion": {
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1738,7 +1756,7 @@
                             "const": "NarrativeStyling"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1768,11 +1786,11 @@
                             ]
                         },
                         "customData": {
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Narrative Styling Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1787,7 +1805,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1799,10 +1817,10 @@
                             "const": "ProductionLocation"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "Location": {
-                            "$ref": "#/$defs/Utility/properties/Location"
+                            "$ref": "#/definitions/Utility/properties/Location"
                         },
                         "name": {
                             "type": [
@@ -1831,11 +1849,11 @@
                         },
                         "customData": {
                             "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Production Location Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1850,7 +1868,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1862,7 +1880,7 @@
                             "const": "ProductionScene"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -1879,6 +1897,10 @@
                             ],
                             "title": "Asset description",
                             "description": "A human readable description of the production scene"
+                        },
+                        "sceneName": {
+                            "title": "Scene Name",
+                            "$ref": "#/definitions/Utility/properties/basicName"
                         },
                         "sceneHeader": {
                             "type": [
@@ -1905,11 +1927,11 @@
                             "description": "A number tied to a Slugline when a Script is locked"
                         },
                         "customData": {
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Production Scene Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -1924,7 +1946,7 @@
                     "properties": {
                         "schemaVersion": {
                             "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
+                            "$ref": "#/definitions/core/properties/schemaVersion"
                         },
                         "entityInfo": {
                             "type": "string",
@@ -1936,7 +1958,7 @@
                             "const": "Slate"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "slateUID": {
                             "type": "string",
@@ -1985,7 +2007,7 @@
                         },
                         "shootDate": {
                             "title": "Shoot Date",
-                            "$ref": "#/$defs/Utility/properties/time/properties/date"
+                            "$ref": "#/definitions/Utility/properties/time/properties/date"
                         },
                         "shootDay": {
                             "type": [
@@ -2005,21 +2027,22 @@
                             "description": "Frames per second recorded by the camera."
                         },
                         "CreativeWork": {
-                            "$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"
+                            "$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"
                         },
                         "Director": {
                             "type": "array",
                             "title": "Director",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/Participant/properties/Participant"
+                                "$ref": "#/definitions/Participant/properties/Participant"
                             }
                         },
                         "customData": {
-                            "$ref": "#/$defs/core/properties/customData"
+                            "$ref": "#/definitions/core/properties/customData"
                         },
                         "Context": {
                             "title": "Slate Context",
-                            "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -2040,8 +2063,7 @@
                     "type": "object",
                     "title": "Custom Data",
                     "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties",
-                    "additionalProperties": true,
-                    "unevaluatedProperties": true
+                    "additionalProperties": true
                 },
                 "schemaVersion": {
                     "type": "string",
@@ -2053,117 +2075,134 @@
                     "properties": {
                         "Asset": {
                             "type": "array",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/Asset/properties/Asset"
+                                "$ref": "#/definitions/Asset/properties/Asset"
                             }
                         },
                         "Character": {
                             "type": "array",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/Character"
+                                "$ref": "#/definitions/MediaCreationContext/properties/Character"
                             }
                         },
                         "Participant": {
                             "type": "array",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/Participant/properties/Participant"
+                                "$ref": "#/definitions/Participant/properties/Participant"
                             }
                         },
                         "Context": {
                             "type": "array",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                                "$ref": "#/definitions/MediaCreationContext/properties/Context"
                             }
                         },
                         "CreativeWork": {
                             "type": "array",
                             "title": "New Field",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"
+                                "$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"
                             }
                         },
                         "EditorialSequence": {
                             "type": "array",
                             "title": "Editorial Sequence",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/EditorialSequence"
+                                "$ref": "#/definitions/MediaCreationContext/properties/Sequence"
                             }
                         },
                         "NarrativeAction": {
                             "type": "array",
                             "title": "Narrative Action",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"
                             }
                         },
                         "NarrativeAudio": {
                             "type": "array",
                             "title": "Narrative Audio",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"
                             }
                         },
                         "NarrativeLocation": {
                             "type": "array",
                             "title": "Narrative Location",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
                             }
                         },
                         "NarrativeObject": {
                             "type": "array",
                             "title": "Narrative Object",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"
                             }
                         },
                         "NarrativeScene": {
                             "type": "array",
                             "title": "Narrative Scene",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeScene"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"
                             }
                         },
                         "NarrativeStyling": {
                             "type": "array",
                             "title": "Narrative Styling",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeStyling"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"
                             }
                         },
                         "Production Location": {
                             "type": "array",
                             "title": "ProductionLocation",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/ProductionLocation"
+                                "$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"
                             }
                         },
                         "ProductionScene": {
                             "type": "array",
                             "title": "Production Scene",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/ProductionScene"
+                                "$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"
                             }
                         },
                         "Slate": {
                             "type": "array",
                             "title": "Slate",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/Slate"
+                                "$ref": "#/definitions/MediaCreationContext/properties/Slate"
                             }
                         },
                         "NarrativeEffect": {
                             "type": "array",
                             "title": "Narrative Effect",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeEffect"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"
                             }
                         },
                         "Location": {
                             "type": "array",
                             "title": "Location",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/Utility/properties/Location"
+                                "$ref": "#/definitions/Utility/properties/Location"
                             }
                         }
                     },
@@ -2171,87 +2210,89 @@
                 },
                 "rootArray": {
                     "type": "array",
+                    "additionalItems": true,
                     "items": {
                         "additionalProperties": true,
                         "anyOf": [
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/Character"
+                                "$ref": "#/definitions/MediaCreationContext/properties/Character"
                             },
                             {
-                                "$ref": "#/$defs/Participant/properties/Participant"
+                                "$ref": "#/definitions/Participant/properties/Participant"
                             },
                             {
                                 "title": "Context",
-                                "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                                "$ref": "#/definitions/MediaCreationContext/properties/Context"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"
-                            },
-                            {
-                                "$ref": "#/$defs/MediaCreationContext/properties/EditorialSequence"
+                                "$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"
                             },
                             {
                                 "title": "Narrative Action",
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"
                             },
                             {
                                 "title": "Narrative Scene",
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeScene"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeStyling"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/ProductionLocation"
+                                "$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/ProductionScene"
+                                "$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/Slate"
+                                "$ref": "#/definitions/MediaCreationContext/properties/Slate"
                             },
                             {
-                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeEffect"
+                                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"
                             },
                             {
                                 "title": "Location",
-                                "$ref": "#/$defs/Utility/properties/Location"
+                                "$ref": "#/definitions/Utility/properties/Location"
                             },
                             {
-                                "$ref": "#/$defs/Participant/properties/Role"
+                                "$ref": "#/definitions/Participant/properties/Role"
                             },
                             {
-                                "$ref": "#/$defs/Participant/properties/Person"
+                                "$ref": "#/definitions/Participant/properties/Person"
                             },
                             {
-                                "$ref": "#/$defs/Participant/properties/Department"
+                                "$ref": "#/definitions/Participant/properties/Department"
                             },
                             {
-                                "$ref": "#/$defs/Participant/properties/Organization"
+                                "$ref": "#/definitions/Participant/properties/Organization"
                             },
                             {
-                                "$ref": "#/$defs/Participant/properties/Service"
+                                "$ref": "#/definitions/Participant/properties/Service"
                             },
                             {
                                 "title": "Asset",
-                                "$ref": "#/$defs/Asset/properties/Asset"
+                                "$ref": "#/definitions/Asset/properties/Asset"
                             },
                             {
                                 "title": "Asset Structural Characteristics",
-                                "$ref": "#/$defs/Asset/properties/AssetSC"
+                                "$ref": "#/definitions/Asset/properties/AssetSC"
                             },
                             {
                                 "title": "Asset Functional Characteristics",
-                                "$ref": "#/$defs/Asset/properties/AssetFC"
+                                "$ref": "#/definitions/Asset/properties/AssetFC"
+                            },
+                            {
+                                "title": "Sequence",
+                                "$ref": "#/definitions/MediaCreationContext/properties/Sequence"
                             }
                         ]
                     }
@@ -2282,7 +2323,7 @@
                             "const": "Participant"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -2309,16 +2350,16 @@
                                     "title": "Structural Type"
                                 },
                                 "Person": {
-                                    "$ref": "#/$defs/Participant/properties/Person"
+                                    "$ref": "#/definitions/Participant/properties/Person"
                                 },
                                 "Department": {
-                                    "$ref": "#/$defs/Participant/properties/Department"
+                                    "$ref": "#/definitions/Participant/properties/Department"
                                 },
                                 "Organization": {
-                                    "$ref": "#/$defs/Participant/properties/Organization"
+                                    "$ref": "#/definitions/Participant/properties/Organization"
                                 },
                                 "Service": {
-                                    "$ref": "#/$defs/Participant/properties/Service"
+                                    "$ref": "#/definitions/Participant/properties/Service"
                                 }
                             },
                             "additionalProperties": true
@@ -2337,8 +2378,9 @@
                                 "Role": {
                                     "type": "array",
                                     "description": "A group of Roles this Participant can perform",
+                                    "additionalItems": true,
                                     "items": {
-                                        "$ref": "#/$defs/Participant/properties/Role"
+                                        "$ref": "#/definitions/Participant/properties/Role"
                                     }
                                 }
                             },
@@ -2346,14 +2388,19 @@
                         },
                         "contact": {
                             "title": "Participant Context",
-                            "$ref": "#/$defs/Utility/properties/contact"
+                            "$ref": "#/definitions/Utility/properties/contact"
                         },
                         "Participant": {
                             "type": "array",
                             "title": "Participant",
+                            "additionalItems": true,
                             "items": {
-                                "$ref": "#/$defs/Participant/properties/Participant"
+                                "$ref": "#/definitions/Participant/properties/Participant"
                             }
+                        },
+                        "Context": {
+                            "title": "Character Context",
+                            "$ref": "#/definitions/MediaCreationContext/properties/Context"
                         }
                     },
                     "additionalProperties": false,
@@ -2387,6 +2434,7 @@
                             "type": "array",
                             "title": "Identifier",
                             "description": "An identifier uniquely identifies an entity within a particular scope.",
+                            "additionalItems": true,
                             "items": {
                                 "type": "object",
                                 "properties": {
@@ -2433,16 +2481,16 @@
                             "description": "A persons job title (as distinct from a specific role)"
                         },
                         "gender": {
-                            "$ref": "#/$defs/Utility/properties/gender"
+                            "$ref": "#/definitions/Utility/properties/gender"
                         },
                         "Location": {
-                            "$ref": "#/$defs/Utility/properties/Location"
+                            "$ref": "#/definitions/Utility/properties/Location"
                         },
                         "contact": {
-                            "$ref": "#/$defs/Utility/properties/contact"
+                            "$ref": "#/definitions/Utility/properties/contact"
                         },
                         "personName": {
-                            "$ref": "#/$defs/Utility/properties/completeName"
+                            "$ref": "#/definitions/Utility/properties/completeName"
                         }
                     },
                     "additionalProperties": false,
@@ -2473,7 +2521,7 @@
                             "const": "Department"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -2492,13 +2540,13 @@
                             "description": "A brief description of the department"
                         },
                         "departmentName": {
-                            "$ref": "#/$defs/Utility/properties/basicName"
+                            "$ref": "#/definitions/Utility/properties/basicName"
                         },
                         "Location": {
-                            "$ref": "#/$defs/Utility/properties/Location"
+                            "$ref": "#/definitions/Utility/properties/Location"
                         },
                         "contact": {
-                            "$ref": "#/$defs/Utility/properties/contact"
+                            "$ref": "#/definitions/Utility/properties/contact"
                         }
                     },
                     "additionalProperties": false,
@@ -2529,7 +2577,7 @@
                             "const": "Organization"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -2548,13 +2596,13 @@
                             "description": "A brief description of the organization"
                         },
                         "organizationName": {
-                            "$ref": "#/$defs/Utility/properties/basicName"
+                            "$ref": "#/definitions/Utility/properties/basicName"
                         },
                         "Location": {
-                            "$ref": "#/$defs/Utility/properties/Location"
+                            "$ref": "#/definitions/Utility/properties/Location"
                         },
                         "contact": {
-                            "$ref": "#/$defs/Utility/properties/contact"
+                            "$ref": "#/definitions/Utility/properties/contact"
                         }
                     },
                     "additionalProperties": false,
@@ -2585,7 +2633,7 @@
                             "const": "Service"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -2604,10 +2652,10 @@
                             "description": "A brief description of the service"
                         },
                         "serviceName": {
-                            "$ref": "#/$defs/Utility/properties/basicName"
+                            "$ref": "#/definitions/Utility/properties/basicName"
                         },
                         "contact": {
-                            "$ref": "#/$defs/Utility/properties/contact"
+                            "$ref": "#/definitions/Utility/properties/contact"
                         }
                     },
                     "additionalProperties": false,
@@ -2638,7 +2686,7 @@
                             "const": "Role"
                         },
                         "identifier": {
-                            "$ref": "#/$defs/Utility/properties/identifier"
+                            "$ref": "#/definitions/Utility/properties/identifier"
                         },
                         "name": {
                             "type": [
@@ -2675,5 +2723,15 @@
             },
             "additionalProperties": false
         }
-    }
+    },
+    "additionalProperties": true,
+    "anyOf": [
+        {
+            "$ref": "#/definitions/core/properties/rootObject"
+        },
+        {
+            "title": "rootArray",
+            "$ref": "#/definitions/core/properties/rootArray"
+        }
+    ]
 }
