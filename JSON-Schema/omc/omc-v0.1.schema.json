@@ -1,0 +1,3125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://movielabs.com/omc",
+  "title": "omc-v0.1.schema",
+  "definitions": {
+    "Asset": {
+      "type": "object",
+      "title": "Asset",
+      "properties": {
+        "Asset": {
+          "type": "object",
+          "title": "Asset",
+          "description": "A physical or digital object or collection of objects specific to the creation of the Creative Work.",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Asset"
+            },
+            "identifier": {
+              "title": "Identifier",
+              "$ref": "#/definitions/Utility/properties/identifier"
+            },
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset name",
+              "description": "A human readable name for the asset"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset description",
+              "description": "A human readable description of the asset"
+            },
+            "assetInfo": {
+              "type": "object",
+              "title": "Asset Information",
+              "description": "Properties describing the instance of this asset including version, provenance, variant",
+              "additionalProperties": true
+            },
+            "version": {
+              "type": "object",
+              "title": "Version Information",
+              "description": "Properties describing the instance of this asset including version, provenance, variant",
+              "additionalProperties": true,
+              "properties": {
+                "versionNumber": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "variantOf": {"$ref": "#/definitions/Asset/properties/Asset"},
+                "hasVariant": {"$ref": "#/definitions/Asset/properties/Asset"},
+                "alternateOf": {"$ref": "#/definitions/Asset/properties/Asset"},
+                "hasAlternate": {"$ref": "#/definitions/Asset/properties/Asset"}
+              }
+            },
+            "Asset": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "title": "Asset Group",
+              "description": "The set of Assets that make up an an asset group and has a structuralType of 'assetGroup'",
+              "items": {"$ref": "#/definitions/Asset/properties/Asset"},
+              "additionalItems": true
+            },
+            "AssetSC": {
+              "title": "Structural Characteristics",
+              "$ref": "#/definitions/Asset/properties/AssetSC"
+            },
+            "assetFC": {
+              "title": "Functional Characteristics",
+              "$ref": "#/definitions/Asset/properties/assetFC"
+            },
+            "Context": {
+              "title": "Asset Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ]
+        },
+        "AssetSC": {
+          "type": "object",
+          "title": "Asset Structural Characteristics",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "AssetSC"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "version": {
+              "type": "object",
+              "properties": {
+                "versionNumber": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "derivedFrom": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+                "hasDerivation": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+                "representation": {"$ref": "#/definitions/Asset/properties/AssetSC"}
+              }
+            },
+            "structuralType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Structural Type",
+              "description": "A structured description of the the assets form",
+              "examples": [
+                "assetGroup",
+                "digital.image",
+                "analog.movingImage"
+              ]
+            },
+            "essenceVersion": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Essence Version",
+              "description": "The version of the essence represented",
+              "examples": [
+                "1.0.0",
+                "2.0"
+              ]
+            },
+            "structuralProperties": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "title": "Structural Properties",
+              "description": "A set of properties that describe the asset in this form",
+              "properties": {
+                "dimensions": {"type": "string"},
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              },
+              "additionalProperties": true
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ]
+        },
+        "assetFC": {
+          "type": "object",
+          "title": "Asset Functional Characteristics",
+          "properties": {
+            "functionalType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Functional Type",
+              "description": "A structured description of the the assets function as it relates to the production",
+              "examples": [
+                "assetGroup",
+                "digital.image",
+                "analog.movingImage"
+              ]
+            },
+            "functionalProperties": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "title": "Functional Properties",
+              "description": "A set of properties that describe the asset functional use",
+              "properties": {
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              },
+              "additionalProperties": true
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "Utility": {
+      "type": "object",
+      "properties": {
+        "unitOfMeasurement": {
+          "type": "object",
+          "properties": {
+            "weight": {
+              "title": "weight",
+              "description": "Encode a measurment of weight using the imperial or metric system",
+              "additionalProperties": true,
+              "oneOf": [
+                {"type": "null"},
+                {
+                  "type": "string",
+                  "description": "Encode weight using the metric system of measurement (kilogram, gram)",
+                  "pattern": "^(\\d+kg)?(\\d+g)?$",
+                  "examples": ["3kg7g"]
+                },
+                {
+                  "type": "string",
+                  "description": "Encode weight using the imperial system of measurment (pounds, oounces)",
+                  "pattern": "^(\\d+lb)?(\\d+oz)?$",
+                  "examples": ["12lb14oz"]
+                }
+              ]
+            },
+            "dimensions": {
+              "type": "object",
+              "title": "dimensions",
+              "description": "Encode a set of measurments to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
+              "properties": {
+                "height": {
+                  "type": "object",
+                  "description": "The height or X axis of the object",
+                  "additionalProperties": true,
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                },
+                "width": {
+                  "type": "object",
+                  "description": "The width or X axis of the object",
+                  "additionalProperties": true,
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                },
+                "depth": {
+                  "type": "object",
+                  "description": "The depth or Z axis of the object",
+                  "additionalProperties": true,
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": true
+            },
+            "linearDistance": {
+              "title": "Linear Distance",
+              "description": "Encode a measurement of distance using the imperial or metric system",
+              "additionalProperties": true,
+              "oneOf": [
+                {"type": "null"},
+                {
+                  "type": "string",
+                  "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                  "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                  "examples": [
+                    "100m",
+                    "6km2m56cm12mm"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                  "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                  "examples": [
+                    "2000ft",
+                    "2mi12ft6in"
+                  ]
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "identifier": {
+          "type": "array",
+          "title": "Identifier",
+          "description": "An identifier uniquely identifies an entity within a particular scope.",
+          "additionalItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "identifierScope": {
+                "type": "string",
+                "title": "Identifier Scope",
+                "description": "The universe within which an identifier is valid and unique."
+              },
+              "identifierValue": {
+                "type": "string",
+                "title": "Identifier Value",
+                "description": "A string of characters that uniquely identifies an object within a particular scope."
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifierScope",
+              "identifierValue"
+            ]
+          }
+        },
+        "address": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Address",
+          "properties": {
+            "street": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Street Address",
+              "description": "The street address",
+              "examples": ["1600 Ampitheatre Parkway"]
+            },
+            "locality": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Address locality",
+              "description": "The locality in which the street address is, and which is in the region.",
+              "examples": ["Mountain View"]
+            },
+            "region": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Address region",
+              "description": "The region in which the locality is, and which is in the country",
+              "examples": ["California"]
+            },
+            "postalCode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Zip or Postal Code",
+              "description": "A zip or postal code",
+              "examples": ["94534"]
+            },
+            "country": {
+              "title": "Country",
+              "$ref": "#/definitions/Utility/properties/country"
+            }
+          },
+          "additionalProperties": false
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Country",
+          "description": "The country, as an ISO 3166-1 alpha-2 country code",
+          "minLength": 2,
+          "maxLength": 2,
+          "examples": ["US"]
+        },
+        "basicName": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Basic Name",
+          "properties": {
+            "fullName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Full Name",
+              "description": "The full an complete name of the entity"
+            },
+            "altName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alternate Name",
+              "description": "An alternate, often shortened name for the entity"
+            }
+          },
+          "additionalProperties": false
+        },
+        "completeName": {
+          "type": "object",
+          "title": "Complete Name",
+          "properties": {
+            "firstGivenName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "First Given Name",
+              "description": "A person's first name, also referred to as given name"
+            },
+            "secondGivenName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Second Given Name",
+              "description": "A persons second given name, also referred to as middle name"
+            },
+            "familyName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Family Name",
+              "description": "A persons family name, also referred to as surname"
+            },
+            "fullName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Full Name",
+              "description": "A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields."
+            },
+            "birthName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Birth Name",
+              "description": "A persons name at birth, also referred to as maiden name"
+            },
+            "primaryName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Primary Name",
+              "description": "A persons primary name, one they typically use, also often a combination of first, second and family name"
+            },
+            "pseudonym": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Pseudonym"
+            },
+            "altName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alternate Name"
+            },
+            "translatedName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Translated Name"
+            },
+            "nickname": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Nickname"
+            },
+            "moniker": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Moniker"
+            },
+            "alias": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alias",
+              "description": "An alias being used by a person often used to disguse someones real identity, sometimes used when booking hotel rooms or restaurants "
+            },
+            "contractualName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Contractual Name"
+            },
+            "displayName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Display Name"
+            },
+            "sortName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Sort Name"
+            },
+            "scriptName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Script Name"
+            },
+            "prefix": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Prefix",
+              "description": "A prefix that can indicate a persons gender or title",
+              "examples": [
+                "Mrs",
+                "Mr",
+                "Dr",
+                "General"
+              ]
+            },
+            "suffix": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Suffix",
+              "description": "A suffix, often used to indicate a title or classification",
+              "examples": [
+                "MBE",
+                "MD",
+                "RN",
+                "II",
+                "IV"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "gender": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Gender",
+          "properties": {
+            "gender": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Identifies as gender",
+              "description": "The gender by which an individual identifies",
+              "enum": [
+                "male",
+                "female",
+                "other",
+                "unknown",
+                null
+              ]
+            },
+            "genderPronoun": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Preferred pronoun",
+              "description": "An individuals pronoun of choice",
+              "enum": [
+                "he/him",
+                "she/her",
+                "ze/hir",
+                "they/their",
+                null
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "Location": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Location"
+            },
+            "identifier": {
+              "title": "Identifier",
+              "$ref": "#/definitions/Utility/properties/identifier"
+            },
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Location name",
+              "description": "A human readable name for the location"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Location Description",
+              "description": "A brief description of the location"
+            },
+            "address": {
+              "title": "Address",
+              "$ref": "#/definitions/Utility/properties/address"
+            },
+            "coordinates": {
+              "title": "Coordinates",
+              "$ref": "#/definitions/Utility/properties/coordinates"
+            },
+            "Context": {
+              "title": "Creative Work Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": ["entityType"]
+        },
+        "note": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Note",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "description": "A title for the note or annotation"
+            },
+            "text": {
+              "type": "string",
+              "title": "Text",
+              "description": "The text of the note or annotation"
+            }
+          },
+          "additionalProperties": false
+        },
+        "time": {
+          "type": "object",
+          "title": "Time",
+          "properties": {
+            "timestamp": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "title": "Timestamp"
+            },
+            "periodInTime": {
+              "type": "object",
+              "title": "Period in Time",
+              "properties": {
+                "startTime": {
+                  "type": "string",
+                  "title": "Start Time"
+                },
+                "durationTime": {
+                  "type": "string",
+                  "title": "Duration of Time"
+                },
+                "endTime": {
+                  "type": "string",
+                  "title": "End Time"
+                }
+              },
+              "additionalProperties": false,
+              "required": ["startTime"]
+            },
+            "descriptiveTime": {
+              "type": "object",
+              "title": "Descriptive Time",
+              "properties": {
+                "periodInDay": {
+                  "type": "string",
+                  "title": "Period in Day",
+                  "examples": [
+                    "Morning",
+                    "Noon",
+                    "Midnight",
+                    "Afternoon",
+                    "Night"
+                  ]
+                },
+                "relativeTime": {
+                  "type": "string",
+                  "title": "Relative Time",
+                  "examples": [
+                    "Later",
+                    "Continuous",
+                    "6 months earlier",
+                    "A long time ago"
+                  ]
+                },
+                "periodInTime": {
+                  "type": "string",
+                  "title": "Period in Time",
+                  "examples": [
+                    "Ming dynasty",
+                    "World War II",
+                    "Jurassic period",
+                    "20th century"
+                  ]
+                },
+                "eventInTime": {
+                  "type": "string",
+                  "title": "Event in Time",
+                  "description": "Describes a specific event that occurred",
+                  "examples": [
+                    "Hindenburg disaster",
+                    "World Trade Center attack",
+                    "Queen Elizabeth coronation"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "dateTime": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Date & Time",
+              "pattern": "\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d(?:\\.\\d+)?Z?"
+            },
+            "date": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Date",
+              "pattern": "\\d{4}-[01]\\d-[0-3]\\d",
+              "examples": ["2020-11-21"]
+            },
+            "durationTime": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Duration of Time",
+              "pattern": "^(-?)P(?=.)((\\d+)Y)?((\\d+)M)?((\\d+)D)?(T(?=.)((\\d+)H)?((\\d+)M)?(\\d*(\\.\\d+)?S)?)?$",
+              "examples": ["P2Y12M3D"]
+            }
+          },
+          "additionalProperties": false
+        },
+        "coordinates": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Coordinates",
+          "description": "A global positioning coordinate in compliance with WGS 84",
+          "properties": {
+            "latitude": {
+              "type": "number",
+              "title": "latitude",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "longitude": {
+              "type": "number",
+              "title": "longitude",
+              "minimum": -180,
+              "maximum": 180
+            }
+          },
+          "additionalProperties": false
+        },
+        "contact": {
+          "type": "object",
+          "title": "Contact",
+          "properties": {
+            "email": {
+              "title": "Email",
+              "$ref": "#/definitions/Utility/properties/email"
+            },
+            "telephone": {
+              "title": "Telephone",
+              "$ref": "#/definitions/Utility/properties/telephone"
+            }
+          },
+          "additionalProperties": false
+        },
+        "email": {
+          "type": "object",
+          "title": "Email",
+          "properties": {
+            "business": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Business"
+            },
+            "personal": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Personal"
+            }
+          },
+          "additionalProperties": false
+        },
+        "telephone": {
+          "type": "object",
+          "title": "Telephone",
+          "properties": {
+            "business": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Business"
+            },
+            "personal": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Personal"
+            }
+          },
+          "additionalProperties": false
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Language",
+          "description": "An ISO 693 language code"
+        },
+        "version": {
+          "type": "object",
+          "properties": {
+            "versionNumber": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "variantOf": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+            "hasVariant": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+            "derivedFrom": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+            "hasDerivation": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+            "hasAlternate": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+            "alternateOf": {"$ref": "#/definitions/Asset/properties/AssetSC"}
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "MediaCreationContext": {
+      "type": "object",
+      "properties": {
+        "Character": {
+          "type": "object",
+          "title": "Character",
+          "description": "A sentient entity (usually a person but not always) in the script whose specific identity is consequential to the narrative. A Character is generally identified by a specific name.",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Character"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset name",
+              "description": "The primary name used for the character"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Character Description",
+              "description": "A brief description of the character"
+            },
+            "characterName": {
+              "title": "Character Name",
+              "$ref": "#/definitions/Utility/properties/completeName"
+            },
+            "profile": {
+              "type": "object",
+              "title": "Profile",
+              "properties": {
+                "physicalCharacteristics": {
+                  "type": "object",
+                  "title": "Physical Characteristics",
+                  "description": "Allows for the the description of certain physical characteristics on a character, things that might be useful to an art department, wardrobe or casting for example.",
+                  "properties": {
+                    "species": {
+                      "type": "string",
+                      "title": "Species",
+                      "description": "A species to which this character belongs",
+                      "examples": [
+                        "Human",
+                        "Borg",
+                        "Goblin",
+                        "Frog"
+                      ]
+                    },
+                    "hairColor": {
+                      "type": "string",
+                      "title": "Hair Color",
+                      "description": "The hair color of the character",
+                      "examples": [
+                        "Brown",
+                        "Pink",
+                        "Blonde",
+                        ""
+                      ]
+                    },
+                    "hairLength": {
+                      "type": "string",
+                      "title": "Hair Length",
+                      "description": "The length of hair of the character"
+                    },
+                    "eyeColor": {
+                      "type": "string",
+                      "title": "Eye Color",
+                      "description": "The color of the characters eyes"
+                    },
+                    "weight": {
+                      "title": "weight",
+                      "$ref": "#/definitions/Utility/properties/unitOfMeasurement/properties/weight"
+                    },
+                    "height": {
+                      "title": "height",
+                      "$ref": "#/definitions/Utility/properties/unitOfMeasurement/properties/linearDistance"
+                    }
+                  },
+                  "additionalProperties": true
+                },
+                "gender": {"type": "string"},
+                "background": {
+                  "type": "object",
+                  "title": "background",
+                  "additionalProperties": true
+                }
+              },
+              "additionalProperties": false
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"},
+            "Context": {
+              "title": "Character Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ]
+        },
+        "Context": {
+          "type": "object",
+          "title": "Context",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Context"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Context name",
+              "description": "The primary name used for the character"
+            }
+          },
+          "additionalProperties": true,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "patternProperties": {
+            "^contributor(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Participant": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Participant/properties/Participant"
+                  }
+                }
+              }
+            },
+            "^contributesTo(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "CreativeWork": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"
+                  }
+                }
+              }
+            },
+            "^depictedBy(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Asset": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Asset/properties/Asset"
+                  }
+                }
+              }
+            },
+            "^depicts(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "NarrativeLocation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
+                  }
+                },
+                "NarrativeObject": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": [
+                    {
+                      "type": "object",
+                      "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"
+                    }
+                  ],
+                  "additionalItems": false
+                }
+              }
+            },
+            "^featuredIn(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "NarrativeScene": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"
+                  }
+                }
+              }
+            },
+            "^features(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "Character": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/Character",
+                    "type": "object"
+                  }
+                },
+                "NarrativeAction": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction",
+                    "type": "object"
+                  }
+                },
+                "NarrativeAudio": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"
+                  }
+                },
+                "NarrativeEffect": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"
+                  }
+                },
+                "NarrativeObject": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject",
+                    "type": "object"
+                  }
+                },
+                "NarrativeStyling": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"}
+                }
+              },
+              "additionalProperties": false
+            },
+            "^for(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Asset": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Asset/properties/Asset"
+                  }
+                },
+                "Character": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/Character"
+                  }
+                },
+                "CreativeWork": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"
+                  }
+                },
+                "NarrativeObject": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"
+                  }
+                },
+                "NarrativeScene": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"
+                  }
+                },
+                "ProductionScene": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"
+                  }
+                }
+              }
+            },
+            "^has(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "Asset": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/Asset/properties/Asset",
+                    "type": "object"
+                  }
+                },
+                "NarrativeAction": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction",
+                    "type": "object"
+                  }
+                },
+                "NarrativeLocation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
+                  }
+                },
+                "NarrativeObject": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject",
+                    "type": "object"
+                  }
+                },
+                "NarrativeStyling": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling",
+                    "type": "object"
+                  }
+                },
+                "ProductionLocation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation",
+                    "type": "object"
+                  }
+                },
+                "Role": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Participant/properties/Role"
+                  }
+                },
+                "Sequence": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/Sequence",
+                    "type": "object"
+                  }
+                },
+                "Slate": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "additionalItems": false,
+                  "items": {
+                    "$ref": "#/definitions/MediaCreationContext/properties/Slate",
+                    "type": "object"
+                  }
+                }
+              },
+              "additionalProperties": false
+            },
+            "^is(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Participant": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Participant/properties/Participant"
+                  }
+                },
+                "ProductionLocation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"
+                  }
+                },
+                "Person": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Participant/properties/Person"
+                  }
+                },
+                "Organization": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Participant/properties/Organization"
+                  }
+                }
+              }
+            },
+            "^portrayedBy(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Asset": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Asset/properties/Asset"
+                  }
+                },
+                "Participant": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Participant/properties/Participant"
+                  }
+                }
+              }
+            },
+            "^portrays(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Character": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/Character"
+                  }
+                },
+                "NarrativeObject": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"
+                  }
+                }
+              }
+            },
+            "^representedBy(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "ProductionScene": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"
+                  }
+                }
+              }
+            },
+            "^represents(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "NarrativeScene": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"
+                  }
+                }
+              }
+            },
+            "^uses(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Asset": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Asset/properties/Asset"
+                  }
+                }
+              }
+            },
+            "^usedBy(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "ProductionScene": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"
+                  }
+                },
+                "Sequence": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/Sequence"
+                  }
+                }
+              }
+            },
+            "^usedIn(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Asset": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Asset/properties/Asset"
+                  }
+                }
+              }
+            }
+          },
+          "description": "Informs scope within the construction process of a Creative Work."
+        },
+        "CreativeWork": {
+          "type": "object",
+          "title": "Creative Work",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "CreativeWork"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "title": {
+              "type": "object",
+              "title": "Creative Work Title",
+              "properties": {
+                "workingTitle": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Creative Work Working Title",
+                  "description": "The working title of the work"
+                },
+                "officialTitle": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Creative Work Official Title",
+                  "description": "The offical title of the work"
+                },
+                "internalTitle": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Creative Work Internal Title",
+                  "description": "The internal title of the work"
+                }
+              },
+              "additionalProperties": true
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Creative Work Description",
+              "description": "A brief description of the creative work"
+            },
+            "approximateLength": {
+              "title": "Approximate Length",
+              "$ref": "#/definitions/Utility/properties/time/properties/periodInTime/properties/durationTime"
+            },
+            "originalLanguage": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "title": "Original Languages",
+              "items": {"$ref": "#/definitions/Utility/properties/language"},
+              "additionalItems": true
+            },
+            "countryOfOrigin": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "title": "Country Of Origin",
+              "items": {"$ref": "#/definitions/Utility/properties/country"},
+              "additionalItems": true
+            },
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "title": "Creative Work Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "A uniquely identified production."
+        },
+        "NarrativeAction": {
+          "type": "object",
+          "title": "Narrative Action",
+          "properties": {
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "NarrativeAction"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Action Name",
+              "description": "A human readable name for the action"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Object Description",
+              "description": "A brief description of the narrative action"
+            },
+            "narrativeType": {
+              "type": "string",
+              "title": "Object type",
+              "description": "A categorization of the type action.",
+              "enum": [
+                "action",
+                "stunt",
+                "choreography",
+                "fight",
+                "motionCapture",
+                "marine",
+                "air"
+              ]
+            },
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "title": "Narrative Action Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "An action or set of actions that are performed and require additional choreography or supervision."
+        },
+        "NarrativeAudio": {
+          "type": "object",
+          "title": "Narrative Audio",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "NarrativeAudio"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Object Name",
+              "description": "A human readable name for the audio clip"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Audio Description",
+              "description": "A brief description of the narrative audio"
+            },
+            "narrativeType": {
+              "type": "string",
+              "title": "Object type",
+              "description": "A categorization of the type of audio.",
+              "enum": [
+                "audio",
+                "soundEffect",
+                "music"
+              ]
+            },
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "type": "string",
+              "title": "Narrative Audio Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "A named piece of audio significant to the narrative."
+        },
+        "NarrativeEffect": {
+          "type": "object",
+          "title": "Narrative Effect",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "NarrativeEffect"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Effect Name",
+              "description": "A human readable name for the effect"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Object Description",
+              "description": "A brief description of the narrative effect"
+            },
+            "narrativeType": {
+              "type": "string",
+              "title": "Object type",
+              "description": "A categorization of the type effect.",
+              "enum": [
+                "effect",
+                "sfx",
+                "vfx"
+              ]
+            },
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "title": "Narrative Effect Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "An on screen visual effect considered essential to the narrative."
+        },
+        "NarrativeLocation": {
+          "type": "object",
+          "title": "Narrative Location",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "NarrativeLocation"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Location Name",
+              "description": "A human readable name for the location"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Location Description",
+              "description": "A brief description of the narrative location"
+            },
+            "Location": {"$ref": "#/definitions/Utility/properties/Location"},
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "title": "Creative Work Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "A location specified or implied by the narrative."
+        },
+        "NarrativeObject": {
+          "type": "object",
+          "title": "Narrative Object",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "NarrativeObject"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Object Name",
+              "description": "A human readable name for the object"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Object Description",
+              "description": "A brief description of the narrative object"
+            },
+            "narrativeType": {
+              "type": "string",
+              "title": "Object type",
+              "description": "A departmental categorization for the object.",
+              "enum": [
+                "object",
+                "prop",
+                "greenery",
+                "vehicle",
+                "setDressing",
+                "wardrobe"
+              ]
+            },
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "title": "Narrative Object Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            },
+            "size": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Size"
+            },
+            "quantity": {
+              "type": [
+                "string",
+                "number"
+              ],
+              "title": "Quantity"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "A named object related to or interacting with characters that is implied or understood to be necessary for the narrative. Includes items like props, wardrobe, set dressing and vehicles."
+        },
+        "NarrativeScene": {
+          "type": "object",
+          "title": "Narrative Scene",
+          "properties": {
+            "schemaVersion": {"$ref": "#/definitions/core/properties/schemaVersion"},
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "NarrativeScene"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": "string",
+              "title": "Scene  Name",
+              "description": "A human readable name for the scene"
+            },
+            "sceneName": {
+              "type": "object",
+              "title": "Narrative Scene Name",
+              "description": "A human readable name for the scene",
+              "properties": {
+                "fullName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Scene full name",
+                  "description": "A full descriptive name for the scene"
+                },
+                "altName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Scene alternate name",
+                  "description": "An alternate, often shorter, name used in applications to identify the scens"
+                }
+              },
+              "additionalProperties": true
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Scene Description",
+              "description": "A brief description of the narrative scene"
+            },
+            "sceneNumber": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Scene Number",
+              "description": "A number used in the script to refer to the scene"
+            },
+            "slugline": {
+              "type": "array",
+              "title": "Slugline",
+              "additionalItems": true,
+              "items": {
+                "type": "object",
+                "title": "Slugline",
+                "description": "An arbitary note or comment pertaining to the entity",
+                "properties": {
+                  "title": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "title": "Title",
+                    "description": "A title for the note or annotation"
+                  },
+                  "text": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "title": "Text",
+                    "description": "The text of the note or annotation"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"},
+            "Context": {
+              "title": "Narrative Scene Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "Taken from the narrative itself and traditionally defined by creative intent and typically a unity of time, place, action, or theme."
+        },
+        "NarrativeStyling": {
+          "type": "object",
+          "title": "Narrative Styling",
+          "properties": {
+            "schemaVersion": {"$ref": "#/definitions/core/properties/schemaVersion"},
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "NarrativeStyling"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Styling Name",
+              "description": "A human readable name for the styling"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Narrative Styling Description",
+              "description": "A brief description of the narrative styling"
+            },
+            "narrativeType": {
+              "type": "string",
+              "title": "Object type",
+              "description": "A categorization of the type styling.",
+              "enum": [
+                "styling",
+                "hair",
+                "makeup",
+                "prosthetics"
+              ]
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"},
+            "Context": {
+              "title": "Narrative Styling Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "Styling required to prepare an actor for their role"
+        },
+        "ProductionLocation": {
+          "type": "object",
+          "title": "Production Location",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "ProductionLocation"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "Location": {"$ref": "#/definitions/Utility/properties/Location"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Production Location Name",
+              "description": "A human readable name for the location"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Production Location Description",
+              "description": "A brief description of the production location"
+            },
+            "locationType": {
+              "type": "string",
+              "description": "Describes whether this is production location or more specifically a shooting location",
+              "enum": [
+                "production",
+                "shooting"
+              ],
+              "default": "production"
+            },
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "title": "Production Location Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "A real place that is used to depict the Narrative Location or used for creating the production."
+        },
+        "ProductionScene": {
+          "type": "object",
+          "title": "Production Scene",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "ProductionScene"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset name",
+              "description": "A human readable name for the production scene"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset description",
+              "description": "A human readable description of the production scene"
+            },
+            "sceneName": {
+              "title": "Scene Name",
+              "$ref": "#/definitions/Utility/properties/basicName"
+            },
+            "sceneHeader": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Scene Header",
+              "description": "Used when referring to the Production Scene. It is generally synonymous with Slugline and is used to divide a Script into scenes."
+            },
+            "sceneDescriptor": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Scene Descriptor",
+              "description": "An alphanumeric reference to a Production Scene"
+            },
+            "sceneNumber": {
+              "type": [
+                "null",
+                "string"
+              ],
+              "title": "Scene Number",
+              "description": "A number tied to a Slugline when a Script is locked"
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"},
+            "Context": {
+              "title": "Production Scene Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "Defined either by explicit divisions in the structure of the Script, e.g., by a Slugline, or by additional capture for use in the Creative Work that is not tied to any particular Scene in the Script."
+        },
+        "Sequence": {
+          "type": "object",
+          "title": "Sequence",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information",
+              "const": "Sequence"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Sequence"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Editorial Sequence Name",
+              "description": "A human readable name for the editorial sequence"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Editorial Sequence Description",
+              "description": "A brief description of the editorial sequence"
+            },
+            "sequenceType": {
+              "type": "string",
+              "title": "Sequence Type",
+              "enum": [
+                "vfx",
+                "editorial",
+                "image",
+                "animation",
+                "color"
+              ]
+            },
+            "shot": {
+              "type": "array",
+              "title": "Shot",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Asset/properties/Asset"}
+            },
+            "SCD": {
+              "type": "array",
+              "title": "Sequence Chronology Descriptor",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Asset/properties/Asset"}
+            },
+            "customData": {
+              "title": "Custom Data",
+              "$ref": "#/definitions/core/properties/customData"
+            },
+            "Context": {
+              "title": "Editorial Sequence Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "A sequence of shots linked to creative intent."
+        },
+        "Slate": {
+          "type": "object",
+          "title": "Slate",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Slate"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "slateUID": {
+              "type": "string",
+              "title": "Slate UID",
+              "description": "Slate Unique Identifier"
+            },
+            "productionScene": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Production Scene",
+              "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
+            },
+            "cameraLabel": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Camera Label",
+              "description": "Label for the Camera responsible for the Capture, usually related to the role and responsibility of the group operating it and usually a single upper-case letter starting with A."
+            },
+            "cameraUnit": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Camera Unit",
+              "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
+            },
+            "cameraRoll": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Camera Roll",
+              "description": "Identifier for a group of events captured together on the same camera on the same media."
+            },
+            "soundRoll": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Sound Roll",
+              "description": "Identifier for a group of audio events captured together on the same recording device and same media."
+            },
+            "shootDate": {
+              "title": "Shoot Date",
+              "$ref": "#/definitions/Utility/properties/time/properties/date"
+            },
+            "shootDay": {
+              "type": [
+                "number",
+                "string",
+                "null"
+              ],
+              "title": "Shoot Day",
+              "description": "The number of the day on the shooting schedule."
+            },
+            "recordingFPS": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "title": "Recording FPS",
+              "description": "Frames per second recorded by the camera."
+            },
+            "CreativeWork": {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"},
+            "Director": {
+              "type": "array",
+              "title": "Director",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Participant"}
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"},
+            "Context": {
+              "title": "Slate Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "Used to capture key identifying information about what is being recorded on any given setup and take."
+        }
+      },
+      "additionalProperties": false,
+      "title": "Media Creation Context"
+    },
+    "core": {
+      "type": "object",
+      "title": "Core",
+      "properties": {
+        "customData": {
+          "type": "object",
+          "title": "Custom Data",
+          "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties",
+          "additionalProperties": true
+        },
+        "schemaVersion": {
+          "type": "string",
+          "title": "Schema Version",
+          "const": "0.1"
+        },
+        "rootObject": {
+          "type": "object",
+          "properties": {
+            "Asset": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Asset/properties/Asset"}
+            },
+            "Character": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Character"}
+            },
+            "Participant": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Participant"}
+            },
+            "Context": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Context"}
+            },
+            "CreativeWork": {
+              "type": "array",
+              "title": "New Field",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"}
+            },
+            "EditorialSequence": {
+              "type": "array",
+              "title": "Editorial Sequence",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+            },
+            "NarrativeAction": {
+              "type": "array",
+              "title": "Narrative Action",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"}
+            },
+            "NarrativeAudio": {
+              "type": "array",
+              "title": "Narrative Audio",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"}
+            },
+            "NarrativeLocation": {
+              "type": "array",
+              "title": "Narrative Location",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"}
+            },
+            "NarrativeObject": {
+              "type": "array",
+              "title": "Narrative Object",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"}
+            },
+            "NarrativeScene": {
+              "type": "array",
+              "title": "Narrative Scene",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"}
+            },
+            "NarrativeStyling": {
+              "type": "array",
+              "title": "Narrative Styling",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"}
+            },
+            "Production Location": {
+              "type": "array",
+              "title": "ProductionLocation",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"}
+            },
+            "ProductionScene": {
+              "type": "array",
+              "title": "Production Scene",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"}
+            },
+            "Slate": {
+              "type": "array",
+              "title": "Slate",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Slate"}
+            },
+            "NarrativeEffect": {
+              "type": "array",
+              "title": "Narrative Effect",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"}
+            },
+            "Location": {
+              "type": "array",
+              "title": "Location",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Utility/properties/Location"}
+            }
+          },
+          "additionalProperties": false
+        },
+        "rootArray": {
+          "type": "array",
+          "additionalItems": true,
+          "items": {
+            "additionalProperties": true,
+            "anyOf": [
+              {"$ref": "#/definitions/MediaCreationContext/properties/Character"},
+              {"$ref": "#/definitions/Participant/properties/Participant"},
+              {
+                "title": "Context",
+                "$ref": "#/definitions/MediaCreationContext/properties/Context"
+              },
+              {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"},
+              {
+                "title": "Narrative Action",
+                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"
+              },
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"},
+              {
+                "title": "Narrative Scene",
+                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"
+              },
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/Slate"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"},
+              {
+                "title": "Location",
+                "$ref": "#/definitions/Utility/properties/Location"
+              },
+              {"$ref": "#/definitions/Participant/properties/Role"},
+              {"$ref": "#/definitions/Participant/properties/Person"},
+              {"$ref": "#/definitions/Participant/properties/Department"},
+              {"$ref": "#/definitions/Participant/properties/Organization"},
+              {"$ref": "#/definitions/Participant/properties/Service"},
+              {
+                "title": "Asset",
+                "$ref": "#/definitions/Asset/properties/Asset"
+              },
+              {
+                "title": "Asset Structural Characteristics",
+                "$ref": "#/definitions/Asset/properties/AssetSC"
+              },
+              {
+                "title": "Sequence",
+                "$ref": "#/definitions/MediaCreationContext/properties/Sequence"
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Participant": {
+      "type": "object",
+      "title": "Participant",
+      "properties": {
+        "Participant": {
+          "type": "object",
+          "title": "Participant",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Participant"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Participant name",
+              "description": "A human readable name for the participant, primarily for use as a label"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description",
+              "description": "A brief description of the participant"
+            },
+            "ParticipantSC": {
+              "type": "object",
+              "oneOf": [
+                {"$ref": "#/definitions/Participant/properties/Person"},
+                {"$ref": "#/definitions/Participant/properties/Department"},
+                {"$ref": "#/definitions/Participant/properties/Organization"},
+                {"$ref": "#/definitions/Participant/properties/Service"}
+              ],
+              "title": "Participant Structural Characteristics"
+            },
+            "participantFC": {
+              "type": "object",
+              "title": "Participant Functional Characteristics",
+              "properties": {
+                "functionalType": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Functional Type"
+                },
+                "jobTitle": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "Role": {
+                  "type": "array",
+                  "description": "A group of Roles this Participant can perform",
+                  "additionalItems": true,
+                  "items": {"$ref": "#/definitions/Participant/properties/Role"}
+                }
+              },
+              "additionalProperties": true
+            },
+            "contact": {
+              "title": "Participant Context",
+              "$ref": "#/definitions/Utility/properties/contact"
+            },
+            "Participant": {
+              "type": "array",
+              "title": "Participant",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Participant"}
+            },
+            "Context": {
+              "title": "Character Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "The entities (people, organizations, and services) that are responsible for the production of the Creative Work."
+        },
+        "Person": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Person"
+            },
+            "identifier": {
+              "type": "array",
+              "title": "Identifier",
+              "description": "An identifier uniquely identifies an entity within a particular scope.",
+              "additionalItems": true,
+              "items": {
+                "type": "object",
+                "properties": {
+                  "identifierScope": {
+                    "type": "string",
+                    "title": "Identifier Scope",
+                    "description": "The universe within which an identifier is valid and unique."
+                  },
+                  "identifierValue": {
+                    "type": "string",
+                    "title": "Identifier Value",
+                    "description": "A string of characters that uniquely identifies an object within a particular scope."
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "identifierScope",
+                  "identifierValue"
+                ]
+              }
+            },
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Person name",
+              "description": "A human readable name for the person, primarily for use as a label"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description",
+              "description": "A brief description of the person"
+            },
+            "jobTitle": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Job Title",
+              "description": "A persons job title (as distinct from a specific role)"
+            },
+            "gender": {"$ref": "#/definitions/Utility/properties/gender"},
+            "Location": {"$ref": "#/definitions/Utility/properties/Location"},
+            "contact": {"$ref": "#/definitions/Utility/properties/contact"},
+            "personName": {"$ref": "#/definitions/Utility/properties/completeName"},
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "title": "Person",
+          "description": "People are the individuals that are associated with the production"
+        },
+        "Department": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Department"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Department name",
+              "description": "A human readable name for the department, primarily for use as a label"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description",
+              "description": "A brief description of the department"
+            },
+            "departmentName": {"$ref": "#/definitions/Utility/properties/basicName"},
+            "Location": {"$ref": "#/definitions/Utility/properties/Location"},
+            "contact": {"$ref": "#/definitions/Utility/properties/contact"},
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "title": "Department",
+          "description": "Part of a larger Organization with a particular set of responsibilities on the production."
+        },
+        "Organization": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Organization"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Organization name",
+              "description": "A human readable name for the organization, primarily for use as a label"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description",
+              "description": "A brief description of the organization"
+            },
+            "organizationName": {"$ref": "#/definitions/Utility/properties/basicName"},
+            "Location": {"$ref": "#/definitions/Utility/properties/Location"},
+            "contact": {"$ref": "#/definitions/Utility/properties/contact"},
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "title": "Organization",
+          "description": "A legal entity or groups of people associated with the production.. with a particular purpose relative to the production."
+        },
+        "Service": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Service"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Service name",
+              "description": "A human readable name for the service, primarily for use as a label"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Description",
+              "description": "A brief description of the service"
+            },
+            "serviceName": {"$ref": "#/definitions/Utility/properties/basicName"},
+            "contact": {"$ref": "#/definitions/Utility/properties/contact"},
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "title": "Service",
+          "description": "A computer driven agent that can perform tasks given the proper context and structured data."
+        },
+        "Role": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Role"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Role Name",
+              "examples": [
+                "Director",
+                "Producer",
+                "Composer",
+                "Art Department"
+              ]
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Role Description"
+            },
+            "roleType": {
+              "type": "string",
+              "title": "Role Type",
+              "description": "The specific role, typically used in authorization systems"
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "title": "Role",
+          "description": "A set of properties that define the role of a participant within the production"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true,
+  "anyOf": [
+    {"$ref": "#/definitions/core/properties/rootObject"},
+    {
+      "title": "rootArray",
+      "$ref": "#/definitions/core/properties/rootArray"
+    }
+  ]
+}
