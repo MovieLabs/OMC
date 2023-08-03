@@ -170,7 +170,8 @@
           "required": [
             "entityType",
             "identifier"
-          ]
+          ],
+          "description": "Describes the form of an Asset along with the attributes specific to that asset’s form"
         },
         "assetFC": {
           "type": "object",
@@ -203,483 +204,17 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"}
           },
-          "additionalProperties": true
+          "additionalProperties": true,
+          "description": "Describes the use or purpose of an Asset within the production process"
         }
       },
       "additionalProperties": false
     },
-    "Utility": {
+    "Infrastructure": {
       "type": "object",
       "properties": {
-        "unitOfMeasurement": {
+        "Infrastructure": {
           "type": "object",
-          "properties": {
-            "weight": {
-              "title": "weight",
-              "description": "Encode a measurment of weight using the imperial or metric system",
-              "additionalProperties": true,
-              "oneOf": [
-                {"type": "null"},
-                {
-                  "type": "string",
-                  "description": "Encode weight using the metric system of measurement (kilogram, gram)",
-                  "pattern": "^(\\d+kg)?(\\d+g)?$",
-                  "examples": ["3kg7g"]
-                },
-                {
-                  "type": "string",
-                  "description": "Encode weight using the imperial system of measurment (pounds, oounces)",
-                  "pattern": "^(\\d+lb)?(\\d+oz)?$",
-                  "examples": ["12lb14oz"]
-                }
-              ]
-            },
-            "dimensions": {
-              "type": "object",
-              "title": "dimensions",
-              "description": "Encode a set of measurments to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
-              "properties": {
-                "height": {
-                  "type": "object",
-                  "description": "The height or X axis of the object",
-                  "additionalProperties": true,
-                  "oneOf": [
-                    {"type": "null"},
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
-                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                      "examples": [
-                        "100m",
-                        "6km2m56cm12mm"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
-                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                      "examples": [
-                        "2000ft",
-                        "2mi12ft6in"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
-                      "pattern": "^(\\d+px)$",
-                      "examples": ["250px"]
-                    }
-                  ]
-                },
-                "width": {
-                  "type": "object",
-                  "description": "The width or X axis of the object",
-                  "additionalProperties": true,
-                  "oneOf": [
-                    {"type": "null"},
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
-                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                      "examples": [
-                        "100m",
-                        "6km2m56cm12mm"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
-                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                      "examples": [
-                        "2000ft",
-                        "2mi12ft6in"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
-                      "pattern": "^(\\d+px)$",
-                      "examples": ["250px"]
-                    }
-                  ]
-                },
-                "depth": {
-                  "type": "object",
-                  "description": "The depth or Z axis of the object",
-                  "additionalProperties": true,
-                  "oneOf": [
-                    {"type": "null"},
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
-                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                      "examples": [
-                        "100m",
-                        "6km2m56cm12mm"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
-                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                      "examples": [
-                        "2000ft",
-                        "2mi12ft6in"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
-                      "pattern": "^(\\d+px)$",
-                      "examples": ["250px"]
-                    }
-                  ]
-                }
-              },
-              "additionalProperties": true
-            },
-            "linearDistance": {
-              "title": "Linear Distance",
-              "description": "Encode a measurement of distance using the imperial or metric system",
-              "additionalProperties": true,
-              "oneOf": [
-                {"type": "null"},
-                {
-                  "type": "string",
-                  "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
-                  "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                  "examples": [
-                    "100m",
-                    "6km2m56cm12mm"
-                  ]
-                },
-                {
-                  "type": "string",
-                  "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
-                  "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                  "examples": [
-                    "2000ft",
-                    "2mi12ft6in"
-                  ]
-                }
-              ]
-            }
-          },
-          "additionalProperties": false
-        },
-        "identifier": {
-          "type": "array",
-          "title": "Identifier",
-          "description": "An identifier uniquely identifies an entity within a particular scope.",
-          "additionalItems": true,
-          "items": {
-            "type": "object",
-            "properties": {
-              "identifierScope": {
-                "type": "string",
-                "title": "Identifier Scope",
-                "description": "The universe within which an identifier is valid and unique."
-              },
-              "identifierValue": {
-                "type": "string",
-                "title": "Identifier Value",
-                "description": "A string of characters that uniquely identifies an object within a particular scope."
-              }
-            },
-            "additionalProperties": false,
-            "required": [
-              "identifierScope",
-              "identifierValue"
-            ]
-          }
-        },
-        "address": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Address",
-          "properties": {
-            "street": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Street Address",
-              "description": "The street address",
-              "examples": ["1600 Ampitheatre Parkway"]
-            },
-            "locality": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Address locality",
-              "description": "The locality in which the street address is, and which is in the region.",
-              "examples": ["Mountain View"]
-            },
-            "region": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Address region",
-              "description": "The region in which the locality is, and which is in the country",
-              "examples": ["California"]
-            },
-            "postalCode": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Zip or Postal Code",
-              "description": "A zip or postal code",
-              "examples": ["94534"]
-            },
-            "country": {
-              "title": "Country",
-              "$ref": "#/definitions/Utility/properties/country"
-            }
-          },
-          "additionalProperties": false
-        },
-        "country": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Country",
-          "description": "The country, as an ISO 3166-1 alpha-2 country code",
-          "minLength": 2,
-          "maxLength": 2,
-          "examples": ["US"]
-        },
-        "basicName": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Basic Name",
-          "properties": {
-            "fullName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Full Name",
-              "description": "The full an complete name of the entity"
-            },
-            "altName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Alternate Name",
-              "description": "An alternate, often shortened name for the entity"
-            }
-          },
-          "additionalProperties": false
-        },
-        "completeName": {
-          "type": "object",
-          "title": "Complete Name",
-          "properties": {
-            "firstGivenName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "First Given Name",
-              "description": "A person's first name, also referred to as given name"
-            },
-            "secondGivenName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Second Given Name",
-              "description": "A persons second given name, also referred to as middle name"
-            },
-            "familyName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Family Name",
-              "description": "A persons family name, also referred to as surname"
-            },
-            "fullName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Full Name",
-              "description": "A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields."
-            },
-            "birthName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Birth Name",
-              "description": "A persons name at birth, also referred to as maiden name"
-            },
-            "primaryName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Primary Name",
-              "description": "A persons primary name, one they typically use, also often a combination of first, second and family name"
-            },
-            "pseudonym": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Pseudonym"
-            },
-            "altName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Alternate Name"
-            },
-            "translatedName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Translated Name"
-            },
-            "nickname": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Nickname"
-            },
-            "moniker": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Moniker"
-            },
-            "alias": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Alias",
-              "description": "An alias being used by a person often used to disguse someones real identity, sometimes used when booking hotel rooms or restaurants "
-            },
-            "contractualName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Contractual Name"
-            },
-            "displayName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Display Name"
-            },
-            "sortName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Sort Name"
-            },
-            "scriptName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Script Name"
-            },
-            "prefix": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Prefix",
-              "description": "A prefix that can indicate a persons gender or title",
-              "examples": [
-                "Mrs",
-                "Mr",
-                "Dr",
-                "General"
-              ]
-            },
-            "suffix": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Suffix",
-              "description": "A suffix, often used to indicate a title or classification",
-              "examples": [
-                "MBE",
-                "MD",
-                "RN",
-                "II",
-                "IV"
-              ]
-            }
-          },
-          "additionalProperties": false
-        },
-        "gender": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Gender",
-          "properties": {
-            "gender": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Identifies as gender",
-              "description": "The gender by which an individual identifies",
-              "enum": [
-                "male",
-                "female",
-                "other",
-                "unknown",
-                null
-              ]
-            },
-            "genderPronoun": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Preferred pronoun",
-              "description": "An individuals pronoun of choice",
-              "enum": [
-                "he/him",
-                "she/her",
-                "ze/hir",
-                "they/their",
-                null
-              ]
-            }
-          },
-          "additionalProperties": false
-        },
-        "Location": {
-          "type": [
-            "object",
-            "null"
-          ],
           "properties": {
             "schemaVersion": {
               "title": "Schema Version",
@@ -692,7 +227,7 @@
             "entityType": {
               "type": "string",
               "title": "Entity Type",
-              "const": "Location"
+              "const": "Asset"
             },
             "identifier": {
               "title": "Identifier",
@@ -703,268 +238,118 @@
                 "string",
                 "null"
               ],
-              "title": "Location name",
-              "description": "A human readable name for the location"
+              "title": "Asset name",
+              "description": "A human readable name for the asset"
             },
             "description": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Location Description",
-              "description": "A brief description of the location"
-            },
-            "address": {
-              "title": "Address",
-              "$ref": "#/definitions/Utility/properties/address"
-            },
-            "coordinates": {
-              "title": "Coordinates",
-              "$ref": "#/definitions/Utility/properties/coordinates"
+              "title": "Asset description",
+              "description": "A human readable description of the asset"
             },
             "Context": {
-              "title": "Creative Work Context",
+              "title": "Asset Context",
               "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"},
+            "InfrastructureSC": {
+              "title": "Structural Characteristics",
+              "$ref": "#/definitions/Infrastructure/properties/InfrastructureSC"
+            },
+            "infrastructureFC": {
+              "title": "Functional Characteristics",
+              "$ref": "#/definitions/Infrastructure/properties/infrastructureFC"
             }
           },
-          "additionalProperties": false,
-          "required": ["entityType"]
-        },
-        "note": {
-          "type": [
-            "object",
-            "null"
+          "additionalProperties": true,
+          "required": [
+            "entityType",
+            "identifier"
           ],
-          "title": "Note",
+          "title": "Infrastructure",
+          "description": "The underlying systems and framework required for the production of the Creative Work; it is generally not specific to a particular Creative Work."
+        },
+        "InfrastructureSC": {
+          "type": "object",
+          "title": "Infrastructure Structural Characteristics",
           "properties": {
-            "title": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityType": {
               "type": "string",
-              "title": "Title",
-              "description": "A title for the note or annotation"
+              "title": "Entity Type",
+              "const": "AssetSC"
             },
-            "text": {
-              "type": "string",
-              "title": "Text",
-              "description": "The text of the note or annotation"
-            }
-          },
-          "additionalProperties": false
-        },
-        "time": {
-          "type": "object",
-          "title": "Time",
-          "properties": {
-            "timestamp": {
-              "type": [
-                "number",
-                "null"
-              ],
-              "title": "Timestamp"
-            },
-            "periodInTime": {
-              "type": "object",
-              "title": "Period in Time",
-              "properties": {
-                "startTime": {
-                  "type": "string",
-                  "title": "Start Time"
-                },
-                "durationTime": {
-                  "type": "string",
-                  "title": "Duration of Time"
-                },
-                "endTime": {
-                  "type": "string",
-                  "title": "End Time"
-                }
-              },
-              "additionalProperties": false,
-              "required": ["startTime"]
-            },
-            "descriptiveTime": {
-              "type": "object",
-              "title": "Descriptive Time",
-              "properties": {
-                "periodInDay": {
-                  "type": "string",
-                  "title": "Period in Day",
-                  "examples": [
-                    "Morning",
-                    "Noon",
-                    "Midnight",
-                    "Afternoon",
-                    "Night"
-                  ]
-                },
-                "relativeTime": {
-                  "type": "string",
-                  "title": "Relative Time",
-                  "examples": [
-                    "Later",
-                    "Continuous",
-                    "6 months earlier",
-                    "A long time ago"
-                  ]
-                },
-                "periodInTime": {
-                  "type": "string",
-                  "title": "Period in Time",
-                  "examples": [
-                    "Ming dynasty",
-                    "World War II",
-                    "Jurassic period",
-                    "20th century"
-                  ]
-                },
-                "eventInTime": {
-                  "type": "string",
-                  "title": "Event in Time",
-                  "description": "Describes a specific event that occurred",
-                  "examples": [
-                    "Hindenburg disaster",
-                    "World Trade Center attack",
-                    "Queen Elizabeth coronation"
-                  ]
-                }
-              },
-              "additionalProperties": false
-            },
-            "dateTime": {
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "structuralType": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Date & Time",
-              "pattern": "\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d(?:\\.\\d+)?Z?"
-            },
-            "date": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Date",
-              "pattern": "\\d{4}-[01]\\d-[0-3]\\d",
-              "examples": ["2020-11-21"]
-            },
-            "durationTime": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Duration of Time",
-              "pattern": "^(-?)P(?=.)((\\d+)Y)?((\\d+)M)?((\\d+)D)?(T(?=.)((\\d+)H)?((\\d+)M)?(\\d*(\\.\\d+)?S)?)?$",
-              "examples": ["P2Y12M3D"]
-            }
-          },
-          "additionalProperties": false
-        },
-        "coordinates": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Coordinates",
-          "description": "A global positioning coordinate in compliance with WGS 84",
-          "properties": {
-            "latitude": {
-              "type": "number",
-              "title": "latitude",
-              "minimum": -90,
-              "maximum": 90
-            },
-            "longitude": {
-              "type": "number",
-              "title": "longitude",
-              "minimum": -180,
-              "maximum": 180
-            }
-          },
-          "additionalProperties": false
-        },
-        "contact": {
-          "type": "object",
-          "title": "Contact",
-          "properties": {
-            "email": {
-              "title": "Email",
-              "$ref": "#/definitions/Utility/properties/email"
-            },
-            "telephone": {
-              "title": "Telephone",
-              "$ref": "#/definitions/Utility/properties/telephone"
-            }
-          },
-          "additionalProperties": false
-        },
-        "email": {
-          "type": "object",
-          "title": "Email",
-          "properties": {
-            "business": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Business"
-            },
-            "personal": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Personal"
-            }
-          },
-          "additionalProperties": false
-        },
-        "telephone": {
-          "type": "object",
-          "title": "Telephone",
-          "properties": {
-            "business": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Business"
-            },
-            "personal": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Personal"
-            }
-          },
-          "additionalProperties": false
-        },
-        "language": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Language",
-          "description": "An ISO 693 language code"
-        },
-        "version": {
-          "type": "object",
-          "properties": {
-            "versionNumber": {
-              "type": [
-                "string",
-                "null"
+              "title": "Structural Type",
+              "description": "A structured description of the the assets form",
+              "examples": [
+                "assetGroup",
+                "digital.image",
+                "analog.movingImage"
               ]
             },
-            "variantOf": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-            "hasVariant": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-            "derivedFrom": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-            "hasDerivation": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-            "hasAlternate": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-            "alternateOf": {"$ref": "#/definitions/Asset/properties/AssetSC"}
-          }
+            "structuralProperties": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "title": "Structural Properties",
+              "description": "A set of properties that describe the infrastructure in this form",
+              "properties": {
+                "dimensions": {"type": "string"},
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              },
+              "additionalProperties": true
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": false,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "Describes the form of the Infrastrcuture along with the attributes specific to that infrastructure's form"
+        },
+        "infrastructureFC": {
+          "type": "object",
+          "title": "Infrastructure Functional Characteristics",
+          "properties": {
+            "functionalType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Functional Type",
+              "description": "The use or purpose of a Task within the production process."
+            },
+            "functionalProperties": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "title": "Functional Properties",
+              "description": "A set of properties that describe the tasks functional use",
+              "properties": {
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              },
+              "additionalProperties": true
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": true,
+          "description": "Describes the use or purpose of an Infrastructure within the production process"
         }
-      },
-      "additionalProperties": true
+      }
     },
     "MediaCreationContext": {
       "type": "object",
@@ -2554,181 +1939,6 @@
       "additionalProperties": false,
       "title": "Media Creation Context"
     },
-    "core": {
-      "type": "object",
-      "title": "Core",
-      "properties": {
-        "customData": {
-          "type": "object",
-          "title": "Custom Data",
-          "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties",
-          "additionalProperties": true
-        },
-        "schemaVersion": {
-          "type": "string",
-          "title": "Schema Version",
-          "const": "0.1"
-        },
-        "rootObject": {
-          "type": "object",
-          "properties": {
-            "Asset": {
-              "type": "array",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/Asset/properties/Asset"}
-            },
-            "Character": {
-              "type": "array",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Character"}
-            },
-            "Participant": {
-              "type": "array",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/Participant/properties/Participant"}
-            },
-            "Context": {
-              "type": "array",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Context"}
-            },
-            "CreativeWork": {
-              "type": "array",
-              "title": "New Field",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"}
-            },
-            "EditorialSequence": {
-              "type": "array",
-              "title": "Editorial Sequence",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
-            },
-            "NarrativeAction": {
-              "type": "array",
-              "title": "Narrative Action",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"}
-            },
-            "NarrativeAudio": {
-              "type": "array",
-              "title": "Narrative Audio",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"}
-            },
-            "NarrativeLocation": {
-              "type": "array",
-              "title": "Narrative Location",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"}
-            },
-            "NarrativeObject": {
-              "type": "array",
-              "title": "Narrative Object",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"}
-            },
-            "NarrativeScene": {
-              "type": "array",
-              "title": "Narrative Scene",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"}
-            },
-            "NarrativeStyling": {
-              "type": "array",
-              "title": "Narrative Styling",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"}
-            },
-            "Production Location": {
-              "type": "array",
-              "title": "ProductionLocation",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"}
-            },
-            "ProductionScene": {
-              "type": "array",
-              "title": "Production Scene",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"}
-            },
-            "Slate": {
-              "type": "array",
-              "title": "Slate",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Slate"}
-            },
-            "NarrativeEffect": {
-              "type": "array",
-              "title": "Narrative Effect",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"}
-            },
-            "Location": {
-              "type": "array",
-              "title": "Location",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/Utility/properties/Location"}
-            }
-          },
-          "additionalProperties": false
-        },
-        "rootArray": {
-          "type": "array",
-          "additionalItems": true,
-          "items": {
-            "additionalProperties": true,
-            "anyOf": [
-              {"$ref": "#/definitions/MediaCreationContext/properties/Character"},
-              {"$ref": "#/definitions/Participant/properties/Participant"},
-              {
-                "title": "Context",
-                "$ref": "#/definitions/MediaCreationContext/properties/Context"
-              },
-              {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"},
-              {
-                "title": "Narrative Action",
-                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"
-              },
-              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"},
-              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"},
-              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"},
-              {
-                "title": "Narrative Scene",
-                "$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"
-              },
-              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"},
-              {"$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"},
-              {"$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"},
-              {"$ref": "#/definitions/MediaCreationContext/properties/Slate"},
-              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"},
-              {
-                "title": "Location",
-                "$ref": "#/definitions/Utility/properties/Location"
-              },
-              {"$ref": "#/definitions/Participant/properties/Role"},
-              {"$ref": "#/definitions/Participant/properties/Person"},
-              {"$ref": "#/definitions/Participant/properties/Department"},
-              {"$ref": "#/definitions/Participant/properties/Organization"},
-              {"$ref": "#/definitions/Participant/properties/Service"},
-              {
-                "title": "Asset",
-                "$ref": "#/definitions/Asset/properties/Asset"
-              },
-              {
-                "title": "Asset Structural Characteristics",
-                "$ref": "#/definitions/Asset/properties/AssetSC"
-              },
-              {
-                "title": "Sequence",
-                "$ref": "#/definitions/MediaCreationContext/properties/Sequence"
-              }
-            ]
-          }
-        }
-      },
-      "additionalProperties": false
-    },
     "Participant": {
       "type": "object",
       "title": "Participant",
@@ -2775,7 +1985,8 @@
                 {"$ref": "#/definitions/Participant/properties/Organization"},
                 {"$ref": "#/definitions/Participant/properties/Service"}
               ],
-              "title": "Participant Structural Characteristics"
+              "title": "Participant Structural Characteristics",
+              "description": "Describes the form of a Participant along with the attributes specific to that Participant’s form."
             },
             "participantFC": {
               "type": "object",
@@ -2792,7 +2003,9 @@
                   "type": [
                     "string",
                     "null"
-                  ]
+                  ],
+                  "title": "Job Title",
+                  "description": "A formal name for the position a Person holds in relation to the production, usually associated with a specific set of responsibilities."
                 },
                 "Role": {
                   "type": "array",
@@ -2801,20 +2014,23 @@
                   "items": {"$ref": "#/definitions/Participant/properties/Role"}
                 }
               },
-              "additionalProperties": true
+              "additionalProperties": true,
+              "description": "The use or purpose of a Participant within the production process"
             },
             "contact": {
-              "title": "Participant Context",
-              "$ref": "#/definitions/Utility/properties/contact"
+              "title": "Participant Contact",
+              "$ref": "#/definitions/Utility/properties/contact",
+              "description": "Contact information for the Participant"
             },
             "Participant": {
               "type": "array",
               "title": "Participant",
               "additionalItems": true,
-              "items": {"$ref": "#/definitions/Participant/properties/Participant"}
+              "items": {"$ref": "#/definitions/Participant/properties/Participant"},
+              "description": "Any Participants that are members of this Participant group"
             },
             "Context": {
-              "title": "Character Context",
+              "title": "Participant Context",
               "$ref": "#/definitions/MediaCreationContext/properties/Context"
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"}
@@ -2877,7 +2093,7 @@
                 "null"
               ],
               "title": "Person name",
-              "description": "A human readable name for the person, primarily for use as a label"
+              "description": "A human readable name for the person, convienient for use in UI's etc."
             },
             "description": {
               "type": [
@@ -2897,8 +2113,16 @@
             },
             "gender": {"$ref": "#/definitions/Utility/properties/gender"},
             "Location": {"$ref": "#/definitions/Utility/properties/Location"},
-            "contact": {"$ref": "#/definitions/Utility/properties/contact"},
-            "personName": {"$ref": "#/definitions/Utility/properties/completeName"},
+            "contact": {
+              "$ref": "#/definitions/Utility/properties/contact",
+              "title": "Person Contact",
+              "description": "Contact information for the Person"
+            },
+            "personName": {
+              "$ref": "#/definitions/Utility/properties/completeName",
+              "title": "Person Name",
+              "description": "The cannonical name or set of names and titles for the Person"
+            },
             "customData": {"$ref": "#/definitions/core/properties/customData"}
           },
           "additionalProperties": false,
@@ -3109,6 +2333,1087 @@
           ],
           "title": "Role",
           "description": "A set of properties that define the role of a participant within the production"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Task": {
+      "type": "object",
+      "properties": {
+        "Task": {
+          "type": "object",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Asset"
+            },
+            "identifier": {
+              "title": "Identifier",
+              "$ref": "#/definitions/Utility/properties/identifier"
+            },
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset name",
+              "description": "A human readable name for the asset"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset description",
+              "description": "A human readable description of the asset"
+            },
+            "TaskSC": {
+              "title": "Structural Characteristics",
+              "$ref": "#/definitions/Task/properties/TaskSC"
+            },
+            "taskFC": {
+              "title": "Functional Characteristics",
+              "$ref": "#/definitions/Task/properties/taskFC"
+            },
+            "Context": {
+              "title": "Asset Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "title": "Task",
+          "description": "A piece of work to be done and completed as a step in the production process.",
+          "additionalProperties": true,
+          "required": [
+            "entityType",
+            "identifier"
+          ]
+        },
+        "TaskSC": {
+          "type": "object",
+          "title": "Task Structural Characteristics",
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "AssetSC"
+            },
+            "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
+            "structuralType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Structural Type",
+              "description": "A structured description of the the assets form",
+              "examples": [
+                "assetGroup",
+                "digital.image",
+                "analog.movingImage"
+              ]
+            },
+            "structuralProperties": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "title": "Structural Properties",
+              "description": "A set of properties that describe the asset in this form",
+              "properties": {
+                "dimensions": {"type": "string"},
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              },
+              "additionalProperties": true
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": true,
+          "required": [
+            "entityType",
+            "identifier"
+          ],
+          "description": "Describes the form of Task along with the attributes specific to that task’s form"
+        },
+        "taskFC": {
+          "type": "object",
+          "title": "Task Functional Characteristics",
+          "properties": {
+            "functionalType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Functional Type",
+              "description": "The use or purpose of a Task within the production process."
+            },
+            "functionalProperties": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "title": "Functional Properties",
+              "description": "A set of properties that describe the tasks functional use",
+              "properties": {
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              },
+              "additionalProperties": true
+            },
+            "customData": {"$ref": "#/definitions/core/properties/customData"}
+          },
+          "additionalProperties": true,
+          "description": "Describes the use or purpose of an Asset within the production process"
+        }
+      }
+    },
+    "Utility": {
+      "type": "object",
+      "properties": {
+        "unitOfMeasurement": {
+          "type": "object",
+          "properties": {
+            "weight": {
+              "title": "weight",
+              "description": "Encode a measurment of weight using the imperial or metric system",
+              "additionalProperties": true,
+              "oneOf": [
+                {"type": "null"},
+                {
+                  "type": "string",
+                  "description": "Encode weight using the metric system of measurement (kilogram, gram)",
+                  "pattern": "^(\\d+kg)?(\\d+g)?$",
+                  "examples": ["3kg7g"]
+                },
+                {
+                  "type": "string",
+                  "description": "Encode weight using the imperial system of measurment (pounds, oounces)",
+                  "pattern": "^(\\d+lb)?(\\d+oz)?$",
+                  "examples": ["12lb14oz"]
+                }
+              ]
+            },
+            "dimensions": {
+              "type": "object",
+              "title": "dimensions",
+              "description": "Encode a set of measurments to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
+              "properties": {
+                "height": {
+                  "type": "object",
+                  "description": "The height or X axis of the object",
+                  "additionalProperties": true,
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                },
+                "width": {
+                  "type": "object",
+                  "description": "The width or X axis of the object",
+                  "additionalProperties": true,
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                },
+                "depth": {
+                  "type": "object",
+                  "description": "The depth or Z axis of the object",
+                  "additionalProperties": true,
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                }
+              },
+              "additionalProperties": true
+            },
+            "linearDistance": {
+              "title": "Linear Distance",
+              "description": "Encode a measurement of distance using the imperial or metric system",
+              "additionalProperties": true,
+              "oneOf": [
+                {"type": "null"},
+                {
+                  "type": "string",
+                  "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                  "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                  "examples": [
+                    "100m",
+                    "6km2m56cm12mm"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                  "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                  "examples": [
+                    "2000ft",
+                    "2mi12ft6in"
+                  ]
+                }
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "identifier": {
+          "type": "array",
+          "title": "Identifier",
+          "description": "An identifier uniquely identifies an entity within a particular scope.",
+          "additionalItems": true,
+          "items": {
+            "type": "object",
+            "properties": {
+              "identifierScope": {
+                "type": "string",
+                "title": "Identifier Scope",
+                "description": "The universe within which an identifier is valid and unique."
+              },
+              "identifierValue": {
+                "type": "string",
+                "title": "Identifier Value",
+                "description": "A string of characters that uniquely identifies an object within a particular scope."
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "identifierScope",
+              "identifierValue"
+            ]
+          }
+        },
+        "address": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Address",
+          "properties": {
+            "street": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Street Address",
+              "description": "The street address",
+              "examples": ["1600 Ampitheatre Parkway"]
+            },
+            "locality": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Address locality",
+              "description": "The locality in which the street address is, and which is in the region.",
+              "examples": ["Mountain View"]
+            },
+            "region": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Address region",
+              "description": "The region in which the locality is, and which is in the country",
+              "examples": ["California"]
+            },
+            "postalCode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Zip or Postal Code",
+              "description": "A zip or postal code",
+              "examples": ["94534"]
+            },
+            "country": {
+              "title": "Country",
+              "$ref": "#/definitions/Utility/properties/country"
+            }
+          },
+          "additionalProperties": false
+        },
+        "country": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Country",
+          "description": "The country, as an ISO 3166-1 alpha-2 country code",
+          "minLength": 2,
+          "maxLength": 2,
+          "examples": ["US"]
+        },
+        "basicName": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Basic Name",
+          "properties": {
+            "fullName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Full Name",
+              "description": "The full an complete name of the entity"
+            },
+            "altName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alternate Name",
+              "description": "An alternate, often shortened name for the entity"
+            }
+          },
+          "additionalProperties": false
+        },
+        "completeName": {
+          "type": "object",
+          "title": "Complete Name",
+          "properties": {
+            "firstGivenName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "First Given Name",
+              "description": "A person's first name, also referred to as given name"
+            },
+            "secondGivenName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Second Given Name",
+              "description": "A persons second given name, also referred to as middle name"
+            },
+            "familyName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Family Name",
+              "description": "A persons family name, also referred to as surname"
+            },
+            "fullName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Full Name",
+              "description": "A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields."
+            },
+            "birthName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Birth Name",
+              "description": "A persons name at birth, also referred to as maiden name"
+            },
+            "primaryName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Primary Name",
+              "description": "A persons primary name, one they typically use, also often a combination of first, second and family name"
+            },
+            "pseudonym": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Pseudonym"
+            },
+            "altName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alternate Name"
+            },
+            "translatedName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Translated Name"
+            },
+            "nickname": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Nickname"
+            },
+            "moniker": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Moniker"
+            },
+            "alias": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alias",
+              "description": "An alias being used by a person often used to disguse someones real identity, sometimes used when booking hotel rooms or restaurants "
+            },
+            "contractualName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Contractual Name"
+            },
+            "displayName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Display Name"
+            },
+            "sortName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Sort Name"
+            },
+            "scriptName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Script Name"
+            },
+            "prefix": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Prefix",
+              "description": "A prefix that can indicate a persons gender or title",
+              "examples": [
+                "Mrs",
+                "Mr",
+                "Dr",
+                "General"
+              ]
+            },
+            "suffix": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Suffix",
+              "description": "A suffix, often used to indicate a title or classification",
+              "examples": [
+                "MBE",
+                "MD",
+                "RN",
+                "II",
+                "IV"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "gender": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Gender",
+          "properties": {
+            "gender": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Identifies as gender",
+              "description": "The gender by which an individual identifies",
+              "enum": [
+                "male",
+                "female",
+                "other",
+                "unknown",
+                null
+              ]
+            },
+            "genderPronoun": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Preferred pronoun",
+              "description": "An individuals pronoun of choice",
+              "enum": [
+                "he/him",
+                "she/her",
+                "ze/hir",
+                "they/their",
+                null
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "Location": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "schemaVersion": {
+              "title": "Schema Version",
+              "$ref": "#/definitions/core/properties/schemaVersion"
+            },
+            "entityInfo": {
+              "type": "string",
+              "title": "Entity Information"
+            },
+            "entityType": {
+              "type": "string",
+              "title": "Entity Type",
+              "const": "Location"
+            },
+            "identifier": {
+              "title": "Identifier",
+              "$ref": "#/definitions/Utility/properties/identifier"
+            },
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Location name",
+              "description": "A human readable name for the location"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Location Description",
+              "description": "A brief description of the location"
+            },
+            "address": {
+              "title": "Address",
+              "$ref": "#/definitions/Utility/properties/address"
+            },
+            "coordinates": {
+              "title": "Coordinates",
+              "$ref": "#/definitions/Utility/properties/coordinates"
+            },
+            "Context": {
+              "title": "Location Context",
+              "$ref": "#/definitions/MediaCreationContext/properties/Context"
+            }
+          },
+          "additionalProperties": false,
+          "required": ["entityType"],
+          "title": "Location",
+          "description": "A particular place or position either in either the real world or the narrative world."
+        },
+        "note": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Note",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "description": "A title for the note or annotation"
+            },
+            "text": {
+              "type": "string",
+              "title": "Text",
+              "description": "The text of the note or annotation"
+            }
+          },
+          "additionalProperties": false
+        },
+        "time": {
+          "type": "object",
+          "title": "Time",
+          "properties": {
+            "timestamp": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "title": "Timestamp"
+            },
+            "periodInTime": {
+              "type": "object",
+              "title": "Period in Time",
+              "properties": {
+                "startTime": {
+                  "type": "string",
+                  "title": "Start Time"
+                },
+                "durationTime": {
+                  "type": "string",
+                  "title": "Duration of Time"
+                },
+                "endTime": {
+                  "type": "string",
+                  "title": "End Time"
+                }
+              },
+              "additionalProperties": false,
+              "required": ["startTime"]
+            },
+            "descriptiveTime": {
+              "type": "object",
+              "title": "Descriptive Time",
+              "properties": {
+                "periodInDay": {
+                  "type": "string",
+                  "title": "Period in Day",
+                  "examples": [
+                    "Morning",
+                    "Noon",
+                    "Midnight",
+                    "Afternoon",
+                    "Night"
+                  ]
+                },
+                "relativeTime": {
+                  "type": "string",
+                  "title": "Relative Time",
+                  "examples": [
+                    "Later",
+                    "Continuous",
+                    "6 months earlier",
+                    "A long time ago"
+                  ]
+                },
+                "periodInTime": {
+                  "type": "string",
+                  "title": "Period in Time",
+                  "examples": [
+                    "Ming dynasty",
+                    "World War II",
+                    "Jurassic period",
+                    "20th century"
+                  ]
+                },
+                "eventInTime": {
+                  "type": "string",
+                  "title": "Event in Time",
+                  "description": "Describes a specific event that occurred",
+                  "examples": [
+                    "Hindenburg disaster",
+                    "World Trade Center attack",
+                    "Queen Elizabeth coronation"
+                  ]
+                }
+              },
+              "additionalProperties": false
+            },
+            "dateTime": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Date & Time",
+              "pattern": "\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d(?:\\.\\d+)?Z?",
+              "description": "Should be formatted to comply with ISO 8601"
+            },
+            "date": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Date",
+              "pattern": "\\d{4}-[01]\\d-[0-3]\\d",
+              "examples": ["2020-11-21"],
+              "description": "Should be formatted to comply with ISO 8601"
+            },
+            "durationTime": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Duration of Time",
+              "pattern": "^(-?)P(?=.)((\\d+)Y)?((\\d+)M)?((\\d+)D)?(T(?=.)((\\d+)H)?((\\d+)M)?(\\d*(\\.\\d+)?S)?)?$",
+              "examples": ["P2Y12M3D"],
+              "description": "Should be formatted to comply with ISO 8601"
+            }
+          },
+          "additionalProperties": false
+        },
+        "coordinates": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Coordinates",
+          "description": "A global positioning coordinate in compliance with WGS 84",
+          "properties": {
+            "latitude": {
+              "type": "number",
+              "title": "latitude",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "longitude": {
+              "type": "number",
+              "title": "longitude",
+              "minimum": -180,
+              "maximum": 180
+            }
+          },
+          "additionalProperties": false
+        },
+        "contact": {
+          "type": "object",
+          "title": "Contact",
+          "properties": {
+            "email": {
+              "title": "Email",
+              "$ref": "#/definitions/Utility/properties/email"
+            },
+            "telephone": {
+              "title": "Telephone",
+              "$ref": "#/definitions/Utility/properties/telephone"
+            }
+          },
+          "additionalProperties": false
+        },
+        "email": {
+          "type": "object",
+          "title": "Email",
+          "properties": {
+            "business": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Business"
+            },
+            "personal": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Personal"
+            }
+          },
+          "additionalProperties": false
+        },
+        "telephone": {
+          "type": "object",
+          "title": "Telephone",
+          "properties": {
+            "business": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Business"
+            },
+            "personal": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Personal"
+            }
+          },
+          "additionalProperties": false
+        },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Language",
+          "description": "An IETF BCP 47 language code"
+        }
+      },
+      "additionalProperties": true,
+      "title": "Utility",
+      "description": "Common data models and data structures used in multiple places and in multiple ways in a larger system."
+    },
+    "core": {
+      "type": "object",
+      "title": "Core",
+      "properties": {
+        "customData": {
+          "type": "object",
+          "title": "Custom Data",
+          "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties",
+          "additionalProperties": true
+        },
+        "schemaVersion": {
+          "type": "string",
+          "title": "Schema Version",
+          "const": "0.1"
+        },
+        "rootObject": {
+          "type": "object",
+          "properties": {
+            "Asset": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Asset/properties/Asset"},
+              "title": "Asset"
+            },
+            "AssetSC": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+              "title": "Asset Structural Characteristics"
+            },
+            "Character": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Character"},
+              "title": "Character"
+            },
+            "Context": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Context"},
+              "title": "Context"
+            },
+            "CreativeWork": {
+              "type": "array",
+              "title": "Creative Work",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"}
+            },
+            "EditorialSequence": {
+              "type": "array",
+              "title": "Editorial Sequence",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+            },
+            "NarrativeAction": {
+              "type": "array",
+              "title": "Narrative Action",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"}
+            },
+            "NarrativeAudio": {
+              "type": "array",
+              "title": "Narrative Audio",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"}
+            },
+            "NarrativeLocation": {
+              "type": "array",
+              "title": "Narrative Location",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"}
+            },
+            "NarrativeObject": {
+              "type": "array",
+              "title": "Narrative Object",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"}
+            },
+            "NarrativeScene": {
+              "type": "array",
+              "title": "Narrative Scene",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"}
+            },
+            "NarrativeStyling": {
+              "type": "array",
+              "title": "Narrative Styling",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"}
+            },
+            "Production Location": {
+              "type": "array",
+              "title": "ProductionLocation",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"}
+            },
+            "ProductionScene": {
+              "type": "array",
+              "title": "Production Scene",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"}
+            },
+            "Slate": {
+              "type": "array",
+              "title": "Slate",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/Slate"}
+            },
+            "NarrativeEffect": {
+              "type": "array",
+              "title": "Narrative Effect",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"}
+            },
+            "Participant": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Participant"},
+              "title": "Participant"
+            },
+            "Person": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Person"},
+              "title": "Person"
+            },
+            "Department": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Department"},
+              "title": "Department"
+            },
+            "Organization": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Organization"},
+              "title": "Organization"
+            },
+            "Service": {
+              "type": "array",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Participant/properties/Service"},
+              "title": "Service"
+            },
+            "Location": {
+              "type": "array",
+              "title": "Location",
+              "additionalItems": true,
+              "items": {"$ref": "#/definitions/Utility/properties/Location"}
+            }
+          },
+          "additionalProperties": false
+        },
+        "rootArray": {
+          "type": "array",
+          "additionalItems": true,
+          "items": {
+            "additionalProperties": true,
+            "anyOf": [
+              {"$ref": "#/definitions/MediaCreationContext/properties/Character"},
+              {"$ref": "#/definitions/Participant/properties/Participant"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/Context"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/Slate"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"},
+              {"$ref": "#/definitions/Utility/properties/Location"},
+              {"$ref": "#/definitions/Participant/properties/Role"},
+              {"$ref": "#/definitions/Participant/properties/Person"},
+              {"$ref": "#/definitions/Participant/properties/Department"},
+              {"$ref": "#/definitions/Participant/properties/Organization"},
+              {"$ref": "#/definitions/Participant/properties/Service"},
+              {"$ref": "#/definitions/Asset/properties/Asset"},
+              {"$ref": "#/definitions/Asset/properties/AssetSC"},
+              {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"},
+              {"$ref": "#/definitions/Infrastructure/properties/Infrastructure"},
+              {"$ref": "#/definitions/Infrastructure/properties/InfrastructureSC"},
+              {"$ref": "#/definitions/Task/properties/Task"},
+              {"$ref": "#/definitions/Task/properties/TaskSC"}
+            ]
+          }
         }
       },
       "additionalProperties": false
