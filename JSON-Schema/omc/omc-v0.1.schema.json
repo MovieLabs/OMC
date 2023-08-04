@@ -302,7 +302,7 @@
             "entityType",
             "identifier"
           ],
-          "description": "Describes the form of the Infrastrcuture along with the attributes specific to that infrastructure's form"
+          "description": "Describes the form of the Infrastructure along with the attributes specific to that infrastructure's form"
         },
         "infrastructureFC": {
           "type": "object",
@@ -1086,7 +1086,7 @@
                     "null"
                   ],
                   "title": "Creative Work Official Title",
-                  "description": "The offical title of the work"
+                  "description": "The official title of the work"
                 },
                 "internalTitle": {
                   "type": [
@@ -1488,7 +1488,7 @@
                     "null"
                   ],
                   "title": "Scene alternate name",
-                  "description": "An alternate, often shorter, name used in applications to identify the scens"
+                  "description": "An alternate, often shorter, name used in applications to identify the scenes"
                 }
               },
               "additionalProperties": true
@@ -1516,7 +1516,7 @@
               "items": {
                 "type": "object",
                 "title": "Slugline",
-                "description": "An arbitary note or comment pertaining to the entity",
+                "description": "An arbritary note or comment pertaining to the entity",
                 "properties": {
                   "title": {
                     "type": [
@@ -2077,7 +2077,7 @@
                 "null"
               ],
               "title": "Person name",
-              "description": "A human readable name for the person, convienient for use in UI's etc."
+              "description": "A human readable name for the person, convenient for use in UI's etc."
             },
             "description": {
               "type": [
@@ -2105,7 +2105,7 @@
             "personName": {
               "$ref": "#/definitions/Utility/properties/completeName",
               "title": "Person Name",
-              "description": "The cannonical name or set of names and titles for the Person"
+              "description": "The canonical name or set of names and titles for the Person"
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"}
           },
@@ -2482,7 +2482,7 @@
                 },
                 {
                   "type": "string",
-                  "description": "Encode weight using the imperial system of measurment (pounds, oounces)",
+                  "description": "Encode weight using the imperial system of measurement (pounds, ounces)",
                   "pattern": "^(\\d+lb)?(\\d+oz)?$",
                   "examples": ["12lb14oz"]
                 }
@@ -2491,7 +2491,7 @@
             "dimensions": {
               "type": "object",
               "title": "dimensions",
-              "description": "Encode a set of measurments to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
+              "description": "Encode a set of measurements to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
               "properties": {
                 "height": {
                   "type": "object",
@@ -2533,7 +2533,7 @@
                     {"type": "null"},
                     {
                       "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
                       "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
                       "examples": [
                         "100m",
@@ -2565,7 +2565,7 @@
                     {"type": "null"},
                     {
                       "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
                       "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
                       "examples": [
                         "100m",
@@ -2600,7 +2600,7 @@
                 {"type": "null"},
                 {
                   "type": "string",
-                  "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                  "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
                   "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
                   "examples": [
                     "100m",
@@ -2609,7 +2609,7 @@
                 },
                 {
                   "type": "string",
-                  "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                  "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
                   "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
                   "examples": [
                     "2000ft",
@@ -2661,7 +2661,7 @@
               ],
               "title": "Street Address",
               "description": "The street address",
-              "examples": ["1600 Ampitheatre Parkway"]
+              "examples": ["1600 Ampitheater Parkway"]
             },
             "locality": {
               "type": [
@@ -2827,7 +2827,7 @@
                 "null"
               ],
               "title": "Alias",
-              "description": "An alias being used by a person often used to disguse someones real identity, sometimes used when booking hotel rooms or restaurants "
+              "description": "An alias being used by a person often used to disguise someones real identity, sometimes used when booking hotel rooms or restaurants "
             },
             "contractualName": {
               "type": [
