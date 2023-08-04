@@ -16,10 +16,6 @@
               "title": "Schema Version",
               "$ref": "#/definitions/core/properties/schemaVersion"
             },
-            "entityInfo": {
-              "type": "string",
-              "title": "Entity Information"
-            },
             "entityType": {
               "type": "string",
               "title": "Entity Type",
@@ -139,18 +135,6 @@
                 "analog.movingImage"
               ]
             },
-            "essenceVersion": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Essence Version",
-              "description": "The version of the essence represented",
-              "examples": [
-                "1.0.0",
-                "2.0"
-              ]
-            },
             "structuralProperties": {
               "type": [
                 "object",
@@ -227,7 +211,7 @@
             "entityType": {
               "type": "string",
               "title": "Entity Type",
-              "const": "Asset"
+              "const": "Infrastructure"
             },
             "identifier": {
               "title": "Identifier",
@@ -282,7 +266,7 @@
             "entityType": {
               "type": "string",
               "title": "Entity Type",
-              "const": "AssetSC"
+              "const": "InfrastructureSC"
             },
             "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
             "structuralType": {
@@ -2354,7 +2338,7 @@
             "entityType": {
               "type": "string",
               "title": "Entity Type",
-              "const": "Asset"
+              "const": "Task"
             },
             "identifier": {
               "title": "Identifier",
@@ -2409,7 +2393,7 @@
             "entityType": {
               "type": "string",
               "title": "Entity Type",
-              "const": "AssetSC"
+              "const": "TaskSC"
             },
             "identifier": {"$ref": "#/definitions/Utility/properties/identifier"},
             "structuralType": {
@@ -3246,134 +3230,134 @@
           "properties": {
             "Asset": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Asset/properties/Asset"},
               "title": "Asset"
             },
             "AssetSC": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Asset/properties/AssetSC"},
               "title": "Asset Structural Characteristics"
             },
             "Character": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/Character"},
               "title": "Character"
             },
             "Context": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/Context"},
               "title": "Context"
             },
             "CreativeWork": {
               "type": "array",
               "title": "Creative Work",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/CreativeWork"}
             },
             "EditorialSequence": {
               "type": "array",
               "title": "Editorial Sequence",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
             },
             "NarrativeAction": {
               "type": "array",
               "title": "Narrative Action",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"}
             },
             "NarrativeAudio": {
               "type": "array",
               "title": "Narrative Audio",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeAudio"}
             },
             "NarrativeLocation": {
               "type": "array",
               "title": "Narrative Location",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"}
             },
             "NarrativeObject": {
               "type": "array",
               "title": "Narrative Object",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"}
             },
             "NarrativeScene": {
               "type": "array",
               "title": "Narrative Scene",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeScene"}
             },
             "NarrativeStyling": {
               "type": "array",
               "title": "Narrative Styling",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"}
             },
             "Production Location": {
               "type": "array",
               "title": "ProductionLocation",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"}
             },
             "ProductionScene": {
               "type": "array",
               "title": "Production Scene",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"}
             },
             "Slate": {
               "type": "array",
               "title": "Slate",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/Slate"}
             },
             "NarrativeEffect": {
               "type": "array",
               "title": "Narrative Effect",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/MediaCreationContext/properties/NarrativeEffect"}
             },
             "Participant": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Participant/properties/Participant"},
               "title": "Participant"
             },
             "Person": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Participant/properties/Person"},
               "title": "Person"
             },
             "Department": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Participant/properties/Department"},
               "title": "Department"
             },
             "Organization": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Participant/properties/Organization"},
               "title": "Organization"
             },
             "Service": {
               "type": "array",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Participant/properties/Service"},
               "title": "Service"
             },
             "Location": {
               "type": "array",
               "title": "Location",
-              "additionalItems": true,
+              "additionalItems": false,
               "items": {"$ref": "#/definitions/Utility/properties/Location"}
             }
           },
@@ -3383,7 +3367,6 @@
           "type": "array",
           "additionalItems": true,
           "items": {
-            "additionalProperties": true,
             "anyOf": [
               {"$ref": "#/definitions/MediaCreationContext/properties/Character"},
               {"$ref": "#/definitions/Participant/properties/Participant"},
@@ -3420,11 +3403,8 @@
     }
   },
   "additionalProperties": true,
-  "anyOf": [
+  "oneOf": [
     {"$ref": "#/definitions/core/properties/rootObject"},
-    {
-      "title": "rootArray",
-      "$ref": "#/definitions/core/properties/rootArray"
-    }
+    {"$ref": "#/definitions/core/properties/rootArray"}
   ]
 }
