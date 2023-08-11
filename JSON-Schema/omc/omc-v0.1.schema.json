@@ -186,17 +186,20 @@
           "definitions": {
             "generic": {
               "type": "object",
+              "additionalProperties": false,
               "properties": {
-                "functionalType": {"type": "string"},
+                "functionalType": {
+                  "type": "string",
+                  "not": {
+                    "enum": ["scd"]
+                  }
+                },
                 "functionalProperties": {
                   "type": "object",
-                  "properties": {
-                    "customData": {"$ref": "#/definitions/core/properties/customData"}
-                  },
                   "additionalProperties": true
-                }
-              },
-              "additionalProperties": true
+                },
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              }
             },
             "scd": {
               "type": "object",
@@ -213,19 +216,46 @@
                       "items": {
                         "type": "object",
                         "properties": {
-                          "sourceStart": {"type": "string"},
-                          "sourceEnd": {"type": "string"},
-                          "recordStart": {"type": "string"},
-                          "recordEnd": {"type": "string"},
-                          "duration": {"type": "string"},
+                          "sourceStart": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "sourceEnd": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "recordStart": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "recordEnd": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "duration": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
                           "Shot": {"$ref": "#/definitions/Asset/properties/Asset"}
                         }
                       }
-                    },
-                    "customData": {"$ref": "#/definitions/core/properties/customData"}
-                  }
-                }
-              }
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              },
+              "additionalProperties": false
             }
           },
           "title": "Asset Functional Characteristics",
