@@ -55,9 +55,19 @@
               "properties": {
                 "versionNumber": {
                   "type": [
+                    "number",
                     "string",
                     "null"
                   ]
+                },
+                "name": {
+                  "type": "string",
+                  "title": "A name for this specific version of the Asset"
+                },
+                "annotation": {
+                  "type": "array",
+                  "items": {"$ref": "#/definitions/Utility/properties/note"},
+                  "description": "A collection of notes specific to this version"
                 },
                 "variantOf": {"$ref": "#/definitions/Asset/properties/Asset"},
                 "hasVariant": {"$ref": "#/definitions/Asset/properties/Asset"},
@@ -135,6 +145,11 @@
                 "analog.movingImage"
               ]
             },
+            "isAnalog": {
+              "type": "boolean",
+              "title": "Is Analog",
+              "description": "True if the Asset is an Analog Asset."
+            },
             "structuralProperties": {
               "type": [
                 "object",
@@ -148,6 +163,11 @@
               },
               "additionalProperties": true
             },
+            "Carrier": {
+              "$ref": "#/definitions/Infrastructure/properties/Infrastructure",
+              "title": "Carrier",
+              "description": "For describing the physical storage device on which the digital assence is stored"
+            },
             "customData": {"$ref": "#/definitions/core/properties/customData"}
           },
           "additionalProperties": false,
@@ -159,36 +179,56 @@
         },
         "assetFC": {
           "type": "object",
-          "title": "Asset Functional Characteristics",
-          "properties": {
-            "functionalType": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Functional Type",
-              "description": "A structured description of the the assets function as it relates to the production",
-              "examples": [
-                "assetGroup",
-                "digital.image",
-                "analog.movingImage"
-              ]
-            },
-            "functionalProperties": {
-              "type": [
-                "object",
-                "null"
-              ],
-              "title": "Functional Properties",
-              "description": "A set of properties that describe the asset functional use",
+          "oneOf": [
+            {"$ref": "#/definitions/Asset/properties/assetFC/definitions/scd"},
+            {"$ref": "#/definitions/Asset/properties/assetFC/definitions/generic"}
+          ],
+          "definitions": {
+            "generic": {
+              "type": "object",
               "properties": {
-                "customData": {"$ref": "#/definitions/core/properties/customData"}
+                "functionalType": {"type": "string"},
+                "functionalProperties": {
+                  "type": "object",
+                  "properties": {
+                    "customData": {"$ref": "#/definitions/core/properties/customData"}
+                  },
+                  "additionalProperties": true
+                }
               },
               "additionalProperties": true
             },
-            "customData": {"$ref": "#/definitions/core/properties/customData"}
+            "scd": {
+              "type": "object",
+              "properties": {
+                "functionalType": {
+                  "type": "string",
+                  "const": "scd"
+                },
+                "functionalProperties": {
+                  "type": "object",
+                  "properties": {
+                    "component": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "sourceStart": {"type": "string"},
+                          "sourceEnd": {"type": "string"},
+                          "recordStart": {"type": "string"},
+                          "recordEnd": {"type": "string"},
+                          "duration": {"type": "string"},
+                          "Shot": {"$ref": "#/definitions/Asset/properties/Asset"}
+                        }
+                      }
+                    },
+                    "customData": {"$ref": "#/definitions/core/properties/customData"}
+                  }
+                }
+              }
+            }
           },
-          "additionalProperties": true,
+          "title": "Asset Functional Characteristics",
           "description": "Describes the use or purpose of an Asset within the production process"
         }
       },
@@ -474,7 +514,21 @@
                 "null"
               ],
               "title": "Context name",
-              "description": "The primary name used for the character"
+              "description": "A human readable name for the Context"
+            },
+            "description": {
+              "type": "object",
+              "title": "Description",
+              "description": "A brief description of the context"
+            },
+            "contextType": {
+              "type": "object",
+              "title": "Context Type",
+              "description": "A classifiaction of the type of context represented",
+              "examples": [
+                "narrative",
+                "production"
+              ]
             }
           },
           "additionalProperties": true,
@@ -1516,7 +1570,7 @@
               "items": {
                 "type": "object",
                 "title": "Slugline",
-                "description": "An arbritary note or comment pertaining to the entity",
+                "description": "An arbitrary note or comment pertaining to the entity",
                 "properties": {
                   "title": {
                     "type": [
@@ -1773,8 +1827,8 @@
                 "string",
                 "null"
               ],
-              "title": "Editorial Sequence Description",
-              "description": "A brief description of the editorial sequence"
+              "title": "Sequence",
+              "description": "A brief description of the sequence"
             },
             "sequenceType": {
               "type": "string",
@@ -1787,26 +1841,15 @@
                 "color"
               ]
             },
-            "shot": {
-              "type": "array",
-              "title": "Shot",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/Asset/properties/Asset"}
-            },
             "SCD": {
-              "type": "array",
               "title": "Sequence Chronology Descriptor",
-              "additionalItems": true,
-              "items": {"$ref": "#/definitions/Asset/properties/Asset"}
+              "$ref": "#/definitions/Asset/properties/Asset"
             },
             "customData": {
               "title": "Custom Data",
               "$ref": "#/definitions/core/properties/customData"
             },
-            "Context": {
-              "title": "Editorial Sequence Context",
-              "$ref": "#/definitions/MediaCreationContext/properties/Context"
-            }
+            "Context": {"$ref": "#/definitions/MediaCreationContext/properties/Context"}
           },
           "additionalProperties": false,
           "required": [
@@ -2470,7 +2513,7 @@
           "properties": {
             "weight": {
               "title": "weight",
-              "description": "Encode a measurment of weight using the imperial or metric system",
+              "description": "Encode a measurement of weight using the imperial or metric system",
               "additionalProperties": true,
               "oneOf": [
                 {"type": "null"},
@@ -2501,7 +2544,7 @@
                     {"type": "null"},
                     {
                       "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millilmeter",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
                       "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
                       "examples": [
                         "100m",
@@ -2510,7 +2553,7 @@
                     },
                     {
                       "type": "string",
-                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
                       "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
                       "examples": [
                         "2000ft",
@@ -2542,7 +2585,7 @@
                     },
                     {
                       "type": "string",
-                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
                       "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
                       "examples": [
                         "2000ft",
@@ -2574,7 +2617,7 @@
                     },
                     {
                       "type": "string",
-                      "description": "Encode distance using the imperial system of measurment (miles, feet, inches)",
+                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
                       "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
                       "examples": [
                         "2000ft",
@@ -2661,7 +2704,7 @@
               ],
               "title": "Street Address",
               "description": "The street address",
-              "examples": ["1600 Ampitheater Parkway"]
+              "examples": ["1600 Amphitheater Parkway"]
             },
             "locality": {
               "type": [
