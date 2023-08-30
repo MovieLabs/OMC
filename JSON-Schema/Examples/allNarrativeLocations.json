@@ -17,32 +17,7 @@
           "identifierValue": "cxt/OB6MeonzccsbCw4EHv3kw"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ],
-            "name": "Space",
-            "description": "Sven repairs satellite and is ambushed by Trilobot"
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ],
-            "name": "Space Moments Later",
-            "description": "Sven reaches spaceship and climbs in."
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -63,32 +38,7 @@
           "identifierValue": "cxt/34T8RjoQbKCl5lnyalkmr"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ],
-            "name": "Space",
-            "description": "Sven repairs satellite and is ambushed by Trilobot"
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ],
-            "name": "Space Moments Later",
-            "description": "Sven reaches spaceship and climbs in."
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -109,43 +59,7 @@
           "identifierValue": "cxt/gOeG3sVZgo2PGogMQOZqx"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ],
-            "name": "Space",
-            "description": "Sven repairs satellite and is ambushed by Trilobot"
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
-              }
-            ],
-            "name": "Atmosphere",
-            "description": "Sven crashes into atmosphere and water"
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ],
-            "name": "Space Moments Later",
-            "description": "Sven reaches spaceship and climbs in."
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -187,21 +101,7 @@
           "identifierValue": "cxt/YJVoLzantYRbkJneXXuVA"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
-              }
-            ],
-            "name": "Beach",
-            "description": "Sven swims to surface and walks into beach."
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -222,21 +122,7 @@
           "identifierValue": "cxt/6k8-CFXqXdyuztG19jDk0"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
-              }
-            ],
-            "name": "Beach",
-            "description": "Sven swims to surface and walks into beach."
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -257,56 +143,7 @@
           "identifierValue": "cxt/6mZcMvDTYRQnfwQOH2GcA"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
-              }
-            ],
-            "name": "Beach",
-            "description": "Sven swims to surface and walks into beach."
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeLocation",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "loc/ryfjgiLuoYBZePKoW9Yxy"
-      }
-    ],
-    "name": "Plateau",
-    "description": "Volcanic ridge above valley",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/eEgBqiGajyZCr2mb5mPpo"
-        }
-      ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
-              }
-            ],
-            "name": "Plateau",
-            "description": "Sven discovers city"
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -327,32 +164,28 @@
           "identifierValue": "cxt/vVhJcyJnne9h-gkjkJNuZ"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
-              }
-            ],
-            "name": "Jungle",
-            "description": "Title sequence with Sven bursting out of the jungle to the title sequence."
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
-              }
-            ],
-            "name": "Jungle",
-            "description": "Sven retreats to the jungle and destroys the Trilobot using exploding fruit native to the planet."
-          }
-        ]
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ryfjgiLuoYBZePKoW9Yxy"
       }
+    ],
+    "name": "Plateau",
+    "description": "Volcanic ridge above valley",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/eEgBqiGajyZCr2mb5mPpo"
+        }
+      ],
+      "for": null
     }
   },
   {
@@ -373,21 +206,7 @@
           "identifierValue": "cxt/PNI-deSI_YJulZ99V6zMP"
         }
       ],
-      "for": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
-              }
-            ],
-            "name": "Plateau",
-            "description": "Sven discovers city"
-          }
-        ]
-      }
+      "for": null
     }
   }
 ]

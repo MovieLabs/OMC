@@ -1,20 +1,19 @@
 # Assets
-Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets required for a given workflow and a means for the applications and services to communicate about these assets. This information includes how assets relate to other parts of the production; such as an asset being for a particular scene or character. Or how they might relate to other assets (e.g., a proxy that is derived from the OCF).
+Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets needed for a given workflow and provide a means for the applications and services to find and access the files and other assets they need. This information includes how an asset relates to other parts of the production; some of those other parts are themselves assets (e.g., a proxy that is derived from the OCF), and some aren't (e.g., the scene in which the asset is used).
 
 The 2030 vision establishes some core ideas behind the handling of assets:
-- The separation of an assets metadata (information about the asset) and the essence of the asset(the actual thing, often a digital file like an image).
-- Separation of an assets [structural and functional characteristics](./Functional&Structural.md), that is what an asset is (structural) from what it is used for (functional).
-- All assets are uniquely identified, and the specific location of an asset can be abstracted and resolved when needed. This involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets](https://movielabs.com/through-the-looking-glass/)
+- Separation of its [structural and functional characteristics](./Functional&Structural.md)
+- The specific location of an asset can be abstracted and resolved when needed. This involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets](https://movielabs.com/through-the-looking-glass/)
 
-*In practical terms, the general expected pattern for using the OMC-JSON is that the payload describes a set of entities and each entity contains one or more identifiers. This tech note focuses on Assets.*
+In practical terms the general expected pattern for using the OMC-JSON is that the payload describes a set of entities and each entity contains one or more identifiers. This tech note focuses on Assets.
 
-*If there is only an identifier in the Asset, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL). See  the [Identifiers section in Schema Structure](../Overview/Schema%20Structure.md#Identifiers%20and%20References) for more information.*
+If there is only an identifier in the Asset, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL). See  the [Identifiers section in Schema Structure](../Overview/Schema%20Structure.md#Identifiers%20and%20References) for more information.
 
-Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. Assets advance through multiple versions and there might be different variants or representations of the same asset. We describe how versions can be managed in this sections XXXXXXX
+Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. Assets advance through multiple versions and there might be different variants or representations of the same asset. *Note*: An extension to OMC for managing versions is underway; one if its most important features is that a version is itself just another Asset that can be used independently.
 
 ## Conventions
 ### Identifiers
-Identifiers are used to identify what is typically referred to as the Asset or whole Asset, this includes both the metadata and essence and can encompass versions. The essence is represented by an assets structural characteristics and it is also uniquely identified. We identify these separately because it is possible for there to be more than one essence for asset, this also allows you to retrieve or communicate information about the asset without needing to access the essence itself.
+Identifiers are used to identify what we refer to as the 'whole' asset, this includes both the essence of an object and metadata about that object. A separate identifier is used to identify the essence itself (the essence is the collection of bits or the specific file). These are separate because it is possible for there to be more than one essence for asset, also sometimes you only want the metadata not the essence itself.
 
 For a more information see here: [Identifiers and References](../Overview/Schema-Structure.md#Identifiers%20and%20References)
 
@@ -25,7 +24,9 @@ How to construct an asset and use the different identifiers:
 *Note: A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more clearly delineates metadata and object, allowing security authorization to be more easily separated. This allows applications and participants to view metadata about assets without being granted access to the asset itself. For example a system admin can provision, move or migrate files without being allowed direct access to the sensitive content itself*
 
 ### Structural and Functional Characteristics
-In simplified terms the functional attributes of an Asset describe to how it is used, and the structural properties describe what it is. For a more detailed explanation with examples, see here: [Structural and functional types](./Functional&Structural.md)
+In simplified terms the functional attributes of an Asset describe to how it is used, and the structural properties describe what it is.
+
+For a more detailed explanation with examples, see here: [Structural and functional types](./Functional&Structural.md)
 
 **Structural and functional properties**
 Along with a functional and structural type, an Asset may also carry additional properties that further describe the structural and functional characteristics.
@@ -43,7 +44,7 @@ For file based systems, the structural properties can encode a file path and nam
 Similarly functional properties can be included. These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information, and information related to a particular functional use.
 
 ## Examples
-The following examples use a pseudo representation of the JSON for brevity with only the pertinent attributes include, the structural and functional characteristics can contain specific properties related to each of these elements. For example, an image may have a width and height as part of it's structural characteristics
+The following examples use a pseudo representation of the JSON and a similar pseudo example of how parameters in the current resolver spec can be represented.
 
 As part of the 2030 vision we advocate for the use of a resolution system, where identifiers are used to resolve a location of a resource, we include examples of how the JSON can map to resolver entries, for more details on how resolvers work and implementation see here: [Through the Looking Glass](https://movielabs.com/through-the-looking-glass/). If you are not using a resolver, this can be ignored. The resolver examples do not cover all possible ways of using the resolver with Assets.
 
@@ -57,17 +58,27 @@ A1 can be resolved asking for metadata, E1 can be resolved for the URL of the es
 OMC
 identifier
 	identifierValue: A1
-AssetSC
+structuralCharacteristics
 	structuralType: digital.image
 	identifier
 		identifierValue: E1
-assetFC
-	functionalType: reference
+functionalCharacteristics
+	functionalType: artwork.concept
+
+Resolver
+id: A1
+recordType: metadata
+mediaType: application/json
+==> returns URL for the Asset metadata
+
+id: E1
+recordType: item
+mediaType: image/jpg
+==> returns URL for the essence, using the essence identifier
 ```
 
-![[Asset-1.svg]]
-
 ---
+
 ### Digital Asset, two functional uses
 
 This shows two Assets which use the same essence; one uses the image as reference art and the other uses it as a texture.
@@ -79,6 +90,7 @@ It is possible to have a metadata request on the essence identifier return URLs 
 There does not have to be any formal relationship between A1 and A2, though of course one can be added.
 
 ```
+OMC
 identifier
 	identifierValue: A1
 structuralCharacteristics
@@ -97,9 +109,29 @@ structuralCharacteristics
 		identifierValue: E1
 functionalCharacteristics
 	functionalType: texture
-```
 
-![[Asset-2.svg]]
+
+Resolver
+identifierValue: A1
+recordType: metadata
+mediaType: application/json
+==> returns URL for metadata for A1
+
+identifierValue: E1
+recordType: item
+mediaType: image/jpeg
+==> returns URL for E1 essence
+
+identifierValue: A2
+recordType: metadata
+mediaType: application/json
+==> returns URL for metadata for A2
+
+identifierVale: E1
+recordType: item
+mediaType: image/jpg
+==> returns URL for E1 essence
+```
 
 ---
 
@@ -108,6 +140,7 @@ functionalCharacteristics
 This shows a single Asset that exists in two different forms, one digital and one physical. The physical copy has a barcode and a database entry that returns information about its physical location. The Asset identifier is the same for both copies, with two different essence IDs.
 
 ```
+OMC
 identifier
 	identifierValue: A1
 structuralCharacteristics
@@ -117,6 +150,7 @@ structuralCharacteristics
 functionalCharacteristics
 	functionalType: artwork.storyboard.frame
 
+
 identifier
 	identifierValue: A1
 structuralCharacteristics
@@ -125,9 +159,24 @@ structuralCharacteristics
 		identifierValue: E2
 functionalCharacteristics
 	functionalType: artwork.storyboard.frame
-```
 
-![[Asset-3.svg]]
+
+Resolver
+id: E1
+recordType: item
+mediaType: image/png
+==> returns URL for the barcode (barcodes are images)
+
+id: E1
+recordType: location
+mediaType: application/json
+==> returns information about the location
+
+id: E2
+recordType: item
+mediaType: image/jpg
+==> returns URL for the digital copy of the Asset
+```
 *Note: The asset identifier is the same for both. The application has to determine which structural form is preferred, the physical or digital copy. If asset information is stored in a MAM or other database it is up to that system to decide how to respond to requests for the asset*
 
 ---

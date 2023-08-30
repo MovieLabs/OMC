@@ -548,6 +548,218 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
+        "identifierValue": "seq/Yss5Iv4RSEHahIu4NT7zj"
+      }
+    ],
+    "name": "FALL",
+    "description": "Sven is chased through the atmosphere and crashes",
+    "sequenceType": "vfx",
+    "SCD": {
+      "schemaVersion": "0.1",
+      "entityType": "Asset",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "scd/HkhA5_jqtxAROg9HfQThj"
+        }
+      ],
+      "name": null,
+      "description": null,
+      "AssetSC": {
+        "entityType": "AssetSC",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "temp"
+          }
+        ],
+        "structuralType": "digital.data"
+      },
+      "assetFC": {
+        "functionalType": "scd",
+        "functionalProperties": {
+          "component": [
+            {
+              "name": "FALL_0010",
+              "sourceStart": "1:30",
+              "sourceEnd": "1:32",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:02",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/iJAWmW3-Z-SRxc2XINmZC"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0020",
+              "sourceStart": "1:32",
+              "sourceEnd": "1:33",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:01",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/GhiHpkZeZJgGQzJSWHww8"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0030",
+              "sourceStart": "1:33",
+              "sourceEnd": "1:35",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:02",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/9FxPDLkbNq0l66cEDeVtW"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0040",
+              "sourceStart": "1:35",
+              "sourceEnd": "1:38",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:03",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/yTujkc4q1lBAYk97LDLcc"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0050",
+              "sourceStart": "1:38",
+              "sourceEnd": "1:40",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:02",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/pyrly86PUtWWTz2Pzpaoz"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0060",
+              "sourceStart": "1:40",
+              "sourceEnd": "1:41",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:01",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/UBwTUAXNUrdctlGlc2wAx"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0070",
+              "sourceStart": "1:41",
+              "sourceEnd": "1:43",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:02",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/GAXY0AmxbH5TbB2s1Ao8j"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0080",
+              "sourceStart": "1:43",
+              "sourceEnd": "1:44",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:01",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/_HnQpeW4NSSy5KdL9JKDC"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0090",
+              "sourceStart": "1:44",
+              "sourceEnd": "1:45",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:01",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/phjBMqEu4DLJ-prSlpqQO"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "FALL_0100",
+              "sourceStart": "1:45",
+              "sourceEnd": "1:48",
+              "recordStart": null,
+              "recordEnd": null,
+              "duration": "0:03",
+              "Shot": {
+                "entityType": "Asset",
+                "identifier": [
+                  {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast/KL6edXyX4xcBK5dxbsvfB"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "schemaVersion": "0.1",
+    "entityType": "Sequence",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
         "identifierValue": "seq/qijGAkmZkl8A9_4EpyOuH"
       }
     ],
@@ -1000,218 +1212,6 @@
                   {
                     "identifierScope": "labkoat",
                     "identifierValue": "ast/UivgXIG61mWFIhherqwIa"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      }
-    }
-  },
-  {
-    "schemaVersion": "0.1",
-    "entityType": "Sequence",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "seq/Yss5Iv4RSEHahIu4NT7zj"
-      }
-    ],
-    "name": "FALL",
-    "description": "Sven is chased through the atmosphere and crashes",
-    "sequenceType": "vfx",
-    "SCD": {
-      "schemaVersion": "0.1",
-      "entityType": "Asset",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "scd/HkhA5_jqtxAROg9HfQThj"
-        }
-      ],
-      "name": null,
-      "description": null,
-      "AssetSC": {
-        "entityType": "AssetSC",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "temp"
-          }
-        ],
-        "structuralType": "digital.data"
-      },
-      "assetFC": {
-        "functionalType": "scd",
-        "functionalProperties": {
-          "component": [
-            {
-              "name": "FALL_0010",
-              "sourceStart": "1:30",
-              "sourceEnd": "1:32",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:02",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/iJAWmW3-Z-SRxc2XINmZC"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0020",
-              "sourceStart": "1:32",
-              "sourceEnd": "1:33",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:01",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/GhiHpkZeZJgGQzJSWHww8"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0030",
-              "sourceStart": "1:33",
-              "sourceEnd": "1:35",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:02",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/9FxPDLkbNq0l66cEDeVtW"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0040",
-              "sourceStart": "1:35",
-              "sourceEnd": "1:38",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:03",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/yTujkc4q1lBAYk97LDLcc"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0050",
-              "sourceStart": "1:38",
-              "sourceEnd": "1:40",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:02",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/pyrly86PUtWWTz2Pzpaoz"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0060",
-              "sourceStart": "1:40",
-              "sourceEnd": "1:41",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:01",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/UBwTUAXNUrdctlGlc2wAx"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0070",
-              "sourceStart": "1:41",
-              "sourceEnd": "1:43",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:02",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/GAXY0AmxbH5TbB2s1Ao8j"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0080",
-              "sourceStart": "1:43",
-              "sourceEnd": "1:44",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:01",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/_HnQpeW4NSSy5KdL9JKDC"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0090",
-              "sourceStart": "1:44",
-              "sourceEnd": "1:45",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:01",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/phjBMqEu4DLJ-prSlpqQO"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "FALL_0100",
-              "sourceStart": "1:45",
-              "sourceEnd": "1:48",
-              "recordStart": null,
-              "recordEnd": null,
-              "duration": "0:03",
-              "Shot": {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/KL6edXyX4xcBK5dxbsvfB"
                   }
                 ]
               }

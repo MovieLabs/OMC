@@ -16,7 +16,8 @@
     },
     "contact": {
       "email": {
-        "business": "powers@labkoat.media"
+        "business": "powers@labkoat.media",
+        "personal": "powers@labkoat.media"
       },
       "telephone": {
         "business": "213-555-0172"

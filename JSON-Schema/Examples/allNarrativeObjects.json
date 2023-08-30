@@ -19,7 +19,61 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+              }
+            ]
+          }
+        ]
+      },
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/dvsNP3e0x-oGC09GuHnbp"
+      }
+    ],
+    "name": "Planet",
+    "description": "Planet SR-232",
+    "narrativeType": "setDressing",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/IfU22qbcVeqv9sw5RkzPd"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -73,62 +127,8 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
-              }
-            ]
-          }
-        ]
-      },
-      "for": null
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "psd/dvsNP3e0x-oGC09GuHnbp"
-      }
-    ],
-    "name": "Planet",
-    "description": "Planet SR-232",
-    "narrativeType": "setDressing",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/IfU22qbcVeqv9sw5RkzPd"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ]
-          },
           {
             "entityType": "NarrativeScene",
             "identifier": [
@@ -163,7 +163,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -184,58 +184,22 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+        "identifierValue": "psd/IspantzjNZTToDqxZbTLx"
       }
     ],
-    "name": "Beach rocks",
-    "description": "Various types of rocks that can be found on the beaches of SR 232",
+    "name": "Jungle Grass",
+    "description": "Various forms of grass that grows in the jungles of SR 232",
     "narrativeType": "setDressing",
     "Context": {
       "entityType": "Context",
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"
+          "identifierValue": "cxt/e37JYjTVq6kK1fulladZY"
         }
       ],
       "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
-              }
-            ]
-          }
-        ]
-      },
-      "for": null
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "psd/BIredyBMPzoWVVUl1MwOe"
-      }
-    ],
-    "name": "Jungle Trees",
-    "description": "Various forms of trees that grows in the jungles of SR 232",
-    "narrativeType": "setDressing",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/BOzZqrYVtf8SrGeojKSr7"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -274,6 +238,96 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
+        "identifierValue": "psd/BIredyBMPzoWVVUl1MwOe"
+      }
+    ],
+    "name": "Jungle Trees",
+    "description": "Various forms of trees that grows in the jungles of SR 232",
+    "narrativeType": "setDressing",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/BOzZqrYVtf8SrGeojKSr7"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+      }
+    ],
+    "name": "Beach rocks",
+    "description": "Various types of rocks that can be found on the beaches of SR 232",
+    "narrativeType": "setDressing",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+              }
+            ]
+          }
+        ]
+      },
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
         "identifierValue": "psd/FQ3_a7_uI3UB_KsPbS0PH"
       }
     ],
@@ -289,7 +343,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -325,61 +379,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
-              }
-            ]
-          }
-        ]
-      },
-      "for": null
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "psd/IspantzjNZTToDqxZbTLx"
-      }
-    ],
-    "name": "Jungle Grass",
-    "description": "Various forms of grass that grows in the jungles of SR 232",
-    "narrativeType": "setDressing",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/e37JYjTVq6kK1fulladZY"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -433,7 +433,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -487,43 +487,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
-              }
-            ]
-          }
-        ]
-      },
-      "for": null
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "psd/Qra7TztcNyBCo3aWD-0R4"
-      }
-    ],
-    "name": "Kilamari infrastructure",
-    "description": "Various pieces of infrastructure technology for the Killamari civilizaton.",
-    "narrativeType": "setDressing",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/_0ay5bXsegkzGNToCfU2h"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -559,7 +523,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -616,6 +580,42 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
+        "identifierValue": "psd/Qra7TztcNyBCo3aWD-0R4"
+      }
+    ],
+    "name": "Kilamari infrastructure",
+    "description": "Various pieces of infrastructure technology for the Killamari civilizaton.",
+    "narrativeType": "setDressing",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/_0ay5bXsegkzGNToCfU2h"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
         "identifierValue": "nprp/4ADqu_vf7ji85PLYOott1"
       }
     ],
@@ -631,7 +631,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -653,19 +653,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -688,7 +676,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -710,28 +698,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -754,7 +721,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -767,199 +734,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nprp/vgGK6PF2s1FGziyehshia"
-      }
-    ],
-    "name": "Broken pipes",
-    "description": "The pipes inside the satellite that are broken",
-    "narrativeType": "prop",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/0pQgq26RLwXSJcmc97n_5"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ]
-          }
-        ]
-      },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nprp/YESjEAVPVMJL2edrroe2o"
-      }
-    ],
-    "name": "Panel",
-    "description": "The panel inside the satellite where Sven finds the sabotaged wires.",
-    "narrativeType": "prop",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/M3T907Qr8_glq5eACmmmt"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ]
-          }
-        ]
-      },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nprp/jpiWPupPSRvHyAiUSyn0_"
-      }
-    ],
-    "name": "Switch",
-    "description": "The switch inside the panel Sven uses to turn on the satellite.",
-    "narrativeType": "prop",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/Iui_wgs-dqARPPOU9uZKy"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ]
-          }
-        ]
-      },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -982,7 +757,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1049,19 +824,180 @@
           }
         ]
       },
-      "for": {
-        "Character": [
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/YESjEAVPVMJL2edrroe2o"
+      }
+    ],
+    "name": "Panel",
+    "description": "The panel inside the satellite where Sven finds the sabotaged wires.",
+    "narrativeType": "prop",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/M3T907Qr8_glq5eACmmmt"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
           {
-            "entityType": "Character",
+            "entityType": "NarrativeScene",
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
               }
             ]
           }
         ]
+      },
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/jpiWPupPSRvHyAiUSyn0_"
       }
+    ],
+    "name": "Switch",
+    "description": "The switch inside the panel Sven uses to turn on the satellite.",
+    "narrativeType": "prop",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/Iui_wgs-dqARPPOU9uZKy"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+              }
+            ]
+          }
+        ]
+      },
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/5is74zVxCRl5hipIHfMzB"
+      }
+    ],
+    "name": "Satellite",
+    "description": "The Gromet-12 plantetary observation satellite finds planets that are habitable for humans",
+    "narrativeType": "prop",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/RQPgrDBz_aiN_kcDHQiQJ"
+        }
+      ],
+      "has": {
+        "NarrativeLocation": null
+      },
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          }
+        ]
+      },
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/vgGK6PF2s1FGziyehshia"
+      }
+    ],
+    "name": "Broken pipes",
+    "description": "The pipes inside the satellite that are broken",
+    "narrativeType": "prop",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/0pQgq26RLwXSJcmc97n_5"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+              }
+            ]
+          }
+        ]
+      },
+      "for": null
     }
   },
   {
@@ -1084,7 +1020,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1097,160 +1033,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nprp/5is74zVxCRl5hipIHfMzB"
-      }
-    ],
-    "name": "Satellite",
-    "description": "The Gromet-12 plantetary observation satellite finds planets that are habitable for humans",
-    "narrativeType": "prop",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/RQPgrDBz_aiN_kcDHQiQJ"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ]
-          }
-        ]
-      },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nprp/zVJeW6nTeg8PKVJ_F0t5C"
-      }
-    ],
-    "name": "Welder",
-    "description": "The Prime-94 arc welder is as hot as the sun and can cut through most known metals.",
-    "narrativeType": "prop",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/upF2yHMgSMpQF3wdG9G-9"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
-              }
-            ]
-          }
-        ]
-      },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1273,7 +1056,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1304,19 +1087,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1324,22 +1095,22 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "nprp/eM2Njo6EK-OEIzEL9xDlr"
+        "identifierValue": "nprp/zVJeW6nTeg8PKVJ_F0t5C"
       }
     ],
-    "name": "Fruit cluster",
-    "description": "The cluster of fruit Sven sets off to kill the Trilobot",
+    "name": "Welder",
+    "description": "The Prime-94 arc welder is as hot as the sun and can cut through most known metals.",
     "narrativeType": "prop",
     "Context": {
       "entityType": "Context",
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "cxt/jTsc3Zn0TzZfKnvRenmyN"
+          "identifierValue": "cxt/upF2yHMgSMpQF3wdG9G-9"
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1347,6 +1118,24 @@
               {
                 "identifierScope": "labkoat",
                 "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
               }
             ]
           },
@@ -1370,28 +1159,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1414,7 +1182,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1481,19 +1249,61 @@
           }
         ]
       },
-      "for": {
-        "Character": [
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/eM2Njo6EK-OEIzEL9xDlr"
+      }
+    ],
+    "name": "Fruit cluster",
+    "description": "The cluster of fruit Sven sets off to kill the Trilobot",
+    "narrativeType": "prop",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/jTsc3Zn0TzZfKnvRenmyN"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
           {
-            "entityType": "Character",
+            "entityType": "NarrativeScene",
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
               }
             ]
           }
         ]
-      }
+      },
+      "for": null
     }
   },
   {
@@ -1516,7 +1326,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1538,19 +1348,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1573,7 +1371,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1586,28 +1384,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1630,7 +1407,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1652,19 +1429,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1686,8 +1451,10 @@
           "identifierValue": "cxt/fmj0ue1_3PrL68dePUL1F"
         }
       ],
-      "has": null,
-      "featuredIn": {
+      "has": {
+        "NarrativeLocation": null
+      },
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1718,28 +1485,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1762,7 +1508,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1802,103 +1548,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nprp/OAjeFuQtL5Au4DHJMu6Uz"
-      }
-    ],
-    "name": "Canopy",
-    "description": "The canopy that Svens breaks through as he runs through the jungle.",
-    "narrativeType": "prop",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/XAIJ-IeyKffxvwhFlJWr9"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
-              }
-            ]
-          }
-        ]
-      },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -1921,7 +1571,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -1943,19 +1593,61 @@
           }
         ]
       },
-      "for": {
-        "Character": [
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/OAjeFuQtL5Au4DHJMu6Uz"
+      }
+    ],
+    "name": "Canopy",
+    "description": "The canopy that Svens breaks through as he runs through the jungle.",
+    "narrativeType": "prop",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/XAIJ-IeyKffxvwhFlJWr9"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
           {
-            "entityType": "Character",
+            "entityType": "NarrativeScene",
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
               }
             ]
           }
         ]
-      }
+      },
+      "for": null
     }
   },
   {
@@ -1978,7 +1670,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -2009,103 +1701,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "NarrativeObject",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "nprp/psNDy6gpu-aVkc79Jdb0c"
-      }
-    ],
-    "name": "Helmet",
-    "description": "The helmet to Sven's spacesuit.",
-    "narrativeType": "prop",
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/DXPMZxIwmBQO_QW4Co0r_"
-        }
-      ],
-      "has": null,
-      "featuredIn": {
-        "NarrativeScene": [
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
-              }
-            ]
-          },
-          {
-            "entityType": "NarrativeScene",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
-              }
-            ]
-          }
-        ]
-      },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -2128,7 +1724,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -2150,28 +1746,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          },
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -2194,7 +1769,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -2225,19 +1800,70 @@
           }
         ]
       },
-      "for": {
-        "Character": [
+      "for": null
+    }
+  },
+  {
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/psNDy6gpu-aVkc79Jdb0c"
+      }
+    ],
+    "name": "Helmet",
+    "description": "The helmet to Sven's spacesuit.",
+    "narrativeType": "prop",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/DXPMZxIwmBQO_QW4Co0r_"
+        }
+      ],
+      "has": null,
+      "featuresIn": {
+        "NarrativeScene": [
           {
-            "entityType": "Character",
+            "entityType": "NarrativeScene",
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
               }
             ]
           }
         ]
-      }
+      },
+      "for": null
     }
   },
   {
@@ -2260,7 +1886,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -2327,19 +1953,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   },
   {
@@ -2362,7 +1976,7 @@
         }
       ],
       "has": null,
-      "featuredIn": {
+      "featuresIn": {
         "NarrativeScene": [
           {
             "entityType": "NarrativeScene",
@@ -2375,19 +1989,7 @@
           }
         ]
       },
-      "for": {
-        "Character": [
-          {
-            "entityType": "Character",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "chr/LC4nrtxXR3CVPDUr8DAOJ"
-              }
-            ]
-          }
-        ]
-      }
+      "for": null
     }
   }
 ]

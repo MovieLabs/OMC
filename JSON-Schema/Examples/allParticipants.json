@@ -228,6 +228,59 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
+        "identifierValue": "ptc/Ax3lSFU1XSBWJX7YnaReB"
+      }
+    ],
+    "name": "Grosvenor Eudora",
+    "description": null,
+    "ParticipantSC": {
+      "schemaVersion": "0.1",
+      "entityType": "Person",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "ptsc/GQVi8I91cdCwDjJpI3rjU"
+        }
+      ],
+      "name": "Grosvenor Eudora",
+      "description": null,
+      "personName": {
+        "firstGivenName": "Grosvner",
+        "familyName": "Eudora"
+      },
+      "contact": {
+        "email": {
+          "business": "Eudora@labkoat.media"
+        },
+        "telephone": {
+          "business": "213-555-0127"
+        }
+      },
+      "gender": null
+    },
+    "participantFC": {
+      "functionalType": null,
+      "Role": [
+        {
+          "schemaVersion": "0.1",
+          "entityType": "Role",
+          "identifier": [
+            {
+              "identifierScope": "labkoat",
+              "identifierValue": "rol/bh5Xf6qbTw-thvVkmIsvG"
+            }
+          ],
+          "roleType": "artist"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": "0.1",
+    "entityType": "Participant",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
         "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
       },
       {
@@ -442,46 +495,6 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "ptc/7LaN-ouJ2P-Up8EKqrBnw"
-      }
-    ],
-    "name": "FX-DMZ",
-    "description": "External VFX studio",
-    "ParticipantSC": {
-      "schemaVersion": "0.1",
-      "entityType": "Organization",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "ptsc/OKcbHpuuYdEVwfDQMq339"
-        }
-      ],
-      "name": "FX-DMZ",
-      "description": "External VFX studio"
-    },
-    "participantFC": {
-      "functionalType": null,
-      "Role": [
-        {
-          "schemaVersion": "0.1",
-          "entityType": "Role",
-          "identifier": [
-            {
-              "identifierScope": "labkoat",
-              "identifierValue": "rol/PRzqo5hulWTgUZ-rKDsSG"
-            }
-          ],
-          "roleType": "organization.vfxStudio"
-        }
-      ]
-    }
-  },
-  {
-    "schemaVersion": "0.1",
-    "entityType": "Participant",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
         "identifierValue": "ptc/IkuiPb5GiW3zeUSorsOgN"
       }
     ],
@@ -537,35 +550,22 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "ptc/Ax3lSFU1XSBWJX7YnaReB"
+        "identifierValue": "ptc/7LaN-ouJ2P-Up8EKqrBnw"
       }
     ],
-    "name": "Grosvenor Eudora",
-    "description": null,
+    "name": "FX-DMZ",
+    "description": "External VFX studio",
     "ParticipantSC": {
       "schemaVersion": "0.1",
-      "entityType": "Person",
+      "entityType": "Organization",
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "ptsc/GQVi8I91cdCwDjJpI3rjU"
+          "identifierValue": "ptsc/OKcbHpuuYdEVwfDQMq339"
         }
       ],
-      "name": "Grosvenor Eudora",
-      "description": null,
-      "personName": {
-        "firstGivenName": "Grosvner",
-        "familyName": "Eudora"
-      },
-      "contact": {
-        "email": {
-          "business": "Eudora@labkoat.media"
-        },
-        "telephone": {
-          "business": "213-555-0127"
-        }
-      },
-      "gender": null
+      "name": "FX-DMZ",
+      "description": "External VFX studio"
     },
     "participantFC": {
       "functionalType": null,
@@ -576,10 +576,10 @@
           "identifier": [
             {
               "identifierScope": "labkoat",
-              "identifierValue": "rol/bh5Xf6qbTw-thvVkmIsvG"
+              "identifierValue": "rol/PRzqo5hulWTgUZ-rKDsSG"
             }
           ],
-          "roleType": "artist"
+          "roleType": "organization.vfxStudio"
         }
       ]
     }

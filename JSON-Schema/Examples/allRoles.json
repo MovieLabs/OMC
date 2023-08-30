@@ -4,18 +4,6 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "rol/7EdFxI0xaHHruB97KA9Ni"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "director"
-  },
-  {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
         "identifierValue": "rol/WE7aIODtF4wnsXkT8CYjU"
       }
     ],
@@ -40,24 +28,12 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "rol/0IcJty7Cy861yeAlWiStB"
+        "identifierValue": "rol/7EdFxI0xaHHruB97KA9Ni"
       }
     ],
     "name": null,
     "description": null,
-    "roleType": "artDirector"
-  },
-  {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/bh5Xf6qbTw-thvVkmIsvG"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "artist"
+    "roleType": "director"
   },
   {
     "entityType": "Role",
@@ -76,12 +52,12 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "rol/PRzqo5hulWTgUZ-rKDsSG"
+        "identifierValue": "rol/bh5Xf6qbTw-thvVkmIsvG"
       }
     ],
     "name": null,
     "description": null,
-    "roleType": "organization.vfxStudio"
+    "roleType": "artist"
   },
   {
     "entityType": "Role",
@@ -100,36 +76,24 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
+        "identifierValue": "rol/0IcJty7Cy861yeAlWiStB"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "artDirector"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
         "identifierValue": "rol/9XtlAb315qhNYw8qzDJGQ"
       }
     ],
     "name": null,
     "description": null,
     "roleType": "organization.production"
-  },
-  {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/0VNba0GOx5-ttfSsf7s9N"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "external.approve"
-  },
-  {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/hH6-0vJwZ4whnET2RfwTR"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "service.canEdit"
   },
   {
     "entityType": "Role",
@@ -148,11 +112,47 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
+        "identifierValue": "rol/PRzqo5hulWTgUZ-rKDsSG"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "organization.vfxStudio"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/0VNba0GOx5-ttfSsf7s9N"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "external.approve"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
         "identifierValue": "rol/2A_T23FDXvnSAl5JPmueO"
       }
     ],
     "name": null,
     "description": null,
     "roleType": "service.canRead"
+  },
+  {
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/hH6-0vJwZ4whnET2RfwTR"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "service.canEdit"
   }
 ]

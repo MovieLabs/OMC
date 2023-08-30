@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://movielabs.com/omc",
+  "$id": "https://movielabs.com/omc/v1.0",
   "title": "omc-v0.1.schema",
   "definitions": {
     "Asset": {
@@ -170,6 +170,22 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"}
           },
+          "definitions": {
+            "empty": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              }
+            },
+            "generic": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              }
+            }
+          },
           "additionalProperties": false,
           "required": [
             "entityType",
@@ -178,12 +194,32 @@
           "description": "Describes the form of an Asset along with the attributes specific to that asset’s form"
         },
         "assetFC": {
-          "type": "object",
           "oneOf": [
-            {"$ref": "#/definitions/Asset/properties/assetFC/definitions/scd"},
-            {"$ref": "#/definitions/Asset/properties/assetFC/definitions/generic"}
+            {
+              "type": "null",
+              "description": "Allow for null"
+            },
+            {
+              "$ref": "#/definitions/Asset/properties/assetFC/definitions/empty",
+              "title": "Allow for empty object, no functional characteristics"
+            },
+            {
+              "$ref": "#/definitions/Asset/properties/assetFC/definitions/generic",
+              "title": "A generic schema allowing any functional type and properties"
+            },
+            {
+              "$ref": "#/definitions/Asset/properties/assetFC/definitions/scd",
+              "title": "Functional characteristics for a Sequence Chronology Descriptor"
+            }
           ],
           "definitions": {
+            "empty": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "customData": {"$ref": "#/definitions/core/properties/customData"}
+              }
+            },
             "generic": {
               "type": "object",
               "additionalProperties": false,
@@ -195,11 +231,15 @@
                   }
                 },
                 "functionalProperties": {
-                  "type": "object",
+                  "type": [
+                    "object",
+                    "null"
+                  ],
                   "additionalProperties": true
                 },
                 "customData": {"$ref": "#/definitions/core/properties/customData"}
-              }
+              },
+              "required": ["functionalType"]
             },
             "scd": {
               "type": "object",
@@ -255,7 +295,8 @@
                 },
                 "customData": {"$ref": "#/definitions/core/properties/customData"}
               },
-              "additionalProperties": false
+              "additionalProperties": false,
+              "required": ["functionalType"]
             }
           },
           "title": "Asset Functional Characteristics",
@@ -499,7 +540,7 @@
                   },
                   "additionalProperties": true
                 },
-                "gender": {"type": "string"},
+                "gender": {"$ref": "#/definitions/Utility/properties/gender"},
                 "background": {
                   "type": "object",
                   "title": "background",
@@ -656,7 +697,7 @@
                 }
               }
             },
-            "^featuredIn(?:\\.[a-zA-Z0-9]+)?$": {
+            "^featuresIn(?:\\.[a-zA-Z0-9]+)?$": {
               "type": [
                 "object",
                 "null"
@@ -849,7 +890,8 @@
                   "items": {
                     "type": "object",
                     "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
-                  }
+                  },
+                  "additionalItems": false
                 },
                 "NarrativeObject": {
                   "type": [
@@ -892,7 +934,8 @@
                   "items": {
                     "type": "object",
                     "$ref": "#/definitions/Participant/properties/Role"
-                  }
+                  },
+                  "additionalItems": false
                 },
                 "Sequence": {
                   "type": [
@@ -918,55 +961,6 @@
                 }
               },
               "additionalProperties": false
-            },
-            "^is(?:\\.[a-zA-Z0-9]+)?$": {
-              "type": [
-                "object",
-                "null"
-              ],
-              "additionalProperties": false,
-              "properties": {
-                "Participant": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "$ref": "#/definitions/Participant/properties/Participant"
-                  }
-                },
-                "ProductionLocation": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "$ref": "#/definitions/MediaCreationContext/properties/ProductionLocation"
-                  }
-                },
-                "Person": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "$ref": "#/definitions/Participant/properties/Person"
-                  }
-                },
-                "Organization": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "$ref": "#/definitions/Participant/properties/Organization"
-                  }
-                }
-              }
             },
             "^portrayedBy(?:\\.[a-zA-Z0-9]+)?$": {
               "type": [
@@ -1080,6 +1074,16 @@
                     "type": "object",
                     "$ref": "#/definitions/Asset/properties/Asset"
                   }
+                },
+                "Infrastructure": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/Infrastructure/properties/Infrastructure"
+                  }
                 }
               }
             },
@@ -1127,6 +1131,74 @@
                   "items": {
                     "type": "object",
                     "$ref": "#/definitions/Asset/properties/Asset"
+                  }
+                },
+                "ProductionScene": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/ProductionScene"
+                  }
+                }
+              }
+            },
+            "^needs(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "NarrativeObject": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeObject"
+                  }
+                },
+                "NarrativeStyling": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeStyling"
+                  }
+                },
+                "NarrativeAction": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeAction"
+                  }
+                }
+              }
+            },
+            "^neededBy(?:\\.[a-zA-Z0-9]+)?$": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "Character": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/Character"
                   }
                 }
               }
@@ -1270,7 +1342,7 @@
                 "fight",
                 "motionCapture",
                 "marine",
-                "air"
+                "aerial"
               ]
             },
             "customData": {
@@ -1386,11 +1458,11 @@
             "narrativeType": {
               "type": "string",
               "title": "Object type",
-              "description": "A categorization of the type effect.",
+              "description": "A categorization of the type of effect.",
               "enum": [
                 "effect",
-                "sfx",
-                "vfx"
+                "specialEffect",
+                "visualEffect"
               ]
             },
             "customData": {
@@ -3082,6 +3154,7 @@
         "time": {
           "type": "object",
           "title": "Time",
+          "additionalProperties": false,
           "properties": {
             "timestamp": {
               "type": [
@@ -3164,8 +3237,9 @@
                 "null"
               ],
               "title": "Date & Time",
-              "pattern": "\\d{4}-[01]\\d-[0-3]\\dT[0-2]\\d:[0-5]\\d:[0-5]\\d(?:\\.\\d+)?Z?",
-              "description": "Should be formatted to comply with ISO 8601"
+              "pattern": "^(?:19|20)\\d{2}-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12]\\d|3[01])T(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:|\\.\\d\\d)(?:Z|-0[1-9]|-1\\d|-2[0-3]|-00:?(?:0[1-9]|[1-5]\\d)|\\+[01]\\d|\\+2[0-3])(?:|:?[0-5]\\d)$",
+              "description": "Should be formatted to comply with ISO 8601",
+              "examples": ["2023-08-24T20:51:15Z\n2023-08-24T20:51:15.56Z\n2023-08-24T20:51:15+08:00\n2023-08-24T20:51:15.23-04:00"]
             },
             "date": {
               "type": [
@@ -3186,9 +3260,18 @@
               "pattern": "^(-?)P(?=.)((\\d+)Y)?((\\d+)M)?((\\d+)D)?(T(?=.)((\\d+)H)?((\\d+)M)?(\\d*(\\.\\d+)?S)?)?$",
               "examples": ["P2Y12M3D"],
               "description": "Should be formatted to comply with ISO 8601"
+            },
+            "timecode": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "SMPTE Timcode in the format HH:MM:SS:FF. \nAssumes the frame rate is 23.98, 24, 25, 29.97 NDF, or 30",
+              "pattern": "^(?:(?:[0-1][0-9]|[0-2][0-3]):)(?:[0-5][0-9]:){2}(?:[0-2][0-9])$",
+              "examples": ["00:03:43:12"],
+              "description": "SMPTE timecode"
             }
-          },
-          "additionalProperties": false
+          }
         },
         "coordinates": {
           "type": [
@@ -3237,14 +3320,16 @@
                 "string",
                 "null"
               ],
-              "title": "Business"
+              "title": "Business",
+              "format": "email"
             },
             "personal": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Personal"
+              "title": "Personal",
+              "format": "email"
             }
           },
           "additionalProperties": false
@@ -3475,7 +3560,6 @@
       "additionalProperties": false
     }
   },
-  "additionalProperties": true,
   "oneOf": [
     {"$ref": "#/definitions/core/properties/rootObject"},
     {"$ref": "#/definitions/core/properties/rootArray"}

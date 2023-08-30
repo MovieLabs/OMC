@@ -4,456 +4,30 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "chr/LC4nrtxXR3CVPDUr8DAOJ"
-      }
-    ],
-    "characterName": {"scriptName": "Killimari"},
-    "name": "Killimari",
-    "description": "A heartless race of squid like creatures that live to take the natural resources from every planet in the galaxy.\r\r\r\n",
-    "profile": {
-      "physicalCharacteristics": {
-        "species": "Killamari",
-        "hairColor": "N/A",
-        "hairLength": "N/A",
-        "eyeColor": "Yellow",
-        "height": "50cm",
-        "weight": "10kg"
-      },
-      "background": {
-        "likes": "Conquest, war, Riches",
-        "dislikes": "Humans, Water, Freedom",
-        "habits": "The killamari live to expand their empire.",
-        "traits": "They are fearful of everything and surround themselves with armies of robots."
-      }
-    },
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/NpYI-Tkz81bEJCmyAAbql"
-        }
-      ],
-      "has": {
-        "Asset": [
-          {
-            "entityType": "Asset",
-            "identifier": [
-              {
-                "identifierScope": "labkoat",
-                "identifierValue": "asgp/t5D9BlW8Dsh3Le2174gni"
-              }
-            ],
-            "AssetSC": {
-              "entityType": "AssetSC",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/wWXCg55cxk7oNnW0_sYTO"
-                }
-              ],
-              "structuralType": "assetGroup",
-              "structuralProperties": {
-                "assetGroup": {"isOrdered": false}
-              }
-            },
-            "Asset": [
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/MlrTDNRIC6KXUqq1q7t-_"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_va_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/EFiwRcu2SuScn8DEYQXAc"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_va_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/pq7p_y99bTR2EfGoUtCrX"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vconcept_v002.psd",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/e_w36t3jbSsDXAnV6p5ww"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vconcept_v002.psd",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "psd"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/H01Cfo3BRpVtW1VkP_bUe"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vconcept_v003.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/mPbxm_DZvwll1FYCNQo-l"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vconcept_v003.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/dBfzYi6RRABZEb_fZhBG9"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vconcept_v004.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/1chdKDPHE3JJgUQDW38VL"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vconcept_v004.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/03ZIqZrvXd84ZLItM0IaI"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vc_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/rqOFzuHV1gVBV3wFoDWqn"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vc_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/T3maFLLHTtCc2_PtkwTnj"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vdamagedc_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/CYJhDT67GPMYNO8WB187s"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vdamagedc_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/3J8Zszx9PLSK48rPLib6R"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vdamaged_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/gzqWHfOiNBScI-2du41Zx"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vdamaged_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/lnhmHCytoqXRCHUhb3LuB"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vearly_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/cXIi-9JqVlE5FQOYslyX3"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vearly_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/LpmfAsNu6nRHy3TKrqQwf"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vhieroglyphics_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/yF8jIA1JETFlTV-EBjk8G"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vhieroglyphics_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/OVXHoWPpW_3daYVNYhppG"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vlarge_v002.tif",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/ej3ie8BI61BwVzxnboW4g"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/tif"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vlarge_v002.tif",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "tif"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/7zxrmOf8KnvLsTXdMO1nf"
-                  }
-                ],
-                "name": "mls-hsm_character_art_killamari_vsmall_v002.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/BT_pCzQRlZpcEYnPWzWDg"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_killamari_vsmall_v002.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kilimari",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              }
-            ]
-          }
-        ]
-      }
-    }
-  },
-  {
-    "entityType": "Character",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
         "identifierValue": "chr/wK6exLR9lnleMcJjc3Ceq"
       }
     ],
-    "characterName": {"scriptName": "Juggernaut"},
-    "name": "Juggernaut",
-    "description": "The war machines of the Killmari. They crush planets and help the klllimari control vast swathes of the galaxy.",
+    "characterName": {
+      "fullName": "Juggernaut"
+    },
     "profile": {
       "physicalCharacteristics": {
         "species": "Cyborg",
+        "height": "3m",
+        "weight": "1000kg",
         "hairColor": "N/A",
         "hairLength": "N/A",
-        "eyeColor": "Red",
-        "height": "3m",
-        "weight": "1000kg"
+        "eyeColor": "Red"
       },
       "background": {
         "likes": "War, Protection",
         "dislikes": "Water, Mountains",
         "habits": "The juggernauts exist to server their masters. ",
         "traits": "These machines have one goal: destruction. They are slow and clumsy but once they train on their targets they are unstoppable"
-      }
+      },
+      "gender": null
     },
+    "description": "The war machines of the Killmari. They crush planets and help the klllimari control vast swathes of the galaxy.",
     "Context": {
       "entityType": "Context",
       "identifier": [
@@ -462,6 +36,21 @@
           "identifierValue": "cxt/rEbRZuu_BHhsstb48gLw1"
         }
       ],
+      "portrayedBy": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "needs": null,
       "has": {
         "Asset": [
           {
@@ -471,87 +60,6 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "asgp/H0v_1B2Qc0gSTZ2pM7BSg"
               }
-            ],
-            "AssetSC": {
-              "entityType": "AssetSC",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/-8cyaIEypqyYjMpw1LpaH"
-                }
-              ],
-              "structuralType": "assetGroup",
-              "structuralProperties": {
-                "assetGroup": {"isOrdered": false}
-              }
-            },
-            "Asset": [
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/s_lAduOCLEt_qfdoVQsLF"
-                  }
-                ],
-                "name": "mls-hsm_character_art_juggernaut_vlarge_v002.tif",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/iC2R-jYisJTZ-e31-t310"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/tif"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_juggernaut_vlarge_v002.tif",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/juggernaut",
-                      "fileExtension": "tif"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/S-hd2fcaTc7jw7ykwTBQG"
-                  }
-                ],
-                "name": "mls-hsm_character_art_juggernaut_vlarge_v003.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/ySSWEBVPbz8HQEo0Rr2AV"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_juggernaut_vlarge_v003.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/juggernaut",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              }
             ]
           }
         ]
@@ -563,36 +71,67 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
+        "identifierValue": "chr/LC4nrtxXR3CVPDUr8DAOJ"
       }
     ],
-    "characterName": {"scriptName": "Keira"},
-    "name": "Keira",
-    "description": "Kiera is the ever present voice in the sky overseeing Sven's operations from central command. We never see her on camera but she is Sven's secret love and they both dream of a day when they can be together.",
+    "characterName": {
+      "fullName": "Killimari"
+    },
     "profile": {
       "physicalCharacteristics": {
-        "species": "Human",
-        "hairColor": "Multi-color",
-        "hairLength": "Long",
-        "eyeColor": "Green",
-        "height": "1m60cm",
-        "weight": "60kg"
+        "species": "Killamari",
+        "height": "50cm",
+        "weight": "10kg",
+        "hairColor": "N/A",
+        "hairLength": "N/A",
+        "eyeColor": "Yellow"
       },
       "background": {
-        "likes": "Sven. Space. Adventure.",
-        "dislikes": "Corporate life, Liars.",
-        "habits": "Kiera is a dreamer and loves to support the people she loves.",
-        "traits": "Kiera is kind and thoughtful. She is curious and longs for adventure."
-      }
+        "likes": "Conquest, war, Riches",
+        "dislikes": "Humans, Water, Freedom",
+        "habits": "The killamari live to expand their empire.",
+        "traits": "They are fearful of everything and surround themselves with armies of robots."
+      },
+      "gender": null
     },
+    "description": "A heartless race of squid like creatures that live to take the natural resources from every planet in the galaxy.\r\r\r\n",
     "Context": {
       "entityType": "Context",
       "identifier": [
         {
           "identifierScope": "labkoat",
-          "identifierValue": "cxt/Y4xT3kqb60guubgFC_-hz"
+          "identifierValue": "cxt/NpYI-Tkz81bEJCmyAAbql"
         }
       ],
+      "portrayedBy": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "needs": {
+        "NarrativeObject": [
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/Hex65mL3RTBcLiGmAVh8d"
+              }
+            ]
+          }
+        ],
+        "NarrativeStyling": null,
+        "NarrativeAction": null
+      },
       "has": {
         "Asset": [
           {
@@ -600,55 +139,7 @@
             "identifier": [
               {
                 "identifierScope": "labkoat",
-                "identifierValue": "asgp/9GCqyscubejmGi3o9Uv6H"
-              }
-            ],
-            "AssetSC": {
-              "entityType": "AssetSC",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/am6rlLNe2IAtXsKrZL2jH"
-                }
-              ],
-              "structuralType": "assetGroup",
-              "structuralProperties": {
-                "assetGroup": {"isOrdered": false}
-              }
-            },
-            "Asset": [
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/yHuHw5Oj4_LbwvzvHmOyV"
-                  }
-                ],
-                "name": "mls-hsm_character_art_Kiera_vconcept_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/h2tkZMCm4UT2biKzkGAJI"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_Kiera_vconcept_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/kiera",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
+                "identifierValue": "asgp/t5D9BlW8Dsh3Le2174gni"
               }
             ]
           }
@@ -664,25 +155,27 @@
         "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
       }
     ],
-    "characterName": {"scriptName": "Trilobot"},
-    "name": "Trilobot",
-    "description": "The advanced scouts of the Kilimari roam the universe looking for planets to consume.",
+    "characterName": {
+      "fullName": "Trilobot"
+    },
     "profile": {
       "physicalCharacteristics": {
         "species": "Robot",
+        "height": "1m50cm",
+        "weight": "100kg",
         "hairColor": "N/A",
         "hairLength": "N/A",
-        "eyeColor": "Red",
-        "height": "1m50cm",
-        "weight": "100kg"
+        "eyeColor": "Red"
       },
       "background": {
         "likes": "Explore, Hide",
         "dislikes": "Failure, Getting captured",
         "habits": "The trilobot is a stealth robot that hides and only attacks when absolutely necessary.",
         "traits": "They are deceptive and cunning and relentless."
-      }
+      },
+      "gender": null
     },
+    "description": "The advanced scouts of the Kilimari roam the universe looking for planets to consume.",
     "Context": {
       "entityType": "Context",
       "identifier": [
@@ -691,6 +184,170 @@
           "identifierValue": "cxt/Ki6uaGlM82HGRlBgEnMXe"
         }
       ],
+      "portrayedBy": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "needs": {
+        "NarrativeObject": [
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/aAZTJ26A0mCCLosGQ3Ryg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/5is74zVxCRl5hipIHfMzB"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/eM2Njo6EK-OEIzEL9xDlr"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/BtBYAFQ_Moo4PQlqSztGz"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/ryhQTqM7Dpo0fe-9PJhQh"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/HL9EpbbzFK320fweoiFsM"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/OAjeFuQtL5Au4DHJMu6Uz"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/CyXsfblZS4UAQJ6SmNn9u"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/PAWDCz64zEthoQVVWivOd"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/c7UXpl1eerrigqaZaLTSi"
+              }
+            ]
+          }
+        ],
+        "NarrativeStyling": null,
+        "NarrativeAction": null
+      },
       "has": {
         "Asset": [
           {
@@ -700,416 +357,90 @@
                 "identifierScope": "labkoat",
                 "identifierValue": "asgp/gH1M7UxeR2SYUq7cVyWyB"
               }
-            ],
-            "AssetSC": {
-              "entityType": "AssetSC",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/m7ATMg_e6_Pnk7M-eP5_p"
-                }
-              ],
-              "structuralType": "assetGroup",
-              "structuralProperties": {
-                "assetGroup": {"isOrdered": false}
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "entityType": "Character",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
+      }
+    ],
+    "characterName": {
+      "fullName": "Keira"
+    },
+    "profile": {
+      "physicalCharacteristics": {
+        "species": "Human",
+        "height": "1m60cm",
+        "weight": "60kg",
+        "hairColor": "Multi-color",
+        "hairLength": "Long",
+        "eyeColor": "Green"
+      },
+      "background": {
+        "likes": "Sven. Space. Adventure.",
+        "dislikes": "Corporate life, Liars.",
+        "habits": "Kiera is a dreamer and loves to support the people she loves.",
+        "traits": "Kiera is kind and thoughtful. She is curious and longs for adventure."
+      },
+      "gender": null
+    },
+    "description": "Kiera is the ever present voice in the sky overseeing Sven's operations from central command. We never see her on camera but she is Sven's secret love and they both dream of a day when they can be together.",
+    "Context": {
+      "entityType": "Context",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cxt/Y4xT3kqb60guubgFC_-hz"
+        }
+      ],
+      "portrayedBy": null,
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
               }
-            },
-            "Asset": [
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
               {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/V1JpO7-zVQcdnQ5hk5JJy"
-                  }
-                ],
-                "name": "mls-hsm_character_art_Juggernaut_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/5tuSMRlE1qH49dv7EPDUp"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_Juggernaut_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
               {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/25FeML2SVRyYNc1drs4aX"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_v002.pdf",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/04mIKJYTmy2-0qPAYv0af"
-                    }
-                  ],
-                  "structuralType": "document",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "application/pdf"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_v002.pdf",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "pdf"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "needs": null,
+      "has": {
+        "Asset": [
+          {
+            "entityType": "Asset",
+            "identifier": [
               {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/tkuiM8gm2MDDBf1zSV2pa"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_v002.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/MylV7GzyCYIziv1c7TS6_"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_v002.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/hCls2aDxpRmEhBMKI5Qi0"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_v005.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/ycnf5wJlz9q1BeyQKAmlq"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_v005.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/r81Y-QT-jIjuJu9LRCT2z"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_v006.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/jXYXJ8ecIMFhBU_b8ofw2"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_v006.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/pnMI7Y5Bv6DOSfrZJPXCX"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_vcombined_v005.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/HCan9TyyC8jWSLUX9UDiZ"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_vcombined_v005.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/6WffrrtbOFzD1Tkc2s9C-"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_vmoodboard_v001.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/0jqe6viTn4-kYbxoaNkFN"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_vmoodboard_v001.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/uUHxNEtWObfNF2vvUyMY_"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_vpaintover_v003.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/sAt_T8aoPxHPZyegdajOu"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_vpaintover_v003.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/qwOdnrkSSuJb2hOfaFYSq"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_vpaintover_v005.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/GvnqY7BUmbLZ3Q0kUB8ec"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_vpaintover_v005.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/_0q7a0jFIcDT1YKjxzAEA"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_vspecdown_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/3vt3guXCr_LcyPEbYM5wi"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_vspecdown_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/DT7bXWV802SuWJbuwbtl_"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot_vspecup_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/7AvmsxRsDpy9FSVeXVASD"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot_vspecup_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/NQ6kC2d8hdymVCXIQOc6Q"
-                  }
-                ],
-                "name": "mls-hsm_character_art_trilobot__v001.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/7cvTBFd1mRW7kgUVGKxw0"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_trilobot__v001.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/trilobot",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
+                "identifierScope": "labkoat",
+                "identifierValue": "asgp/9GCqyscubejmGi3o9Uv6H"
               }
             ]
           }
@@ -1125,25 +456,27 @@
         "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
       }
     ],
-    "characterName": {"scriptName": "Sven"},
-    "name": "Sven",
-    "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
+    "characterName": {
+      "fullName": "Sven"
+    },
     "profile": {
       "physicalCharacteristics": {
         "species": "Human",
+        "height": "1m90cm",
+        "weight": "80kg",
         "hairColor": "Brown",
         "hairLength": "Short",
-        "eyeColor": "Green",
-        "height": "1m90cm",
-        "weight": "80kg"
+        "eyeColor": "Green"
       },
       "background": {
         "likes": "Kiera, Space, Nature",
         "dislikes": "War, Big space cities, Conflict",
         "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
         "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
-      }
+      },
+      "gender": null
     },
+    "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
     "Context": {
       "entityType": "Context",
       "identifier": [
@@ -1152,6 +485,308 @@
           "identifierValue": "cxt/377RXIREHUj5MPzsl-Sba"
         }
       ],
+      "portrayedBy": {
+        "Participant": [
+          {
+            "entityType": "Participant",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+              }
+            ]
+          }
+        ]
+      },
+      "featuresIn": {
+        "NarrativeScene": [
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeScene",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+              }
+            ]
+          }
+        ]
+      },
+      "needs": {
+        "NarrativeObject": [
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/4ADqu_vf7ji85PLYOott1"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/aAZTJ26A0mCCLosGQ3Ryg"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/YESjEAVPVMJL2edrroe2o"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/jpiWPupPSRvHyAiUSyn0_"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/9ezqw5mMlPLoloD86u6aI"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/5is74zVxCRl5hipIHfMzB"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/vgGK6PF2s1FGziyehshia"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/cqDBPztY_8fCs3mjU2Tq9"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/R7wfwv6cSPc6d1t1_glgJ"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/Lp5AP7ZQiwfRpeB_qIrXf"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/zVJeW6nTeg8PKVJ_F0t5C"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/eM2Njo6EK-OEIzEL9xDlr"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/PFYNfswZXdTqm1l62DfSr"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/BtBYAFQ_Moo4PQlqSztGz"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/ryhQTqM7Dpo0fe-9PJhQh"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/XkxEwUpJGpxExmXj6FBv_"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/HL9EpbbzFK320fweoiFsM"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/OAjeFuQtL5Au4DHJMu6Uz"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/PAWDCz64zEthoQVVWivOd"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/nsLRumyU2pd_7DPTFCpoj"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/c7UXpl1eerrigqaZaLTSi"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "nprp/psNDy6gpu-aVkc79Jdb0c"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeObject",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+              }
+            ]
+          }
+        ],
+        "NarrativeStyling": null,
+        "NarrativeAction": null
+      },
       "has": {
         "Asset": [
           {
@@ -1160,615 +795,6 @@
               {
                 "identifierScope": "labkoat",
                 "identifierValue": "asgp/6ijmAYmCMY86OQtX4cZ_y"
-              }
-            ],
-            "AssetSC": {
-              "entityType": "AssetSC",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "astsc/SMX1ydqcPAJGMH5nLIuPQ"
-                }
-              ],
-              "structuralType": "assetGroup",
-              "structuralProperties": {
-                "assetGroup": {"isOrdered": false}
-              }
-            },
-            "Asset": [
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/c4RM18FQt719w5P8H4ZmG"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vbelt_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/MfeJnxkJaszErmn6wKG07"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vbelt_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/2Qh4vKSLwOo8cvkLDSKJD"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vconcept_v003.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/DxGAj1Y9REBYYW6aSX8WT"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vconcept_v003.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/UpHqxfO3q2AV6tUH0xeDd"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vconcept_v006.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/luZXEqDfZJjdJY3aXNSzC"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vconcept_v006.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/vqpm6WQziTNvCZ1fuA8rh"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vconcept_v006.psd",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/2g0egvOF0eIj3_7zEbe5G"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vconcept_v006.psd",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "psd"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/ic3z6uvr8gM88tUOr8RFe"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vconcept_v007.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/DGufHv43zQ-F1-FuAzn0g"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vconcept_v007.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/nwQVrzhB2cB0eStS5fcRc"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vconcept_v008.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/z6A4MKrYwdhUer0XgO1Q6"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vconcept_v008.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/GYMM6O0KAHuwLTp7UPbqW"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vconcept_v008.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/eb0TdfsRJ1YOY1teA_tgD"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vconcept_v008.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/vjx_0MVW3K05FLpjQKXrS"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vexpressions_v005.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/vKrlrBqGUBno8L4U5gwpL"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vexpressions_v005.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/IgVnfGB_VYxzM47hpRsSE"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vhead_v002.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/QzltsLCOhWvrGAqLziEkN"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vhead_v002.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/CD0WMH5GxxvsaSAW_VrlE"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vhelmet_v004.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/Z_lfnk7MfJEyxuB4vZfrC"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vhelmet_v004.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/QoQwYF9wQFNpum2OFiquz"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vhelmet_v006.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/eYJU2TZdKQeYe7Coe7JXT"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vhelmet_v006.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/EzoQO_vOkpp8kkBUrUJWs"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vnogear_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/YhoE5ESI4HT7nngBkFpRB"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vnogear_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/D2hQc-s4iRQF_IClrX6rI"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vnogear_v006.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/nzd06EVHdZv4zu8ZBXKZK"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vnogear_v006.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/OZouakXzJnBoytKkVz5bL"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vold_v003.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/2NKAkMsthh8XNaum0Iat1"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vold_v003.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/29Cm_KKmxew59YvlU-AcK"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vold_v004.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/oRbBajqTA3Gs8KwZ3K-FH"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vold_v004.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/w9p_C7Pn2gwaBVOEYZgtl"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vsculpt_v004.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/Z_nMoIDf_jk9Ua9y8v2Y_"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vsculpt_v004.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/6KwPEKD2h3RexrSvaVIOS"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vsmall_v002.jpg",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/roqIgtMlY6gfpKK8kYhS0"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/jpeg"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vsmall_v002.jpg",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "jpg"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
-              },
-              {
-                "entityType": "Asset",
-                "identifier": [
-                  {
-                    "identifierScope": "labkoat",
-                    "identifierValue": "ast/i82gJBSfDa0nNjdfxpsBP"
-                  }
-                ],
-                "name": "mls-hsm_character_art_sven_vtitle_v002.png",
-                "description": null,
-                "AssetSC": {
-                  "entityType": "AssetSC",
-                  "identifier": [
-                    {
-                      "identifierScope": "labkoat",
-                      "identifierValue": "astsc/xpcLjvD2K4sVQRTmyhRWe"
-                    }
-                  ],
-                  "structuralType": "digital.image",
-                  "structuralProperties": {
-                    "linkset": {
-                      "recordType": "item",
-                      "mediaType": "image/png"
-                    },
-                    "fileDetails": {
-                      "fileName": "mls-hsm_character_art_sven_vtitle_v002.png",
-                      "filePath": "/1_pre-production/concept/concept-art/characters/sven",
-                      "fileExtension": "png"
-                    }
-                  }
-                },
-                "assetFC": {"functionalType": "concept.artwork.character"}
               }
             ]
           }
