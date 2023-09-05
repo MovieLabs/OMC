@@ -1,6 +1,6 @@
 # Introduction
 
-The [Ontology for Media Creation](https://mc.movielabs.com/docs/omc) (OMC) was originally created in RDF and provides formal definitions and a data model for a set of classes and the relationships that bind them together. OMC is designed to simplify communication between different components in a media creation workflow by using a common data model and terminology.  This project implements the classes and relationships from  RDF OMC as a [JSON Schema](https://json-schema.org/).
+The [Ontology for Media Creation](https://mc.movielabs.com/docs/omc) (OMC) was originally created in RDF and provides formal definitions and a data model for a set of classes and the relationships that bind them together. OMC is designed to simplify communication between different components in a media creation workflow by using a common data model and terminology.  This project implements the classes and relationships from RDF OMC as a [JSON Schema](https://json-schema.org/).
 
 It is worth reiterating that a primary goal of OMC is to establish a common mechanism for exchanging data among applications and services, reducing the effort and work required to integrate new applications and components into production workflows. In the data plane, applications and services can integrate using OMC once, rather than having multiple pairwise integrations with other components.
 

@@ -7,6 +7,8 @@
         "identifierValue": "chr/wK6exLR9lnleMcJjc3Ceq"
       }
     ],
+    "name": "Juggernaut",
+    "description": "The war machines of the Killmari. They crush planets and help the klllimari control vast swathes of the galaxy.",
     "characterName": {
       "fullName": "Juggernaut"
     },
@@ -27,7 +29,6 @@
       },
       "gender": null
     },
-    "description": "The war machines of the Killmari. They crush planets and help the klllimari control vast swathes of the galaxy.",
     "Context": {
       "entityType": "Context",
       "identifier": [
@@ -74,6 +75,8 @@
         "identifierValue": "chr/LC4nrtxXR3CVPDUr8DAOJ"
       }
     ],
+    "name": "Killimari",
+    "description": "A heartless race of squid like creatures that live to take the natural resources from every planet in the galaxy.\r\r\r\n",
     "characterName": {
       "fullName": "Killimari"
     },
@@ -94,7 +97,6 @@
       },
       "gender": null
     },
-    "description": "A heartless race of squid like creatures that live to take the natural resources from every planet in the galaxy.\r\r\r\n",
     "Context": {
       "entityType": "Context",
       "identifier": [
@@ -155,6 +157,8 @@
         "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
       }
     ],
+    "name": "Trilobot",
+    "description": "The advanced scouts of the Kilimari roam the universe looking for planets to consume.",
     "characterName": {
       "fullName": "Trilobot"
     },
@@ -175,7 +179,6 @@
       },
       "gender": null
     },
-    "description": "The advanced scouts of the Kilimari roam the universe looking for planets to consume.",
     "Context": {
       "entityType": "Context",
       "identifier": [
@@ -371,6 +374,8 @@
         "identifierValue": "chr/ya1HLUS2xbRpDf2JYQ-wv"
       }
     ],
+    "name": "Keira",
+    "description": "Kiera is the ever present voice in the sky overseeing Sven's operations from central command. We never see her on camera but she is Sven's secret love and they both dream of a day when they can be together.",
     "characterName": {
       "fullName": "Keira"
     },
@@ -391,7 +396,6 @@
       },
       "gender": null
     },
-    "description": "Kiera is the ever present voice in the sky overseeing Sven's operations from central command. We never see her on camera but she is Sven's secret love and they both dream of a day when they can be together.",
     "Context": {
       "entityType": "Context",
       "identifier": [
@@ -456,6 +460,8 @@
         "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
       }
     ],
+    "name": "Sven",
+    "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
     "characterName": {
       "fullName": "Sven"
     },
@@ -476,7 +482,6 @@
       },
       "gender": null
     },
-    "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
     "Context": {
       "entityType": "Context",
       "identifier": [

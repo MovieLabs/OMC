@@ -169,6 +169,17 @@
               }
             ]
           }
+        ],
+        "NarrativeLocation": [
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/JR_953OF4aawPxxjrhQgS"
+              }
+            ]
+          }
         ]
       },
       "has": {
@@ -191,8 +202,7 @@
               }
             ]
           }
-        ],
-        "NarrativeLocation": null
+        ]
       }
     }
   },
@@ -393,6 +403,35 @@
               }
             ]
           }
+        ],
+        "NarrativeLocation": [
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/ujQpZcShX7y6Do114nXNp"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/z_GgQuQK8JOzOygofIAwU"
+              }
+            ]
+          }
         ]
       },
       "has": {
@@ -415,8 +454,7 @@
               }
             ]
           }
-        ],
-        "NarrativeLocation": null
+        ]
       }
     }
   },
@@ -635,6 +673,35 @@
               }
             ]
           }
+        ],
+        "NarrativeLocation": [
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/ujQpZcShX7y6Do114nXNp"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/z_GgQuQK8JOzOygofIAwU"
+              }
+            ]
+          }
         ]
       },
       "has": {
@@ -657,8 +724,7 @@
               }
             ]
           }
-        ],
-        "NarrativeLocation": null
+        ]
       }
     }
   },
@@ -850,6 +916,17 @@
               }
             ]
           }
+        ],
+        "NarrativeLocation": [
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/JR_953OF4aawPxxjrhQgS"
+              }
+            ]
+          }
         ]
       },
       "has": {
@@ -872,8 +949,7 @@
               }
             ]
           }
-        ],
-        "NarrativeLocation": null
+        ]
       }
     }
   },
@@ -1051,6 +1127,35 @@
               }
             ]
           }
+        ],
+        "NarrativeLocation": [
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/ym4RXT4JbXxIAAc1uTUXX"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/4h-qk9I4CW6nVIbHjpBEr"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/50DwTikSnhJViFrABXvGF"
+              }
+            ]
+          }
         ]
       },
       "has": {
@@ -1073,8 +1178,7 @@
               }
             ]
           }
-        ],
-        "NarrativeLocation": null
+        ]
       }
     }
   },
@@ -1332,6 +1436,26 @@
               }
             ]
           }
+        ],
+        "NarrativeLocation": [
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/ryfjgiLuoYBZePKoW9Yxy"
+              }
+            ]
+          },
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/EZ4G2BwwADdGAYwsJZprm"
+              }
+            ]
+          }
         ]
       },
       "has": {
@@ -1354,8 +1478,7 @@
               }
             ]
           }
-        ],
-        "NarrativeLocation": null
+        ]
       }
     }
   },
@@ -1529,6 +1652,17 @@
               }
             ]
           }
+        ],
+        "NarrativeLocation": [
+          {
+            "entityType": "NarrativeLocation",
+            "identifier": [
+              {
+                "identifierScope": "labkoat",
+                "identifierValue": "loc/z_GgQuQK8JOzOygofIAwU"
+              }
+            ]
+          }
         ]
       },
       "has": {
@@ -1551,8 +1685,7 @@
               }
             ]
           }
-        ],
-        "NarrativeLocation": null
+        ]
       }
     }
   }

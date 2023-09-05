@@ -2,15 +2,17 @@
 Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating the assets required for a given workflow and a means for the applications and services to communicate about these assets. This information includes how assets relate to other parts of the production; such as an asset being for a particular scene or character. Or how they might relate to other assets (e.g., a proxy that is derived from the OCF).
 
 The 2030 vision establishes some core ideas behind the handling of assets:
-- The separation of an assets metadata (information about the asset) and the essence of the asset(the actual thing, often a digital file like an image).
+- The separation of an assets metadata (information about the asset) and the essence of the asset (the actual thing, often a digital file like an image). This allows information about the asset to made available without actually needing access to the essence, this improves security and can save resources where an asset does not need to be loaded and interrogated for embeded data.
 - Separation of an assets [structural and functional characteristics](./Functional&Structural.md), that is what an asset is (structural) from what it is used for (functional).
-- All assets are uniquely identified, and the specific location of an asset can be abstracted and resolved when needed. This involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets](https://movielabs.com/through-the-looking-glass/)
+- All assets are uniquely identified, this allows the specific location of an asset to be abstracted and resolved when needed. This involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets](https://movielabs.com/through-the-looking-glass/)
 
-*In practical terms, the general expected pattern for using the OMC-JSON is that the payload describes a set of entities and each entity contains one or more identifiers. This tech note focuses on Assets.*
+An Asset is generally comprised of the following main parts:
+- An identifier that is unique to this particular thing, it can span multiple versions.
+- Structural Characteristics (SC) that are uniquely identified and describe the essence currently associated with the asset, the SC can change over time, for example if a new version of something is created.
+- Functional Characteristics (FC) that describe what the Asset is used for in the production.
 
-*If there is only an identifier in the Asset, it can be passed to a resolution service which will return a URL for the required resource. Applications do not have to resolve identifiers if the JSON contains enough information or if the identifier itself is a resolved location (such as a URL). See  the [Identifiers section in Schema Structure](../Overview/Schema%20Structure.md#Identifiers%20and%20References) for more information.*
+Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. To help with this Assets can be related to other parts of the production, generally through a related Context. Assets also often advance through multiple versions, with different variants or representations of the same asset. We describe how versions can be managed in this sections XXXXXXX
 
-Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. Assets advance through multiple versions and there might be different variants or representations of the same asset. We describe how versions can be managed in this sections XXXXXXX
 
 ## Conventions
 ### Identifiers

@@ -775,6 +775,17 @@
                     "type": "object"
                   }
                 },
+                "NarrativeLocation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
+                  },
+                  "additionalItems": false
+                },
                 "NarrativeStyling": {
                   "type": [
                     "array",
@@ -882,17 +893,6 @@
                     "type": "object"
                   }
                 },
-                "NarrativeLocation": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "type": "object",
-                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
-                  },
-                  "additionalItems": false
-                },
                 "NarrativeObject": {
                   "type": [
                     "array",
@@ -958,6 +958,17 @@
                     "$ref": "#/definitions/MediaCreationContext/properties/Slate",
                     "type": "object"
                   }
+                },
+                "NarrativeLocation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "$ref": "#/definitions/MediaCreationContext/properties/NarrativeLocation"
+                  },
+                  "additionalItems": false
                 }
               },
               "additionalProperties": false
