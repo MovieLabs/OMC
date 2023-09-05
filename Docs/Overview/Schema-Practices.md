@@ -9,7 +9,7 @@ Certain terms are often relevant in many different situations or uses, e.g. ``ty
 
 To that end properties are generally named unambiguously. For example, even though dates share the same format their property name will describe the context of their use, ``createdOn, birthDate, shootDate``, etc.
 
-The exception to this is when a property is not specific to the entity. For example, many entities include ``name`` and ``description`` properties; these are used primarily to help humans identify the entity, and UI construction is simple if those two are common across all entities..
+The exception to this is when a property is not specific to the entity. For example, many entities include ``name`` and ``description`` properties; these are used primarily to help humans identify the entity, and it provides a consistent name for things like UI's to use that are common across all entities.
 
 ### **Plurals**
 We avoid the use of plurals.
@@ -32,12 +32,12 @@ Property naming uses lower camel case:
 ``characterName, shootDay, identifier``
 
 ### **Punctuation**
-We avoid punctuation in all property names and do not use hyphens, spaces, underscores, etc. Some systems require these to be escaped or removed and there is variability across systems in how punctuation is treated and sometimes how it is represented on screen.
+We avoid punctuation in all property names and do not use hyphens, spaces, underscores, etc. Some systems require these to be escaped or removed and there is variability across systems in how punctuation is treated and sometimes how it is represented on screen. They can create extra work in URL's, where it needs to be encoded, then a receiving party must know to decode that URL, etc.
 
-JSON OMC does not use additional symbols prepended or appended to names. For example, it is not uncommon to see $ prepended in JSON schemas ($id). However what is convention in one system rarely translates to other forms of serialization or databases. JSON schema itself uses this convention, which helps avoid confusion between the schema itself and the schema definition.
+JSON OMC does not use additional symbols prepended or appended to names. For example, it is not uncommon to see $ prepended in JSON schemas ($id). However what is convention in one system rarely translates to other forms of serialization or databases.
 
 ### **Multiple Values**
-Where a property can contain a set of values the schema will specify an array, even if only a single value is present.
+Where a property can contain a set of values the schema will specify an array, even if only a single value is present. Where a property should only ever contain a single instance then an object is used.
 
 This helps simplify parsing the payload. Code can be written to expect that a value is iterable even when it contains a single value, allowing easy use of looping constructs.
 

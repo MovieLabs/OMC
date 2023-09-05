@@ -12,20 +12,19 @@ There are three pervasive concepts in the JSON schema:
 ### Entities
 RDF is a class based system. JSON does not use a class based model or the idea of class inheritance.
 
-For the JSON schema we use a compositional model, where a set of individual schemas is used to create entities that align with the RDF classes. These schemas can then be composed (via referencing) to create new entities. Each entity can be nested inside other entities or included in an array of entities.
+For the JSON schema we use a compositional model, where a set of individual sub-schemas is used to create entities that align with the RDF classes. These schemas can then be composed (via referencing) to create entities. Each entity can be nested inside other entities or included in an array of entities.
 
-Each entity requires the property ``entityType``. Knowing the entity type allows applications to reference the correct schema when validating or parsing the data.
+So that parsers, and the schema, know which entity is the current scope, each entity requires the property ``entityType``. Knowing this allows applications to reference the correct schema when validating or parsing the data.
 
-> **Entity**: A top level concept in the ontology that includes a set of properties with associated values.
+> **Entity**: A top level concept in the ontology that includes a set of properties with associated values and it's relationship to other entities.
 
-> **Property**: A \<key\>\<value\> pair where the value can be an entity, complex type (object or array of objects), or primitive value (string, number, Boolean or null)
+> **Property**: A `<key> <value>` pair where the value can be an entity, complex type (object or array of objects), or primitive value (string, number, Boolean or null).
 
 The schema follows some general conventions:
-- Each entity is defined as a separate JSON schema.
-- The first letter of a defined entity is capitalized.
+- A capitalized `<key>` indicates a reference to an entity, i.e. it refers to a uniquely identified 'object' or 'instance'. A lower case `<key>` is a property that is specific to that entity.
 - Entities are required to declare their ``entityType`` and have a unique ``identifier``.
 
-Below we show a section of the schema for Narrative Location, which illustrates how the ``identifier`` sub-Schema is included by reference. The Location is itself an entity and therefore capitalized; it references the Location entity using an identifier. The properties ``name`` and ``description`` follow.
+Below we show an example from the definition of a Narrative Location. This illustrates how the ``identifier`` sub-Schema is included by reference. The Location is itself an entity and therefore capitalized; it references the Location entity using an identifier. The properties ``name`` and ``description`` follow.
 
 **JSON Schema**
 ```JSON
@@ -37,7 +36,7 @@ Below we show a section of the schema for Narrative Location, which illustrates 
 	},
 	"identifier": {
 		"title": "identifier",
-		"$ref": "../Utility/identifier#/properties/identifier"
+		"$ref": "#/definitions/Utility/properties/identifier"
 	},
 	"name": {
 		"type": "string",
@@ -48,7 +47,7 @@ Below we show a section of the schema for Narrative Location, which illustrates 
 		"title": "Description"
 	},
 	"Location": {
-		"$ref": "../Utility/Location"
+		"$ref": "#/definitions/Utility/properties/Location"
 	}
 }
 ```
@@ -61,18 +60,17 @@ Below we show a section of the schema for Narrative Location, which illustrates 
 		"identifierValue": "1234",
 		"identifierScope": "Movielabs"
 	}],
-	"Location": {
+	"name": "221B Baker Street - exterior",
+	"description": "Sherlock Holmes' residence",
+		"Location": {
 		"entityType": "Location",
 		"identifier": [{
 			"identifierValue": "5678",
 			"identifierScope": "Movielabs"
 		}]
-	},
-	"name": "221B Baker Street - exterior",
-	"description": "Sherlock Holmes' residence"
+	}
 }
 ```
-
 
 
 ## Identifiers and References
@@ -80,7 +78,7 @@ Below we show a section of the schema for Narrative Location, which illustrates 
 ### Identifiers
 The example above uses an identifier in two places. In the ontology, an Identifier is "a string of characters that uniquely identifies an object within a particular scope." An identifier is really just a way of referring to something; undifferentiated strings and URIs/IRIs are common forms for an identifier, and there are many more specialized ones as well.
 
-For the production system (and any system that consists of multiple cooperating systems) it is essential to know the *scope* of the identifier - the universe within which the identifier is valid and unique. For example, "42" is a perfectly good identifier, but without knowing the scope, there is no way of knowing what it represents. See [OMC Part 9: Utilities](https://mc.movielabs.com/docs/omc/utilities/concepts) for further details, including some meanings of "42".
+For the production system (and any system that consists of multiple cooperating systems) it is essential to know the *scope* of the identifier - the universe within which the identifier is valid and unique. For example, "42" is a perfectly good identifier, but without knowing the scope, there is no way of knowing what it represents. See [OMC Part 9: Utilities]([Ontology: Utilities | MovieLabs](https://mc.movielabs.com/docs/ontology/utilities/utilities/)) for further details, including some meanings of "42".
 
 Below is the JSON schema for an identifier/scope pair, as shown here, followed by an example of an instance.
 
@@ -121,12 +119,11 @@ Below is the JSON schema for an identifier/scope pair, as shown here, followed b
 }
 ```
 
-
-
+Identifiers are used liberally in the ontology, so it is useful to develop a good understanding of the concepts. It is worth noting that entities can have multiple identifiers, this is most often used when the same thing exists in multiple systems. This can provide a powerful way of integrating data across systems, for example the same Person may exist in an HR system, payroll system, security system, production system, etc. By retaining all the identifiers for each system, there is an understanding they are all referring to the the same 'thing' or person.
 ### References
-The use of identifiers is a central component of all entities; every entity must be uniquely identified with an identifier.
+The use of identifiers is a central component of all entities; every entity must be uniquely identified with an identifier (which includes it's scope).
 
-Using identifiers allows any entity to be included either by reference or by inclusion; the decision is left to the application. Where only an identifier is included in a payload the presumption is the receiving party can make a follow up request using the reference identifier if it needs more detailed information.
+OMC provides flexibility to include any or none of the properties that are specific to any given entity. When referencing another entity by including just the identifier it would be left to the consuming party to make an additional request for the details of that entity. The producers of any payload can decide what they want to include, allowing data to tailored to specific use case
 
 Which of the two methods to use (identifier vs full data) will differ across applications and workflows, thinking about things like latency (or even availability) of identifier resolution, caching behavior in applications, etc.  It is always possible to send full data for any entity to any depth, with the usual warnings about the size of the data and the fact that it is graph-based.
 
@@ -181,7 +178,7 @@ The next example shows a full Location entity de-referenced and included directl
 
 The schemas are structured in such a way that objects can be nested *ad infinitum*. It is up to the sending and receiving applications to decide how and what to exchange. However, developers should be aware that given the graph based nature of production data, circular references can be easily created.
 
-When the decision is made to pass just a reference and the receiving client wants to make a follow up request for additional information there are some potential issues: a decoupled system may not even know which application prepared the data and the client will need to know API endpoints, have the required credentials, and so on to acquire the additional data.  Sometimes all that a particular application wants is an identifier so it can anchor the portions of the graph it cares about in a broader structure, in which case the identifier doesn't need to be dereferenced.
+When the decision is made to pass just a reference and the receiving client wants to make a follow up request for additional information there are some potential issues: a decoupled system may not even know which application prepared the data and the client will need to know API endpoints, have the required credentials, etc., to acquire the additional data.  Sometimes all that a particular application wants is an identifier so it can anchor the portions of the graph it cares about in a broader structure, in which case the identifier doesn't need to be dereferenced.
 
 URLs can be used as identifiers but can be fragile in complex production systems: things can move or exist in more than one location. A `file:` URL can be used as an identifier, but this can make workflows fragile, since even a shared filesystem can be mounted differently on different systems.
 
@@ -193,10 +190,12 @@ For more information on resolvers see here: [Through the Looking Glass](https://
 Relationships are a fundamental part of the ontology.
 
 There are not really standard mechanisms for encoding relationships in JSON. We are using JSON Schema rather than JSON-LD, so we have adopted the following patterns for referencing other entities. There are two common situations where you may wish to include references:
-- When another entity is an intrinsic property of an entity
-- When you wish to use a named relationship, typically as part of a Context
 
-When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the property ``source`` in a Shot, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard).
+- When another entity is an intrinsic property of an entity, then it is a direct property
+- When you wish to use a named relationship, in JSON this would be as part of a [[Context]].
+
+When another entity is an intrinsic property then the entity type to which you are referring is often the name of the property; an example of this can be seen for Location above. However, another property name can be used, such as the property ``Shot`` in a Sequence component, which refers to an Asset. (The Asset can be, for example, captured video, motion capture, animation, or an animated storyboard).
+
 ```JSON
 {
 	"entityType": "Asset",
@@ -204,89 +203,28 @@ When another entity is an intrinsic property then the entity type to which you a
 		"identifierValue": "1234",
 		"identifierScope": "Movielabs"
 	}],
-	"functionalCharacteristics": {
-		"functionalType": "shot",
+	"assetFC": {
+		"functionalType": "scd",
 		"functionalProperties": {
-			"source": {
-				"entityType": "Asset",
-				"identifier": [{
-					"identifierScope": "labkoat",
-					"identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-				}]
-			},
-			"start": "0:10",
-			"end": "0:17"
+			"component": [
+				{
+					"sourceStart": "0:10",
+					"sourceEnd": "0:17",
+					"Shot": {
+						"entityType": "Asset",
+						"identifier": [{
+							"identifierScope": "movielabs",
+							"identifierValue": "ast/St_Hh-LxAQo4ICUAtbZ0v"
+				}
+			]
 		}
 	}
 }
 ```
 
-
-The Context example below demonstrates the use of named relationships. It shows how a `NarrativeScene` is related to entities such as props and characters that appear in that scene. This follows the pattern:
+The Context example below demonstrates the use of named relationships. It shows how a `NarrativeScene` is related to entities such as the script, props (NarrativeObjects) and Characters that appear in that scene. This follows the pattern:
 
 ``<Context>.<relationship>.[<entity>]``
-
-**JSON Schema**
-```JSON
-{
-	"entityType": {
-		"type": "string",
-		"title": "Entity Type",
-		"const": "NarrativeLocation"
-	},
-	"identifier": {
-		"title": "identifier",
-		"$ref": "../Utility/identifier.json#/properties/identifier",
-		"name": {
-			"type": "string",
-			"title": "Name"
-		},
-		"description": {
-			"type": "string",
-			"title": "Description"
-		},
-		"Context": {
-			"type": "object",
-			"required": [
-				"entityType",
-				"identifier"
-			],
-			"properties": {
-				"entityInfo": {
-					"title": "Entity Information",
-					"$ref": "../Model/definitions.json#/properties/entityInfo"
-				},
-				"entityType": {
-					"type": "string",
-					"title": "Entity Type",
-					"const": "Context"
-				},
-				"identifier": {
-					"$ref": "../Utility/identifier.json"
-				},
-				"features": {
-					"type": "object",
-					"title": "usesProp",
-					"properties": {
-						"NarrativeProp": {
-							"type": "array",
-							"items": {
-								"$ref": "../MediaCreationContext/NarrativeProp.json"
-							}
-						},
-						"Character": {
-							"type": "array",
-							"items": {
-								"$ref": "../MediaCreationContext/Character.json"
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-```
 
 **JSON Instance**
 ```JSON
@@ -305,8 +243,8 @@ The Context example below demonstrates the use of named relationships. It shows 
 			"identifierScope": "labkoat",
 			"identifierValue": "cxt-4567"
 		}],
-		"isFromScript": {
-			"Asset": [
+		"has": {
+			"script": [
 				{
 					"entityType": "Asset",
 					"identifier": [{
@@ -315,25 +253,20 @@ The Context example below demonstrates the use of named relationships. It shows 
 					}],
 					"name": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
 					"description": null,
-					"structuralCharacteristics": {
+					"AssetSC": {
 						"structuralType": "document",
 						"identifier": [{
 							"identifierScope": "labkoat",
 							"identifierValue": "astsc/vxFhewUHgTpM78A4tm5TN"
 						}],
 						"structuralProperties": {
-							"linkset": {
-								"recordType": "item",
-								"mediaType": "application/pdf"
-							},
 							"fileDetails": {
-								"fileName": "mls_hsm_script_vshootingfd_2021_12_17_v004.pdf",
-								"filePath": "/1_pre-production/story",
+								"fileName": "mls_hsm_script_vshooting.pdf",
 								"fileExtension": "pdf"
 							}
 						}
 					},
-					"functionalCharacteristics": {
+					"assetFC": {
 						"functionalType": "script"
 					}
 				}
@@ -356,7 +289,7 @@ The Context example below demonstrates the use of named relationships. It shows 
 					}]
 				}
 			],
-			"NarrativeProp": [
+			"NarrativeObject": [
 				{
 					"entityType": "NarrativeProp",
 					"identifier": [{
@@ -379,7 +312,12 @@ The Context example below demonstrates the use of named relationships. It shows 
 
 
 ## Standard Properties
-There are some properties that are used throughout the schema
+There are some properties that are used consistently throughout the schema
+
+##### schemaVersion
+Defines the version of the schema that was used to encode the instance.
+
+This allows parsers to understand the structure and nature of the properties in the entity.
 
 ##### entityType
 A required property that enumerates the type of the entity.
@@ -392,7 +330,9 @@ The identifier, or identifiers uniquely identify this entity within the describe
 An entity can have multiple identifiers. For example a Creative Work may have an identifier with the production company's ID, the studio's ID, an IMDb ID, or an EIDR ID..
 
 ##### name
-A human readable name for the entity, helpful for clients consuming the data; it is often useful for applications to have something like a label or tag for a UI. There is no requirement that it be unique and it should not be used as structured information or considered unique.
+A human readable name for the entity.
+
+This can be helpful for clients consuming the data, often applications may need something like a label or tag for a UI. There is no requirement that it be unique and this should not be used as something canonical, entities that need a canonical name (like Person or Location) will have a formal name property.
 
 ##### description
 A human readable (preferably short) description of the entity. As with name, this is really meant for human consumption and should not be used for encoding structured information.
@@ -400,15 +340,10 @@ A human readable (preferably short) description of the entity. As with name, thi
 ##### customData
 The schema does not attempt to define every property that you might be associate with any given entity, our goal is to surface enough to allow a production to track, relate and find things across distinct parts of the workflow.
 
-However, sometimes it may be desirable to embed data beyond the defined properties of an entity. This property is unrestricted, beyond the constraints imposed by JSON itself, allowing additional JSON, other serialized encodings, or base64 for example. It is the responsibility of the sending and receiving parties to know what to do with the data.
+However, sometimes it may be desirable to embed data beyond the defined properties of an entity. This property is unrestricted, beyond the constraints imposed by JSON itself, allowing additional JSON, other serialized encodings (xml), or base64 for example. It is the responsibility of the sending and receiving parties to know what to do with the data.
 
 Generally we recommend that more extensive metadata be identified separately as a standalone object often in standardized formats like IMF, JPG, etc. These blobs of data are assets in their own right and therefore can be uniquely identified with the data as essence, they can then be related or grouped with the assets they describe.
 
 See [Schema-Practices](./Schema-Practices#Extending%20the%20schema) for more information.
 
-##### entityInfo
-This is encodes information specific to the entity itself, not what it is representing. It might include one or all of the following:
- - Version of the schema used to create the instance
- - Version of the instance itself (under development; will change)
- - Provenance of the instance (under development; will change)
 
