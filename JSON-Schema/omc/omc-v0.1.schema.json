@@ -123,13 +123,25 @@
               "properties": {
                 "versionNumber": {
                   "type": [
+                    "number",
                     "string",
                     "null"
                   ]
                 },
                 "derivedFrom": {"$ref": "#/definitions/Asset/properties/AssetSC"},
                 "hasDerivation": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-                "representation": {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                "representationOf": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+                "hasRepresentation": {
+                  "oneOf": [
+                    {
+                      "type": "array",
+                      "additionalItems": false,
+                      "items": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+                      "title": "Asset Structural Characteristics"
+                    },
+                    {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                  ]
+                }
               }
             },
             "structuralType": {

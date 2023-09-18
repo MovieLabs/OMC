@@ -1,0 +1,95 @@
+[
+    {
+        "entityType": "AssetSC",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "astsc/WCkMZbX0q9hwfoQ3VOiue"
+            }
+        ],
+        "structuralType": "digital.image",
+        "structuralProperties": {
+            "linkset": {
+                "recordType": "item",
+                "mediaType": "image/png"
+            },
+            "fileDetails": {
+                "fileName": "mls_hsm_conceptart_logo_v002.png",
+                "filePath": "/1_pre-production/concept/concept-art/brand",
+                "fileExtension": "png"
+            }
+        },
+        "version": {
+            "hasRepresentation": [
+                {
+                    "entityType": "AssetSC",
+                    "identifier": [
+                        {
+                            "identifierScope": "labkoat",
+                            "identifierValue": "astsc/hevtwj0u-kY13qHQAA9Si"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "entityType": "AssetSC",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "astsc/hevtwj0u-kY13qHQAA9Si"
+            }
+        ],
+        "structuralType": "digital.image",
+        "structuralProperties": {
+            "linkset": {
+                "recordType": "item",
+                "mediaType": "image/png"
+            },
+            "fileDetails": {
+                "fileName": "mls_hsm_conceptart_logo_thumb_v002.png",
+                "filePath": "/1_pre-production/concept/concept-art/brand",
+                "fileExtension": "png"
+            }
+        },
+        "version": {
+            "representationOf": {
+                "entityType": "AssetSC",
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "astsc/WCkMZbX0q9hwfoQ3VOiue"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "entityType": "Asset",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/VGP_YkM_PC65JbFAvusdx"
+            }
+        ],
+        "name": "mls_hsm_conceptart_logo_v002.png",
+        "description": null,
+        "AssetSC": {
+            "entityType": "AssetSC",
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "astsc/WCkMZbX0q9hwfoQ3VOiue"
+                }
+            ]
+        },
+        "assetFC": {
+            "functionalType": "concept.artwork.character",
+            "functionalProperties": null
+        },
+        "version": {
+            "versionNumber": 2
+        }
+    }
+]
