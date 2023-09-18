@@ -17,7 +17,8 @@
                 "fileName": "mls_hsm_conceptart_logo_v002.png",
                 "filePath": "/1_pre-production/concept/concept-art/brand",
                 "fileExtension": "png"
-            }
+            },
+            "dimensions": "1920x1080px"
         },
         "version": {
             "hasRepresentation": [
@@ -51,7 +52,8 @@
                 "fileName": "mls_hsm_conceptart_logo_thumb_v002.png",
                 "filePath": "/1_pre-production/concept/concept-art/brand",
                 "fileExtension": "png"
-            }
+            },
+            "dimensions": "128x72px"
         },
         "version": {
             "representationOf": {
