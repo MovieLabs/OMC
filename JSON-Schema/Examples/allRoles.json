@@ -1,17 +1,6 @@
 [
   {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/WE7aIODtF4wnsXkT8CYjU"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "producer"
-  },
-  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
@@ -24,6 +13,20 @@
     "roleType": "screenWriter"
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/WE7aIODtF4wnsXkT8CYjU"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "producer"
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
@@ -36,42 +39,7 @@
     "roleType": "director"
   },
   {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/9MLbKNfnaUVj7u3n1Z4E6"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "admin"
-  },
-  {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/bh5Xf6qbTw-thvVkmIsvG"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "artist"
-  },
-  {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/VZhjDSXi03fuiCGPlpDuL"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "actor"
-  },
-  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
@@ -84,30 +52,33 @@
     "roleType": "artDirector"
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "rol/9XtlAb315qhNYw8qzDJGQ"
+        "identifierValue": "rol/9MLbKNfnaUVj7u3n1Z4E6"
       }
     ],
     "name": null,
     "description": null,
-    "roleType": "organization.production"
+    "roleType": "admin"
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "rol/y8vgnPwXcKv2gLuN3YXs6"
+        "identifierValue": "rol/bh5Xf6qbTw-thvVkmIsvG"
       }
     ],
     "name": null,
     "description": null,
-    "roleType": "external.review"
+    "roleType": "artist"
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
@@ -120,18 +91,7 @@
     "roleType": "organization.vfxStudio"
   },
   {
-    "entityType": "Role",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "rol/0VNba0GOx5-ttfSsf7s9N"
-      }
-    ],
-    "name": null,
-    "description": null,
-    "roleType": "external.approve"
-  },
-  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
@@ -144,6 +104,20 @@
     "roleType": "service.canRead"
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/y8vgnPwXcKv2gLuN3YXs6"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "external.review"
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Role",
     "identifier": [
       {
@@ -154,5 +128,44 @@
     "name": null,
     "description": null,
     "roleType": "service.canEdit"
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/VZhjDSXi03fuiCGPlpDuL"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "actor"
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/9XtlAb315qhNYw8qzDJGQ"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "organization.production"
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/0VNba0GOx5-ttfSsf7s9N"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "roleType": "external.approve"
   }
 ]

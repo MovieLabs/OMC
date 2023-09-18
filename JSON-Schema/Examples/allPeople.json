@@ -1,5 +1,6 @@
 [
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Person",
     "identifier": [
       {
@@ -10,25 +11,21 @@
     "name": "Max Powers",
     "description": null,
     "personName": {
-      "prefix": null,
       "firstGivenName": "Max",
       "familyName": "Powers"
     },
     "contact": {
       "email": {
-        "business": "powers@labkoat.media",
-        "personal": "powers@labkoat.media"
+        "business": "powers@labkoat.media"
       },
       "telephone": {
         "business": "213-555-0172"
       }
     },
-    "gender": {
-      "gender": "male",
-      "genderPronoun": "he/him"
-    }
+    "gender": null
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Person",
     "identifier": [
       {
@@ -39,7 +36,6 @@
     "name": "John Rene",
     "description": null,
     "personName": {
-      "prefix": null,
       "firstGivenName": "John",
       "familyName": "Rene"
     },
@@ -51,12 +47,10 @@
         "business": "213-555-0161"
       }
     },
-    "gender": {
-      "gender": "male",
-      "genderPronoun": "they/their"
-    }
+    "gender": null
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Person",
     "identifier": [
       {
@@ -67,7 +61,6 @@
     "name": "Herman Malinalli",
     "description": null,
     "personName": {
-      "prefix": null,
       "firstGivenName": "Herman",
       "familyName": "Malinalli"
     },
@@ -79,12 +72,10 @@
         "business": "213-555-0101"
       }
     },
-    "gender": {
-      "gender": "male",
-      "genderPronoun": "he/him"
-    }
+    "gender": null
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Person",
     "identifier": [
       {
@@ -95,7 +86,6 @@
     "name": "Ioseph Karin",
     "description": null,
     "personName": {
-      "prefix": null,
       "firstGivenName": "Ioseph",
       "familyName": "Karin"
     },
@@ -107,12 +97,10 @@
         "business": "213-555-0125"
       }
     },
-    "gender": {
-      "gender": "female",
-      "genderPronoun": "she/her"
-    }
+    "gender": null
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Person",
     "identifier": [
       {
@@ -123,7 +111,6 @@
     "name": "Grosvenor Eudora",
     "description": null,
     "personName": {
-      "prefix": null,
       "firstGivenName": "Grosvner",
       "familyName": "Eudora"
     },
@@ -135,12 +122,10 @@
         "business": "213-555-0127"
       }
     },
-    "gender": {
-      "gender": "female",
-      "genderPronoun": "she/her"
-    }
+    "gender": null
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Person",
     "identifier": [
       {
@@ -151,7 +136,6 @@
     "name": "J. Warren Trezevant",
     "description": "Stunt actor doing mo-cap for Sven",
     "personName": {
-      "prefix": null,
       "firstGivenName": "Warren",
       "familyName": "Trezevant"
     },
@@ -163,12 +147,10 @@
         "business": null
       }
     },
-    "gender": {
-      "gender": "male",
-      "genderPronoun": "he/him"
-    }
+    "gender": null
   },
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Person",
     "identifier": [
       {
@@ -179,7 +161,6 @@
     "name": "Daniel Lucas",
     "description": "Does a bit of this and a lot of that",
     "personName": {
-      "prefix": null,
       "firstGivenName": "Daniel",
       "familyName": "Lucas"
     },
@@ -191,9 +172,56 @@
         "business": "415-555-1234"
       }
     },
-    "gender": {
-      "gender": "male",
-      "genderPronoun": "he/him"
-    }
+    "gender": null
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "Person",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ptsc/kxAOjsm88GTBGPVEcm9cb"
+      }
+    ],
+    "name": "Matt Daw",
+    "description": "External from vfx studio",
+    "personName": {
+      "firstGivenName": "Matt",
+      "familyName": "Daw"
+    },
+    "contact": {
+      "email": {
+        "business": "matt@fx-dmz.com"
+      },
+      "telephone": {
+        "business": "647-555-9876"
+      }
+    },
+    "gender": null
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "Person",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ptsc/Pokfh35Nkfonwk"
+      }
+    ],
+    "name": "Vitaly Hilb",
+    "description": "External from vfx studio",
+    "personName": {
+      "firstGivenName": "Vitaly",
+      "familyName": "Hilb"
+    },
+    "contact": {
+      "email": {
+        "business": "vitaly@fx-dmz.com"
+      },
+      "telephone": {
+        "business": "647-555-7676"
+      }
+    },
+    "gender": null
   }
 ]

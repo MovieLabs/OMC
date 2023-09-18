@@ -1,6 +1,104 @@
 [
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "NarrativeStyling",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+      }
+    ],
+    "name": "Spacesuit",
+    "description": "RD-12 Envrionmental Protection Suit",
+    "narrativeType": "wardrobe",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/wWz2OqsKDO7bTLZm9TdTJ"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        },
+        "has": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "NarrativeStyling",
     "identifier": [
       {
@@ -13,7 +111,7 @@
     "narrativeType": "wardrobe",
     "Context": [
       {
-        "schemaVersion": "0.1",
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -40,104 +138,6 @@
                 {
                   "identifierScope": "labkoat",
                   "identifierValue": "chr/LC4nrtxXR3CVPDUr8DAOJ"
-                }
-              ]
-            }
-          ]
-        },
-        "has": null
-      }
-    ]
-  },
-  {
-    "schemaVersion": "0.1",
-    "entityType": "NarrativeStyling",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
-      }
-    ],
-    "name": "Spacesuit",
-    "description": "RD-12 Envrionmental Protection Suit",
-    "narrativeType": "wardrobe",
-    "Context": [
-      {
-        "schemaVersion": "0.1",
-        "entityType": "Context",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "cxt/wWz2OqsKDO7bTLZm9TdTJ"
-          }
-        ],
-        "featuresIn": {
-          "NarrativeScene": [
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
-                }
-              ]
-            },
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
-                }
-              ]
-            },
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
-                }
-              ]
-            },
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
-                }
-              ]
-            },
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
-                }
-              ]
-            },
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
-                }
-              ]
-            },
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
-                }
-              ]
-            }
-          ]
-        },
-        "neededBy": {
-          "Character": [
-            {
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
                 }
               ]
             }

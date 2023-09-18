@@ -1,51 +1,6 @@
 [
   {
-    "schemaVersion": "0.1",
-    "entityType": "ProductionLocation",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "loc/ez1rAHkRw7ebLPNnXY1Q_"
-      }
-    ],
-    "name": "Lightstorm",
-    "description": "Virtual Production Stage",
-    "Location": {
-      "schemaVersion": "0.1",
-      "entityType": "Location",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "loc/Qz7LGOejU7-NybYTJDofq"
-        }
-      ],
-      "address": {
-        "street": "1600 Rosecrans Avenue",
-        "locality": "Manhattan Beach",
-        "region": "California",
-        "postalCode": "CA 90266",
-        "country": "US"
-      },
-      "coordinates": {
-        "latitude": 36.12361,
-        "longitude": 119.0496
-      }
-    },
-    "Context": [
-      {
-        "entityType": "Context",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "cxt/LXmTA23HTrvs4o-XyYnAm"
-          }
-        ],
-        "usedIn": null
-      }
-    ]
-  },
-  {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -56,7 +11,7 @@
     "name": "Game On ",
     "description": "Motion Capture Stage",
     "Location": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Location",
       "identifier": [
         {
@@ -78,6 +33,7 @@
     },
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -90,7 +46,7 @@
     ]
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -101,7 +57,7 @@
     "name": "MovieLabs Studio",
     "description": "Headquarters of MovieLabs Studio",
     "Location": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Location",
       "identifier": [
         {
@@ -123,6 +79,7 @@
     },
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -135,7 +92,7 @@
     ]
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -146,7 +103,7 @@
     "name": "Labkoat.media",
     "description": "Headquarters of Labkoat.media",
     "Location": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Location",
       "identifier": [
         {
@@ -168,6 +125,7 @@
     },
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -180,7 +138,53 @@
     ]
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ez1rAHkRw7ebLPNnXY1Q_"
+      }
+    ],
+    "name": "Lightstorm",
+    "description": "Virtual Production Stage",
+    "Location": {
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+      "entityType": "Location",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/Qz7LGOejU7-NybYTJDofq"
+        }
+      ],
+      "address": {
+        "street": "1600 Rosecrans Avenue",
+        "locality": "Manhattan Beach",
+        "region": "California",
+        "postalCode": "CA 90266",
+        "country": "US"
+      },
+      "coordinates": {
+        "latitude": 36.12361,
+        "longitude": 119.0496
+      }
+    },
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/LXmTA23HTrvs4o-XyYnAm"
+          }
+        ],
+        "usedIn": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -191,7 +195,7 @@
     "name": "FX-DMZ",
     "description": "Headquarters of FX-DMZ",
     "Location": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Location",
       "identifier": [
         {
@@ -213,6 +217,7 @@
     },
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -225,7 +230,7 @@
     ]
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -238,6 +243,7 @@
     "Location": null,
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -248,7 +254,6 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "entityType": "ProductionScene",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
@@ -257,7 +262,6 @@
               ]
             },
             {
-              "entityType": "ProductionScene",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
@@ -266,7 +270,6 @@
               ]
             },
             {
-              "entityType": "ProductionScene",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
@@ -280,153 +283,7 @@
     ]
   },
   {
-    "schemaVersion": "0.1",
-    "entityType": "ProductionLocation",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "loc/d1_XXxQ9T3lXXWEdKwG6x"
-      }
-    ],
-    "name": "beach ",
-    "description": "environment for ocean and beach",
-    "Location": null,
-    "Context": [
-      {
-        "entityType": "Context",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "cxt/HdtYp9aQgH2Odfg6QvsDt"
-          }
-        ],
-        "usedIn": {
-          "ProductionScene": [
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/MXKY7B8PtFZHrBilkphbM"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/n5jZBStI2GE0GO5wLlNFa"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/J9TFwwR0fICXWtv008338"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/O_8jsFUYTH6i0_mthLMxm"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "schemaVersion": "0.1",
-    "entityType": "ProductionLocation",
-    "identifier": [
-      {
-        "identifierScope": "labkoat",
-        "identifierValue": "loc/tJXXp9Pbza0q6roZNHp2b"
-      }
-    ],
-    "name": "jungle ",
-    "description": "environment for jungle",
-    "Location": null,
-    "Context": [
-      {
-        "entityType": "Context",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "cxt/S5Kxz0vlidcy4h38PSVgS"
-          }
-        ],
-        "usedIn": {
-          "ProductionScene": [
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/WdGf6FEyzRsudnquqVEAJ"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/Q2QrLLQVQz2t8sd8CUG9j"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/p7dsZBxu1YrYqd_JZJeBF"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/KLQ4h8dJ451xc2ifEGxP2"
-                }
-              ]
-            },
-            {
-              "entityType": "ProductionScene",
-              "identifier": [
-                {
-                  "identifierScope": "labkoat",
-                  "identifierValue": "pscn/gDkCYaCn4xcYOKo5EHnIk"
-                }
-              ]
-            }
-          ]
-        }
-      }
-    ]
-  },
-  {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -439,6 +296,7 @@
     "Location": null,
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -451,7 +309,68 @@
     ]
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/d1_XXxQ9T3lXXWEdKwG6x"
+      }
+    ],
+    "name": "beach ",
+    "description": "environment for ocean and beach",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/HdtYp9aQgH2Odfg6QvsDt"
+          }
+        ],
+        "usedIn": {
+          "ProductionScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/MXKY7B8PtFZHrBilkphbM"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/n5jZBStI2GE0GO5wLlNFa"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/O_8jsFUYTH6i0_mthLMxm"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/J9TFwwR0fICXWtv008338"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -464,6 +383,7 @@
     "Location": null,
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -474,7 +394,6 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "entityType": "ProductionScene",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
@@ -488,7 +407,7 @@
     ]
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -501,6 +420,7 @@
     "Location": null,
     "Context": [
       {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Context",
         "identifier": [
           {
@@ -511,11 +431,87 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "entityType": "ProductionScene",
               "identifier": [
                 {
                   "identifierScope": "labkoat",
                   "identifierValue": "pscn/m6FoqLtHiLy4vq1JaFD8_"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/tJXXp9Pbza0q6roZNHp2b"
+      }
+    ],
+    "name": "jungle ",
+    "description": "environment for jungle",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/S5Kxz0vlidcy4h38PSVgS"
+          }
+        ],
+        "usedIn": {
+          "ProductionScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/WdGf6FEyzRsudnquqVEAJ"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/Q2QrLLQVQz2t8sd8CUG9j"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/p7dsZBxu1YrYqd_JZJeBF"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/S8O2m5EYNYPr4KCdSXfNa"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/KLQ4h8dJ451xc2ifEGxP2"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "pscn/gDkCYaCn4xcYOKo5EHnIk"
                 }
               ]
             }

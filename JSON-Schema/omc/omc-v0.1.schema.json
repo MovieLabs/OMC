@@ -8,7 +8,10 @@
       "title": "Asset",
       "properties": {
         "Asset": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "title": "Asset",
           "description": "A physical or digital object or collection of objects specific to the creation of the Creative Work.",
           "properties": {
@@ -127,7 +130,10 @@
               }
             },
             "Depiction": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -641,7 +647,10 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"},
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -650,7 +659,10 @@
               }
             },
             "Depiction": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -1638,7 +1650,10 @@
               "$ref": "#/definitions/core/properties/customData"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -1715,7 +1730,10 @@
               ]
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -1781,7 +1799,10 @@
               "$ref": "#/definitions/core/properties/customData"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -1847,7 +1868,10 @@
               "$ref": "#/definitions/core/properties/customData"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -1913,7 +1937,10 @@
               "$ref": "#/definitions/core/properties/customData"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -1975,7 +2002,10 @@
               "$ref": "#/definitions/core/properties/customData"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -1984,7 +2014,10 @@
               }
             },
             "Depiction": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2067,7 +2100,10 @@
               "title": "Quantity"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2076,7 +2112,10 @@
               }
             },
             "Depiction": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2180,7 +2219,10 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"},
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2242,7 +2284,10 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"},
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2251,7 +2296,10 @@
               }
             },
             "Depiction": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2322,7 +2370,10 @@
               "$ref": "#/definitions/core/properties/customData"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2403,7 +2454,10 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"},
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2519,7 +2573,10 @@
               "$ref": "#/definitions/core/properties/customData"
             },
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2627,7 +2684,10 @@
               ]
             },
             "Director": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "title": "Director",
               "items": {
                 "anyOf": [
@@ -2638,7 +2698,10 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"},
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2761,7 +2824,10 @@
             },
             "customData": {"$ref": "#/definitions/core/properties/customData"},
             "Context": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2770,7 +2836,10 @@
               }
             },
             "Depiction": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {
                 "anyOf": [
                   {"$ref": "#/definitions/core/properties/reference"},
@@ -2788,10 +2857,7 @@
           "description": "The entities (people, organizations, and services) that are responsible for the production of the Creative Work."
         },
         "Person": {
-          "type": [
-            "object",
-            "null"
-          ],
+          "type": "object",
           "properties": {
             "schemaVersion": {
               "title": "Schema Version",
@@ -2885,10 +2951,7 @@
           "description": "People are the individuals that are associated with the production"
         },
         "Department": {
-          "type": [
-            "object",
-            "null"
-          ],
+          "type": "object",
           "properties": {
             "schemaVersion": {
               "title": "Schema Version",
@@ -2940,10 +3003,7 @@
           "description": "Part of a larger Organization with a particular set of responsibilities on the production."
         },
         "Organization": {
-          "type": [
-            "object",
-            "null"
-          ],
+          "type": "object",
           "properties": {
             "schemaVersion": {
               "title": "Schema Version",
@@ -2994,10 +3054,7 @@
           "description": "A legal entity or groups of people associated with the production.. with a particular purpose relative to the production."
         },
         "Service": {
-          "type": [
-            "object",
-            "null"
-          ],
+          "type": "object",
           "properties": {
             "schemaVersion": {
               "title": "Schema Version",
@@ -3043,10 +3100,7 @@
           "description": "A computer driven agent that can perform tasks given the proper context and structured data."
         },
         "Role": {
-          "type": [
-            "object",
-            "null"
-          ],
+          "type": "object",
           "properties": {
             "schemaVersion": {
               "title": "Schema Version",
@@ -3712,10 +3766,7 @@
           "additionalProperties": false
         },
         "Location": {
-          "type": [
-            "object",
-            "null"
-          ],
+          "type": "object",
           "properties": {
             "schemaVersion": {
               "title": "Schema Version",
@@ -4036,7 +4087,10 @@
           "enum": ["https://movielabs.com/omc/schema/json/v0.2"]
         },
         "reference": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "identifier": {"$ref": "#/definitions/Utility/properties/identifier"}
           },
