@@ -173,7 +173,6 @@
                 },
                 "description": {
                   "type": [
-                    "number",
                     "string",
                     "null"
                   ],
