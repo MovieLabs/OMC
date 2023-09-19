@@ -69,6 +69,29 @@
     },
     {
         "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "AssetSC",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "astsc/GuGB741FTUISmYOMigtW0"
+            }
+        ],
+        "structuralType": "digital.image",
+        "structuralProperties": {
+            "linkset": {
+                "recordType": "item",
+                "mediaType": "image/png"
+            },
+            "fileDetails": {
+                "fileName": "mls_hsm_conceptart_logo_v003.png",
+                "filePath": "/1_pre-production/concept/concept-art/brand",
+                "fileExtension": "png"
+            },
+            "dimensions": "1920x1080px"
+        }
+    },
+    {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Asset",
         "identifier": [
             {
@@ -91,7 +114,52 @@
             "functionalProperties": null
         },
         "version": {
-            "versionNumber": 2
+            "versionNumber": 2,
+            "hasRevision": [
+                {
+                    "identifier": [
+                        {
+                            "identifierScope": "labkoat",
+                            "identifierValue": "ast/F2ZW5mft3X7JAmG5Qnkm_"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "Asset",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast/F2ZW5mft3X7JAmG5Qnkm_"
+            }
+        ],
+        "name": "mls_hsm_conceptart_logo_v002.png",
+        "description": null,
+        "AssetSC": {
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "astsc/GuGB741FTUISmYOMigtW0"
+                }
+            ]
+        },
+        "assetFC": {
+            "functionalType": "concept.artwork.character",
+            "functionalProperties": null
+        },
+        "version": {
+            "versionNumber": 3,
+            "revisionOf": {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "ast/VGP_YkM_PC65JbFAvusdx"
+                    }
+                ]
+            }
         }
     }
 ]
