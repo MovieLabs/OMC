@@ -1,5 +1,6 @@
 [
   {
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "CreativeWork",
     "identifier": [
       {
@@ -26,16 +27,19 @@
     "countryOfOrigin": [
       "US"
     ],
-    "Context": {
-      "entityType": "Context",
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
-        }
-      ],
-      "contributor": null,
-      "has": null
-    }
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
+          }
+        ],
+        "contributor": null,
+        "has": null
+      }
+    ]
   }
 ]

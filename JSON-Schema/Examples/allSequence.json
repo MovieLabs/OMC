@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -12,7 +12,7 @@
     "description": "Titles and open",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Asset",
       "identifier": [
         {
@@ -23,11 +23,12 @@
       "name": null,
       "description": null,
       "AssetSC": {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
           {
             "identifierScope": "labkoat",
-            "identifierValue": "temp"
+            "identifierValue": "ast/ZIQiOkvK_vFja9mHT2XFU"
           }
         ],
         "structuralType": "digital.data"
@@ -40,11 +41,8 @@
               "name": "TITL_0010",
               "sourceStart": "0:00",
               "sourceEnd": "0:17",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:17",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -57,11 +55,8 @@
               "name": "TITL_0020",
               "sourceStart": "0:17",
               "sourceEnd": "0:20",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -76,7 +71,7 @@
     }
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -88,7 +83,7 @@
     "description": "Sven working on satellite and attacked",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Asset",
       "identifier": [
         {
@@ -99,11 +94,12 @@
       "name": null,
       "description": null,
       "AssetSC": {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
           {
             "identifierScope": "labkoat",
-            "identifierValue": "temp"
+            "identifierValue": "ast/QzL-sUo-ul7bUKZA3c99D"
           }
         ],
         "structuralType": "digital.data"
@@ -116,11 +112,8 @@
               "name": "SATL_0010",
               "sourceStart": "0:20",
               "sourceEnd": "0:38",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:18",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -133,11 +126,8 @@
               "name": "SATL_0020",
               "sourceStart": "0:38",
               "sourceEnd": "0:44",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:06",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -150,11 +140,8 @@
               "name": "SATL_0030",
               "sourceStart": "0:44",
               "sourceEnd": "0:47",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -167,11 +154,8 @@
               "name": "SATL_0040",
               "sourceStart": "0:47",
               "sourceEnd": "0:51",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:04",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -184,11 +168,8 @@
               "name": "SATL_0050",
               "sourceStart": "0:51",
               "sourceEnd": "0:52",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -201,11 +182,8 @@
               "name": "SATL_0060",
               "sourceStart": "0:52",
               "sourceEnd": "0:53",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -218,11 +196,8 @@
               "name": "SATL_0070",
               "sourceStart": "0:53",
               "sourceEnd": "0:57",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:04",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -235,11 +210,8 @@
               "name": "SATL_0080",
               "sourceStart": "0:57",
               "sourceEnd": "1:01",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:04",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -252,11 +224,8 @@
               "name": "SATL_0090",
               "sourceStart": "1:01",
               "sourceEnd": "1:04",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -269,11 +238,8 @@
               "name": "SATL_0100",
               "sourceStart": "1:04",
               "sourceEnd": "1:07",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -286,11 +252,8 @@
               "name": "SATL_0110",
               "sourceStart": "1:07",
               "sourceEnd": "1:10",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -303,11 +266,8 @@
               "name": "SATL_0120",
               "sourceStart": "1:10",
               "sourceEnd": "1:12",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -320,11 +280,8 @@
               "name": "SATL_0130",
               "sourceStart": "1:12",
               "sourceEnd": "1:13",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -337,11 +294,8 @@
               "name": "SATL_0140",
               "sourceStart": "1:13",
               "sourceEnd": "1:14",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -354,11 +308,8 @@
               "name": "SATL_0150",
               "sourceStart": "1:14",
               "sourceEnd": "1:15",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -371,11 +322,8 @@
               "name": "SATL_0160",
               "sourceStart": "1:15",
               "sourceEnd": "1:16",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -388,11 +336,8 @@
               "name": "SATL_0170",
               "sourceStart": "1:16",
               "sourceEnd": "1:17",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -405,11 +350,8 @@
               "name": "SATL_0180",
               "sourceStart": "1:17",
               "sourceEnd": "1:18",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -422,11 +364,8 @@
               "name": "SATL_0190",
               "sourceStart": "1:18",
               "sourceEnd": "1:19",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -439,11 +378,8 @@
               "name": "SATL_0200",
               "sourceStart": "1:19",
               "sourceEnd": "1:23",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:04",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -456,11 +392,8 @@
               "name": "SATL_0210",
               "sourceStart": "1:23",
               "sourceEnd": "1:24",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -473,11 +406,8 @@
               "name": "SATL_0220",
               "sourceStart": "1:24",
               "sourceEnd": "1:25",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -490,11 +420,8 @@
               "name": "SATL_0230",
               "sourceStart": "1:25",
               "sourceEnd": "1:27",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -507,11 +434,8 @@
               "name": "SATL_0240",
               "sourceStart": "1:27",
               "sourceEnd": "1:29",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -524,11 +448,8 @@
               "name": "SATL_0250",
               "sourceStart": "1:29",
               "sourceEnd": "1:30",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -543,7 +464,7 @@
     }
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -555,7 +476,7 @@
     "description": "Sven is chased through the atmosphere and crashes",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Asset",
       "identifier": [
         {
@@ -566,11 +487,12 @@
       "name": null,
       "description": null,
       "AssetSC": {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
           {
             "identifierScope": "labkoat",
-            "identifierValue": "temp"
+            "identifierValue": "ast/MhySsq42iKUQsqonV-j4_"
           }
         ],
         "structuralType": "digital.data"
@@ -583,11 +505,8 @@
               "name": "FALL_0010",
               "sourceStart": "1:30",
               "sourceEnd": "1:32",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -600,11 +519,8 @@
               "name": "FALL_0020",
               "sourceStart": "1:32",
               "sourceEnd": "1:33",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -617,11 +533,8 @@
               "name": "FALL_0030",
               "sourceStart": "1:33",
               "sourceEnd": "1:35",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -634,11 +547,8 @@
               "name": "FALL_0040",
               "sourceStart": "1:35",
               "sourceEnd": "1:38",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -651,11 +561,8 @@
               "name": "FALL_0050",
               "sourceStart": "1:38",
               "sourceEnd": "1:40",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -668,11 +575,8 @@
               "name": "FALL_0060",
               "sourceStart": "1:40",
               "sourceEnd": "1:41",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -685,11 +589,8 @@
               "name": "FALL_0070",
               "sourceStart": "1:41",
               "sourceEnd": "1:43",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -702,11 +603,8 @@
               "name": "FALL_0080",
               "sourceStart": "1:43",
               "sourceEnd": "1:44",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -719,11 +617,8 @@
               "name": "FALL_0090",
               "sourceStart": "1:44",
               "sourceEnd": "1:45",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -736,11 +631,8 @@
               "name": "FALL_0100",
               "sourceStart": "1:45",
               "sourceEnd": "1:48",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -755,7 +647,7 @@
     }
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -767,7 +659,7 @@
     "description": "Sven swims to beach, phones home and is cchased",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Asset",
       "identifier": [
         {
@@ -778,11 +670,12 @@
       "name": null,
       "description": null,
       "AssetSC": {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
           {
             "identifierScope": "labkoat",
-            "identifierValue": "temp"
+            "identifierValue": "ast/TE6iUeyHWgpwgbDzZYoa5"
           }
         ],
         "structuralType": "digital.data"
@@ -795,11 +688,8 @@
               "name": "BECH_0010",
               "sourceStart": "1:48",
               "sourceEnd": "1:50",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -812,11 +702,8 @@
               "name": "BECH_0020",
               "sourceStart": "1:50",
               "sourceEnd": "1:52",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -829,11 +716,8 @@
               "name": "BECH_0030",
               "sourceStart": "1:52",
               "sourceEnd": "1:53",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -846,11 +730,8 @@
               "name": "BECH_0040",
               "sourceStart": "1:53",
               "sourceEnd": "1:54",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -863,11 +744,8 @@
               "name": "BECH_0050",
               "sourceStart": "1:54",
               "sourceEnd": "1:56",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -880,11 +758,8 @@
               "name": "BECH_0060",
               "sourceStart": "1:56",
               "sourceEnd": "2:04",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:08",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -897,11 +772,8 @@
               "name": "BECH_0070",
               "sourceStart": "2:04",
               "sourceEnd": "2:06",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -914,11 +786,8 @@
               "name": "BECH_0080",
               "sourceStart": "2:06",
               "sourceEnd": "2:07",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -931,11 +800,8 @@
               "name": "BECH_0090",
               "sourceStart": "2:07",
               "sourceEnd": "2:08",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -948,11 +814,8 @@
               "name": "BECH_0100",
               "sourceStart": "2:08",
               "sourceEnd": "2:23",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:15",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -965,11 +828,8 @@
               "name": "BECH_0110",
               "sourceStart": "2:23",
               "sourceEnd": "2:25",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -982,11 +842,8 @@
               "name": "BECH_0120",
               "sourceStart": "2:25",
               "sourceEnd": "2:26",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -999,11 +856,8 @@
               "name": "BECH_0130",
               "sourceStart": "2:26",
               "sourceEnd": "2:27",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1016,11 +870,8 @@
               "name": "BECH_0140",
               "sourceStart": "2:27",
               "sourceEnd": "2:28",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1033,11 +884,8 @@
               "name": "BECH_0150",
               "sourceStart": "2:28",
               "sourceEnd": "2:29",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1050,11 +898,8 @@
               "name": "BECH_0160",
               "sourceStart": "2:29",
               "sourceEnd": "2:33",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:04",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1067,11 +912,8 @@
               "name": "BECH_0170",
               "sourceStart": "2:33",
               "sourceEnd": "2:34",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1084,11 +926,8 @@
               "name": "BECH_0180",
               "sourceStart": "2:34",
               "sourceEnd": "2:35",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1101,11 +940,8 @@
               "name": "BECH_0190",
               "sourceStart": "2:35",
               "sourceEnd": "2:36",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1118,11 +954,8 @@
               "name": "BECH_0200",
               "sourceStart": "2:36",
               "sourceEnd": "2:37",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1135,11 +968,8 @@
               "name": "BECH_0210",
               "sourceStart": "2:37",
               "sourceEnd": "2:38",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1152,11 +982,8 @@
               "name": "BECH_0220",
               "sourceStart": "2:38",
               "sourceEnd": "2:39",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1169,11 +996,8 @@
               "name": "BECH_0230",
               "sourceStart": "2:39",
               "sourceEnd": "2:40",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1186,11 +1010,8 @@
               "name": "BECH_0240",
               "sourceStart": "2:40",
               "sourceEnd": "2:41",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1203,11 +1024,8 @@
               "name": "BECH_0250",
               "sourceStart": "2:41",
               "sourceEnd": "2:42",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1222,7 +1040,7 @@
     }
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -1234,7 +1052,7 @@
     "description": "Sven runs into jungle and confronts Trilobot",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Asset",
       "identifier": [
         {
@@ -1245,11 +1063,12 @@
       "name": null,
       "description": null,
       "AssetSC": {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
           {
             "identifierScope": "labkoat",
-            "identifierValue": "temp"
+            "identifierValue": "ast/p6aHyZUyqNI79atStUrW0"
           }
         ],
         "structuralType": "digital.data"
@@ -1262,11 +1081,8 @@
               "name": "JRUN_0010",
               "sourceStart": "2:42",
               "sourceEnd": "2:44",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1279,11 +1095,8 @@
               "name": "JRUN_0020",
               "sourceStart": "2:44",
               "sourceEnd": "2:45",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1296,11 +1109,8 @@
               "name": "JRUN_0030",
               "sourceStart": "2:45",
               "sourceEnd": "2:46",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1313,11 +1123,8 @@
               "name": "JRUN_0040",
               "sourceStart": "2:46",
               "sourceEnd": "2:47",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1330,11 +1137,8 @@
               "name": "JRUN_0050",
               "sourceStart": "2:47",
               "sourceEnd": "2:49",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1347,11 +1151,8 @@
               "name": "JRUN_0060",
               "sourceStart": "2:49",
               "sourceEnd": "2:50",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1364,11 +1165,8 @@
               "name": "JRUN_0070",
               "sourceStart": "2:50",
               "sourceEnd": "2:51",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1381,11 +1179,8 @@
               "name": "JRUN_0080",
               "sourceStart": "2:51",
               "sourceEnd": "2:54",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1398,11 +1193,8 @@
               "name": "JRUN_0090",
               "sourceStart": "2:54",
               "sourceEnd": "2:57",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1415,11 +1207,8 @@
               "name": "JRUN_0100",
               "sourceStart": "2:57",
               "sourceEnd": "2:59",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1432,11 +1221,8 @@
               "name": "JRUN_0110",
               "sourceStart": "2:59",
               "sourceEnd": "3:02",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1449,11 +1235,8 @@
               "name": "JRUN_0120",
               "sourceStart": "3:02",
               "sourceEnd": "3:03",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1466,11 +1249,8 @@
               "name": "JRUN_0130",
               "sourceStart": "3:03",
               "sourceEnd": "3:05",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1485,7 +1265,7 @@
     }
   },
   {
-    "schemaVersion": "0.1",
+    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -1497,7 +1277,7 @@
     "description": "Sven stumbles onto hidden base",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "0.1",
+      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
       "entityType": "Asset",
       "identifier": [
         {
@@ -1508,11 +1288,12 @@
       "name": null,
       "description": null,
       "AssetSC": {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
           {
             "identifierScope": "labkoat",
-            "identifierValue": "temp"
+            "identifierValue": "ast/4PtmrpbhBj7pB8pgVFajS"
           }
         ],
         "structuralType": "digital.data"
@@ -1525,11 +1306,8 @@
               "name": "JPLAT_0010",
               "sourceStart": "3:05",
               "sourceEnd": "3:06",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1542,11 +1320,8 @@
               "name": "JPLAT_0020",
               "sourceStart": "3:06",
               "sourceEnd": "3:08",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1559,11 +1334,8 @@
               "name": "JPLAT_0030",
               "sourceStart": "3:08",
               "sourceEnd": "3:09",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1576,11 +1348,8 @@
               "name": "JPLAT_0040",
               "sourceStart": "3:09",
               "sourceEnd": "3:10",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1593,11 +1362,8 @@
               "name": "JPLAT_0050",
               "sourceStart": "3:10",
               "sourceEnd": "3:11",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1610,11 +1376,8 @@
               "name": "JPLAT_0060",
               "sourceStart": "3:11",
               "sourceEnd": "3:12",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1627,11 +1390,8 @@
               "name": "JPLAT_0070",
               "sourceStart": "3:12",
               "sourceEnd": "3:13",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1644,11 +1404,8 @@
               "name": "JPLAT_0080",
               "sourceStart": "3:13",
               "sourceEnd": "3:14",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1661,11 +1418,8 @@
               "name": "JPLAT_0090",
               "sourceStart": "3:14",
               "sourceEnd": "3:15",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1678,11 +1432,8 @@
               "name": "JPLAT_0100",
               "sourceStart": "3:15",
               "sourceEnd": "3:16",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1695,11 +1446,8 @@
               "name": "JPLAT_0110",
               "sourceStart": "3:16",
               "sourceEnd": "3:17",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1712,11 +1460,8 @@
               "name": "JPLAT_0120",
               "sourceStart": "3:17",
               "sourceEnd": "3:18",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1729,11 +1474,8 @@
               "name": "JPLAT_0130",
               "sourceStart": "3:18",
               "sourceEnd": "3:22",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:04",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1746,11 +1488,8 @@
               "name": "JPLAT_0140",
               "sourceStart": "3:22",
               "sourceEnd": "3:28",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:06",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1763,11 +1502,8 @@
               "name": "JPLAT_0150",
               "sourceStart": "3:28",
               "sourceEnd": "3:29",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1780,11 +1516,8 @@
               "name": "JPLAT_0160",
               "sourceStart": "3:29",
               "sourceEnd": "3:32",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1797,11 +1530,8 @@
               "name": "JPLAT_0170",
               "sourceStart": "3:32",
               "sourceEnd": "3:34",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1814,11 +1544,8 @@
               "name": "JPLAT_0180",
               "sourceStart": "3:34",
               "sourceEnd": "3:38",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:04",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1831,11 +1558,8 @@
               "name": "JPLAT_0190",
               "sourceStart": "3:38",
               "sourceEnd": "3:40",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:02",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1848,11 +1572,8 @@
               "name": "JPLAT_0200",
               "sourceStart": "3:40",
               "sourceEnd": "3:43",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:03",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1865,11 +1586,8 @@
               "name": "JPLAT_0210",
               "sourceStart": "3:43",
               "sourceEnd": "3:44",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:01",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",
@@ -1882,11 +1600,8 @@
               "name": "JPLAT_0220",
               "sourceStart": "3:44",
               "sourceEnd": "3:51",
-              "recordStart": null,
-              "recordEnd": null,
               "duration": "0:07",
               "Shot": {
-                "entityType": "Asset",
                 "identifier": [
                   {
                     "identifierScope": "labkoat",

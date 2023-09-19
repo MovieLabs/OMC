@@ -1,14 +1,12 @@
 # Functional & Structural
-The ontology uses a common model for several of the entity types that separates what we call the entity's functional and structural characteristics. The structural characteristics describe its underlying nature, what it is, and the functional characteristics describe how it is used.
+The ontology uses a similar concept for several entity types that separates what we call an entity's functional and structural characteristics. Structural characteristics describe its underlying nature, what it is, and the functional characteristics describe how it is used. It is often useful separate these two concepts because sometimes the same thing can be used for more than one purpose, or something with the same functional use can have more than one form.
 
-It is useful to treat these as separate because sometimes the same thing can be used for more than one purpose, or something with the same use can have more than one form.
-
-In the ontology Assets, Participants, and Tasks can have structural and functional characteristics. It is worth noting that it is not always necessary that an entity have both characteristics; sometimes it may just have one. There is also no requirement or necessity for it to have specific properties - sometimes just declaring its type is enough.
+In the ontology Assets, Participants, and Tasks each have structural and functional characteristics. It is worth noting that it is not always necessary that an entity have both characteristics; sometimes it may just have one. There is also no requirement or necessity for it to have specific properties - sometimes just declaring its type is enough.
 
 **Structural & Functional Types**
-The ontology does not formally declare or impose a set of enumerated values for naming the functional and structural types. We are developing a set of preferred or suggested terms, but it is likely that there is such a large and varied set of types for both that it is impractical to cover them all.
+The ontology does not formally declare or impose a set of enumerated values for naming the functional and structural types, there are potentially a lot of these and they will evolve over time or may be specific to a particular production. However, in the interests of standardization we are developing a set of preferred or suggested terms for many types of things that are commonly used.
 
-Our naming convention uses dot notation and camel case for terms, allowing for a hierarchical naming structure, for example:
+In the formal ontology, the specific structural or functional entities are classes and sub-classes. In JSON we do not have classes, so express this through a type property of the structural or functional object. The naming convention uses dot notation and camel case for terms, allowing for a hierarchical naming structure.
 
 **Structural Types**
 ```
@@ -30,11 +28,11 @@ There is of course the inevitable discussion as to whether something is a digita
 Our conventions for the types go from more general on the left of the string to more specific towards the right of the string.
 
 ## Assets
-- A storyboard often starts life as a hand drawn sketch. Structurally this is a physical object. However, if you were to digitize it then it becomes a digital object, but it is still functionally the same thing: a storyboard. The structural properties will be different, e.g., the physical drawing may have physical location or dimensions in inches, whereas the digital object might contain the URL of a cloud storage bucket and measurements in pixels. 
+- A storyboard often starts life as a hand drawn sketch. Structurally this is a physical object. However, if you were to digitize this it becomes a digital object, but it is still functionally the same thing; a storyboard. However, the structural properties will be different, e.g., the physical drawing may have physical location or dimensions in inches, whereas the digital object is more likely held in cloud storage and measurements are in pixels. 
 
-- Objects like a digital images will share many of the same structural properties, such as size, color depth, and encoding. However, their functional uses can vary dramatically and are independent of all these attributes. They may textures for a 3D model, concept artwork, technical reference material, continuity photos, an so on. A single item may be more than one of those things in different parts of the workflow: a technical reference photo may become a texture at some point.
+- Objects like a digital images will share many of the same structural properties, such as size, color depth, and encoding. However, their functional uses can vary dramatically and are independent of these attributes. They may textures for a 3D model, concept artwork, technical reference material, continuity photos, etc. A single item may be more than one of those things in different parts of the workflow: a technical reference photo may become a texture at some point.
 
-See [Assets](./Assets.md) for some examples.
+See [Assets](./Assets.md) for amore detailed examples and descriptions
 
 ## Participants
 - A Participant that is structurally a person can have several different functional jobs in a production, such as a Director who also acts, produces or writes.
