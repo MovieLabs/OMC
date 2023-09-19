@@ -1,5 +1,6 @@
 [
     {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
             {
@@ -23,7 +24,6 @@
         "version": {
             "hasRepresentation": [
                 {
-                    "entityType": "AssetSC",
                     "identifier": [
                         {
                             "identifierScope": "labkoat",
@@ -35,6 +35,7 @@
         }
     },
     {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
             {
@@ -57,7 +58,6 @@
         },
         "version": {
             "representationOf": {
-                "entityType": "AssetSC",
                 "identifier": [
                     {
                         "identifierScope": "labkoat",
@@ -68,6 +68,7 @@
         }
     },
     {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "Asset",
         "identifier": [
             {
@@ -78,7 +79,6 @@
         "name": "mls_hsm_conceptart_logo_v002.png",
         "description": null,
         "AssetSC": {
-            "entityType": "AssetSC",
             "identifier": [
                 {
                     "identifierScope": "labkoat",
