@@ -68,20 +68,50 @@
                   "items": {"$ref": "#/definitions/Utility/properties/note"},
                   "description": "A collection of notes specific to this version"
                 },
-                "variantOf": {"$ref": "#/definitions/Asset/properties/Asset"},
-                "alternateOf": {"$ref": "#/definitions/Asset/properties/Asset"},
-                "revisionOf": {"$ref": "#/definitions/Asset/properties/Asset"},
+                "variantOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/Asset/properties/Asset"}
+                  ]
+                },
+                "alternateOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/Asset/properties/Asset"}
+                  ]
+                },
+                "revisionOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/Asset/properties/Asset"}
+                  ]
+                },
                 "hasVariant": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/Asset/properties/Asset"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/Asset/properties/Asset"}
+                    ]
+                  }
                 },
                 "hasAlternate": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/Asset/properties/Asset"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/Asset/properties/Asset"}
+                    ]
+                  }
                 },
                 "hasRevision": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/Asset/properties/Asset"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/Asset/properties/Asset"}
+                    ]
+                  }
                 },
                 "customData": {"$ref": "#/definitions/core/properties/customData"}
               }
@@ -187,20 +217,50 @@
                   "items": {"$ref": "#/definitions/Utility/properties/note"},
                   "description": "A collection of notes specific to this version"
                 },
-                "derivedFrom": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-                "revisionOf": {"$ref": "#/definitions/Asset/properties/AssetSC"},
-                "representationOf": {"$ref": "#/definitions/Asset/properties/AssetSC"},
+                "derivedFrom": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                  ]
+                },
+                "revisionOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                  ]
+                },
+                "representationOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                  ]
+                },
                 "hasRevision": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                    ]
+                  }
                 },
                 "hasDeriviation": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                    ]
+                  }
                 },
                 "hasRepresentation": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/Asset/properties/AssetSC"}
+                    ]
+                  }
                 },
                 "customData": {"$ref": "#/definitions/core/properties/customData"}
               },
@@ -2539,20 +2599,50 @@
                   "items": {"$ref": "#/definitions/Utility/properties/note"},
                   "description": "A collection of notes specific to this version"
                 },
-                "variantOf": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"},
-                "alternateOf": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"},
-                "revisionOf": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"},
+                "variantOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                  ]
+                },
+                "alternateOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                  ]
+                },
+                "revisionOf": {
+                  "oneOf": [
+                    {"$ref": "#/definitions/core/properties/reference"},
+                    {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                  ]
+                },
                 "hasVariant": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                    ]
+                  }
                 },
                 "hasAlternate": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                    ]
+                  }
                 },
                 "hasRevision": {
                   "type": "array",
-                  "items": {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/definitions/core/properties/reference"},
+                      {"$ref": "#/definitions/MediaCreationContext/properties/Sequence"}
+                    ]
+                  }
                 },
                 "customData": {"$ref": "#/definitions/core/properties/customData"}
               }
