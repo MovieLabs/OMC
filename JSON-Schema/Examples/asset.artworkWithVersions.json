@@ -22,7 +22,7 @@
             "dimensions": "1920x1080px"
         },
         "version": {
-            "hasRepresentation": [
+            "Representation": [
                 {
                     "identifier": [
                         {
@@ -57,7 +57,7 @@
             "dimensions": "128x72px"
         },
         "version": {
-            "representationOf": {
+            "RepresentationOf": {
                 "identifier": [
                     {
                         "identifierScope": "labkoat",
@@ -115,7 +115,7 @@
         },
         "version": {
             "versionNumber": 2,
-            "hasRevision": [
+            "Revision": [
                 {
                     "identifier": [
                         {
@@ -152,7 +152,7 @@
         },
         "version": {
             "versionNumber": 3,
-            "revisionOf": {
+            "RevisionOf": {
                 "identifier": [
                     {
                         "identifierScope": "labkoat",
