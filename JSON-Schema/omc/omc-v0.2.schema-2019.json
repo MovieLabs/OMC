@@ -72,19 +72,19 @@
                                     "items": {"$ref": "#/$defs/Utility/properties/note"},
                                     "description": "A collection of notes specific to this version"
                                 },
-                                "variantOf": {
+                                "VariantOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/Asset/properties/Asset"}
                                     ]
                                 },
-                                "revisionOf": {
+                                "RevisionOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/Asset/properties/Asset"}
                                     ]
                                 },
-                                "hasVariant": {
+                                "Variant": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -93,7 +93,7 @@
                                         ]
                                     }
                                 },
-                                "hasAlternate": {
+                                "Alternate": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -102,7 +102,7 @@
                                         ]
                                     }
                                 },
-                                "hasRevision": {
+                                "Revision": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -218,25 +218,25 @@
                                     "items": {"$ref": "#/$defs/Utility/properties/note"},
                                     "description": "A collection of notes specific to this version"
                                 },
-                                "derivedFrom": {
+                                "DerivedFrom": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/Asset/properties/AssetSC"}
                                     ]
                                 },
-                                "revisionOf": {
+                                "RevisionOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/Asset/properties/AssetSC"}
                                     ]
                                 },
-                                "representationOf": {
+                                "RepresentationOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/Asset/properties/AssetSC"}
                                     ]
                                 },
-                                "hasRevision": {
+                                "Revision": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -245,7 +245,7 @@
                                         ]
                                     }
                                 },
-                                "hasDeriviation": {
+                                "Deriviation": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -254,7 +254,7 @@
                                         ]
                                     }
                                 },
-                                "hasRepresentation": {
+                                "Representation": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -719,18 +719,6 @@
                             "additionalProperties": false
                         },
                         "customData": {"$ref": "#/$defs/core/properties/customData"},
-                        "Context": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
-                            "items": {
-                                "anyOf": [
-                                    {"$ref": "#/$defs/core/properties/reference"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
-                                ]
-                            }
-                        },
                         "Depiction": {
                             "type": [
                                 "array",
@@ -740,6 +728,18 @@
                                 "anyOf": [
                                     {"$ref": "#/$defs/core/properties/reference"},
                                     {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+                                ]
+                            }
+                        },
+                        "Context": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
                                 ]
                             }
                         },
@@ -2591,19 +2591,19 @@
                                     "items": {"$ref": "#/$defs/Utility/properties/note"},
                                     "description": "A collection of notes specific to this version"
                                 },
-                                "variantOf": {
+                                "VariantOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/MediaCreationContext/properties/Sequence"}
                                     ]
                                 },
-                                "revisionOf": {
+                                "RevisionOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/MediaCreationContext/properties/Sequence"}
                                     ]
                                 },
-                                "hasVariant": {
+                                "Variant": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -2612,7 +2612,7 @@
                                         ]
                                     }
                                 },
-                                "hasAlternate": {
+                                "Alternate": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -2621,7 +2621,7 @@
                                         ]
                                     }
                                 },
-                                "hasRevision": {
+                                "Revision": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
