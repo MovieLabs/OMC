@@ -794,6 +794,21 @@
                                 "production"
                             ]
                         },
+                        "Context": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {
+                                        "type": "object",
+                                        "$ref": "#/$defs/MediaCreationContext/properties/Context"
+                                    }
+                                ]
+                            }
+                        },
                         "customData": {
                             "title": "Custom Data",
                             "$ref": "#/$defs/core/properties/customData"
@@ -851,69 +866,6 @@
                                             {
                                                 "type": "object",
                                                 "$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"
-                                            },
-                                            {"$ref": "#/$defs/core/properties/reference"}
-                                        ]
-                                    }
-                                }
-                            }
-                        },
-                        "^depictedBy(?:\\.[a-zA-Z0-9]+)?$": {
-                            "type": [
-                                "object",
-                                "null"
-                            ],
-                            "additionalProperties": false,
-                            "properties": {
-                                "Asset": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "object",
-                                                "$ref": "#/$defs/Asset/properties/Asset"
-                                            },
-                                            {"$ref": "#/$defs/core/properties/reference"}
-                                        ]
-                                    }
-                                }
-                            }
-                        },
-                        "^depicts(?:\\.[a-zA-Z0-9]+)?$": {
-                            "type": [
-                                "object",
-                                "null"
-                            ],
-                            "additionalProperties": false,
-                            "properties": {
-                                "NarrativeLocation": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "object",
-                                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"
-                                            },
-                                            {"$ref": "#/$defs/core/properties/reference"}
-                                        ]
-                                    }
-                                },
-                                "NarrativeObject": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "object",
-                                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"
                                             },
                                             {"$ref": "#/$defs/core/properties/reference"}
                                         ]
@@ -1265,84 +1217,6 @@
                                 }
                             },
                             "additionalProperties": false
-                        },
-                        "^portrayedBy(?:\\.[a-zA-Z0-9]+)?$": {
-                            "type": [
-                                "object",
-                                "null"
-                            ],
-                            "additionalProperties": false,
-                            "properties": {
-                                "Asset": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "object",
-                                                "$ref": "#/$defs/Asset/properties/Asset"
-                                            },
-                                            {"$ref": "#/$defs/core/properties/reference"}
-                                        ]
-                                    }
-                                },
-                                "Participant": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "object",
-                                                "$ref": "#/$defs/Participant/properties/Participant"
-                                            },
-                                            {"$ref": "#/$defs/core/properties/reference"}
-                                        ]
-                                    }
-                                }
-                            }
-                        },
-                        "^portrays(?:\\.[a-zA-Z0-9]+)?$": {
-                            "type": [
-                                "object",
-                                "null"
-                            ],
-                            "additionalProperties": false,
-                            "properties": {
-                                "Character": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "object",
-                                                "$ref": "#/$defs/MediaCreationContext/properties/Character"
-                                            },
-                                            {"$ref": "#/$defs/core/properties/reference"}
-                                        ]
-                                    }
-                                },
-                                "NarrativeObject": {
-                                    "type": [
-                                        "array",
-                                        "null"
-                                    ],
-                                    "items": {
-                                        "anyOf": [
-                                            {
-                                                "type": "object",
-                                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"
-                                            },
-                                            {"$ref": "#/$defs/core/properties/reference"}
-                                        ]
-                                    }
-                                }
-                            }
                         },
                         "^representedBy(?:\\.[a-zA-Z0-9]+)?$": {
                             "type": [
@@ -1856,6 +1730,18 @@
                             "title": "Custom Data",
                             "$ref": "#/$defs/core/properties/customData"
                         },
+                        "Depiction": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+                                ]
+                            }
+                        },
                         "Context": {
                             "type": [
                                 "array",
@@ -1920,6 +1806,18 @@
                                 "soundEffect",
                                 "music"
                             ]
+                        },
+                        "Depiction": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+                                ]
+                            }
                         },
                         "customData": {
                             "title": "Custom Data",
@@ -1993,6 +1891,18 @@
                         "customData": {
                             "title": "Custom Data",
                             "$ref": "#/$defs/core/properties/customData"
+                        },
+                        "Depiction": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+                                ]
+                            }
                         },
                         "Context": {
                             "type": [
