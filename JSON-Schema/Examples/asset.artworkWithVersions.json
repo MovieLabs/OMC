@@ -1,6 +1,59 @@
 [
     {
         "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "entityType": "Participant",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
+            }
+        ],
+        "name": "Ioseph Karin",
+        "description": null,
+        "ParticipantSC": {
+            "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+            "entityType": "Person",
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ptsc/xP9-Ambvs4JklyFiSVA8H"
+                }
+            ],
+            "name": "Ioseph Karin",
+            "description": null,
+            "personName": {
+                "firstGivenName": "Ioseph",
+                "familyName": "Karin"
+            },
+            "contact": {
+                "email": {
+                    "business": "karin@labkoat.media"
+                },
+                "telephone": {
+                    "business": "213-555-0125"
+                }
+            },
+            "gender": null
+        },
+        "participantFC": {
+            "functionalType": null,
+            "Role": [
+                {
+                    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+                    "entityType": "Role",
+                    "identifier": [
+                        {
+                            "identifierScope": "labkoat",
+                            "identifierValue": "rol/0IcJty7Cy861yeAlWiStB"
+                        }
+                    ],
+                    "roleType": "artDirector"
+                }
+            ]
+        }
+    },
+    {
+        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
         "entityType": "AssetSC",
         "identifier": [
             {
@@ -8,6 +61,7 @@
                 "identifierValue": "astsc/WCkMZbX0q9hwfoQ3VOiue"
             }
         ],
+        "name": "mls_hsm_conceptart_logo_v002.png",
         "structuralType": "digital.image",
         "structuralProperties": {
             "linkset": {
@@ -22,6 +76,7 @@
             "dimensions": "1920x1080px"
         },
         "version": {
+            "versionNumber": 2,
             "Representation": [
                 {
                     "identifier": [
@@ -43,6 +98,7 @@
                 "identifierValue": "astsc/hevtwj0u-kY13qHQAA9Si"
             }
         ],
+        "name": "mls_hsm_conceptart_logo_thumb_v002.png",
         "structuralType": "digital.image",
         "structuralProperties": {
             "linkset": {
@@ -57,6 +113,7 @@
             "dimensions": "128x72px"
         },
         "version": {
+            "versionNumber": 2,
             "RepresentationOf": {
                 "identifier": [
                     {
@@ -76,6 +133,7 @@
                 "identifierValue": "astsc/GuGB741FTUISmYOMigtW0"
             }
         ],
+        "name": "mls_hsm_conceptart_logo_v003.png",
         "structuralType": "digital.image",
         "structuralProperties": {
             "linkset": {
@@ -88,6 +146,9 @@
                 "fileExtension": "png"
             },
             "dimensions": "1920x1080px"
+        },
+        "version": {
+            "versionNumber": 3
         }
     },
     {
@@ -112,6 +173,26 @@
         "assetFC": {
             "functionalType": "concept.artwork.character",
             "functionalProperties": null
+        },
+        "provenance": {
+            "CreatedBy": {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
+                    }
+                ]
+            },
+            "Role": {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "rol/0IcJty7Cy861yeAlWiStB"
+                    }
+                ]
+            },
+            "createdOn": "2023-09-20T12:22:22Z",
+            "reason": "WIP"
         },
         "version": {
             "versionNumber": 2,
@@ -149,6 +230,26 @@
         "assetFC": {
             "functionalType": "concept.artwork.character",
             "functionalProperties": null
+        },
+        "provenance": {
+            "CreatedBy": {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "ptc/tkY4u7Q05FHWNk9UiowAU"
+                    }
+                ]
+            },
+            "Role": {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "rol/0IcJty7Cy861yeAlWiStB"
+                    }
+                ]
+            },
+            "createdOn": "2023-09-25T10:51:15Z",
+            "reason": "Address director's note: more red"
         },
         "version": {
             "versionNumber": 3,
