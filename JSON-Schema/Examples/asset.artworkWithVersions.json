@@ -1,6 +1,6 @@
 [
     {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Participant",
         "identifier": [
             {
@@ -11,7 +11,7 @@
         "name": "Ioseph Karin",
         "description": null,
         "ParticipantSC": {
-            "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
             "entityType": "Person",
             "identifier": [
                 {
@@ -39,7 +39,7 @@
             "functionalType": null,
             "Role": [
                 {
-                    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+                    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
                     "entityType": "Role",
                     "identifier": [
                         {
@@ -53,7 +53,7 @@
         }
     },
     {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
             {
@@ -90,7 +90,7 @@
         }
     },
     {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
             {
@@ -125,7 +125,7 @@
         }
     },
     {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
             {
@@ -152,7 +152,7 @@
         }
     },
     {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Asset",
         "identifier": [
             {
@@ -209,7 +209,7 @@
         }
     },
     {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Asset",
         "identifier": [
             {
