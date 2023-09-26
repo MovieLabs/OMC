@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
-    "$id": "https://movielabs.com/omc/schema/json/v0.2",
-    "title": "OMC-JSON schema v0.2",
+    "$id": "https://movielabs.com/omc/json/schema/v2.0",
+    "title": "OMC-JSON schema v2.0",
     "oneOf": [
         {"$ref": "#/$defs/core/properties/rootObject"},
         {"$ref": "#/$defs/core/properties/rootArray"}
@@ -93,7 +93,7 @@
                                         ]
                                     }
                                 },
-                                "Alternate": {
+                                "Alternative": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -2522,7 +2522,7 @@
                                         ]
                                     }
                                 },
-                                "Alternate": {
+                                "Alternative": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -4105,7 +4105,7 @@
                     "type": "string",
                     "title": "Schema Version",
                     "default": "https://movielabs.com/omc/schema/json/v0.2",
-                    "enum": ["https://movielabs.com/omc/schema/json/v0.2"],
+                    "enum": ["https://movielabs.com/omc/json/schema/v2.0"],
                     "description": "Describes the version of OMC-JSON schema that was used to create this instance"
                 },
                 "reference": {
