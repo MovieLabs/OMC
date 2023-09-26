@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Character",
     "identifier": [
       {
@@ -31,7 +31,7 @@
     "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
     "Depiction": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Depiction",
         "identifier": [
           {
@@ -42,7 +42,7 @@
         "depictionType": "portrayal",
         "Depictor": {
           "entityType": "Participant",
-          "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
           "identifier": [
             {
               "identifierScope": "labkoat",
@@ -58,7 +58,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Context",
         "identifier": [
           {
@@ -341,7 +341,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Character",
     "identifier": [
       {
@@ -373,7 +373,7 @@
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Context",
         "identifier": [
           {
@@ -543,7 +543,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Character",
     "identifier": [
       {
@@ -575,7 +575,7 @@
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Context",
         "identifier": [
           {
@@ -625,7 +625,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Character",
     "identifier": [
       {
@@ -657,7 +657,7 @@
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Context",
         "identifier": [
           {
@@ -710,7 +710,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Character",
     "identifier": [
       {
@@ -742,7 +742,7 @@
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Context",
         "identifier": [
           {

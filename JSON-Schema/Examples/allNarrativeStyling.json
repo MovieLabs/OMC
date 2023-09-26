@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "NarrativeStyling",
     "identifier": [
       {
@@ -13,7 +13,7 @@
     "narrativeType": "wardrobe",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Context",
         "identifier": [
           {
@@ -98,7 +98,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "NarrativeStyling",
     "identifier": [
       {
@@ -111,7 +111,7 @@
     "narrativeType": "wardrobe",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "Context",
         "identifier": [
           {
