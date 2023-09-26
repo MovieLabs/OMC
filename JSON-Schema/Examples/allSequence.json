@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -12,7 +12,7 @@
     "description": "Titles and open",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
       "entityType": "Asset",
       "identifier": [
         {
@@ -23,7 +23,7 @@
       "name": null,
       "description": null,
       "AssetSC": {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
           {
@@ -71,7 +71,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -83,7 +83,7 @@
     "description": "Sven working on satellite and attacked",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
       "entityType": "Asset",
       "identifier": [
         {
@@ -94,7 +94,7 @@
       "name": null,
       "description": null,
       "AssetSC": {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
           {
@@ -464,7 +464,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -476,7 +476,7 @@
     "description": "Sven is chased through the atmosphere and crashes",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
       "entityType": "Asset",
       "identifier": [
         {
@@ -487,7 +487,7 @@
       "name": null,
       "description": null,
       "AssetSC": {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
           {
@@ -647,7 +647,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -659,7 +659,7 @@
     "description": "Sven swims to beach, phones home and is cchased",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
       "entityType": "Asset",
       "identifier": [
         {
@@ -670,7 +670,7 @@
       "name": null,
       "description": null,
       "AssetSC": {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
           {
@@ -1040,7 +1040,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -1052,7 +1052,7 @@
     "description": "Sven runs into jungle and confronts Trilobot",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
       "entityType": "Asset",
       "identifier": [
         {
@@ -1063,7 +1063,7 @@
       "name": null,
       "description": null,
       "AssetSC": {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
           {
@@ -1265,7 +1265,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
     "entityType": "Sequence",
     "identifier": [
       {
@@ -1277,7 +1277,7 @@
     "description": "Sven stumbles onto hidden base",
     "sequenceType": "vfx",
     "SCD": {
-      "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
       "entityType": "Asset",
       "identifier": [
         {
@@ -1288,7 +1288,7 @@
       "name": null,
       "description": null,
       "AssetSC": {
-        "schemaVersion": "https://movielabs.com/omc/schema/json/v0.2",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
         "entityType": "AssetSC",
         "identifier": [
           {
