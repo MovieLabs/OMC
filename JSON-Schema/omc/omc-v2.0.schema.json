@@ -1452,6 +1452,21 @@
                                             {"$ref": "#/$defs/core/properties/reference"}
                                         ]
                                     }
+                                },
+                                "NarrativeWardrobe": {
+                                    "type": [
+                                        "array",
+                                        "null"
+                                    ],
+                                    "items": {
+                                        "anyOf": [
+                                            {
+                                                "type": "object",
+                                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeWardrobe"
+                                            },
+                                            {"$ref": "#/$defs/core/properties/reference"}
+                                        ]
+                                    }
                                 }
                             }
                         },
@@ -2277,7 +2292,7 @@
                         "entityType": {
                             "type": "string",
                             "title": "Entity Type",
-                            "const": "NarrativeStyling"
+                            "const": "NarrativeWardrobe"
                         },
                         "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
                         "name": {
