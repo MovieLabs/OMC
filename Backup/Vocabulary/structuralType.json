@@ -1,0 +1,31 @@
+{
+    "analog": {
+        "image": {},
+        "audioVisual": {},
+        "movingImage": {}
+    },
+    "audioVisual": {},
+    "digital": {
+        "data": {},
+        "image": {},
+        "movingImage": {}
+    },
+    "data": {
+        "sequence": {
+            "edl": {},
+            "otio": {}
+        }
+    },
+    "document": {
+        "structured": {},
+        "spreadsheet": {}
+    },
+    "image": {},
+    "imageSequence": {},
+    "movingImage": {},
+    "physical": {
+        "image": {},
+        "movingImage": {},
+        "object": {}
+    }
+}

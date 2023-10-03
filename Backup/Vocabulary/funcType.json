@@ -1,0 +1,45 @@
+[
+  {
+    "concept": [
+      {
+        "term": "artwork",
+        "language": "en"
+      }
+    ],
+    "description": "",
+    "identifier": "https://mc.movielabs.com/vmc/#c-00001F",
+    "sameAs": "<identifier>",
+    "synonym": [],
+    "broader": "<identifier>",
+    "narrower": "<identifier>",
+    "status": [
+      "final",
+      "inReview",
+      "experimental"
+    ]
+  },
+  {
+    "concept": [{
+      "term": "artwork.storyboard",
+      "language":"en"
+    }],
+    "description": "",
+    "identifier": "https://mc.movielabs.com/vmc/#c-00001F",
+    "sameAs": "<identifier>",
+    "synonym": [],
+    "broader": "artwork",
+    "narrower": "<identifier"
+  },
+  {
+    "concept": [{
+      "term": "artwork.storyboard.frame",
+      "language":"en"
+    }],
+    "description": "",
+    "identifier": "https://mc.movielabs.com/vmc/#c-00001F",
+    "sameAs": "<identifier>",
+    "synonym": [],
+    "broader": "artwork.storyboard",
+    "narrower": ["<identifier>"]
+  }
+]

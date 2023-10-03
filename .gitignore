@@ -7,8 +7,10 @@
 .env
 .env.test
 # Dependency directories
-node_modules/
+/node_modules
 jspm_packages/
 
-JSON-Schema/Backup
-JSON-Schema/omc.hck.json
+/OMC-JSON/Docs/.obsidian
+/Backup/Vocabulary
+/Backup/WIP
+/Backup

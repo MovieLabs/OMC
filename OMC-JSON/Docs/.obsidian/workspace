@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "3e89bb2d9cb0a6eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "1041ccff43b7726c",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f2a28ce95449efb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "138dbace74672f74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f59b0ccb28fad0f3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "83aa78361c2b9a43",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3c3343ad0c8cc0cc",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cc2a26b437f2da10",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa83da9022bc19df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b4cdec801be78a4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e806745d7aff1c76",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "623c53161dc09480",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "574f228d4e6f3fc0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "d286e6de6b6bf613",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 304.5
+  },
+  "active": "1041ccff43b7726c",
+  "lastOpenFiles": [
+    "Future Work/Sequences.md",
+    "Tech-Notes/Depictions&Portrayals.md",
+    "Tech-Notes/Relationships.md",
+    "Overview/Schema-Structure.md",
+    "Overview/Schema-Version.md",
+    "Tech-Notes/Assets.md",
+    "Tech-Notes/Versions.md",
+    "Tech-Notes/Narrative&Production.md",
+    "Tech-Notes/Functional&Structural.md",
+    "Overview/Schema-Practices.md"
+  ]
+}
