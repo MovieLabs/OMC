@@ -69,7 +69,7 @@
                                     "items": {"$ref": "#/$defs/Utility/properties/note"},
                                     "description": "A collection of notes specific to this version"
                                 },
-                                "DerivedFrom": {
+                                "DerivationOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/Asset/properties/Asset"}
@@ -96,7 +96,7 @@
                                         ]
                                     }
                                 },
-                                "Derived": {
+                                "Derivation": {
                                     "type": "array",
                                     "items": {
                                         "anyOf": [
@@ -230,7 +230,7 @@
                                     "items": {"$ref": "#/$defs/Utility/properties/note"},
                                     "description": "A collection of notes specific to this version"
                                 },
-                                "DerivedFrom": {
+                                "DerivationOf": {
                                     "oneOf": [
                                         {"$ref": "#/$defs/core/properties/reference"},
                                         {"$ref": "#/$defs/Asset/properties/AssetSC"}
@@ -835,9 +835,9 @@
                                     {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"},
                                     {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"},
                                     {"$ref": "#/$defs/Participant/properties/Participant"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"},
                                     {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeEffect"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Effect"},
                                     {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"},
                                     {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"},
                                     {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeScene"},
@@ -924,14 +924,14 @@
                                         ]
                                     }
                                 },
-                                "NarrativeAction": {
+                                "SpecialAction": {
                                     "type": [
                                         "array",
                                         "null"
                                     ],
                                     "items": {
                                         "anyOf": [
-                                            {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"},
+                                            {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"},
                                             {"$ref": "#/$defs/core/properties/reference"}
                                         ]
                                     }
@@ -948,7 +948,7 @@
                                         ]
                                     }
                                 },
-                                "NarrativeEffect": {
+                                "Effect": {
                                     "type": [
                                         "array",
                                         "null"
@@ -1146,14 +1146,14 @@
                                         ]
                                     }
                                 },
-                                "NarrativeAction": {
+                                "SpecialAction": {
                                     "type": [
                                         "array",
                                         "null"
                                     ],
                                     "items": {
                                         "anyOf": [
-                                            {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"},
+                                            {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"},
                                             {"$ref": "#/$defs/core/properties/reference"}
                                         ]
                                     }
@@ -1285,7 +1285,7 @@
                                         ]
                                     }
                                 },
-                                "NarrativeAction": {
+                                "SpecialAction": {
                                     "type": [
                                         "array",
                                         "null"
@@ -1294,13 +1294,13 @@
                                         "anyOf": [
                                             {
                                                 "type": "object",
-                                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"
+                                                "$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"
                                             },
                                             {"$ref": "#/$defs/core/properties/reference"}
                                         ]
                                     }
                                 },
-                                "NarrativeEffect": {
+                                "Effect": {
                                     "type": [
                                         "array",
                                         "null"
@@ -1309,7 +1309,7 @@
                                         "anyOf": [
                                             {
                                                 "type": "object",
-                                                "$ref": "#/$defs/MediaCreationContext/properties/NarrativeEffect"
+                                                "$ref": "#/$defs/MediaCreationContext/properties/Effect"
                                             },
                                             {"$ref": "#/$defs/core/properties/reference"}
                                         ]
@@ -1704,10 +1704,11 @@
                             "type": "object",
                             "oneOf": [
                                 {"$ref": "#/$defs/core/properties/reference"},
-                                {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"},
+                                {"$ref": "#/$defs/MediaCreationContext/properties/Character"},
                                 {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"},
+                                {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"},
                                 {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeStyling"},
-                                {"$ref": "#/$defs/MediaCreationContext/properties/Character"}
+                                {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeWardrobe"}
                             ]
                         },
                         "Depictor": {
@@ -1743,15 +1744,18 @@
                     ],
                     "description": "The representation of something from a narrative entity by a production entity in the Creative Work, specified or implied by the Script."
                 },
-                "NarrativeAction": {
+                "Effect": {
                     "type": "object",
-                    "title": "Narrative Action",
+                    "title": "Effect",
                     "properties": {
-                        "schemaVersion": {"$ref": "#/$defs/core/properties/schemaVersion"},
+                        "schemaVersion": {
+                            "title": "Schema Version",
+                            "$ref": "#/$defs/core/properties/schemaVersion"
+                        },
                         "entityType": {
                             "type": "string",
                             "title": "Entity Type",
-                            "const": "NarrativeAction"
+                            "const": "Effect"
                         },
                         "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
                         "name": {
@@ -1759,8 +1763,8 @@
                                 "string",
                                 "null"
                             ],
-                            "title": "Narrative Action Name",
-                            "description": "A human readable name for the action"
+                            "title": "Narrative Effect Name",
+                            "description": "A human readable name for the effect"
                         },
                         "description": {
                             "type": [
@@ -1768,37 +1772,21 @@
                                 "null"
                             ],
                             "title": "Narrative Object Description",
-                            "description": "A brief description of the narrative action"
+                            "description": "A brief description of the narrative effect"
                         },
-                        "narrativeType": {
+                        "effectType": {
                             "type": "string",
                             "title": "Object type",
-                            "description": "A categorization of the type action.",
+                            "description": "A categorization of the type of effect.",
                             "enum": [
-                                "action",
-                                "stunt",
-                                "choreography",
-                                "fight",
-                                "motionCapture",
-                                "marine",
-                                "aerial"
+                                "effect",
+                                "specialEffect",
+                                "visualEffect"
                             ]
                         },
                         "customData": {
                             "title": "Custom Data",
                             "$ref": "#/$defs/core/properties/customData"
-                        },
-                        "Depiction": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
-                            "items": {
-                                "anyOf": [
-                                    {"$ref": "#/$defs/core/properties/reference"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
-                                ]
-                            }
                         },
                         "Context": {
                             "type": [
@@ -1823,7 +1811,7 @@
                         "identifier",
                         "schemaVersion"
                     ],
-                    "description": "An action or set of actions that are performed and require additional choreography or supervision."
+                    "description": "An on screen visual effect considered essential to the narrative."
                 },
                 "NarrativeAudio": {
                     "type": "object",
@@ -1905,87 +1893,6 @@
                         "schemaVersion"
                     ],
                     "description": "A named piece of audio significant to the narrative."
-                },
-                "NarrativeEffect": {
-                    "type": "object",
-                    "title": "Narrative Effect",
-                    "properties": {
-                        "schemaVersion": {
-                            "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
-                        },
-                        "entityType": {
-                            "type": "string",
-                            "title": "Entity Type",
-                            "const": "NarrativeEffect"
-                        },
-                        "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
-                        "name": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Narrative Effect Name",
-                            "description": "A human readable name for the effect"
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Narrative Object Description",
-                            "description": "A brief description of the narrative effect"
-                        },
-                        "narrativeType": {
-                            "type": "string",
-                            "title": "Object type",
-                            "description": "A categorization of the type of effect.",
-                            "enum": [
-                                "effect",
-                                "specialEffect",
-                                "visualEffect"
-                            ]
-                        },
-                        "customData": {
-                            "title": "Custom Data",
-                            "$ref": "#/$defs/core/properties/customData"
-                        },
-                        "Depiction": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
-                            "items": {
-                                "anyOf": [
-                                    {"$ref": "#/$defs/core/properties/reference"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
-                                ]
-                            }
-                        },
-                        "Context": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
-                            "items": {
-                                "anyOf": [
-                                    {"$ref": "#/$defs/core/properties/reference"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
-                                ]
-                            }
-                        },
-                        "entityInfo": {
-                            "title": "Entity Information",
-                            "$ref": "#/$defs/core/properties/entityInfo"
-                        }
-                    },
-                    "additionalProperties": false,
-                    "required": [
-                        "entityType",
-                        "identifier",
-                        "schemaVersion"
-                    ],
-                    "description": "An on screen visual effect considered essential to the narrative."
                 },
                 "NarrativeLocation": {
                     "type": "object",
@@ -2833,6 +2740,76 @@
                         "schemaVersion"
                     ],
                     "description": "Used to capture key identifying information about what is being recorded on any given setup and take."
+                },
+                "SpecialAction": {
+                    "type": "object",
+                    "title": "Special Action",
+                    "properties": {
+                        "schemaVersion": {"$ref": "#/$defs/core/properties/schemaVersion"},
+                        "entityType": {
+                            "type": "string",
+                            "title": "Entity Type",
+                            "const": "NarrativeAction"
+                        },
+                        "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
+                        "name": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Narrative Action Name",
+                            "description": "A human readable name for the action"
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Narrative Object Description",
+                            "description": "A brief description of the narrative action"
+                        },
+                        "actionType": {
+                            "type": "string",
+                            "title": "Object type",
+                            "description": "A categorization of the type action.",
+                            "enum": [
+                                "action",
+                                "stunt",
+                                "choreography",
+                                "fight",
+                                "motionCapture",
+                                "marine",
+                                "aerial"
+                            ]
+                        },
+                        "customData": {
+                            "title": "Custom Data",
+                            "$ref": "#/$defs/core/properties/customData"
+                        },
+                        "Context": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
+                                ]
+                            }
+                        },
+                        "entityInfo": {
+                            "title": "Entity Information",
+                            "$ref": "#/$defs/core/properties/entityInfo"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "entityType",
+                        "identifier",
+                        "schemaVersion"
+                    ],
+                    "description": "An action or set of actions that are performed and require additional choreography or supervision."
                 }
             },
             "additionalProperties": false,
@@ -4200,7 +4177,9 @@
                         "string",
                         "number",
                         "null"
-                    ]
+                    ],
+                    "title": "Version Number",
+                    "description": "A designation indicating a place in a sequence of versions"
                 },
                 "provenance": {
                     "type": "object",
@@ -4229,7 +4208,9 @@
                             "type": "array",
                             "items": {"$ref": "#/$defs/Utility/properties/note"}
                         }
-                    }
+                    },
+                    "title": "Provenance",
+                    "description": "A record of when something was changed and by whom."
                 }
             },
             "additionalProperties": true,
@@ -4298,11 +4279,6 @@
                             "items": {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"},
                             "title": "Context"
                         },
-                        "NarrativeAction": {
-                            "type": "array",
-                            "title": "Narrative Action",
-                            "items": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"}
-                        },
                         "NarrativeAudio": {
                             "type": "array",
                             "title": "Narrative Audio",
@@ -4353,10 +4329,15 @@
                             "title": "Slate",
                             "items": {"$ref": "#/$defs/MediaCreationContext/properties/Slate"}
                         },
-                        "NarrativeEffect": {
+                        "SpecialAction": {
                             "type": "array",
-                            "title": "Narrative Effect",
-                            "items": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeEffect"}
+                            "title": "Special Action",
+                            "items": {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"}
+                        },
+                        "Effect": {
+                            "type": "array",
+                            "title": "Effect",
+                            "items": {"$ref": "#/$defs/MediaCreationContext/properties/Effect"}
                         },
                         "Participant": {
                             "type": "array",
@@ -4405,7 +4386,6 @@
                             {"$ref": "#/$defs/MediaCreationContext/properties/Context"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"},
-                            {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAction"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"},
@@ -4415,7 +4395,8 @@
                             {"$ref": "#/$defs/MediaCreationContext/properties/ProductionLocation"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/ProductionScene"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/Slate"},
-                            {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeEffect"},
+                            {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"},
+                            {"$ref": "#/$defs/MediaCreationContext/properties/Effect"},
                             {"$ref": "#/$defs/Utility/properties/Location"},
                             {"$ref": "#/$defs/Participant/properties/Role"},
                             {"$ref": "#/$defs/Participant/properties/Person"},
