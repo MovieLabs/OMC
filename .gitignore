@@ -1,16 +1,16 @@
 .DS_Store
 .idea
 .npm
+.obsidian
+
 # Optional eslint cache
 .eslintcache
+
 # dotenv environment variables file
 .env
 .env.test
-# Dependency directories
-/node_modules
-jspm_packages/
 
-/OMC-JSON/Docs/.obsidian
-/Backup/Vocabulary
-/Backup/WIP
-/Backup
+# Dependency directories
+node_modules/
+
+Backup/
