@@ -73,7 +73,10 @@
                 "filePath": "/1_pre-production/concept/concept-art/brand",
                 "fileExtension": "png"
             },
-            "dimensions": "1920x1080px"
+            "dimensions": {
+                "width": "1920px",
+                "height": "1080px"
+            }
         },
         "version": {
             "versionNumber": 2,
@@ -110,7 +113,10 @@
                 "filePath": "/1_pre-production/concept/concept-art/brand",
                 "fileExtension": "png"
             },
-            "dimensions": "128x72px"
+            "dimensions": {
+                "width": "128px",
+                "height": "72px"
+            }
         },
         "version": {
             "versionNumber": 2,
@@ -145,7 +151,10 @@
                 "filePath": "/1_pre-production/concept/concept-art/brand",
                 "fileExtension": "png"
             },
-            "dimensions": "1920x1080px"
+            "dimensions": {
+                "width": "1920px",
+                "height": "1080px"
+            }
         },
         "version": {
             "versionNumber": 3
