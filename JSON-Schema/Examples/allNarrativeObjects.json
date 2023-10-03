@@ -1,1 +1,2265 @@
-[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/kOdgj11TMST9RP19XA-FI"}],"name":"Space","description":"View of space from Sven's viewpoint","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/wGIbSiOObMPj7oGgIADE6"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/yK1uVqNMqEJTEbpDQ54sF"}],"name":"Coastline vegetation","description":"Various forms of vegetation that grows along the ocean coastline of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/-vXxxtPadIucIHuS1uzoz"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/orw5FVvxccJ7ZwUdB3XIg"}],"name":"Clouds","description":"Clouds in the atmosphere of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/RKNEzI4psva8PU11ZIbyp"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/CtrVXKgNDDME9aKy8EAqX"}],"name":"Beach rocks","description":"Various types of rocks that can be found on the beaches of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/Q7RfaXCaI8fUyZuvddPFJ"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/dvsNP3e0x-oGC09GuHnbp"}],"name":"Planet","description":"Planet SR-232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/IfU22qbcVeqv9sw5RkzPd"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/IspantzjNZTToDqxZbTLx"}],"name":"Jungle Grass","description":"Various forms of grass that grows in the jungles of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/e37JYjTVq6kK1fulladZY"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/FQ3_a7_uI3UB_KsPbS0PH"}],"name":"Beach vegetation","description":"Various forms of vegetation that grows on the beaches of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/YvOEBzVEf_5fFblUg6QYE"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/BIredyBMPzoWVVUl1MwOe"}],"name":"Jungle Trees","description":"Various forms of trees that grows in the jungles of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/BOzZqrYVtf8SrGeojKSr7"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/XoWxn8DBWue7dfiEjfDmD"}],"name":"Jungle rocks","description":"Various forms of rocks that grows in the jungles of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/ZsdLQwjbvUH8Fa5mjCeCQ"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/5v86EHIGE24vlkkQzPKGf"}],"name":"Jungle vegetation","description":"Various forms of vegetation that grows in the jungles of SR 232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/XZ2EQkWjhXt0e7WSe-gDt"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/y7fbaPA-1s7Ho8pT4ggHK"}],"name":"Killamari buildings","description":"Various building types of the Killamari civilization.","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/-2JZLym1DuFurvYaBSNhU"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/Qra7TztcNyBCo3aWD-0R4"}],"name":"Kilamari infrastructure","description":"Various pieces of infrastructure technology for the Killamari civilizaton.","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/_0ay5bXsegkzGNToCfU2h"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"psd/YpFVY10d6A-afYiDbkHHJ"}],"name":"Sunset","description":"View of the sunset from the beach of SR-232","narrativeType":"setDressing","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/Py-bCIWz6-SZM-6IIHKoM"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":null}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/4ADqu_vf7ji85PLYOott1"}],"name":"Wreckage","description":"The wreckage of Sven's ship after it hits the water.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/AfKCIQ8uGPipZbR-DgIxH"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/aAZTJ26A0mCCLosGQ3Ryg"}],"name":"Windshield","description":"The windshield of Sven's ship.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/_w512KV97M_uw-w_CaHZt"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/jpiWPupPSRvHyAiUSyn0_"}],"name":"Switch","description":"The switch inside the panel Sven uses to turn on the satellite.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/Iui_wgs-dqARPPOU9uZKy"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/ozmg19-jNdhIlO1HwVP5G"}],"name":"Satellites hatch","description":"The hatch Sven removes to fix the satellite.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/B-4EvKeWZyyaAEZYiP6X3"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/YESjEAVPVMJL2edrroe2o"}],"name":"Panel","description":"The panel inside the satellite where Sven finds the sabotaged wires.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/M3T907Qr8_glq5eACmmmt"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/9ezqw5mMlPLoloD86u6aI"}],"name":"Jetpack","description":"Sven's Orion-9 jet pack he uses to move around usually only used in space.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/gkl2STShFXxdVDiIDD8KY"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/5is74zVxCRl5hipIHfMzB"}],"name":"Satellite","description":"The Gromet-12 plantetary observation satellite finds planets that are habitable for humans","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/RQPgrDBz_aiN_kcDHQiQJ"}],"has":{"NarrativeLocation":null},"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/vgGK6PF2s1FGziyehshia"}],"name":"Broken pipes","description":"The pipes inside the satellite that are broken","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/0pQgq26RLwXSJcmc97n_5"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/cqDBPztY_8fCs3mjU2Tq9"}],"name":"Eject button","description":"The button Sven pushes to eject from the Lancelot-12 galaxy cruiser","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/v5jjsphoTbx_med4Kj4BS"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/R7wfwv6cSPc6d1t1_glgJ"}],"name":"Communicator","description":"The Mark-14 Intergalactic communicator allows Sven to connect with Central Command. ","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/HzjWiaQhRaU6Y3EYlK34j"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/Lp5AP7ZQiwfRpeB_qIrXf"}],"name":"Fruit","description":"The exploding fruit found in the jungle.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/cPJK8xByh9voT5L11vFBY"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/zVJeW6nTeg8PKVJ_F0t5C"}],"name":"Welder","description":"The Prime-94 arc welder is as hot as the sun and can cut through most known metals.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/upF2yHMgSMpQF3wdG9G-9"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/eM2Njo6EK-OEIzEL9xDlr"}],"name":"Fruit cluster","description":"The cluster of fruit Sven sets off to kill the Trilobot","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/jTsc3Zn0TzZfKnvRenmyN"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/PFYNfswZXdTqm1l62DfSr"}],"name":"Disconnected wires","description":"The disconnected wires in the satellite panel Sven has to fix.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/gC8DGOhv-gPWhy-sxY1TK"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/ryhQTqM7Dpo0fe-9PJhQh"}],"name":"Spaceship","description":"Sven's Lancelot-12 galaxy cruiser which is the pick up truck of space vehicles","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/fmj0ue1_3PrL68dePUL1F"}],"has":{"NarrativeLocation":null},"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/BtBYAFQ_Moo4PQlqSztGz"}],"name":"Rock - Beach","description":"The rock on the beach that Sven hides behind.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/WRY4d-k7dnKh1BObzZJs_"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/XkxEwUpJGpxExmXj6FBv_"}],"name":"Wrench","description":"The Prime-97 electric wrench  is the swiss army knife of repair tools for Sven","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/LuzYROHcBrKCiGJUwdi5d"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/CyXsfblZS4UAQJ6SmNn9u"}],"name":"Red light (Trilobot)","description":"Glowing red light on the head of the Trilobot uses to target its prey.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/QINIZV3mb6uzh7-saCssC"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/OAjeFuQtL5Au4DHJMu6Uz"}],"name":"Canopy","description":"The canopy that Svens breaks through as he runs through the jungle.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/XAIJ-IeyKffxvwhFlJWr9"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/HL9EpbbzFK320fweoiFsM"}],"name":"Ground","description":"The terrain that Sven runs on in the Jungle and Plateau","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/suqgcTRU7Ca5yGRKsVSO0"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/c7UXpl1eerrigqaZaLTSi"}],"name":"Tree","description":"The tree that falls on the Trilobot","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/fcRm4M9OJ1ZcjQAlt7w-e"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/nsLRumyU2pd_7DPTFCpoj"}],"name":"Spaceship Chair","description":"The chair that Sven uses to eject from the spaceship.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/Q-hEYxQDgtsW4hFZhdald"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/PAWDCz64zEthoQVVWivOd"}],"name":"Bush","description":"The bush that Sven tumbles through after the ","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/HTpxqta02KmQaTyNBi9Hp"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/wz_MHOLYI3VwYx_0AX47Y"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/zH9BzX8cjf-wY6N-HE6fg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/1icPnKZ4LRliFd3WI9urA"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/O5vdheU9idw0DhwDrjoty"}]}]}}]},{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"NarrativeObject","identifier":[{"identifierScope":"labkoat","identifierValue":"nprp/psNDy6gpu-aVkc79Jdb0c"}],"name":"Helmet","description":"The helmet to Sven's spacesuit.","narrativeType":"prop","Context":[{"schemaVersion":"https://movielabs.com/omc/json/schema/v2.0","entityType":"Context","identifier":[{"identifierScope":"labkoat","identifierValue":"cxt/DXPMZxIwmBQO_QW4Co0r_"}],"has":null,"featuresIn":{"NarrativeScene":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/St_Hh-LxAQo4ICUAtbZ0v"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/xJpXtpM0G2QQM92TITfTf"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/3EF7fR-xOJ7IamLr2iYsg"}]},{"identifier":[{"identifierScope":"labkoat","identifierValue":"nscn/lmPkGo1nXjJgfeNnoxArq"}]}]},"neededBy":{"Character":[{"identifier":[{"identifierScope":"labkoat","identifierValue":"chr/HNvHjXqJY9wv1IwjG-Hf1"}]}]}}]}]
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/kOdgj11TMST9RP19XA-FI"
+      }
+    ],
+    "name": "Space",
+    "description": "View of space from Sven's viewpoint",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/wGIbSiOObMPj7oGgIADE6"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/yK1uVqNMqEJTEbpDQ54sF"
+      }
+    ],
+    "name": "Coastline vegetation",
+    "description": "Various forms of vegetation that grows along the ocean coastline of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/-vXxxtPadIucIHuS1uzoz"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/orw5FVvxccJ7ZwUdB3XIg"
+      }
+    ],
+    "name": "Clouds",
+    "description": "Clouds in the atmosphere of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/RKNEzI4psva8PU11ZIbyp"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+      }
+    ],
+    "name": "Beach rocks",
+    "description": "Various types of rocks that can be found on the beaches of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/dvsNP3e0x-oGC09GuHnbp"
+      }
+    ],
+    "name": "Planet",
+    "description": "Planet SR-232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/IfU22qbcVeqv9sw5RkzPd"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/IspantzjNZTToDqxZbTLx"
+      }
+    ],
+    "name": "Jungle Grass",
+    "description": "Various forms of grass that grows in the jungles of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/e37JYjTVq6kK1fulladZY"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/FQ3_a7_uI3UB_KsPbS0PH"
+      }
+    ],
+    "name": "Beach vegetation",
+    "description": "Various forms of vegetation that grows on the beaches of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/YvOEBzVEf_5fFblUg6QYE"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/BIredyBMPzoWVVUl1MwOe"
+      }
+    ],
+    "name": "Jungle Trees",
+    "description": "Various forms of trees that grows in the jungles of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/BOzZqrYVtf8SrGeojKSr7"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/XoWxn8DBWue7dfiEjfDmD"
+      }
+    ],
+    "name": "Jungle rocks",
+    "description": "Various forms of rocks that grows in the jungles of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/ZsdLQwjbvUH8Fa5mjCeCQ"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/5v86EHIGE24vlkkQzPKGf"
+      }
+    ],
+    "name": "Jungle vegetation",
+    "description": "Various forms of vegetation that grows in the jungles of SR 232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/XZ2EQkWjhXt0e7WSe-gDt"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/y7fbaPA-1s7Ho8pT4ggHK"
+      }
+    ],
+    "name": "Killamari buildings",
+    "description": "Various building types of the Killamari civilization.",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/-2JZLym1DuFurvYaBSNhU"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/Qra7TztcNyBCo3aWD-0R4"
+      }
+    ],
+    "name": "Kilamari infrastructure",
+    "description": "Various pieces of infrastructure technology for the Killamari civilizaton.",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/_0ay5bXsegkzGNToCfU2h"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/YpFVY10d6A-afYiDbkHHJ"
+      }
+    ],
+    "name": "Sunset",
+    "description": "View of the sunset from the beach of SR-232",
+    "narrativeType": "setDressing",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/Py-bCIWz6-SZM-6IIHKoM"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/4ADqu_vf7ji85PLYOott1"
+      }
+    ],
+    "name": "Wreckage",
+    "description": "The wreckage of Sven's ship after it hits the water.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/AfKCIQ8uGPipZbR-DgIxH"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/aAZTJ26A0mCCLosGQ3Ryg"
+      }
+    ],
+    "name": "Windshield",
+    "description": "The windshield of Sven's ship.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/_w512KV97M_uw-w_CaHZt"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/jpiWPupPSRvHyAiUSyn0_"
+      }
+    ],
+    "name": "Switch",
+    "description": "The switch inside the panel Sven uses to turn on the satellite.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/Iui_wgs-dqARPPOU9uZKy"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"
+      }
+    ],
+    "name": "Satellites hatch",
+    "description": "The hatch Sven removes to fix the satellite.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/B-4EvKeWZyyaAEZYiP6X3"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/YESjEAVPVMJL2edrroe2o"
+      }
+    ],
+    "name": "Panel",
+    "description": "The panel inside the satellite where Sven finds the sabotaged wires.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/M3T907Qr8_glq5eACmmmt"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/9ezqw5mMlPLoloD86u6aI"
+      }
+    ],
+    "name": "Jetpack",
+    "description": "Sven's Orion-9 jet pack he uses to move around usually only used in space.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/gkl2STShFXxdVDiIDD8KY"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/5is74zVxCRl5hipIHfMzB"
+      }
+    ],
+    "name": "Satellite",
+    "description": "The Gromet-12 plantetary observation satellite finds planets that are habitable for humans",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/RQPgrDBz_aiN_kcDHQiQJ"
+          }
+        ],
+        "has": {
+          "NarrativeLocation": null
+        },
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/vgGK6PF2s1FGziyehshia"
+      }
+    ],
+    "name": "Broken pipes",
+    "description": "The pipes inside the satellite that are broken",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/0pQgq26RLwXSJcmc97n_5"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/cqDBPztY_8fCs3mjU2Tq9"
+      }
+    ],
+    "name": "Eject button",
+    "description": "The button Sven pushes to eject from the Lancelot-12 galaxy cruiser",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/v5jjsphoTbx_med4Kj4BS"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/R7wfwv6cSPc6d1t1_glgJ"
+      }
+    ],
+    "name": "Communicator",
+    "description": "The Mark-14 Intergalactic communicator allows Sven to connect with Central Command. ",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/HzjWiaQhRaU6Y3EYlK34j"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/Lp5AP7ZQiwfRpeB_qIrXf"
+      }
+    ],
+    "name": "Fruit",
+    "description": "The exploding fruit found in the jungle.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/cPJK8xByh9voT5L11vFBY"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/zVJeW6nTeg8PKVJ_F0t5C"
+      }
+    ],
+    "name": "Welder",
+    "description": "The Prime-94 arc welder is as hot as the sun and can cut through most known metals.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/upF2yHMgSMpQF3wdG9G-9"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/eM2Njo6EK-OEIzEL9xDlr"
+      }
+    ],
+    "name": "Fruit cluster",
+    "description": "The cluster of fruit Sven sets off to kill the Trilobot",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/jTsc3Zn0TzZfKnvRenmyN"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/PFYNfswZXdTqm1l62DfSr"
+      }
+    ],
+    "name": "Disconnected wires",
+    "description": "The disconnected wires in the satellite panel Sven has to fix.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/gC8DGOhv-gPWhy-sxY1TK"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/ryhQTqM7Dpo0fe-9PJhQh"
+      }
+    ],
+    "name": "Spaceship",
+    "description": "Sven's Lancelot-12 galaxy cruiser which is the pick up truck of space vehicles",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/fmj0ue1_3PrL68dePUL1F"
+          }
+        ],
+        "has": {
+          "NarrativeLocation": null
+        },
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/BtBYAFQ_Moo4PQlqSztGz"
+      }
+    ],
+    "name": "Rock - Beach",
+    "description": "The rock on the beach that Sven hides behind.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/WRY4d-k7dnKh1BObzZJs_"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/XkxEwUpJGpxExmXj6FBv_"
+      }
+    ],
+    "name": "Wrench",
+    "description": "The Prime-97 electric wrench  is the swiss army knife of repair tools for Sven",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/LuzYROHcBrKCiGJUwdi5d"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/CyXsfblZS4UAQJ6SmNn9u"
+      }
+    ],
+    "name": "Red light (Trilobot)",
+    "description": "Glowing red light on the head of the Trilobot uses to target its prey.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/QINIZV3mb6uzh7-saCssC"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/OAjeFuQtL5Au4DHJMu6Uz"
+      }
+    ],
+    "name": "Canopy",
+    "description": "The canopy that Svens breaks through as he runs through the jungle.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/XAIJ-IeyKffxvwhFlJWr9"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/HL9EpbbzFK320fweoiFsM"
+      }
+    ],
+    "name": "Ground",
+    "description": "The terrain that Sven runs on in the Jungle and Plateau",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/suqgcTRU7Ca5yGRKsVSO0"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/c7UXpl1eerrigqaZaLTSi"
+      }
+    ],
+    "name": "Tree",
+    "description": "The tree that falls on the Trilobot",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/fcRm4M9OJ1ZcjQAlt7w-e"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/nsLRumyU2pd_7DPTFCpoj"
+      }
+    ],
+    "name": "Spaceship Chair",
+    "description": "The chair that Sven uses to eject from the spaceship.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/Q-hEYxQDgtsW4hFZhdald"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/PAWDCz64zEthoQVVWivOd"
+      }
+    ],
+    "name": "Bush",
+    "description": "The bush that Sven tumbles through after the ",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/HTpxqta02KmQaTyNBi9Hp"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/O5vdheU9idw0DhwDrjoty"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "nprp/psNDy6gpu-aVkc79Jdb0c"
+      }
+    ],
+    "name": "Helmet",
+    "description": "The helmet to Sven's spacesuit.",
+    "narrativeType": "prop",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/DXPMZxIwmBQO_QW4Co0r_"
+          }
+        ],
+        "has": null,
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ]
+            },
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ]
+            }
+          ]
+        },
+        "neededBy": {
+          "Character": [
+            {
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
