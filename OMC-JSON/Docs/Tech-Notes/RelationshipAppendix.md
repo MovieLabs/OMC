@@ -1,6 +1,5 @@
-# RelationshipAppendix
-As described in other sections [link], relationships (in the graph and RDF sense) are not native to JSON. OMC-JSON uses two mechanisms to express these.
-
+# Relationship Appendix
+As described in other [Relationships and Context](RelationshipContext.md), relationships (in the graph and RDF sense) are not native to JSON. OMC-JSON uses two mechanisms to express these.
 
 - When a property is considered an intrinsic to the entity, it is held directly on the entity. Intrinsic properties are named using pascal case (capitalized) indicating an identifier(s) will be part of the value and will refer to the included entities.
 - An entity can be related to another as part of a Context, meaning that as part of the production these two entities are meaningful to one another.
