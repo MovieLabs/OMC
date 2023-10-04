@@ -1,162 +1,260 @@
 # Assets
-Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace this but to provide a common mechanism for communicating between applications and workflows certain information about these assets. This might include information about assets relate to other parts of the production; such as an asset being for a particular scene or character. Or how they might relate to other assets (e.g., a proxy that is derived from the OCF).
+
+# Assets
+
+Tracking and categorizing the assets that make up a production is probably one of the most complex parts of production management and complex systems have been developed to do this over the years. The role of OMC-JSON is not to replace such management, but to provide a common expression for communicating information about these assets between applications and workflows. This can include how assets relate to one another as well as how they relate to the script and parts of the production process.
 
 The 2030 vision establishes some core ideas behind the handling of assets:
-- The separation of an assets metadata (information about the asset) and the essence of the asset (the actual thing, often a digital file like an image). This allows information about the asset to made available without actually needing access to the essence, this improves security and can save resources when an asset does not need to be retrieved and interrogated for embeded data.
-- Separation of an assets [structural and functional characteristics](Functional&Structural.md), this is what an asset is (structural) from what it is used for (functional).
-- All assets are uniquely identified, this allows the specific location of an asset to be abstracted and resolved when needed. This typically involves the use of a resolution service that returns a specific location on request. [Read our blog post on resolving assets](https://movielabs.com/through-the-looking-glass/)
 
-An Asset is generally comprised of the following main parts:
-- An identifier that is unique to the particular object. This identifier can remain static even if the underlying essence undergoes updates as iterates through versions.
-- Structural Characteristics (AssetSC), that is itself uniquely identified, and describes the essence currently associated with the Asset, the AssetSC can change over time, for example if a new version of something is created.
-- Functional Characteristics (FC) that describe what the Asset is used for in the production. In RDF this is a seperate object, but to simplify the JSON, this is held as a property of the Asset. Essence that has more than one functional use can be either be held as part of a new Asset or two instances of the same Asset with different functional characteristics.
 
-Click the link for a more detailed explanation of [structural and functional types](Functional&Structural.md).
+- Separate an asset’s metadata (information about the asset) from the essence of the asset (the actual thing, e.g., a digital file like a jpeg or a physical item like a prop). A key advantage of this separation is that information about the asset can be made available without actually needing to include the entire object. This can improve security and save resources if an asset does not need to be retrieved and interrogated for embedded data.
+- Separate an asset’s [structural and functional characteristics](./FunctionalStructural.md). That is, separate what an asset is (structural) from what it is used for (functional).
+- All assets are uniquely identified. This allows the specific location of an asset to be abstracted and accessed only when needed. This typically involves the use of a resolution service that returns a specific location given an identifier on request. [Read our blog post on resolving assets](https://movielabs.com/through-the-looking-glass/).
 
-Often the process of deciding exactly which set of assets a person or service needs for a particular task is complicated. To help with this Assets can be related to other parts of the production, generally through a related Context. Assets also often advance through multiple versions, with different variants or representations of the same asset. Click here to learn more about [[Versions]].
+In OMC, an Asset is generally composed of the following main parts:
 
+- An identifier that is unique to the particular object. This identifier can remain the same even if the underlying essence undergoes updates as it iterates through versions.
+- Structural Characteristics (AssetSC), which in itself is uniquely identified, describes the essence that is currently associated with the Asset. The AssetSC can change over time, for example, if a new version of something is created.
+- Functional Characteristics (AssetFC) that describe what the Asset is used for in the production. In RDF OMC, this is a separate entity, but in OMC-JSON this is held as a property of the Asset to simplify things. For Assets that share structural characteristics but have multiple functional uses we recommend creating two separate Assets, each with a unique identifier, but sharing structural characteristics (essence).
+
+Often the process of deciding exactly which set of Assets a workflow needs is complicated. To help with this scenario, Assets can be related to other parts of the production, generally through the use of a [Context](./RelationshipContext.md).
+
+Assets also often advance through multiple versions, with different variants or representations of the same asset. Click here to learn more about [Versions](./Version.md).
 
 ## Conventions
-### Identifiers
-Identifiers are used to identify what is referred to as the Asset. An instance of an Asset includes properties that describe it, including it's structural and functional characteristics and prior versions. The essence is represented by an Asset Structural Characteristic (AssetSC), it is also uniquely identified. These are identified separately because it is possible the essence may change over time.
 
-For a more information see here: [Identifiers and References](../Overview/Schema-Structure.md#Identifiers%20and%20References)
+**Identifiers**
+Like all entities in OMC, identifiers are used to identify an Asset. The Asset itself comprises a set of properties that describe it, including its structural and functional characteristics, prior versions, provenance, etc.
+
+The Asset will usually include a property (AssetSC) that refers to an entity describing its structural characteristics and for digital assets this is generally the essence. These are identified separately because an Asset’s structural characteristics may change over time.
+
+For more information, see here: [Identifiers](https://mc.movielabs.com/docs/ontology/utilities/utilities/)
 
 How to construct an asset and use the different identifiers:
+
 - The identifier for the entity uniquely identifies the 'whole' asset - the combination of its structural and functional characteristics.
-- The identifier in the structural characteristics identifies the essence of the asset. In many cases the essence (e.g., a file or a URL-accessible resource) can be located or resolved using the AssetSC identifier.
+- The identifier in the structural characteristics identifies the essence of the Asset. In many cases, the essence (e.g., a file or a URL-accessible resource) can be located or resolved using the AssetSC identifier.
 
-*Note: A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more clearly delineates metadata and object, allowing security authorization to be more easily separated. This allows applications and participants to view metadata about assets without being granted access to the asset itself. For example a system admin can provision, move or migrate files without being allowed direct access to the sensitive content itself*
+The following diagrams illustrate the idea:
 
-### Structural and functional properties
-Along with a functional and structural type, an Asset may also carry additional properties that further describe the structural and functional characteristics.
+- Two Production Scenes utilize the same Asset (e.g., a 3D model of a prop).
 
-Structural properties describe details of the asset that are independent of its use, for example the size or color depth of an image, or the GPS coordinates of where it was captured.
 
-Given the large array of structural types and the number of potential properties involved it should be remembered the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key properties that may be useful in finding, identifying, or disambiguating assets in a workflow without the need to explicitly access or parse the underlying formats.
+![](../Diagrams/Asset-1.svg)
 
-This can be especially useful where these properties are embedded as part of the essence file, as this can avoid having to read and load the file to read and interrogate it.
 
-Metadata itself can be essence, e.g. metadata in sidecar. In using a resolvable identifier this may retrieve the data either from a file or a URL that queries something like a REST endpoint.
+The Director requests some changes to the design of the prop resulting in a revision.
 
-For file based systems, the structural properties can encode a file path and name for the essence.
+- The Production Scenes still refer to the same Asset, it is after all the same ‘thing’ or same prop. You do not want to have to find and update every place in the system that refers to this Asset and change its identifier
+- By updating the reference that the Asset uses to refer to a new AssetSC representing the revised essence, you only need to make a change in one place, and the next time the Asset is called for, it will refer to the correct revision.
+- You can also create a record of revisions by further having the new AssetSC refer to the previous version. More details in the section on **[[Versions]].**
+  ![](../Diagrams/Asset-2.svg)
 
-*Note: These can be used to encode what a file should be named along with a file path, for use when hydrating a system that uses a resolver. Typically when you retrieve a file from a bucket the URL will describe a path and name used for the cloud system, this may not be how you want to setup files in an application, (we will add additional notes on using file systems in the future).
+*Note: A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more* *clearly delineates* *metadata and object, allowing security authorization to be more easily separated. This allows applications and participants to view metadata about assets without being granted access to the asset itself. For example, a system admin can provision, move or migrate files without being granted direct access to sensitive content itself.*
 
-Similarly properties associated with an assets functional characteristics can be included. These may also be subsets of existing metadata, for example the ordering for a set of assets in some sort of sequence or timing information, and information related to a particular functional use.
+As part of the 2030 vision we advocate for the use of a resolution system, where identifiers are used to resolve a location of a resource, we include examples of how the JSON can map to resolver entries, for more details on how resolvers work and implementation, see here: [Through the Looking Glass](https://movielabs.com/through-the-looking-glass/). If you are not using a resolver, this can be ignored. The resolver examples do not cover all possible ways of using the resolver with Assets.
+
+**Structural and functional properties**
+An Asset can carry additional data that help describe its functional and structural characteristics. Structural properties might include things like a filename, dimensions, mime type, etc.
+
+It can be especially useful where metadata is originally embedded as part of the essence file. OMC can allow properties to be accessed by applications and workflows without having to load the essence file.
+
+*Note:* *Given the large* *number* *of structural types and potential properties involved**,* *it should be remembered* *that* *the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key aspects of data that* *are* *useful* *for* *finding, identifying, or disambiguating assets in a workflow.*
+
+It is also worth noting that data itself can be essence. For example, camera metadata is often saved as a separate file, known as a sidecar, along with the captured media. This file would itself be an Asset. Some subset of the data can be directly included as properties in the OMC-JSON, but as the note above points out, judiciously.
+
 
 ## Examples
-The following examples use a pseudo representation of the JSON for brevity with only the pertinent attributes include, the structural and functional characteristics can contain specific properties related to each of these elements. For example, an image may have a width and height as part of it's structural characteristics
 
-As part of the 2030 vision we advocate for the use of a resolution system, where identifiers are used to resolve a location of a resource, we include examples of how the JSON can map to resolver entries, for more details on how resolvers work and implementation see here: [Through the Looking Glass](https://movielabs.com/through-the-looking-glass/). If you are not using a resolver, this can be ignored. The resolver examples do not cover all possible ways of using the resolver with Assets.
+The following JSON examples show only the pertinent attributes for clarity. Real entities would also include properties like `schemaVersion`, `structuralProperties` and `functionalProperties`.
 
----
-### Single Digital Asset
-This shows the simplest case of single digital asset (A1) and single essence (E1).
+**Single Digital Asset**
+This shows the simplest case of single Asset (A1) and single AssetSC (E1).
 
-A1 can be resolved asking for metadata, E1 can be resolved for the URL of the essence.
+Asset
 
-```
-identifier
-	identifierValue: A1
+    {
+        "entityType": "Asset",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast-01"
+            }
+        ],
+        "name": "Blaster dodge",
+        "AssetSC": {
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "astsc-01a"
+                }
+            ]
+        },
+        "assetFC": {
+            "functionalType": "technicalReference"
+        }
+    }
+
 AssetSC
-	structuralType: digital.image
-	identifier
-		identifierValue: E1
-assetFC
-	functionalType: reference
-```
 
-![[Asset-1.svg]]
+    {
+        "entityType": "AssetSC",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "astsc-01a"
+            }
+        ],
+        "structuralType": "digital.image"
+    }
 
----
-### Digital Asset, two functional uses
 
+![](../Diagrams/Asset-3.svg)
+----------
+
+**Digital Asset, two functional uses**
 This shows two Assets which use the same essence; one uses the image as reference art and the other uses it as a texture.
 
-There does not have to be any formal relationship between A1 and A2, though of course one can be added.
+There does not have to be any formal relationship between Assets A1 and A2, though, of course one can be added.
 
-```
-identifier
-	identifierValue: A1
-structuralCharacteristics
-	structuralType: digital.image
-	identifier
-		identifierValue: E1
-functionalCharacteristics
-	functionalType: reference
+Asset
+
+    {
+        "Asset": {
+            "entityType": "Asset",
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast-01"
+                }
+            ],
+            "AssetSC": {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "astsc-01a"
+                    }
+                ]
+            },
+            "assetFC": {
+                "functionalType": "technicalReference"
+            }
+        }
+    }
+
+Asset
+
+    {
+        "Asset": {
+            "entityType": "Asset",
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "ast-02"
+                }
+            ],
+            "AssetSC": {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "astsc-01a"
+                    }
+                ]
+            },
+            "assetFC": {
+                "functionalType": "texture"
+            }
+        }
+    }
+
+AssetSC
+
+    {
+        "AssetSC": {
+            "entityType": "AssetSC",
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "astsc-01a"
+                }
+            ],
+            "structuralType": "digital.image"
+        }
+    }
 
 
-identifier
-	identifierValue: A2
-structuralCharacteristics
-	structuralType: digital.image
-	identifier
-		identifierValue: E1
-functionalCharacteristics
-	functionalType: texture
-```
-
-![[Asset-2.svg]]
-
----
-
-### Single Asset with two different sets of structural characteristics
-
-This shows a single Asset that exists in two different forms, one digital and one physical. The physical copy has a barcode and a database entry that returns information about its physical location. The Asset identifier is the same for both copies, with two different essence IDs.
-
-```
-identifier
-	identifierValue: A1
-structuralCharacteristics
-	structuralType: physical.paper
-	identifier
-		identifierValue: E1
-functionalCharacteristics
-	functionalType: artwork.storyboard.frame
-
-identifier
-	identifierValue: A1
-structuralCharacteristics
-	structuralType: digital.image
-	identifier
-		identifierValue: E2
-functionalCharacteristics
-	functionalType: artwork.storyboard.frame
-```
-
-![[Asset-3.svg]]
-*Note: The asset identifier is the same for both. The application has to determine which structural form is preferred, the physical or digital copy. If asset information is stored in a MAM or other database it is up to that system to decide how to respond to requests for the asset*
-
----
-
+![](../Diagrams/Asset-4.svg)
+----------
 ## Asset Groups
-Asset groups provide for logical groupings of Assets into a single entity. Asset groups are Assets themselves. They can refer to other Assets or Asset groups. This creates a hierarchical structure of Assets.
 
-Asset groups are deliberately simple. The intent is to communicate sets of assets needed in a workflow or application. How that group is used in an application can be complex and application-dependent. Other mechanisms like USD, EDL's or AAF's carry complex information about how multiple assets interrelate within specific applications, the OMC-JSON acts more as a manifest, the expectation is that the files describing how an application deploys these files is included as part of this manifest.
+Asset groups provide for logical groupings of Assets into a single entity. Asset groups are Assets themselves. They refer to other Assets or Asset groups by their identifiers. This creates a hierarchical structure of Assets.
 
-Asset groups can be useful as a simple organizing construct; group the concept art for a particular character together, or a series of storyboard frames into an ordered group. They can also be used for things like a 3D Model that is composed of a set of meshes, textures, and rigging.
+Asset groups are deliberately simple. They can be used to communicate sets of Assets needed for a workflow or application, or to group things together for administrative convenience (i.e. a set of images that make up a storyboard). How an Asset Group is used in an application can be complex and application-dependent. Mechanisms like USD, EDL, and AAF carry detailed information about how multiple assets are used together in specific applications. OMC-JSON acts more as a manifest, and the expectation is that the files describing how an application deploys these files is included as part of this manifest.
 
-Using groups can simplify managing the relationships that exist between assets and other pieces of context. By placing multiple images in a group, a relationship need only be kept to the top level of the group, for example character then only has to relate to a single top level entity for all of it's concept art, not each individual image. A set of 3D assets may be reused in multiple scenes, each group can be related independently to a scene, or a group representing the 3D model can itself be in multiple groups
+Asset groups can be useful as a simple organizing construct: e.g., group the concept art for a particular character together or collect a series of storyboard frames into an ordered group.
 
----
-An Asset that is structurally an Asset Group, with three other Assets as elements of that group.
-```
-identifier
-	identifierValue: A1
-structuralCharacteristics
-	structuralType: AssetGroup
-functionalCharacteristics
-	functionalType: artwork.storyboard
-Asset: [
-	identifier
-		identifierValue: A2
-	identifier
-		identifierValue: A3
-	identifier
-		identifierValue: A4
-]
-```
+Using groups can simplify managing the relationships that exist between Assets and other elements of the production. By placing multiple images in a group, only a single relationship need be kept to the top level of the group. For example, a Character is related to an Asset Group containing concept art.
+
+----------
+
+**Asset** **Group**
+This Asset is an Asset Group that contains three other Assets.
+
+- OMC has relationships `member` and `memberOf` allowing bi-directional navigation. OMC-JSON represents only a hierarchy for simplification; if a consuming application needs both directions, it is easy to infer.
+- Asset Groups can contain Asset Groups, because any Asset can be a Group; so hierarchies of any depth can be created.
+- This example below shows AssetSC expanded to include its properties.
+
+Asset
+
+    {
+        "entityType": "Asset",
+        "identifier": [
+            {
+                "identifierScope": "labkoat",
+                "identifierValue": "ast-01"
+            }
+        ],
+        "name": "Title",
+        "AssetSC": {
+            "entityType": "AssetSC",
+            "identifier": [
+                {
+                    "identifierScope": "labkoat",
+                    "identifierValue": "astsc-01a"
+                }
+            ],
+            "structuralType": "assetGroup"
+        },
+        "assetFC": {
+            "functionalType": "artwork.storyboard"
+        },
+        "Asset": [
+            {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "ast-02"
+                    }
+                ]
+            },
+            {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "ast-03"
+                    }
+                ]
+            },
+            {
+                "identifier": [
+                    {
+                        "identifierScope": "labkoat",
+                        "identifierValue": "ast-04"
+                    }
+                ]
+            }
+        ]
+    }
 
 
-
+![](../Diagrams/Asset-5.svg)

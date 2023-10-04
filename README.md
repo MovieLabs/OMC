@@ -2,9 +2,9 @@
 The documentation is split into two sections, a set of documents that outline the basic structure and practices we used to guide the schema development, and a set of tech notes focussed on specific concepts and how we encoded them.
 
 1. [Introduction](OMC-JSON/Docs/Overview/Introduction.md) 
-2. [Schema Structure](OMC-JSON/Docs/Overview/Schema-Structure.md)
-3. [Schema Practices](OMC-JSON/Docs/Overview/Schema-Practices.md)
-4. [Schema Versions](OMC-JSON/Docs/Overview/Schema-Version.md)
+2. [Schema Structure](OMC-JSON/Docs/Overview/SchemaStructure.md)
+3. [Schema Practices](OMC-JSON/Docs/Overview/SchemaPractices.md)
+4. [Schema Versioning](OMC-JSON/Docs/Overview/SchemaVersioning.md)
 
 Tech Notes
 1. [Narrative & Production](OMC-JSON/Docs/Tech-Notes/Narrative&Production.md)
