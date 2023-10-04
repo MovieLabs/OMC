@@ -17,45 +17,18 @@ Key Points:
 - OMC and OMC-JSON rely heavily on the use of identifiers to uniquely identify instances of individual entities and the assets those entities describe. OMC-JSON allows entities to be expressed ~~stated~~ either as a reference (using an identifier) or as fully realized entities. In the first case the receiving application can dereference the identifiers if it needs the additional information.
 - OMC treats relationships as first class citizens. In production, everything is connected to something, and most things are connected to many other things; this results in a graph, not always a tree. Therefore, OMC-JSON is designed so that it can represent graphs and recursion, even though the JSON itself is hierarchical in nature.
 
-
-## Repo Structure
-
-**Docs**
-A set of documents describing key constructs of the JSON schema and a set of tech-notes that cover how top concepts are represented, constructed and used in OMC-JSON.
-
-**Examples**
-A set of example OMC-JSON instances from the MovieLabs internal POC that demonstrate the initial set of entities defined in the schema.
-
-**JSON-Schema**
-The JSON schema itself that is suitable for use in test code or online validators (see below for more details).
-
-**RDF**
-The RDF based version of the ontology.
-
-
 ## Status
 
-OMC JSON is currently a pre-alpha release. Areas under development are:
+OMC-JSON v2.0 is considered a beta release, the intent is that this is considered stable for development, future updates will follow the [versioning guidelines](./SchemaVersioning.md).
 
-- It does not implement all of OMC. We are filling in the missing parts based on application requirements and user feedback.
-- ~~The mechanism for versions, variants, and representations is being defined, and will be implemented in JSON when the model is complete.~~
-- The formal definitions of more structural and functional characteristics are underway, for example for Audio and CG Assets.
+Work in progress:
+- Add more formal definitions of more structural and functional characteristics. Audio, CG and On-Set Assets all have active working groups, if you have interest in joining these, please contact us.
+- Add structural and functional properties, particularly for commonly used properties and reusable components.
+- Implement the Concept and Technical Reference Reifications in OMC-JSON
 
-ToDo:
-
-- Add structural and functional classes/types, mention working groups
-- Add structural and functional properties (to the extent we feel it is worthwhile, i.e. so basic objects)
-- Do we want to try and do Concept/Technical Reference - I can write the JSON, I can’t test it.
-- Analogue vs Digital - not much said, but I think more in an update.
-- Concept, technicalreference, etc.
-
-
-
-## ~~How to use~~
 ## Useful Tools
 
-We have tested schema validation with the bundled schema in:
-
+We found some of the following tools useful during development:
 - JavaScript: [AJV JSON Schema validator](https://ajv.js.org/), [HyperJump](https://github.com/hyperjump-io/json-schema-validator)
 - Python: [jsonschema](https://python-jsonschema.readthedocs.io/en/stable/)
 - Web: [HyperJump - JSON Schema Validator](https://json-schema.hyperjump.io/)

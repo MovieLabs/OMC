@@ -1,5 +1,4 @@
 # Schema Structure
-# OMC-JSON Schema Overview
 Ontology for Media Creation (OMC) provides a conceptual and technical model for the production process, and is described [here](https://mc.movielabs.com/docs/ontology/). This model is implemented using RDF schema (OMC-RDF), which provides a useful degree of formality, especially for relationships and complex classes. JSON, of course, can also be used for data modelling, but it has different mechanics for classes, properties, and types, and less emphasis on relationships than RDF.
 
 The OMC-JSON schema retains the vocabulary, concepts, and top-level structures of the OMC-RDF, although some changes are necessary to support expressing the details of the concepts in JSON. In particular, the OMC-JSON schema provides mechanisms for encoding relationships (in the RDF sense) and a compositional model rather than classes and inheritance.
