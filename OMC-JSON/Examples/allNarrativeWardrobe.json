@@ -10,7 +10,7 @@
     ],
     "name": "Spacesuit",
     "description": "RD-12 Envrionmental Protection Suit",
-    "narrativeType": "wardrobe",
+    "narrativeType": "narrativeWardrobe",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -108,7 +108,7 @@
     ],
     "name": "Killamari exo-skeleton",
     "description": "The life long container of the dreaded Killamari.",
-    "narrativeType": "wardrobe",
+    "narrativeType": "narrativeWardrobe",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
