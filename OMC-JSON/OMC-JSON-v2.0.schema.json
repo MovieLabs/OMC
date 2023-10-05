@@ -314,11 +314,6 @@
                                 "analog.movingImage"
                             ]
                         },
-                        "isAnalog": {
-                            "type": "boolean",
-                            "title": "Is Analog",
-                            "description": "True if the Asset is an Analog Asset."
-                        },
                         "structuralProperties": {
                             "type": [
                                 "object",
@@ -327,14 +322,27 @@
                             "title": "Structural Properties",
                             "description": "A set of properties that describe the asset in this form",
                             "properties": {
-                                "customData": {"$ref": "#/$defs/core/properties/customData"}
+                                "customData": {"$ref": "#/$defs/core/properties/customData"},
+                                "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
+                                "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
+                                "dimensions": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/dimensions"},
+                                "assetGroup": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/assetGroup"}
                             },
-                            "additionalProperties": true
+                            "additionalProperties": false
+                        },
+                        "isAnalog": {
+                            "type": [
+                                "boolean",
+                                "null"
+                            ],
+                            "title": "Is Analog",
+                            "description": "True if the Asset is an Analog Asset."
                         },
                         "Carrier": {
                             "title": "Carrier",
                             "description": "For describing the physical storage device on which the digital assence is stored",
                             "oneOf": [
+                                {"type": "null"},
                                 {"$ref": "#/$defs/core/properties/reference"},
                                 {"$ref": "#/$defs/Infrastructure/properties/Infrastructure"}
                             ]
@@ -353,19 +361,72 @@
                     ],
                     "description": "Describes the form of an Asset along with the attributes specific to that asset’s form",
                     "$defs": {
-                        "empty": {
+                        "linkset": {
                             "type": "object",
+                            "properties": {
+                                "recordType": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "mediaType": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
                             "additionalProperties": false,
-                            "properties": {
-                                "customData": {"$ref": "#/$defs/core/properties/customData"}
-                            }
+                            "title": "Linkset",
+                            "description": "When used with resolution system returning a linkset additional information can help disambiguate multiple linksets in the response."
                         },
-                        "generic": {
+                        "fileDetails": {
                             "type": "object",
-                            "additionalProperties": true,
                             "properties": {
-                                "customData": {"$ref": "#/$defs/core/properties/customData"}
-                            }
+                                "fileName": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "filePath": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "fileExtension": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "mediaType": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false,
+                            "title": "File Details",
+                            "description": "Where opaque identifiers are used it can be useful to express naming for use in traditional file systems"
+                        },
+                        "dimensions": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/dimensions"},
+                        "assetGroup": {
+                            "type": "object",
+                            "properties": {
+                                "isOrdered": {
+                                    "type": [
+                                        "boolean",
+                                        "null"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": false,
+                            "title": "Asset Group",
+                            "description": "Structural properties of an Asset Group"
                         }
                     }
                 },
@@ -1999,12 +2060,11 @@
                             "title": "Object type",
                             "description": "A departmental categorization for the object.",
                             "enum": [
-                                "object",
-                                "prop",
-                                "greenery",
-                                "vehicle",
-                                "setDressing",
-                                "wardrobe"
+                                "narrativeObject",
+                                "narrativeProp",
+                                "narrativeGreenery",
+                                "narrativeVehicle",
+                                "narrativeSetDressing"
                             ]
                         },
                         "customData": {
@@ -2204,11 +2264,10 @@
                             "title": "Object type",
                             "description": "A categorization of the type styling.",
                             "enum": [
-                                "styling",
-                                "wardrobe",
-                                "hair",
-                                "makeup",
-                                "prosthetics"
+                                "narrativeStyling",
+                                "narrativeHair",
+                                "narrativeMakeup",
+                                "narrativeProsthetics"
                             ]
                         },
                         "customData": {"$ref": "#/$defs/core/properties/customData"},
@@ -2280,7 +2339,7 @@
                             "type": "string",
                             "title": "Object type",
                             "description": "A categorization of the type wardrobe",
-                            "enum": ["wardrobe"]
+                            "enum": ["narrativeWardrobe"]
                         },
                         "customData": {"$ref": "#/$defs/core/properties/customData"},
                         "Context": {
@@ -3439,41 +3498,37 @@
                             "description": "Encode a set of measurements to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
                             "properties": {
                                 "height": {
-                                    "type": "object",
                                     "description": "The height or X axis of the object",
-                                    "additionalProperties": true,
                                     "oneOf": [
                                         {"type": "null"},
                                         {
-                                            "type": "string",
                                             "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
                                             "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
                                             "examples": [
                                                 "100m",
                                                 "6km2m56cm12mm"
-                                            ]
+                                            ],
+                                            "type": "string"
                                         },
                                         {
-                                            "type": "string",
                                             "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
                                             "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
                                             "examples": [
                                                 "2000ft",
                                                 "2mi12ft6in"
-                                            ]
+                                            ],
+                                            "type": "string"
                                         },
                                         {
-                                            "type": "string",
                                             "description": "Encode a measurement of the number of pixels, typically in a digital image",
                                             "pattern": "^(\\d+px)$",
-                                            "examples": ["250px"]
+                                            "examples": ["250px"],
+                                            "type": "string"
                                         }
                                     ]
                                 },
                                 "width": {
-                                    "type": "object",
                                     "description": "The width or X axis of the object",
-                                    "additionalProperties": true,
                                     "oneOf": [
                                         {"type": "null"},
                                         {
@@ -3503,9 +3558,7 @@
                                     ]
                                 },
                                 "depth": {
-                                    "type": "object",
                                     "description": "The depth or Z axis of the object",
-                                    "additionalProperties": true,
                                     "oneOf": [
                                         {"type": "null"},
                                         {
@@ -3534,8 +3587,7 @@
                                         }
                                     ]
                                 }
-                            },
-                            "additionalProperties": true
+                            }
                         },
                         "linearDistance": {
                             "title": "Linear Distance",
