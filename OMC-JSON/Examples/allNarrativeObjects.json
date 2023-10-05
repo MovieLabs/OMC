@@ -10,7 +10,7 @@
     ],
     "name": "Space",
     "description": "View of space from Sven's viewpoint",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -65,7 +65,7 @@
     ],
     "name": "Coastline vegetation",
     "description": "Various forms of vegetation that grows along the ocean coastline of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -104,7 +104,7 @@
     ],
     "name": "Clouds",
     "description": "Clouds in the atmosphere of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -143,7 +143,7 @@
     ],
     "name": "Beach rocks",
     "description": "Various types of rocks that can be found on the beaches of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -182,7 +182,7 @@
     ],
     "name": "Planet",
     "description": "Planet SR-232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -237,7 +237,7 @@
     ],
     "name": "Jungle Grass",
     "description": "Various forms of grass that grows in the jungles of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -292,7 +292,7 @@
     ],
     "name": "Beach vegetation",
     "description": "Various forms of vegetation that grows on the beaches of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -331,7 +331,7 @@
     ],
     "name": "Jungle Trees",
     "description": "Various forms of trees that grows in the jungles of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -386,7 +386,7 @@
     ],
     "name": "Jungle rocks",
     "description": "Various forms of rocks that grows in the jungles of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -441,7 +441,7 @@
     ],
     "name": "Jungle vegetation",
     "description": "Various forms of vegetation that grows in the jungles of SR 232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -496,7 +496,7 @@
     ],
     "name": "Killamari buildings",
     "description": "Various building types of the Killamari civilization.",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -535,7 +535,7 @@
     ],
     "name": "Kilamari infrastructure",
     "description": "Various pieces of infrastructure technology for the Killamari civilizaton.",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -574,7 +574,7 @@
     ],
     "name": "Sunset",
     "description": "View of the sunset from the beach of SR-232",
-    "narrativeType": "setDressing",
+    "narrativeType": "narrativeSetDressing",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -645,7 +645,7 @@
     ],
     "name": "Wreckage",
     "description": "The wreckage of Sven's ship after it hits the water.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -703,7 +703,7 @@
     ],
     "name": "Windshield",
     "description": "The windshield of Sven's ship.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -761,7 +761,7 @@
     ],
     "name": "Switch",
     "description": "The switch inside the panel Sven uses to turn on the satellite.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -819,7 +819,7 @@
     ],
     "name": "Satellites hatch",
     "description": "The hatch Sven removes to fix the satellite.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -885,7 +885,7 @@
     ],
     "name": "Panel",
     "description": "The panel inside the satellite where Sven finds the sabotaged wires.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -943,7 +943,7 @@
     ],
     "name": "Jetpack",
     "description": "Sven's Orion-9 jet pack he uses to move around usually only used in space.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1041,7 +1041,7 @@
     ],
     "name": "Satellite",
     "description": "The Gromet-12 plantetary observation satellite finds planets that are habitable for humans",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1101,7 +1101,7 @@
     ],
     "name": "Broken pipes",
     "description": "The pipes inside the satellite that are broken",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1159,7 +1159,7 @@
     ],
     "name": "Eject button",
     "description": "The button Sven pushes to eject from the Lancelot-12 galaxy cruiser",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1209,7 +1209,7 @@
     ],
     "name": "Communicator",
     "description": "The Mark-14 Intergalactic communicator allows Sven to connect with Central Command. ",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1307,7 +1307,7 @@
     ],
     "name": "Fruit",
     "description": "The exploding fruit found in the jungle.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1373,7 +1373,7 @@
     ],
     "name": "Welder",
     "description": "The Prime-94 arc welder is as hot as the sun and can cut through most known metals.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1455,7 +1455,7 @@
     ],
     "name": "Fruit cluster",
     "description": "The cluster of fruit Sven sets off to kill the Trilobot",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1529,7 +1529,7 @@
     ],
     "name": "Disconnected wires",
     "description": "The disconnected wires in the satellite panel Sven has to fix.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1587,7 +1587,7 @@
     ],
     "name": "Spaceship",
     "description": "Sven's Lancelot-12 galaxy cruiser which is the pick up truck of space vehicles",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeVehicle",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1663,7 +1663,7 @@
     ],
     "name": "Rock - Beach",
     "description": "The rock on the beach that Sven hides behind.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1721,7 +1721,7 @@
     ],
     "name": "Wrench",
     "description": "The Prime-97 electric wrench  is the swiss army knife of repair tools for Sven",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1779,7 +1779,7 @@
     ],
     "name": "Red light (Trilobot)",
     "description": "Glowing red light on the head of the Trilobot uses to target its prey.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1837,7 +1837,7 @@
     ],
     "name": "Canopy",
     "description": "The canopy that Svens breaks through as he runs through the jungle.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeGreenery",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1911,7 +1911,7 @@
     ],
     "name": "Ground",
     "description": "The terrain that Sven runs on in the Jungle and Plateau",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeGreenery",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -1993,7 +1993,7 @@
     ],
     "name": "Tree",
     "description": "The tree that falls on the Trilobot",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeGreenery",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -2059,7 +2059,7 @@
     ],
     "name": "Spaceship Chair",
     "description": "The chair that Sven uses to eject from the spaceship.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -2125,7 +2125,7 @@
     ],
     "name": "Bush",
     "description": "The bush that Sven tumbles through after the ",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeGreenery",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
@@ -2199,7 +2199,7 @@
     ],
     "name": "Helmet",
     "description": "The helmet to Sven's spacesuit.",
-    "narrativeType": "prop",
+    "narrativeType": "narrativeProp",
     "Context": [
       {
         "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",

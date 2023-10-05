@@ -559,8 +559,8 @@
                             "$ref": "#/$defs/core/properties/schemaVersion"
                         },
                         "entityInfo": {
-                            "type": "string",
-                            "title": "Entity Information"
+                            "title": "Entity Information",
+                            "$ref": "#/$defs/core/properties/entityInfo"
                         },
                         "entityType": {
                             "type": "string",
@@ -689,7 +689,8 @@
                     "description": "Describes the use or purpose of an Infrastructure within the production process"
                 }
             },
-            "title": "Infrastructure Definitions"
+            "title": "Infrastructure Definitions",
+            "additionalProperties": false
         },
         "MediaCreationContext": {
             "type": "object",
@@ -1015,7 +1016,7 @@
                                     ],
                                     "items": {
                                         "anyOf": [
-                                            {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"},
+                                            {"$ref": "#/$defs/MediaCreationContext/properties/Effect"},
                                             {"$ref": "#/$defs/core/properties/reference"}
                                         ]
                                     }
@@ -3209,7 +3210,8 @@
                     "additionalProperties": false,
                     "required": [
                         "entityType",
-                        "identifier"
+                        "identifier",
+                        "schemaVersion"
                     ],
                     "title": "Organization",
                     "description": "A legal entity or groups of people associated with the production.. with a particular purpose relative to the production."
@@ -3465,7 +3467,8 @@
                     "description": "Describes the use or purpose of an Asset within the production process"
                 }
             },
-            "title": "Task Definitions"
+            "title": "Task Definitions",
+            "additionalProperties": false
         },
         "Utility": {
             "type": "object",
@@ -4260,10 +4263,11 @@
                         }
                     },
                     "title": "Provenance",
-                    "description": "A record of when something was changed and by whom."
+                    "description": "A record of when something was changed and by whom.",
+                    "additionalProperties": false
                 }
             },
-            "additionalProperties": true,
+            "additionalProperties": false,
             "title": "Utility Definitions",
             "description": "Common data models and data structures used in multiple places and in multiple ways in a larger system."
         },
@@ -4464,9 +4468,13 @@
                     }
                 },
                 "entityInfo": {
-                    "type": "object",
+                    "type": [
+                        "object",
+                        "null"
+                    ],
                     "title": "Entity Information",
-                    "description": "Reserved for future use to describe specific details about the instance of the entity"
+                    "description": "Reserved for future use to describe specific details about the instance of the entity",
+                    "additionalProperties": false
                 }
             },
             "additionalProperties": false,
