@@ -33,4 +33,4 @@ Tech Notes
 
 ## License
 
-All files in this repository are Copyright 2022 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the [LICENSE](./LICENSE.txt) file.
+All files in this repository are Copyright 2021-2023 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the [LICENSE](./LICENSE.txt) file.
