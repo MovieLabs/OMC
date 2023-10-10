@@ -61,4 +61,7 @@ The presumption is that clients consuming OMC-JSON will need to parse a payload 
     - For entities encoded with the same major and higher minor version, properties may be present in the payload the parser is not familiar with.
     - For entities encoded with a different major version, the parsing results could be unpredictable.
 
-
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

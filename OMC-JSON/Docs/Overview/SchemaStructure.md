@@ -239,6 +239,7 @@ The schema does not attempt to define every property that you might associate wi
 
 See [Schema-Practices](./SchemaPractices.md) for more information.
 
-
-
-
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

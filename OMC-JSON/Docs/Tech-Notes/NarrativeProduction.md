@@ -26,3 +26,8 @@ The following example shows how something that is a single narrative entity may 
 This is a very simplified diagram, but as you can see by continuing to relate things like the Participants, ProductionLocation, etc., it becomes clear how you can trace back all the narrative elements that were needed for a production scene, or which production elements were used in a given narrative scene.
 
 ![](../Diagrams/Narrative-3.svg)
+
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

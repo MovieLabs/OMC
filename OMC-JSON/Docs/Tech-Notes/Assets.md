@@ -250,3 +250,8 @@ OMC-JSON: Asset
 ```
 
 ![](../Diagrams/Asset-5.svg)
+
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

@@ -232,3 +232,7 @@ OMC-JSON currently has a placeholder entity for Infrastructure.
 
 *Note: Development of the details including its functional and structural characteristics will be in later revisions of the schema.*
 
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

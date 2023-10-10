@@ -161,3 +161,7 @@ OMC-JSON: NarrativeScene
 
 ![](../Diagrams/Context-3.svg)
 
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

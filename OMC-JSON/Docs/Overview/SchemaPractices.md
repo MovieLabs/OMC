@@ -95,3 +95,8 @@ This same mechanism works for application-specific custom data.
     }
 }
 ```
+
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

@@ -99,20 +99,7 @@ Often there is a desire to create alternative versions of something, so that a c
 
 ![](../Diagrams/Version-3.svg)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

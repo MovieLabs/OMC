@@ -37,3 +37,7 @@ The next two diagrams show the same Character with a different scenario. The Cha
 
   ![](../Diagrams/Depiction-6.svg)
 
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

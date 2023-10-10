@@ -256,7 +256,7 @@ In the tables below, each Asset that contains a property that references another
 | TaskSC       |          | TaskSC            |                 |
 
 
-
-
-
-
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->

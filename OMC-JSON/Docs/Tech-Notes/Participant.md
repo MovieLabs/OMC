@@ -104,4 +104,7 @@ It is common to hire an organization to carry out a specific role or job on a pr
 ## Participant Groups
 Participants, like other entities, can be arbitrarily grouped. A Participant group is a group of Participants, which in themselves could be Participant Groups, creating a hierarchical structure. A camera unit is an example of arbitrary group, where a set of people will share some set of attributes, like scheduling information.
 
-
+<!--
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
+SPDX-License-Identifier: APACHE-2.0
+-->
