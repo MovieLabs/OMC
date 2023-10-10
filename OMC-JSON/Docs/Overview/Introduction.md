@@ -39,6 +39,6 @@ We found some of the following tools useful during development:
 Please provide feedback and send any suggestions and questions to ontology@movielabs.com
 
 <!--
-Copyright 2023 Motion Picture Laboratories, Inc.
+Copyright 2021-2023 Motion Picture Laboratories, Inc.
 SPDX-License-Identifier: APACHE-2.0
 -->
