@@ -29,7 +29,7 @@ Tech Notes
 **/Reference**: Generated formal reference document for the schema
 
 ## OMC-RDF
--- Fill in details on RDF --
+The RDF in this repo is currently v1.0, we will be updating this to the v2.0 spec in the near future.
 
 ## License
 
