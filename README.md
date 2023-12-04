@@ -47,7 +47,7 @@ The RDF in this repo is currently v2.0. The schema is divided into three files:
 
 These three files are used to generate two sets of self-contained HTML documentation pages, one for OMC (including CW) and one for OMD (including OMC and CW). The HTML documentation shows many of the object properties of a class in a diagram; however, not all relationships are shown that way, so it is important to look at the References section on each page as well.
 
-The generated documentation is included in this repo as two zip files, one for OMC and one for OMD. Browsable versions are available at <<**NEED LINKS FROM DAMON >**>>
+The generated documentation is included in this repo as two zip files, one for OMC and one for OMD. Browsable versions are available online for [OMC](https://movielabs.com/prodtech/omc/v2.0/omcDoc/) and [OMD](https://movielabs.com/prodtech/omc/v2.0/omdDoc/)
 
 ### Structure
 
