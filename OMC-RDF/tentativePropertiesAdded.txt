@@ -1,0 +1,270 @@
+[prop]	label
+omcT:aCameraFor.Slate	a camera for slate
+omcT:aCameraMetadataHas.Slate	a camera metadata has slate
+omcT:aCameraUnitFor.Slate	a camera unit for slate
+omcT:aCaptureHas.Slate	a capture has slate
+omcT:aCaptureRepresents.ProductionScene	a capture represents production scene
+omcT:aCarrierUsedBy.AssetAsStructure	a carrier used by asset as structure
+omcT:aCharacterFeaturesIn.NarrativeScene	a character features in
+omcT:aCharacterNeeds.Aerial	a character needs aerial
+omcT:aCharacterNeeds.Choreography	a character needs choreography
+omcT:aCharacterNeeds.Fight	a character needs fight
+omcT:aCharacterNeeds.Marine	a character needs marine
+omcT:aCharacterNeeds.MotionCapture	a character needs motion capture
+omcT:aCharacterNeeds.NarrativeGreenery	a character needs narrative greenery
+omcT:aCharacterNeeds.NarrativeHair	a character needs narrative hair
+omcT:aCharacterNeeds.NarrativeMakeup	a character needs narrative makeup
+omcT:aCharacterNeeds.NarrativeObject	a character needs narrative object
+omcT:aCharacterNeeds.NarrativeProp	a character needs narrative prop
+omcT:aCharacterNeeds.NarrativeProsthetics	a character needs narrative prosthetics
+omcT:aCharacterNeeds.NarrativeVehicle	a character needs narrative vehicle
+omcT:aCharacterNeeds.NarrativeWardrobe	a character needs narrative wardrobe
+omcT:aCharacterNeeds.SpecialEffect	a character needs special effect
+omcT:aCharacterNeeds.Stunt	a character needs stunt
+omcT:aCharacterNeeds.VisualEffect	a character needs visual effect
+omcT:aCharacterPortrayedIn.Portrayal	a character portrayed in portrayal
+omcT:aChoreographyFeaturesIn.NarrativeScene	a choreography features in narrative scene
+omcT:aChoreographyNeededBy.Character	a choreography needed by character
+omcT:aConceptArtFor.NarrativeElement	a concept art for narrative element
+omcT:aConceptIdea.Asset	a concept idea asset
+omcT:aConceptSubject	a concept subject
+omcT:aContextElementHas.CreativeReferenceMaterial	a context element has creative reference material
+omcT:aContributionFor.CreativeWork	a contribution for creative work
+omcT:aContributionHas.Contributor	a contribution has contributor
+omcT:aContributionHas.Portrayal	a contribution has portrayal
+omcT:aCostumeUsedIn.Portrayal	a costume used in portrayal
+omcT:aCostumeUsedIn.ProductionScene	a costume used in production scene
+omcT:aCreativeReferenceMaterialFor.ContextElement	a creative reference material for context element
+omcT:aCreativeWorkHas.Contribution	a creative work has contribution
+omcT:aCreativeWorkHas.NarrativeScene	a creative work has narrative scene
+omcT:aCreativeWorkHas.Portrayal	a creative work has portrayal
+omcT:aCreativeWorkHas.ProductionCompany	a creative work has production company
+omcT:aCreativeWorkHas.Script	a creative work has script
+omcT:aCreativeWorkHas.Slate	a creative work has slate
+omcT:aCreativeWorkRelated.CreativeWork	a creative work related to creative work
+omcT:aDepictionDepicter.ProductionObject	a depiction depicter production object
+omcT:aDepictionDepicts.NarrativeObject	a depiction depicts narrative object
+omcT:aDepictionUsedIn.Portrayal	a depiction used in portrayal
+omcT:aDepictionUsedIn.ProductionScene	a depiction used in production scene
+omcT:aDirectorFor.Slate	a director for slate
+omcT:aFightFeaturesIn.NarrativeScene	a fight features in narrative scene
+omcT:aFightNeededBy.Character	a fight needed by character
+omcT:aLocationFor.NarrativeLocation	a location for narrative location
+omcT:aLocationFor.ProductionLocation	a location for production location
+omcT:aMarineFeaturesIn.NarrativeScene	a marine features in narrative scene
+omcT:aMarineNeededBy.Character	a marine needed by character
+omcT:aMotionCaptureFeaturesIn.NarrativeScene	a motion capture features in narrative scene
+omcT:aMotionCaptureNeededBy.Character	a motion capture needed by character
+omcT:aNarrativeElementHas.ConceptArt	a narrative element has concept art
+omcT:aNarrativeGreeneryFeaturesIn.NarrativeScene	a narrative greenery features in
+omcT:aNarrativeGreeneryNeededBy.Character	a narrative greenery needed by character
+omcT:aNarrativeHairFeaturesIn.NarrativeScene	a narrative hair features in
+omcT:aNarrativeHairNeededBy.Character	a narrative hair needed by character
+omcT:aNarrativeLocationFeaturesIn.NarrativeScene	a narrative location features in narrative scene
+omcT:aNarrativeLocationHas.Location	a narrative location has location
+omcT:aNarrativeMakeupFeaturesIn.NarrativeScene	a narrative makeup features in narrative scene
+omcT:aNarrativeMakeupNeededBy.Character	a narrative makeup needed by character
+omcT:aNarrativeMusicFeaturesIn.NarrativeScene	a narrative music features in narrative scene
+omcT:aNarrativeObjectFeaturesIn.NarrativeScene	a narrative object features in
+omcT:aNarrativeObjectIn.Depiction	a narrative object in depiction
+omcT:aNarrativeObjectNeededBy.Character	a narrative object needed by character
+omcT:aNarrativePropFeaturesIn.NarrativeScene	a narrative prop features in
+omcT:aNarrativePropNeededBy.Character	a narrative prop needed by character
+omcT:aNarrativeProstheticsFeaturesIn.NarrativeScene	a narrative prothetics features in narrative scene
+omcT:aNarrativeProstheticsNeededBy.Character	a narrative prothetics needed by character
+omcT:aNarrativeSceneFeatures.Aerial	a narrative scene features aerial
+omcT:aNarrativeSceneFeatures.Character	a narrative scene features character
+omcT:aNarrativeSceneFeatures.Choreography	a narrative scene features choreography
+omcT:aNarrativeSceneFeatures.Fight	a narrative scene features fight
+omcT:aNarrativeSceneFeatures.Marine	a narrative scene features marine
+omcT:aNarrativeSceneFeatures.MotionCapture	a narrative scene features motion capture
+omcT:aNarrativeSceneFeatures.NarrativeGreenery	a narrative scene features narrative greenery
+omcT:aNarrativeSceneFeatures.NarrativeHair	a narrative scene features narrative hair
+omcT:aNarrativeSceneFeatures.NarrativeMakeup	a narrative scene features narrative makeup
+omcT:aNarrativeSceneFeatures.NarrativeMusic	a narrative scene features narrative music 
+omcT:aNarrativeSceneFeatures.NarrativeObject	a narrative scene features narrative object
+omcT:aNarrativeSceneFeatures.NarrativeProp	a narrative scene features narrative prop
+omcT:aNarrativeSceneFeatures.NarrativeProsthetics	a narrative scene features narrative prosthetics
+omcT:aNarrativeSceneFeatures.NarrativeSetDressing	a narrative scene features narrative set dressing
+omcT:aNarrativeSceneFeatures.NarrativeSoundEffect	a narrative scene features narrative sound effect
+omcT:aNarrativeSceneFeatures.NarrativeVehicle	a narrative scene features narrative vehicle
+omcT:aNarrativeSceneFeatures.NarrativeWardrobe	a narrative scene features narrative wardrobe
+omcT:aNarrativeSceneFeatures.SpecialEffect	a narrative scene features special effect
+omcT:aNarrativeSceneFeatures.Stunt	a narrative scene features stunt
+omcT:aNarrativeSceneFeatures.VisualEffect	a narrative scene features visual effect
+omcT:aNarrativeSceneFor.CreativeWork	a narrative scene for creative work
+omcT:aNarrativeSceneFor.Script	a narrative scene for sript
+omcT:aNarrativeSceneHas.AnimatedStoryboard	a narrative scene has animated storyboard
+omcT:aNarrativeSceneHas.ProductionScene	a narrative scene has production scene
+omcT:aNarrativeSceneHas.Storyboard	a narrative scene has storyboard
+omcT:aNarrativeSetDressingFeaturesIn.NarrativeScene	a narrative set dressing features in
+omcT:aNarrativeSoundEffectFeaturesIn.NarrativeScene	a narrative sound effect features in narrative scene
+omcT:aNarrativeVehicleFeaturesIn.NarrativeScene	a narrative vehicle features in
+omcT:aNarrativeVehicleNeededBy.Character	a narrative vehicle needed by character
+omcT:aNarrativeWardrobeFeaturesIn.NarrativeScene	a narrative wardrobe features in narrative scene
+omcT:aNarrativeWardrobeNeededBy.Character	a narrative wardrobe needed by character
+omcT:aParticipantCreated.Provenance	a participant created provenance
+omcT:aParticipantGroupFor.Participant	a participant group for participant
+omcT:aParticipantGroupHasMember.Participant	a participant group member has participant
+omcT:aParticipantIn.Contribution	a participant in contribution
+omcT:aParticipantIn.WorkUnit	a participant in work unit
+omcT:aParticipantIsMemberOf.ParticipantGroup	a participant is member of participant group
+omcT:aPortrayalBy.Portrayer	a portrayal by portrayer
+omcT:aPortrayalFor.CreativeWork	a portrayal for creative work
+omcT:aPortrayalIn.Contribution	a portrayal in contribution
+omcT:aPortrayalPortraying.Character	a portrayal portraying character
+omcT:aPortrayalUsedIn.ProductionScene	a portrayal used in production scene
+omcT:aPortrayalUses.Costume	a portrayal uses costume
+omcT:aPortrayalUses.Depiction	a portrayal uses depiction
+omcT:aPortrayalUses.ProductionGreenery	a portrayal uses production greenery
+omcT:aPortrayalUses.ProductionHair	a portrayal uses production hair
+omcT:aPortrayalUses.ProductionMakeup	a portrayal uses production makeup
+omcT:aPortrayalUses.ProductionProp	a portrayal uses production prop
+omcT:aPortrayalUses.ProductionProsthetics	a portrayal uses production prosthetics
+omcT:aPortrayalUses.ProductionVehicle	a portrayal uses production vehicle
+omcT:aPortrayerOf.Portrayal	a portrayer of portrayal
+omcT:aProductionCompanyFor.CreativeWork	a production company for creative work
+omcT:aProductionElementHas.TechnicalReferenceMaterial	a production element has technical reference material
+omcT:aProductionGreeneryUsedIn.Portrayal	a production greenery used in portrayal
+omcT:aProductionGreeneryUsedIn.ProductionScene	a production greenery used in production scene
+omcT:aProductionGreeneryUsedIn.ProductionSet	a production greenery used in production set
+omcT:aProductionHairUsedIn.Portrayal	a production hair used in portrayal
+omcT:aProductionHairUsedIn.ProductionScene	a production hair used in production scene
+omcT:aProductionLocationHas.Location	a production location has location
+omcT:aProductionLocationUsedIn.ProductionScene	a production location used in production scene
+omcT:aProductionLocationUses.ProductionSet	a production location uses production set 
+omcT:aProductionMakeupUsedIn.Portrayal	a production makeup used in portrayal
+omcT:aProductionMakeupUsedIn.ProductionScene	a production makeup used in production scene
+omcT:aProductionObjectIn.Depiction	a production object in depiction
+omcT:aProductionPropUsedIn.Portrayal	a production prop used in portrayal
+omcT:aProductionProstheticsUsed.Portrayal	a production prothetics used in portrayal
+omcT:aProductionProstheticsUsed.ProductionScene	a production prothetics used in portrayal
+omcT:aProductionSceneFor.NarrativeScene	a production scene for narrative scene
+omcT:aProductionSceneHas.Slate	a production scene has slate
+omcT:aProductionSceneRelated.ProductionScene	a production scene related production scene
+omcT:aProductionSceneRepresentedBy.Capture	a production scene represented by capture
+omcT:aProductionSceneUses.Costume	a production scene uses costume
+omcT:aProductionSceneUses.Depiction	a production scene uses depiction
+omcT:aProductionSceneUses.Portrayal	a production scene uses portrayal
+omcT:aProductionSceneUses.ProductionGreenery	a production scene uses production greenery
+omcT:aProductionSceneUses.ProductionHair	a prodution sceneuses production hair
+omcT:aProductionSceneUses.ProductionLocation	a production scene uses production location
+omcT:aProductionSceneUses.ProductionMakeup	a production scene uses production makeup
+omcT:aProductionSceneUses.ProductionProp	a production scene uses production prop
+omcT:aProductionSceneUses.ProductionProsthetics	a production scene uses production prosthetics
+omcT:aProductionSceneUses.ProductionSet	a production scene uses production set 
+omcT:aProductionSceneUses.ProductionSetDressing	a production scene uses production set dressing
+omcT:aProductionSceneUses.ProductionVehicle	a production scene uses production vehicle
+omcT:aProductionSetUsedIn.ProductionLocation	a production set used in production location
+omcT:aProductionSetUsedIn.ProductionScene	a production set used in production scene 
+omcT:aProductionSetUses.ProductionGreenery	a production set uses production greenery
+omcT:aProductionSetUses.ProductionSetDressing	a production set uses production set dressing
+omcT:aProductionVehicleUsedIn.Portrayal	a production vehicle used in portrayal
+omcT:aProductionVehicleUsedIn.ProductionScene	a production vehicle used in production scene
+omcT:aProvenanceCreatedBy.Participant	a provenance created by participant
+omcT:aProvenanceFor.Asset	a provenance for asset
+omcT:aProvenanceFor.VersionInfo	a provenance for version info
+omcT:aSchedulingFor.Task	a scheduling for task
+omcT:aScreenwriterFor.Script	a screenwriter for script
+omcT:aScriptFor.CreativeWork	a script for creative work
+omcT:aScriptHas.NarrativeScene	a script has narrative scene
+omcT:aScriptHas.Screenwriter	a script has screenwriter 
+omcT:aSequenceHas.SCD	a sequence has SCD
+omcT:aSetDressingUsedIn.ProductionScene	a set dressing used in production scene
+omcT:aSetDressingUsedIn.ProductionSet	a set dressing used in production set
+omcT:aShotFor.SCDCoponent	a shot for SCD component
+omcT:aShotHas.Slate	a shot has slate
+omcT:aSlateFor.Asset	a slate for asset
+omcT:aSlateFor.CameraMetadata	a slate for camera metadata
+omcT:aSlateFor.Capture	a slate for capture
+omcT:aSlateFor.CreativeWork	a slate for creative work
+omcT:aSlateFor.ProductionScene	a slate for production scene
+omcT:aSlateFor.Shot	a slate for shot
+omcT:aSlateHas.Camera	a slate has camera
+omcT:aSlateHas.CameraUnit	a slate has camera unit
+omcT:aSlateHas.Director	a slate has 
+omcT:aSpecialEffectFeaturesIn.NarrativeScene	a special effect features in narrative scene
+omcT:aSpecialEffectNeededBy.Character	a special effect needed by character
+omcT:aStoryboardFor.NarrativeScene	a storyoard for narrative scene
+omcT:aStuntFeaturesIn.NarrativeScene	a stunt features in narrative scene
+omcT:aStuntNeededBy.Character	a stunt needed by character
+omcT:aTaskGroupFor.Task	a task group for task
+omcT:aTaskGroupHasMember.Task	a task group has member task
+omcT:aTaskHas.Scheduling	a task has scheduling
+omcT:aTaskHas.TaskGroup	a task has task group
+omcT:aTaskHasInput.Asset	a task has input asset
+omcT:aTaskHasOutput.Asset	a task has output asset
+omcT:aTaskIn.WorkUnit	a task in work unit
+omcT:aTaskInformedBy.Task	a task informed by task
+omcT:aTaskInforms.Task	a task informs task
+omcT:aTaskIsMemberOf.TaskGroup	a task is member of task group
+omcT:aTechnicalReferenceMaterialFor.ProductionElement	a technical reference material for production element
+omcT:aVariantInfoFor.Asset	a variant info for asset
+omcT:aVariantInfoVariantOf.Asset	a variant info variant of asset
+omcT:aVersionInfotHas.Provenance	a version info has provenance
+omcT:aVisualEffectFeaturesIn.NarrativeScene	a visual effect features in narrative scene
+omcT:aVisualEffectNeededBy.Character	a visual effect needed by character
+omcT:aWorkUnitHas.Participant	a work unit has participant
+omcT:aWorkUnitHas.Task	a work unit has task
+omcT:anAerialFeaturesIn.NarrativeScene	an aerial features in narrative scene
+omcT:anAerialNeededBy.Character	an aerial needed by character
+omcT:anAnimatedStoryboardFor.NarrativeScene	an animated storyoard for narrative scene
+omcT:anAssetAsStructureUses.Carrier	an asset as structure uses carrier
+omcT:anAssetGroupFor.Asset	an asset group for asset
+omcT:anAssetGroupHasMember.Asset	an asset group has member asset
+omcT:anAssetHas.AssetGroup	an asset has asset group
+omcT:anAssetHas.Provenance	an asset has provenance
+omcT:anAssetHas.Slate	an asset has slate
+omcT:anAssetHas.VariantInfo	an asset has variant info
+omcT:anAssetHasVariant.VariantInfo	an asset has variant
+omcT:anAssetIn.Concept	an asset idea in concept
+omcT:anAssetIsInputFor.Task	an asset is input for task
+omcT:anAssetIsMemberOf.AssetGroup	an asset is member of asset group
+omcT:anAssetIsOutputFor.Task	an asset is output for task
+omcT:anImageFor.ImageSequence	an image for image sequence
+omcT:anImageSequenceHas.Image	an image sequence has image 
+omcT:anSCDComponentFor.SCD	an SCD Coponent for SCD
+omcT:anSCDCoponentHas.Shot	an SCD component has shot
+omcT:anSCDFor.Sequence	an SCD for sequence
+omcT:anSCDHas.SCDComponent	an SCD has SCD component
+omcT:basedOn	based on
+omcT:basisFor	basis for
+omcT:describesAlternative.Asset	describes alternative
+omcT:describesAlternativeOf.Asset	describes alternative of asset
+omcT:describesDerivation.Asset	describes derivation
+omcT:describesDerivationOf.Asset	describes derivation of asset
+omcT:describesRepresentation.Asset	describes representation
+omcT:describesRepresentationOf.Asset	describes representation of asset
+omcT:describesRevision.Asset	describes revision
+omcT:describesRevisionOf.Asset	describes revision of asset
+omcT:describesVersion.Asset	describes version
+omcT:describesVersionOf.Asset	describes version of asset
+omcT:features	features
+omcT:featuresIn	is featured in
+omcT:for	for
+omcT:has	has
+omcT:hasAlternativeDescribedBy.AlternativeInfo	has alternative described by
+omcT:hasDerivationDescribedBy.DerivationInfo	has derivation described by
+omcT:hasMember	has member
+omcT:hasRepresentationDescribedBy.RepresentationInfo	has representation described by
+omcT:hasRevisionDescribedBy.RevisionInfo	has revision described by
+omcT:hasVersionDescribedBy.VersionInfo	has version described by
+omcT:in.Concept	in concept
+omcT:inspiredBy	inspired by
+omcT:inspires	inspires
+omcT:isAlternativeDescribedBy.AlternativeInfo	is alternative described by alternative info
+omcT:isDerivationDescribedBy.DerivationInfo	is derivation described by derivation info
+omcT:isMemberOf	is member of
+omcT:isRepresentationDescribedBy.RepresentationInfo	is representation described by representation info
+omcT:isRevisionDescribedBy.RevisionInfo	is revision described by revision info
+omcT:isVersionDescribedBy.VersionInfo	is version described by version info
+omcT:neededBy	is needed by
+omcT:needs	needs
+omcT:related	has related
+omcT:representedBy	is represented by
+omcT:represents	represents
+omcT:usedIn	used in
+omcT:uses	uses
+
+
+
