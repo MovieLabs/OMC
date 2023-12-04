@@ -1637,6 +1637,22 @@
                             "const": "CreativeWork"
                         },
                         "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
+                        "name": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Creative Work name",
+                            "description": "The primary name used for the creative work"
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Creative Work Description",
+                            "description": "A brief description of the creative work"
+                        },
                         "title": {
                             "type": "object",
                             "title": "Creative Work Title",
@@ -1667,14 +1683,6 @@
                                 }
                             },
                             "additionalProperties": true
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Creative Work Description",
-                            "description": "A brief description of the creative work"
                         },
                         "approximateLength": {
                             "title": "Approximate Length",
@@ -2697,6 +2705,22 @@
                             "const": "Slate"
                         },
                         "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
+                        "name": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Slate Name",
+                            "description": "A human readable name for the Slate"
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "description": "A brief description of the slate",
+                            "title": "Slate description"
+                        },
                         "slateUID": {
                             "type": "string",
                             "title": "Slate UID",
@@ -3637,6 +3661,16 @@
                                 "type": "string",
                                 "title": "Identifier Value",
                                 "description": "A string of characters that uniquely identifies an object within a particular scope."
+                            },
+                            "combinedForm": {
+                                "type": "string",
+                                "title": "Identifier Combined Form",
+                                "description": "A combination of the Identifier Scope and Value that is useful for utilizing the identifier in a system, for example a URN (URN:ID:IdentifierScope:IdentifierValue)."
+                            },
+                            "url": {
+                                "type": "string",
+                                "title": "URL",
+                                "description": "A URL or IRI that can be used for resolving the Identifier Value within the Identifier Scope."
                             }
                         },
                         "additionalProperties": false,
