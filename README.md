@@ -55,7 +55,11 @@ The OMC-RDF folder contains all materials related to the OMC RDF schema
 
 **tentativePropertiedAdded.txt**: Properties in the omcT: namespace
 
-**releaseNotes.txt**: release notes for the 2.0 release.
+**releaseNotes-2.0.txt**: release notes for the 2.0 release.
+
+**[Functional And Structural Classes in RDF](./OMC-RDF/RDFFunctionalStructural.md)**
+
+**[Known Bugs and Issues](OMC-RDF/KnownBugsIssues.md)**
 
 **/OntologyMediaCreation-OMC**: The OMC ontology, containing the current schema, with previous revisions in **OntologyMediaCreation-OMC/previous**
 
