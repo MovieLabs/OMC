@@ -1,0 +1,240 @@
+FUNCTIONAL / STRUCTURAL CLASS:
+
+Renamed AssetFunctionalClass as AssetAsFunction, and AssetStructuralClass as AssetAsStructure.
+
+Made AssetAsFunction and AssetAsStructure subclasses of Asset.
+
+Renamed ParticipantFunctionalClass as ParticipantAsFunction, and ParticipantStructuralClass 
+as ParticipantAsStructure.
+
+Made ParticipantAsFunction and ParticipantAsStructure subclasses of Participant.
+
+Renamed TaskFunctionalClass as TaskAsFunction, and TaskStructuralClass as TaskAsStructure.
+
+Made TaskAsFunction and TaskAsStructure subclasses of Task.
+
+Changed suffix "Class" of subclasses of these to either "Asset/Participant/Task" or "" (if meaningful).
+
+------------------------------
+
+CONTEXT:
+
+Added property hasAuthor with range Person.
+
+Made Depiction a subclass of AnythingWithAnId.
+
+Added Depiction to domain of hasProductionScene.
+
+Added NarrativeLocation to domain of hasNarrativeScene.
+
+Added ProductionLocation to domain of hasProductionScene.
+
+Added class NarrativeObject. 
+
+Added NarrativeObject to domains of hasNarrativeScene and interactsWithCharacter.
+
+Added ProductionProp to domain of hasProductionScene.
+
+Added class NarrativeSetDressing as subclass of NarrativeObject.
+
+Added NarrativeObject to domain of hasNarrativeScene.
+
+Added ProductionSetDressingAsset to domain of hasProductionScene.
+
+Added class NarrativeGreenery under NarrativeProp class.
+
+Added class ProductionGreeneryProp under ProductionProp class.
+
+Added class ProductionGreenerySetDressing under ProductionSetFressing class.
+
+Added class NarrativeVehicle and made it a subclass of NarrativeObject.
+
+Added class ProductionVehicle and made it a subclass of ProductionProp.
+
+Changed inverse of usesCostume from usesWardrobe to isCostumeFor.
+
+Added NarrativeWardrobe to domain of hasNarrativeScene.
+
+Added Costume to domain of hasProductionScene. 
+
+Added NarrativeHair and made it a subclass of NarrativeObject.
+
+Added NarrativeMakeup and made it a subclass of NarrativeObject.
+
+Added class ProductionObject.
+
+Added ProductionHair and ProductionMakeup, and made them subclasses of ProductionObject.
+
+Added class NarrativeProsthetics and made it a subclass of NarrativeObject.
+
+Added class ProductionProsthetics and made it a subclass of ProductionObject.
+
+Added class NarrativeSoundEffect and made it a subclass of NarrativeObject.
+
+Added class NarrativeMusic and made it a subclass of NarrativeObject.
+
+Added class SpecialEffect, and made it a subclass of ProductionObject.
+
+Added class VisualEffect, and made it a subclass of ProductionObject.
+
+Added class SpecialAction, and made it a subclass of MediaCreationContextComponent.
+
+Added class Stunt, and made it a subclass of SpecialAction.
+
+Added class Fight, and made it a subclass of SpecialAction.
+
+Added class Choreography, and made it a subclass of SpecialAction.
+
+Added class MarineAction, and made it a subclass of SpecialAction.
+
+Added class AerialAction, and made it a subclass of SpecialAction.
+
+Added class MotionCapture, and made it a subclass of SpecialAction.
+
+Added ProductionSet to domain of hasProductionScene.
+
+Added property omc:hasScript, no domain specified.
+
+Added class Slugline, and made it a subclass of NarrativeObject.
+
+Added class Artwork, made it a subclass of FunctionalAsset, and gave it subclasses:
+	Storyboard, AnimatedStoryboard, and ConceptArt.
+
+------------------------------
+
+CAMERA METADATA:
+
+
+Added the following properties with domain CameraMetadata
+	hasCaptureRate
+	hasPlaybackRate
+	hasTimecode
+	hasTimecodeStart
+	hasTimecodeEnd
+	hasShutterAngle
+	hasISOSpeed
+	hasExposureIndex
+	hasReelName
+	hasCameraSerialNumber
+	hasFrameWidth
+	hasFrameHeight
+	hasFDLLink
+	hasActiveSensorPhysicalDimensions
+	hasPixelAspectRatio
+	hasFlipX
+	hasFlipY
+	hasLUT_UID
+	hasTint
+	hasWhiteBalance
+	hasTilt
+	hasRoll 
+	hasCircleTake
+
+
+Added the following properties with domain LensMetadata 
+	hasTStop
+	hasFStop 
+	hasEntrancePupilPosition
+	hasFocusPosition
+	hasFocalLength
+	hasAnamorphicSqueeze
+	hasLensFirmwareVersion
+
+
+Added the following properties with domain RecorderMetadata
+	hasRecorderFirmwareVersion
+	hasStorageMediaUID
+ 
+------------------------------
+
+VERSIONS:
+
+Made Asset the domain and range of hasVersion.
+
+Added property isVersionOf, made it inverse of hasVersion (and vice versa).
+
+Added property hasVersionNumber.
+
+Added property isRevisionOf.
+
+Added property isVariantOf.
+
+Added property hasProvenance.
+
+Added property isVariantOf.
+
+Added inverse properties hasRepresentation, isRepresentationOf.
+
+Added property hasAlternative.
+
+Added class Provenance.
+
+Added properties with domain Provenance:
+	isCreatedBy
+	createdOn
+	reason
+	hasOrigin
+
+
+------------------------------
+PARTICIPANTS
+Added property hasRole with range Role.
+
+- - - - -
+
+UTILITIES:
+
+Added class Measurement.
+
+Added property hasQuantity.
+
+Made Measurement the domain of hasUnit and hasQuantity.
+
+------------------------------
+
+INFRASTRUCTURE:
+
+Added class StorageDevice, made it a parent of RecorderAsset.
+
+Added property hasStorageType (datatype property with range string).
+
+Added property hasStorageCapacity (datatype property with range string). 
+
+------------------------------
+
+CREATIVE WORK:
+
+Fixed domain of hasCountry to be a union, not multiple triples (which would imply that each domain is equal to the others).
+
+Added property hasCountryOfOrigin as a subproperty of hasCountry, domain CreativeWork, range Country. 
+(QUESTION: does this render cw:hasCountry obsolete?)
+
+------------------------------
+
+TASK:
+
+Added class WorkUnit.
+
+Added property hasWorkUnit, domain Task, range WorkUnit.
+
+------------------------------
+
+
+RELATIONSHIPS:
+
+Added property features and isFeaturedIn (not featuredIn), inverses of each other.
+(NOTE: ranges SpecialEffect and VisualEffect are subclasses of ProductionObject.)
+
+Added properties needs and isNeededBy, inverses of each other.
+
+Changed domain and range of uses to match document. Same for usedBy - not usedIn as the document says,
+because usedIn applies to narrative items. 
+
+Added properties isRepresentedBy and represents, inverses of each other.
+
+
+
+
+
+
+
