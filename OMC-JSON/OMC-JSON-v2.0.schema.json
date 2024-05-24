@@ -852,9 +852,10 @@
                             "description": "A human readable name for the Context"
                         },
                         "description": {
-                            "type": "object",
-                            "title": "Description",
-                            "description": "A brief description of the context"
+                            "type": [
+                                "string",
+                                "null"
+                            ]
                         },
                         "contextType": {
                             "type": [
