@@ -1,3 +1,360 @@
+2.5 RELEASE NOTES
+
+CONTEXT
+Additions:
+
+classes:
+ShootDayContext subclass of MediaCreationContext
+ProductionUnit subclass of ParticipantGroup and ParticipantAsFunction
+
+properties:
+ShootDayContext -> hasCreativeWork 
+ShootDayContext -> hasShootDay (-> integer)
+ShootDayContext -> hasProductionUnit -> ProductionUnit
+ShootDayContext -> hasProductionLocation
+ShootDayContext -> hasProductionScene
+(ShootDayContext or Slate) -> hasShootDate (-> date)
+(ShootDayContext or Slate or ProductionScene) -> hasShootDay -> (integer)
+
+classes:
+NarrativeSceneContext subclass Narrative Context
+ProductionSceneContext subclass Production Context
+EditorialSequenceContext subclass Production Context
+
+properties:
+Depiction -> depicts -> (NarrativeProp or NarrativeLocation or Character)
+(NarrativeProp or NarrativeLocation or Character) -> isDepictedBy -> Depiction 
+
+----------
+NOTE: There are also properties:
+	hasDepiction -> Depiction 
+
+	aDepictionDepicter.ProductionObject
+	aProductionObjectIn.Depiction
+
+	aDepictionDepicts.NarrativeObject
+	aNarrativeObjectIn.Depiction
+
+	aDepictionUsedIn.Portrayal
+	aPortrayalUses.Depiction
+
+	aDepictionUsedIn.ProductionScene
+	aProductionSceneUses.Depiction
+----------
+
+classes:	
+PortrayerThatIsAComposition
+PortrayerThatIsAnAsset
+Extra
+NarrativeProp subclass of NarrativeObject
+ProductionProp subclass of ProductionObject
+NarrativeSetDressing subclass of NarrativeObject
+ProductionSetDressing subclass of ProductionObject
+NarrativeGreenery subclass of NarrativeObject
+ProductionGreenery subclass of ProductionObject
+NarrativeVehicle subclass of NarrativeObject
+ProductionVehicle subclass of ProductionObject
+NarrativeWardrobe subclass of NarrativeObject
+Costume subclass of ProductionObject
+NarrativeHair subclass of NarrativeObject
+NarrativeProsthetics subclass of NarrativeObject
+NarrativeAudio
+
+properties:
+NarrativeAudio -> aNarrativeAudioHas.Character
+NarrativeAudio -> aNarrativeAudioHas.NarrativeScene
+
+classes:
+NarrativeSoundEffect subclass of NarrativeAudio
+NarrativeMusic subclass of NarrativeAudio
+Effect
+SpecialEffect subclass of Effect
+VisualEffect subclass of Effect
+
+properties:
+Effect -> anEffectInvolves.Character
+Effect -> anEffectInvolves.NarrativeProp
+Effect -> anEffectInvolves.NarrativeScene
+Effect -> anEffectInvolves.NarrativeVehicle
+
+SpecialAction -> aSpecialActionInvolves.Character
+SpecialAction -> aSpecialActionInvolves.NarrativeProp
+SpecialAction -> aSpecialActionInvolves.NarrativeScene
+SpecialAction -> aSpecialActionInvolves.NarrativeVehicle
+
+classes:
+Partition
+Part subclass of Partition
+Reel subclass of Partition
+Act subclass of Partition
+
+properties:
+Partition -> hasPartitionLength
+Partition -> hasPartitionNumber
+
+EditorialSequence -> hasReel -> Reel
+
+
+ASSETS
+
+----------
+NOTE: Digital Asset is represented by class DigitalData in the ontology.
+----------
+
+Additions:
+
+Properties:
+DigitalData -> hasFileDetails -> FileDetails
+
+Classes:
+DigitalDocument subclass of DigitalData (as well as of DocumentAsset, as previously)
+DigitalStructuredDocument subclass of DigitalData (as well as of StructuredDocument, as previously)
+PhysicalStructuredDocument subclass of PhysicalAsset (as well as of StructuredDocument, as previously)
+ProceduralAsset subclass of AssetAsStructure
+
+VERSIONS
+
+Properties:
+Asset or Composition -> hasVersion -> Asset or Composition
+Asset or Composition -> isVersionOf -> Asset or Composition
+
+Asset or Composition -> isRevisionOf -> Asset or Composition
+
+Asset or Composition -> isVariantOf -> Asset or Composition
+
+---------
+NOTE: We cannot formalize the constraint "A Variant of a Composition must be a new Composition"
+without introducing a property with the exact domain Composition.
+
+---------
+
+Asset or Composition -> isDerivationOf -> Asset or Composition
+
+Asset or Composition -> hasAlterntive -> Asset or Composition
+
+---------
+NOTE: We could formalize the constraint "Alternatives ... do not apply to Asset Structural Characteristics"
+by intersecting the domain with "not AssetAsStructure" but it would make it less readable.
+---------
+
+CG ASSETS
+ADDITIONS:
+
+Classes:
+
+Geometry subclass of AssetAsStructure
+GeometryType subclass of VocabularyTerm
+  Instances of GeometryType:
+	Mesh
+	NURBS Surface
+	NURBS Curve 
+	Basis Curve 
+	Cube
+	Torus
+	Plane
+	Capsule
+	Teapot
+
+
+BoundingBox subclass of Utility
+Scale subclass of Utility
+Orientation subclass of Utility
+Purpose subclass of Utility
+  Instances of Purpose:
+	Rendering
+	Proxy
+	Collision
+	Guide
+	Matte/Paint
+	Annotation
+	GeneralPurpose
+	Printing
+
+(NOTE: named "General" as "GeneralPurpose" because "General" seemed too ... general?)
+
+GeometryFileType subclass of VocabularyTerm
+  Instances of GeometryFileType:
+	USD
+	FBX
+	Alembic
+	OBJ
+	GITF
+	Cinema4D
+	Blender
+	Maya
+	Houdini
+
+Map subclass of AssetAsFunction
+MapType subclass of VocabularyTerm
+  Instances of MapType:
+	Diffuse
+	Specular
+	Metalness
+	Roughness
+	Opacity
+	AmbientOcclusion
+	NormalMap
+	Bump
+	UV Map
+	ProjectionMap 
+	HeightMap
+	WeightMap
+	DepthMap
+	Albedo
+
+(NOTE: named "Normal" as "NormalMap" for clarify.)
+(NOTE: named "Bump" as "BumpMap" for clarify.)
+
+MapFormat subclass of VocabularyTerm
+  Instances of MapFormat:
+	Plain Texture
+	Volume Texture	
+	Shadow	
+	CubeFace Shadow	
+	Volume Shadow	
+	LatLong Environment	
+	CubeFace Environment	
+
+Material subclass of AnythingWithAnID, AnythingWithAName
+SimpleMaterial subclass of Material, Asset
+CompositeMaterial subclass of Material, Composition
+
+MaterialType subclass of VocabularyTerm
+  Instances of MaterialType:
+	Organic
+	Organic.plant
+	Organic.skin
+	Organic.hair
+	Organic.fur
+	Organic.scales
+	Organic.leather
+	Organic.wood
+	Textile
+	Textile.cotton
+	Textile.silk
+	Textile.wool
+	Inorganic
+	Inorganic.plastic
+	inorganic.metal
+	Inorganic.glass
+	Inorganic.stone
+	GasOrLiquid
+	GasOrLiquid.atmosphere
+	GasOrLiquid.fog
+	GasOrLiquid.water
+	GasOrLiquid.fire
+	GasorLiquid.oil
+
+Rig subclass of AssetAsFunction
+
+
+CGAssembly subclass of Composition
+GeometryAssembly subclass of Composition
+
+ImageChannel subclass of AnythingWithAnID nd AnythingWithAName
+
+Properties:
+
+Geometry -> hasGeometryType -> GeometryType
+Geometry -> hasBoundingBox -> BoundingBox
+Geometry or Map or Material or CGAssembly or GeometryAssembly -> hasScale -> Scale 
+Geometry -> hasOrientation -> Orientation 
+Asset or Composition -> hasPurpose -> Purpose
+
+Asset or Composition -> hasLevelOfDetail -> decimal
+
+BoundingBox -> hasCorner1 -> Point
+BoundingBox -> hasCorner2 -> Point
+
+Orientation -> hasUpAxis -> string
+Orientation -> hasHandedness-> string
+
+Material -> hasMaterialType -> MaterialType
+
+CompositeMaterial or CGAssembly -> includesMap -> Map
+
+CGAssembly -> includesSimpleMaterial -> SimpleMaterial
+CGAssembly -> includesCompositeMaterial -> CompositeMaterial
+CGAssembly or GeometryAssembly -> includesGeometry -> Geometry
+CGAssembly or GeometryAssembly -> includesGeometryAssembly -> GeometryAssembly
+
+IMAGES
+ADDITIONS:
+
+Properties:
+
+Image -> hasDimensions -> Dimensions
+
+DigitalImage -> hasCodec -> string
+DigitalImage -> hasColorSpace -> ColorSpace
+
+ColorSpace -> hasColorSpaceName -> string
+
+ColorSpaceConfiguration or Asset or Composition -> hasVersion 
+	-> ColorSpaceConfiguration or Asset or Composition
+
+
+Classes:
+
+ColorSpace subclass of AssetAsFunction
+ConfigurationFile subclass of AssetAsFunction
+ColorSpaceConfiguration subclass of ConfigurationFile
+
+UTILITIES
+Additions:
+
+
+Class:
+FileDetails subclass of AnythingWithAName
+
+Properties:
+FileDetails -> hasFilePath
+FileDetails -> hasFileExtension
+
+Class:
+Composition subclass of AnythingWithAName, AnythingWithAnID
+
+Properties:
+Composition -> includesAsset
+Composition -> includesComposition
+Composition -> startHere -> Asset
+Composition -> produces.Asset
+Asset -> isProducedBy.Composition
+
+Measurement -> hasUnit -> (string)
+Measurement -> hasUnitOfTime -> (string)
+(NOTE: domain of hasUnitOfTime used to be non-existent class TimePeriod)
+
+Class:
+Dimensions
+
+Properties:
+hasWidth
+hasHeight
+hasDepth
+
+Classes:
+Matrix33
+Matrix44
+Point
+
+Properties:
+Matrix33 or Matrix44 -> hasElement -> TwoDimMatrixElement
+TwoDimMatrixElement -> hasRowIndex -> (integer)
+TwoDimMatrixElement -> hasColumnIndex -> (integer)
+
+
+Class:
+Codec subclass of AssetAsFunction
+(NOTE: I wasn't sure where to place this class.)
+
+Property:
+DigitalImage -> hasCodec -> Codec
+
+
+=============================
+2.0 RELEASE NOTES
+
 FUNCTIONAL / STRUCTURAL CLASS:
 
 Renamed AssetFunctionalClass as AssetAsFunction, and AssetStructuralClass as AssetAsStructure.
