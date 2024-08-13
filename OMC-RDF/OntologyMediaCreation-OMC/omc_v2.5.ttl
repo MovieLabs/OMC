@@ -1,18 +1,18 @@
-# baseURI: https://movielabs.com/omc/rdf/schema/v2.0
+# baseURI: https://movielabs.com/omc/rdf/schema/v2.5
 # imports: http://www.w3.org/2004/02/skos/core
 # prefix: omc
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix grddl: <http://www.w3.org/2003/g/data-view#> .
-@prefix omc: <https://movielabs.com/omc/rdf/schema/v2.0#> .
-@prefix omcT: <https://movielabs.com/omc/rdf/schema/v2.0Tentative#> .
+@prefix omc: <https://movielabs.com/omc/rdf/schema/v2.5#> .
+@prefix omcT: <https://movielabs.com/omc/rdf/schema/v2.5Tentative#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://movielabs.com/omc/rdf/schema/v2.0>
+<https://movielabs.com/omc/rdf/schema/v2.5>
   rdf:type owl:Ontology ;
   rdfs:comment "Copyright 2021-2023 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the LICENSE file https://github.com/MovieLabs/OMC/blob/main/LICENSE.txt." ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
@@ -173,12 +173,6 @@ omc:AssetAsStructure
   skos:definition "An umbrella class for classes that describe the underlying nature of an Asset, independent of its use. For example, an image is always an image (and thus will have an instance of Image as its structural characteristic), whether it is used as concept art, reference art, or a texture for computer graphics. The ontology takes advantage of OWL's multiple inheritance to allow an Asset to be a member of both AssetAsFunction and AssetAsStructure (usually, of subclasses of these, indicating the specific function or structure)." ;
   skos:prefLabel "Asset structural class"@en ;
 .
-omc:AssetClassVocabTerm
-  rdf:type owl:Class ;
-  rdfs:isDefinedBy <https://movielabs.org/vocab/s-AssetAsFunction> ;
-  rdfs:label "Asset Class Vocabulary Term"@en ;
-  rdfs:subClassOf omc:VocabularyTerm ;
-.
 omc:AssetGroup
   rdf:type owl:Class ;
   rdfs:label "Asset group"@en ;
@@ -283,6 +277,13 @@ omc:CameraMetadata
   rdfs:subClassOf omc:AssetAsFunction ;
   skos:prefLabel "Camera metadata"@en ;
 .
+omc:CameraUnit
+  rdf:type owl:Class ;
+  rdfs:label "Camera unit" ;
+  rdfs:subClassOf omc:ParticipantAsFunction ;
+  rdfs:subClassOf omc:ParticipantGroup ;
+  skos:prefLabel "Camera unit" ;
+.
 omc:Capsule
   rdf:type omc:GeometryType ;
   rdfs:label "Capsule"@en ;
@@ -291,9 +292,9 @@ omc:Capsule
 .
 omc:Capture
   rdf:type owl:Class ;
-  rdfs:label "Capture asset"@en ;
+  rdfs:label "Capture"@en ;
   rdfs:subClassOf omc:AssetAsFunction ;
-  skos:prefLabel "Capture asset"@en ;
+  skos:prefLabel "Capture"@en ;
 .
 omc:CaptureTechnicalReferenceMaterial
   rdf:type omc:TaskAsFunction ;
@@ -744,27 +745,27 @@ omc:GasOrLiquid
   rdfs:label "GasOrLiquid"@en ;
   skos:prefLabel "GasOrLiquid"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#GasOrLiquid.atmosphere>
+<https://movielabs.com/omc/rdf/schema/v2.5#GasOrLiquid.atmosphere>
   rdf:type omc:MaterialType ;
   rdfs:label "GasOrLiquid.atmosphere"@en ;
   skos:prefLabel "GasOrLiquid.atmosphere"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#GasOrLiquid.fire>
+<https://movielabs.com/omc/rdf/schema/v2.5#GasOrLiquid.fire>
   rdf:type omc:MaterialType ;
   rdfs:label "GasOrLiquid.fire"@en ;
   skos:prefLabel "GasOrLiquid.fire"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#GasOrLiquid.fog>
+<https://movielabs.com/omc/rdf/schema/v2.5#GasOrLiquid.fog>
   rdf:type omc:MaterialType ;
   rdfs:label "GasOrLiquid.fog"@en ;
   skos:prefLabel "GasOrLiquid.fog"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#GasOrLiquid.oil>
+<https://movielabs.com/omc/rdf/schema/v2.5#GasOrLiquid.oil>
   rdf:type omc:MaterialType ;
   rdfs:label "GasOrLiquid.oil"@en ;
   skos:prefLabel "GasOrLiquid.oil"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#GasOrLiquid.water>
+<https://movielabs.com/omc/rdf/schema/v2.5#GasOrLiquid.water>
   rdf:type omc:MaterialType ;
   rdfs:label "GasOrLiquid.water"@en ;
   skos:prefLabel "GasOrLiquid.water"@en ;
@@ -888,22 +889,22 @@ omc:Inorganic
   rdfs:label "Inorganic"@en ;
   skos:prefLabel "Inorganic"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Inorganic.glass>
+<https://movielabs.com/omc/rdf/schema/v2.5#Inorganic.glass>
   rdf:type omc:MaterialType ;
   rdfs:label "Inorganic.glass"@en ;
   skos:prefLabel "Inorganic.glass"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Inorganic.metal>
+<https://movielabs.com/omc/rdf/schema/v2.5#Inorganic.metal>
   rdf:type omc:MaterialType ;
   rdfs:label "Inorganic.metal"@en ;
   skos:prefLabel "Inorganic.metal"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Inorganic.plastic>
+<https://movielabs.com/omc/rdf/schema/v2.5#Inorganic.plastic>
   rdf:type omc:MaterialType ;
   rdfs:label "Inorganic.plastic"@en ;
   skos:prefLabel "Inorganic.plastic"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Inorganic.stone>
+<https://movielabs.com/omc/rdf/schema/v2.5#Inorganic.stone>
   rdf:type omc:MaterialType ;
   rdfs:label "Inorganic.stone"@en ;
   skos:prefLabel "Inorganic.stone"@en ;
@@ -1261,37 +1262,37 @@ omc:Organic
   rdfs:label "Organic"@en ;
   skos:prefLabel "Organic"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Organic.fur>
+<https://movielabs.com/omc/rdf/schema/v2.5#Organic.fur>
   rdf:type omc:MaterialType ;
   rdfs:label "Organic.fur"@en ;
   skos:prefLabel "Organic.fur"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Organic.hair>
+<https://movielabs.com/omc/rdf/schema/v2.5#Organic.hair>
   rdf:type omc:MaterialType ;
   rdfs:label "Organic.hair"@en ;
   skos:prefLabel "Organic.hair"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Organic.leather>
+<https://movielabs.com/omc/rdf/schema/v2.5#Organic.leather>
   rdf:type omc:MaterialType ;
   rdfs:label "Organic.leather"@en ;
   skos:prefLabel "Organic.leather"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Organic.plant>
+<https://movielabs.com/omc/rdf/schema/v2.5#Organic.plant>
   rdf:type omc:MaterialType ;
   rdfs:label "Organic.plant"@en ;
   skos:prefLabel "Organic.plant"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Organic.scales>
+<https://movielabs.com/omc/rdf/schema/v2.5#Organic.scales>
   rdf:type omc:MaterialType ;
   rdfs:label "Organic.scales"@en ;
   skos:prefLabel "Organic.scales"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Organic.skin>
+<https://movielabs.com/omc/rdf/schema/v2.5#Organic.skin>
   rdf:type omc:MaterialType ;
   rdfs:label "Organic.skin"@en ;
   skos:prefLabel "Organic.skin"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Organic.wood>
+<https://movielabs.com/omc/rdf/schema/v2.5#Organic.wood>
   rdf:type omc:MaterialType ;
   rdfs:label "Organic.wood"@en ;
   skos:prefLabel "Organic.wood"@en ;
@@ -1794,6 +1795,12 @@ omc:Recorder
   rdfs:subClassOf omc:StorageDevice ;
   skos:prefLabel "Recorder asset"@en ;
 .
+omc:RecorderMetadata
+  rdf:type owl:Class ;
+  rdfs:label "Recorder metadata"@en ;
+  rdfs:subClassOf omc:AssetAsFunction ;
+  skos:prefLabel "Recorder metadata"@en ;
+.
 omc:Reel
   rdf:type owl:Class ;
   rdfs:label "Reel"@en ;
@@ -2153,17 +2160,17 @@ omc:Textile
   rdfs:label "Textile"@en ;
   skos:prefLabel "Textile"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Textile.cotton>
+<https://movielabs.com/omc/rdf/schema/v2.5#Textile.cotton>
   rdf:type omc:MaterialType ;
   rdfs:label "Textile.cotton"@en ;
   skos:prefLabel "Textile.cotton"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Textile.silk>
+<https://movielabs.com/omc/rdf/schema/v2.5#Textile.silk>
   rdf:type omc:MaterialType ;
   rdfs:label "Textile.silk"@en ;
   skos:prefLabel "Textile.silk"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#Textile.wool>
+<https://movielabs.com/omc/rdf/schema/v2.5#Textile.wool>
   rdf:type omc:MaterialType ;
   rdfs:label "Textile.wool"@en ;
   skos:prefLabel "Textile.wool"@en ;
@@ -4014,7 +4021,7 @@ omc:hasUnitOfTime
   rdf:type owl:DatatypeProperty ;
   rdfs:domain omc:Measurement ;
   rdfs:label "has unit of time" ;
-  rdfs:range omc:UnitOfTime ;
+  rdfs:range xsd:string ;
   rdfs:subPropertyOf omc:hasUnit ;
 .
 omc:hasUpAxis
@@ -4126,7 +4133,7 @@ omc:hasZCoord
     ] ;
   skos:prefLabel "has z coordinate"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#in.context>
+<https://movielabs.com/omc/rdf/schema/v2.5#in.context>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:MediaCreationContextComponent ;
   rdfs:label "is in context"@en ;
@@ -4520,12 +4527,12 @@ omc:isPortrayerOf
   owl:inverseOf omc:hasPortrayer ;
   skos:prefLabel "is portrayer of"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#isProducedBy.Composition>
+<https://movielabs.com/omc/rdf/schema/v2.5#isProducedBy.Composition>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "is produced by composition"@en ;
   rdfs:range omc:Composition ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0#produces.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5#produces.Asset> ;
   skos:prefLabel "is produced by composition"@en ;
 .
 omc:isProductionContextFor
@@ -4602,14 +4609,14 @@ omc:isSlateFor
   owl:inverseOf omc:hasSlate ;
   skos:prefLabel "is slate for"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#isSlateFor.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5#isSlateFor.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "is slate for creative work"@en ;
   rdfs:range omc:CreativeWork ;
   skos:prefLabel "is slate for creative work"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#isSlateFor.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5#isSlateFor.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "is slate for production scene"@en ;
@@ -4766,12 +4773,12 @@ omc:isWardrobeFor
   owl:inverseOf omc:usesWardrobe ;
   skos:prefLabel "is wardrobe for"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#needed.by.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5#needed.by.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeObject ;
   rdfs:label "is needed by character"@en ;
   rdfs:range omc:Character ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeObject> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeObject> ;
   skos:prefLabel "is needed by character"@en ;
 .
 omc:portrays
@@ -4788,12 +4795,12 @@ omc:portrays
   owl:inverseOf omc:isPortrayedBy ;
   skos:prefLabel "portrays"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#produces.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5#produces.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Composition ;
   rdfs:label "produces asset"@en ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0#isProducedBy.Composition> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5#isProducedBy.Composition> ;
   skos:prefLabel "produces asset"@en ;
 .
 omc:reason
@@ -4803,7 +4810,7 @@ omc:reason
   rdfs:range xsd:string ;
   skos:prefLabel "reason"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0#related.context>
+<https://movielabs.com/omc/rdf/schema/v2.5#related.context>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:MediaCreationContext ;
   rdfs:label "has related context"@en ;
@@ -4854,377 +4861,377 @@ omc:usesWardrobe
   rdfs:range omc:NarrativeWardrobe ;
   skos:prefLabel "uses wardrobe"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCameraFor.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCameraFor.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Camera ;
   rdfs:label "a camera for slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateHas.Camera> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateHas.Camera> ;
   skos:prefLabel "a camera for slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCameraMetadataHas.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCameraMetadataHas.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CameraMetadata ;
   rdfs:label "a camera metadata has slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.CameraMetadata> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.CameraMetadata> ;
   skos:prefLabel "a camera metadata has slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCameraUnitFor.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCameraUnitFor.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CameraUnit ;
   rdfs:label "a camera unit for slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateHas.CameraUnit> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateHas.CameraUnit> ;
   skos:prefLabel "a camera unit for slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCaptureHas.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCaptureHas.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Capture ;
   rdfs:label "a capture has slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.Capture> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.Capture> ;
   skos:prefLabel "a capture has slate" ;
   skos:prefLabel "an capture has slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCaptureRepresents.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCaptureRepresents.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Capture ;
   rdfs:label "a capture represents production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:represents ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneRepresenteBy.Capture> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneRepresentedBy.Capture> ;
   skos:prefLabel "a capture represents production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCarrierUsedBy.AssetAsStructure>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPhysicalAssetUsedBy.AssetAsStructure>
   rdf:type owl:ObjectProperty ;
-  rdfs:domain omc:Carrier ;
+  rdfs:domain omc:PhysicalAsset ;
   rdfs:label "a carrier used by asset as structure" ;
   rdfs:range omc:AssetAsStructure ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetAsStructureUses.Carrier> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetAsStructureUses.PhysicalAsset> ;
   skos:prefLabel "a carrier used by asset as structure" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character features in" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Character> ;
   skos:prefLabel "a character features in" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Aerial>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.AerialAction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs aerial" ;
-  rdfs:range omc:Aerial ;
+  rdfs:range omc:AerialAction ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAerialNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAerialNeededBy.Character> ;
   skos:prefLabel "a character needs aerial" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Choreography>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.Choreography>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs choreography" ;
   rdfs:range omc:Choreography ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aChoreographyNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aChoreographyNeededBy.Character> ;
   skos:prefLabel "a character needs choreography" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Fight>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.Fight>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs fight" ;
   rdfs:range omc:Fight ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aFightNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aFightNeededBy.Character> ;
   skos:prefLabel "a character needs fight" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Marine>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.MarineAction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs marine" ;
-  rdfs:range omc:Marine ;
+  rdfs:range omc:MarineAction ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMarineNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMarineActionNeededBy.Character> ;
   skos:prefLabel "a character needs marine" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.MotionCapture>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.MotionCapture>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs motion capture" ;
   rdfs:range omc:MotionCapture ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMotionCaptureNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMotionCaptureNeededBy.Character> ;
   skos:prefLabel "a character needs motion capture" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeGreenery>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeGreenery>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative greenery" ;
   rdfs:range omc:NarrativeGreenery ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeGreeneryNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeGreeneryNeededBy.Character> ;
   skos:prefLabel "a character needs narrative greenery" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeHair>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeHair>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative hair" ;
   rdfs:range omc:NarrativeGreenery ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeHairNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeHairNeededBy.Character> ;
   skos:prefLabel "a character needs narrative hair" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeMakeup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeMakeup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative makeup" ;
   rdfs:range omc:NarrativeMakeup ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeMakeupNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeMakeupNeededBy.Character> ;
   skos:prefLabel "a character needs narrative makeup" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeObject>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeObject>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative object" ;
   rdfs:range omc:NarrativeObject ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeObjectNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeObjectNeededBy.Character> ;
   skos:prefLabel "a character needs narrative object" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeProp>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeProp>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative prop" ;
   rdfs:range omc:NarrativeProp ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativePropNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativePropNeededBy.Character> ;
   skos:prefLabel "a character needs narrative prop" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeProsthetics>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeProsthetics>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative prosthetics" ;
   rdfs:range omc:NarrativeProsthetics ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeProstheticsNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeProstheticsNeededBy.Character> ;
   skos:prefLabel "a character needs narrative prosthetics" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeVehicle>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeVehicle>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative vehicle" ;
   rdfs:range omc:NarrativeObject ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeVehicleNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeVehicleNeededBy.Character> ;
   skos:prefLabel "a character needs narrative vehicle" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeWardrobe>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeWardrobe>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs narrative wardrobe" ;
   rdfs:range omc:NarrativeWardrobe ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeWardrobeNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeWardrobeNeededBy.Character> ;
   skos:prefLabel "a character needs narrative wardrobe" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.SpecialEffect>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.SpecialEffect>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs special effect" ;
   rdfs:range omc:SpecialEffect ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialEffectNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialEffectNeededBy.Character> ;
   skos:prefLabel "a character needs special effect" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Stunt>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.Stunt>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs stunt" ;
   rdfs:range omc:Stunt ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aStuntNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aStuntNeededBy.Character> ;
   skos:prefLabel "a character needs stunt" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.VisualEffect>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.VisualEffect>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character needs visual effect" ;
   rdfs:range omc:VisualEffect ;
   rdfs:subPropertyOf omcT:needs ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVisualEffectNeededBy.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVisualEffectNeededBy.Character> ;
   skos:prefLabel "a character needs visual effect" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterPortrayedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterPortrayedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Character ;
   rdfs:label "a character portrayed in portrayal" ;
   rdfs:range omc:Portrayal ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalPortraying.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalPortraying.Character> ;
   skos:prefLabel "a character portrayed in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aChoreographyFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aChoreographyFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Choreography ;
   rdfs:label "a choreography features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Choreography> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Choreography> ;
   skos:prefLabel "a choreography features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aChoreographyNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aChoreographyNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Choreography ;
   rdfs:label "a choreography needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Choreography> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.Choreography> ;
   skos:prefLabel "a choreography needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aConceptArtFor.NarrativeElement>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aConceptArtFor.NarrativeElement>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ConceptArt ;
   rdfs:label "a concept art for narrative element" ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeElementHas.ConceptArt> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeElementHas.ConceptArt> ;
   skos:prefLabel "a concept art for narrative element" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aConceptIdea.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aConceptIdea.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Concept ;
   rdfs:label "a concept idea asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIn.Concept> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIn.Concept> ;
   skos:prefLabel "a concept idea asset" ;
 .
 omcT:aConceptSubject
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Concept ;
   rdfs:label "a concept subject" ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#in.Concept> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#in.Concept> ;
   skos:prefLabel "a concept subject concept" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContextElementHas.CreativeReferenceMaterial>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContextElementHas.CreativeReferenceMaterial>
   rdf:type owl:ObjectProperty ;
   rdfs:label "a context element has creative reference material" ;
   rdfs:range omc:CreativeReferenceMaterial ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeReferenceMaterialFor.ContextElement> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeReferenceMaterialFor.ContextElement> ;
   skos:prefLabel "a narrative element has creative reference material" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContributionFor.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContributionFor.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Contribution ;
   rdfs:label "a contribution for creative work" ;
   rdfs:range omc:CreativeWork ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Contribution> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Contribution> ;
   skos:prefLabel "a contribution for creative work" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContributionHas.Contributor>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContributionHas.Contributor>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Contribution ;
   rdfs:label "a contribution has contributor" ;
   rdfs:range omc:Participant ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantIn.Contribution> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantIn.Contribution> ;
   skos:prefLabel "a contribution has contributor" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContributionHas.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContributionHas.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Contribution ;
   rdfs:label "a contribution has portrayal" ;
   rdfs:range omc:Portrayal ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalIn.Contribution> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalIn.Contribution> ;
   skos:prefLabel "a contribution has portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCostumeUsedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCostumeUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Costume ;
   rdfs:label "a costume used in portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.Costume> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.Costume> ;
   skos:prefLabel "a costume used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCostumeUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCostumeUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Costume ;
   rdfs:label "a costume used in production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.Costume> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.Costume> ;
   skos:prefLabel "a costume used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeReferenceMaterialFor.ContextElement>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeReferenceMaterialFor.ContextElement>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CreativeReferenceMaterial ;
   rdfs:label "a creative reference material for context element" ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContextElementHas.CreativeReferenceMaterial> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContextElementHas.CreativeReferenceMaterial> ;
   skos:prefLabel "a creative reference material for context element" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Contribution>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Contribution>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CreativeWork ;
   rdfs:label "a creative work has contribution" ;
   rdfs:range omc:Contribution ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContributionFor.CreativeWork> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContributionFor.CreativeWork> ;
   skos:prefLabel "a creative work has contribution" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CreativeWork ;
   rdfs:label "a creative work has narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFor.CreativeWork> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFor.CreativeWork> ;
   skos:prefLabel "a creative work has narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CreativeWork ;
   rdfs:label "a creative work has portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalFor.CreativeWork> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalFor.CreativeWork> ;
   skos:prefLabel "a creative work has portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.ProductionCompany>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.ProductionCompany>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CreativeWork ;
   rdfs:label "a creative work has production company" ;
   rdfs:range omc:Participant ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionCompanyFor.CreativeWork> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionCompanyFor.CreativeWork> ;
   skos:prefLabel "a creative work has production company" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Script>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Script>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CreativeWork ;
   rdfs:label "a creative work has script" ;
   rdfs:range omc:Script ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aScriptFor.CreativeWork> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aScriptFor.CreativeWork> ;
   skos:prefLabel "a creative work has script" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:CreativeWork ;
   rdfs:label "a creative work has slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.CreativeWork> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.CreativeWork> ;
   skos:prefLabel "a creative work has slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkRelated.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkRelated.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdf:type owl:SymmetricProperty ;
   rdfs:domain omc:CreativeWork ;
@@ -5232,891 +5239,901 @@ omcT:aConceptSubject
   rdfs:range omc:CreativeWork ;
   skos:prefLabel "a creative related to creative work" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionDepicter.ProductionObject>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionDepicter.ProductionObject>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Depiction ;
   rdfs:label "a depiction depicter production object" ;
   rdfs:range omc:ProductionObject ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionObjectIn.Depiction> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionObjectIn.Depiction> ;
   skos:prefLabel "a depiction depicter production object" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionDepicts.NarrativeObject>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionDepicts.NarrativeObject>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Depiction ;
   rdfs:label "a depiction depicts narrative object" ;
   rdfs:range omc:NarrativeObject ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeObjectIn.Depiction> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeObjectIn.Depiction> ;
   skos:prefLabel "a depiction depicts narrative object" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionUsedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Depiction ;
   rdfs:label "a depiction used in portrayal" ;
   rdfs:range omc:Portrayal ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.Depiction> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.Depiction> ;
   skos:prefLabel "a depiction used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Depiction ;
   rdfs:label "a depiction used in production scene" ;
   rdfs:range omc:ProductionScene ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.Depiction> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.Depiction> ;
   skos:prefLabel "a depiction used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDirectorFor.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDirectorFor.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Participant ;
   rdfs:label "a director for slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateHas.Directory> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateHas.Director> ;
   skos:prefLabel "a director for slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aFightFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aFightFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Fight ;
   rdfs:label "a fight features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Fight> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Fight> ;
   skos:prefLabel "a fight features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aFightNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aFightNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Fight ;
   rdfs:label "a fight needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Fight> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.Fight> ;
   skos:prefLabel "a fight needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aLocationFor.NarrativeLocation>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aLocationFor.NarrativeLocation>
   rdf:type owl:ObjectProperty ;
   rdfs:label "a location for narrative location"@en ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeLocationHas.Location> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeLocationHas.Location> ;
   skos:prefLabel "a location for narrative location"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aLocationFor.ProductionLocation>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aLocationFor.ProductionLocation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Location ;
   rdfs:label "a location for production location" ;
   rdfs:range omc:ProductionLocation ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionLocationHas.Location> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionLocationHas.Location> ;
   skos:prefLabel "a location for production location" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMarineFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMarineActionFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
-  rdfs:domain omc:Marine ;
+  rdfs:domain omc:MarineAction ;
   rdfs:label "a marine features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Marine> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.MarineAction> ;
   skos:prefLabel "a marine features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMarineNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMarineActionNeededBy.Character>
   rdf:type owl:ObjectProperty ;
-  rdfs:domain omc:Marine ;
+  rdfs:domain omc:MarineAction ;
   rdfs:label "a marine needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Marine> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.MarineAction> ;
   skos:prefLabel "a marine needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMotionCaptureFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMotionCaptureFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:MotionCapture ;
   rdfs:label "a motion capture features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.MotionCapture> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.MotionCapture> ;
   skos:prefLabel "a motion capture features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMotionCaptureNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMotionCaptureNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:MotionCapture ;
   rdfs:label "a motion capture needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.MotionCapture> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.MotionCapture> ;
   skos:prefLabel "a motion capture needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeAudioHas.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeAudioHas.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeAudio ;
   rdfs:label "a narrative audio has character"@en ;
   rdfs:range omc:Character ;
   skos:prefLabel "a narrative audio has character"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeAudioHas.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeAudioHas.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeAudio ;
   rdfs:label "a narrative audio has narrative scene"@en ;
   rdfs:range omc:NarrativeScene ;
   skos:prefLabel "a narrative audio has narrative scene"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeElementHas.ConceptArt>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeElementHas.ConceptArt>
   rdf:type owl:ObjectProperty ;
   rdfs:label "a narrative element has concept art" ;
   rdfs:range omc:ConceptArt ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aConceptArtFor.NarrativeElement> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aConceptArtFor.NarrativeElement> ;
   skos:prefLabel "a narrative element has concept art" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeGreeneryFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeGreeneryFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeGreenery ;
   rdfs:label "a narrative greenery features in" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeGreenery> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeGreenery> ;
   skos:prefLabel "a narrative greenery features in" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeGreeneryNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeGreeneryNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeGreenery ;
   rdfs:label "a narrative greenery needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeGreenery> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeGreenery> ;
   skos:prefLabel "a narrative greenery needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeHairFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeHairFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeHair ;
   rdfs:label "a narrative hair features in" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeHair> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeHair> ;
   skos:prefLabel "a narrative hair features in" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeHairNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeHairNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeHair ;
   rdfs:label "a narrative hair needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeHair> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeHair> ;
   skos:prefLabel "a narrative hair needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeLocationFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeLocationFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeLocation ;
   rdfs:label "a narrative location features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeObject> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeObject> ;
   skos:prefLabel "a narrative location features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeLocationHas.Location>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeLocationHas.Location>
   rdf:type owl:ObjectProperty ;
   rdfs:label "a narrative location has location" ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aLocationFor.NarrativeLocation> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aLocationFor.NarrativeLocation> ;
   skos:prefLabel "a narrative location has location" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeMakeupFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeMakeupFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeMakeup ;
   rdfs:label "a narrative makeup features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeMakeup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeMakeup> ;
   skos:prefLabel "a narrative makeup features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeMakeupNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeMakeupNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeMakeup ;
   rdfs:label "a narrative makeup needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeMakeup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeMakeup> ;
   skos:prefLabel "a narrative makeup needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeMusicFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeMusicFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeMusic ;
   rdfs:label "a narrative music features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeMusic> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeMusic> ;
   skos:prefLabel "a narrative music features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeObjectFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeObjectFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeObject ;
   rdfs:label "a narrative object features in" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeObject> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeObject> ;
   skos:prefLabel "a narrative object features in" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeObjectIn.Depiction>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeObjectIn.Depiction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeObject ;
   rdfs:label "a narrative object in depiction" ;
   rdfs:range omc:Depiction ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionDepicts.NarrativeObject> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionDepicts.NarrativeObject> ;
   skos:prefLabel "a narrative object in depiction" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeObjectNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeObjectNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeObject ;
   rdfs:label "a narrative object needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeObject> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeObject> ;
   skos:prefLabel "a narrative object needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativePropFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativePropFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeProp ;
   rdfs:label "a narrative prop features in" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeProp> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeProp> ;
   skos:prefLabel "a narrative prop features in" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativePropNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativePropNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeProp ;
   rdfs:label "a narrative prop needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeProp> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeProp> ;
   skos:prefLabel "a narrative prop needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeProstheticsFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeProstheticsFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeProsthetics ;
   rdfs:label "a narrative prothetics features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeProsthetics> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeProsthetics> ;
   skos:prefLabel "a narrative prosthetics features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeProstheticsNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeProstheticsNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeProsthetics ;
   rdfs:label "a narrative prothetics needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeProsthetics> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeProsthetics> ;
   skos:prefLabel "a narrative prosthetics needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Aerial>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.AerialAction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features aerial" ;
-  rdfs:range omc:Aerial ;
+  rdfs:range omc:AerialAction ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAerialFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAerialFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features aerial" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features character"@en ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features character"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Choreography>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Choreography>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features choreography" ;
   rdfs:range omc:Choreography ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aChoreographyFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aChoreographyFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features choreography" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Fight>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Fight>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features fight" ;
   rdfs:range omc:Fight ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aFightFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aFightFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features fight" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Marine>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.MarineAction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features marine" ;
-  rdfs:range omc:Marine ;
+  rdfs:range omc:MarineAction ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMarineFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMarineActionFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features marine" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.MotionCapture>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.MotionCapture>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features motion capture" ;
   rdfs:range omc:MotionCapture ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aMotionCaptureFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aMotionCaptureFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features motion capture" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeGreenery>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeGreenery>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative greenery" ;
   rdfs:range omc:NarrativeGreenery ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeGreeneryFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeGreeneryFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative greenery" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeHair>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeHair>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative hair" ;
   rdfs:range omc:NarrativeHair ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeHairFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeHairFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative hair" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeMakeup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeMakeup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative makeup" ;
   rdfs:range omc:NarrativeMakeup ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeMakeupFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeMakeupFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative makeup" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeMusic>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeMusic>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative music " ;
   rdfs:range omc:NarrativeMusic ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeMusicFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeMusicFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative music" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeObject>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeObject>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative object" ;
   rdfs:range omc:NarrativeObject ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeObjectFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeObjectFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative object" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeProp>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeProp>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative prop" ;
   rdfs:range omc:NarrativeProp ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativePropFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativePropFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative prop" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeProsthetics>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeProsthetics>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative prosthetics" ;
   rdfs:range omc:NarrativeProsthetics ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeProstheticsFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeProstheticsFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative prosthetics" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeSetDressing>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeSetDressing>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative set dressing" ;
   rdfs:range omc:NarrativeSetDressing ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSetDressingFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSetDressingFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative set dressing" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeSoundEffect>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeSoundEffect>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative sound effect" ;
   rdfs:range omc:NarrativeSoundEffect ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSoundEffectFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSoundEffectFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative sound effect" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeVehicle>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeVehicle>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative vehicle" ;
   rdfs:range omc:NarrativeVehicle ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeVehicleFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeVehicleFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative vehicle" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeWardrobe>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeWardrobe>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features narrative wardrobe" ;
   rdfs:range omc:NarrativeWardrobe ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeWardrobeFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeWardrobeFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features narrative wardrobe" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.SpecialEffect>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.SpecialEffect>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features special effect" ;
   rdfs:range omc:SpecialEffect ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialEffectFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialEffectFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features special effect" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Stunt>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Stunt>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features stunt" ;
   rdfs:range omc:Stunt ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aStuntFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aStuntFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features stunt" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.VisualEffect>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.VisualEffect>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene features visual effect" ;
   rdfs:range omc:VisualEffect ;
   rdfs:subPropertyOf omcT:features ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVisualEffectFeaturesIn.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVisualEffectFeaturesIn.NarrativeScene> ;
   skos:prefLabel "a narrative scene features visual effect" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFor.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFor.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene for creative work" ;
   rdfs:range omc:CreativeWork ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.NarrativeScene> ;
   skos:prefLabel "a narrative scene for creative work" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFor.Script>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFor.Script>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene for sript" ;
   rdfs:range omc:Script ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aScriptHas.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aScriptHas.NarrativeScene> ;
   skos:prefLabel "a narrative scene for script" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneHas.AnimatedStoryboard>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneHas.AnimatedStoryboard>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene has animated storyboard" ;
   rdfs:range omc:AnimatedStoryboard ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAnimatedStoryboardFor.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAnimatedStoryboardFor.NarrativeScene> ;
   skos:prefLabel "a narrative scene has animated storyboard" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneHas.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneHas.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene has production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneFor.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneFor.NarrativeScene> ;
   skos:prefLabel "a narrative scene has production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneHas.Storyboard>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneHas.Storyboard>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeScene ;
   rdfs:label "a narrative scene has storyboard" ;
   rdfs:range omc:Storyboard ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aStoryboardFor.NarrativeScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aStoryboardFor.NarrativeScene> ;
   skos:prefLabel "a narrative scene has storyboard" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSetDressingFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSetDressingFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeSetDressing ;
   rdfs:label "a narrative set dressing features in" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeSetDressing> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeSetDressing> ;
   skos:prefLabel "a narrative set dressing features in" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSoundEffectFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSoundEffectFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeSoundEffect ;
   rdfs:label "a narrative sound effect features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeSoundEffect> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeSoundEffect> ;
   skos:prefLabel "a narrative sound effect features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeVehicleFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeVehicleFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeVehicle ;
   rdfs:label "a narrative vehicle features in" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeVehicle> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeVehicle> ;
   skos:prefLabel "a narrative vehicle features in" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeVehicleNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeVehicleNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeVehicle ;
   rdfs:label "a narrative vehicle needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeVehicle> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeVehicle> ;
   skos:prefLabel "a narrative vehicle needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeWardrobeFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeWardrobeFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeWardrobe ;
   rdfs:label "a narrative wardrobe features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.NarrativeWardrobe> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.NarrativeWardrobe> ;
   skos:prefLabel "a narrative wardrobe features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeWardrobeNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeWardrobeNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:NarrativeWardrobe ;
   rdfs:label "a narrative wardrobe needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.NarrativeWardrobe> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.NarrativeWardrobe> ;
   skos:prefLabel "a narrative wardrobe needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantCreated.Provenance>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantCreated.Provenance>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Participant ;
   rdfs:label "a participant created provenance" ;
   rdfs:range omc:Provenance ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProvenanceCreatedBy.Participant> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProvenanceCreatedBy.Participant> ;
   skos:prefLabel "a provenance for asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantGroupFor.Participant>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantGroupFor.Participant>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ParticipantGroup ;
   rdfs:label "a participant group for participant" ;
   rdfs:range omc:Participant ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantHas.ParticipantGroup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantHas.ParticipantGroup> ;
   skos:prefLabel "a participant group for participant" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantGroupHasMember.Participant>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantHas.ParticipantGroup>
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain omc:ParticipantGroup ;
+  rdfs:label "a participant has participant group" ;
+  rdfs:range omc:Participant ;
+  rdfs:subPropertyOf omcT:has;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantGroupFor.Participant> ;
+  skos:prefLabel "a participant has participant group" ;
+.
+
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantGroupHasMember.Participant>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ParticipantGroup ;
   rdfs:label "a participant group member has participant" ;
   rdfs:range omc:Participant ;
   rdfs:subPropertyOf omcT:hasMember ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantIsMemberOf.ParticipantGroup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantIsMemberOf.ParticipantGroup> ;
   skos:prefLabel "a participant group has member participant" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantIn.Contribution>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantIn.Contribution>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Participant ;
   rdfs:label "a participant in contribution" ;
   rdfs:range omc:Contribution ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContributionHas.Contributor> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContributionHas.Contributor> ;
   skos:prefLabel "a participnt in contribution" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantIn.WorkUnit>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantIn.WorkUnit>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Participant ;
   rdfs:label "a participant in work unit" ;
   rdfs:range omc:WorkUnit ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aWorkUnitHas.Participant> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aWorkUnitHas.Participant> ;
   skos:prefLabel "a participant in work unit" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantIsMemberOf.ParticipantGroup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantIsMemberOf.ParticipantGroup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Participant ;
   rdfs:label "a participant is member of participant group" ;
   rdfs:range omc:ParticipantGroup ;
-  rdfs:subPropertyOf omcT:isMember ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantGroupHasMember.Participant> ;
+  rdfs:subPropertyOf omcT:isMemberOf ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantGroupHasMember.Participant> ;
   skos:prefLabel "a participant is member of participant group" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalBy.Portrayer>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalBy.Portrayer>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal by portrayer" ;
   rdfs:range omc:Portrayer ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayerOf.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayerOf.Portrayal> ;
   skos:prefLabel "a portrayal by portrayer" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalFor.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalFor.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal for creative work" ;
   rdfs:range omc:CreativeWork ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Portrayal> ;
   skos:prefLabel "a portrayal for creative work" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalIn.Contribution>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalIn.Contribution>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal in contribution" ;
   rdfs:range omc:Contribution ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aContributionHas.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aContributionHas.Portrayal> ;
   skos:prefLabel "a portrayal in contribution" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalPortraying.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalPortraying.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal portraying character" ;
   rdfs:range omc:Character ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterPortrayedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterPortrayedIn.Portrayal> ;
   skos:prefLabel "a portrayal portraying character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal used in production scene" ;
   rdfs:range omc:ProductionScene ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.Portrayal> ;
   skos:prefLabel "a portrayal used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.Costume>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.Costume>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses costume" ;
   rdfs:range omc:Costume ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCostumeUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCostumeUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses costume" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.Depiction>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.Depiction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses depiction" ;
   rdfs:range omc:Depiction ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses depiction" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionGreenery>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionGreenery>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses production greenery" ;
   rdfs:range omc:ProductionGreenery ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionGreeneryUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionGreeneryUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses production greenery" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionHair>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionHair>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses production hair" ;
   rdfs:range omc:ProductionHair ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionHairUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionHairUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses production hair" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionMakeup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionMakeup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses production makeup" ;
   rdfs:range omc:ProductionMakeup ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionMakeupUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionMakeupUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses production makeup" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionProp>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionProp>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses production prop" ;
   rdfs:range omc:ProductionProp ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionPropUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionPropUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses production prop" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionProsthetics>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionProsthetics>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses production prosthetics" ;
   rdfs:range omc:ProductionProsthetics ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionProstheticsUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionProstheticsUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses production prosthetics" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionVehicle>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionVehicle>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Portrayal ;
   rdfs:label "a portrayal uses production vehicle" ;
   rdfs:range omc:ProductionVehicle ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionVehicleUsedIn.Portrayal> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionVehicleUsedIn.Portrayal> ;
   skos:prefLabel "a portrayal uses production vehicle" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayerOf.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayerOf.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:label "a portrayer of portrayal" ;
   rdfs:range omc:Portrayal ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalBy.Portrayer> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalBy.Portrayer> ;
   skos:prefLabel "a portrayer of portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionCompanyFor.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionCompanyFor.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Participant ;
   rdfs:label "a production company for creative work" ;
   rdfs:range omc:CreativeWork ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.ProductionCompany> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.ProductionCompany> ;
   skos:prefLabel "a production company for creative work" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionElementHas.TechnicalReferenceMaterial>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionElementHas.TechnicalReferenceMaterial>
   rdf:type owl:ObjectProperty ;
   rdfs:label "a production element has technical reference material" ;
   rdfs:range omc:TechnicalReferenceMaterial ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTechnicalReferenceMaterialFor.ProductionElement> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTechnicalReferenceMaterialFor.ProductionElement> ;
   skos:prefLabel "a production element has technical reference material" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionGreeneryUsedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionGreeneryUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionGreenery ;
   rdfs:label "a production greenery used in portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionGreenery> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionGreenery> ;
   skos:prefLabel "a production greenery used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionGreeneryUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionGreeneryUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionGreenery ;
   rdfs:label "a production greenery used in production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionGreenery> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionGreenery> ;
   skos:prefLabel "a production greenery used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionGreeneryUsedIn.ProductionSet>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionGreeneryUsedIn.ProductionSet>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionGreenery ;
   rdfs:label "a production greenery used in production set" ;
   rdfs:range omc:ProductionSet ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUses.ProductionGreenery> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUses.ProductionGreenery> ;
   skos:prefLabel "a production greenery used in production set" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionHairUsedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionHairUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionHair ;
   rdfs:label "a production hair used in portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionHair> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionHair> ;
   skos:prefLabel "a production hair used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionHairUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionHairUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionHair ;
   rdfs:label "a production hair used in production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionHair> ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionProp> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionHair> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionProp> ;
   skos:prefLabel "a production hair used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionLocationHas.Location>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionLocationHas.Location>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionLocation ;
   rdfs:label "a production location has location" ;
   rdfs:range omc:Location ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aLocationFor.ProductionLocation> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aLocationFor.ProductionLocation> ;
   skos:prefLabel "a production location has location" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionLocationUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionLocationUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionLocation ;
   rdfs:label "a production location used in production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionLocation> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionLocation> ;
   skos:prefLabel "a production location used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionLocationUses.ProductionSet>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionLocationUses.ProductionSet>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionLocation ;
   rdfs:label "a production location uses production set " ;
   rdfs:range omc:ProductionSet ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUsedIn.ProductionLocation> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUsedIn.ProductionLocation> ;
   skos:prefLabel "a production location uses production set" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionMakeupUsedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionMakeupUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionMakeup ;
   rdfs:label "a production makeup used in portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionMakeup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionMakeup> ;
   skos:prefLabel "a production makeup used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionMakeupUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionMakeupUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionMakeup ;
   rdfs:label "a production makeup used in production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionMakeup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionMakeup> ;
   skos:prefLabel "a production makeup used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionObjectIn.Depiction>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionObjectIn.Depiction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionObject ;
   rdfs:label "a production object in depiction" ;
   rdfs:range omc:Depiction ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionDepicter.ProductionObject> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionDepicter.ProductionObject> ;
   skos:prefLabel "a production object in depiction" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionPropUsedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionPropUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionProp ;
   rdfs:label "a production prop used in portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionProp> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionProp> ;
   skos:prefLabel "a production prop used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionProstheticsUsed.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionProstheticsUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionProsthetics ;
   rdfs:label "a production prothetics used in portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionProsthetics> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionProsthetics> ;
   skos:prefLabel "a production prosthetics used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionProstheticsUsed.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionProstheticsUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionProsthetics ;
   rdfs:label "a production prothetics used in portrayal" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionProsthetics> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionProsthetics> ;
   skos:prefLabel "a production prosthetics used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneFor.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneFor.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene for narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneHas.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneHas.ProductionScene> ;
   skos:prefLabel "a production scene for narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneHas.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneHas.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene has slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.ProductionScene> ;
   skos:prefLabel "a production scene has slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneRelated.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneRelated.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdf:type owl:SymmetricProperty ;
   rdfs:domain omc:ProductionScene ;
@@ -6125,274 +6142,274 @@ omcT:aConceptSubject
   rdfs:subPropertyOf omcT:related ;
   skos:prefLabel "a production scene related production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneRepresentedBy.Capture>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneRepresentedBy.Capture>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene represented by capture" ;
   rdfs:range omc:Capture ;
   rdfs:subPropertyOf omcT:representedBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCaptureRepresents.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCaptureRepresents.ProductionScene> ;
   skos:prefLabel "a production scene represented by capture" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.Costume>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.Costume>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses costume" ;
   rdfs:range omc:Costume ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCostumeUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCostumeUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses costume" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.Depiction>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.Depiction>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses depiction" ;
   rdfs:range omc:Depiction ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDepictionUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDepictionUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses depiction" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses portrayal" ;
   rdfs:range omc:Portrayal ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionGreenery>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionGreenery>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production greenery" ;
   rdfs:range omc:ProductionGreenery ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionGreeneryUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionGreeneryUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production greenery" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionHair>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionHair>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a prodution sceneuses production hair" ;
   rdfs:range omc:ProductionHair ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionHairUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionHairUsedIn.ProductionScene> ;
   skos:prefLabel "a prodution sceneuses production hair" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionLocation>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionLocation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production location" ;
   rdfs:range omc:ProductionLocation ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionLocationUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionLocationUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production location" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionMakeup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionMakeup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production makeup" ;
   rdfs:range omc:ProductionMakeup ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionMakeupUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionMakeupUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production makeup" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionProp>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionProp>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production prop" ;
   rdfs:range omc:ProductionProp ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionHairUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionHairUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production prop" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionProsthetics>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionProsthetics>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production prosthetics" ;
   rdfs:range omc:ProductionProsthetics ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionProstheticsUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionProstheticsUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production prosthetics" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionSet>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionSet>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production set " ;
   rdfs:range omc:ProductionSet ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production set" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionSetDressing>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionSetDressing>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production set dressing" ;
   rdfs:range omc:ProductionSetDressing ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSetDressingUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSetDressingUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production set dressing" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionVehicle>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionVehicle>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionScene ;
   rdfs:label "a production scene uses production vehicle" ;
   rdfs:range omc:ProductionVehicle ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionVehicleUsedIn.ProductionScene> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionVehicleUsedIn.ProductionScene> ;
   skos:prefLabel "a production scene uses production vehicle" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUsedIn.ProductionLocation>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUsedIn.ProductionLocation>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionSet ;
   rdfs:label "a production set used in production location" ;
   rdfs:range omc:ProductionLocation ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionLocationUses.ProductionSet> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionLocationUses.ProductionSet> ;
   skos:prefLabel "a production set used in production location" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionSet ;
   rdfs:label "a production set used in production scene " ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionSet> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionSet> ;
   skos:prefLabel "a production set used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUses.ProductionGreenery>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUses.ProductionGreenery>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionSet ;
   rdfs:label "a production set uses production greenery" ;
   rdfs:range omc:ProductionGreenery ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionGreeneryUsedIn.ProductionSet> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionGreeneryUsedIn.ProductionSet> ;
   skos:prefLabel "a production set uses production greenery" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUses.ProductionSetDressing>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUses.ProductionSetDressing>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionSet ;
   rdfs:label "a production set uses production set dressing" ;
   rdfs:range omc:ProductionSetDressing ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSetDressingUsedIn.ProductionSet> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSetDressingUsedIn.ProductionSet> ;
   skos:prefLabel "a production set uses production set dressing" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionVehicleUsedIn.Portrayal>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionVehicleUsedIn.Portrayal>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionVehicle ;
   rdfs:label "a production vehicle used in portrayal" ;
   rdfs:range omc:Portrayal ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aPortrayalUses.ProductionVehicle> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPortrayalUses.ProductionVehicle> ;
   skos:prefLabel "a production vehicle used in portrayal" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionVehicleUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionVehicleUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionVehicle ;
   rdfs:label "a production vehicle used in production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionVehicle> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionVehicle> ;
   skos:prefLabel "a production vehicle used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProvenanceCreatedBy.Participant>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProvenanceCreatedBy.Participant>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Provenance ;
   rdfs:label "a provenance created by participant" ;
   rdfs:range omc:Participant ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantCreated.Provenance> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantCreated.Provenance> ;
   skos:prefLabel "a provenance for asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProvenanceFor.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProvenanceFor.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Provenance ;
   rdfs:label "a provenance for asset" ;
   rdfs:range omc:Asset ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHas.Provenancet> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.Provenance> ;
   skos:prefLabel "a provenance for asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProvenanceFor.VersionInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProvenanceFor.VersionInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Provenance ;
   rdfs:label "a provenance for version info" ;
   rdfs:range omc:VersionInfo ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVersionInfoHas.Provenancet> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVersionInfoHas.Provenance> ;
   skos:prefLabel "a provenance for version info" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSchedulingFor.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSchedulingFor.Task>
   rdf:type owl:ObjectProperty ;
-  rdfs:domain omc:scheduling ;
+  rdfs:domain omc:Scheduling ;
   rdfs:label "a scheduling for task" ;
   rdfs:range omc:Task ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskas.Scheduling> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHas.Scheduling> ;
   skos:prefLabel "a scheduling for task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aScreenwriterFor.Script>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aScreenwriterFor.Script>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Participant ;
   rdfs:label "a screenwriter for script" ;
   rdfs:range omc:Script ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aScriptHas.Screenwriter> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aScriptHas.Screenwriter> ;
   skos:prefLabel "a screenwriter for script" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aScriptFor.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aScriptFor.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Script ;
   rdfs:label "a script for creative work" ;
   rdfs:range omc:CreativeWork ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Script> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Script> ;
   skos:prefLabel "a script for creative work" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aScriptHas.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aScriptHas.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Script ;
   rdfs:label "a script has narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFor.Script> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFor.Script> ;
   skos:prefLabel "a script has narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aScriptHas.Screenwriter>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aScriptHas.Screenwriter>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Script ;
   rdfs:label "a script has screenwriter " ;
   rdfs:range omc:Participant ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSreenwriteFor.Script> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSreenwriterFor.Script> ;
   skos:prefLabel "a script has screenwriter" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSequenceHas.SCD>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSequenceHas.SCD>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Sequence ;
   rdfs:label "a sequence has SCD" ;
   rdfs:range omc:SequenceChronologyDescriptor ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anSCDFor.Sequence> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anSCDFor.Sequence> ;
   skos:prefLabel "a sequence has SCD " ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSetDressingUsedIn.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSetDressingUsedIn.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionSetDressing ;
   rdfs:label "a set dressing used in production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneUses.ProductionSetDressing> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneUses.ProductionSetDressing> ;
   skos:prefLabel "a set dressing used in production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSetDressingUsedIn.ProductionSet>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSetDressingUsedIn.ProductionSet>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ProductionSetDressing ;
   rdfs:label "a set dressing used in production set" ;
   rdfs:range omc:ProductionSet ;
   rdfs:subPropertyOf omcT:usedIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSetUses.ProductionSetDressing> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSetUses.ProductionSetDressing> ;
   skos:prefLabel "a set dressing used in production set" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aShotFor.SCDCoponent>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aShotFor.SCDComponent>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Shot ;
   rdfs:label "a shot for SCD component" ;
@@ -6401,532 +6418,532 @@ omcT:aConceptSubject
   owl:inverseOf omcT:anSCD_ComponentHasShot ;
   skos:prefLabel "a shot for SCD component" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aShotHas.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aShotHas.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Shot ;
   rdfs:label "a shot has slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.Shot> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.Shot> ;
   skos:prefLabel "a shot has slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate for asset" ;
   rdfs:range omc:Asset ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHas.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.Slate> ;
   skos:prefLabel "a slate for asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.CameraMetadata>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.CameraMetadata>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate for camera metadata" ;
   rdfs:range omc:CameraMetadata ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCameraMetadataHas.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCameraMetadataHas.Slate> ;
   skos:prefLabel "a slate for camera metadata" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.Capture>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.Capture>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate for capture" ;
   rdfs:range omc:Capture ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCaptureHas.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCaptureHas.Slate> ;
   skos:prefLabel "a slate for capture" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.CreativeWork>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.CreativeWork>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate for creative work" ;
   rdfs:range omc:CreativeWork ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCreativeWorkHas.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCreativeWorkHas.Slate> ;
   skos:prefLabel "a slate for creative work" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.ProductionScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.ProductionScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate for production scene" ;
   rdfs:range omc:ProductionScene ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionSceneHas.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionSceneHas.Slate> ;
   skos:prefLabel "a slate for production scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.Shot>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.Shot>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate for shot" ;
   rdfs:range omc:Shot ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aShotHas.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aShotHas.Slate> ;
   skos:prefLabel "a slate for shot" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateHas.Camera>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateHas.Camera>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate has camera" ;
   rdfs:range omc:Camera ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCameraFor.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCameraFor.Slate> ;
   skos:prefLabel "a slate has camera" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateHas.CameraUnit>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateHas.CameraUnit>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate has camera unit" ;
   rdfs:range omc:CameraUnit ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCameraUnitFor.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCameraUnitFor.Slate> ;
   skos:prefLabel "a slate has camera unit" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateHas.Director>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateHas.Director>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Slate ;
   rdfs:label "a slate has " ;
   rdfs:range omc:Participant ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aDirectorFor.Slate> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aDirectorFor.Slate> ;
   skos:prefLabel "a slate has directory" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialActionInvolves.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialActionInvolves.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SpecialAction ;
   rdfs:label "an special action involves character"@en ;
   rdfs:range omc:Character ;
   skos:prefLabel "an special action involves character"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialActionInvolves.NarrativeProp>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialActionInvolves.NarrativeProp>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SpecialAction ;
   rdfs:label "an special action involves narrative prop"@en ;
   rdfs:range omc:NarrativeProp ;
   skos:prefLabel "an special action involves narrative prop"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialActionInvolves.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialActionInvolves.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SpecialAction ;
   rdfs:label "an special action involves narrative scene"@en ;
   rdfs:range omc:NarrativeScene ;
   skos:prefLabel "an special action involves narrative scene"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialActionInvolves.NarrativeVehicle>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialActionInvolves.NarrativeVehicle>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SpecialAction ;
   rdfs:label "an special action involves narrative vehicle"@en ;
   rdfs:range omc:NarrativeVehicle ;
   skos:prefLabel "an special action involves narrative vehicle"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialEffectFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialEffectFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SpecialEffect ;
   rdfs:label "a special effect features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.SpecialEffect> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.SpecialEffect> ;
   skos:prefLabel "a special effect features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSpecialEffectNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSpecialEffectNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SpecialEffect ;
   rdfs:label "a special effect needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.SpecialEffect> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.SpecialEffect> ;
   skos:prefLabel "a special effect needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aStoryboardFor.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aStoryboardFor.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Storyboard ;
   rdfs:label "a storyoard for narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneHas.Storyboard> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneHas.Storyboard> ;
   skos:prefLabel "a storyboard for narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aStuntFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aStuntFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Stunt ;
   rdfs:label "a stunt features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Stunt> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Stunt> ;
   skos:prefLabel "a stunt features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aStuntNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aStuntNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Stunt ;
   rdfs:label "a stunt needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Stunt> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.Stunt> ;
   skos:prefLabel "a stunt needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskGroupFor.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskGroupFor.Task>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:TaskGroup ;
   rdfs:label "a task group for task" ;
   rdfs:range omc:Task ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskHas.TaskGroup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHas.TaskGroup> ;
   skos:prefLabel "a task group for task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskGroupHasMember.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskGroupHasMember.Task>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:TaskGroup ;
   rdfs:label "a task group has member task" ;
   rdfs:range omc:Task ;
   rdfs:subPropertyOf omcT:hasMember ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskIsMemberOf.TaskGroup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskIsMemberOf.TaskGroup> ;
   skos:prefLabel "a task group has member task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskHas.Scheduling>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHas.Scheduling>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task has scheduling" ;
   rdfs:range omc:Scheduling ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSchedulingFor.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSchedulingFor.Task> ;
   skos:prefLabel "a task has scheduling" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskHas.TaskGroup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHas.TaskGroup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task has task group" ;
   rdfs:range omc:TaskGroup ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskGroupFor.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskGroupFor.Task> ;
   skos:prefLabel "a task has task group" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskHasInput.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHasInput.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task has input asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIsInputFor.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIsInputFor.Task> ;
   skos:prefLabel "a task input asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskHasOutput.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHasOutput.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task has output asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIsOutputFor.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIsOutputFor.Task> ;
   skos:prefLabel "a task has output asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskIn.WorkUnit>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskIn.WorkUnit>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task in work unit" ;
   rdfs:range omc:WorkUnit ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aWorkUnitHas.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aWorkUnitHas.Task> ;
   skos:prefLabel "a task in work unit" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskInformedBy.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskInformedBy.Task>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task informed by task" ;
   rdfs:range omc:Task ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskInforms.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskInforms.Task> ;
   skos:prefLabel "a task informed by task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskInforms.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskInforms.Task>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task informs task" ;
   rdfs:range omc:Task ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskInformedBy.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskInformedBy.Task> ;
   skos:prefLabel "a task informs task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskIsMemberOf.TaskGroup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskIsMemberOf.TaskGroup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Task ;
   rdfs:label "a task is member of task group" ;
   rdfs:range omc:TaskGroup ;
   rdfs:subPropertyOf omcT:isMemberOf ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskGroupHasMember.Task> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskGroupHasMember.Task> ;
   skos:prefLabel "a task is member of task group" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTechnicalReferenceMaterialFor.ProductionElement>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTechnicalReferenceMaterialFor.ProductionElement>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:TechnicalReferenceMaterial ;
   rdfs:label "a technical reference material for production element" ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProductionElementHas.TechnicalReferenceMaterial> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProductionElementHas.TechnicalReferenceMaterial> ;
   skos:prefLabel "a technical reference material for production element" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVariantInfoFor.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVariantInfoFor.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:VariantInfo ;
   rdfs:label "a variant info for asset" ;
   rdfs:range omc:Asset ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHas.VariantInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.VariantInfo> ;
   skos:prefLabel "a variant info for asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVariantInfoVariantOf.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVariantInfoVariantOf.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:VariantInfo ;
   rdfs:label "a variant info variant of asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHasVariant.VariantInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHasVariant.VariantInfo> ;
   skos:prefLabel "a variant info variant of asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVersionInfotHas.Provenance>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVersionInfoHas.Provenance>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:VersionInfo ;
   rdfs:label "a version info has provenance" ;
   rdfs:range omc:Provenance ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProvenanceFor.VersionInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProvenanceFor.VersionInfo> ;
   skos:prefLabel "a version info has provenance" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVisualEffectFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVisualEffectFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:VisualEffect ;
   rdfs:label "a visual effect features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.VisualEffect> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.VisualEffect> ;
   skos:prefLabel "a visual effect features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVisualEffectNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVisualEffectNeededBy.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:VisualEffect ;
   rdfs:label "a visual effect needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.VisualEffect> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.VisualEffect> ;
   skos:prefLabel "a visual effect needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aWorkUnitHas.Participant>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aWorkUnitHas.Participant>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:WorkUnit ;
   rdfs:label "a work unit has participant" ;
   rdfs:range omc:Participant ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aParticipantIn.WorkUnit> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aParticipantIn.WorkUnit> ;
   skos:prefLabel "a work unit has participant" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#aWorkUnitHas.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#aWorkUnitHas.Task>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:WorkUnit ;
   rdfs:label "a work unit has task" ;
   rdfs:range omc:Task ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskIn.WorkUnit> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskIn.WorkUnit> ;
   skos:prefLabel "a work unit has task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAerialFeaturesIn.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAerialActionFeaturesIn.NarrativeScene>
   rdf:type owl:ObjectProperty ;
-  rdfs:domain omc:Aerial ;
+  rdfs:domain omc:AerialAction ;
   rdfs:label "an aerial features in narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:featuresIn ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneFeatures.Aerial> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneFeatures.Aerial> ;
   skos:prefLabel "an aerial features in narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAerialNeededBy.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAerialActionNeededBy.Character>
   rdf:type owl:ObjectProperty ;
-  rdfs:domain omc:Aerial ;
+  rdfs:domain omc:AerialAction ;
   rdfs:label "an aerial needed by character" ;
   rdfs:range omc:Character ;
   rdfs:subPropertyOf omcT:neededBy ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCharacterNeeds.Aerial> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aCharacterNeeds.Aerial> ;
   skos:prefLabel "an aerial needed by character" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAnimatedStoryboardFor.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAnimatedStoryboardFor.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:AnimatedStoryboard ;
   rdfs:label "an animated storyoard for narrative scene" ;
   rdfs:range omc:NarrativeScene ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aNarrativeSceneHas.AnimatedStoryboard> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aNarrativeSceneHas.AnimatedStoryboard> ;
   skos:prefLabel "an animated storyboard for narrative scene" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetAsStructureUses.Carrier>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetAsStructureUses.PhysicalAsset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:AssetAsStructure ;
   rdfs:label "an asset as structure uses carrier" ;
-  rdfs:range omc:Carrier ;
+  rdfs:range omc:PhysicalAsset ;
   rdfs:subPropertyOf omcT:uses ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aCarrierUsedBy.AssetAsStructure> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aPhysicalAssetUsedBy.AssetAsStructure> ;
   skos:prefLabel "an asset as structure uses carrier" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetGroupFor.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetGroupFor.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:AssetGroup ;
   rdfs:label "an asset group for asset" ;
   rdfs:range omc:Asset ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssettHas.AssetGroup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.AssetGroup> ;
   skos:prefLabel "an asset group for asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetGroupHasMember.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetGroupHasMember.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:AssetGroup ;
   rdfs:label "an asset group has member asset" ;
   rdfs:range omc:Asset ;
   rdfs:subPropertyOf omcT:hasMember ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIsMemberOf.AssetGroup> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIsMemberOf.AssetGroup> ;
   skos:prefLabel "an asset group has member asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHas.AssetGroup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.AssetGroup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset has asset group" ;
   rdfs:range omc:AssetGroup ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetGroupFor.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetGroupFor.Asset> ;
   skos:prefLabel "an asset has asset group" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHas.Provenance>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.Provenance>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset has provenance" ;
   rdfs:range omc:Provenance ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aProvenanceFor.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aProvenanceFor.Asset> ;
   skos:prefLabel "an asset has provenance" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHas.Slate>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.Slate>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset has slate" ;
   rdfs:range omc:Slate ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSlateFor.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSlateFor.Asset> ;
   skos:prefLabel "an asset has slate" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHas.VariantInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHas.VariantInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset has variant info" ;
   rdfs:range omc:VariantInfo ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVariantInfoFor.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVariantInfoFor.Asset> ;
   skos:prefLabel "an asset has variant info " ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetHasVariant.VariantInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetHasVariant.VariantInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset has variant" ;
   rdfs:range omc:VariantInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aVariantInfoVariantOf.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aVariantInfoVariantOf.Asset> ;
   skos:prefLabel "an asset has variant" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIn.Concept>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIn.Concept>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset idea in concept" ;
   rdfs:range omc:Concept ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aConceptIdea.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aConceptIdea.Asset> ;
   skos:prefLabel "an asset idea in concept" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIsInputFor.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIsInputFor.Task>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset is input for task" ;
   rdfs:range omc:Task ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskHasInput.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHasInput.Asset> ;
   skos:prefLabel "an asset is input for task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIsMemberOf.AssetGroup>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIsMemberOf.AssetGroup>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset is member of asset group" ;
   rdfs:range omc:AssetGroup ;
   rdfs:subPropertyOf omcT:isMemberOf ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetGroupHasMember.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetGroupHasMember.Asset> ;
   skos:prefLabel "an asset is member of asset group" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anAssetIsOutputFor.Task>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anAssetIsOutputFor.Task>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "an asset is output for task" ;
   rdfs:range omc:Task ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aTaskHasOutput.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aTaskHasOutput.Asset> ;
   skos:prefLabel "an asset is output for task" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anEffectInvolves.Character>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anEffectInvolves.Character>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Effect ;
   rdfs:label "an effect involves character"@en ;
   rdfs:range omc:Character ;
   skos:prefLabel "an effect involves character"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anEffectInvolves.NarrativeProp>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anEffectInvolves.NarrativeProp>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Effect ;
   rdfs:label "an effect involves narrative prop"@en ;
   rdfs:range omc:NarrativeProp ;
   skos:prefLabel "an effect involves narrative prop"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anEffectInvolves.NarrativeScene>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anEffectInvolves.NarrativeScene>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Effect ;
   rdfs:label "an effect involves narrative scene"@en ;
   rdfs:range omc:NarrativeScene ;
   skos:prefLabel "an effect involves narrative scene"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anEffectInvolves.NarrativeVehicle>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anEffectInvolves.NarrativeVehicle>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Effect ;
   rdfs:label "an effect involves narrative vehicle"@en ;
   rdfs:range omc:NarrativeVehicle ;
   skos:prefLabel "an effect involves narrative vehicle"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anImageFor.ImageSequence>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anImageFor.ImageSequence>
   rdf:type owl:ObjectProperty ;
   rdfs:label "an image for image sequence" ;
   rdfs:range omc:ImageSequence ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anImageSequenceHas.Image> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anImageSequenceHas.Image> ;
   skos:prefLabel "an image for image sequence" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anImageSequenceHas.Image>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anImageSequenceHas.Image>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:ImageSequence ;
   rdfs:label "an image sequence has image " ;
   rdfs:range omc:Image ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anImageFor.ImageSequnce> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anImageFor.ImageSequence> ;
   skos:prefLabel "an image sequence has image" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anSCDComponentFor.SCD>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anSCDComponentFor.SCD>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SCD_Component ;
-  rdfs:label "an SCD Coponent for SCD" ;
+  rdfs:label "an SCD Component for SCD" ;
   rdfs:range omc:SequenceChronologyDescriptor ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anSCDHas.SCDComponent> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anSCDHas.SCDComponent> ;
   skos:prefLabel "an SCD component for SCD" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anSCDCoponentHas.Shot>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anSCDComponentHas.Shot>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SCD_Component ;
   rdfs:label "an SCD component has shot" ;
   rdfs:range omc:Shot ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aShotFor.SCD_Component> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aShotFor.SCDComponent> ;
   skos:prefLabel "an SCD component has shot " ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anSCDFor.Sequence>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anSCDFor.Sequence>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SequenceChronologyDescriptor ;
   rdfs:label "an SCD for sequence" ;
   rdfs:range omc:Sequence ;
   rdfs:subPropertyOf omcT:for ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#aSequenceHas.SCD> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#aSequenceHas.SCD> ;
   skos:prefLabel "an SCD for sequence" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#anSCDHas.SCDComponent>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#anSCDHas.SCDComponent>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:SequenceChronologyDescriptor ;
   rdfs:label "an SCD has SCD component" ;
   rdfs:range omc:SCD_Component ;
   rdfs:subPropertyOf omcT:has ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#anSCDComponentFor.SCD> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#anSCDComponentFor.SCD> ;
   skos:prefLabel "an SCD has SCD component" ;
 .
 omcT:basedOn
@@ -6943,84 +6960,84 @@ omcT:basisFor
   owl:inverseOf omcT:basedOn ;
   skos:prefLabel "basis for" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesAlternative.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesAlternative.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:AlternativeInfo ;
   rdfs:label "describes alternative" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#isAlternativeDescribedBy.AlternativeInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#isAlternativeDescribedBy.AlternativeInfo> ;
   skos:prefLabel "describes alternative" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesAlternativeOf.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesAlternativeOf.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:AlternativeInfo ;
   rdfs:label "describes alternative of asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasAlternativeDescribedBy.AlternativeInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasAlternativeDescribedBy.AlternativeInfo> ;
   skos:prefLabel "describes alternative of asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesDerivation.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesDerivation.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:DerivationInfo ;
   rdfs:label "describes derivation" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#isDerivationDescribedBy.DerivationInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#isDerivationDescribedBy.DerivationInfo> ;
   skos:prefLabel "describes derivation" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesDerivationOf.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesDerivationOf.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:DerivationInfo ;
   rdfs:label "describes derivation of asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasDerivationDescribedBy.DerivationInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasDerivationDescribedBy.DerivationInfo> ;
   skos:prefLabel "describes derivation of asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRepresentation.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRepresentation.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:RepresentationInfo ;
   rdfs:label "describes representation" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#isRepresentationDescribedBy.RepresentationInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#isRepresentationDescribedBy.RepresentationInfo> ;
   skos:prefLabel "describes representation" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRepresentationOf.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRepresentationOf.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:RepresentationInfo ;
   rdfs:label "describes representation of asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasRepresentationDescribedBy.RepresentationInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasRepresentationDescribedBy.RepresentationInfo> ;
   skos:prefLabel "describes representation of asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRevision.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRevision.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:RevisionInfo ;
   rdfs:label "describes revision" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#isRevisionDescribedBy.RevisionInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#isRevisionDescribedBy.RevisionInfo> ;
   skos:prefLabel "describes revision" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRevisionOf.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRevisionOf.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:RevisionInfo ;
   rdfs:label "describes revision of asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasRevisionDescribedBy.RevisionInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasRevisionDescribedBy.RevisionInfo> ;
   skos:prefLabel "describes revision of asset" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesVersion.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesVersion.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:VersionInfo ;
   rdfs:label "describes version" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#isVersionDescribedBy.VersionInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#isVersionDescribedBy.VersionInfo> ;
   skos:prefLabel "describes version" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesVersionOf.Asset>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesVersionOf.Asset>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:VersionInfo ;
   rdfs:label "describes version of asset" ;
   rdfs:range omc:Asset ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasVersionDescribedBy.VersionInfo> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasVersionDescribedBy.VersionInfo> ;
   skos:prefLabel "describes version of asset" ;
 .
 omcT:features
@@ -7049,20 +7066,20 @@ omcT:has
   owl:inverseOf omcT:for ;
   skos:prefLabel "has"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasAlternativeDescribedBy.AlternativeInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasAlternativeDescribedBy.AlternativeInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "has alternative described by" ;
   rdfs:range omc:AlternativeInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesAlternativeOf.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesAlternativeOf.Asset> ;
   skos:prefLabel "has alternative described by" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasDerivationDescribedBy.DerivationInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasDerivationDescribedBy.DerivationInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "has derivation described by" ;
   rdfs:range omc:DerivationInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesDerivationOf.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesDerivationOf.Asset> ;
   skos:prefLabel "has derivation described by" ;
 .
 omcT:hasMember
@@ -7071,31 +7088,31 @@ omcT:hasMember
   owl:inverseOf omcT:isMemberOf ;
   skos:prefLabel "has member"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasRepresentationDescribedBy.RepresentationInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasRepresentationDescribedBy.RepresentationInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "has representation described by" ;
   rdfs:range omc:RepresentationInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRepresentationOf.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRepresentationOf.Asset> ;
   skos:prefLabel "has representation described by" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasRevisionDescribedBy.RevisionInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasRevisionDescribedBy.RevisionInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "has revision described by" ;
   rdfs:range omc:RevisionInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRevisionOf.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRevisionOf.Asset> ;
   skos:prefLabel "has revision described by" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#hasVersionDescribedBy.VersionInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#hasVersionDescribedBy.VersionInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "has version described by" ;
   rdfs:range omc:VersionInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesVersionOf.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesVersionOf.Asset> ;
   skos:prefLabel "has version described by" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#in.Concept>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#in.Concept>
   rdf:type owl:ObjectProperty ;
   rdfs:label "in concept" ;
   rdfs:range omc:Concept ;
@@ -7113,23 +7130,23 @@ omcT:inspires
   rdf:type owl:ObjectProperty ;
   rdfs:label "inspires" ;
   rdfs:range omc:CreativeWork ;
-  owl:inverseOf omcT:inspireBy ;
+  owl:inverseOf omcT:inspiredBy ;
   skos:prefLabel "inspires" ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#isAlternativeDescribedBy.AlternativeInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#isAlternativeDescribedBy.AlternativeInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "is alternative described by alternative info" ;
   rdfs:range omc:AlternativeInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesAlternative.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesAlternative.Asset> ;
   skos:prefLabel "is alternative described by alternative info " ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#isDerivationDescribedBy.DerivationInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#isDerivationDescribedBy.DerivationInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "is derivation described by derivation info" ;
   rdfs:range omc:DerivationInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesDerivation.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesDerivation.Asset> ;
   skos:prefLabel "is derivation described by derivation info " ;
 .
 omcT:isMemberOf
@@ -7138,28 +7155,28 @@ omcT:isMemberOf
   owl:inverseOf omcT:hasMember ;
   skos:prefLabel "is member of"@en ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#isRepresentationDescribedBy.RepresentationInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#isRepresentationDescribedBy.RepresentationInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "is representation described by representation info" ;
   rdfs:range omc:RepresentationInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRepresentation.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRepresentation.Asset> ;
   skos:prefLabel "is representation described by representation info " ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#isRevisionDescribedBy.RevisionInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#isRevisionDescribedBy.RevisionInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "is revision described by revision info" ;
   rdfs:range omc:RevisionInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesRevision.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesRevision.Asset> ;
   skos:prefLabel "is revision described by revision info " ;
 .
-<https://movielabs.com/omc/rdf/schema/v2.0Tentative#isVersionDescribedBy.VersionInfo>
+<https://movielabs.com/omc/rdf/schema/v2.5Tentative#isVersionDescribedBy.VersionInfo>
   rdf:type owl:ObjectProperty ;
   rdfs:domain omc:Asset ;
   rdfs:label "is version described by version info" ;
   rdfs:range omc:VersionInfo ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0Tentative#describesVersion.Asset> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5Tentative#describesVersion.Asset> ;
   skos:prefLabel "is version described by version info " ;
 .
 omcT:neededBy
@@ -7173,7 +7190,7 @@ omcT:needs
   rdf:type owl:ObjectProperty ;
   rdfs:label "needs"@en ;
   rdfs:range omc:NarrativeObject ;
-  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.0#needed.by.Character> ;
+  owl:inverseOf <https://movielabs.com/omc/rdf/schema/v2.5#needed.by.Character> ;
   skos:prefLabel "needs"@en ;
 .
 omcT:related
