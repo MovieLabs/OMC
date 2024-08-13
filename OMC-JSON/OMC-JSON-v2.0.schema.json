@@ -3541,7 +3541,7 @@
                             "description": "Encode a set of measurements to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
                             "properties": {
                                 "height": {
-                                    "description": "The height or Y axis of the object",
+                                    "description": "The height or X axis of the object",
                                     "oneOf": [
                                         {"type": "null"},
                                         {
