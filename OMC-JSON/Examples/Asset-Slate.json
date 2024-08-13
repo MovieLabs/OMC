@@ -1,0 +1,671 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "etc",
+        "identifierValue": "ast-ShURLZv1l8RouJH"
+      }
+    ],
+    "name": "A006C4E2",
+    "description": "Captures for Lab Roll A006",
+    "assetFC": {
+      "functionalType": "capture.roll",
+      "functionalProperties": {
+        "cameraLabel": "A",
+        "cameraRoll": "A006"
+      }
+    },
+    "Asset": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-9POMjZP1f8muWdv"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "A006C001_24020722"
+            }
+          ],
+          "name": "A006C001_24020722",
+          "description": "OCF for 6B-1-A",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "A006C001_24020722.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "A006C001_24020722",
+            "cameraLabel": "A",
+            "cameraRoll": "A006",
+            "clip": "001",
+            "cameraUnit": "Main",
+            "timeCodeStart": "11:10:54:05"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-qGn7qd0hu92ehxM-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-aBONxhMglJAVEnK"
+                    }
+                  ],
+                  "name": "6B-1-A",
+                  "description": "Scene: 6B, Take: 1, Camera: A",
+                  "slateUID": "6B-1",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "A",
+                  "cameraRoll": "A006C4E2",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-vg71wUSbN38g4DX"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "A006C002_240207CY"
+            }
+          ],
+          "name": "A006C002_240207CY",
+          "description": "OCF for 6B-2-A",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "A006C002_240207CY.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "A006C002_240207CY",
+            "cameraLabel": "A",
+            "cameraRoll": "A006",
+            "clip": "002",
+            "cameraUnit": "Main",
+            "timeCodeStart": "11:18:22:02"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-M9yeYz3DWs2z7j0-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-PXCbhroRQwv6VCX"
+                    }
+                  ],
+                  "name": "6B-2-A",
+                  "description": "Scene: 6B, Take: 2, Camera: A",
+                  "slateUID": "6B-2",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "A",
+                  "cameraRoll": "A006C4E2",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-O6OTtQ7CWNzOzbJ"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "A006C003_240207Z5"
+            }
+          ],
+          "name": "A006C003_240207Z5",
+          "description": "OCF for 6B-3-A",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "A006C003_240207Z5.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "A006C003_240207Z5",
+            "cameraLabel": "A",
+            "cameraRoll": "A006",
+            "clip": "003",
+            "cameraUnit": "Main",
+            "timeCodeStart": "11:23:41:14"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-NIDeq5qXGAjY3x5-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-44SX6NzAek4gGnZ"
+                    }
+                  ],
+                  "name": "6B-3-A",
+                  "description": "Scene: 6B, Take: 3, Camera: A",
+                  "slateUID": "6B-3",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "A",
+                  "cameraRoll": "A006C4E2",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-HPhjKo5DXSim01C"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "B001C001_240207NU"
+            }
+          ],
+          "name": "B001C001_240207NU",
+          "description": "OCF for 6B-1-B",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "B001C001_240207NU.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "B001C001_240207NU",
+            "cameraLabel": "B",
+            "cameraRoll": "B001",
+            "clip": "001",
+            "cameraUnit": "Main",
+            "timeCodeStart": "11:10:54:14"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-2RbCExAhDlThIJJ-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-Xe2rR1cKwWNGt0d"
+                    }
+                  ],
+                  "name": "6B-1-B",
+                  "description": "Scene: 6B, Take: 1, Camera: B",
+                  "slateUID": "6B-1",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "B",
+                  "cameraRoll": "B001CY72",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-Y5mbHMiOd4rAcf5"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "B001C002_240207DN"
+            }
+          ],
+          "name": "B001C002_240207DN",
+          "description": "OCF for 6B-2-B",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "B001C002_240207DN.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "B001C002_240207DN",
+            "cameraLabel": "B",
+            "cameraRoll": "B001",
+            "clip": "002",
+            "cameraUnit": "Main",
+            "timeCodeStart": "11:18:09:03"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-jXKA1fkuUzlON4u-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-JKe9naGNYjCNZoQ"
+                    }
+                  ],
+                  "name": "6B-2-B",
+                  "description": "Scene: 6B, Take: 2, Camera: B",
+                  "slateUID": "6B-2",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "B",
+                  "cameraRoll": "B001CY72",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-4wH4ldXR03dpDoc"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "A006C004_2402073T"
+            }
+          ],
+          "name": "A006C004_2402073T",
+          "description": "OCF for 6C-1-A",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "A006C004_2402073T.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "A006C004_2402073T",
+            "cameraLabel": "A",
+            "cameraRoll": "A006",
+            "clip": "004",
+            "cameraUnit": "Main",
+            "timeCodeStart": "12:00:01:22"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-SPqjrX5xkeHOYh6-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-BiS2cYcJvhf21b6"
+                    }
+                  ],
+                  "name": "6C-1-A",
+                  "description": "Scene: 6C, Take: 1, Camera: A",
+                  "slateUID": "6C-1",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "A",
+                  "cameraRoll": "A006C4E2",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-hDc1D7s1sGszjO3"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "A006C005_240207WG"
+            }
+          ],
+          "name": "A006C005_240207WG",
+          "description": "OCF for 6C-2-A",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "A006C005_240207WG.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "A006C005_240207WG",
+            "cameraLabel": "A",
+            "cameraRoll": "A006",
+            "clip": "005",
+            "cameraUnit": "Main",
+            "timeCodeStart": "12:04:29:11"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-7MqjNT5ZF5blzHf-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-m0NcDQixUeOrpr2"
+                    }
+                  ],
+                  "name": "6C-2-A",
+                  "description": "Scene: 6C, Take: 2, Camera: A",
+                  "slateUID": "6C-2",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "A",
+                  "cameraRoll": "A006C4E2",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "etc",
+            "identifierValue": "ast-1amTHlmN1Qyl3Bg"
+          }
+        ],
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "etc",
+              "identifierValue": "A006C006_240207XX"
+            }
+          ],
+          "name": "A006C006_240207XX",
+          "description": "OCF for 6C-3-A",
+          "structuralType": "digital.movingImage",
+          "structuralProperties": {
+            "fileDetails": {
+              "fileExtension": "mxf",
+              "fileName": "A006C006_240207XX.mxf"
+            },
+            "linkset": {
+              "mediaType": "video"
+            }
+          }
+        },
+        "assetFC": {
+          "functionalType": "capture.video.ocf",
+          "functionalProperties": {
+            "clipName": "A006C006_240207XX",
+            "cameraLabel": "A",
+            "cameraRoll": "A006",
+            "clip": "006",
+            "cameraUnit": "Main",
+            "timeCodeStart": "12:08:45:09"
+          }
+        },
+        "Context": [
+          {
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+            "entityType": "Context",
+            "identifier": [
+              {
+                "identifierScope": "etc",
+                "identifierValue": "cxt-zjorz9gK2p5Eqpm-1"
+              }
+            ],
+            "name": "capture.slate",
+            "description": null,
+            "has": {
+              "Slate": [
+                {
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.1",
+                  "entityType": "Slate",
+                  "identifier": [
+                    {
+                      "identifierScope": "etc",
+                      "identifierValue": "slt-p00iIm4lVh7osXk"
+                    }
+                  ],
+                  "name": "6C-3-A",
+                  "description": "Scene: 6C, Take: 3, Camera: A",
+                  "slateUID": "6C-3",
+                  "cameraUnit": "MaIn",
+                  "cameraLabel": "A",
+                  "cameraRoll": "A006C4E2",
+                  "soundRoll": null,
+                  "shootDate": "2022-07-23",
+                  "shootDay": 1,
+                  "recordingFPS": 24
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

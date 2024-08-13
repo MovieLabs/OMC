@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
-    "$id": "https://movielabs.com/omc/json/schema/v2.0",
+    "$id": "https://movielabs.com/omc/json/schema/v2.1",
     "title": "OMC-JSON schema v2.0",
     "$comment": "Copyright 2021-2023 Motion Picture Laboratories, Inc.\nSPDX-License-Identifier: APACHE-2.0",
     "oneOf": [
@@ -2562,6 +2562,140 @@
                     ],
                     "description": "Defined either by explicit divisions in the structure of the Script, e.g., by a Slugline, or by additional capture for use in the Creative Work that is not tied to any particular Scene in the Script."
                 },
+                "Slate": {
+                    "type": "object",
+                    "title": "Slate",
+                    "properties": {
+                        "schemaVersion": {
+                            "title": "Schema Version",
+                            "$ref": "#/$defs/core/properties/schemaVersion"
+                        },
+                        "entityType": {
+                            "type": "string",
+                            "title": "Entity Type",
+                            "const": "Slate"
+                        },
+                        "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
+                        "name": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Slate Name",
+                            "description": "A human readable name for the Slate"
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "description": "A brief description of the slate",
+                            "title": "Slate description"
+                        },
+                        "slateUID": {
+                            "type": "string",
+                            "title": "Slate UID",
+                            "description": "Slate Unique Identifier"
+                        },
+                        "cameraLabel": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Camera Label",
+                            "description": "Label for the Camera responsible for the Capture, usually related to the role and responsibility of the group operating it and usually a single upper-case letter starting with A."
+                        },
+                        "cameraUnit": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Camera Unit",
+                            "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
+                        },
+                        "cameraRoll": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Camera Roll",
+                            "description": "Identifier for a group of events captured together on the same camera on the same media."
+                        },
+                        "soundRoll": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Sound Roll",
+                            "description": "Identifier for a group of audio events captured together on the same recording device and same media."
+                        },
+                        "shootDate": {
+                            "title": "Shoot Date",
+                            "$ref": "#/$defs/Utility/properties/time/properties/date",
+                            "description": "The date of capture or creation"
+                        },
+                        "shootDay": {
+                            "type": [
+                                "number",
+                                "string",
+                                "null"
+                            ],
+                            "title": "Shoot Day",
+                            "description": "The number of the day on the shooting schedule."
+                        },
+                        "recordingFPS": {
+                            "type": [
+                                "number",
+                                "null"
+                            ],
+                            "title": "Recording FPS",
+                            "description": "Frames per second recorded by the camera."
+                        },
+                        "CreativeWork": {
+                            "oneOf": [
+                                {"$ref": "#/$defs/core/properties/reference"},
+                                {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
+                            ]
+                        },
+                        "Director": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "title": "Director",
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/Participant/properties/Participant"}
+                                ]
+                            }
+                        },
+                        "customData": {"$ref": "#/$defs/core/properties/customData"},
+                        "Context": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
+                                ]
+                            }
+                        },
+                        "entityInfo": {
+                            "title": "Entity Information",
+                            "$ref": "#/$defs/core/properties/entityInfo"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "entityType",
+                        "identifier",
+                        "schemaVersion"
+                    ],
+                    "description": "Used to capture key identifying information about what is being recorded on any given setup and take."
+                },
                 "Sequence": {
                     "type": "object",
                     "title": "Sequence",
@@ -2705,140 +2839,6 @@
                         "schemaVersion"
                     ],
                     "description": "A sequence of shots linked to creative intent."
-                },
-                "Slate": {
-                    "type": "object",
-                    "title": "Slate",
-                    "properties": {
-                        "schemaVersion": {
-                            "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
-                        },
-                        "entityType": {
-                            "type": "string",
-                            "title": "Entity Type",
-                            "const": "Slate"
-                        },
-                        "identifier": {"$ref": "#/$defs/Utility/properties/identifier"},
-                        "name": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Slate Name",
-                            "description": "A human readable name for the Slate"
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "description": "A brief description of the slate",
-                            "title": "Slate description"
-                        },
-                        "slateUID": {
-                            "type": "string",
-                            "title": "Slate UID",
-                            "description": "Slate Unique Identifier"
-                        },
-                        "cameraLabel": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Camera Label",
-                            "description": "Label for the Camera responsible for the Capture, usually related to the role and responsibility of the group operating it and usually a single upper-case letter starting with A."
-                        },
-                        "cameraUnit": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Camera Unit",
-                            "description": "A group of Participants responsible for shooting some element of a Scene, e.g., a Main Unit or Second Unit."
-                        },
-                        "cameraRoll": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Camera Roll",
-                            "description": "Identifier for a group of events captured together on the same camera on the same media."
-                        },
-                        "soundRoll": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Sound Roll",
-                            "description": "Identifier for a group of audio events captured together on the same recording device and same media."
-                        },
-                        "shootDate": {
-                            "title": "Shoot Date",
-                            "$ref": "#/$defs/Utility/properties/time/properties/date",
-                            "description": "The date of capture or creation"
-                        },
-                        "shootDay": {
-                            "type": [
-                                "number",
-                                "string",
-                                "null"
-                            ],
-                            "title": "Shoot Day",
-                            "description": "The number of the day on the shooting schedule."
-                        },
-                        "recordingFPS": {
-                            "type": [
-                                "number",
-                                "null"
-                            ],
-                            "title": "Recording FPS",
-                            "description": "Frames per second recorded by the camera."
-                        },
-                        "CreativeWork": {
-                            "oneOf": [
-                                {"$ref": "#/$defs/core/properties/reference"},
-                                {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
-                            ]
-                        },
-                        "Director": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
-                            "title": "Director",
-                            "items": {
-                                "anyOf": [
-                                    {"$ref": "#/$defs/core/properties/reference"},
-                                    {"$ref": "#/$defs/Participant/properties/Participant"}
-                                ]
-                            }
-                        },
-                        "customData": {"$ref": "#/$defs/core/properties/customData"},
-                        "Context": {
-                            "type": [
-                                "array",
-                                "null"
-                            ],
-                            "items": {
-                                "anyOf": [
-                                    {"$ref": "#/$defs/core/properties/reference"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
-                                ]
-                            }
-                        },
-                        "entityInfo": {
-                            "title": "Entity Information",
-                            "$ref": "#/$defs/core/properties/entityInfo"
-                        }
-                    },
-                    "additionalProperties": false,
-                    "required": [
-                        "entityType",
-                        "identifier",
-                        "schemaVersion"
-                    ],
-                    "description": "Used to capture key identifying information about what is being recorded on any given setup and take."
                 },
                 "SpecialAction": {
                     "type": "object",
@@ -3541,7 +3541,7 @@
                             "description": "Encode a set of measurements to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
                             "properties": {
                                 "height": {
-                                    "description": "The height or Y axis of the object",
+                                    "description": "The height or X axis of the object",
                                     "oneOf": [
                                         {"type": "null"},
                                         {
@@ -4335,7 +4335,10 @@
                     "type": "string",
                     "title": "Schema Version",
                     "default": "https://movielabs.com/omc/json/schema/v2.0",
-                    "enum": ["https://movielabs.com/omc/json/schema/v2.0"],
+                    "enum": [
+                        "https://movielabs.com/omc/json/schema/v2.0",
+                        "https://movielabs.com/omc/json/schema/v2.1"
+                    ],
                     "description": "Describes the version of OMC-JSON schema that was used to create this instance"
                 },
                 "reference": {
