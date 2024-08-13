@@ -741,7 +741,10 @@
                                     "description": "Allows for the the description of certain physical characteristics on a character, things that might be useful to an art department, wardrobe or casting for example.",
                                     "properties": {
                                         "species": {
-                                            "type": "string",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
                                             "title": "Species",
                                             "description": "A species to which this character belongs",
                                             "examples": [
@@ -752,7 +755,10 @@
                                             ]
                                         },
                                         "hairColor": {
-                                            "type": "string",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
                                             "title": "Hair Color",
                                             "description": "The hair color of the character",
                                             "examples": [
@@ -763,12 +769,18 @@
                                             ]
                                         },
                                         "hairLength": {
-                                            "type": "string",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
                                             "title": "Hair Length",
                                             "description": "The length of hair of the character"
                                         },
                                         "eyeColor": {
-                                            "type": "string",
+                                            "type": [
+                                                "string",
+                                                "null"
+                                            ],
                                             "title": "Eye Color",
                                             "description": "The color of the characters eyes"
                                         },
@@ -852,7 +864,10 @@
                             "description": "A human readable name for the Context"
                         },
                         "description": {
-                            "type": "object",
+                            "type": [
+                                "string",
+                                "null"
+                            ],
                             "title": "Description",
                             "description": "A brief description of the context"
                         },
@@ -3526,7 +3541,7 @@
                             "description": "Encode a set of measurements to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
                             "properties": {
                                 "height": {
-                                    "description": "The height or X axis of the object",
+                                    "description": "The height or Y axis of the object",
                                     "oneOf": [
                                         {"type": "null"},
                                         {
