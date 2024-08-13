@@ -1,22 +1,22 @@
-# baseURI: https://movielabs.com/omd/rdf/schema/v2.0
+# baseURI: https://movielabs.com/omd/rdf/schema/v2.5
 # imports: http://www.w3.org/2004/02/skos/core
-# imports: https://movielabs.com/cw/rdf/schema/v2.0
+# imports: https://movielabs.com/cw/rdf/schema/v2.5
 # prefix: omd
 
-@prefix cw: <https://movielabs.com/cw/rdf/schema/v2.0#> .
-@prefix omc: <https://movielabs.com/omc/rdf/schema/v2.0#> .
-@prefix omd: <https://movielabs.com/omd/rdf/schema/v2.0#> .
+@prefix cw: <https://movielabs.com/cw/rdf/schema/v2.5#> .
+@prefix omc: <https://movielabs.com/omc/rdf/schema/v2.5#> .
+@prefix omd: <https://movielabs.com/omd/rdf/schema/v2.5#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://movielabs.com/omd/rdf/schema/v2.0>
+<https://movielabs.com/omd/rdf/schema/v2.5>
   rdf:type owl:Ontology ;
   rdfs:comment "Copyright 2021-2023 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the LICENSE file https://github.com/MovieLabs/OMC/blob/main/LICENSE.txt." ;
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
-  owl:imports <https://movielabs.com/cw/rdf/schema/v2.0> ;
+  owl:imports <https://movielabs.com/cw/rdf/schema/v2.5> ;
   owl:versionInfo "Created with TopBraid Composer" ;
   skos:definition " MovieLabs Media Distribution Ontology" ;
 .
