@@ -690,7 +690,11 @@
                             },
                             "additionalProperties": true
                         },
-                        "customData": {"$ref": "#/$defs/core/properties/customData"}
+                        "customData": {"$ref": "#/$defs/core/properties/customData"},
+                        "entityInfo": {
+                            "title": "Entity Information",
+                            "$ref": "#/$defs/core/properties/entityInfo"
+                        }
                     },
                     "additionalProperties": false,
                     "required": [
@@ -982,10 +986,6 @@
                         "customData": {
                             "title": "Custom Data",
                             "$ref": "#/$defs/core/properties/customData"
-                        },
-                        "entityInfo": {
-                            "title": "Entity Information",
-                            "$ref": "#/$defs/core/properties/entityInfo"
                         },
                         "contributor": {
                             "type": [
@@ -1678,6 +1678,10 @@
                                     }
                                 }
                             }
+                        },
+                        "entityInfo": {
+                            "title": "Entity Information",
+                            "$ref": "#/$defs/core/properties/entityInfo"
                         }
                     },
                     "additionalProperties": true,
@@ -3694,6 +3698,10 @@
                                     {"$ref": "#/$defs/Asset/properties/AssetSC"}
                                 ]
                             }
+                        },
+                        "entityInfo": {
+                            "title": "Entity Information",
+                            "$ref": "#/$defs/core/properties/entityInfo"
                         }
                     }
                 },
@@ -4574,6 +4582,37 @@
                         "collision",
                         "rendering",
                         "proxy"
+                    ]
+                },
+                "materialType": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "examples": [
+                        "gasOrLiquid",
+                        "gasOrLiquid.fire",
+                        "gasOrLiquid.oil",
+                        "gasOrLiquid.water",
+                        "gasOrLiquid.fog",
+                        "gasOrLiquid.atmosphere",
+                        "inorganic",
+                        "inorganic.plastic",
+                        "inorganic.metal",
+                        "inorganic.glass",
+                        "inorganic.stone",
+                        "textile",
+                        "textile.wool",
+                        "textile.silk",
+                        "textile.cotton",
+                        "organic",
+                        "organic.plant",
+                        "organic.skin",
+                        "organic.hair",
+                        "organic.fur",
+                        "organic.scales",
+                        "organic.leather",
+                        "organic.wood"
                     ]
                 }
             },
