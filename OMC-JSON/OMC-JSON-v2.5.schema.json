@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://movielabs.com/omc/json/schema/v2.1",
-    "title": "OMC-JSON schema v2.0",
-    "$comment": "Copyright 2021-2023 Motion Picture Laboratories, Inc.\nSPDX-License-Identifier: APACHE-2.0",
+    "title": "OMC-JSON schema v2.5",
+    "$comment": "Copyright 2021-2024 Motion Picture Laboratories, Inc.\nSPDX-License-Identifier: APACHE-2.0",
     "oneOf": [
         {"$ref": "#/$defs/core/properties/rootObject"},
         {"$ref": "#/$defs/core/properties/rootArray"}
@@ -153,8 +153,24 @@
                             ]
                         },
                         "assetFC": {
-                            "title": "Asset Functional Characteristics",
-                            "$ref": "#/$defs/Asset/properties/assetFC"
+                            "type": "object",
+                            "properties": {
+                                "functionalType": {
+                                    "type": [
+                                        "string",
+                                        "null"
+                                    ]
+                                },
+                                "functionalProperties": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mapFormat": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapFormat"},
+                                        "mapType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapType"},
+                                        "scd": {"$ref": "#/$defs/Asset/properties/Asset/$defs/scd"}
+                                    },
+                                    "additionalProperties": false
+                                }
+                            }
                         },
                         "Context": {
                             "type": [
@@ -194,7 +210,102 @@
                         "entityType",
                         "identifier",
                         "schemaVersion"
-                    ]
+                    ],
+                    "$defs": {
+                        "scd": {
+                            "type": "object",
+                            "properties": {
+                                "component": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "sourceStart": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "sourceEnd": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "recordStart": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "recordEnd": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "duration": {
+                                                "type": [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                            },
+                                            "Shot": {
+                                                "type": "object",
+                                                "anyOf": [
+                                                    {"$ref": "#/$defs/core/properties/reference"},
+                                                    {"$ref": "#/$defs/Asset/properties/Asset"}
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "additionalProperties": false,
+                            "required": []
+                        },
+                        "mapFormat": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Map Format",
+                            "examples": [
+                                "plainTexture",
+                                "shadow",
+                                "volumeTexture",
+                                "volumeShadow",
+                                "latLongEnvironment",
+                                "cubeFaceShadow",
+                                "cubeFaceEnvironment"
+                            ],
+                            "description": "The data layout of a Map."
+                        },
+                        "mapType": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Map Type",
+                            "examples": [
+                                "diffuse",
+                                "weightMap",
+                                "uvMap",
+                                "specular",
+                                "roughness",
+                                "projectionMap",
+                                "normal",
+                                "opacity",
+                                "metalness",
+                                "heightMap",
+                                "depthMap",
+                                "bump",
+                                "ambientOcclusion",
+                                "albedo"
+                            ],
+                            "description": "Guidance about the intended use of a Map in a Material."
+                        }
+                    }
                 },
                 "AssetSC": {
                     "type": "object",
@@ -309,6 +420,25 @@
                             ],
                             "title": "Structural Type",
                             "description": "A structured description of the the assets form",
+                            "enum": [
+                                "geometry",
+                                "physical",
+                                "physical.image",
+                                "physical.structuredDocument",
+                                "physical.document",
+                                "physical.audioVisual",
+                                "physical.audio",
+                                "physical.imageSequence",
+                                "physical.movingImage",
+                                "digital",
+                                "digital.movingImage",
+                                "digital.image",
+                                "digital.structuredDocument",
+                                "digital.document",
+                                "digital.audioVisual",
+                                "digital.audio",
+                                "digital.imageSequence"
+                            ],
                             "examples": [
                                 "assetGroup",
                                 "digital.image",
@@ -323,11 +453,17 @@
                             "title": "Structural Properties",
                             "description": "A set of properties that describe the asset in this form",
                             "properties": {
+                                "assetGroup": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/assetGroup"},
                                 "customData": {"$ref": "#/$defs/core/properties/customData"},
                                 "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
                                 "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
                                 "dimensions": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/dimensions"},
-                                "assetGroup": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/assetGroup"}
+                                "boundingBox": {"$ref": "#/$defs/Utility/properties/boundingBox"},
+                                "coordinateOrientation": {"$ref": "#/$defs/Utility/properties/coordinateOrientation"},
+                                "geometryType": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/geometryType"},
+                                "levelOfDetail": {"$ref": "#/$defs/Utility/properties/levelOfDetail"},
+                                "purpose": {"$ref": "#/$defs/Utility/properties/purpose"},
+                                "scale": {"$ref": "#/$defs/Utility/properties/scale"}
                             },
                             "additionalProperties": false
                         },
@@ -428,121 +564,25 @@
                             "additionalProperties": false,
                             "title": "Asset Group",
                             "description": "Structural properties of an Asset Group"
-                        }
-                    }
-                },
-                "assetFC": {
-                    "oneOf": [
-                        {
-                            "type": "null",
-                            "description": "Allow for null"
                         },
-                        {
-                            "$ref": "#/$defs/Asset/properties/assetFC/$defs/empty",
-                            "title": "Allow for empty object, no functional characteristics"
-                        },
-                        {
-                            "$ref": "#/$defs/Asset/properties/assetFC/$defs/generic",
-                            "title": "A generic schema allowing any functional type and properties"
-                        },
-                        {
-                            "$ref": "#/$defs/Asset/properties/assetFC/$defs/scd",
-                            "title": "Functional characteristics for a Sequence Chronology Descriptor"
-                        }
-                    ],
-                    "title": "Asset Functional Characteristics",
-                    "description": "Describes the use or purpose of an Asset within the production process",
-                    "$defs": {
-                        "empty": {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                                "customData": {"$ref": "#/$defs/core/properties/customData"}
-                            }
-                        },
-                        "generic": {
-                            "type": "object",
-                            "additionalProperties": false,
-                            "properties": {
-                                "functionalType": {
-                                    "type": "string",
-                                    "not": {
-                                        "enum": ["scd"]
-                                    }
-                                },
-                                "functionalProperties": {
-                                    "type": [
-                                        "object",
-                                        "null"
-                                    ],
-                                    "additionalProperties": true
-                                },
-                                "customData": {"$ref": "#/$defs/core/properties/customData"}
-                            },
-                            "required": ["functionalType"]
-                        },
-                        "scd": {
-                            "type": "object",
-                            "properties": {
-                                "functionalType": {
-                                    "type": "string",
-                                    "const": "scd"
-                                },
-                                "functionalProperties": {
-                                    "type": "object",
-                                    "properties": {
-                                        "component": {
-                                            "type": "array",
-                                            "items": {
-                                                "type": "object",
-                                                "properties": {
-                                                    "sourceStart": {
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ]
-                                                    },
-                                                    "sourceEnd": {
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ]
-                                                    },
-                                                    "recordStart": {
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ]
-                                                    },
-                                                    "recordEnd": {
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ]
-                                                    },
-                                                    "duration": {
-                                                        "type": [
-                                                            "string",
-                                                            "null"
-                                                        ]
-                                                    },
-                                                    "Shot": {
-                                                        "type": "object",
-                                                        "anyOf": [
-                                                            {"$ref": "#/$defs/core/properties/reference"},
-                                                            {"$ref": "#/$defs/Asset/properties/Asset"}
-                                                        ]
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                },
-                                "customData": {"$ref": "#/$defs/core/properties/customData"}
-                            },
-                            "additionalProperties": false,
-                            "required": ["functionalType"]
+                        "geometryType": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "examples": [
+                                "torus",
+                                "teapot",
+                                "plane",
+                                "nurbsSurface",
+                                "nurbsCurve",
+                                "mesh",
+                                "cylinder",
+                                "cube",
+                                "cone",
+                                "capsule",
+                                "basisCurve"
+                            ]
                         }
                     }
                 }
@@ -726,6 +766,16 @@
                             ],
                             "title": "Character Description",
                             "description": "A brief description of the character"
+                        },
+                        "characterType": {
+                            "type": "string",
+                            "title": "characterType",
+                            "description": "Describes the specific type of Character, equivalent to the sub-class used in OMC-RDF.",
+                            "default": "character",
+                            "enum": [
+                                "character",
+                                "extra"
+                            ]
                         },
                         "characterName": {
                             "title": "Character Name",
@@ -1796,7 +1846,7 @@
                                 {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeWardrobe"}
                             ]
                         },
-                        "Depictor": {
+                        "Depicter": {
                             "type": "object",
                             "oneOf": [
                                 {"$ref": "#/$defs/core/properties/reference"},
@@ -1861,13 +1911,14 @@
                         },
                         "effectType": {
                             "type": "string",
-                            "title": "Object type",
+                            "title": "effectType",
                             "description": "A categorization of the type of effect.",
                             "enum": [
                                 "effect",
                                 "specialEffect",
                                 "visualEffect"
-                            ]
+                            ],
+                            "default": "effect"
                         },
                         "customData": {
                             "title": "Custom Data",
@@ -1930,13 +1981,14 @@
                         },
                         "narrativeType": {
                             "type": "string",
-                            "title": "Object type",
-                            "description": "A categorization of the type of audio.",
+                            "title": "narrativeType - narrative audio",
+                            "description": "Describes the specific type of Narrative Audio, equivalent to the sub-class used in OMC-RDF.",
                             "enum": [
-                                "audio",
-                                "soundEffect",
-                                "music"
-                            ]
+                                "narrativeAudio",
+                                "narrativeMusic",
+                                "narrativeSoundEffect"
+                            ],
+                            "default": "narrativeAudio"
                         },
                         "Depiction": {
                             "type": [
@@ -2005,6 +2057,13 @@
                             ],
                             "title": "Narrative Location Description",
                             "description": "A brief description of the narrative location"
+                        },
+                        "narrativeType": {
+                            "type": "string",
+                            "enum": ["narrativeLocation"],
+                            "title": "narrativeType - narrative location",
+                            "description": "Describes the specific type of Narrative Location, equivalent to the sub-class used in OMC-RDF.",
+                            "default": "narrativeLocation"
                         },
                         "Location": {
                             "oneOf": [
@@ -2082,15 +2141,16 @@
                         },
                         "narrativeType": {
                             "type": "string",
-                            "title": "Object type",
-                            "description": "A departmental categorization for the object.",
+                            "title": "narrativeType - narrative object",
+                            "description": "Describes the specific type of Narrative Object, equivalent to the sub-class used in OMC-RDF.",
                             "enum": [
                                 "narrativeObject",
                                 "narrativeProp",
                                 "narrativeGreenery",
                                 "narrativeVehicle",
                                 "narrativeSetDressing"
-                            ]
+                            ],
+                            "default": "narrativeObject"
                         },
                         "customData": {
                             "title": "Custom Data",
@@ -2195,6 +2255,13 @@
                             "title": "Narrative Scene Description",
                             "description": "A brief description of the narrative scene"
                         },
+                        "narrativeType": {
+                            "type": "string",
+                            "title": "narrativeType - narrative scene",
+                            "description": "Describes the specific type of Narrative Scene, equivalent to the sub-class used in OMC-RDF.",
+                            "enum": ["narrativeScene"],
+                            "default": "narrativeScene"
+                        },
                         "sceneNumber": {
                             "type": [
                                 "string",
@@ -2286,14 +2353,15 @@
                         },
                         "narrativeType": {
                             "type": "string",
-                            "title": "Object type",
-                            "description": "A categorization of the type styling.",
+                            "title": "narrativeType - narrative styling",
+                            "description": "Describes the specific type of Narrative Styling, equivalent to the sub-class used in OMC-RDF.",
                             "enum": [
                                 "narrativeStyling",
                                 "narrativeHair",
                                 "narrativeMakeup",
                                 "narrativeProsthetics"
-                            ]
+                            ],
+                            "default": "narrativeStyling"
                         },
                         "customData": {"$ref": "#/$defs/core/properties/customData"},
                         "Context": {
@@ -2362,9 +2430,10 @@
                         },
                         "narrativeType": {
                             "type": "string",
-                            "title": "Object type",
-                            "description": "A categorization of the type wardrobe",
-                            "enum": ["narrativeWardrobe"]
+                            "title": "narrativeType - narrative wardrobe",
+                            "description": "Describes the specific type of Narrative Wardrobe, equivalent to the sub-class used in OMC-RDF.",
+                            "enum": ["narrativeWardrobe"],
+                            "default": "narrativeWardrobe"
                         },
                         "customData": {"$ref": "#/$defs/core/properties/customData"},
                         "Context": {
@@ -2867,19 +2936,20 @@
                             "title": "Narrative Object Description",
                             "description": "A brief description of the narrative action"
                         },
-                        "actionType": {
+                        "specialActionType": {
                             "type": "string",
-                            "title": "Object type",
+                            "title": "specialActionType",
                             "description": "A categorization of the type action.",
                             "enum": [
-                                "action",
                                 "stunt",
                                 "choreography",
                                 "fight",
                                 "motionCapture",
                                 "marine",
-                                "aerial"
-                            ]
+                                "aerial",
+                                "specialAction"
+                            ],
+                            "default": "specialAction"
                         },
                         "customData": {
                             "title": "Custom Data",
@@ -3513,6 +3583,183 @@
         "Utility": {
             "type": "object",
             "properties": {
+                "Composition": {
+                    "type": "object",
+                    "title": "Composition",
+                    "description": "A set of Assets or other Compositions that can be combined to produce a new Asset.",
+                    "properties": {
+                        "schemaVersion": {
+                            "title": "Schema Version",
+                            "$ref": "#/$defs/core/properties/schemaVersion"
+                        },
+                        "entityType": {
+                            "type": "string",
+                            "title": "Entity Type",
+                            "const": "Composition"
+                        },
+                        "identifier": {
+                            "title": "Identifier",
+                            "$ref": "#/$defs/Utility/properties/identifier"
+                        },
+                        "name": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Asset name",
+                            "description": "A human readable name for the asset"
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Asset description",
+                            "description": "A human readable description of the asset"
+                        },
+                        "compositionType": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Composition Type",
+                            "description": "The type, or sub-class, that this specific Composition represents.",
+                            "examples": [
+                                "cgAssembly",
+                                "geometryAssembly",
+                                "compositeMaterial"
+                            ]
+                        },
+                        "compositionProperties": {
+                            "type": "object",
+                            "title": "Composition Properties",
+                            "properties": {
+                                "boundingBox": {"$ref": "#/$defs/Utility/properties/boundingBox"},
+                                "coordinateOrientation": {"$ref": "#/$defs/Utility/properties/coordinateOrientation"},
+                                "levelOfDetail": {"$ref": "#/$defs/Utility/properties/levelOfDetail"},
+                                "purpose": {"$ref": "#/$defs/Utility/properties/purpose"},
+                                "scale": {"$ref": "#/$defs/Utility/properties/scale"}
+                            }
+                        },
+                        "Asset": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "title": "Asset",
+                            "description": "A set of Assets that are included in this Composition",
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/Asset/properties/Asset"}
+                                ]
+                            }
+                        },
+                        "AssetSC": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "title": "Asset Structural Characteristics",
+                            "description": "A set of Asset Structural Characteristics that are included in this Composition",
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/Asset/properties/AssetSC"}
+                                ]
+                            }
+                        },
+                        "Composition": {
+                            "type": [
+                                "array",
+                                "null"
+                            ],
+                            "title": "Composition",
+                            "description": "The set of Compositions that are included in this Composition",
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/Asset/properties/Asset"}
+                                ]
+                            }
+                        },
+                        "StartHere": {
+                            "type": "object",
+                            "title": "Asset",
+                            "description": "A set of Assets that are included in this Composition",
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/Asset/properties/Asset"},
+                                    {"$ref": "#/$defs/Asset/properties/AssetSC"}
+                                ]
+                            }
+                        }
+                    }
+                },
+                "Location": {
+                    "type": "object",
+                    "properties": {
+                        "schemaVersion": {
+                            "title": "Schema Version",
+                            "$ref": "#/$defs/core/properties/schemaVersion"
+                        },
+                        "entityType": {
+                            "type": "string",
+                            "title": "Entity Type",
+                            "const": "Location"
+                        },
+                        "identifier": {
+                            "title": "Identifier",
+                            "$ref": "#/$defs/Utility/properties/identifier"
+                        },
+                        "name": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Location name",
+                            "description": "A human readable name for the location"
+                        },
+                        "description": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "Location Description",
+                            "description": "A brief description of the location"
+                        },
+                        "address": {
+                            "title": "Address",
+                            "$ref": "#/$defs/Utility/properties/address"
+                        },
+                        "coordinates": {
+                            "title": "Coordinates",
+                            "$ref": "#/$defs/Utility/properties/coordinates"
+                        },
+                        "Context": {
+                            "type": "array",
+                            "items": {
+                                "anyOf": [
+                                    {"$ref": "#/$defs/core/properties/reference"},
+                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
+                                ]
+                            }
+                        },
+                        "entityInfo": {
+                            "title": "Entity Information",
+                            "$ref": "#/$defs/core/properties/entityInfo"
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": [
+                        "entityType",
+                        "identifier",
+                        "schemaVersion"
+                    ],
+                    "title": "Location",
+                    "description": "A particular place or position either in either the real world or the narrative world."
+                },
                 "unitOfMeasurement": {
                     "type": "object",
                     "properties": {
@@ -3982,69 +4229,6 @@
                     "additionalProperties": false,
                     "description": "A person, or others, expressed or prefered gender and pronoun"
                 },
-                "Location": {
-                    "type": "object",
-                    "properties": {
-                        "schemaVersion": {
-                            "title": "Schema Version",
-                            "$ref": "#/$defs/core/properties/schemaVersion"
-                        },
-                        "entityType": {
-                            "type": "string",
-                            "title": "Entity Type",
-                            "const": "Location"
-                        },
-                        "identifier": {
-                            "title": "Identifier",
-                            "$ref": "#/$defs/Utility/properties/identifier"
-                        },
-                        "name": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Location name",
-                            "description": "A human readable name for the location"
-                        },
-                        "description": {
-                            "type": [
-                                "string",
-                                "null"
-                            ],
-                            "title": "Location Description",
-                            "description": "A brief description of the location"
-                        },
-                        "address": {
-                            "title": "Address",
-                            "$ref": "#/$defs/Utility/properties/address"
-                        },
-                        "coordinates": {
-                            "title": "Coordinates",
-                            "$ref": "#/$defs/Utility/properties/coordinates"
-                        },
-                        "Context": {
-                            "type": "array",
-                            "items": {
-                                "anyOf": [
-                                    {"$ref": "#/$defs/core/properties/reference"},
-                                    {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
-                                ]
-                            }
-                        },
-                        "entityInfo": {
-                            "title": "Entity Information",
-                            "$ref": "#/$defs/core/properties/entityInfo"
-                        }
-                    },
-                    "additionalProperties": false,
-                    "required": [
-                        "entityType",
-                        "identifier",
-                        "schemaVersion"
-                    ],
-                    "title": "Location",
-                    "description": "A particular place or position either in either the real world or the narrative world."
-                },
                 "note": {
                     "type": [
                         "object",
@@ -4315,6 +4499,82 @@
                     "title": "Provenance",
                     "description": "A record of when something was changed and by whom.",
                     "additionalProperties": false
+                },
+                "boundingBox": {
+                    "type": "object",
+                    "properties": {
+                        "corner1": {"$ref": "#/$defs/Utility/properties/point3"},
+                        "corner2": {"$ref": "#/$defs/Utility/properties/point3"}
+                    }
+                },
+                "scale": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/linearDistance"},
+                "point2": {
+                    "type": "object",
+                    "properties": {
+                        "x": {"type": "number"},
+                        "y": {"type": "number"}
+                    },
+                    "title": "Point 2",
+                    "description": "A point with two coordinates."
+                },
+                "point3": {
+                    "type": "object",
+                    "properties": {
+                        "x": {"type": "number"},
+                        "y": {"type": "number"},
+                        "z": {"type": "number"}
+                    },
+                    "title": "Point 3",
+                    "description": "A point with three coordinates."
+                },
+                "coordinateOrientation": {
+                    "type": "object",
+                    "properties": {
+                        "handedness": {
+                            "type": "string",
+                            "enum": [
+                                "left",
+                                "right"
+                            ]
+                        },
+                        "upAxis": {
+                            "type": "string",
+                            "enum": [
+                                "y-up",
+                                "z-up"
+                            ]
+                        }
+                    },
+                    "title": "Coordinate Orientation",
+                    "description": "The direction and handedness of the axes used in the geometry."
+                },
+                "levelOfDetail": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ],
+                    "maximum": 100,
+                    "minimum": 1,
+                    "title": "Level of Detail",
+                    "description": "Percentage of the screen that an object can reasonably take up."
+                },
+                "purpose": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "title": "Purpose (Geometry)",
+                    "description": "A suggested or intended use for the object in a pipeline.",
+                    "examples": [
+                        "printing",
+                        "general",
+                        "annotation",
+                        "matte/paint",
+                        "guide",
+                        "collision",
+                        "rendering",
+                        "proxy"
+                    ]
                 }
             },
             "additionalProperties": false,
@@ -4337,7 +4597,8 @@
                     "default": "https://movielabs.com/omc/json/schema/v2.0",
                     "enum": [
                         "https://movielabs.com/omc/json/schema/v2.0",
-                        "https://movielabs.com/omc/json/schema/v2.1"
+                        "https://movielabs.com/omc/json/schema/v2.1",
+                        "https://movielabs.com/omc/json/schema/v2.5"
                     ],
                     "description": "Describes the version of OMC-JSON schema that was used to create this instance"
                 },
@@ -4370,6 +4631,11 @@
                             "type": "array",
                             "items": {"$ref": "#/$defs/MediaCreationContext/properties/Character"},
                             "title": "Character"
+                        },
+                        "Composition": {
+                            "type": "array",
+                            "items": {"$ref": "#/$defs/Utility/properties/Composition"},
+                            "title": "Composition"
                         },
                         "Context": {
                             "type": "array",
@@ -4490,6 +4756,7 @@
                         "anyOf": [
                             {"$ref": "#/$defs/MediaCreationContext/properties/Character"},
                             {"$ref": "#/$defs/Participant/properties/Participant"},
+                            {"$ref": "#/$defs/Utility/properties/Composition"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/Context"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"},
                             {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"},
