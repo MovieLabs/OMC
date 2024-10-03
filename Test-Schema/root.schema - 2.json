@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://movielabs.com/omc/json/schema/v2.5",
   "type": "object",
-  "$ref": "#/MediaCreationContext/$defs/Character",
+  "$ref": "#/$defs/MediaCreationContext/properties/Character",
   "$defs": {
     "MediaCreationContext": {
-      "$anchor": "MediaCreationContext", 
-      "$defs": {
+      "type": "object",
+      "properties": {
         "Character": {
           "type": "object",
           "allOf": [
@@ -22,7 +22,8 @@
       }
     },
     "core": {
-      "$defs": {
+      "type": "object",
+      "properties": {
         "baseEntity": {
           "$id": "#core-baseEntity",
           "type": "object",

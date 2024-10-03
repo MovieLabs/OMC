@@ -3980,7 +3980,7 @@
                         }
                     },
                     "additionalProperties": false,
-                    "description": "A person, or others, expressed or prefered gender and pronoun"
+                    "description": "A person, or others, expressed or preferred gender and pronoun"
                 },
                 "Location": {
                     "type": "object",

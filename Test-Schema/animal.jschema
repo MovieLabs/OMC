@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https:movielabs.com/schemas", 
+    "title": "Animal title",
+    "description": "Description of the schema",
+    "type": "object",
+    "$ref": "#/$defs/cat",
+    "$defs": {
+        "animal": {
+            "$id": "animal",
+            "type": "object",
+            "properties": {
+                "genus": {"type": "string"},
+                "species": {"type": "string"}
+            },
+            "required": [
+                "genus",
+                "species"
+            ]
+        },
+        "cat": {
+            "$id": "cat",
+            "type": "object",
+            "$ref": "animal",
+            "properties": {
+                "numberOfLives": {"type": "string"}
+            },
+            "required": ["numberOfLives"],
+            "unevaluatedProperties": false 
+        }
+    }
+}

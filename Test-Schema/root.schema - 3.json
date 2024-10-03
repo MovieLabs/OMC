@@ -2,10 +2,9 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://movielabs.com/omc/json/schema/v2.5",
   "type": "object",
-  "$ref": "#/MediaCreationContext/$defs/Character",
+  "$ref": "#/$defs/MediaCreationContext/$defs/Character",
   "$defs": {
     "MediaCreationContext": {
-      "$anchor": "MediaCreationContext", 
       "$defs": {
         "Character": {
           "type": "object",

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <!-- Map an absolute DTD system ID reference to a DTD located relative to this XML catalog-->
+    <system systemId="http://www.docbook.org/xml/4.5/docbookx.dtd" uri="../../docbook/4.5/dtd/docbookx.dtd"/>
+    <!-- Map any absolute DTD system ID reference which ends with a certain suffix to a DTD located relative to this XML catalog -->
+    <systemSuffix systemIdSuffix="docbookx.dtd" uri="../../docbook/4.5/dtd/docbookx.dtd"/>
+    <!-- Map DTD Public ID reference to a DTD located relative to this XML catalog-->
+    <public publicId="-//OASIS//DTD DocBook XML V4.5//EN" uri="../../docbook/4.5/dtd/docbookx.dtd"/>
+    
+    <!-- Map an absolute RELAX NG schema reference to a Relax NG schema located relative to this XML catalog-->
+    <uri name="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" uri="../../docbook/5.0/rng/docbook.rng"/>
+    <!-- Map any reference to a Relax NG schema which ends in a certain suffix to a Relax NG schema located relative to this XML catalog -->
+    <uriSuffix uriSuffix="rng/docbook.rng" uri="../../docbook/5.0/rng/docbook.rng"/>
+  
+    <!-- Map an absolute W3C XML Schema reference to a schema located relative to this XML catalog-->
+    <uri name="http://www.w3.org/2004/10/xml.xsd" uri="xml.xsd"/>
+    <!-- Map any reference to an XML Schema which ends in a certain suffix to a schema located relative to this XML catalog -->
+    <uriSuffix uriSuffix="10/xml.xsd" uri="xml.xsd"/>
+  
+    <!-- Map an xs:import or xs:include to an absolute XSLT stylesheet to an XSLT stylesheet located relative to this XML catalog-->
+    <uri name="http://docbook.org/xsl/fo/docbook.xsl" uri="../../docbook/xsl/fo/docbook.xsl"/>
+    <!-- Map an xs:import or xs:include to an XSLT stylesheet which ends with a certain suffix to an XSLT stylesheet located relative to this XML catalog -->
+    <uriSuffix uriSuffix="docbook.xsl" uri="../../docbook/xsl/fo/docbook.xsl"/>
+    
+    <!-- Map an xs:import or xs:include to an absolute XSLT stylesheet to an XSLT stylesheet located relative to this XML catalog-->
+    <uri name="https://movielabs.com/omc/json/schema" uri="../OMC"/>
+
+    
+</catalog>

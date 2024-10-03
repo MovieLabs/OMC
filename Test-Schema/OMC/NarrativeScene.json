@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://movielabs.com/omc/json/schema/v2.5/NarrativeScene",
+      "type": "object",
+      "properties": {
+        "NarrativeScene": {
+          "type": "object",
+          "properties": {
+            "entityType": {"type": "string"},
+            "narrativeType": {"type": "string"}
+          },
+          "required": ["entityType"],
+          "unevaluatedProperties": false
+        }
+      }
+
+}
