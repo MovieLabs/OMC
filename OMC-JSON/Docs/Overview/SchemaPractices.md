@@ -18,11 +18,11 @@ The exception to this is when a property does not describe a canonical value. Fo
 
 Properties are named using either camelCase (lower case first letter) or PascalCase (capitalized first letter). Camel case and Pascal case do not include spaces or punctuation in property names and use capital letters to differentiate words. In ‘camelCase’, the first word is not capitalized, and in ‘PascalCase’, the first word is capitalized, OMC-JSON uses the two conventions in specific circumstances.
 
-Entities are named using Pascal case. Most uses of this (and all of the examples given) represent top-level class definitions in OMC-RDF. For example, `NarrativeObject`, `Shot`, `Character`
+Entities are named using Pascal case. Most uses of this (and all of the examples given) represent top-level class definitions in OMC-RDF. For example, `NarrativeObject`, `Asset`, `Character`
 
 The properties of an entity use the following conventions:
 
-- Properties that refer to another entity carry either a reference to that entity or embed some subset of its properties. The property name uses pascal case to indicate it is a reference. (`Context`, `Location`, `Depiction`).
+- Properties that refer to another entity may either just reference that entity, or embed some or all of its properties. The property name uses pascal case to indicate it is a reference. (`Context`, `Location`, `Depiction`).
 - Properties that have a complex or primitive value (rather than a reference) are camel case. (`characterName`, `shootDay`, `identifier`)
 
 **Punctuation**
@@ -36,7 +36,7 @@ OMC-JSON does not use additional symbols prepended or appended to names. For exa
 We avoid the use of plurals.
 
 - It can create inconsistencies in naming, i.e., parties vs dates vs classes (ies, s, es). This can be hard for some people to remember.
-- When plurals are used to indicate that a property can have multiple values, it can lead to confusion when there is only one. It can also complicate parsing of the data as it may not always be clear whether something should be in an array or not.
+- When plurals are used to indicate that a property can have multiple values, it can lead to confusion when there is only one. It can also complicate parsing of the data as it may not always be clear whether something should be an array or not.
 - If a schema is updated and a property that was originally singular is changed to allow multiple values, it would be a breaking change.
 
 **Multiple Values**
@@ -71,7 +71,7 @@ Extensions and modifications to OMC-JSON can create compatibility problems; see 
 
 This provides a level of safety in that only properties that have been described in the spec are included as part of the core payload. It also allows for new properties to be added and historical data to still be valid with versions equal to or greater than the version they were created with.
 
-To allow for proprietary data or extensions we include the `customData` property. Individual applications can include any data as a value for this. It is up to the sending and receiving parties to know how to interpret this field. We recommend that some sort of identifying key or namespace is used as an additional safeguard against collisions.
+To allow for proprietary data or extensions we include the `customData` property. Individual applications can include any data as a value for this. It is up to the sending and receiving parties to know how to interpret the contents. We recommend that some sort of identifying key or namespace is used as an additional safeguard against collisions.
 
 The `customData` property can be useful for including additional metadata directly in a payload. For example, to include additional fields from an EXIF file as part of the structural characteristics of an image. In this case you might encode it like this:
 

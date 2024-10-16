@@ -2,21 +2,34 @@
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://movielabs.com/omc/json/schema/v2.5",
   "type": "object",
-  "$ref": "#/MediaCreationContext/$defs/Character",
+  "properties": {
+    "entity": {
+      "$ref": "#MediaCreationContext-Character"
+    }
+  },
+  "additionalProperties": false,
   "$defs": {
     "MediaCreationContext": {
-      "$anchor": "MediaCreationContext", 
       "$defs": {
         "Character": {
+          "$anchor": "MediaCreationContext-Character",
           "type": "object",
           "allOf": [
-            {"$ref": "#core-baseEntity"}
+            {
+              "$ref": "#core-baseEntity"
+            }
           ],
           "properties": {
-            "entityType": {"type": "string"},
-            "narrativeType": {"type": "string"}
+            "entityType": {
+              "type": "string"
+            },
+            "narrativeType": {
+              "type": "string"
+            }
           },
-          "required": ["entityType"],
+          "required": [
+            "entityType"
+          ],
           "unevaluatedProperties": false
         }
       }
@@ -24,13 +37,19 @@
     "core": {
       "$defs": {
         "baseEntity": {
-          "$id": "#core-baseEntity",
+          "$anchor": "core-baseEntity",
           "type": "object",
           "properties": {
-            "schemaVersion": {"type": "string"},
-            "name": {"type": "string"}
+            "schemaVersion": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
           },
-          "required": ["schemaVersion"]
+          "required": [
+            "schemaVersion"
+          ]
         }
       }
     }

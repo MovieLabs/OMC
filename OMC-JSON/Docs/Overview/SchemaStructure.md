@@ -1,7 +1,7 @@
 # Schema Structure
-Ontology for Media Creation (OMC) provides a conceptual and technical model for the production process, and is described [here](https://mc.movielabs.com/docs/ontology/). This model is implemented using RDF schema (OMC-RDF), which provides a useful degree of formality, especially for relationships and complex classes. JSON, of course, can also be used for data modelling, but it has different mechanics for classes, properties, and types, and less emphasis on relationships than RDF.
+Ontology for Media Creation (OMC) provides a conceptual and technical model for the production process, and is described [here](https://mc.movielabs.com/docs/ontology/). This model is implemented using RDF schema (OMC-RDF), which provides a useful degree of formality, especially for relationships and complex classes. JSON, of course, can also be used for data modelling, but it has different mechanics properties and types, and no inherent representation for classes or relationships.
 
-The OMC-JSON schema retains the vocabulary, concepts, and top-level structures of the OMC-RDF, although some changes are necessary to support expressing the details of the concepts in JSON. In particular, the OMC-JSON schema provides mechanisms for encoding relationships (in the RDF sense) and a compositional model rather than classes and inheritance.
+The OMC-JSON schema retains the vocabulary, concepts, and top-level structures of the OMC-RDF, although some changes are necessary to support expressing the details of the concepts in JSON. In particular, the OMC-JSON schema provides mechanisms for encoding relationships (in the RDF sense) and uses a compositional model rather than classes and inheritance.
 
 ## Key Concepts
 There are three pervasive concepts in the OMC-JSON schema:
@@ -11,7 +11,7 @@ There are three pervasive concepts in the OMC-JSON schema:
 - Relationships
 
 ## Entities
-An entity represents one of the core concepts in OMC, things like Character, Asset and Participant. RDF is a class-based system, so in OMC-RDF these are represented as classes and sub-classes. JSON does not use a class-based model or the idea of class inheritance. Therefore, in OMC-JSON we use a compositional model. The schema is comprised of individual sub-schemas (each entity has a sub-schema) which can then be composed to describe the core concepts of OMC and broadly align with the RDF classes.
+An entity represents one of the core concepts in OMC, things like Character, Asset and Participant. RDF is a class-based system, so in OMC-RDF these are represented as classes and sub-classes. JSON does not use a class-based model or the idea of class inheritance, in OMC-JSON we use a compositional model. The schema is comprised of individual sub-schemas which are then composed to describe the core concepts of OMC and broadly align with the RDF classes.
 > **Entity**: A top level concept in the ontology that includes a set of properties with associated values and its relationships to other entities.
 > 
 > **Property**: A `<key> <value>` pair where the value can be a reference to another entity, a complex type (object or array of objects), or a primitive value (string, number, Boolean or null).

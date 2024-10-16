@@ -224,7 +224,7 @@ In the tables below, each Asset that contains a property that references another
 | SCD          |          | Asset             | scf      |
 
 ----------
-
+[]()
 **Slate**
 
 | **Property** | **Name** | **Target entity** | **Target type** |
