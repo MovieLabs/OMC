@@ -26,7 +26,7 @@ An identifier consists of a value and scope; the value should be unique within a
 The `identifier` property, is required on all entities. It is an array, and `identifierScope` and `identiferValue` are required.
 
 OMC-JSON
-```
+```JSON
 {
   "identifier": [
     {
@@ -48,14 +48,14 @@ An ontology creates a graph of related entities. How things are related is as im
 
 In OMC-JSON, there are two common situations where you may wish to express the relationship between two entities by referencing the other.
 
-- When another entity is an intrinsic property of an entity, then the property value will either be a reference to the entity or some, or all, of the properties of entity itself.
-- Relationships to entities that are not intrinsic properties are expressed in a Context property.
+- When another entity is an intrinsic property, then the property value can either be just a reference to the entity, or a subset of the individual properties of the referenced entity may be embedded inline.
+- Relationships to entities that are not intrinsic properties are contained in a Context, which is itself an intrinsic property.
 
 For a more detailed explanation read the section on [Relationships & Context](../Tech-Notes/RelationshipContext.md)
 
-When an intrinsic property is another entity, the name of the property is often that entity type. The property name uses pascal case (first letter capitalized).
+When an intrinsic property is another entity, the name is often that entity type it references, but not always. However, intrinsic properties always use pascal case (first letter capitalized).
 
-The example below shows a Narrative Location. It has the intrinsic properties `Location` and `Context` which carry the identifier for a Location and a Context. To examine the properties of these entities they need to be resolved; this may be done in a separate operation by the consuming party or by de-referencing in-line [see below](#de-referencing-identifiers).
+The example below shows a Narrative Location. It has the intrinsic properties `Location` and `Context`. The value is an identifier for the Location and Context respectively. To examine the specific properties of these entities they need to be resolved; this is typically a separate operation by the consuming party, [see below](#de-referencing-identifiers).
 
 OMC-JSON
 ```JSON
@@ -122,11 +122,11 @@ OMC-JSON
 ```
 
 ## De-Referencing Identifiers
-As well as being able to just provide a reference, OMC allows flexibility to de-reference any or none of the identifiers for properties of an entity. When referencing another entity by only including an identifier, it is left to the consuming party to make a request for the details of that entity. The producers of any payload can decide what they want to include, allowing payloads to be tailored to specific use cases.
+In addition to providing a reference, OMC allows flexibility to de-reference any or all identifiers for the properties of an entity. When referencing another entity by including only an identifier, it is up to the consuming party to request the details of that entity. The producers of any payload can decide what to include, allowing payloads to be tailored to specific use cases.
 
-Which method is used (identifier vs de-referenced entity) will differ across applications and workflows based on things like latency, availability of data or identifier resolution, caching behavior in applications, etc. It is always possible to send de-referenced data for any entity to any depth, but caution should be exercised when considering the size of the payload, especially given that it is graph-based.
+The choice between using an identifier or a de-referenced entity will vary across applications and workflows based on factors such as latency, data availability, identifier resolution, caching behavior in applications, etc. It is always possible to send de-referenced data for any entity to any depth, but caution should be exercised regarding the size of the payload, especially since it is graph-based.
 
-The example below shows a Narrative Location, where the Location itself is only referenced by its identifier. A client receiving this payload could then make a request using the Location's identifier to retrieve the full set of attributes if it needs them.
+The example below shows a Narrative Location, where the Location itself is referenced only by its identifier. A client receiving this payload could then request the full set of attributes using the Location’s identifier if needed.
 
 OMC-JSON - Location as a reference only
 ```JSON
@@ -194,7 +194,7 @@ For example, in OMC-RDF a parent class of NarrativeObject has various sub-classe
     {
         "NarrativeObject": {
             "entityType": "NarrativeObject",
-            "narrativeType": "prop"
+            "narrativeType": "narrativeProp"
         }
     }
 ```
@@ -202,38 +202,37 @@ For example, in OMC-RDF a parent class of NarrativeObject has various sub-classe
 We use a similar mechanism for Asset `functionalType` and `structuralType` for entities that have structural and functional characteristics.
 
 ## Reification
-Reification is technique which we use to bundle up relationships between two entities into an entity itself. This allows us to pass around and reuse those relationships multiple times. This technique is used in several places throughout OMC, but most notably in entities like Depiction and we use partial Reification in Contexts which are used bundle up relationships into useful groupings.
+Reification is a technique used to bundle relationships between entities into it's own entity. This allows to add additional properties to the relationship as well pass around and reuse the relationship multiple times. This technique is employed in several places throughout OMC, a Depiction and Participant are examples and we also utilize the same concept for Contexts, where multiple relationships may be bundled together.
 
-For more details and examples see the sections on [Relationships & Context](../Tech-Notes/RelationshipContext.md) and [Depictions & Portrayals](../Tech-Notes/DepictionPortrayal.md)
-
+For more details and examples see the sections on [Relationships & Context](../Tech-Notes/RelationshipContext.md) and [Depictions & Portrayals](../Tech-Notes/DepictionPortrayal.md).
 ## Standard Entity Properties
 There are some properties that are used consistently throughout the schema:
 
-**schemaVersion (required)**
+**`schemaVersion` (required)**
 
 Defines the version of the schema that was used to encode the instance.
 This allows parsers to understand the structure and nature of the properties in the entity.
 
-**entityType (required**
+**`entityType` (required)**
 
 A required property that enumerates the type of the entity.
 A client receiving the OMC-JSON payload will know what any given entity is, so that it can parse it correctly.
 
-**identifier (required)**
+**`identifier` (required)**
 
 The identifier, or identifiers uniquely identify this entity within the described scope.
 An entity can have multiple identifiers. For example a Creative Work may have an identifier with the production company's ID, the studio's ID, an IMDb ID, or an EIDR ID.
 
-**name**
+**`name`**
 
 A human readable name for the entity.
 This can be helpful for clients consuming the data, such as applications that need something like a label or tag for a UI. There is no requirement that it be unique and this should not be used as something canonical. Entities that need a canonical name (like Person or Location) will have a formal name property.
 
-**description**
+**`description`**
 
-A human readable (preferably short) description of the entity. As with name, this is really meant for human consumption and should not be used for encoding structured information.
+A human readable (preferably short) description of the entity. As with name, this is primarily for human consumption and should not be used for encoding structured information.
 
-**customData**
+**`customData`**
 
 The schema does not attempt to define every property that you might associate with any given entity. Our goal is to surface enough to allow a production to track, relate, and find things across distinct parts of the workflow.
 

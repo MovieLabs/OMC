@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Depiction",
     "identifier": [
       {
@@ -12,7 +12,7 @@
     "name": "Sven MC",
     "description": "The actor portaying Sven in motion capture",
     "Depicts": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
       "entityType": "Character",
       "identifier": [
         {
@@ -23,8 +23,20 @@
       "name": "Sven",
       "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."
     },
-    "Depictor": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/377U8MFEHUj5MPzslPoII"
+          }
+        ]
+      }
+    ],
+    "Depicter": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
       "entityType": "Participant",
       "identifier": [
         {
@@ -37,18 +49,6 @@
         }
       ],
       "name": "J. Warren Trezevant"
-    },
-    "Context": [
-      {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
-        "entityType": "Context",
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "cxt/377U8MFEHUj5MPzslPoII"
-          }
-        ]
-      }
-    ]
+    }
   }
 ]

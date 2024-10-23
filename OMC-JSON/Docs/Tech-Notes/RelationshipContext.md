@@ -1,17 +1,21 @@
 # Relationships
-Relationships between entities are an essential part of the ontology. The base ontology is written in RDF, which natively supports the idea of relating two nodes of a graph using an edge (the relationship). This type of mechanism is not native to JSON, and we have chosen not to use JSON-LD schema as it is not widely adopted, so OMC-JSON needs a means to express them.
+Relationships between entities are an essential part of the ontology. The base ontology is written in RDF, which in common with graph theory and databases natively supports the idea of relating two nodes in a graph using an edge (the relationship).
 
-Identifiers are the foundation of relationships; all entities must have a unique identifier within a scope. Relationships in OMC always have a direction (from one entity to another), and typically there is an inverse relationship. The names of the relationships in OMC carry semantic meaning that indicate how entity A is related to entity B, which is not the same as how B is related to A.
+This type of mechanism is not inherently native to JSON, and although JSON-LD provides a serialization for graph data it is not widely adopted and complex to use. Therefore OMC-JSON needs a mechanism to express them. In the interests of managing schema complexity, OMC-JSON makes some compromises and defines two principle ways to encode the relationships.
 
-In OMC-JSON we generally have two patterns to express relationships. They exist directly on an entity as a property, or as part of Context for that entity. Exactly when and how to use each mechanism is a recommended practice in OMC, but in OMC-JSON it is enforced to make schema development and validation more manageable.
+In OMC-RDF it is possible to create an edge of a desired type between any two nodes, this might be for an intrinsic property, to a Context, or using some semantic description. To help manage the complexity of the JSON schema and to simplify parsing, OMC-JSON uses direct relationships only for intrinsic properties, for all other semantic relationships a Context is used. It should be noted that applications do not need to implement the idea of Context in their own internal representations, it might make sense to discard this layer of encapsulation and have the relationships held directly internally, whether that be as a key or an edge, and application could infer inverse relationships where appropriate as well.
+
+Identifiers are the foundation of relationships; all entities must have a unique identifier within a scope and relationships are between two entities (it is technically possibly for an entity to have a relationship to itself, although currently we do not anticipate that as a use case in OMC). Relationships in OMC always have a direction (from one entity to another), typically there is an inverse relationship. The names of the relationships in OMC carry semantic meaning that indicate how entity A is related to entity B, which is generally not the same as how B is related to A.
+
+In OMC-JSON we generally have two patterns to express relationships, they can exist as a property of an entity or they can be part of Context associated with that entity. Exactly when and how to use each mechanism is a recommended practice in OMC, but in OMC-JSON it is enforced to make schema development and validation more manageable.
 
 ## Intrinsic properties
 
-An intrinsic property is one that is part of the essential nature of an entity, for example a Location for a ProductionLocation, Depiction for a Character, or the StructuralCharacteristics of an Asset or Participant.
+An intrinsic property is one that is part of the essential nature of an entity, for example a Production Location has a Location (the actual address), a Character will need a Depiction, or an Asset or Participant will have structural characteristics. Without these the thing is not really a thing, however sometimes these properties are entities in their own right. This means that the value of an intrinsic property may be the identifier of another entity. 
 
-By convention, OMC-JSON uses pascal case for properties that relate to another entity. Often the property is named for the entity it relates to but not always. The property can relate to a single entity or, where an array is used in the schema, multiple entities.
+By convention, OMC-JSON uses pascal case for intrinsic properties represented by another entity. Often in the schema the property is named for the entity it relates to, but not always. The property may relate to a single entity or multiple entities.
 
-*Note: The schema enforces either an array or a single object**.* ***I**n* *case* ***of an* *array**, even if there is one object,* *it must still be in an array. This is e**nforced* *so that parsers know what to expect and do not have to type check every property to know if it is iterable or not.*
+*Note: The schema generally enforces either an array or a single object. In the case of an array, even if there is one object, it must still be in an array. This is enforced so that parsers know what to expect and do not have to type check every property to know if it is iterable or not.
 
 In OMC-RDF, the relationship itself is named. For example, `AssetGroup → hasMember → Asset`. In OMC-JSON, for intrinsic properties, the relationship name is omitted to simplify and reduce nesting, but can be inferred if mapping back to the fuller graph model.
 
@@ -52,12 +56,13 @@ OMC-JSON: Asset
     }
 }
 ```
-
-The producer of the payload can elect to serialize the properties of the Asset and include any or all of those properties in the payload or leave it to the consumer to request those details with another lookup.
+ The producer of the payload can elect to serialize the properties of the Asset and include any or all of those properties in the payload or leave it to the consumer to request those details with another lookup.
 
 
 ## Context
-Very little created as part of a production exists solely on its own. When things are created, they have a purpose within other parts of the production - they are used by someone or at a specific location or as part of a set or particular scene. In other words, those things have Context. This Context can provide us details like what day we need a thing on set, which actor uses it, or what other things are needed to make use of it. In OMC, we use a Context to describe how one thing relates to another by relating the two entities with semantic meaning.
+Very little created as part of a production exists solely on its own. When things are created, they have a purpose within other parts of the production - they are used by someone or at a specific location or as part of a set or particular scene. In other words, those things have Context.
+
+This Context can provide us details like what day we need a thing on set, which actor uses it, or what other things are needed to make use of it. In OMC, we use a Context to describe how one thing relates to another by relating the two entities with semantic meaning.
 
 A Context is an entity and by organizing relationships into a Context several benefits become available:
 

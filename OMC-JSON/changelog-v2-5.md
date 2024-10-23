@@ -4,6 +4,10 @@
 
 A new top-level entity type of Composition was added
 
+### Context
+`contextCategory` was added as a new property to allow a canonical way to describe finer grained categorization then just the `contextType`.
+
+
 ### Depiction
 
 The property Depicter used in 2.0 has been deprecated and replaced with Depiction. The schema will continue to support Depicter for backwards compatibility, but it is recommended that new implementations use Depictor.
@@ -42,6 +46,13 @@ Formal definitions for asset functional properties:
 
 ## Additional refactoring and bug fixes
 
+#### entityInfo
+This was a placeholder and been deprecated in favor of `instanceInfo`, which is a more accurate representation of the data that is.
+
+#### instanceInfo
+Replaces `entityInfo`, and should be considered Beta, it is only available in the OMC-JSON schema and not in the OMC-RDF.
+Properties can describe basic info about the instances such as `createdOn, createdBy, lastUpdatedOn, lastUpdatedBy`.
+
 #### controlledValue
 A new annotation property `controlledValues` has been added to multiple properties.
 
@@ -50,7 +61,8 @@ controlled OMC instances. However, these are not enumerated, because it is possi
 possible values. They should be used whenever possible, but other values are allowed.
 
 
-#### Schema Refactoring
+
+### Schema Refactoring
 Some entities had unintentionally been left out of the object representation of OMC.
 
 The schema for the array representation now uses if/then rather than oneOf, this provides performance optimizations
@@ -58,3 +70,5 @@ and more concise error messages.
 
 All entities now share a base schema that is extended, this provides a simplification of the schema itself and ensures
 that all entities are consistent in their structure.
+
+Some properties would have failed validation if `null` was provided, this has been fixed.

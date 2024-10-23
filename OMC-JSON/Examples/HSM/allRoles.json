@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -13,7 +13,7 @@
     "roleType": "screenWriter"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -26,7 +26,7 @@
     "roleType": "producer"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -39,7 +39,7 @@
     "roleType": "director"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -52,7 +52,7 @@
     "roleType": "artDirector"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -65,7 +65,7 @@
     "roleType": "admin"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -78,7 +78,7 @@
     "roleType": "artist"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -91,7 +91,7 @@
     "roleType": "organization.vfxStudio"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -104,7 +104,7 @@
     "roleType": "service.canRead"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -117,7 +117,7 @@
     "roleType": "external.review"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -130,7 +130,7 @@
     "roleType": "service.canEdit"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -143,7 +143,7 @@
     "roleType": "actor"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {
@@ -156,7 +156,7 @@
     "roleType": "organization.production"
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.0",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
     "entityType": "Role",
     "identifier": [
       {

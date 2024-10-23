@@ -1,0 +1,43 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/F48231C8-A482-4870-8F3A-BD221A2997E2"
+      }
+    ],
+    "name": "denim",
+    "assetFC": {
+      "functionalType": "map",
+      "functionalProperties": {
+        "mapType": "baseColor",
+        "mapFormat": "plainTexture"
+      }
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/F48231C8-A482-4870-8F3A-BD221A2997E2"
+        }
+      ],
+      "structuralType": "digital.image",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "image/exr"
+        },
+        "fileDetails": {
+          "fileExtension": "exr",
+          "fileName": "denim_4k.exr",
+          "filePath": "/CG/textures/"
+        },
+        "purpose": "rendering"
+      }
+    }
+  }
+]

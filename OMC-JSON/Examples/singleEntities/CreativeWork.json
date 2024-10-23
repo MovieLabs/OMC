@@ -1,0 +1,71 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "entityType": "CreativeWork",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+      }
+    ],
+    "title": {
+      "workingTitle": "Hyperspace Madness",
+      "officialTitle": "Hyperspace Madness-1",
+      "internalTitle": "Hyperspace Madness-2"
+    },
+    "description": "Sven is a bumbling intergalactic repair man sent off to investigate a malfunctioning satellite.. He is quickly ambushed by the dreaded Killamari who have taken over the planet and plan to use it as a base to invade earth.",
+    "approximateLength": "PT5M",
+    "originalLanguage": [
+      "en"
+    ],
+    "countryOfOrigin": [
+      "US"
+    ],
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "entityType": "CreativeWork",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+      }
+    ],
+    "title": {
+      "workingTitle": null,
+      "officialTitle": null,
+      "internalTitle": null
+    },
+    "description": null,
+    "approximateLength": null,
+    "originalLanguage": [],
+    "countryOfOrigin": [],
+    "Context": null
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "entityType": "CreativeWork",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+      }
+    ],
+    "title": null,
+    "description": null,
+    "approximateLength": null,
+    "originalLanguage": null,
+    "countryOfOrigin": null,
+    "Context": null
+  }
+]
