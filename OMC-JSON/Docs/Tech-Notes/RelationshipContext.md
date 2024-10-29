@@ -37,7 +37,7 @@ OMC-JSON: Asset
             "identifier": [{
                 "identifierScope": "Movielabs",
                 "identifierValue": "per-5678"
-            }],
+            }]
         },
         "Asset": [
             {

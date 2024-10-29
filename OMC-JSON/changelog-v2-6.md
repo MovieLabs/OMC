@@ -7,6 +7,17 @@ A new top-level entity type of Composition was added
 ### Context
 `contextCategory` was added as a new property to allow a canonical way to describe finer grained categorization then just the `contextType`.
 
+### CreativeWork
+Additional properties were added to extend functionality and provide more detailed information about the creative work and add support for episodic works.
+`creativeWorkType`: Describes the type or sub-class of creative work (creativeWork, series, season, episode).
+`creativeWorkCategory`: Describes the category of the creative work (movie, tv short).
+`seasonNumber`: The season number of the creative work when applicable.
+`episodeSequence`: The episode sequence description of the creative work when applicable.
+`title`: The title of the creative work, the structure now provides for adding a language code to the title.
+`Series`: A new intrinsic relationship to relate a creative work to another Creative Work describing the series.
+`Season`: A new intrinsic relationship to relate a creative work to another Creative Work describing the season.
+`Episode`: A new intrinsic relationship to relate a creative work to other Creative Works that are episodes.
+`ProductionCompany`: A new intrinsic relationship to relate a creative work to a company that produced it.
 
 ### Depiction
 
@@ -14,7 +25,7 @@ The property Depicter used in 2.0 has been deprecated and replaced with Depictio
 This was an spelling error that was corrected, and now aligns with the formal documentation.
 
 ### NarrativeAudio
-The property `narrativeType` has new enumerated values to align the naming schema with other nattative types.
+The property `narrativeType` has new enumerated values to align the naming schema with other narrative types.
 audio -> narrativeAudio
 soundEffect -> narrativeSoundEffect
 music -> narrativeMusic
@@ -63,7 +74,7 @@ possible values. They should be used whenever possible, but other values are all
 
 
 ### Schema Refactoring
-Some entities had unintentionally been left out of the object representation of OMC.
+Some entities had unintentionally been left out of the object representation of OMC, these are now included.
 
 The schema for the array representation now uses if/then rather than oneOf, this provides performance optimizations
 and more concise error messages.
@@ -72,3 +83,5 @@ All entities now share a base schema that is extended, this provides a simplific
 that all entities are consistent in their structure.
 
 Some properties would have failed validation if `null` was provided, this has been fixed.
+
+The schema can now accept a single entity as an object, previously single entities had to be wrapped in an array.

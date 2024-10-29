@@ -1,0 +1,29 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Person",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGH"
+      }
+    ],
+    "name": "John Rene",
+    "description": null,
+    "personName": {
+      "firstGivenName": "John",
+      "familyName": "Rene"
+    },
+    "contact": {
+      "email": {
+        "business": "rene@labkoat.media",
+        "personal": "blank@gmail.com"
+      },
+      "telephone": {
+        "business": "213-555-0161",
+        "personal": "213-555-5678"
+      }
+    },
+    "gender": null
+  }
+]

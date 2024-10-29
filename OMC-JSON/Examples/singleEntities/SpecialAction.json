@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "SpecialAction",
     "identifier": [
       {
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "SpecialAction",
     "identifier": [
       {

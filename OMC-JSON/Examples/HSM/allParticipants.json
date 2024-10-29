@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -11,7 +11,7 @@
     "name": "John Rene",
     "description": null,
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -39,7 +39,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -53,7 +53,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -64,7 +64,7 @@
     "name": "Herman Malinalli",
     "description": null,
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -92,7 +92,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -103,7 +103,7 @@
           "roleType": "director"
         },
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -117,7 +117,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -128,7 +128,7 @@
     "name": "Max Powers",
     "description": null,
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -156,7 +156,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -170,7 +170,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -181,7 +181,7 @@
     "name": "Ioseph Karin",
     "description": null,
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -209,7 +209,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -223,7 +223,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -234,7 +234,7 @@
     "name": "Grosvenor Eudora",
     "description": null,
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -262,7 +262,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -276,7 +276,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -291,7 +291,7 @@
     "name": "J. Warren Trezevant",
     "description": "Stunt actor doing mo-cap for Sven",
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -319,7 +319,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -333,7 +333,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -344,7 +344,7 @@
     "name": "Daniel Lucas",
     "description": "Does a bit of this and a lot of that",
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -372,7 +372,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -383,7 +383,7 @@
           "roleType": "admin"
         },
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -397,7 +397,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -408,7 +408,7 @@
     "name": "Labkoat Media",
     "description": "Labkoat Media is the production company",
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Organization",
       "identifier": [
         {
@@ -423,7 +423,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -437,7 +437,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -448,7 +448,7 @@
     "name": "Labkoat Service API",
     "description": "Labkoat Media API service application (Okta)",
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Service",
       "identifier": [
         {
@@ -467,7 +467,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -478,7 +478,7 @@
           "roleType": "service.canRead"
         },
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -492,7 +492,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -503,7 +503,7 @@
     "name": "Matt Daw",
     "description": "External from vfx studio",
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -531,7 +531,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -545,7 +545,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -556,7 +556,7 @@
     "name": "FX-DMZ",
     "description": "External VFX studio",
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Organization",
       "identifier": [
         {
@@ -571,7 +571,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {
@@ -585,7 +585,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "Participant",
     "identifier": [
       {
@@ -596,7 +596,7 @@
     "name": "Vitaly Hilb",
     "description": "External from vfx studio",
     "ParticipantSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
       "entityType": "Person",
       "identifier": [
         {
@@ -624,7 +624,7 @@
       "functionalType": null,
       "Role": [
         {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.5",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
           "entityType": "Role",
           "identifier": [
             {

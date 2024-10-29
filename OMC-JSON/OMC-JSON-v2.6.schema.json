@@ -1,11 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "$id": "https://movielabs.com/omc/json/schema/v2.5",
-  "title": "Entrance Pupil Position",
+  "$id": "https://movielabs.com/omc/json/schema/v2.6",
+  "title": "OMC-JSON Schema v2.6",
   "$comment": "Copyright 2021-2024 Motion Picture Laboratories, Inc.\nSPDX-License-Identifier: APACHE-2.0",
   "oneOf": [
     {"$ref": "#/$defs/core/properties/rootObject"},
-    {"$ref": "#/$defs/core/properties/rootArray"}
+    {"$ref": "#/$defs/core/properties/rootEntity"},
+    {
+      "type": "array",
+      "items": {"$ref": "#/$defs/core/properties/rootEntity"}
+    }
   ],
   "$defs": {
     "Asset": {
@@ -21,7 +25,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Asset"
             },
@@ -719,7 +722,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "AssetSC"
             },
@@ -989,21 +991,31 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Infrastructure"
             },
             "InfrastructureSC": {
               "title": "Structural Characteristics",
-              "$ref": "#/$defs/Infrastructure/properties/InfrastructureSC"
+              "oneOf": [
+                {"$ref": "#/$defs/core/properties/reference"},
+                {"$ref": "#/$defs/Infrastructure/properties/InfrastructureSC"}
+              ]
             },
             "infrastructureFC": {
               "title": "Functional Characteristics",
               "$ref": "#/$defs/Infrastructure/properties/infrastructureFC"
             },
             "Context": {
-              "$ref": "#/$defs/MediaCreationContext/properties/Context",
-              "title": "Context"
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
+                ]
+              }
             }
           },
           "required": ["entityType"],
@@ -1019,7 +1031,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "InfrastructureSC"
             },
@@ -1101,12 +1112,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Character"
             },
             "characterType": {
-              "type": "string",
               "title": "characterType",
               "description": "Describes the specific type of Character, equivalent to the sub-class used in OMC-RDF.",
               "default": "character",
@@ -1238,7 +1247,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Context"
             },
@@ -2050,47 +2058,150 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "CreativeWork"
             },
-            "title": {
+            "creativeWorkType": {
+              "default": "creativeWork",
+              "enum": [
+                "creativeWork",
+                "series",
+                "season",
+                "episode"
+              ],
+              "title": "Creative Work Type"
+            },
+            "creativeWorkCategory": {
+              "enum": [
+                null,
+                "movie",
+                "tv",
+                "short",
+                "supplemental"
+              ],
+              "title": "Creative Work Category",
+              "description": "The type or form of a Creative Work."
+            },
+            "seasonNumber": {
+              "type": [
+                "string",
+                "number",
+                "null"
+              ],
+              "title": "Season Number"
+            },
+            "episodeSequence": {
               "type": [
                 "object",
                 "null"
               ],
-              "title": "Creative Work Title",
               "properties": {
-                "workingTitle": {
+                "houseSequence": {
                   "type": [
                     "string",
+                    "number",
                     "null"
                   ],
-                  "title": "Creative Work Working Title",
-                  "description": "The working title of the work"
+                  "title": "House Sequence",
+                  "description": "The internal Episode number assigned by the producer or commissioning broadcaster."
                 },
-                "officialTitle": {
+                "distributionNumber": {
                   "type": [
-                    "string",
+                    "array",
                     "null"
                   ],
-                  "title": "Creative Work Official Title",
-                  "description": "The official title of the work"
-                },
-                "internalTitle": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "title": "Creative Work Internal Title",
-                  "description": "The internal title of the work"
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": [
+                          "string",
+                          "number",
+                          "null"
+                        ]
+                      },
+                      "domain": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    }
+                  },
+                  "title": "Distribution Number",
+                  "description": "The position number of the Episode within its parent Season (or parent Series, if the Episode is directly in a Series) during initial broadcast or distribution."
                 }
               },
-              "additionalProperties": true
+              "title": "Episode Sequence"
+            },
+            "title": {
+              "oneOf": [
+                {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "title": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "titleType": {
+                        "enum": [
+                          null,
+                          "workingTitle",
+                          "internalTitle",
+                          "regionalTitle",
+                          "officialTitle"
+                        ]
+                      },
+                      "language": {"$ref": "#/$defs/Utility/properties/language"}
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "title": "Creative Work Title",
+                  "properties": {
+                    "workingTitle": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "title": "Creative Work Working Title",
+                      "description": "The working title of the work"
+                    },
+                    "officialTitle": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "title": "Creative Work Official Title",
+                      "description": "The official title of the work"
+                    },
+                    "internalTitle": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "title": "Creative Work Internal Title",
+                      "description": "The internal title of the work"
+                    }
+                  },
+                  "additionalProperties": true,
+                  "deprecated": true
+                }
+              ],
+              "title": "Creative Work Title",
+              "description": "A name for a Creative Work."
             },
             "approximateLength": {
               "title": "Approximate Length",
-              "$ref": "#/$defs/Utility/properties/time/properties/periodInTime/properties/durationTime"
+              "$ref": "#/$defs/Utility/properties/time/properties/durationTime"
             },
             "originalLanguage": {
               "type": [
@@ -2098,7 +2209,8 @@
                 "null"
               ],
               "title": "Original Languages",
-              "items": {"$ref": "#/$defs/Utility/properties/language"}
+              "items": {"$ref": "#/$defs/Utility/properties/language"},
+              "description": "The language of languages spoken in the creative work."
             },
             "countryOfOrigin": {
               "type": [
@@ -2106,7 +2218,8 @@
                 "null"
               ],
               "title": "Country Of Origin",
-              "items": {"$ref": "#/$defs/Utility/properties/country"}
+              "items": {"$ref": "#/$defs/Utility/properties/country"},
+              "description": "The home country of the companies that had primary creative control of the creation of the Creative Work, generally the producers."
             },
             "Context": {
               "type": [
@@ -2119,6 +2232,62 @@
                   {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
                 ]
               }
+            },
+            "Series": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
+                ]
+              },
+              "title": "Series",
+              "description": "Series to which this Creative Work belongs"
+            },
+            "Season": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
+                ]
+              },
+              "title": "Season",
+              "description": "Seasons to which this instance of Episode belongs, or that are part are part of this instance of Series."
+            },
+            "Episode": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
+                ]
+              },
+              "title": "Episode",
+              "description": "Episodes that belong to this Series or Season described by the instance Creative Work"
+            },
+            "ProductionCompany": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/Participant/properties/Participant"}
+                ]
+              },
+              "title": "Production Company",
+              "description": "The Production companies responsible for the production of this Creative Work"
             }
           },
           "required": ["entityType"],
@@ -2133,14 +2302,13 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Depiction"
             },
             "depictionType": {
-              "type": "string",
               "title": "Object type",
               "description": "A categorization of the type of depiction",
+              "default": "depiction",
               "enum": [
                 "depiction",
                 "portrayal"
@@ -2208,20 +2376,18 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Effect"
             },
             "effectType": {
-              "type": "string",
               "title": "effectType",
               "description": "A categorization of the type of effect.",
+              "default": "effect",
               "enum": [
                 "effect",
                 "specialEffect",
                 "visualEffect"
-              ],
-              "default": "effect"
+              ]
             },
             "Context": {
               "type": [
@@ -2248,12 +2414,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "NarrativeAudio"
             },
             "narrativeType": {
-              "type": "string",
               "title": "Narrative Type (narrative audio)",
               "description": "Describes the specific type of Narrative Audio, equivalent to the sub-class used in OMC-RDF.",
               "enum": [
@@ -2300,12 +2464,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "NarrativeLocation"
             },
             "narrativeType": {
-              "type": "string",
               "enum": ["narrativeLocation"],
               "title": "narrativeType - narrative location",
               "description": "Describes the specific type of Narrative Location, equivalent to the sub-class used in OMC-RDF.",
@@ -2358,12 +2520,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "NarrativeObject"
             },
             "narrativeType": {
-              "type": "string",
               "title": "narrativeType - narrative object",
               "description": "Describes the specific type of Narrative Object, equivalent to the sub-class used in OMC-RDF.",
               "enum": [
@@ -2385,7 +2545,8 @@
             "quantity": {
               "type": [
                 "string",
-                "number"
+                "number",
+                "null"
               ],
               "title": "Quantity"
             },
@@ -2426,9 +2587,14 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "NarrativeScene"
+            },
+            "narrativeType": {
+              "title": "narrativeType - narrative scene",
+              "description": "Describes the specific type of Narrative Scene, equivalent to the sub-class used in OMC-RDF.",
+              "enum": ["narrativeScene"],
+              "default": "narrativeScene"
             },
             "sceneName": {
               "type": [
@@ -2457,16 +2623,10 @@
               },
               "additionalProperties": true
             },
-            "narrativeType": {
-              "type": "string",
-              "title": "narrativeType - narrative scene",
-              "description": "Describes the specific type of Narrative Scene, equivalent to the sub-class used in OMC-RDF.",
-              "enum": ["narrativeScene"],
-              "default": "narrativeScene"
-            },
             "sceneNumber": {
               "type": [
                 "string",
+                "number",
                 "null"
               ],
               "title": "Scene Number",
@@ -2528,12 +2688,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "NarrativeStyling"
             },
             "narrativeType": {
-              "type": "string",
               "title": "narrativeType - narrative styling",
               "description": "Describes the specific type of Narrative Styling, equivalent to the sub-class used in OMC-RDF.",
               "enum": [
@@ -2581,12 +2739,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "NarrativeWardrobe"
             },
             "narrativeType": {
-              "type": "string",
               "title": "narrativeType - narrative wardrobe",
               "description": "Describes the specific type of Narrative Wardrobe, equivalent to the sub-class used in OMC-RDF.",
               "enum": ["narrativeWardrobe"],
@@ -2629,7 +2785,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "ProductionLocation"
             },
@@ -2677,7 +2832,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "ProductionScene"
             },
@@ -2734,12 +2888,14 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Slate"
             },
             "slateUID": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": "Slate UID",
               "description": "Slate Unique Identifier"
             },
@@ -2841,7 +2997,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Sequence"
             },
@@ -2961,19 +3116,16 @@
               "oneOf": [
                 {
                   "deprecated": true,
-                  "type": "string",
                   "title": "Entity Type",
                   "const": "NarrativeAction"
                 },
                 {
-                  "type": "string",
                   "title": "Entity Type",
                   "const": "SpecialAction"
                 }
               ]
             },
             "specialActionType": {
-              "type": "string",
               "title": "specialActionType",
               "description": "A categorization of the type action.",
               "enum": [
@@ -3020,7 +3172,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Participant"
             },
@@ -3134,14 +3285,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Person"
             },
-            "structuralType": {
-              "type": "string",
-              "const": "person"
-            },
+            "structuralType": {"const": "person"},
             "jobTitle": {
               "type": [
                 "string",
@@ -3184,15 +3331,12 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Department"
             },
-            "structuralType": {
-              "type": "string",
-              "const": "department"
-            },
+            "structuralType": {"const": "department"},
             "departmentName": {"$ref": "#/$defs/Utility/properties/basicName"},
+            "contact": {"$ref": "#/$defs/Utility/properties/contact"},
             "Location": {
               "oneOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
@@ -3202,8 +3346,7 @@
                 "object",
                 "null"
               ]
-            },
-            "contact": {"$ref": "#/$defs/Utility/properties/contact"}
+            }
           },
           "required": ["entityType"],
           "title": "Department",
@@ -3217,14 +3360,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Organization"
             },
-            "structuralType": {
-              "type": "string",
-              "const": "organization"
-            },
+            "structuralType": {"const": "organization"},
             "organizationName": {"$ref": "#/$defs/Utility/properties/basicName"},
             "contact": {"$ref": "#/$defs/Utility/properties/contact"},
             "Location": {
@@ -3250,14 +3389,10 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Service"
             },
-            "structuralType": {
-              "type": "string",
-              "const": "service"
-            },
+            "structuralType": {"const": "service"},
             "serviceName": {"$ref": "#/$defs/Utility/properties/basicName"},
             "contact": {"$ref": "#/$defs/Utility/properties/contact"}
           },
@@ -3273,7 +3408,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Role"
             },
@@ -3301,21 +3435,31 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Task"
             },
             "TaskSC": {
               "title": "Task Structural Characteristics",
-              "$ref": "#/$defs/Task/properties/TaskSC"
+              "oneOf": [
+                {"$ref": "#/$defs/core/properties/reference"},
+                {"$ref": "#/$defs/Task/properties/TaskSC"}
+              ]
             },
             "taskFC": {
               "title": "Task Functional Characteristics",
               "$ref": "#/$defs/Task/properties/taskFC"
             },
             "Context": {
-              "title": "Task Context",
-              "$ref": "#/$defs/MediaCreationContext/properties/Context"
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
+                ]
+              }
             }
           },
           "title": "Task",
@@ -3331,7 +3475,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "TaskSC"
             },
@@ -3408,7 +3551,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Composition"
             },
@@ -3483,7 +3625,10 @@
               }
             },
             "StartHere": {
-              "type": "object",
+              "type": [
+                "object",
+                "null"
+              ],
               "title": "Start Here",
               "description": "Start point for assembling the Composition, the Asset that contains the instructions for the Composition",
               "anyOf": [
@@ -3503,7 +3648,6 @@
           ],
           "properties": {
             "entityType": {
-              "type": "string",
               "title": "Entity Type",
               "const": "Location"
             },
@@ -3778,7 +3922,7 @@
           "title": "Country",
           "description": "The country, as an ISO 3166-1 alpha-2 country code",
           "minLength": 2,
-          "maxLength": 2,
+          "maxLength": 4,
           "examples": ["US"]
         },
         "basicName": {
@@ -3975,18 +4119,14 @@
           "title": "Gender",
           "properties": {
             "gender": {
-              "type": [
-                "string",
-                "null"
-              ],
               "title": "Identifies as gender",
               "description": "The gender by which an individual identifies",
               "enum": [
+                null,
                 "male",
                 "female",
                 "other",
-                "unknown",
-                null
+                "unknown"
               ]
             },
             "genderPronoun": {
@@ -4120,7 +4260,10 @@
                   ]
                 },
                 "eventInTime": {
-                  "type": ["string", "null"],
+                  "type": [
+                    "string",
+                    "null"
+                  ],
                   "title": "Event in Time",
                   "description": "Describes a specific event that occurred",
                   "examples": [
@@ -4153,11 +4296,11 @@
               "description": "Should be formatted to comply with ISO 8601"
             },
             "durationTime": {
+              "title": "Duration of Time",
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Duration of Time",
               "pattern": "^(-?)P(?=.)((\\d+)Y)?((\\d+)M)?((\\d+)D)?(T(?=.)((\\d+)H)?((\\d+)M)?(\\d*(\\.\\d+)?S)?)?$",
               "examples": ["P2Y12M3D"],
               "description": "Should be formatted to comply with ISO 8601"
@@ -4183,13 +4326,19 @@
           "description": "A global positioning coordinate in compliance with WGS 84",
           "properties": {
             "latitude": {
-              "type": "number",
+              "type": [
+                "number",
+                "null"
+              ],
               "title": "latitude",
               "minimum": -90,
               "maximum": 90
             },
             "longitude": {
-              "type": "number",
+              "type": [
+                "number",
+                "null"
+              ],
               "title": "longitude",
               "minimum": -180,
               "maximum": 180
@@ -4367,15 +4516,15 @@
           ],
           "properties": {
             "handedness": {
-              "type": "string",
               "enum": [
+                null,
                 "left",
                 "right"
               ]
             },
             "upAxis": {
-              "type": "string",
               "enum": [
+                null,
                 "y-up",
                 "z-up"
               ]
@@ -4451,17 +4600,6 @@
     "core": {
       "title": "Core",
       "properties": {
-        "schemaVersion": {
-          "type": "string",
-          "title": "Schema Version",
-          "default": "https://movielabs.com/omc/json/schema/v2.0",
-          "enum": [
-            "https://movielabs.com/omc/json/schema/v2.0",
-            "https://movielabs.com/omc/json/schema/v2.1",
-            "https://movielabs.com/omc/json/schema/v2.5"
-          ],
-          "description": "Describes the version of OMC-JSON schema that was used to create this instance"
-        },
         "reference": {
           "type": [
             "object",
@@ -4630,366 +4768,361 @@
           },
           "additionalProperties": false
         },
-        "rootArray": {
-          "type": "array",
-          "items": {
-            "allOf": [
-              {
+        "rootEntity": {
+          "allOf": [
+            {
+              "type": "object",
+              "properties": {
+                "entityType": {
+                  "enum": [
+                    "Asset",
+                    "AssetSC",
+                    "Infrastructure",
+                    "InfrastructureSC",
+                    "Character",
+                    "Context",
+                    "CreativeWork",
+                    "Depiction",
+                    "Effect",
+                    "NarrativeAction",
+                    "NarrativeAudio",
+                    "NarrativeLocation",
+                    "NarrativeObject",
+                    "NarrativeScene",
+                    "NarrativeStyling",
+                    "NarrativeWardrobe",
+                    "ProductionLocation",
+                    "ProductionScene",
+                    "Sequence",
+                    "Slate",
+                    "SpecialAction",
+                    "Department",
+                    "Organization",
+                    "Participant",
+                    "Person",
+                    "Role",
+                    "Service",
+                    "Task",
+                    "TaskSC",
+                    "Composition",
+                    "Location"
+                  ]
+                }
+              },
+              "required": ["entityType"]
+            },
+            {
+              "if": {
                 "type": "object",
                 "properties": {
-                  "entityType": {
-                    "type": "string",
-                    "enum": [
-                      "Asset",
-                      "AssetSC",
-                      "Infrastructure",
-                      "InfrastructureSC",
-                      "Character",
-                      "Context",
-                      "CreativeWork",
-                      "Depiction",
-                      "Effect",
-                      "NarrativeAction",
-                      "NarrativeAudio",
-                      "NarrativeLocation",
-                      "NarrativeObject",
-                      "NarrativeScene",
-                      "NarrativeStyling",
-                      "NarrativeWardrobe",
-                      "ProductionLocation",
-                      "ProductionScene",
-                      "Sequence",
-                      "Slate",
-                      "SpecialAction",
-                      "Department",
-                      "Organization",
-                      "Participant",
-                      "Person",
-                      "Role",
-                      "Service",
-                      "Task",
-                      "TaskSC",
-                      "Composition",
-                      "Location"
-                    ]
-                  }
+                  "entityType": {"const": "Asset"}
                 },
                 "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Asset"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Asset/properties/Asset"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "AssetSC"}
                 },
-                "then": {"$ref": "#/$defs/Asset/properties/Asset"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "AssetSC"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Asset/properties/AssetSC"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Infrastructure"}
                 },
-                "then": {"$ref": "#/$defs/Asset/properties/AssetSC"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Infrastructure"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Infrastructure/properties/Infrastructure"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "InfrastructureSC"}
                 },
-                "then": {"$ref": "#/$defs/Infrastructure/properties/Infrastructure"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "InfrastructureSC"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Infrastructure/properties/InfrastructureSC"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Character"}
                 },
-                "then": {"$ref": "#/$defs/Infrastructure/properties/InfrastructureSC"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Character"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/Character"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Context"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/Character"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Context"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "CreativeWork"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "CreativeWork"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Depiction"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Depiction"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "NarrativeAudio"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "NarrativeAudio"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "NarrativeLocation"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "NarrativeLocation"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "NarrativeObject"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "NarrativeObject"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "NarrativeScene"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "NarrativeScene"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeScene"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "NarrativeStyling"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeScene"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "NarrativeStyling"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeStyling"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "NarrativeWardrobe"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeStyling"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "NarrativeWardrobe"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeWardrobe"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "ProductionLocation"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeWardrobe"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "ProductionLocation"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/ProductionLocation"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "ProductionScene"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/ProductionLocation"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "ProductionScene"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/ProductionScene"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Slate"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/ProductionScene"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Slate"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/Slate"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "SpecialAction"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/Slate"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "SpecialAction"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Effect"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Effect"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/Effect"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Sequence"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/Effect"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Sequence"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/MediaCreationContext/properties/Sequence"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Participant"}
                 },
-                "then": {"$ref": "#/$defs/MediaCreationContext/properties/Sequence"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Participant"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Participant/properties/Participant"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Role"}
                 },
-                "then": {"$ref": "#/$defs/Participant/properties/Participant"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Role"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Participant/properties/Role"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Person"}
                 },
-                "then": {"$ref": "#/$defs/Participant/properties/Role"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Person"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Participant/properties/Person"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Department"}
                 },
-                "then": {"$ref": "#/$defs/Participant/properties/Person"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Department"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Participant/properties/Department"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Organization"}
                 },
-                "then": {"$ref": "#/$defs/Participant/properties/Department"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Organization"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Participant/properties/Organization"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Service"}
                 },
-                "then": {"$ref": "#/$defs/Participant/properties/Organization"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Service"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Participant/properties/Service"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Task"}
                 },
-                "then": {"$ref": "#/$defs/Participant/properties/Service"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Task"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Task/properties/Task"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "TaskSC"}
                 },
-                "then": {"$ref": "#/$defs/Task/properties/Task"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "TaskSC"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Task/properties/TaskSC"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Location"}
                 },
-                "then": {"$ref": "#/$defs/Task/properties/TaskSC"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Location"}
-                  },
-                  "required": ["entityType"]
+              "then": {"$ref": "#/$defs/Utility/properties/Location"}
+            },
+            {
+              "if": {
+                "type": "object",
+                "properties": {
+                  "entityType": {"const": "Composition"}
                 },
-                "then": {"$ref": "#/$defs/Utility/properties/Location"}
+                "required": ["entityType"]
               },
-              {
-                "if": {
-                  "type": "object",
-                  "properties": {
-                    "entityType": {"const": "Composition"}
-                  },
-                  "required": ["entityType"]
-                },
-                "then": {"$ref": "#/$defs/Utility/properties/Composition"}
-              }
-            ]
-          }
+              "then": {"$ref": "#/$defs/Utility/properties/Composition"}
+            }
+          ]
         },
         "baseEntity": {
           "type": "object",
           "properties": {
             "schemaVersion": {
-              "type": "string",
               "title": "Schema Version",
-              "default": "https://movielabs.com/omc/json/schema/v2.5",
+              "default": "https://movielabs.com/omc/json/schema/v2.6",
               "enum": [
                 "https://movielabs.com/omc/json/schema/v2.0",
                 "https://movielabs.com/omc/json/schema/v2.1",
-                "https://movielabs.com/omc/json/schema/v2.5"
+                "https://movielabs.com/omc/json/schema/v2.6"
               ],
               "description": "Describes the version of OMC-JSON schema that was used to create this instance"
             },

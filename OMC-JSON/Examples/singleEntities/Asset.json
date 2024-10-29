@@ -1,0 +1,27 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+      }
+    ],
+    "name": "TH_Castle_Bricks",
+    "assetFC": {
+      "functionalType": "material",
+      "functionalProperties": {
+        "materialType": "inorganic.stone.marble"
+      }
+    },
+    "AssetSC": {
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+        }
+      ]
+    }
+  }
+]

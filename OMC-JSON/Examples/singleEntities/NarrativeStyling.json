@@ -1,22 +1,22 @@
 [
   {
     "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
-    "entityType": "Effect",
+    "entityType": "NarrativeStyling",
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
       }
     ],
-    "name": "A special Action",
-    "description": "Sven is hit by laser blast",
-    "effectType": "specialEffect",
+    "name": "Kiera's hair",
+    "description": "Blue streak",
+    "narrativeType": "narrativeHair",
     "Context": [
       {
         "identifier": [
           {
             "identifierScope": "labkoat",
-            "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
+            "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"
           }
         ]
       }
@@ -24,16 +24,16 @@
   },
   {
     "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
-    "entityType": "Effect",
+    "entityType": "NarrativeStyling",
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
       }
     ],
-    "name": null,
-    "description": null,
-    "effectType": "visualEffect",
+    "name": "Sven's scar",
+    "description": "A scar on his left cheek",
+    "narrativeType": "narrativeMakeup",
     "Context": null
   }
 ]

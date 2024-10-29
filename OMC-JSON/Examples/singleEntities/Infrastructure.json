@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Infrastructure",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "inf/7EdFxI0xaHHruB97KA9Ni"
+      }
+    ],
+    "InfrastructureSC": {
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "infsc/7EdFxI0xaHHruB97KA9Ni"
+        }
+      ]
+    },
+    "infrastructureFC": {
+      "functionalType": "camera A",
+      "customData": null
+    },
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/hlDwnZidsasQM3qOTyCWE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Infrastructure",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "inf/7EdFxI0xaHHruB97KA9Ni"
+      }
+    ],
+    "InfrastructureSC": null,
+    "infrastructureFC": {
+      "functionalType": null,
+      "customData": null
+    },
+    "Context": null
+  }
+]
