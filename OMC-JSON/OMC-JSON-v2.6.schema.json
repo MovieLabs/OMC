@@ -17,7 +17,7 @@
       "title": "Asset Definitions",
       "properties": {
         "Asset": {
-          "type": ["object"],
+          "type": "object",
           "title": "Asset",
           "description": "A physical or digital object or collection of objects specific to the creation of the Creative Work.",
           "allOf": [
@@ -29,29 +29,16 @@
               "const": "Asset"
             },
             "version": {
-              "type": "object",
+              "type": [
+                "object",
+                "null"
+              ],
               "title": "Asset Version Information",
               "description": "A particular form, variant, or representation of an Asset that differs in some way from its source Asset.",
-              "additionalProperties": false,
+              "allOf": [
+                {"$ref": "#/$defs/core/properties/baseVersion"}
+              ],
               "properties": {
-                "versionNumber": {"$ref": "#/$defs/Utility/properties/versionNumber"},
-                "name": {
-                  "type": "string",
-                  "title": "A name for this specific version of the Asset"
-                },
-                "description": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "title": "Asset description",
-                  "description": "A human readable description of the version"
-                },
-                "annotation": {
-                  "type": "array",
-                  "items": {"$ref": "#/$defs/Utility/properties/note"},
-                  "description": "A collection of notes specific to this version"
-                },
                 "DerivationOf": {
                   "oneOf": [
                     {"$ref": "#/$defs/core/properties/reference"},
@@ -71,7 +58,10 @@
                   ]
                 },
                 "Alternative": {
-                  "type": "array",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/core/properties/reference"},
@@ -80,7 +70,10 @@
                   }
                 },
                 "Derivation": {
-                  "type": "array",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/core/properties/reference"},
@@ -89,7 +82,10 @@
                   }
                 },
                 "Revision": {
-                  "type": "array",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/core/properties/reference"},
@@ -98,16 +94,19 @@
                   }
                 },
                 "Variant": {
-                  "type": "array",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/core/properties/reference"},
                       {"$ref": "#/$defs/Asset/properties/Asset"}
                     ]
                   }
-                },
-                "customData": {"$ref": "#/$defs/Utility/properties/customData"}
-              }
+                }
+              },
+              "unevaluatedProperties": false
             },
             "provenance": {
               "$ref": "#/$defs/Utility/properties/provenance",
@@ -139,7 +138,10 @@
               ]
             },
             "assetFC": {
-              "type": "object",
+              "type": [
+                "object",
+                "null"
+              ],
               "properties": {
                 "functionalType": {
                   "type": [
@@ -147,56 +149,65 @@
                     "null"
                   ],
                   "controlledValues": [
-                    "simpleMaterial",
+                    "artwork",
+                    "artwork.animatedStoryboard",
+                    "artwork.conceptArt",
+                    "artwork.storyboard",
+                    "audio",
+                    "audio.channel",
+                    "audio.onSetMix",
+                    "audio.track",
+                    "cameraMetadata",
+                    "capture",
+                    "capture.audio",
+                    "capture.audio.onSetMix",
+                    "capture.audio.wild",
+                    "capture.calibration",
+                    "capture.cameraProxy",
+                    "capture.faceCamera",
+                    "capture.lidar",
+                    "capture.motionCapture",
+                    "capture.ocf",
+                    "capture.roll",
+                    "capture.witnessCamera",
+                    "color",
+                    "color.cdl",
+                    "color.colorSpace",
+                    "color.lut",
+                    "configuration",
+                    "configuration.colorSpace",
+                    "creativeReferenceMaterial",
+                    "lensMetadata",
                     "map",
+                    "material",
+                    "material.composite",
+                    "material.simple",
+                    "model",
+                    "productionProp",
+                    "productionProp.productionGreenery",
+                    "productionProp.productionVehicle",
+                    "productionSetDressing",
+                    "productionSetDressing.productionGreenery",
+                    "productionSetDressing.productionVehicle",
                     "proxy",
                     "proxy.daily",
                     "proxy.editorial",
-                    "technicalReferenceMaterial",
-                    "shot",
-                    "shot.animationShot",
-                    "shot.vfxShot",
-                    "sequenceChronologyDescriptor",
-                    "sequence",
-                    "sequence.vfxSequence",
-                    "sequence.vfxImageSequence",
-                    "sequence.editorialSequence",
-                    "sequence.colorSequence",
-                    "sequence.animationSequence",
+                    "recorderMetadata",
                     "script",
-                    "productionSetDressing",
-                    "productionSetDressing.productionVehicle",
-                    "productionSetDressing.productionGreenery",
-                    "productionProp",
-                    "productionProp.productionVehicle",
-                    "productionProp.productionGreenery",
-                    "creativeReferenceMaterial",
-                    "configuration",
-                    "configuration.colorSpaceConfiguration",
-                    "color",
-                    "color.colorSpace",
-                    "color.cdl",
-                    "color.lut",
-                    "capture",
-                    "capture.ocf",
-                    "capture.lidar",
-                    "capture.witnessCamera",
-                    "capture.roll",
-                    "capture.faceCamera",
-                    "capture.motionCapture",
-                    "capture.wild",
-                    "capture.calibration",
-                    "capture.cameraProxy",
-                    "capture.onSetMix",
-                    "artwork",
-                    "artwork.storyboard",
-                    "artwork.amimatedStoryboard",
-                    "artwork.conceptArt",
-                    "model"
+                    "sequenceChronologyDescriptor",
+                    "shot",
+                    "shot.animation",
+                    "shot.editorial",
+                    "shot.vfx",
+                    "simple",
+                    "technicalReferenceMaterial"
                   ]
                 },
                 "functionalProperties": {
-                  "type": "object",
+                  "type": [
+                    "object",
+                    "null"
+                  ],
                   "properties": {
                     "mapFormat": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapFormat"},
                     "mapType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapType"},
@@ -204,9 +215,9 @@
                     "cameraMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/cameraMetadata"},
                     "lensMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/lensMetadata"},
                     "recorderMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/recorderMetadata"}
-                  },
-                  "additionalProperties": true
-                }
+                  }
+                },
+                "customData": {"$ref": "#/$defs/Utility/properties/customData"}
               }
             },
             "Context": {
@@ -730,25 +741,10 @@
                 "object",
                 "null"
               ],
+              "allOf": [
+                {"$ref": "#/$defs/core/properties/baseVersion"}
+              ],
               "properties": {
-                "versionNumber": {"$ref": "#/$defs/Utility/properties/versionNumber"},
-                "name": {
-                  "type": "string",
-                  "title": "A name for this specific version of the Asset"
-                },
-                "description": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
-                  "title": "Asset description",
-                  "description": "A human readable description of the version"
-                },
-                "annotation": {
-                  "type": "array",
-                  "items": {"$ref": "#/$defs/Utility/properties/note"},
-                  "description": "A collection of notes specific to this version"
-                },
                 "DerivationOf": {
                   "oneOf": [
                     {"$ref": "#/$defs/core/properties/reference"},
@@ -768,7 +764,10 @@
                   ]
                 },
                 "Deriviation": {
-                  "type": "array",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/core/properties/reference"},
@@ -777,7 +776,10 @@
                   }
                 },
                 "Representation": {
-                  "type": "array",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/core/properties/reference"},
@@ -786,7 +788,10 @@
                   }
                 },
                 "Revision": {
-                  "type": "array",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/core/properties/reference"},
@@ -796,9 +801,9 @@
                 },
                 "customData": {"$ref": "#/$defs/Utility/properties/customData"}
               },
-              "additionalProperties": false,
               "title": "Asset Structural Version Information",
-              "description": "A particular form, variant, or representation of an Asset that differs in some way from its source Asset."
+              "description": "A particular form, variant, or representation of an Asset that differs in some way from its source Asset.",
+              "unevaluatedProperties": false
             },
             "provenance": {
               "$ref": "#/$defs/Utility/properties/provenance",
@@ -843,7 +848,6 @@
               "description": "A set of properties that describe the asset in this form",
               "properties": {
                 "assetGroup": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/assetGroup"},
-                "customData": {"$ref": "#/$defs/Utility/properties/customData"},
                 "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
                 "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
                 "dimensions": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/dimensions"},
@@ -870,10 +874,6 @@
               "oneOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
                 {"$ref": "#/$defs/Infrastructure/properties/Infrastructure"}
-              ],
-              "type": [
-                "object",
-                "null"
               ]
             }
           },
@@ -1040,12 +1040,7 @@
                 "null"
               ],
               "title": "Structural Type",
-              "description": "A structured description of the the assets form",
-              "controlledValues": [
-                "assetGroup",
-                "digital.image",
-                "analog.movingImage"
-              ]
+              "description": "A structured description of the the Infrastructures form"
             },
             "structuralProperties": {
               "type": [
@@ -1054,10 +1049,7 @@
               ],
               "title": "Structural Properties",
               "description": "A set of properties that describe the infrastructure in this form",
-              "properties": {
-                "customData": {"$ref": "#/$defs/Utility/properties/customData"}
-              },
-              "additionalProperties": true
+              "properties": {}
             }
           },
           "required": ["entityType"],
@@ -1086,10 +1078,7 @@
               ],
               "title": "Functional Properties",
               "description": "A set of properties that describe the tasks functional use",
-              "properties": {
-                "customData": {"$ref": "#/$defs/Utility/properties/customData"}
-              },
-              "additionalProperties": true
+              "properties": {}
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           },
@@ -1195,8 +1184,7 @@
                       "title": "height",
                       "$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/linearDistance"
                     }
-                  },
-                  "additionalProperties": true
+                  }
                 },
                 "gender": {"$ref": "#/$defs/Utility/properties/gender"},
                 "background": {
@@ -1204,8 +1192,7 @@
                     "object",
                     "null"
                   ],
-                  "title": "background",
-                  "additionalProperties": true
+                  "title": "background"
                 }
               },
               "additionalProperties": false
@@ -2034,6 +2021,7 @@
                 "shootDay": {
                   "type": [
                     "string",
+                    "number",
                     "null"
                   ]
                 },
@@ -2144,7 +2132,7 @@
                   "items": {
                     "type": "object",
                     "properties": {
-                      "title": {
+                      "titleName": {
                         "type": [
                           "string",
                           "null"
@@ -2159,7 +2147,7 @@
                           "officialTitle"
                         ]
                       },
-                      "language": {"$ref": "#/$defs/Utility/properties/language"}
+                      "titleLanguage": {"$ref": "#/$defs/Utility/properties/language"}
                     }
                   }
                 },
@@ -2192,7 +2180,6 @@
                       "description": "The internal title of the work"
                     }
                   },
-                  "additionalProperties": true,
                   "deprecated": true
                 }
               ],
@@ -2620,8 +2607,7 @@
                   "title": "Scene alternate name",
                   "description": "An alternate, often shorter, name used in applications to identify the scenes"
                 }
-              },
-              "additionalProperties": true
+              }
             },
             "sceneNumber": {
               "type": [
@@ -2789,7 +2775,6 @@
               "const": "ProductionLocation"
             },
             "locationType": {
-              "type": "string",
               "description": "Describes whether this is production location or more specifically a shooting location",
               "enum": [
                 "production",
@@ -3071,7 +3056,6 @@
               }
             },
             "sequenceType": {
-              "type": "string",
               "title": "Sequence Type",
               "enum": [
                 "vfx",
@@ -3225,7 +3209,8 @@
                     ]
                   },
                   "title": "Role"
-                }
+                },
+                "customData": {"$ref": "#/$defs/Utility/properties/customData"}
               },
               "additionalProperties": false,
               "description": "The use or purpose of a Participant within the production process"
@@ -3240,7 +3225,7 @@
                 "array",
                 "null"
               ],
-              "title": "Participant",
+              "title": "Participant Group",
               "description": "Any Participants that are members of this Participant group",
               "items": {
                 "anyOf": [
@@ -3288,13 +3273,17 @@
               "title": "Entity Type",
               "const": "Person"
             },
-            "structuralType": {"const": "person"},
+            "structuralType": {
+              "const": "person",
+              "$comment": "Included for possible future extenstions",
+              "title": "Person's Structural Type"
+            },
             "jobTitle": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Job Title",
+              "title": "Person's Job Title",
               "description": "A persons job title (as distinct from a specific role)"
             },
             "Location": {
@@ -3307,15 +3296,18 @@
                 "null"
               ]
             },
-            "gender": {"$ref": "#/$defs/Utility/properties/gender"},
+            "gender": {
+              "$ref": "#/$defs/Utility/properties/gender",
+              "title": "Person's Gender"
+            },
             "contact": {
               "$ref": "#/$defs/Utility/properties/contact",
-              "title": "Person Contact",
+              "title": "Person's Contact",
               "description": "Contact information for the Person"
             },
             "personName": {
               "$ref": "#/$defs/Utility/properties/completeName",
-              "title": "Person Name",
+              "title": "Person's Name",
               "description": "The canonical name or set of names and titles for the Person"
             }
           },
@@ -3334,9 +3326,19 @@
               "title": "Entity Type",
               "const": "Department"
             },
-            "structuralType": {"const": "department"},
-            "departmentName": {"$ref": "#/$defs/Utility/properties/basicName"},
-            "contact": {"$ref": "#/$defs/Utility/properties/contact"},
+            "structuralType": {
+              "const": "department",
+              "$comment": "Included for possible future extenstions",
+              "title": "Department's Structural Type"
+            },
+            "departmentName": {
+              "$ref": "#/$defs/Utility/properties/basicName",
+              "title": "Department's Name"
+            },
+            "contact": {
+              "$ref": "#/$defs/Utility/properties/contact",
+              "title": "Department's Contact"
+            },
             "Location": {
               "oneOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
@@ -3363,9 +3365,19 @@
               "title": "Entity Type",
               "const": "Organization"
             },
-            "structuralType": {"const": "organization"},
-            "organizationName": {"$ref": "#/$defs/Utility/properties/basicName"},
-            "contact": {"$ref": "#/$defs/Utility/properties/contact"},
+            "structuralType": {
+              "const": "organization",
+              "$comment": "Included for possible future extenstions",
+              "title": "Organization's Structural Type"
+            },
+            "organizationName": {
+              "$ref": "#/$defs/Utility/properties/basicName",
+              "title": "Organization's Name"
+            },
+            "contact": {
+              "$ref": "#/$defs/Utility/properties/contact",
+              "title": "Organization's Contact"
+            },
             "Location": {
               "oneOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
@@ -3392,9 +3404,19 @@
               "title": "Entity Type",
               "const": "Service"
             },
-            "structuralType": {"const": "service"},
-            "serviceName": {"$ref": "#/$defs/Utility/properties/basicName"},
-            "contact": {"$ref": "#/$defs/Utility/properties/contact"}
+            "structuralType": {
+              "const": "service",
+              "$comment": "Included for possible future extenstions",
+              "title": "Service's Structural Type"
+            },
+            "serviceName": {
+              "$ref": "#/$defs/Utility/properties/basicName",
+              "title": "Service's Name"
+            },
+            "contact": {
+              "$ref": "#/$defs/Utility/properties/contact",
+              "title": "Service's Contact"
+            }
           },
           "required": ["entityType"],
           "title": "Service",
@@ -3414,7 +3436,8 @@
             "roleType": {
               "type": "string",
               "title": "Role Type",
-              "description": "The specific role, typically used in authorization systems"
+              "description": "The specific role, typically used in authorization systems",
+              "$comment": "A set of controlled values is planned for a future release"
             }
           },
           "required": ["entityType"],
@@ -3495,8 +3518,7 @@
               "description": "A set of properties that describe the Task in this form",
               "properties": {
                 "customData": {"$ref": "#/$defs/Utility/properties/customData"}
-              },
-              "additionalProperties": true
+              }
             }
           },
           "required": ["entityType"],
@@ -3527,8 +3549,7 @@
               "description": "A set of properties that describe the tasks functional use",
               "properties": {
                 "customData": {"$ref": "#/$defs/Utility/properties/customData"}
-              },
-              "additionalProperties": true
+              }
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           },
@@ -3554,6 +3575,88 @@
               "title": "Entity Type",
               "const": "Composition"
             },
+            "version": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "allOf": [
+                {"$ref": "#/$defs/core/properties/baseVersion"}
+              ],
+              "properties": {
+                "Alternative": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/core/properties/reference"},
+                      {"$ref": "#/$defs/Utility/properties/Composition"}
+                    ]
+                  }
+                },
+                "DerivationOf": {
+                  "oneOf": [
+                    {"$ref": "#/$defs/core/properties/reference"},
+                    {"$ref": "#/$defs/Utility/properties/Composition"}
+                  ]
+                },
+                "RevisionOf": {
+                  "oneOf": [
+                    {"$ref": "#/$defs/core/properties/reference"},
+                    {"$ref": "#/$defs/Utility/properties/Composition"}
+                  ]
+                },
+                "VariantOf": {
+                  "oneOf": [
+                    {"$ref": "#/$defs/core/properties/reference"},
+                    {"$ref": "#/$defs/Utility/properties/Composition"}
+                  ]
+                },
+                "Derivation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/core/properties/reference"},
+                      {"$ref": "#/$defs/Utility/properties/Composition"}
+                    ]
+                  }
+                },
+                "Revision": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/core/properties/reference"},
+                      {"$ref": "#/$defs/Utility/properties/Composition"}
+                    ]
+                  }
+                },
+                "Variant": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/core/properties/reference"},
+                      {"$ref": "#/$defs/Utility/properties/Composition"}
+                    ]
+                  }
+                }
+              },
+              "unevaluatedProperties": false
+            },
+            "provenance": {
+              "$ref": "#/$defs/Utility/properties/provenance",
+              "title": "Provenance"
+            },
             "compositionType": {
               "type": [
                 "string",
@@ -3565,7 +3668,12 @@
                 "cgAssembly",
                 "geometryAssembly",
                 "compositeMaterial",
-                "sequence"
+                "sequence",
+                "sequence.vfx",
+                "sequence.vfxImage",
+                "sequence.editorial",
+                "sequence.color",
+                "sequence.animation"
               ]
             },
             "compositionProperties": {
@@ -3615,7 +3723,7 @@
                 "array",
                 "null"
               ],
-              "title": "Composition",
+              "title": "Composition Group",
               "description": "The set of Compositions that are included in this Composition",
               "items": {
                 "anyOf": [
@@ -3678,7 +3786,10 @@
           "unevaluatedProperties": false
         },
         "unitOfMeasurement": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "properties": {
             "weight": {
               "title": "weight",
@@ -4130,10 +4241,6 @@
               ]
             },
             "genderPronoun": {
-              "type": [
-                "string",
-                "null"
-              ],
               "title": "Preferred pronoun",
               "description": "An individuals pronoun of choice",
               "enum": [
@@ -4156,12 +4263,18 @@
           "title": "Note",
           "properties": {
             "title": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": "Title",
               "description": "A title for the note or annotation"
             },
             "text": {
-              "type": "string",
+              "type": [
+                "string",
+                "null"
+              ],
               "title": "Text",
               "description": "The text of the note or annotation"
             }
@@ -4435,8 +4548,7 @@
             "null"
           ],
           "title": "Custom Data",
-          "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties",
-          "additionalProperties": true
+          "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties"
         },
         "provenance": {
           "type": [
@@ -4463,9 +4575,17 @@
                 {"$ref": "#/$defs/Asset/properties/Asset"}
               ]
             },
-            "reason": {"type": "string"},
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
             "note": {
-              "type": "array",
+              "type": [
+                "array",
+                "null"
+              ],
               "items": {"$ref": "#/$defs/Utility/properties/note"}
             }
           },
@@ -4481,9 +4601,15 @@
           "properties": {
             "corner1": {"$ref": "#/$defs/Utility/properties/point3"},
             "corner2": {"$ref": "#/$defs/Utility/properties/point3"}
-          }
+          },
+          "title": "Bounding Box",
+          "description": "The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry."
         },
-        "scale": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/linearDistance"},
+        "scale": {
+          "$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/linearDistance",
+          "title": "Scale",
+          "description": "The number of “real” units represented by a single unit in the coordinate space of the Geometry."
+        },
         "point2": {
           "type": [
             "object",
@@ -4590,7 +4716,9 @@
             "organic.scales",
             "organic.leather",
             "organic.wood"
-          ]
+          ],
+          "title": "Material Type",
+          "description": "Data values and relationships required to describe the look of a CG Asset."
         }
       },
       "additionalProperties": false,
@@ -5154,8 +5282,7 @@
                 "null"
               ],
               "title": "Entity Information",
-              "description": "Reserved for future use to describe specific details about the instance of the entity",
-              "additionalProperties": true
+              "description": "Reserved for future use to describe specific details about the instance of the entity"
             },
             "instanceInfo": {
               "$comment": "Currently specific to the OMC-JSON implementation and should be considered Beta",
@@ -5199,10 +5326,42 @@
             "identifier",
             "schemaVersion"
           ]
+        },
+        "baseVersion": {
+          "type": "object",
+          "title": "Version Information",
+          "description": "The base properties that describe a version of something (Asset or Composition).",
+          "properties": {
+            "versionNumber": {"$ref": "#/$defs/Utility/properties/versionNumber"},
+            "name": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "A name for this specific version of the Asset"
+            },
+            "description": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Asset description",
+              "description": "A human readable description of the version"
+            },
+            "annotation": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {"$ref": "#/$defs/Utility/properties/note"},
+              "description": "A collection of notes specific to this version"
+            },
+            "customData": {"$ref": "#/$defs/Utility/properties/customData"}
+          }
         }
       },
       "additionalProperties": false,
-      "description": "Helper objects used in building the schema"
+      "description": "Sub-schemas used in building the schema that are not intrinsically part of the OMC spec."
     }
   }
 }
