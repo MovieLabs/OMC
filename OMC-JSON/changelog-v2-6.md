@@ -13,7 +13,8 @@ Additional properties were added to extend functionality and provide more detail
 `creativeWorkCategory`: Describes the category of the creative work (movie, tv short).
 `seasonNumber`: The season number of the creative work when applicable.
 `episodeSequence`: The episode sequence description of the creative work when applicable.
-`title`: The title of the creative work, the structure now provides for adding a language code to the title.
+`title`: deprecated in favor of `creativeWorkTitle`.
+`creativeWorkTitle`: The title of the creative work, the structure now provides for adding a language code to the title. 
 `Series`: A new intrinsic relationship to relate a creative work to another Creative Work describing the series.
 `Season`: A new intrinsic relationship to relate a creative work to another Creative Work describing the season.
 `Episode`: A new intrinsic relationship to relate a creative work to other Creative Works that are episodes.
@@ -55,14 +56,19 @@ Formal definitions for asset functional properties:
 - `lensMetadata` - Properties for lens metadata
 - `recorderMetadata` - Properties for recorder metadata
 
+### Utility
+`tag`: A new property to allow for internal tags to be included along with a domain indicating their source.
+
+
 ## Additional refactoring and bug fixes
 
-#### entityInfo
-This was a placeholder and been deprecated in favor of `instanceInfo`, which is a more accurate representation of the data that is.
-
-#### instanceInfo
-Replaces `entityInfo`, and should be considered Beta, it is only available in the OMC-JSON schema and not in the OMC-RDF.
+`entityInfo`: Deprecated in favor of `instanceInfo`, which is a more accurate representation of the data that is. 
+`instanceInfo`: Replaces `entityInfo`, and should be considered Beta, it is only available in the OMC-JSON schema and not in the OMC-RDF.
 Properties can describe basic info about the instances such as `createdOn, createdBy, lastUpdatedOn, lastUpdatedBy`.
+
+### baseEntity
+Entity schema are now created using the union of a baseEntity schema and a schema with properties specific to the entity. This allows for a more consistent structure across all entities.
+`tag` and `note` have been added to the baseEntity schema, allowing for these properties to be used across all entities.
 
 #### controlledValue
 A new annotation property `controlledValues` has been added to multiple properties.

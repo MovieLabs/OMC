@@ -150,7 +150,7 @@
                   ],
                   "controlledValues": [
                     "artwork",
-                    "artwork.animatedStoryboard",
+                    "artwork.amimatedStoryboard",
                     "artwork.conceptArt",
                     "artwork.storyboard",
                     "audio",
@@ -160,7 +160,6 @@
                     "cameraMetadata",
                     "capture",
                     "capture.audio",
-                    "capture.audio.onSetMix",
                     "capture.audio.wild",
                     "capture.calibration",
                     "capture.cameraProxy",
@@ -180,8 +179,6 @@
                     "lensMetadata",
                     "map",
                     "material",
-                    "material.composite",
-                    "material.simple",
                     "model",
                     "productionProp",
                     "productionProp.productionGreenery",
@@ -199,7 +196,6 @@
                     "shot.animation",
                     "shot.editorial",
                     "shot.vfx",
-                    "simple",
                     "technicalReferenceMaterial"
                   ]
                 },
@@ -214,7 +210,9 @@
                     "scd": {"$ref": "#/$defs/Asset/properties/Asset/$defs/scd"},
                     "cameraMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/cameraMetadata"},
                     "lensMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/lensMetadata"},
-                    "recorderMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/recorderMetadata"}
+                    "recorderMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/recorderMetadata"},
+                    "isSelfContained": {"$ref": "#/$defs/Asset/properties/Asset/$defs/isSelfContained"},
+                    "timing": {"$ref": "#/$defs/Asset/properties/Asset/$defs/timing"}
                   }
                 },
                 "customData": {"$ref": "#/$defs/Utility/properties/customData"}
@@ -296,7 +294,8 @@
                   }
                 }
               },
-              "additionalProperties": false
+              "additionalProperties": false,
+              "deprecated": true
             },
             "mapFormat": {
               "type": [
@@ -721,6 +720,52 @@
                 }
               },
               "additionalProperties": false
+            },
+            "isSelfContained": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Is Self Contained",
+              "description": "Indicates the Asset does not depend on other Assets to perform its functional use"
+            },
+            "timing": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "sourceStart": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "sourceEnd": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "recordStart": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "recordEnd": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "duration": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
             }
           },
           "unevaluatedProperties": false
@@ -1257,7 +1302,7 @@
                 "null"
               ],
               "title": "Context Category",
-              "description": "Provides an additional level of catorgorization of the Context beyond it's type.",
+              "description": "Provides an additional level of categorization of the Context beyond it's type.",
               "$comment": "Currently considered Beta and only adopted in OMC-JSON"
             },
             "contextProperties": {
@@ -2123,68 +2168,64 @@
               "title": "Episode Sequence"
             },
             "title": {
-              "oneOf": [
-                {
+              "title": "Creative Work Title",
+              "description": "A name for a Creative Work.",
+              "$comment": "Deprecated in favor of 'creativeWorkTitle', with improved functionality",
+                            "type": "object", 
+              "properties": {
+                "workingTitle": {
                   "type": [
-                    "array",
+                    "string",
                     "null"
                   ],
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "titleName": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "titleType": {
-                        "enum": [
-                          null,
-                          "workingTitle",
-                          "internalTitle",
-                          "regionalTitle",
-                          "officialTitle"
-                        ]
-                      },
-                      "titleLanguage": {"$ref": "#/$defs/Utility/properties/language"}
-                    }
-                  }
+                  "title": "Creative Work Working Title",
+                  "description": "The working title of the work"
                 },
-                {
-                  "type": "object",
-                  "title": "Creative Work Title",
-                  "properties": {
-                    "workingTitle": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "title": "Creative Work Working Title",
-                      "description": "The working title of the work"
-                    },
-                    "officialTitle": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "title": "Creative Work Official Title",
-                      "description": "The official title of the work"
-                    },
-                    "internalTitle": {
-                      "type": [
-                        "string",
-                        "null"
-                      ],
-                      "title": "Creative Work Internal Title",
-                      "description": "The internal title of the work"
-                    }
-                  },
-                  "deprecated": true
+                "officialTitle": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Creative Work Official Title",
+                  "description": "The official title of the work"
+                },
+                "internalTitle": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "title": "Creative Work Internal Title",
+                  "description": "The internal title of the work"
                 }
+              },
+              "deprecated": true
+            },
+            "creativeWorkTitle": {
+              "type": [
+                "array",
+                "null"
               ],
-              "title": "Creative Work Title",
-              "description": "A name for a Creative Work."
+              "items": {
+                "type": "object",
+                "properties": {
+                  "titleName": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "titleType": {
+                    "enum": [
+                      "null",
+                      "workingTitle",
+                      "internalTitle",
+                      "regionalTitle",
+                      "releaseTitle"
+                    ]
+                  },
+                  "titleLanguage": {"$ref": "#/$defs/Utility/properties/language"}
+                }
+              }
             },
             "approximateLength": {
               "title": "Approximate Length",
@@ -2336,7 +2377,8 @@
                 {"$ref": "#/$defs/Asset/properties/Asset"},
                 {"$ref": "#/$defs/Participant/properties/Participant"}
               ],
-              "deprecated": true
+              "deprecated": true,
+              "$comment": "Deprecated in favor of Depicter, corrects spelling inconsistancy with core ontology"
             },
             "Context": {
               "type": [
@@ -2619,35 +2661,9 @@
               "description": "A number used in the script to refer to the scene"
             },
             "slugline": {
-              "type": [
-                "array",
-                "null"
-              ],
+              "$ref": "#/$defs/Utility/properties/annotation",
               "title": "Slugline",
-              "items": {
-                "type": "object",
-                "title": "Slugline",
-                "description": "An arbitrary note or comment pertaining to the entity",
-                "properties": {
-                  "title": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "title": "Title",
-                    "description": "A title for the note or annotation"
-                  },
-                  "text": {
-                    "type": [
-                      "string",
-                      "null"
-                    ],
-                    "title": "Text",
-                    "description": "The text of the note or annotation"
-                  }
-                },
-                "additionalProperties": false
-              }
+              "description": "A note describing the slugline or seperate parts of the slugline"
             },
             "Context": {
               "type": [
@@ -2977,6 +2993,8 @@
         "Sequence": {
           "type": "object",
           "title": "Sequence",
+          "deprecated": true,
+          "$comment": "Deprecated because Sequence is now part of Composition",
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3008,11 +3026,7 @@
                   "title": "Asset description",
                   "description": "A human readable description of the version"
                 },
-                "annotation": {
-                  "type": "array",
-                  "items": {"$ref": "#/$defs/Utility/properties/note"},
-                  "description": "A collection of notes specific to this version"
-                },
+                "annotation": {"$ref": "#/$defs/Utility/properties/annotation"},
                 "VariantOf": {
                   "oneOf": [
                     {"$ref": "#/$defs/core/properties/reference"},
@@ -3100,6 +3114,7 @@
               "oneOf": [
                 {
                   "deprecated": true,
+                  "$comment": "Deprecated in favor of SpecialAction, correcting a bug in the release",
                   "title": "Entity Type",
                   "const": "NarrativeAction"
                 },
@@ -3275,7 +3290,7 @@
             },
             "structuralType": {
               "const": "person",
-              "$comment": "Included for possible future extenstions",
+              "$comment": "Included for possible future extensions",
               "title": "Person's Structural Type"
             },
             "jobTitle": {
@@ -3328,7 +3343,7 @@
             },
             "structuralType": {
               "const": "department",
-              "$comment": "Included for possible future extenstions",
+              "$comment": "Included for possible future extensions",
               "title": "Department's Structural Type"
             },
             "departmentName": {
@@ -3367,7 +3382,7 @@
             },
             "structuralType": {
               "const": "organization",
-              "$comment": "Included for possible future extenstions",
+              "$comment": "Included for possible future extensions",
               "title": "Organization's Structural Type"
             },
             "organizationName": {
@@ -3406,7 +3421,7 @@
             },
             "structuralType": {
               "const": "service",
-              "$comment": "Included for possible future extenstions",
+              "$comment": "Included for possible future extensions",
               "title": "Service's Structural Type"
             },
             "serviceName": {
@@ -4253,33 +4268,82 @@
             }
           },
           "additionalProperties": false,
-          "description": "A person, or others, expressed or prefered gender and pronoun"
+          "description": "A person, or others, expressed or preferred gender and pronoun"
         },
-        "note": {
+        "annotation": {
           "type": [
-            "object",
+            "array",
             "null"
           ],
-          "title": "Note",
-          "properties": {
-            "title": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Title",
-              "description": "A title for the note or annotation"
+          "title": "Annotation",
+          "items": {
+                            "type": "object", 
+            "properties": {
+              "author": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Author",
+                "description": "Who wrote or added this annotation"
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title",
+                "description": "A title for the note or annotation"
+              },
+              "text": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Text",
+                "description": "The text of the note or annotation"
+              }
             },
-            "text": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Text",
-              "description": "The text of the note or annotation"
-            }
+            "additionalProperties": false
           },
-          "additionalProperties": false
+          "description": "Human readable commentary, explanation, or information."
+        },
+        "tag": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+              "type": "object", 
+            "properties": {
+              "domain": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Domain",
+                "description": "An indication of the set or system in which the tag values are relevant or defined"
+              },
+              "value": {
+                "title": "Value",
+                "description": "A set of tags taken from the domain.",
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "null"
+                  ]
+                },
+                "type": [
+                  "array",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "title": "Tag",
+          "description": "A short string from a particular set, used for categorization and description"
         },
         "time": {
           "type": [
@@ -4423,10 +4487,10 @@
                 "string",
                 "null"
               ],
-              "title": "SMPTE Timcode in the format HH:MM:SS:FF. \nAssumes the frame rate is 23.98, 24, 25, 29.97 NDF, or 30",
+              "title": "SMPTE Timecode",
               "pattern": "^([01]\\d|2[0-3]):([0-5]\\d):([0-5]\\d):([0-2]\\d)$",
               "examples": ["00:03:43:12"],
-              "description": "SMPTE timecode"
+              "description": "SMPTE Timecode in the format HH:MM:SS:FF. \nAssumes the frame rate is 23.98, 24, 25, 29.97 NDF, or 30"
             }
           }
         },
@@ -4581,13 +4645,7 @@
                 "null"
               ]
             },
-            "note": {
-              "type": [
-                "array",
-                "null"
-              ],
-              "items": {"$ref": "#/$defs/Utility/properties/note"}
-            }
+            "annotation": {"$ref": "#/$defs/Utility/properties/annotation"}
           },
           "title": "Provenance",
           "description": "A record of when something was changed and by whom.",
@@ -5275,8 +5333,11 @@
               "description": "A brief description of the entity, primarily for human consumption."
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"},
+            "annotation": {"$ref": "#/$defs/Utility/properties/annotation"},
+            "tag": {"$ref": "#/$defs/Utility/properties/tag"},
             "entityInfo": {
               "deprecated": true,
+              "$comment": "Deprecated in favor of instanceInfo",
               "type": [
                 "object",
                 "null"
@@ -5328,7 +5389,10 @@
           ]
         },
         "baseVersion": {
-          "type": "object",
+          "type": [
+            "object",
+            "null"
+          ],
           "title": "Version Information",
           "description": "The base properties that describe a version of something (Asset or Composition).",
           "properties": {
@@ -5348,14 +5412,7 @@
               "title": "Asset description",
               "description": "A human readable description of the version"
             },
-            "annotation": {
-              "type": [
-                "array",
-                "null"
-              ],
-              "items": {"$ref": "#/$defs/Utility/properties/note"},
-              "description": "A collection of notes specific to this version"
-            },
+            "annotation": {"$ref": "#/$defs/Utility/properties/annotation"},
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           }
         }
