@@ -2216,7 +2216,7 @@
                   },
                   "titleType": {
                     "enum": [
-                      "null",
+                      null,
                       "workingTitle",
                       "internalTitle",
                       "regionalTitle",

@@ -10,10 +10,10 @@
     ],
     "creativeWorkType": "creativeWork",
     "creativeWorkCategory": "short",
-    "title": [
+    "creativeWorkTitle": [
       {
         "title": "Hyperspace Madness",
-        "titleType": "officialTitle",
+        "titleType": "releaseTitle",
         "titleLanguage": "en"
       },
       {
@@ -81,8 +81,21 @@
           }
         ]
       }
-    ]
-  },
+    ],
+    "annotation": [
+      {
+        "title": "Note Title",
+        "text": "Note text."
+      }
+    ],
+    "tag": [
+      {
+        "domain": "tagType",
+        "value": [
+          "tagValue", 8
+        ]
+      }
+    ]  },
   {
     "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "CreativeWork",
@@ -94,7 +107,7 @@
     ],
     "creativeWorkType": "creativeWork",
     "creativeWorkCategory": null,
-    "title": [
+    "creativeWorkTitle": [
       {
         "title": "Hyperspace Madness",
         "titleType": null,
@@ -127,7 +140,7 @@
     ],
     "creativeWorkType": "creativeWork",
     "creativeWorkCategory": null,
-    "title": null,
+    "creativeWorkTitle": null,
     "seasonNumber": null,
     "episodeSequence": null,
     "description": null,

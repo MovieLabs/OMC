@@ -13,14 +13,6 @@
       "fullName": "Movielabs fMam",
       "altName": "fMam"
     },
-    "Location": {
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "loc/9MLbKNfnaUVj7u3n1Z4E6"
-        }
-      ]
-    },
     "contact": {
       "email": {
         "business": "fmam@movielabs.com",
@@ -38,7 +30,7 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGH"
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGI"
       }
     ],
     "structuralType": "service",
@@ -46,7 +38,6 @@
       "fullName": null,
       "altName": null
     },
-    "Location": null,
     "contact": {
       "email": {
         "business": null,
@@ -64,12 +55,11 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGH"
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGJ"
       }
     ],
     "structuralType": "service",
     "serviceName": null,
-    "Location": null,
     "contact": {
       "email": null,
       "telephone": null
@@ -81,12 +71,11 @@
     "identifier": [
       {
         "identifierScope": "labkoat",
-        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGH"
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGK"
       }
     ],
     "structuralType": "service",
     "serviceName": null,
-    "Location": null,
     "contact": null
   }
 ]

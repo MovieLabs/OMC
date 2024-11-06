@@ -10,9 +10,10 @@
     ],
     "name": "proceduralMarble",
     "assetFC": {
-      "functionalType": "material.simple",
+      "functionalType": "material",
       "functionalProperties": {
-        "materialType": "inorganic.stone.marble"
+        "materialType": "inorganic.stone.marble",
+        "isSelfContained": true
       }
     },
     "AssetSC": {
@@ -21,7 +22,7 @@
       "identifier": [
         {
           "identifierScope": "cg-example",
-          "identifierValue": "ast/758EE5A1-640F-4AA7-99A5-1C3B0A3BC95D"
+          "identifierValue": "ast/758EE5A1-640F-4AA7-99A5-1C3B0A3BC95E"
         }
       ],
       "structuralType": "digital.structuredDocument",

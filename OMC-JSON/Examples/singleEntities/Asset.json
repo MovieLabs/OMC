@@ -9,6 +9,119 @@
       }
     ],
     "name": "TH_Castle_Bricks",
+    "version": {
+      "versionNumber": "1.0",
+      "name": "TH_Castle_Bricks v1.0",
+      "description": "This is the first version of the TH_Castle_Bricks asset.",
+      "annotation": [
+        {
+          "author": "DML",
+          "title": "TH_Castle_Bricks v1.0",
+          "text": "Some text about the TH_Castle_Bricks asset."
+        }
+      ],
+      "DerivationOf": {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+          }
+        ]
+      },
+      "RevisionOf": {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+          }
+        ]
+      },
+      "VariantOf": {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+          }
+        ]
+      },
+      "Alternative": [
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+            }
+          ]
+        }
+      ],
+      "Derivation": [
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+            }
+          ]
+        }
+      ],
+      "Revision": [
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+            }
+          ]
+        }
+      ],
+      "Variant": [
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+            }
+          ]
+        }
+      ]
+    },
+    "provenance": {
+      "CreatedBy": {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+          }
+        ]
+      },
+      "Role": {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+          }
+        ]
+      },
+      "createdOn": "2021-01-01T00:00:00Z",
+      "Origin": {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+          }
+        ]
+      },
+      "reason": "Initial creation of the TH_Castle_Bricks asset.",
+      "annotation": [
+        {
+          "author": "DML",
+          "title": "Note Title",
+          "text": "Note text."
+        }
+      ]
+    },
     "assetFC": {
       "functionalType": "material",
       "functionalProperties": {
@@ -22,6 +135,130 @@
           "identifierValue": "asc/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
         }
       ]
-    }
+    },
+    "annotation": [
+      {
+        "title": "Note Title",
+        "text": "Note text."
+      }
+    ],
+    "tag": [
+      {
+        "domain": "tagType",
+        "value": [
+          "tagValue", 8
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+      }
+    ],
+    "name": "TH_Castle_Bricks",
+    "version": {
+      "versionNumber": null,
+      "name": null,
+      "description": null,
+      "annotation": [
+        {
+          "author": null,
+          "title": null,
+          "text": null
+        }
+      ],
+      "DerivationOf": null,
+      "RevisionOf": null,
+      "VariantOf": null,
+      "Alternative": [],
+      "Derivation": [],
+      "Revision": [],
+      "Variant": []
+    },
+    "provenance": {
+      "CreatedBy": null,
+      "Role": null,
+      "createdOn": null,
+      "Origin": null,
+      "reason": null,
+      "annotation": null
+    },
+    "assetFC": {
+      "functionalType": "material",
+      "functionalProperties": {
+        "materialType": "inorganic.stone.marble"
+      }
+    },
+    "AssetSC": {
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+        }
+      ]
+    },
+    "annotation": [
+      {
+        "title": null,
+        "text": null
+      }
+    ],
+    "tag": [
+      {
+        "domain": null,
+        "value": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+      }
+    ],
+    "name": null,
+    "version": {
+      "versionNumber": null,
+      "name": null,
+      "description": null,
+      "annotation": null,
+      "DerivationOf": null,
+      "RevisionOf": null,
+      "VariantOf": null,
+      "Alternative": null,
+      "Derivation": null,
+      "Revision": null,
+      "Variant": null
+    },
+    "provenance": null,
+    "assetFC": {
+      "functionalType": null,
+      "functionalProperties": null
+    },
+    "AssetSC": null,
+    "annotation": null,
+    "tag": null
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+      }
+    ],
+    "name": null,
+    "version": null,
+    "assetFC": null,
+    "AssetSC": null
   }
 ]

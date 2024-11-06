@@ -9,13 +9,13 @@
       }
     ],
     "TaskSC": {
-        "identifier": [
-          {
-            "identifierScope": "labkoat",
-            "identifierValue": "tsksc/7EdFxI0xaHHruB97KA9Ni"
-          }
-        ]
-      },
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "tsksc/7EdFxI0xaHHruB97KA9Ni"
+        }
+      ]
+    },
     "taskFC": {
       "functionalType": "transcode",
       "customData": {

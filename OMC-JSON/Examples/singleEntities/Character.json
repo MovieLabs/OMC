@@ -36,6 +36,8 @@
     "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
     "Depiction": [
       {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Depiction",
         "identifier": [
           {
             "identifierScope": "labkoat",
