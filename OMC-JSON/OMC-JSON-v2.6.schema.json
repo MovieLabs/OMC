@@ -766,7 +766,8 @@
                     "null"
                   ]
                 }
-              }
+              },
+              "additionalProperties": false
             }
           },
           "unevaluatedProperties": false
@@ -1212,7 +1213,7 @@
                         "null"
                       ],
                       "title": "Hair Length",
-                      "description": "The length of hair of the character"
+                      "description": "The length of hair of the character."
                     },
                     "eyeColor": {
                       "type": [
@@ -1220,7 +1221,7 @@
                         "null"
                       ],
                       "title": "Eye Color",
-                      "description": "The color of the characters eyes"
+                      "description": "The color of the characters eyes."
                     },
                     "weight": {
                       "title": "weight",
@@ -2649,7 +2650,7 @@
                     "null"
                   ],
                   "title": "Scene alternate name",
-                  "description": "An alternate, often shorter, name used in applications to identify the scenes"
+                  "description": "An alternate, often shorter, name used in applications to identify the scenes."
                 }
               }
             },
@@ -2732,7 +2733,7 @@
             }
           },
           "required": ["entityType"],
-          "description": "Styling required to prepare an actor for their role",
+          "description": "Styling required to prepare an actor for their role.",
           "unevaluatedProperties": false
         },
         "NarrativeWardrobe": {
@@ -2856,7 +2857,7 @@
                 "null"
               ],
               "title": "Scene Descriptor",
-              "description": "An alphanumeric reference to a Production Scene"
+              "description": "An alphanumeric reference to a Production Scene."
             },
             "sceneNumber": {
               "type": [
@@ -3713,7 +3714,7 @@
                 "null"
               ],
               "title": "Asset",
-              "description": "A set of Assets that are included in this Composition",
+              "description": "A set of Assets that are included in this Composition.",
               "items": {
                 "anyOf": [
                   {"$ref": "#/$defs/core/properties/reference"},
@@ -3727,7 +3728,7 @@
                 "null"
               ],
               "title": "Asset Structural Characteristics",
-              "description": "A set of Asset Structural Characteristics that are included in this Composition",
+              "description": "A set of Asset Structural Characteristics that are included in this Composition.",
               "items": {
                 "anyOf": [
                   {"$ref": "#/$defs/core/properties/reference"},
@@ -3741,7 +3742,7 @@
                 "null"
               ],
               "title": "Composition Group",
-              "description": "The set of Compositions that are included in this Composition",
+              "description": "The set of Compositions that are included in this Composition.",
               "items": {
                 "anyOf": [
                   {"$ref": "#/$defs/core/properties/reference"},
@@ -3755,7 +3756,7 @@
                 "null"
               ],
               "title": "Start Here",
-              "description": "Start point for assembling the Composition, the Asset that contains the instructions for the Composition",
+              "description": "Start point for assembling the Composition, the Asset that contains the instructions for the Composition.",
               "anyOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
                 {"$ref": "#/$defs/Asset/properties/Asset"},
@@ -3771,6 +3772,18 @@
                 "anyOf": [
                   {"$ref": "#/$defs/core/properties/reference"},
                   {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+                ]
+              }
+            },
+            "Context": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Context"}
                 ]
               }
             }
@@ -3987,7 +4000,8 @@
               "combinedForm": {
                 "type": "string",
                 "title": "Identifier Combined Form",
-                "description": "A combination of the Identifier Scope and Value that is useful for utilizing the identifier in a system, for example a URN (URN:ID:IdentifierScope:IdentifierValue)."
+                "description": "A combination of the Identifier Scope and Value that is useful for utilizing the identifier in a system.",
+                "examples": ["URN:ID:IdentifierScope:IdentifierValue"]
               },
               "url": {
                 "type": "string",
@@ -4105,7 +4119,7 @@
                 "null"
               ],
               "title": "First Given Name",
-              "description": "A person's first name, also referred to as given name"
+              "description": "A person's first name, also referred to as given name."
             },
             "secondGivenName": {
               "type": [
@@ -4113,7 +4127,7 @@
                 "null"
               ],
               "title": "Second Given Name",
-              "description": "A persons second given name, also referred to as middle name"
+              "description": "A persons second given name, also referred to as middle name."
             },
             "familyName": {
               "type": [
@@ -4121,7 +4135,7 @@
                 "null"
               ],
               "title": "Family Name",
-              "description": "A persons family name, also referred to as surname"
+              "description": "A persons family name, also referred to as surname."
             },
             "fullName": {
               "type": [
@@ -4137,7 +4151,7 @@
                 "null"
               ],
               "title": "Birth Name",
-              "description": "A persons name at birth, also referred to as maiden name"
+              "description": "A persons name at birth, also referred to as maiden name."
             },
             "primaryName": {
               "type": [
@@ -4145,7 +4159,7 @@
                 "null"
               ],
               "title": "Primary Name",
-              "description": "A persons primary name, one they typically use, also often a combination of first, second and family name"
+              "description": "A persons primary name, one they typically use, also often a combination of first, second and family name."
             },
             "pseudonym": {
               "type": [
@@ -4188,7 +4202,7 @@
                 "null"
               ],
               "title": "Alias",
-              "description": "An alias being used by a person often used to disguise someones real identity, sometimes used when booking hotel rooms or restaurants "
+              "description": "An alias being used by a person often used to disguise someones real identity, sometimes used when booking hotel rooms or restaurants."
             },
             "contractualName": {
               "type": [
@@ -4299,7 +4313,7 @@
                   "null"
                 ],
                 "title": "Author",
-                "description": "Who wrote or added this annotation"
+                "description": "Who wrote or added this annotation."
               },
               "title": {
                 "type": [
@@ -4307,7 +4321,7 @@
                   "null"
                 ],
                 "title": "Title",
-                "description": "A title for the note or annotation"
+                "description": "A title for the note or annotation."
               },
               "text": {
                 "type": [
@@ -4315,7 +4329,7 @@
                   "null"
                 ],
                 "title": "Text",
-                "description": "The text of the note or annotation"
+                "description": "The text of the note or annotation."
               }
             },
             "additionalProperties": false
@@ -5324,7 +5338,7 @@
                 "https://movielabs.com/omc/json/schema/v2.1",
                 "https://movielabs.com/omc/json/schema/v2.6"
               ],
-              "description": "Describes the version of OMC-JSON schema that was used to create this instance"
+              "description": "Describes the version of OMC-JSON schema that was used to create this instance."
             },
             "identifier": {
               "title": "Identifier",

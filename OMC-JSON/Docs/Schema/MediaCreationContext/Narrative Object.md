@@ -1,14 +1,15 @@
 A named object related to or interacting with characters that is implied or understood to be necessary for the narrative. Includes items like props, wardrobe, set dressing and vehicles.
+### Properties
+Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Operator             | Type                                                                               | Description |
-| ------------- | -------------------- | ---------------------------------------------------------------------------------- | ----------- |
-|               |                      | [baseEntity](../core/baseEntity.md)                                                |             |
-| entityType    | const, required      | "NarrativeObject"                                                                  |             |
-| narrativeType | enum                 | [narrativeType](#narrativeType)                                                    |             |
-| quantity      | string, number, null |                                                                                    |             |
-| size          | string, null         |                                                                                    |             |
-| Context       | anyOf                | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     |             |
-| Depiction     | anyOf                | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |             |
+| Property      | Operator             | Type                                                                               | Description                           |
+| ------------- | -------------------- | ---------------------------------------------------------------------------------- | ------------------------------------- |
+| entityType    | const<br>required    | `"NarrativeObject"`                                                                | Declares the entity type.             |
+| narrativeType | enum                 | [narrativeType](#narrativeType)                                                    | The specific type of narrative object |
+| quantity      | string, number, null |                                                                                    |                                       |
+| size          | string, null         |                                                                                    |                                       |
+| Context       | anyOf                | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     |                                       |
+| Depiction     | anyOf                | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                       |
 
 ### Controlled & Enumerated Values
 

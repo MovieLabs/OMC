@@ -1,14 +1,15 @@
 Taken from the narrative itself and traditionally defined by creative intent and typically a unity of time, place, action, or theme.
+### Properties
+Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Operator        | Type                                                                           | Description |
-| ------------- | --------------- | ------------------------------------------------------------------------------ | ----------- |
-|               |                 | [baseEntity](../core/baseEntity.md)                                            |             |
-| entityType    | const, required | "NarrativeScene"                                                               |             |
-| narrativeType | enum            | [narrativeType](#narrativeType)                                                |             |
-| sceneName     |                 | [sceneName](#sceneName)                                                        |             |
-| sceneNumber   |                 | string, number, null                                                           |             |
-| slugline      |                 | [ [annotation](../Utility/Utility.md#annotation) ]                             |             |
-| Context       | anyOf           | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |             |
+| Property      | Operator          | Type                                                                           | Description                          |
+| ------------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------------------ |
+| entityType    | const<br>required | `"NarrativeScene"`                                                             | Declares the entity type.            |
+| narrativeType | enum              | [narrativeType](#narrativeType)                                                | The specific type of narrative scene |
+| sceneName     |                   | [sceneName](#sceneName)                                                        |                                      |
+| sceneNumber   |                   | string, number, null                                                           |                                      |
+| slugline      |                   | [ [annotation](../Utility/Utility.md#annotation) ]                             |                                      |
+| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                      |
 
 ### Controlled & Enumerated Values
 

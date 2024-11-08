@@ -1,27 +1,41 @@
-A uniquely identified production.
+Informs scope within the construction process of a Creative Work.
+### Properties
 
-| Property                              | Operator                       | Type                                                                                                  | Description |
-| ------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------- | ----------- |
-|                                       |                                | [baseEntity](Schema/core/baseEntity)                                                                  |             |
-| entityType                            | const, required                | "CreativeWork"                                                                                        |             |
-| [creativeWorkType](#creativeWorkType) | [ctrlValue](#creativeWorkType) | string, null                                                                                          |             |
-| creativeWorkTitle                     |                                | [ [creativeWorkTitle](#creativeWorkTitle) ]                                                           |             |
-| ProductionCompany                     | anyOf                          | [ [Participant](Schema/Participant/Participant) <br>[identifier](Schema/Utility/Utility#identifier) ] |             |
+Includes properties from: [baseEntity](../core/baseEntity.md)
+
+| Property          | Operator          | Type                                                                           | Description                                                                     |
+| ----------------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| entityType        | const<br>required | `"CreativeWork"`                                                               |                                                                                 |
+| contextType       | ctrlValue         | [contextType](#contextType)                                                    | The specific type of context                                                    |
+| contextCategory   |                   | string,&nbspnull                                                               | Provides an additional level of categorization of the Context beyond it's type. |
+| contextProperties |                   | [contextProperties](#contextProperties)                                        | Properties specific to this composition                                         |
+| For               |                   |                                                                                |                                                                                 |
+| Context           | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                                                                 |
+| contributor       |                   |                                                                                |                                                                                 |
+| contributesTo     |                   |                                                                                |                                                                                 |
+| features          |                   |                                                                                |                                                                                 |
+| featuresIn        |                   |                                                                                |                                                                                 |
+| for               |                   |                                                                                |                                                                                 |
+| has               |                   |                                                                                |                                                                                 |
+| neededBy          |                   |                                                                                |                                                                                 |
+| needs             |                   |                                                                                |                                                                                 |
+| related           |                   |                                                                                |                                                                                 |
+| represents        |                   |                                                                                |                                                                                 |
+| representedBy     |                   |                                                                                |                                                                                 |
+| usedIn            |                   |                                                                                |                                                                                 |
+| uses              |                   |                                                                                |                                                                                 |
+
 
 
 
 ### Controlled Values
 
-#### creativeWorkType
+#### contextType
+
 
 ### Object Properties
-#### episodeSequence
 
-| Property           | Operator | Type                                          | Description                                                                        |
-| ------------------ | -------- | --------------------------------------------- | ---------------------------------------------------------------------------------- |
-| houseSequence      |          | string, number, null                          | The internal Episode number assigned by the producer or commissioning broadcaster. |
-| distributionNumber |          | [ [distributionNumber](#distributionNumber) ] |                                                                                    |
-
+#### contextProperties
 ## Examples
 
 ```JSON

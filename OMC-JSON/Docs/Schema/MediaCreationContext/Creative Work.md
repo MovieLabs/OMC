@@ -1,24 +1,23 @@
 A uniquely identified production.
+### Properties
+Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property                              | Constraints     | Type                                                                                                | Description                          |
-| ------------------------------------- | --------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------ |
-|                                       |                 | [baseEntity](../core/baseEntity.md)                                                                 |                                      |
-| entityType                            | const, required | "CreativeWork"                                                                                      |                                      |
-| [creativeWorkType](#creativeWorkType) | enum            | string, null                                                                                        |                                      |
-| creativeWorkCategory                  | ctrlValue       | string, null                                                                                        | The type or form of a Creative Work. |
-| seasonNumber                          |                 | string, number, null                                                                                |                                      |
-| episodeSequence                       |                 | [ [episodeSequence](#episodeSequence) ]                                                             |                                      |
-| creativeWorkTitle                     |                 | [ [creativeWorkTitle](#creativeWorkTitle) ]                                                         |                                      |
-| approximateLength                     |                 |                                                                                                     |                                      |
-| originalLanguage                      |                 |                                                                                                     |                                      |
-| countryOfOrigin                       |                 |                                                                                                     |                                      |
-| Context                               |                 | Context Entity                                                                                      |                                      |
-| Series                                | anyOf           | [ [CreativeWork](./Creative%20Work%Entity.md) <br>[identifier](../Utility/Utility#identifier.md) ]  |                                      |
-| Season                                | anyOf           | [ [CreativeWork](./Creative%20Work.md) <br>[identifier](../Utility/Utility.md#identifier) ]         |                                      |
-| Episiode                              | anyOf           | [ [CreativeWork](./Creative%20Work.md) <br>[identifier](../Utility/Utility.md#identifier) ]         |                                      |
-| ProductionCompany                     | anyOf           | [ [Participant](../Participant/Participant.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                      |
-
-*For the entityType is this the best way to represent the value*
+| Property             | Constraints    | Type                                                                                                       | Description                                             |
+| -------------------- | -------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| entityType           | const required | `"CreativeWork"`                                                                                           | Declares the entity type.                               |
+| creativeWorkType     | enum           | [creativeWorkType](#creativeWorkType)                                                                      | The specific type of creative work                      |
+| creativeWorkCategory | ctrlValue      | [creativeWorkCategory](#creativeWorkCategory)                                                              | The form of the creative work.                          |
+| seasonNumber         |                | string, number, null                                                                                       |                                                         |
+| episodeSequence      |                | [&nbsp[episodeSequence](#episodeSequence)&nbsp]                                                            |                                                         |
+| creativeWorkTitle    |                | [&nbsp[creativeWorkTitle](#creativeWorkTitle)&nbsp]                                                        | The canonical title name or names for the creative work |
+| approximateLength    |                |                                                                                                            |                                                         |
+| originalLanguage     |                |                                                                                                            |                                                         |
+| countryOfOrigin      |                |                                                                                                            |                                                         |
+| Context              | anyOf          | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]                             |                                                         |
+| Series               | anyOf          | [&nbsp[CreativeWork](./Creative%20Work%Entity.md) <br>[identifier](../Utility/Utility#identifier.md)&nbsp] |                                                         |
+| Season               | anyOf          | [&nbsp[CreativeWork](./Creative%20Work.md) <br>[identifier](../Utility/Utility.md#identifier)&nbsp]        |                                                         |
+| Episiode             | anyOf          | [ [CreativeWork](./Creative%20Work.md) <br>[identifier](../Utility/Utility.md#identifier) ]                |                                                         |
+| ProductionCompany    | anyOf          | [ [Participant](../Participant/Participant.md) <br>[identifier](../Utility/Utility.md#identifier) ]        |                                                         |
 
 ### Controlled Values
 
@@ -43,10 +42,10 @@ A uniquely identified production.
 ### Object Properties
 #### episodeSequence
 
-| Property           | Operator | Type                                          | Description                                                                        |
-| ------------------ | -------- | --------------------------------------------- | ---------------------------------------------------------------------------------- |
-| houseSequence      |          | string, number, null                          | The internal Episode number assigned by the producer or commissioning broadcaster. |
-| distributionNumber |          | [ [distributionNumber](#distributionNumber) ] |                                                                                    |
+| Property           | Operator | Type                                                  | Description                                                                        |
+| ------------------ | -------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| houseSequence      |          | string, number, null                                  | The internal Episode number assigned by the producer or commissioning broadcaster. |
+| distributionNumber |          | [&nbsp[distributionNumber](#distributionNumber)&nbsp] |                                                                                    |
 #### distributionNumber
 
 | Property | Operator | Type                 | Description |

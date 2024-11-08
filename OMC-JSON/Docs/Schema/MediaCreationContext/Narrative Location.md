@@ -1,12 +1,13 @@
 A location specified or implied by the narrative.
+### Properties
+Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Operator        | Type                                                                               | Description |
-| ------------- | --------------- | ---------------------------------------------------------------------------------- | ----------- |
-|               |                 | [baseEntity](../core/baseEntity.md)                                                |             |
-| entityType    | const, required | "NarrativeLocation"                                                                |             |
-| narrativeType | enum            | [narrativeType](#narrativeType)                                                    |             |
-| Context       | anyOf           | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     |             |
-| Depiction     | anyOf           | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |             |
+| Property      | Operator          | Type                                                                               | Description                             |
+| ------------- | ----------------- | ---------------------------------------------------------------------------------- | --------------------------------------- |
+| entityType    | const<br>required | `"NarrativeLocation"`                                                              | Declares the entity type.               |
+| narrativeType | enum              | [narrativeType](#narrativeType)                                                    | The specific type of narrative location |
+| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     |                                         |
+| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                         |
 
 ### Controlled & Enumerated Values
 

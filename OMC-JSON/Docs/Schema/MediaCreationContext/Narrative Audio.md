@@ -1,22 +1,23 @@
-A location specified or implied by the narrative.
+A significant sound in the narrative.
+### Properties
+Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Operator        | Type                                                                               | Description |
-| ------------- | --------------- | ---------------------------------------------------------------------------------- | ----------- |
-|               |                 | [baseEntity](../core/baseEntity.md)                                                |             |
-| entityType    | const, required | "NarrativeAudio"                                                                   |             |
-| narrativeType | enum            | [narrativeType](#narrativeType)                                                    |             |
-| Context       | anyOf           | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     |             |
-| Depiction     | anyOf           | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |             |
+| Property      | Operator          | Type                                                                               | Description                          |
+| ------------- | ----------------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
+| entityType    | const<br>required | `"NarrativeAudio"`                                                                 | Declares the entity type.            |
+| narrativeType | enum              | [narrativeType](#narrativeType)                                                    | The specific type of narrative audio |
+| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     |                                      |
+| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                      |
 
 ### Controlled & Enumerated Values
 
 #### narrativeType
 
-| Value                | Description |
-| -------------------- | ----------- |
-| narrativeAudio       |             |
-| narrativeMusic       |             |
-| narrativeSoundEffect |             |
+| Value                | Description |     |
+| -------------------- | ----------- | --- |
+| narrativeAudio       |             |     |
+| narrativeMusic       |             |     |
+| narrativeSoundEffect |             |     |
 ## Examples
 
 ```JSON
