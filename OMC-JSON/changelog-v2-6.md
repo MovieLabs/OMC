@@ -25,6 +25,8 @@ Additional properties were added to extend functionality and provide more detail
 The property Depicter used in 2.0 has been deprecated and replaced with Depiction. The schema will continue to support Depicter for backwards compatibility, but it is recommended that new implementations use Depictor.
 This was an spelling error that was corrected, and now aligns with the formal documentation.
 
+Depiction can now have Compositions as the depicted entity, this allows for more complex depictions to be described.
+
 ### NarrativeAudio
 The property `narrativeType` has new enumerated values to align the naming schema with other narrative types.
 audio -> narrativeAudio

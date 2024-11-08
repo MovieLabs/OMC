@@ -169,6 +169,7 @@
                     "capture.ocf",
                     "capture.roll",
                     "capture.witnessCamera",
+                    "cGModel",
                     "color",
                     "color.cdl",
                     "color.colorSpace",
@@ -179,7 +180,7 @@
                     "lensMetadata",
                     "map",
                     "material",
-                    "model",
+                    "productionCharacter",
                     "productionProp",
                     "productionProp.productionGreenery",
                     "productionProp.productionVehicle",
@@ -2171,7 +2172,7 @@
               "title": "Creative Work Title",
               "description": "A name for a Creative Work.",
               "$comment": "Deprecated in favor of 'creativeWorkTitle', with improved functionality",
-                            "type": "object", 
+              "type": "object",
               "properties": {
                 "workingTitle": {
                   "type": [
@@ -2364,7 +2365,8 @@
               "oneOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
                 {"$ref": "#/$defs/Asset/properties/Asset"},
-                {"$ref": "#/$defs/Participant/properties/Participant"}
+                {"$ref": "#/$defs/Participant/properties/Participant"},
+                {"$ref": "#/$defs/Utility/properties/Composition"}
               ]
             },
             "Depictor": {
@@ -3759,6 +3761,18 @@
                 {"$ref": "#/$defs/Asset/properties/Asset"},
                 {"$ref": "#/$defs/Asset/properties/AssetSC"}
               ]
+            },
+            "Depiction": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"}
+                ]
+              }
             }
           },
           "unevaluatedProperties": false,
@@ -4277,7 +4291,7 @@
           ],
           "title": "Annotation",
           "items": {
-                            "type": "object", 
+            "type": "object",
             "properties": {
               "author": {
                 "type": [
@@ -4314,7 +4328,7 @@
             "null"
           ],
           "items": {
-              "type": "object", 
+            "type": "object",
             "properties": {
               "domain": {
                 "type": [
