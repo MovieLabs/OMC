@@ -46,6 +46,10 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | ------------------ | -------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------- |
 | houseSequence      |          | string, number, null                                   | The internal Episode number assigned by the producer or commissioning broadcaster. |
 | distributionNumber |          | [&nbsp[distributionNumber](#distributionNumber)\u00A0] | A&nbspspace\u00A0and another one                                                   |
+
+Hello<sub>Goodbye</sub>
+&pound
+
 #### distributionNumber
 
 | Property | Operator | Type                 | Description |
