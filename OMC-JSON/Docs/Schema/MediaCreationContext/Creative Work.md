@@ -48,7 +48,8 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | distributionNumber |          | [&nbsp[distributionNumber](#distributionNumber)\u00A0] | A&nbspspace\u00A0and another one                                                   |
 
 Hello<sub>Goodbye</sub>
-&pound
+<p>&pound</p>
+<p>Hello&nbspGoodbye</p>
 
 #### distributionNumber
 
