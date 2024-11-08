@@ -42,10 +42,10 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 ### Object Properties
 #### episodeSequence
 
-| Property           | Operator | Type                                                  | Description                                                                        |
-| ------------------ | -------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| houseSequence      |          | string, number, null                                  | The internal Episode number assigned by the producer or commissioning broadcaster. |
-| distributionNumber |          | [&#160[distributionNumber](#distributionNumber)&#160] |                                                                                    |
+| Property           | Operator | Type                                                   | Description                                                                        |
+| ------------------ | -------- | ------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| houseSequence      |          | string, number, null                                   | The internal Episode number assigned by the producer or commissioning broadcaster. |
+| distributionNumber |          | [&nbsp[distributionNumber](#distributionNumber)\u00A0] | A&nbspspace\u00A0and another one                                                   |
 #### distributionNumber
 
 | Property | Operator | Type                 | Description |
