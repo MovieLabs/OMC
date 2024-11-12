@@ -24,23 +24,25 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 ```JSON
 {  
   "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",  
-  "entityType": "NarrativeAudio",  
+  "entityType": "NarrativeStyling",  
   "identifier": [  
     {  
       "identifierScope": "labkoat",  
-      "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"  
+      "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"  
     }  
   ],  
-  "name": "Explosion",  
-  "description": "Space ship explosion",  
-  "narrativeType": "narrativeSoundEffect",  
+  "name": "Kiera's hair",  
+  "description": "Blue streak",  
+  "narrativeType": "narrativeHair",  
   "Context": [  
     {  
       "identifier": [  
         {  
           "identifierScope": "labkoat",  
-          "identifierValue": "cxt/34T8RjoQbKCl5lnyalkmr"  
+          "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"  
         }  
       ]  
-    }
+    }  
+  ]  
+}
 ```

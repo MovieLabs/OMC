@@ -185,6 +185,6 @@ The canonical title name for the creative work with type and language
       ]  
     }  
   ]  
-},
+}
 ```
 
