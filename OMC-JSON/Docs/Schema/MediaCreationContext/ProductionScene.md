@@ -2,14 +2,14 @@ Defined either by explicit divisions in the structure of the Script, e.g., by a 
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property        | Operator          | Type                                                                           | Description                                                                                                                       |
+| Property        | Constraint        | Type                                                                           | Description                                                                                                                       |
 | --------------- | ----------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
 | entityType      | const<br>required | `"ProductionScene"`                                                            | Declares the entity type.                                                                                                         |
 | sceneName       |                   | basicName                                                                      |                                                                                                                                   |
 | sceneHeader     |                   | string, null                                                                   | Used when referring to the Production Scene. It is generally synonymous with Slugline and is used to divide a Script into scenes. |
 | sceneDescriptor |                   | string, null                                                                   | An alphanumeric reference to a Production Scene.                                                                                  |
 | sceneNumber     |                   | string, null                                                                   | A number tied to a Slugline when a Script is locked.                                                                              |
-| Context         | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                                                                                                                   |
+| Context         | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work.                                                                 |
 ## Examples
 
 ```JSON

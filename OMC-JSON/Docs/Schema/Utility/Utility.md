@@ -1,168 +1,316 @@
 Common data models and data structures used in multiple places and in multiple ways in a larger system.
-#### address
+
+## General
+
+#### identifier
+
+| Field Name | Constraint | Type                                          | Description                                                            |
+| ---------- | ---------- | --------------------------------------------- | ---------------------------------------------------------------------- |
+| identifier |            | [&nbsp[identifierItem](#identifierItem)&nbsp] | An identifier uniquely identifies an entity within a particular scope. |
+
+#### identifierItem
+
+| Field Name      | Constraint | Type   | Description                                                                                              |
+| --------------- | ---------- | ------ | -------------------------------------------------------------------------------------------------------- |
+| identifierScope | required   | string | The universe within which an identifier is valid and unique.                                             |
+| identifierValue | required   | string | A string of characters that uniquely identifies an object within a particular scope.                     |
+| combinedForm    |            | string | A combination of the Identifier Scope and Value that is useful for utilizing the identifier in a system. |
+| url             |            | string | A URL or IRI that can be used for resolving the Identifier Value within the Identifier Scope.            |
+
+#### language
+An IETF BCP 47 language code.
+
+| Field Name | Constraint | Type         | Description                   |
+| ---------- | ---------- | ------------ | ----------------------------- |
+|            |            | string, null | An IETF BCP 47 language code. |
 
 
 #### annotation
+Human readable commentary, explanation, or information.
 
-| Field Name | Operator | Type         | Description                         |
-| ---------- | -------- | ------------ | ----------------------------------- |
-| author     |          | string, null | Who wrote or added this annotation  |
-| title      |          | string, null | A title for the note or annotation. |
-| text       |          | string, null | The text of the note or annotation. |
+| Field Name | Constraint | Type         | Description                         |
+| ---------- | ---------- | ------------ | ----------------------------------- |
+| author     |            | string, null | Who wrote or added this annotation  |
+| title      |            | string, null | A title for the note or annotation. |
+| text       |            | string, null | The text of the note or annotation. |
+
+#### tag
+| Field Name | Constraint | Type             | Description                                                                         |
+| ---------- | ---------- | ---------------- | ----------------------------------------------------------------------------------- |
+| domain     |            | string, null     | An indication of the set or system in which the tag values are relevant or defined. |
+| value      |            | [ string ], null | A set of tags taken from the domain.                                                |
+
+#### customData
+A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties.
+
+| Field Name | Constraint | Type         | Description |
+| ---------- | ---------- | ------------ | ----------- |
+|            |            | object, null |             |
+
+
+
+## People and Place
+
+### Object Properties
+#### address
+A postal address or identifiable location of a place or building.
+
+| Field Name | Constraint | Type                | Description                                                              |
+| ---------- | ---------- | ------------------- | ------------------------------------------------------------------------ |
+| street     |            | string, null        | The street address                                                       |
+| locality   |            | string, null        | The locality in which the street address is, and which is in the region. |
+| region     |            | string, null        | The region in which the locality is, and which is in the country.        |
+| postalCode |            | string, null        | A zip or postal code.                                                    |
+| country    |            | [country](#country) | The country, as an ISO 3166-1 alpha-2 country code.                      |
+
+#### country
+The country, as an ISO 3166-1 alpha-2 country code.
+
+| Field Name | Constraint                   | Type         | Description                                         |
+| ---------- | ---------------------------- | ------------ | --------------------------------------------------- |
+|            | minLength: 2<br>maxLength: 4 | string, null | The country, as an ISO 3166-1 alpha-2 country code. |
+
+#### coordinates
+A global positioning coordinate in compliance with WGS 84.
+
+| Field Name | Constraint                    | Type         | Description |
+| ---------- | ----------------------------- | ------------ | ----------- |
+| latitude   | minimum: -90<br>maximum: 90   | number, null |             |
+| longitude  | minimum: -180<br>maximum: 180 | number, null |             |
+
+#### contact
+Means by which the subject of an entity may be contacted in the production.
+
+| Field Name    | Constraint | Type            | Description |
+| ------------- | ---------- | --------------- | ----------- |
+| email         |            | [email](#email) |             |
+| telephone<br> |            |                 |             |
+
+#### email
+
+| Field Name | Constraint | Type         | Description            |
+| ---------- | ---------- | ------------ | ---------------------- |
+| business   |            | string, null | Business email address |
+| personal   |            | string, null | Personal email address |
+
+#### telephone
+
+| Field Name | Constraint | Type         | Description               |
+| ---------- | ---------- | ------------ | ------------------------- |
+| business   |            | string, null | Business telephone number |
+| personal   |            | string, null | Personal telephone number |
+
+#### gender
+A person, or others, expressed or preferred gender and pronoun.
+
+| Field Name    | Constraint | Type                                               | Description                       |
+| ------------- | ---------- | -------------------------------------------------- | --------------------------------- |
+| gender        | enum       | `"male", "female", "other", "unknown" null`        | The handedness of the third axis  |
+| genderPronoun | enum       | `"he/him", "she/her". "ze/hir", "they/them", null` | An individuals pronoun of choice. |
 
 #### basicName
+A canonical name and alternative name for the entity.
 
-
-#### boundingBox
-The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry.
-
-| Field Name | Operator | Type              | Description |
-| ---------- | -------- | ----------------- | ----------- |
-| corner1    |          | [point3](#point3) |             |
-| corner2    |          | [point3](#point3) |             |
+| Field Name  | Constraint | Type             | Description                                        |
+| ----------- | ---------- | ---------------- | -------------------------------------------------- |
+| fullName    |            | string,&nbspnull | The full an complete name of the entity.           |
+| altName<br> |            | string,&nbspnull | An alternate, often shortened name for the entity. |
 
 #### completeName
 A detailed description of a person, or other entities, name and variants of their name.
 
-| Field Name          | Operator | Type             | Description                                                                                                                            |
-| ------------------- | -------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| firstGivenName      |          | string,&nbspnull | A person's first name, also referred to as given name.                                                                                 |
-| secondGivenName<br> |          | string,&nbspnull | A persons second given name, also referred to as middle name.                                                                          |
-| familyName          |          | string,&nbspnull | A persons family name, also referred to as surname.                                                                                    |
-| fullName            |          | string,&nbspnull | A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields.                                      |
-| birthName           |          | string,&nbspnull | A persons name at birth, also referred to as maiden name.                                                                              |
-| primaryName         |          | string,&nbspnull | A persons primary name, one they typically use, also often a combination of first, second and family name.                             |
-| pseudonym           |          | string,&nbspnull |                                                                                                                                        |
-| altName             |          | string,&nbspnull |                                                                                                                                        |
-| translatedName      |          | string,&nbspnull |                                                                                                                                        |
-| nickname            |          | string,&nbspnull |                                                                                                                                        |
-| moniker             |          | string,&nbspnull |                                                                                                                                        |
-| alias               |          | string,&nbspnull | An alias being used by a person often used to disguise someones real identity, sometimes used when booking hotel rooms or restaurants. |
-| contractualName     |          | string,&nbspnull |                                                                                                                                        |
-| displayName         |          | string,&nbspnull |                                                                                                                                        |
-| sortName            |          | string,&nbspnull |                                                                                                                                        |
-| scriptName          |          | string,&nbspnull |                                                                                                                                        |
-| prefix              |          | string,&nbspnull | A prefix that can indicate a persons gender or title.                                                                                  |
-| suffix              |          | string,&nbspnull | A suffix, often used to indicate a title or classification                                                                             |
+| Field Name          | Constraint | Type             | Description                                                                                                                            |
+| ------------------- | ---------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| firstGivenName      |            | string,&nbspnull | A person's first name, also referred to as given name.                                                                                 |
+| secondGivenName<br> |            | string,&nbspnull | A persons second given name, also referred to as middle name.                                                                          |
+| familyName          |            | string,&nbspnull | A persons family name, also referred to as surname.                                                                                    |
+| fullName            |            | string,&nbspnull | A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields.                                      |
+| birthName           |            | string,&nbspnull | A persons name at birth, also referred to as maiden name.                                                                              |
+| primaryName         |            | string,&nbspnull | A persons primary name, one they typically use, also often a combination of first, second and family name.                             |
+| pseudonym           |            | string,&nbspnull |                                                                                                                                        |
+| altName             |            | string,&nbspnull |                                                                                                                                        |
+| translatedName      |            | string,&nbspnull |                                                                                                                                        |
+| nickname            |            | string,&nbspnull |                                                                                                                                        |
+| moniker             |            | string,&nbspnull |                                                                                                                                        |
+| alias               |            | string,&nbspnull | An alias being used by a person often used to disguise someones real identity, sometimes used when booking hotel rooms or restaurants. |
+| contractualName     |            | string,&nbspnull |                                                                                                                                        |
+| displayName         |            | string,&nbspnull |                                                                                                                                        |
+| sortName            |            | string,&nbspnull |                                                                                                                                        |
+| scriptName          |            | string,&nbspnull |                                                                                                                                        |
+| prefix              |            | string,&nbspnull | A prefix that can indicate a persons gender or title.                                                                                  |
+| suffix              |            | string,&nbspnull | A suffix, often used to indicate a title or classification                                                                             |
 
+## Time and Measurement
 
-#### contact
+#### timeStamp
+| Field Name | Constraint | Type         | Description |
+| ---------- | ---------- | ------------ | ----------- |
+|            |            | number, null |             |
+#### periodTime
+A period in time
 
+| Field Name   | Constraint | Type         | Description |
+| ------------ | ---------- | ------------ | ----------- |
+| startTime    | required   | string       |             |
+| durationTime |            | string, null |             |
+| endTime      |            | string, null |             |
+#### descriptiveTime
+| Field Name   | Constraint | Type         | Description |
+| ------------ | ---------- | ------------ | ----------- |
+| periodInDay  |            | string, null |             |
+| relativeTime |            | string, null |             |
+| periodInTime |            | string, null |             |
+| eventInTime  |            | string, null |             |
+#### dateTime
+Should be formatted to comply with ISO 8601
 
-#### coordinates
+| Field Name  | Constraint                                                                                                                                                                                                         | Type         | Description |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ----------- |
+| periodInDay | pattern: `^(?:19\|20)\d{2}-(?:0[1-9]\|1[0-2])-(?:0[1-9]\|[12]\d\|3[01])T(?:[01]\d\|2[0-3]):[0-5]\d:[0-5]\d(?:\|\.\d\d)(?:Z\|-0[1-9]\|-1\d\|-2[0-3]\|-00:?(?:0[1-9]\|[1-5]\d)\|\+[01]\d\|\+2[0-3])(?:\|:?[0-5]\d)$` | string, null |             |
+#### date
+Should be formatted to comply with ISO 8601
 
+| Field Name  | Constraint                      | Type         | Description |
+| ----------- | ------------------------------- | ------------ | ----------- |
+| periodInDay | pattern: `\d{4}-[01]\d-[0-3]\d` | string, null |             |
+#### durationTime
+Should be formatted to comply with ISO 8601.
 
+| Field Name   | Constraint                                                                                   | Type         | Description |
+| ------------ | -------------------------------------------------------------------------------------------- | ------------ | ----------- |
+| durationTime | pattern: `^(-?)P(?=.)((\d+)Y)?((\d+)M)?((\d+)D)?(T(?=.)((\d+)H)?((\d+)M)?(\d*(\.\d+)?S)?)?$` | string, null |             |
+#### timeCode
+SMPTE Timecode in the format HH:MM:SS:FF. 
+Assumes the frame rate is 23.98, 24, 25, 29.97 NDF, or 30
 
+| Field Name   | Constraint                                                  | Type         | Description |
+| ------------ | ----------------------------------------------------------- | ------------ | ----------- |
+| durationTime | pattern: `^([01]\d\|2[0-3]):([0-5]\d):([0-5]\d):([0-2]\d)$` | string, null |             |
+
+#### weight
+| Field Name | Constraint                                                    | Type         | Description       |
+| ---------- | ------------------------------------------------------------- | ------------ | ----------------- |
+| weight     | pattern: `^(\d+kg)?(\d+g)?$`<br>pattern: `^(\d+lb)?(\d+oz)?$` | string, null | 3kg7g<br>12lb14oz |
+#### dimensions
+
+| Field Name | Constraint | Type | Description |
+| ---------- | ---------- | ---- | ----------- |
+| height     |            |      |             |
+| width      |            |      |             |
+| depth      |            |      |             |
+
+#### linearDistance
+
+| Field Name | Constraint                                                                                | Type         | Description    |
+| ---------- | ----------------------------------------------------------------------------------------- | ------------ | -------------- |
+|            | pattern: `^-?(\d+km)?(\d+m)?(\d+cm)?(\d+mm)?$`<br>pattern: `^-?(\d+mi)?(\d+ft)?(\d+in)?$` | string, null | 100m<br>2000ft |
+
+## CG Graphics
+#### boundingBox
+The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry.
+
+| Field Name | Constraint | Type              | Description |
+| ---------- | ---------- | ----------------- | ----------- |
+| corner1    |            | [point3](#point3) |             |
+| corner2    |            | [point3](#point3) |             |
 
 #### coordinateOrientation
 The direction and handedness of the axes used in the geometry.
 
-| Field Name | Operator | Type                    | Description                      |
-| ---------- | -------- | ----------------------- | -------------------------------- |
-| handedness | enum     | `"left", "right", null` | The handedness of the third axis |
-| upAxis     | enum     | `"y-up", "z-up", null`  |                                  |
-#### country
-
-| Field Name | Operator | Type | Description |
-| ---------- | -------- | ---- | ----------- |
-|            |          |      |             |
-
-#### customData
-
-
-#### email
-
-
-
-#### gender
-
-
-#### identifier
-
-| Field Name | Operator | Type                                          | Description                                                            |
-| ---------- | -------- | --------------------------------------------- | ---------------------------------------------------------------------- |
-| identifier |          | [&nbsp[identifierItem](#identifierItem)&nbsp] | An identifier uniquely identifies an entity within a particular scope. |
-
-#### identifierItem
-
-| Field Name      | Operator | Type   | Description                                                                                              |
-| --------------- | -------- | ------ | -------------------------------------------------------------------------------------------------------- |
-| identifierScope | required | string | The universe within which an identifier is valid and unique.                                             |
-| identifierValue | required | string | A string of characters that uniquely identifies an object within a particular scope.                     |
-| combinedForm    |          | string | A combination of the Identifier Scope and Value that is useful for utilizing the identifier in a system. |
-| url             |          | string | A URL or IRI that can be used for resolving the Identifier Value within the Identifier Scope.            |
-
-#### language
+| Field Name | Constraint | Type                    | Description                      |
+| ---------- | ---------- | ----------------------- | -------------------------------- |
+| handedness | enum       | `"left", "right", null` | The handedness of the third axis |
+| upAxis     | enum       | `"y-up", "z-up", null`  |                                  |
 
 
 #### levelOfDetail
 Percentage of the screen that an object can reasonably take up.
 
-| Field Name | Operator           | Type          | Description |
+| Field Name | Constraint         | Type          | Description |
 | ---------- | ------------------ | ------------- | ----------- |
 |            | min: 1<br>max: 100 | integer, null |             |
-
-#### materialType
-
-
-
-
 #### point2
 A point with two coordinates.
 
-| Field Name | Operator | Type   | Description           |
-| ---------- | -------- | ------ | --------------------- |
-| x          |          | number | x coordinate of point |
-| y          |          | number | y coordinate of point |
+| Field Name | Constraint | Type   | Description           |
+| ---------- | ---------- | ------ | --------------------- |
+| x          |            | number | x coordinate of point |
+| y          |            | number | y coordinate of point |
 #### point3
 A point with three coordinates.
 
-| Field Name | Operator | Type   | Description           |
-| ---------- | -------- | ------ | --------------------- |
-| x          |          | number | x coordinate of point |
-| y          |          | number | y coordinate of point |
-| z          |          | number | z coordinate of point |
+| Field Name | Constraint | Type   | Description           |
+| ---------- | ---------- | ------ | --------------------- |
+| x          |            | number | x coordinate of point |
+| y          |            | number | y coordinate of point |
+| z          |            | number | z coordinate of point |
 
-#### provenance
+#### scale
 
+### Controlled Values
+#### materialType
+| Value                  | Description |
+| ---------------------- | ----------- |
+| gasOrLiquid            |             |
+| gasOrLiquid.atmosphere |             |
+| gasOrLiquid.fire       |             |
+| gasOrLiquid.fog        |             |
+| gasOrLiquid.oil        |             |
+| gasOrLiquid.water      |             |
+| inorganic              |             |
+| inorganic.glass        |             |
+| inorganic.metal        |             |
+| inorganic.plastic      |             |
+| inorganic.stone        |             |
+| organic                |             |
+| organic.fur            |             |
+| organic.hair           |             |
+| organic.leather        |             |
+| organic.plant          |             |
+| organic.scales         |             |
+| organic.skin           |             |
+| organic.wood           |             |
+| textile                |             |
+| textile.cotton         |             |
+| textile.silk           |             |
+| textile.wool           |             |
 
 #### purpose
 A suggested or intended use for the object in a pipeline.
 
-| Field Name | Operator  | Type         | Description |
-| ---------- | --------- | ------------ | ----------- |
-|            | ctrlValue | string, null |             |
-
-| Value       | Definition                                                                       |
-| ----------- | -------------------------------------------------------------------------------- |
-| annotation  | 3D elements that provide additional information or commentary on other geometry. |
-| collision   | Simplified geometry for collision detection and physics simulations.             |
-| general     |                                                                                  |
-| guide       | Geometry used as a visual guide or reference in animation and VFX.               |
-| matte/paint | Geometry that acts as a background or underlay for visual atmosphere creation.   |
-| printing    | Geometry built as input for a 3D printer process                                 |
-| proxy       | Lower-resolution geometry used for faster pre-visualization and playback.        |
-| rendering   | Final high-quality visual output of 3D geometry.                                 |
-
-
-#### scale
-
-#### tag
-
-
-#### telephone
-
-
-#### time
+| Value | Description |
+|-------|-------------|
+| annotation | 3D elements that provide additional information or commentary on other geometry. |
+| collision | Simplified geometry for collision detection and physics simulations. |
+| general | N/A |
+| guide | Geometry used as a visual guide or reference in animation and VFX. |
+| matte/paint | Geometry that acts as a background or underlay for visual atmosphere creation. |
+| printing | Geometry built as input for a 3D printer process |
+| proxy | Lower-resolution geometry used for faster pre-visualization and playback. |
+| rendering | Final high-quality visual output of 3D geometry. |
 
 
 
-#### unitOfMeasurement
+## Versions
 
 #### versionNumber
 
 
 
-## Reference
+#### provenance
+A record of when something was changed and by whom.
 
-Description of reference
+| Field Name | Constraint | Type                          | Description                                  |
+| ---------- | ---------- | ----------------------------- | -------------------------------------------- |
+| CreatedBy  |            |                               | [Participant](../Participant/Participant.md) |
+| createdOn  |            |                               |                                              |
+| Role       |            |                               | [Role](../Participant/Role.md)               |
+| Origin     |            |                               | [Asset](../Asset/Asset.md)                   |
+| reason     |            | string, null                  |                                              |
+| annotation |            | [ [annotation](#annotation) ] |                                              |
+
+
+
+
+
+

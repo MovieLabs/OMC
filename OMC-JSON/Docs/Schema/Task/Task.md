@@ -2,12 +2,21 @@ A piece of work to be done and completed as a step in the production process.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property   | Operator          | Type                                                                           | Description               |
-| ---------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------- |
-| entityType | const<br>required | `"Task"`                                                                       | Declares the entity type. |
-| TaskSC     |                   |                                                                                |                           |
-| taskFC     |                   |                                                                                |                           |
-| Context    | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                           |
+| Property   | Constraint        | Type                                                                                                 | Description                                                       |
+| ---------- | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| entityType | const<br>required | `"Task"`                                                                                             | Declares the entity type.                                         |
+| TaskSC     |                   | [TaskSC](./TaskSC.md)                                                                                |                                                                   |
+| taskFC     |                   | [taskFC](#taskFC)                                                                                    |                                                                   |
+| Context    | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
+### Object Properties
+
+#### taskFC
+
+| Property             | Constraint                  | Type         | Description |
+| -------------------- | --------------------------- | ------------ | ----------- |
+| functionalType       |                             | string, null |             |
+| functionalProperties | additionalProperties: false | object, null |             |
+
 
 ## Examples
 

@@ -2,14 +2,14 @@ A sentient entity (usually a person but not always) in the script whose specific
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Operator          | Type                                                                               | Description                                   |
-| ------------- | ----------------- | ---------------------------------------------------------------------------------- | --------------------------------------------- |
-| entityType    | const<br>required | `"Character"`                                                                      | Declares the entity type.                     |
-| characterType | enum              | [characterType](#characterType)                                                    | The specific type of character                |
-| characterName |                   | [completeName](../Utility/Utility.md#completeName)                                 | The canonical name or names for the character |
-| profile       |                   | [profile](#profile)                                                                | A more detailed description of the character  |
-| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     |                                               |
-| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                               |
+| Property      | Constraint        | Type                                                                               | Description                                                       |
+| ------------- | ----------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| entityType    | const<br>required | `"Character"`                                                                      | Declares the entity type.                                         |
+| characterType | enum              | [characterType](#characterType)                                                    | The specific type of character                                    |
+| characterName |                   | [completeName](../Utility/Utility.md#completeName)                                 | The canonical name or names for the character                     |
+| profile       |                   | [profile](#profile)                                                                | A more detailed description of the character                      |
+| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | Informs scope within the construction process of a Creative Work. |
+| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                                                   |
 ### Controlled & Enumerated Values
 
 #### characterType
@@ -22,21 +22,21 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 
 #### profile
 
-| Property                | Operator | Type                                   | Description                                                   |
-| ----------------------- | -------- | -------------------------------------- | ------------------------------------------------------------- |
-| physicalCharacteristics |          |                                        | Description of a characters defining physical characteristics |
-| gender                  |          | [gender](../Utility/Utility.md#gender) | A gender for the character                                    |
-| background              |          |                                        | Description of a characters background                        |
+| Property                | Constraint | Type                                   | Description                                                   |
+| ----------------------- | ---------- | -------------------------------------- | ------------------------------------------------------------- |
+| physicalCharacteristics |            |                                        | Description of a characters defining physical characteristics |
+| gender                  |            | [gender](../Utility/Utility.md#gender) | A gender for the character                                    |
+| background              |            |                                        | Description of a characters background                        |
 #### physicalCharacteristics
 
-| Property   | Operator | Type             | Description                               |
-| ---------- | -------- | ---------------- | ----------------------------------------- |
-| species    |          | string,&nbspnull | A species to which this character belongs |
-| hairColor  |          | string,&nbspnull | The hair color of the character.          |
-| hairLength |          | string,&nbspnull | The length of hair of the character.      |
-| eyeColor   |          | string,&nbspnull | The color of the characters eyes.         |
-| weight     |          |                  | The weight of the character               |
-| height     |          |                  | The height of the character               |
+| Property   | Constraint | Type             | Description                               |
+| ---------- | ---------- | ---------------- | ----------------------------------------- |
+| species    |            | string,&nbspnull | A species to which this character belongs |
+| hairColor  |            | string,&nbspnull | The hair color of the character.          |
+| hairLength |            | string,&nbspnull | The length of hair of the character.      |
+| eyeColor   |            | string,&nbspnull | The color of the characters eyes.         |
+| weight     |            |                  | The weight of the character               |
+| height     |            |                  | The height of the character               |
 
 
 ## Examples

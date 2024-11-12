@@ -2,12 +2,11 @@
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property   | Operator          | Type                                                                           | Description               |
-| ---------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------- |
-| entityType | const<br>required | `"TaskSC"`                                                                     | Declares the entity type. |
-| TaskSC     |                   |                                                                                |                           |
-| taskFC     |                   |                                                                                |                           |
-| Context    | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                           |
+| Property             | Constraint        | Type       | Description               |
+| -------------------- | ----------------- | ---------- | ------------------------- |
+| entityType           | const<br>required | `"TaskSC"` | Declares the entity type. |
+| strcuturalType       |                   |            |                           |
+| structuralProperties |                   |            |                           |
 
 ## Examples
 

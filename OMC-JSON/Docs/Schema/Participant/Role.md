@@ -2,12 +2,19 @@ The combination of a Task and the Participant responsible for it.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property   | Operator          | Type         | Description               |
-| ---------- | ----------------- | ------------ | ------------------------- |
-| entityType | const<br>required | `"Role"`     | Declares the entity type. |
-| roleType   | ctrlValue         | string, null |                           |
+| Property   | Constraint        | Type                  | Description               |
+| ---------- | ----------------- | --------------------- | ------------------------- |
+| entityType | const<br>required | `"Role"`              | Declares the entity type. |
+| roleType   | ctrlValue         | [roleType](#roleType) |                           |
+
+### ControlledValues
+
+#### roleType
 
 
+| Value | Description                               |
+| ----- | ----------------------------------------- |
+| actor | Person who plays the role of a character. |
 
 ## Examples
 

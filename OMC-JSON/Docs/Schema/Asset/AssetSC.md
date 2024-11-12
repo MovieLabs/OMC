@@ -2,10 +2,89 @@ Describes the form of an Asset along with the attributes specific to that asset'
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property   | Operator          | Type                                                                           | Description               |
-| ---------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------- |
-| entityType | const<br>required | `"AssetSC"`                                                                    | Declares the entity type. |
-| Context    | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                           |
+| Property             | Constraint        | Type                                           | Description                                                                        |
+| -------------------- | ----------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------- |
+| entityType           | const<br>required | `"AssetSC"`                                    | Declares the entity type.                                                          |
+| version              |                   |                                                |                                                                                    |
+| provenance           |                   | [provenance](../Utility/Utility.md#provenance) | A record of when something was changed and by whom.                                |
+| structuralType       | ctrlValue         | [structuralType](#structuralType)              | A canonical description of this assets form.                                       |
+| structuralProperties |                   | [structuralProperties](#structuralProperties)  | A set of properties that describe the structural characteristics.                  |
+| isAnalog             |                   | boolean                                        | True if the Asset is an Analog Asset.                                              |
+| Carrier              |                   | [Carrier](../Infrastructure/Infrastructure.md) | For describing the physical storage device on which the digital essence is stored. |
+
+### Object Properties
+
+#### structuralProperties
+
+| Property              | Constraint | Type                                                                 | Description |
+| --------------------- | ---------- | -------------------------------------------------------------------- | ----------- |
+| boundingBox           |            | [boundingBox](../Utility/Utility.md#boundingBox)                     |             |
+| coordinateOrientation |            | [coordinateOrientation](../Utility/Utility.md#coordinateOrientation) |             |
+| fileDetails           |            | [fileDetails](#fileDetails)                                          |             |
+| geometryType          | ctrlValue  | [geometryType](#geometryType)                                        |             |
+| levelOfDetal          |            | [levelOfDetail](../Utility/Utility.md#levelOfDetail)                 |             |
+| linkSet               |            | [linkSet](#linkSet)                                                  |             |
+| materialType          |            | [materialType](../Utility/Utility.md#materialType)                   |             |
+| purpose               |            | [purpose](../Utility/Utility.md#purpose)                             |             |
+| scale                 |            | [scale](../Utility/Utility.md#scale)                                 |             |
+
+#### fileDetails
+| Property      | Constraint | Type         | Description |
+| ------------- | ---------- | ------------ | ----------- |
+| fileName      |            | string, null |             |
+| filePath      |            | string, null |             |
+| fileExtension |            | string, null |             |
+| mediaType     |            | string, null |             |
+
+#### linkSet
+| Property   | Constraint | Type         | Description |
+| ---------- | ---------- | ------------ | ----------- |
+| recordType |            | string, null |             |
+| mediaType  |            | string, null |             |
+
+
+### Controlled Values
+
+#### structuralType
+| Value                       | Description                                                                                           |
+| --------------------------- | ----------------------------------------------------------------------------------------------------- |
+| digital                     | Information that exists as digital data.                                                              |
+| digital.audio               | A representation of sound.                                                                            |
+| digital.audio.wild          | N/A                                                                                                   |
+| digital.audioVisual         | A Moving Image with Audio synchronized to the images.                                                 |
+| digital.data                | An Asset composed of digital data.                                                                    |
+| digital.document            | A human readable object containing text and/or images.                                                |
+| digital.image               | A two-dimensional visual representation.                                                              |
+| digital.imageSequence       | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image. |
+| digital.movingImage         | A temporally ordered sequence of Images                                                               |
+| digital.procedural          | An Asset that produces data that does not persist outside of its immediate use.                       |
+| digital.structuredDocument  | A Document structured according to a set of rules which are used to parse or understand the document. |
+| geometry                    | A shape defined in three dimensions.                                                                  |
+| physical                    | A physical asset is one where the tangible reality of the Asset is its defining feature.              |
+| physical.audio              | A representation of sound.                                                                            |
+| physical.audio.wild         | N/A                                                                                                   |
+| physical.audioVisual        | A Moving Image with Audio synchronized to the images.                                                 |
+| physical.document           | A human readable object containing text and/or images.                                                |
+| physical.image              | A two-dimensional visual representation.                                                              |
+| physical.imageSequence      | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image. |
+| physical.movingImage        | A temporally ordered sequence of Images                                                               |
+| physical.structuredDocument | A Document structured according to a set of rules which are used to parse or understand the document. |
+#### geometryType
+
+| Value        | Description |
+| ------------ | ----------- |
+| basisCurve   | N/A         |
+| capsule      | N/A         |
+| cone         | N/A         |
+| cube         | N/A         |
+| cylinder     | N/A         |
+| mesh         | N/A         |
+| nurbsCurve   | N/A         |
+| nurbsSurface | N/A         |
+| plane        | N/A         |
+| teapot       | N/A         |
+| torus        | N/A         |
+
 
 ## Examples
 

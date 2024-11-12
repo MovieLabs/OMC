@@ -2,12 +2,12 @@ A particular place or position either in either the real world or the narrative 
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property    | Operator          | Type                                                                           | Description               |
-| ----------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------- |
-| entityType  | const<br>required | `"Location"`                                                                   | Declares the entity type. |
-| address     |                   |                                                                                |                           |
-| coordinates |                   |                                                                                |                           |
-| Context     | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                           |
+| Property    | Constraint        | Type                                                                                                 | Description                                                       |
+| ----------- | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| entityType  | const<br>required | `"Location"`                                                                                         | Declares the entity type.                                         |
+| address     |                   |                                                                                                      |                                                                   |
+| coordinates |                   |                                                                                                      |                                                                   |
+| Context     | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
 
 
 ## Examples

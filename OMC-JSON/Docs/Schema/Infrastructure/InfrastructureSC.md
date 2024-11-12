@@ -2,12 +2,18 @@ Describes the form of the Infrastructure along with the attributes specific to t
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property         | Operator          | Type                                                                           | Description               |
-| ---------------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------- |
-| entityType       | const<br>required | `"InfrastructureSC"`                                                           | Declares the entity type. |
-| InfrastructureSC |                   |                                                                                |                           |
-| infrastructureFC |                   |                                                                                |                           |
-| Context          | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                           |
+| Property             | Constraint        | Type                 | Description               |
+| -------------------- | ----------------- | -------------------- | ------------------------- |
+| entityType           | const<br>required | `"InfrastructureSC"` | Declares the entity type. |
+| strcuturalType       |                   |                      |                           |
+| strcuturalProperties |                   |                      |                           |
+
+#### Object Properties
+| Property             | Constraint | Type         | Description               |
+| -------------------- | ---------- | ------------ | ------------------------- |
+| structuralProperties |            | object, null | Declares the entity type. |
+
+
 
 ## Examples
 

@@ -2,14 +2,14 @@ Taken from the narrative itself and traditionally defined by creative intent and
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Operator          | Type                                                                           | Description                          |
-| ------------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------------------ |
-| entityType    | const<br>required | `"NarrativeScene"`                                                             | Declares the entity type.            |
-| narrativeType | enum              | [narrativeType](#narrativeType)                                                | The specific type of narrative scene |
-| sceneName     |                   | [sceneName](#sceneName)                                                        |                                      |
-| sceneNumber   |                   | string, number, null                                                           |                                      |
-| slugline      |                   | [ [annotation](../Utility/Utility.md#annotation) ]                             |                                      |
-| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                      |
+| Property      | Constraint        | Type                                                                           | Description                                                       |
+| ------------- | ----------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| entityType    | const<br>required | `"NarrativeScene"`                                                             | Declares the entity type.                                         |
+| narrativeType | enum              | [narrativeType](#narrativeType)                                                | The specific type of narrative scene                              |
+| sceneName     |                   | [sceneName](#sceneName)                                                        |                                                                   |
+| sceneNumber   |                   | string, number, null                                                           |                                                                   |
+| slugline      |                   | [ [annotation](../Utility/Utility.md#annotation) ]                             |                                                                   |
+| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
 
 ### Controlled & Enumerated Values
 
