@@ -5,7 +5,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property              | Constraint        | Type                                                                                                            | Description                                                                                                                              |
 | --------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | entityType            | const<br>required | `"Depiction"`                                                                                                   | Declares the entity type.                                                                                                                |
-| version               |                   |                                                                                                                 |                                                                                                                                          |
+| version               |                   | [version](#version)                                                                                             | A particular form, variant, or representation of an Asset that differs in some way from its source Asset.                                |
 | provenance            |                   | [provenance](../Utility/Utility.md#provenance)                                                                  | A record of when something was changed and by whom.                                                                                      |
 | compositionType       | enum              | [compositionType](#compositionType)                                                                             | The specific type of composition                                                                                                         |
 | compositionProperties |                   | [compositionProperties](#compositionProperties)                                                                 | Properties specific to this composition                                                                                                  |
@@ -15,6 +15,30 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | StartHere             | anyOf             | [Asset](../Asset/Asset.md)<br>[AssetSC](../Asset/AssetSC.md)<br>[identifier](../Utility/Utility.md#identifier)  | Start point for assembling the Composition, the Asset that contains the instructions for the Composition.                                |
 | Depiction             | anyOf             | [&nbsp[Depiction](../MediaCreationContext/Depiction.md)<br>[identifier](../Utility/Utility.md#identifier)&nbsp] | The representation of something from a narrative entity by a production entity in the Creative Work, specified or implied by the Script. |
 | Context               | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]            | Informs scope within the construction process of a Creative Work.                                                                        |
+### Object Properties
+
+#### version
+Includes properties from: [baseVersion](../core/baseVersion.md)
+
+| Property     | Constraint | Type                                                                                   | Description                                                                                                               |
+| ------------ | ---------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| DerivationOf | oneOf      | [Composition](./Composition.md) <br>[identifier](../Utility/Utility.md#identifier)     | A set of Assets or other Compositions that can be combined to produce a new Asset.                                        |
+| RevisionOf   | oneOf      | [Composition](./Composition.md) <br>[identifier](../Utility/Utility.md#identifier)     | A set of Assets or other Compositions that can be combined to produce a new Asset.                                        |
+| VariantOf    | oneOf      | [Composition](./Composition.md) <br>[identifier](../Utility/Utility.md#identifier)     | A set of Assets or other Compositions that can be combined to produce a new Asset.                                        |
+| Alternative  | anyOf      | [ [Composition](./Composition.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets or other Compositions that can be combined to produce a new Asset.                                        |
+| Derivation   | anyOf      | [ [Composition](./Composition.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets or other Compositions that can be combined to produce a new Asset.                                        |
+| Revision     | anyOf      | [ [Composition](./Composition.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets or other Compositions that can be combined to produce a new Asset.                                        |
+| Variant      | anyOf      | [ [Composition](./Composition.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets or other Compositions that can be combined to produce a new Asset.                                        |
+| customData   |            | [customData](../Utility/Utility.md#customData)                                         | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
+#### compositionProperties
+
+| Field Name            | Constraint | Type                                                        | Description                                                                                                           |
+| --------------------- | ---------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| boundingBox           |            | [boundingBox](./Utility.md#boundingBox)                     | The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry. |
+| coordinateOrientation |            | [coordinateOrientation](./Utility.md#coordinateOrientation) | The direction and handedness of the axes used in the geometry.                                                        |
+| levelOfDetail         |            | [levelOfDetail](./Utility.md#levelOfDetail)                 | Percentage of the screen that an object can reasonably take up.                                                       |
+| purpose               |            | [purpose](./Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
+| scale                 |            | [scale](./Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
 ### Controlled & Enumerated Values
 
 #### compositionType
@@ -30,16 +54,6 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | sequence.editorial | A sequence of shots linked to creative intent.                                    |
 | sequence.vfx       | A unit of work made up of an ordered series of VFX shots.                         |
 | sequence.vfxImage  | An Image Sequence used in VFX work.                                               |
-### Object Properties
-#### compositionProperties
-
-| Field Name            | Constraint | Type                                                        | Description                                                                                                           |
-| --------------------- | ---------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| boundingBox           |            | [boundingBox](./Utility.md#boundingBox)                     | The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry. |
-| coordinateOrientation |            | [coordinateOrientation](./Utility.md#coordinateOrientation) | The direction and handedness of the axes used in the geometry.                                                        |
-| levelOfDetail         |            | [levelOfDetail](./Utility.md#levelOfDetail)                 | Percentage of the screen that an object can reasonably take up.                                                       |
-| purpose               |            | [purpose](./Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
-| scale                 |            | [scale](./Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
 
 
 ## Examples

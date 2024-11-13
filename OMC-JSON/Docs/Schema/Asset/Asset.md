@@ -5,7 +5,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property   | Constraint        | Type                                                                                                     | Description                                                                                                                              |
 | ---------- | ----------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | entityType | const<br>required | `"Asset"`                                                                                                | Declares the entity type.                                                                                                                |
-| version    |                   |                                                                                                          |                                                                                                                                          |
+| version    |                   | [version](#version)                                                                                      | A particular form, variant, or representation of an Asset that differs in some way from its source Asset.                                |
 | provenance |                   | [provenance](../Utility/Utility.md#provenance)                                                           | A record of when something was changed and by whom.                                                                                      |
 | AssetSC    |                   |                                                                                                          | Describes the form of an Asset along with the attributes specific to that asset’s form.                                                  |
 | assetFC    |                   | [assetFC](#assetFC)                                                                                      | Describes the use or purpose of an Asset within the production process                                                                   |
@@ -14,6 +14,20 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Depiction  | anyOf             | [ [Depiction](../MediaCreationContext/Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | The representation of something from a narrative entity by a production entity in the Creative Work, specified or implied by the Script. |
 
 ### Object Properties
+
+#### version
+Includes properties from: [baseVersion](../core/baseVersion.md)
+
+| Property     | Constraint | Type                                                                       | Description                                                                                                               |
+| ------------ | ---------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| DerivationOf | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| RevisionOf   | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| VariantOf    | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| Alternative  | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| Derivation   | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| Revision     | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| Variant      | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| customData   |            | [customData](../Utility/Utility.md#customData)                             | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
 #### assetFC
 Describes the use or purpose of an Asset within the production process
 

@@ -5,7 +5,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property             | Constraint        | Type                                           | Description                                                                        |
 | -------------------- | ----------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------- |
 | entityType           | const<br>required | `"AssetSC"`                                    | Declares the entity type.                                                          |
-| version              |                   |                                                |                                                                                    |
+| version              |                   | [version](#version)                            |                                                                                    |
 | provenance           |                   | [provenance](../Utility/Utility.md#provenance) | A record of when something was changed and by whom.                                |
 | structuralType       | ctrlValue         | [structuralType](#structuralType)              | A canonical description of this assets form.                                       |
 | structuralProperties |                   | [structuralProperties](#structuralProperties)  | A set of properties that describe the structural characteristics.                  |
@@ -13,6 +13,19 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Carrier              |                   | [Carrier](../Infrastructure/Infrastructure.md) | For describing the physical storage device on which the digital essence is stored. |
 
 ### Object Properties
+
+#### version
+Includes properties from: [baseVersion](../core/baseVersion.md)
+
+| Property         | Constraint | Type                                                                           | Description                                                                                                               |
+| ---------------- | ---------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| DerivationOf     | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
+| RepresentationOf | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
+| RevisionOf       | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
+| Derivation       | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
+| Representation   | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
+| Revision         | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
+| customData       |            | [customData](../Utility/Utility.md#customData)                                 | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
 
 #### structuralProperties
 
