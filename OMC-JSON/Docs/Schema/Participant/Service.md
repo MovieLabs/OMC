@@ -8,7 +8,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | structuralType | const             | `"service"`                                                                           |                                                                                        |
 | serviceName    |                   | [basicName](../Utility/Utility.md#basicName)                                          | A canonical name and alternative name for the entity.                                  |
 | contact        |                   | [contact](../Utility/Utility.md#contact)                                              | Means by which the subject of an entity may be contacted in the production.            |
-| Location       | anyOf             | [Location](../Utility/Location.md) <br>[identifier](../Utility/Utility.md#identifier) | A particular place or position either in either the real world or the narrative world. |
+| Location       | oneOf             | [Location](../Utility/Location.md) <br>[identifier](../Utility/Utility.md#identifier) | A particular place or position either in either the real world or the narrative world. |
 
 
 

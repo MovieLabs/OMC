@@ -2,16 +2,16 @@ A physical or digital object or collection of objects specific to the creation o
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property   | Constraint        | Type                                                                                                     | Description                                                                                                                              |
-| ---------- | ----------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| entityType | const<br>required | `"Asset"`                                                                                                | Declares the entity type.                                                                                                                |
-| version    |                   | [version](#version)                                                                                      | A particular form, variant, or representation of an Asset that differs in some way from its source Asset.                                |
-| provenance |                   | [provenance](../Utility/Utility.md#provenance)                                                           | A record of when something was changed and by whom.                                                                                      |
-| AssetSC    |                   |                                                                                                          | Describes the form of an Asset along with the attributes specific to that asset’s form.                                                  |
-| assetFC    |                   | [assetFC](#assetFC)                                                                                      | Describes the use or purpose of an Asset within the production process                                                                   |
-| Asset      | anyOf             | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ]                               | The set of Assets that make up an an asset group.                                                                                        |
-| Context    | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | Informs scope within the construction process of a Creative Work.                                                                        |
-| Depiction  | anyOf             | [ [Depiction](../MediaCreationContext/Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | The representation of something from a narrative entity by a production entity in the Creative Work, specified or implied by the Script. |
+| Property   | Constraint        | Type                                                                                                     | Description                                                                                               |
+| ---------- | ----------------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| entityType | const<br>required | `"Asset"`                                                                                                | Declares the entity type.                                                                                 |
+| version    |                   | [version](#version)                                                                                      | A particular form, variant, or representation of an Asset that differs in some way from its source Asset. |
+| provenance |                   | [provenance](../Utility/Utility.md#provenance)                                                           | A record of when something was changed and by whom.                                                       |
+| AssetSC    |                   |                                                                                                          | Describes the form of an Asset along with the attributes specific to that asset’s form.                   |
+| assetFC    |                   | [assetFC](#assetFC)                                                                                      | Describes the use or purpose of an Asset within the production process                                    |
+| Asset      | anyOf             | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ]                               | The set of Assets that make up an an asset group.                                                         |
+| Context    | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | Informs scope within the construction process of a Creative Work.                                         |
+| Depiction  | anyOf             | [ [Depiction](../MediaCreationContext/Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | The set of entities this Asset depicts.                                                                   |
 
 ### Object Properties
 
@@ -20,13 +20,13 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 
 | Property     | Constraint | Type                                                                       | Description                                                                                                               |
 | ------------ | ---------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| DerivationOf | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
-| RevisionOf   | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
-| VariantOf    | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
-| Alternative  | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
-| Derivation   | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
-| Revision     | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
-| Variant      | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A physical or digital object or collection of objects specific to the creation of the Creative Work.                      |
+| DerivationOf | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | The Asset from which this one was Derived                                                                                 |
+| RevisionOf   | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | The Asset of which this is a Revision of                                                                                  |
+| VariantOf    | oneOf      | [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier)     | The Asset of which this is a Variant of                                                                                   |
+| Alternative  | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets that are Alternatives to this one.                                                                        |
+| Derivation   | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets that are Derived from this one.                                                                           |
+| Revision     | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets that are Revisions of this one.                                                                           |
+| Variant      | anyOf      | [ [Asset](./Asset.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Assets that are Variants of this one.                                                                            |
 | customData   |            | [customData](../Utility/Utility.md#customData)                             | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
 #### assetFC
 Describes the use or purpose of an Asset within the production process
@@ -115,57 +115,57 @@ Information about a Recorder and the recording media.
 
 #### functionalType
 
-| Value | Description |
-|-------|-------------|
-| artwork | N/A |
-| artwork.amimatedStoryboard | A moving image produced from the individual images of a Storyboard. |
-| artwork.conceptArt | Images that illustrate ideas for potential depictions of elements of the creative intent. |
-| artwork.storyboard | A series of images that forms a visual representation of some part of the narrative. |
-| audio | A representation of sound. |
-| audio.channel | N/A |
-| audio.onSetMix | N/A |
-| audio.track | N/A |
-| cameraMetadata | Capture-specific details and information about the Camera itself. |
-| capture | The result of recording an event by any means |
-| capture.audio | A representation of sound. |
-| capture.audio.wild | N/A |
-| capture.calibration | N/A |
-| capture.cameraProxy | N/A |
-| capture.faceCamera | N/A |
-| capture.lidar | N/A |
-| capture.motionCapture | The recording of motion as a stream of digital data. |
-| capture.ocf | N/A |
-| capture.roll | Identifier for a group of events captured together on the same camera and recording media. |
-| capture.witnessCamera | N/A |
-| cgModel | N/A |
-| color | N/A |
-| color.cdl | N/A |
-| color.colorSpace | A predefined encoding for communicating color appearance. |
-| color.lut | Look up table |
-| configuration | N/A |
-| configuration.colorSpace | A configuration file for a color management system. |
-| creativeReferenceMaterial | Images or other material used to inform the creation of a production element, to help convey a tone or look, etc. |
-| lensMetadata | Capture-specific details and information about the Lens itself. |
-| map | An image intended to drive or influence a behavior or value within a CG workflow.  |
-| material | Data values and relationships required to describe the look of a CG Asset.  |
-| productionCharacter | N/A |
-| productionProp | A Depiction of the Narrative Prop. |
-| productionProp.productionGreenery |  An Asset or Assets used to depict Narrative greenery in a Production Scene. |
-| productionProp.productionVehicle | An Asset used in the Depiction of a Narrative Vehicle  |
-| productionSetDressing | Assets used in the depiction of Narrative Set Dressing. |
-| productionSetDressing.productionGreenery |  An Asset or Assets used to depict Narrative greenery in a Production Scene. |
-| productionSetDressing.productionVehicle | An Asset used in the Depiction of a Narrative Vehicle  |
-| proxy | N/A |
-| proxy.daily | N/A |
-| proxy.editorial | N/A |
-| recorderMetadata | Information about a Recorder and the recording media. |
-| script | A Structured Document written as a blueprint to convey the creative intent for the Creative Work. Parsing the Script generates a guide to those things that are to be depicted in production. |
-| sequenceChronologyDescriptor | Describes how a series of Shots is used to generate a Sequence. |
-| shot | A discrete unit of visual narrative with a specified beginning and end. |
-| shot.animation | A Shot that has been identified as requiring Animation work. |
-| shot.editorial | N/A |
-| shot.vfx | A Shot that has been identified as requiring VFX work. |
-| technicalReferenceMaterial | Images and other material used to inform the execution of the production. |
+| Value                                    | Description                                                                                                                                                                                   |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| artwork                                  | N/A                                                                                                                                                                                           |
+| artwork.animatedStoryboard               | A moving image produced from the individual images of a Storyboard.                                                                                                                           |
+| artwork.conceptArt                       | Images that illustrate ideas for potential depictions of elements of the creative intent.                                                                                                     |
+| artwork.storyboard                       | A series of images that forms a visual representation of some part of the narrative.                                                                                                          |
+| audio                                    | A representation of sound.                                                                                                                                                                    |
+| audio.channel                            | N/A                                                                                                                                                                                           |
+| audio.onSetMix                           | N/A                                                                                                                                                                                           |
+| audio.track                              | N/A                                                                                                                                                                                           |
+| cameraMetadata                           | Capture-specific details and information about the Camera itself.                                                                                                                             |
+| capture                                  | The result of recording an event by any means                                                                                                                                                 |
+| capture.audio                            | A representation of sound.                                                                                                                                                                    |
+| capture.audio.wild                       | N/A                                                                                                                                                                                           |
+| capture.calibration                      | N/A                                                                                                                                                                                           |
+| capture.cameraProxy                      | N/A                                                                                                                                                                                           |
+| capture.faceCamera                       | N/A                                                                                                                                                                                           |
+| capture.lidar                            | N/A                                                                                                                                                                                           |
+| capture.motionCapture                    | The recording of motion as a stream of digital data.                                                                                                                                          |
+| capture.ocf                              | N/A                                                                                                                                                                                           |
+| capture.roll                             | Identifier for a group of events captured together on the same camera and recording media.                                                                                                    |
+| capture.witnessCamera                    | N/A                                                                                                                                                                                           |
+| cgModel                                  | N/A                                                                                                                                                                                           |
+| color                                    | N/A                                                                                                                                                                                           |
+| color.cdl                                | N/A                                                                                                                                                                                           |
+| color.colorSpace                         | A predefined encoding for communicating color appearance.                                                                                                                                     |
+| color.lut                                | Look up table                                                                                                                                                                                 |
+| configuration                            | N/A                                                                                                                                                                                           |
+| configuration.colorSpace                 | A configuration file for a color management system.                                                                                                                                           |
+| creativeReferenceMaterial                | Images or other material used to inform the creation of a production element, to help convey a tone or look, etc.                                                                             |
+| lensMetadata                             | Capture-specific details and information about the Lens itself.                                                                                                                               |
+| map                                      | An image intended to drive or influence a behavior or value within a CG workflow.                                                                                                             |
+| material                                 | Data values and relationships required to describe the look of a CG Asset.                                                                                                                    |
+| productionCharacter                      | N/A                                                                                                                                                                                           |
+| productionProp                           | A Depiction of the Narrative Prop.                                                                                                                                                            |
+| productionProp.productionGreenery        | An Asset or Assets used to depict Narrative greenery in a Production Scene.                                                                                                                   |
+| productionProp.productionVehicle         | An Asset used in the Depiction of a Narrative Vehicle                                                                                                                                         |
+| productionSetDressing                    | Assets used in the depiction of Narrative Set Dressing.                                                                                                                                       |
+| productionSetDressing.productionGreenery | An Asset or Assets used to depict Narrative greenery in a Production Scene.                                                                                                                   |
+| productionSetDressing.productionVehicle  | An Asset used in the Depiction of a Narrative Vehicle                                                                                                                                         |
+| proxy                                    | N/A                                                                                                                                                                                           |
+| proxy.daily                              | N/A                                                                                                                                                                                           |
+| proxy.editorial                          | N/A                                                                                                                                                                                           |
+| recorderMetadata                         | Information about a Recorder and the recording media.                                                                                                                                         |
+| script                                   | A Structured Document written as a blueprint to convey the creative intent for the Creative Work. Parsing the Script generates a guide to those things that are to be depicted in production. |
+| sequenceChronologyDescriptor             | Describes how a series of Shots is used to generate a Sequence.                                                                                                                               |
+| shot                                     | A discrete unit of visual narrative with a specified beginning and end.                                                                                                                       |
+| shot.animation                           | A Shot that has been identified as requiring Animation work.                                                                                                                                  |
+| shot.editorial                           | N/A                                                                                                                                                                                           |
+| shot.vfx                                 | A Shot that has been identified as requiring VFX work.                                                                                                                                        |
+| technicalReferenceMaterial               | Images and other material used to inform the execution of the production.                                                                                                                     |
 #### mapFormat
 | Value               | Description |
 | ------------------- | ----------- |

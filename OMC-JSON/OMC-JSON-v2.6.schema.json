@@ -150,7 +150,7 @@
                   ],
                   "controlledValues": [
                     "artwork",
-                    "artwork.amimatedStoryboard",
+                    "artwork.animatedStoryboard",
                     "artwork.conceptArt",
                     "artwork.storyboard",
                     "audio",
@@ -597,7 +597,7 @@
                     "null"
                   ],
                   "title": "T-Stop",
-                  "description": "The linear T-number of the lens, equal to the f-number of the lens divided by the square root of the transmittance of the lens"
+                  "description": "The linear T-number of the lens, equal to the f-number of the lens divided by the square root of the transmittance of the lens."
                 },
                 "fStop": {
                   "type": [
@@ -605,7 +605,7 @@
                     "null"
                   ],
                   "title": "F-Stop",
-                  "description": "The linear f-number of the lens, equal to the focal length divided by the diameter of the entrance pupil"
+                  "description": "The linear f-number of the lens, equal to the focal length divided by the diameter of the entrance pupil."
                 },
                 "entrancePupilPosition": {
                   "type": [
@@ -619,7 +619,7 @@
                     "null"
                   ],
                   "title": "Focus Position",
-                  "description": "Focus distance/position of the lens"
+                  "description": "Focus distance/position of the lens."
                 },
                 "focalLength": {
                   "type": [
@@ -635,7 +635,7 @@
                     "null"
                   ],
                   "title": "Lens Make",
-                  "description": "The lens manufacturer or vendor"
+                  "description": "The lens manufacturer or vendor."
                 },
                 "lensModel": {
                   "type": [
@@ -659,7 +659,7 @@
                     "null"
                   ],
                   "title": "Lens Serial Number",
-                  "description": "A number unique to each lens from the same manufacturer or vendor and of the same model"
+                  "description": "A number unique to each lens from the same manufacturer or vendor and of the same model."
                 },
                 "lensFirmwareVersion": {
                   "type": [
@@ -685,7 +685,7 @@
                     "null"
                   ],
                   "title": "Recorder Firmware Version",
-                  "description": "An alphanumeric code that identifies the firmware installed in the recorder at the time of recording"
+                  "description": "An alphanumeric code that identifies the firmware installed in the recorder at the time of recording."
                 },
                 "recorderMake": {
                   "type": [
@@ -693,7 +693,7 @@
                     "null"
                   ],
                   "title": "Recorder Make",
-                  "description": "The recorder manufacturer or vendor"
+                  "description": "The recorder manufacturer or vendor."
                 },
                 "recorderModel": {
                   "type": [
@@ -701,7 +701,7 @@
                     "null"
                   ],
                   "title": "Recorder Model",
-                  "description": "The recorder model identifier assigned by the lens manufacturer or vendor"
+                  "description": "The recorder model identifier assigned by the lens manufacturer or vendor."
                 },
                 "recorderSerialNumber": {
                   "type": [
@@ -709,7 +709,7 @@
                     "null"
                   ],
                   "title": "Recorder Serial Number",
-                  "description": "A number unique to each recorder from the same manufacturer or vendor and of the same model"
+                  "description": "A number unique to each recorder from the same manufacturer or vendor and of the same model."
                 },
                 "storageMediaUID": {
                   "type": [
@@ -728,7 +728,7 @@
                 "null"
               ],
               "title": "Is Self Contained",
-              "description": "Indicates the Asset does not depend on other Assets to perform its functional use"
+              "description": "Indicates the Asset does not depend on other Assets to perform its functional use."
             },
             "timing": {
               "type": [
@@ -862,7 +862,7 @@
                 "null"
               ],
               "title": "Structural Type",
-              "description": "A structured description of the the assets form",
+              "description": "A cannonical description of the the assets form.",
               "controlledValues": [
                 "assetGroup",
                 "geometry",
@@ -892,7 +892,7 @@
                 "null"
               ],
               "title": "Structural Properties",
-              "description": "A set of properties that describe the asset in this form",
+              "description": "A set of properties that describe the asset in this form.",
               "properties": {
                 "assetGroup": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/assetGroup"},
                 "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
@@ -917,7 +917,7 @@
             },
             "Carrier": {
               "title": "Carrier",
-              "description": "For describing the physical storage device on which the digital assence is stored",
+              "description": "For describing the physical storage device on which the digital essence is stored.",
               "oneOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
                 {"$ref": "#/$defs/Infrastructure/properties/Infrastructure"}
@@ -925,7 +925,7 @@
             }
           },
           "required": ["entityType"],
-          "description": "Describes the form of an Asset along with the attributes specific to that asset’s form",
+          "description": "Describes the form of an Asset along with the attributes specific to that asset’s form.",
           "$defs": {
             "linkset": {
               "type": [
@@ -1235,14 +1235,32 @@
                 },
                 "gender": {"$ref": "#/$defs/Utility/properties/gender"},
                 "background": {
-                  "type": [
-                    "object",
-                    "null"
+                  "title": "background",
+                  "oneOf": [
+                    {
+                      "type": [
+                        "object",
+                        "null"
+                      ],
+                      "deprecated": true,
+                      "$comment": "This should use the annotation property"
+                    },
+                    {"$ref": "#/$defs/Utility/properties/annotation"}
                   ],
-                  "title": "background"
+                  "description": "Additional annotations on a characters background"
                 }
               },
-              "additionalProperties": false
+              "additionalProperties": false,
+              "description": "Specific details describing the character."
+            },
+            "quantity": {
+              "type": [
+                "string",
+                "number",
+                "null"
+              ],
+              "title": "Quantity",
+              "description": "Used to indicate a number of 'extra' characters when required."
             },
             "Depiction": {
               "type": [
@@ -2218,11 +2236,11 @@
                   },
                   "titleType": {
                     "enum": [
-                      null,
-                      "workingTitle",
-                      "internalTitle",
-                      "regionalTitle",
-                      "releaseTitle"
+                      "null",
+                      "working",
+                      "internal",
+                      "regional",
+                      "release"
                     ]
                   },
                   "titleLanguage": {"$ref": "#/$defs/Utility/properties/language"}
@@ -3016,7 +3034,15 @@
               "description": "A particular form, variant, or representation of an Asset that differs in some way from its source Asset.",
               "additionalProperties": false,
               "properties": {
-                "versionNumber": {"$ref": "#/$defs/Utility/properties/versionNumber"},
+                "versionNumber": {
+                  "type": [
+                    "string",
+                    "number",
+                    "null"
+                  ],
+                  "title": "Version Number",
+                  "description": "A designation indicating a place in a sequence of versions"
+                },
                 "name": {
                   "type": "string",
                   "title": "A name for this specific version of the Asset"
@@ -3236,7 +3262,9 @@
             "contact": {
               "title": "Participant Contact",
               "$ref": "#/$defs/Utility/properties/contact",
-              "description": "Contact information for the Participant"
+              "description": "Contact information for the Participant",
+              "deprecated": true,
+              "$comment": "Contact should be on the Participants structural characteristics"
             },
             "Participant": {
               "type": [
@@ -3302,7 +3330,7 @@
                 "null"
               ],
               "title": "Person's Job Title",
-              "description": "A persons job title (as distinct from a specific role)"
+              "description": "A persons job title (as distinct from a specific role)."
             },
             "Location": {
               "oneOf": [
@@ -3602,18 +3630,6 @@
                 {"$ref": "#/$defs/core/properties/baseVersion"}
               ],
               "properties": {
-                "Alternative": {
-                  "type": [
-                    "array",
-                    "null"
-                  ],
-                  "items": {
-                    "anyOf": [
-                      {"$ref": "#/$defs/core/properties/reference"},
-                      {"$ref": "#/$defs/Utility/properties/Composition"}
-                    ]
-                  }
-                },
                 "DerivationOf": {
                   "oneOf": [
                     {"$ref": "#/$defs/core/properties/reference"},
@@ -3631,6 +3647,18 @@
                     {"$ref": "#/$defs/core/properties/reference"},
                     {"$ref": "#/$defs/Utility/properties/Composition"}
                   ]
+                },
+                "Alternative": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/core/properties/reference"},
+                      {"$ref": "#/$defs/Utility/properties/Composition"}
+                    ]
+                  }
                 },
                 "Derivation": {
                   "type": [
@@ -3827,158 +3855,51 @@
           "description": "A particular place or position either in either the real world or the narrative world.",
           "unevaluatedProperties": false
         },
-        "unitOfMeasurement": {
+        "annotation": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "title": "Annotation",
+          "items": {
+            "type": "object",
+            "properties": {
+              "author": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Author",
+                "description": "Who wrote or added this annotation."
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title",
+                "description": "A title for the note or annotation."
+              },
+              "text": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Text",
+                "description": "The text of the note or annotation."
+              }
+            },
+            "additionalProperties": false
+          },
+          "description": "Human readable commentary, explanation, or information."
+        },
+        "customData": {
           "type": [
             "object",
             "null"
           ],
-          "properties": {
-            "weight": {
-              "title": "weight",
-              "description": "Encode a measurement of weight using the imperial or metric system",
-              "oneOf": [
-                {"type": "null"},
-                {
-                  "type": "string",
-                  "description": "Encode weight using the metric system of measurement (kilogram, gram)",
-                  "pattern": "^(\\d+kg)?(\\d+g)?$",
-                  "examples": ["3kg7g"]
-                },
-                {
-                  "type": "string",
-                  "description": "Encode weight using the imperial system of measurement (pounds, ounces)",
-                  "pattern": "^(\\d+lb)?(\\d+oz)?$",
-                  "examples": ["12lb14oz"]
-                }
-              ]
-            },
-            "dimensions": {
-              "type": [
-                "object",
-                "null"
-              ],
-              "title": "dimensions",
-              "description": "Encode a set of measurements to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
-              "properties": {
-                "height": {
-                  "description": "The height or X axis of the object",
-                  "oneOf": [
-                    {"type": "null"},
-                    {
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
-                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                      "examples": [
-                        "100m",
-                        "6km2m56cm12mm"
-                      ],
-                      "type": "string"
-                    },
-                    {
-                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
-                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                      "examples": [
-                        "2000ft",
-                        "2mi12ft6in"
-                      ],
-                      "type": "string"
-                    },
-                    {
-                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
-                      "pattern": "^(\\d+px)$",
-                      "examples": ["250px"],
-                      "type": "string"
-                    }
-                  ]
-                },
-                "width": {
-                  "description": "The width or X axis of the object",
-                  "oneOf": [
-                    {"type": "null"},
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
-                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                      "examples": [
-                        "100m",
-                        "6km2m56cm12mm"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
-                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                      "examples": [
-                        "2000ft",
-                        "2mi12ft6in"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
-                      "pattern": "^(\\d+px)$",
-                      "examples": ["250px"]
-                    }
-                  ]
-                },
-                "depth": {
-                  "description": "The depth or Z axis of the object",
-                  "oneOf": [
-                    {"type": "null"},
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
-                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                      "examples": [
-                        "100m",
-                        "6km2m56cm12mm"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
-                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                      "examples": [
-                        "2000ft",
-                        "2mi12ft6in"
-                      ]
-                    },
-                    {
-                      "type": "string",
-                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
-                      "pattern": "^(\\d+px)$",
-                      "examples": ["250px"]
-                    }
-                  ]
-                }
-              }
-            },
-            "linearDistance": {
-              "title": "Linear Distance",
-              "description": "Encode a measurement of distance using the imperial or metric system",
-              "oneOf": [
-                {"type": "null"},
-                {
-                  "type": "string",
-                  "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
-                  "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
-                  "examples": [
-                    "100m",
-                    "6km2m56cm12mm"
-                  ]
-                },
-                {
-                  "type": "string",
-                  "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
-                  "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
-                  "examples": [
-                    "2000ft",
-                    "2mi12ft6in"
-                  ]
-                }
-              ]
-            }
-          },
-          "additionalProperties": false
+          "title": "Custom Data",
+          "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties."
         },
         "identifier": {
           "type": "array",
@@ -4017,6 +3938,51 @@
           },
           "minItems": 1
         },
+        "language": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Language",
+          "description": "An IETF BCP 47 language code."
+        },
+        "tag": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "properties": {
+              "domain": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Domain",
+                "description": "An indication of the set or system in which the tag values are relevant or defined."
+              },
+              "value": {
+                "title": "Value",
+                "description": "A set of tags taken from the domain.",
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "null"
+                  ]
+                },
+                "type": [
+                  "array",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          },
+          "title": "Tag",
+          "description": "A short string from a particular set, used for categorization and description"
+        },
         "address": {
           "type": [
             "object",
@@ -4048,7 +4014,7 @@
                 "null"
               ],
               "title": "Address region",
-              "description": "The region in which the locality is, and which is in the country",
+              "description": "The region in which the locality is, and which is in the country.",
               "examples": ["California"]
             },
             "postalCode": {
@@ -4057,7 +4023,7 @@
                 "null"
               ],
               "title": "Zip or Postal Code",
-              "description": "A zip or postal code",
+              "description": "A zip or postal code.",
               "examples": ["94534"]
             },
             "country": {
@@ -4074,10 +4040,138 @@
             "null"
           ],
           "title": "Country",
-          "description": "The country, as an ISO 3166-1 alpha-2 country code",
-          "minLength": 2,
-          "maxLength": 4,
-          "examples": ["US"]
+          "description": "An ISO 3166-1 alpha-2 country code.",
+          "examples": ["US"],
+          "pattern": "^[A-Z][A-Z]$"
+        },
+        "coordinates": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Coordinates",
+          "description": "A global positioning coordinate in compliance with WGS 84",
+          "properties": {
+            "latitude": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "title": "Latitude",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "longitude": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "title": "Longitude",
+              "minimum": -180,
+              "maximum": 180
+            }
+          },
+          "additionalProperties": false
+        },
+        "contact": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Contact",
+          "properties": {
+            "email": {
+              "title": "Email",
+              "$ref": "#/$defs/Utility/properties/email"
+            },
+            "telephone": {
+              "title": "Telephone",
+              "$ref": "#/$defs/Utility/properties/telephone"
+            }
+          },
+          "additionalProperties": false,
+          "description": "Means by which the subject of an entity may be contacted in the production."
+        },
+        "email": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Email",
+          "properties": {
+            "business": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Business"
+            },
+            "personal": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Personal"
+            }
+          },
+          "additionalProperties": false
+        },
+        "telephone": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Telephone",
+          "properties": {
+            "business": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Business"
+            },
+            "personal": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Personal"
+            }
+          },
+          "additionalProperties": false
+        },
+        "gender": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "title": "Gender",
+          "properties": {
+            "gender": {
+              "title": "Identifies as gender",
+              "description": "The gender by which an individual identifies",
+              "enum": [
+                null,
+                "male",
+                "female",
+                "other",
+                "unknown"
+              ]
+            },
+            "genderPronoun": {
+              "title": "Preferred pronoun",
+              "description": "An individuals pronoun of choice.",
+              "enum": [
+                "he/him",
+                "she/her",
+                "ze/hir",
+                "they/their",
+                null
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "description": "A person, or others, expressed or preferred gender and pronoun."
         },
         "basicName": {
           "type": [
@@ -4092,7 +4186,7 @@
                 "null"
               ],
               "title": "Full Name",
-              "description": "The full an complete name of the entity"
+              "description": "The full an complete name of the entity."
             },
             "altName": {
               "type": [
@@ -4100,11 +4194,11 @@
                 "null"
               ],
               "title": "Alternate Name",
-              "description": "An alternate, often shortened name for the entity"
+              "description": "An alternate, often shortened name for the entity."
             }
           },
           "additionalProperties": false,
-          "description": "A description of things name and an alternative name"
+          "description": "A canonical name and alternative name for the entity."
         },
         "completeName": {
           "type": [
@@ -4265,114 +4359,6 @@
           "additionalProperties": false,
           "description": "A detailed description of a person, or others, name and variants of their name."
         },
-        "gender": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Gender",
-          "properties": {
-            "gender": {
-              "title": "Identifies as gender",
-              "description": "The gender by which an individual identifies",
-              "enum": [
-                null,
-                "male",
-                "female",
-                "other",
-                "unknown"
-              ]
-            },
-            "genderPronoun": {
-              "title": "Preferred pronoun",
-              "description": "An individuals pronoun of choice",
-              "enum": [
-                "he/him",
-                "she/her",
-                "ze/hir",
-                "they/their",
-                null
-              ]
-            }
-          },
-          "additionalProperties": false,
-          "description": "A person, or others, expressed or preferred gender and pronoun"
-        },
-        "annotation": {
-          "type": [
-            "array",
-            "null"
-          ],
-          "title": "Annotation",
-          "items": {
-            "type": "object",
-            "properties": {
-              "author": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "title": "Author",
-                "description": "Who wrote or added this annotation."
-              },
-              "title": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "title": "Title",
-                "description": "A title for the note or annotation."
-              },
-              "text": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "title": "Text",
-                "description": "The text of the note or annotation."
-              }
-            },
-            "additionalProperties": false
-          },
-          "description": "Human readable commentary, explanation, or information."
-        },
-        "tag": {
-          "type": [
-            "array",
-            "null"
-          ],
-          "items": {
-            "type": "object",
-            "properties": {
-              "domain": {
-                "type": [
-                  "string",
-                  "null"
-                ],
-                "title": "Domain",
-                "description": "An indication of the set or system in which the tag values are relevant or defined"
-              },
-              "value": {
-                "title": "Value",
-                "description": "A set of tags taken from the domain.",
-                "items": {
-                  "type": [
-                    "string",
-                    "number",
-                    "null"
-                  ]
-                },
-                "type": [
-                  "array",
-                  "null"
-                ]
-              }
-            },
-            "additionalProperties": false
-          },
-          "title": "Tag",
-          "description": "A short string from a particular set, used for categorization and description"
-        },
         "time": {
           "type": [
             "object",
@@ -4522,161 +4508,157 @@
             }
           }
         },
-        "coordinates": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Coordinates",
-          "description": "A global positioning coordinate in compliance with WGS 84",
-          "properties": {
-            "latitude": {
-              "type": [
-                "number",
-                "null"
-              ],
-              "title": "latitude",
-              "minimum": -90,
-              "maximum": 90
-            },
-            "longitude": {
-              "type": [
-                "number",
-                "null"
-              ],
-              "title": "longitude",
-              "minimum": -180,
-              "maximum": 180
-            }
-          },
-          "additionalProperties": false
-        },
-        "contact": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Contact",
-          "properties": {
-            "email": {
-              "title": "Email",
-              "$ref": "#/$defs/Utility/properties/email"
-            },
-            "telephone": {
-              "title": "Telephone",
-              "$ref": "#/$defs/Utility/properties/telephone"
-            }
-          },
-          "additionalProperties": false
-        },
-        "email": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Email",
-          "properties": {
-            "business": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Business"
-            },
-            "personal": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Personal"
-            }
-          },
-          "additionalProperties": false
-        },
-        "telephone": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Telephone",
-          "properties": {
-            "business": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Business"
-            },
-            "personal": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Personal"
-            }
-          },
-          "additionalProperties": false
-        },
-        "language": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Language",
-          "description": "An IETF BCP 47 language code"
-        },
-        "versionNumber": {
-          "type": [
-            "string",
-            "number",
-            "null"
-          ],
-          "title": "Version Number",
-          "description": "A designation indicating a place in a sequence of versions"
-        },
-        "customData": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "title": "Custom Data",
-          "description": "A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties"
-        },
-        "provenance": {
+        "unitOfMeasurement": {
           "type": [
             "object",
             "null"
           ],
           "properties": {
-            "CreatedBy": {
+            "weight": {
+              "title": "weight",
+              "description": "Encode a measurement of weight using the imperial or metric system",
               "oneOf": [
-                {"$ref": "#/$defs/core/properties/reference"},
-                {"$ref": "#/$defs/Participant/properties/Participant"}
+                {"type": "null"},
+                {
+                  "type": "string",
+                  "description": "Encode weight using the metric system of measurement (kilogram, gram)",
+                  "pattern": "^(\\d+kg)?(\\d+g)?$",
+                  "examples": ["3kg7g"]
+                },
+                {
+                  "type": "string",
+                  "description": "Encode weight using the imperial system of measurement (pounds, ounces)",
+                  "pattern": "^(\\d+lb)?(\\d+oz)?$",
+                  "examples": ["12lb14oz"]
+                }
               ]
             },
-            "Role": {
-              "oneOf": [
-                {"$ref": "#/$defs/core/properties/reference"},
-                {"$ref": "#/$defs/Participant/properties/Role"}
-              ]
-            },
-            "createdOn": {"$ref": "#/$defs/Utility/properties/time/properties/dateTime"},
-            "Origin": {
-              "oneOf": [
-                {"$ref": "#/$defs/core/properties/reference"},
-                {"$ref": "#/$defs/Asset/properties/Asset"}
-              ]
-            },
-            "reason": {
+            "dimensions": {
               "type": [
-                "string",
+                "object",
                 "null"
-              ]
+              ],
+              "title": "dimensions",
+              "description": "Encode a set of measurements to describe a 2 or 3 dimensional object (metric, imperial or pixels)",
+              "properties": {
+                "height": {
+                  "description": "The height or X axis of the object",
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ],
+                      "type": "string"
+                    },
+                    {
+                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ],
+                      "type": "string"
+                    },
+                    {
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"],
+                      "type": "string"
+                    }
+                  ]
+                },
+                "width": {
+                  "description": "The width or X axis of the object",
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                },
+                "depth": {
+                  "description": "The depth or Z axis of the object",
+                  "oneOf": [
+                    {"type": "null"},
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
+                      "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                      "examples": [
+                        "100m",
+                        "6km2m56cm12mm"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
+                      "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                      "examples": [
+                        "2000ft",
+                        "2mi12ft6in"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "description": "Encode a measurement of the number of pixels, typically in a digital image",
+                      "pattern": "^(\\d+px)$",
+                      "examples": ["250px"]
+                    }
+                  ]
+                }
+              }
             },
-            "annotation": {"$ref": "#/$defs/Utility/properties/annotation"}
+            "linearDistance": {
+              "title": "Linear Distance",
+              "description": "Encode a measurement of distance using the imperial or metric system",
+              "oneOf": [
+                {"type": "null"},
+                {
+                  "type": "string",
+                  "description": "Encode distance using the metric system of measurement (kilometer, meter, centimetre, millimeter",
+                  "pattern": "^-?(\\d+km)?(\\d+m)?(\\d+cm)?(\\d+mm)?$",
+                  "examples": [
+                    "100m",
+                    "6km2m56cm12mm"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "description": "Encode distance using the imperial system of measurement (miles, feet, inches)",
+                  "pattern": "^-?(\\d+mi)?(\\d+ft)?(\\d+in)?$",
+                  "examples": [
+                    "2000ft",
+                    "2mi12ft6in"
+                  ]
+                }
+              ]
+            }
           },
-          "title": "Provenance",
-          "description": "A record of when something was changed and by whom.",
           "additionalProperties": false
         },
         "boundingBox": {
@@ -4690,36 +4672,6 @@
           },
           "title": "Bounding Box",
           "description": "The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry."
-        },
-        "scale": {
-          "$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/linearDistance",
-          "title": "Scale",
-          "description": "The number of “real” units represented by a single unit in the coordinate space of the Geometry."
-        },
-        "point2": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "properties": {
-            "x": {"type": "number"},
-            "y": {"type": "number"}
-          },
-          "title": "Point 2",
-          "description": "A point with two coordinates."
-        },
-        "point3": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "properties": {
-            "x": {"type": "number"},
-            "y": {"type": "number"},
-            "z": {"type": "number"}
-          },
-          "title": "Point 3",
-          "description": "A point with three coordinates."
         },
         "coordinateOrientation": {
           "type": [
@@ -4754,6 +4706,36 @@
           "minimum": 1,
           "title": "Level of Detail",
           "description": "Percentage of the screen that an object can reasonably take up."
+        },
+        "point2": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "x": {"type": "number"},
+            "y": {"type": "number"}
+          },
+          "title": "Point 2",
+          "description": "A point with two coordinates."
+        },
+        "point3": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "x": {"type": "number"},
+            "y": {"type": "number"},
+            "z": {"type": "number"}
+          },
+          "title": "Point 3",
+          "description": "A point with three coordinates."
+        },
+        "scale": {
+          "$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/linearDistance",
+          "title": "Scale",
+          "description": "The number of “real” units represented by a single unit in the coordinate space of the Geometry."
         },
         "purpose": {
           "type": [
@@ -4805,6 +4787,43 @@
           ],
           "title": "Material Type",
           "description": "Data values and relationships required to describe the look of a CG Asset."
+        },
+        "provenance": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "CreatedBy": {
+              "oneOf": [
+                {"$ref": "#/$defs/core/properties/reference"},
+                {"$ref": "#/$defs/Participant/properties/Participant"}
+              ]
+            },
+            "createdOn": {"$ref": "#/$defs/Utility/properties/time/properties/dateTime"},
+            "Role": {
+              "oneOf": [
+                {"$ref": "#/$defs/core/properties/reference"},
+                {"$ref": "#/$defs/Participant/properties/Role"}
+              ]
+            },
+            "Origin": {
+              "oneOf": [
+                {"$ref": "#/$defs/core/properties/reference"},
+                {"$ref": "#/$defs/Asset/properties/Asset"}
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "annotation": {"$ref": "#/$defs/Utility/properties/annotation"}
+          },
+          "title": "Provenance",
+          "description": "A record of when something was changed and by whom.",
+          "additionalProperties": false
         }
       },
       "additionalProperties": false,
@@ -5424,7 +5443,15 @@
           "title": "Version Information",
           "description": "The base properties that describe a version of something (Asset or Composition).",
           "properties": {
-            "versionNumber": {"$ref": "#/$defs/Utility/properties/versionNumber"},
+            "versionNumber": {
+              "type": [
+                "string",
+                "number",
+                "null"
+              ],
+              "title": "Version Number",
+              "description": "A designation indicating a place in a sequence of versions"
+            },
             "name": {
               "type": [
                 "string",

@@ -2,14 +2,14 @@ Taken from the narrative itself and traditionally defined by creative intent and
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Constraint        | Type                                                                           | Description                                                       |
-| ------------- | ----------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
-| entityType    | const<br>required | `"NarrativeScene"`                                                             | Declares the entity type.                                         |
-| narrativeType | enum              | [narrativeType](#narrativeType)                                                | The specific type of narrative scene                              |
-| sceneName     |                   | [sceneName](#sceneName)                                                        |                                                                   |
-| sceneNumber   |                   | string, number, null                                                           |                                                                   |
-| slugline      |                   | [ [annotation](../Utility/Utility.md#annotation) ]                             |                                                                   |
-| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
+| Property      | Constraint        | Type                                                                           | Description                                                                                                   |
+| ------------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| entityType    | const<br>required | `"NarrativeScene"`                                                             | Declares the entity type.                                                                                     |
+| narrativeType | enum              | [narrativeType](#narrativeType)                                                | The specific type of narrative scene                                                                          |
+| sceneName     |                   | [basicName](../Utility/Utility.md#basicName)                                   | A canonical name for the narrative scene                                                                      |
+| sceneNumber   |                   | string<br>number<br>null                                                       | A number tied to the Slugline when a Script is locked.                                                        |
+| slugline      |                   | [ [annotation](../Utility/Utility.md#annotation) ]                             | A line within a screenplay written in all uppercase letters to draw attention to specific script information. |
+| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work.                                             |
 
 ### Controlled & Enumerated Values
 
@@ -18,13 +18,6 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Value          | Description                                                                                                                          |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | narrativeScene | Taken from the narrative itself and traditionally defined by creative intent and typically a unity of time, place, action, or theme. |
-### Object Properties
-#### sceneName
-
-| Property | Operator | Type         | Description                                                                    |
-| -------- | -------- | ------------ | ------------------------------------------------------------------------------ |
-| fullName |          | string, null | A full descriptive name for the scene                                          |
-| altName  |          |              | An alternate, often shorter, name used in applications to identify the scenes. |
 
 ## Examples
 

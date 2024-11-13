@@ -4,6 +4,9 @@
 
 A new top-level entity type of Composition was added
 
+### Character
+`profile.background`: This should now use the annotation property.
+
 ### Context
 `contextCategory` was added as a new property to allow a canonical way to describe finer grained categorization then just the `contextType`.
 
@@ -45,9 +48,8 @@ with other narrative types and for any future expansion of the narrative types.
 The property `narrativeType` was added, with a single enumerated value of `narrativeScene`. This is for consistency
 with other narrative types and for any future expansion of the narrative types.
 
-### identifier
-The optional properties `combinedForm` and `url` have been added to the identifier property. These can be useful for
-utilizing or resolving the identifier in systems.  
+### Participant
+`contact`: This property was deprecated, contact information should be a property of the Participant structural characteristics.
 
 ### Asset
 Formal definitions for asset functional properties:
@@ -61,6 +63,8 @@ Formal definitions for asset functional properties:
 ### Utility
 `tag`: A new property to allow for internal tags to be included along with a domain indicating their source.
 
+`identifier`: The optional properties `combinedForm` and `url` have been added to the identifier property. These can be useful for
+utilizing or resolving the identifier in systems.
 
 ## Additional refactoring and bug fixes
 
@@ -86,9 +90,6 @@ Some entities had unintentionally been left out of the object representation of 
 
 The schema for the array representation now uses if/then rather than oneOf, this provides performance optimizations
 and more concise error messages.
-
-All entities now share a base schema that is extended, this provides a simplification of the schema itself and ensures
-that all entities are consistent in their structure.
 
 Some properties would have failed validation if `null` was provided, this has been fixed.
 

@@ -7,16 +7,16 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | entityType   | const<br>required | `"ProductionLocation"`                                                               | Declares the entity type.                                         |
 | locationType | enum              | [locationType](#locationType)                                                        | The specific type of production location                          |
 | Context      | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]       | Informs scope within the construction process of a Creative Work. |
-| Location     | anyOf             | [Location](../Utility/Location.md)<br>[identifier](../Utility/Utility.md#identifier) |                                                                   |
+| Location     | oneOf             | [Location](../Utility/Location.md)<br>[identifier](../Utility/Utility.md#identifier) | The details of the physical location                              |
 
 ### Controlled & Enumerated Values
 
 #### locationType
 
-| Value      | Description |     |
-| ---------- | ----------- | --- |
-| production |             |     |
-| shooting   |             |     |
+| Value      | Description                                                                                     |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| production | A real place that is used to depict the Narrative Location or used for creating the production. |
+| shooting   | A fixed, specified physical location for shooting/filming.                                      |
 ## Examples
 
 ```JSON

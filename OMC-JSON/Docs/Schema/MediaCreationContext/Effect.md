@@ -14,7 +14,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 
 | Value         | Description                                                                                                                              |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| effect        | N/A                                                                                                                                      |
+| effect        | A technique that creates or enhances visual elements in the finished work                                                                |
 | specialEffect | Physically based effects, such as explosions, the use of mannequins, and the use of models, the results of which are captured on-camera. |
 | visualEffect  | Effects created on or in the footage after it is captured.                                                                               |
 ## Examples

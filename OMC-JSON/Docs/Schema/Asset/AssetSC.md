@@ -19,27 +19,27 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 
 | Property         | Constraint | Type                                                                           | Description                                                                                                               |
 | ---------------- | ---------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| DerivationOf     | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
-| RepresentationOf | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
-| RevisionOf       | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
-| Derivation       | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
-| Representation   | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
-| Revision         | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Describes the form of an Asset along with the attributes specific to that asset's form.                                   |
+| DerivationOf     | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | The AssetSC from which this one was Derived                                                                               |
+| RepresentationOf | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | The AssetSC which this AssetSC represents                                                                                 |
+| RevisionOf       | oneOf      | [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier)     | The AssetSC from which this one was Revised from                                                                          |
+| Derivation       | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of AssetSC's that are Derived from this one.                                                                        |
+| Representation   | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of AssetSC's that are Representations of this one.                                                                  |
+| Revision         | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of AssetSC's that are Revisions of this one.                                                                        |
 | customData       |            | [customData](../Utility/Utility.md#customData)                                 | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
 
 #### structuralProperties
 
-| Property              | Constraint | Type                                                                 | Description |
-| --------------------- | ---------- | -------------------------------------------------------------------- | ----------- |
-| boundingBox           |            | [boundingBox](../Utility/Utility.md#boundingBox)                     |             |
-| coordinateOrientation |            | [coordinateOrientation](../Utility/Utility.md#coordinateOrientation) |             |
-| fileDetails           |            | [fileDetails](#fileDetails)                                          |             |
-| geometryType          | ctrlValue  | [geometryType](#geometryType)                                        |             |
-| levelOfDetal          |            | [levelOfDetail](../Utility/Utility.md#levelOfDetail)                 |             |
-| linkSet               |            | [linkSet](#linkSet)                                                  |             |
-| materialType          |            | [materialType](../Utility/Utility.md#materialType)                   |             |
-| purpose               |            | [purpose](../Utility/Utility.md#purpose)                             |             |
-| scale                 |            | [scale](../Utility/Utility.md#scale)                                 |             |
+| Property              | Constraint | Type                                                                 | Description                                                                                                           |
+| --------------------- | ---------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| boundingBox           |            | [boundingBox](../Utility/Utility.md#boundingBox)                     | The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry. |
+| coordinateOrientation |            | [coordinateOrientation](../Utility/Utility.md#coordinateOrientation) | The direction and handedness of the axes used in the geometry.                                                        |
+| fileDetails           |            | [fileDetails](#fileDetails)                                          |                                                                                                                       |
+| geometryType          | ctrlValue  | [geometryType](#geometryType)                                        | A description of the general underlying form of a three-dimensional shape.                                            |
+| levelOfDetal          |            | [levelOfDetail](../Utility/Utility.md#levelOfDetail)                 | Percentage of the screen that an object can reasonably take up.                                                       |
+| linkSet               |            | [linkSet](#linkSet)                                                  |                                                                                                                       |
+| materialType          | ctrlValue  | [materialType](../Utility/Utility.md#materialType)                   | Data values and relationships required to describe the look of a CG Asset.                                            |
+| purpose               | ctrlValue  | [purpose](../Utility/Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
+| scale                 |            | [scale](../Utility/Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
 
 #### fileDetails
 | Property      | Constraint | Type         | Description |
@@ -83,6 +83,7 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | physical.movingImage        | A temporally ordered sequence of Images                                                               |
 | physical.structuredDocument | A Document structured according to a set of rules which are used to parse or understand the document. |
 #### geometryType
+A description of the general underlying form of a three-dimensional shape.
 
 | Value        | Description |
 | ------------ | ----------- |

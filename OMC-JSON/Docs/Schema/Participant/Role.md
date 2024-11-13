@@ -5,12 +5,11 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property   | Constraint        | Type                  | Description               |
 | ---------- | ----------------- | --------------------- | ------------------------- |
 | entityType | const<br>required | `"Role"`              | Declares the entity type. |
-| roleType   | ctrlValue         | [roleType](#roleType) |                           |
+| roleType   | ctrlValue         | [roleType](#roleType) | The specific type of role |
 
 ### ControlledValues
 
 #### roleType
-
 
 | Value | Description                               |
 | ----- | ----------------------------------------- |

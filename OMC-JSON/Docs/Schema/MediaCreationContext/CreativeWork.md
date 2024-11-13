@@ -2,22 +2,22 @@ A uniquely identified production.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property             | Constraint     | Type                                                                                                | Description                                                                                                      |
-| -------------------- | -------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| entityType           | const required | `"CreativeWork"`                                                                                    | Declares the entity type.                                                                                        |
-| creativeWorkType     | enum           | [creativeWorkType](#creativeWorkType)                                                               | The specific type of creative work                                                                               |
-| creativeWorkCategory | ctrlValue      | [creativeWorkCategory](#creativeWorkCategory)                                                       | The form of the creative work.                                                                                   |
-| seasonNumber         |                | string, number, null                                                                                |                                                                                                                  |
-| episodeSequence      |                | [&nbsp[episodeSequence](#episodeSequence)&nbsp]                                                     |                                                                                                                  |
-| creativeWorkTitle    |                | [&nbsp[creativeWorkTitle](#creativeWorkTitle)&nbsp]                                                 | The canonical title name or names for the creative work                                                          |
-| approximateLength    |                | [durationTime](../Utility/Utility.md#durationTime)                                                  | Should be formatted to comply with ISO 8601.                                                                     |
-| originalLanguage     |                | [ [language](../Utility/Utility.md#language) ]                                                      | An IETF BCP 47 language code.                                                                                    |
-| countryOfOrigin      |                | [ [country](../Utility/Utility.md#country) ]                                                        | The country, as an ISO 3166-1 alpha-2 country code.                                                              |
-| Context              | anyOf          | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]                      | Informs scope within the construction process of a Creative Work.                                                |
-| Series               | anyOf          | [ [CreativeWork](./CreativeWork.md) <br>[identifier](../Utility/Utility.md#identifier) ]            | A uniquely identified production.                                                                                |
-| Season               | anyOf          | [ [CreativeWork](./CreativeWork.md) <br>[identifier](../Utility/Utility.md#identifier) ]            | A uniquely identified production.                                                                                |
-| Episiode             | anyOf          | [ [CreativeWork](./CreativeWork.md) <br>[identifier](../Utility/Utility.md#identifier) ]            | A uniquely identified production.                                                                                |
-| ProductionCompany    | anyOf          | [ [Participant](../Participant/Participant.md) <br>[identifier](../Utility/Utility.md#identifier) ] | The entities (people, organizations, and services) that are responsible for the production of the Creative Work. |
+| Property             | Constraint     | Type                                                                                                | Description                                                                                                                        |
+| -------------------- | -------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| entityType           | const required | `"CreativeWork"`                                                                                    | Declares the entity type.                                                                                                          |
+| creativeWorkType     | enum           | [creativeWorkType](#creativeWorkType)                                                               | The specific type of creative work                                                                                                 |
+| creativeWorkCategory | ctrlValue      | [creativeWorkCategory](#creativeWorkCategory)                                                       | The form of the creative work.                                                                                                     |
+| seasonNumber         |                | string<br>number<br>null                                                                            |                                                                                                                                    |
+| episodeSequence      |                | [&nbsp[episodeSequence](#episodeSequence)&nbsp]                                                     |                                                                                                                                    |
+| creativeWorkTitle    |                | [&nbsp[creativeWorkTitle](#creativeWorkTitle)&nbsp]                                                 | The canonical title name or names for the creative work                                                                            |
+| approximateLength    |                | [durationTime](../Utility/Utility.md#durationTime)                                                  | Should be formatted to comply with ISO 8601.                                                                                       |
+| originalLanguage     |                | [ [language](../Utility/Utility.md#language) ]                                                      | A list of the primary languages used in the Creative Work.                                                                         |
+| countryOfOrigin      |                | [ [country](../Utility/Utility.md#country) ]                                                        | The home country of the companies that had primary creative control of the creation of the Creative Work, generally the producers. |
+| Context              | anyOf          | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]                      | Informs scope within the construction process of a Creative Work.                                                                  |
+| Series               | anyOf          | [ [CreativeWork](./CreativeWork.md) <br>[identifier](../Utility/Utility.md#identifier) ]            | A series this Creative Work belongs to.                                                                                            |
+| Season               | anyOf          | [ [CreativeWork](./CreativeWork.md) <br>[identifier](../Utility/Utility.md#identifier) ]            | A season this Creative Work belongs to.                                                                                            |
+| Episiode             | anyOf          | [ [CreativeWork](./CreativeWork.md) <br>[identifier](../Utility/Utility.md#identifier) ]            | A set of Episodes this Creative Work contains.                                                                                     |
+| ProductionCompany    | anyOf          | [ [Participant](../Participant/Participant.md) <br>[identifier](../Utility/Utility.md#identifier) ] | An Organization responsible for the development and production of a Creative Work.                                                 |
 
 
 ### Object Properties
@@ -40,7 +40,7 @@ The canonical title name for the creative work with type and language
 | Property      | Constraint | Type                                       | Description                |
 | ------------- | ---------- | ------------------------------------------ | -------------------------- |
 | titleName     |            | string, null                               |                            |
-| titleType     | ctrlValue  | [titleType](#titleType)                    | The specific type of title |
+| titleType     | enum       | [titleType](#titleType)                    | The specific type of title |
 | titleLanguage |            | [language](../Utility/Utility.md#language) | The language of the title  |
 
 
@@ -66,12 +66,12 @@ The canonical title name for the creative work with type and language
 
 ##### titleType
 
-| Value         | Description |
-| ------------- | ----------- |
-| internalTitle |             |
-| workingTitle  |             |
-| regionalTitle |             |
-| releaseTitle  |             |
+| Value    | Description                                                                                                                                                                                                |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| internal | An internal title or code name, not used in commercial release.                                                                                                                                            |
+| working  | Working title, used during the course of production.                                                                                                                                                       |
+| regional | A title unique to a particular territory or otherwise used outside the work’s original home territory, such as local titles given to foreign imports. May be in the same language as the Release title(s). |
+| release  | The original release title for the work.                                                                                                                                                                   |
 
 
 

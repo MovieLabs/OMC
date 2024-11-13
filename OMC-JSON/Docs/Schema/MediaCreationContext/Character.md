@@ -2,44 +2,48 @@ A sentient entity (usually a person but not always) in the script whose specific
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property      | Constraint        | Type                                                                               | Description                                                       |
-| ------------- | ----------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| entityType    | const<br>required | `"Character"`                                                                      | Declares the entity type.                                         |
-| characterType | enum              | [characterType](#characterType)                                                    | The specific type of character                                    |
-| characterName |                   | [completeName](../Utility/Utility.md#completeName)                                 | The canonical name or names for the character                     |
-| profile       |                   | [profile](#profile)                                                                | A more detailed description of the character                      |
-| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | Informs scope within the construction process of a Creative Work. |
-| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] |                                                                   |
+| Property      | Constraint        | Type                                                                               | Description                                              |
+| ------------- | ----------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| entityType    | const<br>required | `"Character"`                                                                      | Declares the entity type.                                |
+| characterType | enum              | [characterType](#characterType)                                                    | The specific type of character                           |
+| characterName |                   | [completeName](../Utility/Utility.md#completeName)                                 | The canonical name or names for the character.           |
+| profile       |                   | [profile](#profile)                                                                | Specific details describing the character.               |
+| quantity      |                   | string<br>number<br>null                                                           | Indicate the number of 'extra' characters when required. |
+| Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | A set of Contexts related to this Character              |
+| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Depictions for this Character                   |
+### Object Properties
+
+#### profile
+Specific details describing the character.
+
+| Property                | Constraint | Type                                                | Description                                                   |
+| ----------------------- | ---------- | --------------------------------------------------- | ------------------------------------------------------------- |
+| physicalCharacteristics |            | [physicalCharacteristics](#physicalCharacteristics) | Description of a characters defining physical characteristics |
+| gender                  |            | [gender](../Utility/Utility.md#gender)              | A gender for the character                                    |
+| background              |            | [annotation](../Utility/Utility.md#annotation)      | Additional annotations on a characters background             |
+#### physicalCharacteristics
+Description of a characters defining physical characteristics
+
+| Property   | Constraint | Type                                                   | Description                               |
+| ---------- | ---------- | ------------------------------------------------------ | ----------------------------------------- |
+| species    |            | string<br>null                                         | A species to which this character belongs |
+| hairColor  |            | string<br>null                                         | The hair color of the character.          |
+| hairLength |            | string<br>null                                         | The length of hair of the character.      |
+| eyeColor   |            | string<br>null                                         | The color of the characters eyes.         |
+| weight     |            | [weight](../Utility/Utility.md#weight)                 | The weight of the character               |
+| height     |            | [linearDistance](../Utility/Utility.md#linearDistance) | The height of the character               |
+
 ### Controlled & Enumerated Values
 
 #### characterType
+The specific type of character
 
 | Value     | Description                                                                                                                             |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | character | A sentient entity (usually a person but not always) in the script whose specific identity is consequential to the narrative.            |
 | extra     | A sentient entity (usually a person, but not always) in the Script whose specific identity is minimally consequential to the narrative. |
-### Object Properties
 
-#### profile
-
-| Property                | Constraint | Type                                   | Description                                                   |
-| ----------------------- | ---------- | -------------------------------------- | ------------------------------------------------------------- |
-| physicalCharacteristics |            |                                        | Description of a characters defining physical characteristics |
-| gender                  |            | [gender](../Utility/Utility.md#gender) | A gender for the character                                    |
-| background              |            |                                        | Description of a characters background                        |
-#### physicalCharacteristics
-
-| Property   | Constraint | Type             | Description                               |
-| ---------- | ---------- | ---------------- | ----------------------------------------- |
-| species    |            | string,&nbspnull | A species to which this character belongs |
-| hairColor  |            | string,&nbspnull | The hair color of the character.          |
-| hairLength |            | string,&nbspnull | The length of hair of the character.      |
-| eyeColor   |            | string,&nbspnull | The color of the characters eyes.         |
-| weight     |            |                  | The weight of the character               |
-| height     |            |                  | The height of the character               |
-
-
-## Examples
+### Examples
 
 ```JSON
 {  

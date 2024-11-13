@@ -2,6 +2,22 @@ Common data models and data structures used in multiple places and in multiple w
 
 ## General
 
+#### annotation
+Human readable commentary, explanation, or information.
+
+| Field Name | Constraint | Type         | Description                         |
+| ---------- | ---------- | ------------ | ----------------------------------- |
+| author     |            | string, null | Who wrote or added this annotation  |
+| title      |            | string, null | A title for the note or annotation. |
+| text       |            | string, null | The text of the note or annotation. |
+
+#### customData
+A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties.
+
+| Field Name | Constraint | Type         | Description |
+| ---------- | ---------- | ------------ | ----------- |
+|            |            | object, null |             |
+
 #### identifier
 
 | Field Name | Constraint | Type                                          | Description                                                            |
@@ -24,30 +40,11 @@ An IETF BCP 47 language code.
 | ---------- | ---------- | ------------ | ----------------------------- |
 |            |            | string, null | An IETF BCP 47 language code. |
 
-
-#### annotation
-Human readable commentary, explanation, or information.
-
-| Field Name | Constraint | Type         | Description                         |
-| ---------- | ---------- | ------------ | ----------------------------------- |
-| author     |            | string, null | Who wrote or added this annotation  |
-| title      |            | string, null | A title for the note or annotation. |
-| text       |            | string, null | The text of the note or annotation. |
-
 #### tag
 | Field Name | Constraint | Type             | Description                                                                         |
 | ---------- | ---------- | ---------------- | ----------------------------------------------------------------------------------- |
 | domain     |            | string, null     | An indication of the set or system in which the tag values are relevant or defined. |
 | value      |            | [ string ], null | A set of tags taken from the domain.                                                |
-
-#### customData
-A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties.
-
-| Field Name | Constraint | Type         | Description |
-| ---------- | ---------- | ------------ | ----------- |
-|            |            | object, null |             |
-
-
 
 ## People and Place
 
@@ -61,22 +58,22 @@ A postal address or identifiable location of a place or building.
 | locality   |            | string, null        | The locality in which the street address is, and which is in the region. |
 | region     |            | string, null        | The region in which the locality is, and which is in the country.        |
 | postalCode |            | string, null        | A zip or postal code.                                                    |
-| country    |            | [country](#country) | The country, as an ISO 3166-1 alpha-2 country code.                      |
+| country    |            | [country](#country) | The country as an ISO 3166-1 alpha-2 country code.                       |
 
 #### country
-The country, as an ISO 3166-1 alpha-2 country code.
+An ISO 3166-1 alpha-2 country code.
 
-| Field Name | Constraint                   | Type         | Description                                         |
-| ---------- | ---------------------------- | ------------ | --------------------------------------------------- |
-|            | minLength: 2<br>maxLength: 4 | string, null | The country, as an ISO 3166-1 alpha-2 country code. |
+| Field Name | Constraint              | Type         | Description                         |
+| ---------- | ----------------------- | ------------ | ----------------------------------- |
+|            | pattern: `^[A-Z][A-Z]$` | string, null | An ISO 3166-1 alpha-2 country code. |
 
 #### coordinates
 A global positioning coordinate in compliance with WGS 84.
 
-| Field Name | Constraint                    | Type         | Description |
-| ---------- | ----------------------------- | ------------ | ----------- |
-| latitude   | minimum: -90<br>maximum: 90   | number, null |             |
-| longitude  | minimum: -180<br>maximum: 180 | number, null |             |
+| Field Name | Constraint            | Type         | Description |
+| ---------- | --------------------- | ------------ | ----------- |
+| latitude   | min: -90<br>max: 90   | number, null |             |
+| longitude  | min: -180<br>max: 180 | number, null |             |
 
 #### contact
 Means by which the subject of an entity may be contacted in the production.
@@ -181,11 +178,11 @@ Should be formatted to comply with ISO 8601.
 | durationTime | pattern: `^(-?)P(?=.)((\d+)Y)?((\d+)M)?((\d+)D)?(T(?=.)((\d+)H)?((\d+)M)?(\d*(\.\d+)?S)?)?$` | string, null |             |
 #### timeCode
 SMPTE Timecode in the format HH:MM:SS:FF. 
-Assumes the frame rate is 23.98, 24, 25, 29.97 NDF, or 30
 
 | Field Name   | Constraint                                                  | Type         | Description |
 | ------------ | ----------------------------------------------------------- | ------------ | ----------- |
 | durationTime | pattern: `^([01]\d\|2[0-3]):([0-5]\d):([0-5]\d):([0-2]\d)$` | string, null |             |
+*Note: Assumes the frame rate is 23.98, 24, 25, 29.97 NDF, or 30*
 
 #### weight
 | Field Name | Constraint                                                    | Type         | Description       |
@@ -193,11 +190,11 @@ Assumes the frame rate is 23.98, 24, 25, 29.97 NDF, or 30
 | weight     | pattern: `^(\d+kg)?(\d+g)?$`<br>pattern: `^(\d+lb)?(\d+oz)?$` | string, null | 3kg7g<br>12lb14oz |
 #### dimensions
 
-| Field Name | Constraint | Type | Description |
-| ---------- | ---------- | ---- | ----------- |
-| height     |            |      |             |
-| width      |            |      |             |
-| depth      |            |      |             |
+| Field Name | Constraint | Type                              | Description |
+| ---------- | ---------- | --------------------------------- | ----------- |
+| height     |            | [linearDistance](#linearDistance) |             |
+| width      |            | [linearDistance](#linearDistance) |             |
+| depth      |            | [linearDistance](#linearDistance) |             |
 
 #### linearDistance
 
@@ -222,7 +219,6 @@ The direction and handedness of the axes used in the geometry.
 | handedness | enum       | `"left", "right", null` | The handedness of the third axis |
 | upAxis     | enum       | `"y-up", "z-up", null`  |                                  |
 
-
 #### levelOfDetail
 Percentage of the screen that an object can reasonably take up.
 
@@ -246,9 +242,15 @@ A point with three coordinates.
 | z          |            | number | z coordinate of point |
 
 #### scale
+The number of “real” units represented by a single unit in the coordinate space of the Geometry.
 
+| Field Name | Constraint | Type                              | Description |
+| ---------- | ---------- | --------------------------------- | ----------- |
+|            |            | [linearDistance](#linearDistance) |             |
 ### Controlled Values
 #### materialType
+Data values and relationships required to describe the look of a CG Asset.
+
 | Value                  | Description |
 | ---------------------- | ----------- |
 | gasOrLiquid            |             |
@@ -292,10 +294,6 @@ A suggested or intended use for the object in a pipeline.
 
 
 ## Versions
-
-#### versionNumber
-
-
 
 #### provenance
 A record of when something was changed and by whom.
