@@ -22,12 +22,28 @@
         "hairLength": "Short",
         "eyeColor": "Green"
       },
-      "background": {
-        "likes": "Kiera, Space, Nature",
-        "dislikes": "War, Big space cities, Conflict",
-        "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
-        "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
-      },
+      "background": [
+        {
+          "author": null,
+          "title": "likes",
+          "text": "Kiera, Space, Nature"
+        },
+        {
+          "author": null,
+          "title": "dislikes",
+          "text": "War, Big space cities, Conflict"
+        },
+        {
+          "author": null,
+          "title": "habits",
+          "text": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera."
+        },
+        {
+          "author": null,
+          "title": "traits",
+          "text": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
+        }
+      ],
       "gender": {
         "gender": "male",
         "genderPronoun": "he/him"
@@ -80,12 +96,7 @@
         "hairLength": null,
         "eyeColor": null
       },
-      "background": {
-        "likes": null,
-        "dislikes": null,
-        "habits": null,
-        "traits": null
-      },
+      "background": [],
       "gender": {
         "gender": null,
         "genderPronoun": null

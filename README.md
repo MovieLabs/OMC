@@ -3,9 +3,9 @@
 ## OMC-JSON
 The OMC-JSON folder contains all materials related to the OMC-JSON schema
 
-**OMC-JSON-v2.0.schema.json**:The OMC schema itself
+**OMC-JSON-v2.6.schema.json**:The OMC schema itself
 
-**/Docs**: Supplementary documentation on use a differences to OMC and OMC-RDF
+**/Docs**: Supplementary documentation including schema documentation and tech notes giving guidance on how to use the OMC and OMC-JSON schema.
 
 The documentation is split into two sections, a set of documents that outline the basic structure and practices we used to guide the schema development, and a set of tech notes focussed on specific concepts and how to use them.
 
@@ -24,9 +24,11 @@ Tech Notes
 6. [Versions](OMC-JSON/Docs/Tech-Notes/Version.md)
 7. [Relationship Appendix](OMC-JSON/Docs/Tech-Notes/RelationshipAppendix.md)
 
-**/Examples**: A set of example OMC-JSON from our internal OMC, these will validate against the schema and demonstrate the structure and concepts.
+Schema Documentation
+1. [Introduction](OMC-JSON/Docs/Schema/Introduction.md)
+2. [root](OMC-JSON/Docs/Schema/core/root.md)
 
-**/Reference**: Generated formal reference document for the schema
+**/Examples**: A set of example OMC-JSON files, these will validate against the schema and demonstrate the structure and concepts.
 
 ## OMC-RDF
 The RDF in this repo is currently v2.0. The schema is divided into three files:

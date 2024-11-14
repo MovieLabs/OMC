@@ -1238,10 +1238,7 @@
                   "title": "background",
                   "oneOf": [
                     {
-                      "type": [
-                        "object",
-                        "null"
-                      ],
+                      "type": "object",
                       "deprecated": true,
                       "$comment": "This should use the annotation property"
                     },
@@ -2236,7 +2233,7 @@
                   },
                   "titleType": {
                     "enum": [
-                      "null",
+                      null,
                       "working",
                       "internal",
                       "regional",
@@ -2979,7 +2976,8 @@
               "oneOf": [
                 {"$ref": "#/$defs/core/properties/reference"},
                 {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"}
-              ]
+              ],
+              "title": "Creative Work"
             },
             "Director": {
               "type": [

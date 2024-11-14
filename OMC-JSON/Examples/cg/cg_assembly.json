@@ -55,7 +55,7 @@
     ],
     "name": "schoolRoomLook",
     "assetFC": {
-      "functionalType": "model",
+      "functionalType": "cgModel",
       "functionalProperties": {}
     },
     "AssetSC": {

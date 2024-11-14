@@ -3,12 +3,12 @@ The underlying systems and framework required for the production of the Creative
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property         | Constraint        | Type                                                                                                 | Description                                                       |
-| ---------------- | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| entityType       | const<br>required | `"Infrastructure"`                                                                                   | Declares the entity type.                                         |
-| InfrastructureSC |                   | [InfrastructureSC](./Infrastructure.md)                                                              |                                                                   |
-| infrastructureFC |                   | [infrastructureFC](#infrastructureFC)                                                                |                                                                   |
-| Context          | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
+| Property         | Constraint        | Type                                                                                                | Description                                                       |
+| ---------------- | ----------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| entityType       | const<br>required | `"Infrastructure"`                                                                                  | Declares the entity type.                                         |
+| InfrastructureSC |                   | [InfrastructureSC](./Infrastructure.md)                                                             |                                                                   |
+| infrastructureFC |                   | [infrastructureFC](#infrastructureFC)                                                               |                                                                   |
+| Context          | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[reference](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
 
 ### Object Properties
 

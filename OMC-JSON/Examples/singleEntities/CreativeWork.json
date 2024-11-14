@@ -13,12 +13,12 @@
     "creativeWorkTitle": [
       {
         "title": "Hyperspace Madness",
-        "titleType": "releaseTitle",
+        "titleType": "release",
         "titleLanguage": "en"
       },
       {
         "title": "HSM",
-        "titleType": "internalTitle",
+        "titleType": "internal",
         "titleLanguage": "en"
       }
     ],
@@ -40,38 +40,46 @@
     "countryOfOrigin": [
       "US"
     ],
-    "Series": [{
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cw/hlDTz5s8IStbx6jfjdo"
-        }
-      ]
-    }],
-    "Season": [{
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cw/h443258IStbx6jfjdo"
-        }
-      ]
-    }],
-    "Episode": [{
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cw/54gtrs8IStbx6jfjdo"
-        }
-      ]
-    }],
-    "ProductionCompany": [{
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cw/hlDTz5s8ISgdsre324"
-        }
-      ]
-    }],
+    "Series": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/hlDTz5s8IStbx6jfjdo"
+          }
+        ]
+      }
+    ],
+    "Season": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/h443258IStbx6jfjdo"
+          }
+        ]
+      }
+    ],
+    "Episode": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/54gtrs8IStbx6jfjdo"
+          }
+        ]
+      }
+    ],
+    "ProductionCompany": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/hlDTz5s8ISgdsre324"
+          }
+        ]
+      }
+    ],
     "Context": [
       {
         "identifier": [
@@ -92,10 +100,12 @@
       {
         "domain": "tagType",
         "value": [
-          "tagValue", 8
+          "tagValue",
+          8
         ]
       }
-    ]  },
+    ]
+  },
   {
     "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
     "entityType": "CreativeWork",

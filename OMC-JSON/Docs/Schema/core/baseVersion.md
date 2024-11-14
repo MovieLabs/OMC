@@ -1,7 +1,7 @@
 | Property      | Operator       | Type                                               | Description                                                                                                               |
 | ------------- | -------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | versionNumber | enum, required | string, number, null                               | A designation indicating a place in a sequence of versions.                                                               |
-| name          |                | string, null                                       | A name for the specific version of the entity                                                                             |
-| description   |                | string, null                                       | A brief human readable description of the version                                                                         |
+| name          |                | string, null                                       | A name for the specific version of the entity.                                                                            |
+| description   |                | string, null                                       | A brief human readable description of the version.                                                                        |
 | annotation    |                | [ [annotation](../Utility/Utility.md#annotation) ] | Human readable commentary, explanation, or information.                                                                   |
 | customData    |                | [customData](../Utility/Utility.md#customData)     | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
