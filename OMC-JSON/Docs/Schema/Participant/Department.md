@@ -1,3 +1,4 @@
+# Department
 Part of a larger Organization with a particular set of responsibilities on the production.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

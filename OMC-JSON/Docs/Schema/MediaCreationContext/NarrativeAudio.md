@@ -1,3 +1,4 @@
+# NarrativeAudio
 A significant sound in the narrative.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

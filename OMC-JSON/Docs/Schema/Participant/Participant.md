@@ -1,3 +1,4 @@
+# Participant
 The entities (people, organizations, and services) that are responsible for the production of the Creative Work.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

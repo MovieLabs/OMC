@@ -1,3 +1,4 @@
+# Slate
 Used to capture key identifying information about what is being recorded on any given setup and take.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

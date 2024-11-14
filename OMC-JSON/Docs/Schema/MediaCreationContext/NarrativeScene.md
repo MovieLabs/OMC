@@ -1,3 +1,4 @@
+# NarrativeScene
 Taken from the narrative itself and traditionally defined by creative intent and typically a unity of time, place, action, or theme.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

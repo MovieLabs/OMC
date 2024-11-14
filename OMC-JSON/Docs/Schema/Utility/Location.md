@@ -1,3 +1,4 @@
+# Location
 A particular place or position either in either the real world or the narrative world.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

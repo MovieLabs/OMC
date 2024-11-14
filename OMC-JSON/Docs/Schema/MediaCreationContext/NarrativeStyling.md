@@ -1,3 +1,4 @@
+# NarrativeStyling
 Styling required to prepare an actor for their role.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

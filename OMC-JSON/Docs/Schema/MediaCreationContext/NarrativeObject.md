@@ -1,3 +1,4 @@
+# NarrativeObject
 A named object related to or interacting with characters that is implied or understood to be necessary for the narrative. Includes items like props, wardrobe, set dressing and vehicles.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

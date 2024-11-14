@@ -1,3 +1,4 @@
+# AssetSC
 Describes the form of an Asset along with the attributes specific to that asset's form.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

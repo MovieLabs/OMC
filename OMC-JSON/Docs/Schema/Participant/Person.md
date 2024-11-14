@@ -1,3 +1,4 @@
+# Person
 People are the individuals that are associated with the production.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

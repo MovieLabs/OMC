@@ -1,3 +1,4 @@
+# Role
 The combination of a Task and the Participant responsible for it.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

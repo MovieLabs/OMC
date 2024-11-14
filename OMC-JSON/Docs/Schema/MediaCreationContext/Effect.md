@@ -1,3 +1,4 @@
+# Effect
 A technique that creates or enhances visual elements in the finished work
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

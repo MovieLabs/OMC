@@ -1,3 +1,4 @@
+# Service
 Transcoding service or transfer service.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

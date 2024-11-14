@@ -19,7 +19,7 @@ Key Points:
 
 ## Status
 
-OMC-JSON v2.0 is considered a beta release, the intent is that this is considered stable for development, future updates will follow the [versioning guidelines](./SchemaVersioning.md).
+OMC-JSON v2.6 is considered a beta release, the intent is that this is considered stable for development, future updates will follow the [versioning guidelines](./SchemaVersioning.md).
 
 Work in progress:
 - Add more formal definitions of more structural and functional characteristics. Audio, CG and On-Set Assets all have active working groups, if you have interest in joining these, please contact us.

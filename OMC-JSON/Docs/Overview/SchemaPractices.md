@@ -1,5 +1,4 @@
 # Schema Practices
-
 In developing OMC-JSON we have made certain decisions about the structure and way certain things are expressed. Some of these are well trod discussions in the computer science field and some can invoke passionately held positions. Here we outline what our decisions were and the reasoning behind them.
 
 ## Property Naming
@@ -35,13 +34,13 @@ OMC-JSON does not use additional symbols prepended or appended to names. For exa
 
 We avoid the use of plurals.
 
-- It can create inconsistencies in naming, i.e., parties vs dates vs classes (ies, s, es). This can be hard for some people to remember.
-- When plurals are used to indicate that a property can have multiple values, it can lead to confusion when there is only one. It can also complicate parsing of the data as it may not always be clear whether something should be an array or not.
+- It can create inconsistencies in naming, i.e., parties vs dates vs classes (ies, s, es). This can be especially hard for non-native English speakers to remember.
+- When plurals are used to indicate that a property can have multiple values, it can lead to confusion when there is only one value. It can also complicate parsing of the data as it may not always be clear whether something should be an array or not.
 - If a schema is updated and a property that was originally singular is changed to allow multiple values, it would be a breaking change.
 
 **Multiple Values**
 
-Where a property can contain multiple values, the schema specifies an array, even when only a single value is present. Where a property should only ever contain a single instance, an object is used.
+Where a property can contain multiple values, the schema specifies an array, even when only a single value is present. Where a property should only ever contain a single value an object may be used.
 
 This practice helps simplify parsing the payload. A parser can be written to expect that a value is iterable even when it contains a single value, creating less need to type check everything.
 
@@ -64,7 +63,7 @@ It should be noted that the absence of a property does not mean that there is no
 
 We therefore consider it a good practice to set a property's value to `null`, if you wish to specifically communicate the absence of a value, the schema allows most properties to be set to null and is preferable to ambiguous values like “”, or 0 (unless you actually mean zero).
 
-With the exception of identifier, arrays may be empty.
+With the exception of identifier, arrays may be empty, every entity must have at least one unique identifier.
 
 ## Extending OMC-JSON
 Extensions and modifications to OMC-JSON can create compatibility problems; see [Schema Versioning](./SchemaVersioning.md). The OMC-JSON schema generally sets the JSON-Schema keyword `additionalProperties` to ``false``, ensuring misspellings or custom properties will be rejected on validation.
@@ -79,7 +78,7 @@ The `customData` property can be useful for including additional metadata direct
 {
   "customData": {
     "exif": {
-      "fieldName": <data>
+      "fieldName": "<data>"
     }
   }
 }
@@ -91,7 +90,7 @@ This same mechanism works for application-specific custom data.
 ```JSON
 {
     "customData": {
-        "applicationName": <base64>
+        "applicationName": "<base64>"
     }
 }
 ```

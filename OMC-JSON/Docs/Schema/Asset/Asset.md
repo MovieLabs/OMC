@@ -1,3 +1,4 @@
+# Asset
 A physical or digital object or collection of objects specific to the creation of the Creative Work.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

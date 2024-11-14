@@ -1,3 +1,4 @@
+# Organization
 A legal entity or groups of people associated with the production.. with a particular purpose relative to the production.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

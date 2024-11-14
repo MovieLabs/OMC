@@ -1,3 +1,4 @@
+# Character
 A sentient entity (usually a person but not always) in the script whose specific identity is consequential to the narrative. A Character is generally identified by a specific name.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

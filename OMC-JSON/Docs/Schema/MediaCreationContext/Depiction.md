@@ -1,3 +1,4 @@
+# Depiction
 The representation of something from a narrative entity by a production entity in the Creative Work, specified or implied by the Script.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

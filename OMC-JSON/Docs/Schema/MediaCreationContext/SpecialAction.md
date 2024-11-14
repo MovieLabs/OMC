@@ -1,3 +1,4 @@
+# SpecialAction
 A performed action or set of actions that requires additional supervision, expertise, or equipment.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

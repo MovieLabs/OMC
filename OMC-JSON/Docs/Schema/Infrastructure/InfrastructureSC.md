@@ -1,3 +1,4 @@
+# InfrastructureSC
 Describes the form of the Infrastructure along with the attributes specific to that infrastructures' form.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

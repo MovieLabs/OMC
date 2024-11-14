@@ -1,3 +1,4 @@
+# NarrativeLocation
 A location specified or implied by the narrative.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

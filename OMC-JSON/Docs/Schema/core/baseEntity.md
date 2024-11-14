@@ -6,8 +6,8 @@
 | name          |                | string, null                                       | A name for the entity, this is primarily for human consumption in things like user interfaces. It should not be considered a canonical name. |
 | description   |                | string, null                                       | A brief description of the entity, primarily for human consumption.                                                                          |
 | customData    |                | [customData](../Utility/Utility.md#customData)     | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties.                    |
-| annotation    |                | [ [annotation](../Utility/Utility.md#annotation) ] |                                                                                                                                              |
-| tag           |                | [ [tag](../Utility/Utility.md#tag) ]               |                                                                                                                                              |
+| annotation    |                | [ [annotation](../Utility/Utility.md#annotation) ] | Additional annotations about the entity.                                                                                                     |
+| tag           |                | [ [tag](../Utility/Utility.md#tag) ]               | User defined tags for the entity.                                                                                                            |
 | instanceInfo  |                | [instanceInfo](#instanceInfo)                      | Properties that describe information about this particular instance of an entity.                                                            |
 
 ### Object Properties

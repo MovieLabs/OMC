@@ -1,3 +1,4 @@
+# NarrativeWardrobe
 The clothing for a Character in the narrative.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)

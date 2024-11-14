@@ -1,3 +1,4 @@
+# Composition
 A set of Assets or other Compositions that can be combined to produce a new Asset.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
