@@ -95,7 +95,7 @@ A CreativeWork and a Character shown in the array format.
 	    "firstGivenName": "Sven",  
 	    "scriptName": "SVEN"  
 	  },  
-	  "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",  
+	  "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter."  
 	}
 ]
 ```
@@ -148,7 +148,7 @@ A CreativeWork and a Character shown in the object format.
 		    "firstGivenName": "Sven",  
 		    "scriptName": "SVEN"  
 		  },  
-		  "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",  
+		  "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter." 
 		}
 	]
 }

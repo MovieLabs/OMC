@@ -32,7 +32,7 @@ Schema restraints place some sort of restriction or rule on the property value
 | pattern    | A regular expression (regEx) is used to validate the value.                                                                                                                                                                                                                                                                                                                                                                                                              |
 *Notes:*
 - *Additional explanation and examples are available in the JSON-Schema documentation linked above.*
-- *Almost all sub-schemas are restricted from having additional properties, [customData](../Utility/Utility.md#customData) is provided for optional user data not covered by OMC *
+- *Almost all sub-schemas are restricted from having additional properties, [customData](./Utility/Utility.md#customData) is provided for optional user data not covered by OMC *
 
 #### Type
 The type of value allowed, this may be a JSON privative such as 'string', 'number' or 'null', an OMC-JSON property or set of controlled values which will be linked in the Type field.
