@@ -6,12 +6,12 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property      | Constraint        | Type                                                                               | Description                                              |
 | ------------- | ----------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | entityType    | const<br>required | `"Character"`                                                                      | Declares the entity type.                                |
-| characterType | enum              | [characterType](#characterType)                                                    | The specific type of character                           |
+| characterType | enum              | [characterType](#characterType)                                                    | The specific type of character.                          |
 | characterName |                   | [completeName](../Utility/Utility.md#completeName)                                 | The canonical name or names for the character.           |
 | profile       |                   | [profile](#profile)                                                                | Specific details describing the character.               |
 | quantity      |                   | string<br>number<br>null                                                           | Indicate the number of 'extra' characters when required. |
 | Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | A set of Contexts related to this Character              |
-| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Depictions for this Character                   |
+| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of portrayls for this Character                    |
 ### Object Properties
 
 #### profile
@@ -21,18 +21,18 @@ Specific details describing the character.
 | ----------------------- | ---------- | --------------------------------------------------- | ------------------------------------------------------------- |
 | physicalCharacteristics |            | [physicalCharacteristics](#physicalCharacteristics) | Description of a characters defining physical characteristics |
 | gender                  |            | [gender](../Utility/Utility.md#gender)              | A gender for the character                                    |
-| background              |            | [annotation](../Utility/Utility.md#annotation)      | Additional annotations on a characters background             |
+| background              |            | [annotation](../Utility/Utility.md#annotation)      | Additional annotations on a character's background.           |
 #### physicalCharacteristics
 Description of a characters defining physical characteristics
 
-| Property   | Constraint | Type                                                   | Description                               |
-| ---------- | ---------- | ------------------------------------------------------ | ----------------------------------------- |
-| species    |            | string<br>null                                         | A species to which this character belongs |
-| hairColor  |            | string<br>null                                         | The hair color of the character.          |
-| hairLength |            | string<br>null                                         | The length of hair of the character.      |
-| eyeColor   |            | string<br>null                                         | The color of the characters eyes.         |
-| weight     |            | [weight](../Utility/Utility.md#weight)                 | The weight of the character               |
-| height     |            | [linearDistance](../Utility/Utility.md#linearDistance) | The height of the character               |
+| Property   | Constraint | Type                                                   | Description                                |
+| ---------- | ---------- | ------------------------------------------------------ | ------------------------------------------ |
+| species    |            | string<br>null                                         | A species to which this character belongs. |
+| hairColor  |            | string<br>null                                         | The hair color of the character.           |
+| hairLength |            | string<br>null                                         | The length of hair of the character.       |
+| eyeColor   |            | string<br>null                                         | The color of the characters eyes.          |
+| weight     |            | [weight](../Utility/Utility.md#weight)                 | The weight of the character.               |
+| height     |            | [linearDistance](../Utility/Utility.md#linearDistance) | The height of the character.               |
 
 ### Controlled & Enumerated Values
 

@@ -6,7 +6,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property          | Constraint        | Type                                                                           | Description                                                       |
 | ----------------- | ----------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
 | entityType        | const<br>required | `"SpecialAction"`                                                              | Declares the entity type.                                         |
-| specialActionType | enum              | [specialActionType](#specialActionType)                                        | The specific type of special action                               |
+| specialActionType | enum              | [specialActionType](#specialActionType)                                        | The specific type of special action.                              |
 | Context           | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
 ### Controlled & Enumerated Values
 

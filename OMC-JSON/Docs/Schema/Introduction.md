@@ -3,18 +3,19 @@
 ## JSON
 OMC-JSON is a specification for exchanging information between applications and workflows during the production and media based productions like movie and television shows.
 
-OMC-JSON uses [JavaScript Object Notation]([Information on RFC 8259 » RFC Editor](https://www.rfc-editor.org/info/rfc8259)) to serialize information that can be exchanged or transmitted over
+OMC-JSON uses [JavaScript Object Notation](https://www.rfc-editor.org/info/rfc8259) to serialize information that can be exchanged or transmitted over
 
 ## JSON-Schema
 OMC-JSON is written using the [JSON-Schema specification draft 2019-09](https://json-schema.org/draft/2019-09)
 
-JSON-Schema provides a vocabulary constraining JSON data such that it complies with a set of defined rules. JSON-Schema is itself written in JSON.
+JSON Schema defines the structure, content, data types, and constraints of JSON documents. It's an IETF standard that helps ensure the consistency and integrity of JSON data across applications.
 
-To carry out validation a JSON-Schema and the JSON data must be 
+JSON documents may be validated using a [JSON-Schema validator](https://json-schema.org/tools) with a JSON Schema(which is itself a JSON document). There are many validators available in all of the major programming languages, At MovieLabs we have had success using [AJV]([Ajv JSON schema validator](https://ajv.js.org/)) for Javascript applications and [jsonschema]([jsonschema 4.23.1.dev47+g4e85551 documentation](https://python-jsonschema.readthedocs.io/en/latest/)) for Python.
 
+MovieLabs also provides a validator for OMC-JSON. As well as performing basic validation (i.e. pass/fail), it implements additional checks that report and warn when best practices are not followed, such as not using controlled values or badly formed identifiers. A web based version is here https://omc-validator.mc.movielabs.com/, it is also available via an API and Docker container.
 ## Documentation
 
-The documentation is arranged into a series of documents, mostly by entity. In addition there are some sub-schemas that describe the core structure of the OMC-JSON and are not specific to OMC-JSON schema rather than the broader ontology or data model. There are also a set of utility sub-schemas that are referenced from other places.
+The documentation predominantly organized as a series of documents by entity. In addition there are descriptions of the core sub-schemas that describe the structure of the OMC-JSON but are not directly part of the broader ontology or data model. There are also a set of utility sub-schemas that are shared throughout.
 
 #### Property
 The property name, which is case sensitive

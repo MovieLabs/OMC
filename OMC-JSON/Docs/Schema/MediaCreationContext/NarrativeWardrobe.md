@@ -6,7 +6,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property      | Constraint      | Type                                                                               | Description                                                       |
 | ------------- | --------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | entityType    | const, required | `"NarrativeWardrobe"`                                                              | Declares the entity type.                                         |
-| narrativeType | enum            | [narrativeType](#narrativeType)                                                    | The specific type of narrative wardrobe                           |
+| narrativeType | enum            | [narrativeType](#narrativeType)                                                    | The specific type of narrative wardrobe.                          |
 | Context       | anyOf           | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | Informs scope within the construction process of a Creative Work. |
 | Depiction     | anyOf           | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Depictions for this Narrative Entity                     |
 

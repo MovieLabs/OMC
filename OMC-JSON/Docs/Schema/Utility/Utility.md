@@ -24,7 +24,6 @@ A user defined set of custom data in the payload of the instance, used where the
 | Property   | Constraint | Type                                          | Description                                                            |
 | ---------- | ---------- | --------------------------------------------- | ---------------------------------------------------------------------- |
 | identifier |            | [&nbsp[identifierItem](#identifierItem)&nbsp] | An identifier uniquely identifies an entity within a particular scope. |
-
 #### identifierItem
 
 | Property        | Constraint | Type           | Description                                                                                              |
@@ -42,10 +41,10 @@ An IETF BCP 47 language code.
 |            | string, null | An IETF BCP 47 language code. |
 *Note: OMC-JSON users are expected to comply with valid language codes*
 #### tag
-| Property | Constraint | Type             | Description                                                                         |
-| -------- | ---------- | ---------------- | ----------------------------------------------------------------------------------- |
-| domain   |            | string, null     | An indication of the set or system in which the tag values are relevant or defined. |
-| value    |            | [ string ], null | A set of tags taken from the domain.                                                |
+| Property | Constraint | Type                | Description                                                                         |
+| -------- | ---------- | ------------------- | ----------------------------------------------------------------------------------- |
+| domain   |            | string, null        | An indication of the set or system in which the tag values are relevant or defined. |
+| value    |            | [ string ]<br> null | A set of tags taken from the domain.                                                |
 
 ## People and Place
 
@@ -55,10 +54,10 @@ A postal address or identifiable location of a place or building.
 
 | Property   | Constraint | Type                | Description                                                              |
 | ---------- | ---------- | ------------------- | ------------------------------------------------------------------------ |
-| street     |            | string, null        | The street address                                                       |
-| locality   |            | string, null        | The locality in which the street address is, and which is in the region. |
-| region     |            | string, null        | The region in which the locality is, and which is in the country.        |
-| postalCode |            | string, null        | A zip or postal code.                                                    |
+| street     |            | string null         | The street address                                                       |
+| locality   |            | string null         | The locality in which the street address is, and which is in the region. |
+| region     |            | string null         | The region in which the locality is, and which is in the country.        |
+| postalCode |            | string<br>null      | A zip or postal code.                                                    |
 | country    |            | [country](#country) | The country as an ISO 3166-1 alpha-2 country code.                       |
 
 #### country
@@ -75,22 +74,19 @@ A global positioning coordinate in compliance with WGS 84.
 | --------- | --------------------- | ------------ | ----------- |
 | latitude  | min: -90<br>max: 90   | number, null |             |
 | longitude | min: -180<br>max: 180 | number, null |             |
-
 #### contact
 Means by which the subject of an entity may be contacted in the production.
 
-| Property      | Constraint | Type                    | Description |
-| ------------- | ---------- | ----------------------- | ----------- |
-| email         |            | [email](#email)         |             |
-| telephone<br> |            | [telephone](#telephone) |             |
-
+| Property      | Constraint | Type                    | Description       |
+| ------------- | ---------- | ----------------------- | ----------------- |
+| email         |            | [email](#email)         | Email address'    |
+| telephone<br> |            | [telephone](#telephone) | Telephone numbers |
 #### email
 
 | Property | Constraint | Type         | Description            |
 | -------- | ---------- | ------------ | ---------------------- |
 | business |            | string, null | Business email address |
 | personal |            | string, null | Personal email address |
-
 #### telephone
 
 | Property | Constraint | Type         | Description               |
@@ -101,10 +97,10 @@ Means by which the subject of an entity may be contacted in the production.
 #### gender
 A person, or others, expressed or preferred gender and pronoun.
 
-| Property      | Constraint | Type                                               | Description                       |
-| ------------- | ---------- | -------------------------------------------------- | --------------------------------- |
-| gender        | enum       | `"male", "female", "other", "unknown" null`        | The handedness of the third axis  |
-| genderPronoun | enum       | `"he/him", "she/her". "ze/hir", "they/them", null` | An individuals pronoun of choice. |
+| Property      | Constraint | Type                                               | Description                                   |
+| ------------- | ---------- | -------------------------------------------------- | --------------------------------------------- |
+| identifiesAs  | enum       | `"male", "female", "other", "unknown" null`        | The gender by which an individual identifies. |
+| genderPronoun | enum       | `"he/him", "she/her". "ze/hir", "they/them", null` | An individual's pronoun of choice.            |
 
 #### basicName
 A canonical name and alternative name for the entity.
@@ -117,54 +113,36 @@ A canonical name and alternative name for the entity.
 #### completeName
 A detailed description of a person, or other entities, name and variants of their name.
 
-| Property            | Constraint | Type             | Description                                                                                                                            |
-| ------------------- | ---------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| firstGivenName      |            | string,&nbspnull | A person's first name, also referred to as given name.                                                                                 |
-| secondGivenName<br> |            | string,&nbspnull | A persons second given name, also referred to as middle name.                                                                          |
-| familyName          |            | string,&nbspnull | A persons family name, also referred to as surname.                                                                                    |
-| fullName            |            | string,&nbspnull | A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields.                                      |
-| birthName           |            | string,&nbspnull | A persons name at birth, also referred to as maiden name.                                                                              |
-| primaryName         |            | string,&nbspnull | A persons primary name, one they typically use, also often a combination of first, second and family name.                             |
-| pseudonym           |            | string,&nbspnull |                                                                                                                                        |
-| altName             |            | string,&nbspnull |                                                                                                                                        |
-| translatedName      |            | string,&nbspnull |                                                                                                                                        |
-| nickname            |            | string,&nbspnull |                                                                                                                                        |
-| moniker             |            | string,&nbspnull |                                                                                                                                        |
-| alias               |            | string,&nbspnull | An alias being used by a person often used to disguise someones real identity, sometimes used when booking hotel rooms or restaurants. |
-| contractualName     |            | string,&nbspnull |                                                                                                                                        |
-| displayName         |            | string,&nbspnull |                                                                                                                                        |
-| sortName            |            | string,&nbspnull |                                                                                                                                        |
-| scriptName          |            | string,&nbspnull |                                                                                                                                        |
-| prefix              |            | string,&nbspnull | A prefix that can indicate a persons gender or title.                                                                                  |
-| suffix              |            | string,&nbspnull | A suffix, often used to indicate a title or classification                                                                             |
+| Property            | Constraint | Type             | Description                                                                                                                             |
+| ------------------- | ---------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| firstGivenName      |            | string,&nbspnull | A person's first name, also referred to as given name.                                                                                  |
+| secondGivenName<br> |            | string,&nbspnull | A person's second given name, also referred to as middle name.                                                                          |
+| familyName          |            | string,&nbspnull | A person's family name, also referred to as surname.                                                                                    |
+| fullName            |            | string,&nbspnull | A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields.                                       |
+| birthName           |            | string,&nbspnull | A persons name at birth, also referred to as maiden name.                                                                               |
+| primaryName         |            | string,&nbspnull | A person's primary name, one they typically use, also often a combination of first, second and family name.                             |
+| pseudonym           |            | string,&nbspnull |                                                                                                                                         |
+| altName             |            | string,&nbspnull |                                                                                                                                         |
+| translatedName      |            | string,&nbspnull |                                                                                                                                         |
+| nickname            |            | string,&nbspnull |                                                                                                                                         |
+| moniker             |            | string,&nbspnull |                                                                                                                                         |
+| alias               |            | string,&nbspnull | An alias being used by a person often used to disguise someone's real identity, sometimes used when booking hotel rooms or restaurants. |
+| contractualName     |            | string,&nbspnull |                                                                                                                                         |
+| displayName         |            | string,&nbspnull |                                                                                                                                         |
+| sortName            |            | string,&nbspnull |                                                                                                                                         |
+| scriptName          |            | string,&nbspnull |                                                                                                                                         |
+| prefix              |            | string,&nbspnull | A prefix that can indicate a person's gender or title.                                                                                  |
+| suffix              |            | string,&nbspnull | A suffix, often used to indicate a title or classification.                                                                             |
 
 ## Time and Measurement
 
-#### timeStamp
-| Property | Constraint | Type         | Description |
-| -------- | ---------- | ------------ | ----------- |
-|          |            | number, null |             |
-#### periodTime
-A period in time
-
-| Property     | Constraint | Type         | Description |
-| ------------ | ---------- | ------------ | ----------- |
-| startTime    | required   | string       |             |
-| durationTime |            | string, null |             |
-| endTime      |            | string, null |             |
-#### descriptiveTime
-| Property     | Constraint | Type         | Description |
-| ------------ | ---------- | ------------ | ----------- |
-| periodInDay  |            | string, null |             |
-| relativeTime |            | string, null |             |
-| periodInTime |            | string, null |             |
-| eventInTime  |            | string, null |             |
 #### dateTime
 Should be formatted to comply with ISO 8601
 
 | Constraint                                                                                                                                                                                                         | Type         | Description |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | ----------- |
 | pattern: `^(?:19\|20)\d{2}-(?:0[1-9]\|1[0-2])-(?:0[1-9]\|[12]\d\|3[01])T(?:[01]\d\|2[0-3]):[0-5]\d:[0-5]\d(?:\|\.\d\d)(?:Z\|-0[1-9]\|-1\d\|-2[0-3]\|-00:?(?:0[1-9]\|[1-5]\d)\|\+[01]\d\|\+2[0-3])(?:\|:?[0-5]\d)$` | string, null |             |
+
 #### date
 Should be formatted to comply with ISO 8601
 
@@ -189,8 +167,6 @@ SMPTE Timecode in the format HH:MM:SS:FF.
 | Constraint                                                    | Type         | Description       |
 | ------------------------------------------------------------- | ------------ | ----------------- |
 | pattern: `^(\d+kg)?(\d+g)?$`<br>pattern: `^(\d+lb)?(\d+oz)?$` | string, null | 3kg7g<br>12lb14oz |
-
-
 #### dimensions
 
 | Property | Constraint | Type                              | Description |
@@ -231,10 +207,10 @@ Percentage of the screen that an object can reasonably take up.
 #### point2
 A point with two coordinates.
 
-| Property | Constraint | Type   | Description           |
-| -------- | ---------- | ------ | --------------------- |
-| x        |            | number | x coordinate of point |
-| y        |            | number | y coordinate of point |
+| Property | Constraint | Type   | Description            |
+| -------- | ---------- | ------ | ---------------------- |
+| x        |            | number | x coordinate of point. |
+| y        |            | number | y coordinate of point. |
 #### point3
 A point with three coordinates.
 
@@ -293,8 +269,6 @@ A suggested or intended use for the object in a pipeline.
 | printing | Geometry built as input for a 3D printer process |
 | proxy | Lower-resolution geometry used for faster pre-visualization and playback. |
 | rendering | Final high-quality visual output of 3D geometry. |
-
-
 
 ## Versions
 

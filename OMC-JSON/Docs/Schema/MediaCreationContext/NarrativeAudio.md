@@ -14,11 +14,11 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 
 #### narrativeType
 
-| Value | Description |
-|-------|-------------|
-| narrativeAudio | A significant sound in the narrative. |
-| narrativeMusic | Music that is implicitly or explicitly used to advance or support the narrative.  |
-| narrativeSoundEffect | A sound that explicitly or implicitly advances or supports the narrative.   |
+| Value                | Description                                                                      |
+| -------------------- | -------------------------------------------------------------------------------- |
+| narrativeAudio       | A significant sound in the narrative.                                            |
+| narrativeMusic       | Music that is implicitly or explicitly used to advance or support the narrative. |
+| narrativeSoundEffect | A sound that explicitly or implicitly advances or supports the narrative.        |
 ## Examples
 
 ```JSON

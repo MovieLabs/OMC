@@ -10,7 +10,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | quantity      |                   | string<br>number<br>null                                                           | Indicates the number of these narrative objects required.         |
 | size          |                   | string<br>null                                                                     | Indicates a size of the narrative object required.                |
 | Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | Informs scope within the construction process of a Creative Work. |
-| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Depictions for this Narrative Entity                     |
+| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of Depictions for this Narrative Entity.                    |
 
 ### Controlled & Enumerated Values
 
