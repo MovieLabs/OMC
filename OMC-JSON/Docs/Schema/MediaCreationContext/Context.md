@@ -1,7 +1,7 @@
 # Context
 Informs scope within the construction process of a Creative Work.
 ### Properties
-
+A
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
 | Property          | Constraint        | Type                                                                           | Description                                                                     |
