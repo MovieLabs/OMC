@@ -11,7 +11,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | profile       |                   | [profile](#profile)                                                                | Specific details describing the character.               |
 | quantity      |                   | string<br>number<br>null                                                           | Indicate the number of 'extra' characters when required. |
 | Context       | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]     | A set of Contexts related to this Character              |
-| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of portrayls for this Character                    |
+| Depiction     | anyOf             | [ [Depiction](./Depiction.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of portrayals for this Character                   |
 ### Object Properties
 
 #### profile

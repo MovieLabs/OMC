@@ -30,9 +30,9 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 
 #### contextProperties
 
-| Property | Constraint | Type                  | Description |
-| -------- | ---------- | --------------------- | ----------- |
-| shootDay |            | [shootDay](#shootDay) |             |
+| Property | Constraint | Type                  | Description                           |
+| -------- | ---------- | --------------------- | ------------------------------------- |
+| shootDay |            | [shootDay](#shootDay) | Details about the shoot day and date. |
 #### contributor
 | Property    | Constraint | Type                                                                                               | Description |
 | ----------- | ---------- | -------------------------------------------------------------------------------------------------- | ----------- |
@@ -56,7 +56,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 #### featuresIn
 | Property       | Constraint | Type                                                                                        | Description |
 | -------------- | ---------- | ------------------------------------------------------------------------------------------- | ----------- |
-| NarrativeScene |            | [ [NarrativeScene](./NarrativeScene.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
+| NarrativeScene | anyOf      | [ [NarrativeScene](./NarrativeScene.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 
 #### for
 | Property        | Constraint | Type                                                                                           | Description |
@@ -110,7 +110,6 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 #### usedIn
 | Property           | Constraint | Type                                                                                                | Description |
 | ------------------ | ---------- | --------------------------------------------------------------------------------------------------- | ----------- |
-| ==Depiction==      | anyOf      | [ [Depiction](./Depiction.md)<br>[identifier](../Utility/Utility.md#identifier) ]                   |             |
 | ProductionLocation | anyOf      | [ [ProductionLocation](./ProductionLocation.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 | ProductionScene    | anyOf      | [ [ProductionScene](./ProductionScene.md)<br>[identifier](../Utility/Utility.md#identifier) ]       |             |
 
@@ -122,13 +121,12 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Infrastructure     | anyOf      | [ [Infrastructure](../Infrastructure/Infrastructure.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 | ProductionLocation | anyOf      | [ [ProductionLocation](./ProductionLocation.md)<br>[identifier](../Utility/Utility.md#identifier) ]         |             |
 #### shootDay
+Details about the shoot day and date.
 
-| Property  | Constraint | Type                               | Description              |
-| --------- | ---------- | ---------------------------------- | ------------------------ |
-| shootDay  |            | string<br>number<br>null           |                          |
-| shootDate |            | [date](../Utility/Utility.md#date) | The date of the shootDay |
-
-
+| Property  | Constraint | Type                               | Description                                     |
+| --------- | ---------- | ---------------------------------- | ----------------------------------------------- |
+| shootDay  |            | string<br>number<br>null           | The number of the day on the shooting schedule. |
+| shootDate |            | [date](../Utility/Utility.md#date) | The date of the shootDay                        |
 
 ### Controlled Values
 
@@ -142,5 +140,70 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 ## Examples
 
 ```JSON
-{}
+{  
+  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",  
+  "entityType": "Context",
+  "contextType": "narrative",
+  "contextCategory": "character.sven"
+  "identifier": [  
+    {  
+      "identifierScope": "labkoat",  
+      "identifierValue": "cxt/377RXIREHUj5MPzsl-Sba"  
+    }  
+  ],  
+  "featuresIn": {  
+    "NarrativeScene": [  
+      {  
+        "identifier": [  
+          {  
+            "identifierScope": "labkoat",  
+            "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"  
+          }  
+        ]  
+      },  
+      {  
+        "identifier": [  
+          {  
+            "identifierScope": "labkoat",  
+            "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"  
+          }  
+        ]  
+      }  
+    ]  
+  },  
+  "needs": {  
+    "NarrativeObject": [  
+      {  
+        "identifier": [  
+          {  
+            "identifierScope": "labkoat",  
+            "identifierValue": "nprp/ozmg19-jNdhIlO1HwVP5G"  
+          }  
+        ]  
+      },   
+      {  
+        "identifier": [  
+          {  
+            "identifierScope": "labkoat",  
+            "identifierValue": "nprp/R7wfwv6cSPc6d1t1_glgJ"  
+          }  
+        ]  
+      }  
+    ],  
+    "NarrativeWardrobe": null,  
+    "SpecialAction": null  
+  },  
+  "has": {  
+    "Asset": [  
+      {  
+        "identifier": [  
+          {  
+            "identifierScope": "labkoat",  
+            "identifierValue": "asgp/6ijmAYmCMY86OQtX4cZ_y"  
+          }  
+        ]  
+      }  
+    ]  
+  }  
+}
 ```

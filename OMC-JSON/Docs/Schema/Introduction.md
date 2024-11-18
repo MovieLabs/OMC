@@ -3,7 +3,7 @@
 ## JSON
 OMC-JSON is a specification for exchanging information between applications and workflows during the production and media based productions like movie and television shows.
 
-OMC-JSON uses [JavaScript Object Notation](https://www.rfc-editor.org/info/rfc8259) to serialize information that can be exchanged or transmitted over
+OMC-JSON uses [JavaScript Object Notation](https://www.rfc-editor.org/info/rfc8259) to serialize information that can be exchanged or transmitted over multiple mechanisms including REST api's, graphQl, messaging systems or as files.
 
 ## JSON-Schema
 OMC-JSON is written using the [JSON-Schema specification draft 2019-09](https://json-schema.org/draft/2019-09)
@@ -46,4 +46,4 @@ For those of you who spend time examining the schema you may find small technica
 In the schema some properties reference utility sub-schemas that only operate as constraints, i.e. they are a pattern property or have min/max. In these cases the Property column is omitted for clarity.
 
 ## root
-The root of the schema definition is here [root](./core/root).
+The root of the schema definition is here [root](./core/root.md).

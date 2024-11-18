@@ -14,6 +14,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 ### Object Properties
 
 #### participantFC
+The use or purpose of a Participant within the production process.
 
 | Property       | Constraint | Type                                           | Description                                                                                                                              |
 | -------------- | ---------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
