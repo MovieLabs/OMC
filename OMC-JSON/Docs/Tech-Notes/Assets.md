@@ -84,7 +84,7 @@ OMC-JSON: Asset
         ]
     },
     "assetFC": {
-        "functionalType": "technicalReference"
+        "functionalType": "technicalReferenceMaterial"
     }
 }
 ```
