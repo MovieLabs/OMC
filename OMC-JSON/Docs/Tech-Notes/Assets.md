@@ -107,7 +107,7 @@ OMC-JSON: AssetSC
 
 **Digital Asset, two functional uses**
 
-This shows two Assets which use the same essence; one uses the image as reference art and the other uses it as a texture.
+This shows two Assets which use the same essence; one uses the image as reference art and the other uses it as a texture map.
 
 There does not have to be any formal relationship between Assets A1 and A2, though, of course one can be added.
 
@@ -156,7 +156,7 @@ OMC-JSON: Asset
             ]
         },
         "assetFC": {
-            "functionalType": "texture"
+            "functionalType": "map"
         }
     }
 }
