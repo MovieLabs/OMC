@@ -1,7 +1,7 @@
 # Context
 Informs scope within the construction process of a Creative Work.
 ### Properties
-A
+
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
 | Property          | Constraint        | Type                                                                           | Description                                                                     |
@@ -144,7 +144,7 @@ Details about the shoot day and date.
   "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",  
   "entityType": "Context",
   "contextType": "narrative",
-  "contextCategory": "character.sven"
+  "contextCategory": "character.sven",
   "identifier": [  
     {  
       "identifierScope": "labkoat",  
