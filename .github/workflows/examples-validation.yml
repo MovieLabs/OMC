@@ -1,0 +1,88 @@
+name: JSON Examples Validation
+
+on:
+  push:
+    paths:
+      - 'OMC-JSON/Examples/**/*.json'
+      - 'OMC-JSON/*.json'
+
+jobs:
+  validate-json-using-jsonschema:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use jsonschema
+        uses: sourcemeta/jsonschema@v4.1.5
+        
+      - name: Validate JSON files using jsonschema
+        run: jsonschema validate OMC-JSON/OMC-JSON-v2.6.schema.json OMC-JSON/Examples/*/*.json
+
+  match-schema-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get schema info from online validator
+        id: get_online_schema
+        run: |
+          # Get schema information from the online validator
+          schema_info=$(python .github/workflows/validator.py -s --base-url https://omc-validator.mc.movielabs.com/)
+          # Extract 'id' and 'md5' using jq
+          schema_id=$(echo "$schema_info" | jq -r '.schema.id')
+          schema_md5=$(echo "$schema_info" | jq -r '.schema.md5')
+          # Set outputs
+          echo "schema_id=$schema_id" >> $GITHUB_OUTPUT
+          echo "schema_md5=$schema_md5" >> $GITHUB_OUTPUT
+
+      - name: Get schema id from local file
+        id: get_local_schema
+        run: |
+          # Extract the $id from the local schema file
+          schema_id=$(jq -r '."$id"' OMC-JSON/*.json)
+          # Set output
+          echo "schema_id=$schema_id" >> $GITHUB_OUTPUT
+
+      - name: Get MD5 hash of local schema file
+        id: get_local_md5
+        run: |
+          # Compute MD5 hash of the local schema file
+          schema_md5=$(md5sum OMC-JSON/*.json | awk '{print $1}')
+          # Set output
+          echo "schema_md5=$schema_md5" >> $GITHUB_OUTPUT
+
+      - name: Verify schema id
+        run: |
+          # Compare the online and local schema IDs
+          if [ "${{ steps.get_online_schema.outputs.schema_id }}" != "${{ steps.get_local_schema.outputs.schema_id }}" ]; then
+            echo "❌ Schema ID does not match!"
+            echo "Online schema ID: ${{ steps.get_online_schema.outputs.schema_id }}"
+            echo "Local schema ID: ${{ steps.get_local_schema.outputs.schema_id }}"
+            exit 1
+          else
+            echo "✅ Schema IDs match."
+          fi
+
+      - name: Verify schema MD5 hash
+        run: |
+          # Compare the online and local MD5 hashes
+          if [ "${{ steps.get_online_schema.outputs.schema_md5 }}" != "${{ steps.get_local_md5.outputs.schema_md5 }}" ]; then
+            echo "❌ Schema MD5 hash does not match!"
+            echo "Online schema MD5: ${{ steps.get_online_schema.outputs.schema_md5 }}"
+            echo "Local schema MD5: ${{ steps.get_local_md5.outputs.schema_md5 }}"
+            exit 1
+          else
+            echo "✅ Schema MD5 hashes match."
+          fi
+
+  validate-json-using-omc-validator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate JSON files using OMC Validator
+        run: |
+          python .github/workflows/validator.py -p --only-errors --base-url https://omc-validator.mc.movielabs.com/ --directory OMC-JSON/Examples
