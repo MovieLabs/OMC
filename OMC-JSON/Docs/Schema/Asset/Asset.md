@@ -32,12 +32,11 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 #### assetFC
 Describes the use or purpose of an Asset within the production process
 
-| Property             | Constraint | Type                                                                                                                                                                                                                      | Description |
-| -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| functionalType       | ctrlValue  | string, number, null                                                                                                                                                                                                      |             |
-| functionalProperties |            | [mapFormat](#mapFormat)<br>[mapType](#mapType)<br>[cameraMetadata](#cameraMetadata)<br>[lensMetadata](#lensMetadata)<br>[recorderMetadata](#recorderMetadata)<br>[isSelfContained](#isSelfContained)<br>[timing](#timing) |             |
-| customData           |            |                                                                                                                                                                                                                           |             |
-|                      |            |                                                                                                                                                                                                                           |             |
+| Property             | Constraint | Type                                                                                                                                                                                                                      | Description                                                                                                               |
+| -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| functionalType       | ctrlValue  | string, number, null                                                                                                                                                                                                      | Describes the use or purpose of an Asset within the production process                                                    |
+| functionalProperties |            | [mapFormat](#mapFormat)<br>[mapType](#mapType)<br>[cameraMetadata](#cameraMetadata)<br>[lensMetadata](#lensMetadata)<br>[recorderMetadata](#recorderMetadata)<br>[isSelfContained](#isSelfContained)<br>[timing](#timing) | Properties that future describe an Asset function and use within the production process.                                  |
+| customData           |            | [customData](../Utility/Utility.md#customData)                                                                                                                                                                            | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
 #### cameraMetadata
 Capture-specific details and information about the Camera itself.
 
@@ -98,10 +97,11 @@ Information about a Recorder and the recording media.
 | storageMediaUID         |            | string, null | An alphanumeric code that uniquely identifies the storage media (i.e., mag) the footage was recorded on to. |
 #### isSelfContained
 
-| Property | Constraint | Type    | Description                                                                        |
-| -------- | ---------- | ------- | ---------------------------------------------------------------------------------- |
-|          |            | boolean | Indicates the Asset does not depend on other Assets to perform its functional use. |
+| Constraint | Type    | Description                                                                        |
+| ---------- | ------- | ---------------------------------------------------------------------------------- |
+|            | boolean | Indicates the Asset does not depend on other Assets to perform its functional use. |
 #### timing
+Timing data for a shot, indicating which frames of the shot are to be used.
 
 | Property    | Constraint | Type         | Description |
 | ----------- | ---------- | ------------ | ----------- |
@@ -111,39 +111,38 @@ Information about a Recorder and the recording media.
 | recordEnd   |            | string, null |             |
 | duration    |            | string, null |             |
 
-
 ### Controlled Values
 
 #### functionalType
 
 | Value                                    | Description                                                                                                                                                                                   |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| artwork                                  | N/A                                                                                                                                                                                           |
+| artwork                                  | Illustrations, photographs, or other materials that illustrate some aspect of a Creative Work.                                                                                                |
 | artwork.animatedStoryboard               | A moving image produced from the individual images of a Storyboard.                                                                                                                           |
 | artwork.conceptArt                       | Images that illustrate ideas for potential depictions of elements of the creative intent.                                                                                                     |
 | artwork.storyboard                       | A series of images that forms a visual representation of some part of the narrative.                                                                                                          |
 | audio                                    | A representation of sound.                                                                                                                                                                    |
 | audio.channel                            | N/A                                                                                                                                                                                           |
-| audio.onSetMix                           | N/A                                                                                                                                                                                           |
+| audio.onSetMix                           | A mix of multiple audio channels captured on set.                                                                                                                                             |
 | audio.track                              | N/A                                                                                                                                                                                           |
 | cameraMetadata                           | Capture-specific details and information about the Camera itself.                                                                                                                             |
 | capture                                  | The result of recording an event by any means                                                                                                                                                 |
 | capture.audio                            | A representation of sound.                                                                                                                                                                    |
-| capture.audio.wild                       | N/A                                                                                                                                                                                           |
-| capture.calibration                      | N/A                                                                                                                                                                                           |
-| capture.cameraProxy                      | N/A                                                                                                                                                                                           |
-| capture.faceCamera                       | N/A                                                                                                                                                                                           |
-| capture.lidar                            | N/A                                                                                                                                                                                           |
+| capture.audio.wild                       | An audio capture intended to be synchronized with video but captured separately.                                                                                                              |
+| capture.calibration                      | Captured calibration data from a device.                                                                                                                                                      |
+| capture.cameraProxy                      | A proxy directly generated by the camera.                                                                                                                                                     |
+| capture.faceCamera                       | A capture of an actor's face, often used for motion capture.                                                                                                                                  |
+| capture.lidar                            | Light Detecting and Ranging, a capture from a specialized scanning device that creates a point cloud.                                                                                         |
 | capture.motionCapture                    | The recording of motion as a stream of digital data.                                                                                                                                          |
 | capture.ocf                              | N/A                                                                                                                                                                                           |
 | capture.roll                             | Identifier for a group of events captured together on the same camera and recording media.                                                                                                    |
-| capture.witnessCamera                    | N/A                                                                                                                                                                                           |
-| cgModel                                  | N/A                                                                                                                                                                                           |
-| color                                    | N/A                                                                                                                                                                                           |
-| color.cdl                                | N/A                                                                                                                                                                                           |
+| capture.witnessCamera                    | A video capture not intended for the creative work, but as a record of related action, typically on-set.                                                                                      |
+| cgModel                                  | A generic use for Geometry.                                                                                                                                                                   |
+| color                                    | Asset containing information about color.                                                                                                                                                     |
+| color.cdl                                | Color Decision List, describes suggested correct color for each shot.                                                                                                                         |
 | color.colorSpace                         | A predefined encoding for communicating color appearance.                                                                                                                                     |
 | color.lut                                | Look up table                                                                                                                                                                                 |
-| configuration                            | N/A                                                                                                                                                                                           |
+| configuration                            | Asset that contains information about the configuration of components of the workflow.                                                                                                        |
 | configuration.colorSpace                 | A configuration file for a color management system.                                                                                                                                           |
 | creativeReferenceMaterial                | Images or other material used to inform the creation of a production element, to help convey a tone or look, etc.                                                                             |
 | lensMetadata                             | Capture-specific details and information about the Lens itself.                                                                                                                               |
@@ -156,44 +155,44 @@ Information about a Recorder and the recording media.
 | productionSetDressing                    | Assets used in the depiction of Narrative Set Dressing.                                                                                                                                       |
 | productionSetDressing.productionGreenery | An Asset or Assets used to depict Narrative greenery in a Production Scene.                                                                                                                   |
 | productionSetDressing.productionVehicle  | An Asset used in the Depiction of a Narrative Vehicle                                                                                                                                         |
-| proxy                                    | N/A                                                                                                                                                                                           |
-| proxy.daily                              | N/A                                                                                                                                                                                           |
-| proxy.editorial                          | N/A                                                                                                                                                                                           |
+| proxy                                    | A lower quality representation of an Asset.                                                                                                                                                   |
+| proxy.daily                              | A type of video proxy.                                                                                                                                                                        |
+| proxy.editorial                          | A type of video proxy.                                                                                                                                                                        |
 | recorderMetadata                         | Information about a Recorder and the recording media.                                                                                                                                         |
 | script                                   | A Structured Document written as a blueprint to convey the creative intent for the Creative Work. Parsing the Script generates a guide to those things that are to be depicted in production. |
 | sequenceChronologyDescriptor             | Describes how a series of Shots is used to generate a Sequence.                                                                                                                               |
 | shot                                     | A discrete unit of visual narrative with a specified beginning and end.                                                                                                                       |
 | shot.animation                           | A Shot that has been identified as requiring Animation work.                                                                                                                                  |
-| shot.editorial                           | N/A                                                                                                                                                                                           |
+| shot.editorial                           | A shot that has been marked for editorial use.                                                                                                                                                |
 | shot.vfx                                 | A Shot that has been identified as requiring VFX work.                                                                                                                                        |
 | technicalReferenceMaterial               | Images and other material used to inform the execution of the production.                                                                                                                     |
 #### mapFormat
-| Value               | Description |
-| ------------------- | ----------- |
-| cubeFaceEnvironment | N/A         |
-| cubeFaceShadow      | N/A         |
-| latLongEnvironment  | N/A         |
-| plainTexture        | N/A         |
-| shadow              | N/A         |
-| volumeShadow        | N/A         |
-| volumeTexture       | N/A         |
+| Value               |
+| ------------------- |
+| cubeFaceEnvironment |
+| cubeFaceShadow      |
+| latLongEnvironment  |
+| plainTexture        |
+| shadow              |
+| volumeShadow        |
+| volumeTexture       |
 #### mapType
-| Value            | Description |
-| ---------------- | ----------- |
-| albedo           | N/A         |
-| ambientOcclusion | N/A         |
-| bump             | N/A         |
-| depthMap         | N/A         |
-| diffuse          | N/A         |
-| heightMap        | N/A         |
-| metalness        | N/A         |
-| normal           | N/A         |
-| opacity          | N/A         |
-| projectionMap    | N/A         |
-| roughness        | N/A         |
-| specular         | N/A         |
-| uvMap            | N/A         |
-| weightMap        | N/A         |
+| Value            |
+| ---------------- |
+| albedo           |
+| ambientOcclusion |
+| bump             |
+| depthMap         |
+| diffuse          |
+| heightMap        |
+| metalness        |
+| normal           |
+| opacity          |
+| projectionMap    |
+| roughness        |
+| specular         |
+| uvMap            |
+| weightMap        |
 
 ## Examples
 

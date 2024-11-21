@@ -6,7 +6,7 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property     | Constraint        | Type                                                                                 | Description                                                       |
 | ------------ | ----------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
 | entityType   | const<br>required | `"ProductionLocation"`                                                               | Declares the entity type.                                         |
-| locationType | enum              | [locationType](#locationType)                                                        | The specific type of production location                          |
+| locationType | enum              | [locationType](#locationType)                                                        | The specific type of production location.                         |
 | Context      | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ]       | Informs scope within the construction process of a Creative Work. |
 | Location     | oneOf             | [Location](../Utility/Location.md)<br>[identifier](../Utility/Utility.md#identifier) | The details of the physical location                              |
 

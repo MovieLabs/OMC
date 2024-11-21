@@ -1,5 +1,5 @@
 # NarrativeStyling
-Styling required to prepare an actor for their role.
+Styling required to prepare an actor for a role.
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 

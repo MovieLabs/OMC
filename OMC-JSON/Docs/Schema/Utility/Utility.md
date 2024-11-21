@@ -20,6 +20,7 @@ A user defined set of custom data in the payload of the instance, used where the
 |            | object, null |             |
 
 #### identifier
+An identifier uniquely identifies an entity within a particular scope.
 
 | Property   | Constraint | Type                                          | Description                                                            |
 | ---------- | ---------- | --------------------------------------------- | ---------------------------------------------------------------------- |
@@ -40,7 +41,10 @@ An IETF BCP 47 language code.
 | ---------- | ------------ | ----------------------------- |
 |            | string, null | An IETF BCP 47 language code. |
 *Note: OMC-JSON users are expected to comply with valid language codes*
+
 #### tag
+A short string from a particular set, used for categorization and description.
+
 | Property | Constraint | Type                | Description                                                                         |
 | -------- | ---------- | ------------------- | ----------------------------------------------------------------------------------- |
 | domain   |            | string, null        | An indication of the set or system in which the tag values are relevant or defined. |
@@ -99,8 +103,8 @@ A person, or others, expressed or preferred gender and pronoun.
 
 | Property      | Constraint | Type                                               | Description                                   |
 | ------------- | ---------- | -------------------------------------------------- | --------------------------------------------- |
-| identifiesAs  | enum       | `"male", "female", "other", "unknown" null`        | The gender by which an individual identifies. |
-| genderPronoun | enum       | `"he/him", "she/her". "ze/hir", "they/them", null` | An individual's pronoun of choice.            |
+| identifiesAs  | enum       | `"male", "female", "other", "unknown", null`       | The gender by which an individual identifies. |
+| genderPronoun | enum       | `"he/him", "she/her", "ze/hir", "they/them", null` | An individual's pronoun of choice.            |
 
 #### basicName
 A canonical name and alternative name for the entity.
@@ -119,18 +123,18 @@ A detailed description of a person, or other entities, name and variants of thei
 | secondGivenName<br> |            | string,&nbspnull | A person's second given name, also referred to as middle name.                                                                          |
 | familyName          |            | string,&nbspnull | A person's family name, also referred to as surname.                                                                                    |
 | fullName            |            | string,&nbspnull | A complete name, typically a conjunction of familyName, firstGivenName and possibly other fields.                                       |
-| birthName           |            | string,&nbspnull | A persons name at birth, also referred to as maiden name.                                                                               |
+| birthName           |            | string,&nbspnull | A person's name at birth, sometimes referred to as maiden name.                                                                         |
 | primaryName         |            | string,&nbspnull | A person's primary name, one they typically use, also often a combination of first, second and family name.                             |
-| pseudonym           |            | string,&nbspnull |                                                                                                                                         |
-| altName             |            | string,&nbspnull |                                                                                                                                         |
-| translatedName      |            | string,&nbspnull |                                                                                                                                         |
-| nickname            |            | string,&nbspnull |                                                                                                                                         |
-| moniker             |            | string,&nbspnull |                                                                                                                                         |
+| pseudonym           |            | string,&nbspnull | A fictitious name.                                                                                                                      |
+| altName             |            | string,&nbspnull | An alternate, often shortened name for the person.                                                                                      |
+| translatedName      |            | string,&nbspnull | A person's name translated to a different language.                                                                                     |
+| nickname            |            | string,&nbspnull | A familiar, sometimes humorous, name given to a person used in place of their real name.                                                |
+| moniker             |            | string,&nbspnull | A nickname or per name for a person,                                                                                                    |
 | alias               |            | string,&nbspnull | An alias being used by a person often used to disguise someone's real identity, sometimes used when booking hotel rooms or restaurants. |
-| contractualName     |            | string,&nbspnull |                                                                                                                                         |
-| displayName         |            | string,&nbspnull |                                                                                                                                         |
-| sortName            |            | string,&nbspnull |                                                                                                                                         |
-| scriptName          |            | string,&nbspnull |                                                                                                                                         |
+| contractualName     |            | string,&nbspnull | The name a person uses for contractual purposes.                                                                                        |
+| displayName         |            | string,&nbspnull | A version of the name used when displaying in user interfaces and the like.                                                             |
+| sortName            |            | string,&nbspnull | A name useful for sort algorithms, e.g. by in order familyName, firstGivenName.                                                         |
+| scriptName          |            | string,&nbspnull | A name used in a script for a character, often capitalized.                                                                             |
 | prefix              |            | string,&nbspnull | A prefix that can indicate a person's gender or title.                                                                                  |
 | suffix              |            | string,&nbspnull | A suffix, often used to indicate a title or classification.                                                                             |
 
@@ -144,17 +148,26 @@ Should be formatted to comply with ISO 8601
 | pattern: `^(?:19\|20)\d{2}-(?:0[1-9]\|1[0-2])-(?:0[1-9]\|[12]\d\|3[01])T(?:[01]\d\|2[0-3]):[0-5]\d:[0-5]\d(?:\|\.\d\d)(?:Z\|-0[1-9]\|-1\d\|-2[0-3]\|-00:?(?:0[1-9]\|[1-5]\d)\|\+[01]\d\|\+2[0-3])(?:\|:?[0-5]\d)$` | string, null |             |
 
 #### date
-Should be formatted to comply with ISO 8601
+Should be formatted to comply with ISO 8601: yyyy-mm-dd
 
 | Constraint                      | Type         | Description |
 | ------------------------------- | ------------ | ----------- |
 | pattern: `\d{4}-[01]\d-[0-3]\d` | string, null |             |
+**Examples**
+2024-11-20
 #### durationTime
-Should be formatted to comply with ISO 8601.
+Should be formatted to comply with ISO 8601:
+yyyy-mm-dd'T'hh:mm:ss.sss'Z'
 
-| Constraint                                                                                   | Type         | Description |
-| -------------------------------------------------------------------------------------------- | ------------ | ----------- |
-| pattern: `^(-?)P(?=.)((\d+)Y)?((\d+)M)?((\d+)D)?(T(?=.)((\d+)H)?((\d+)M)?(\d*(\.\d+)?S)?)?$` | string, null |             |
+| Constraint                                                                       | Type         | Description |
+| -------------------------------------------------------------------------------- | ------------ | ----------- |
+| pattern: `^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z\|[+-]\d{2}:\d{2})$` | string, null |             |
+|                                                                                  |              |             |
+**Examples**
+2013-02-14T13:15:03Z
+2013-02-14T13:15:03.100Z
+2013-02-14T13:15:03-08:00
+
 #### timeCode
 SMPTE Timecode in the format HH:MM:SS:FF. 
 
@@ -185,18 +198,18 @@ SMPTE Timecode in the format HH:MM:SS:FF.
 #### boundingBox
 The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry.
 
-| Property | Constraint | Type              | Description |
-| -------- | ---------- | ----------------- | ----------- |
-| corner1  |            | [point3](#point3) |             |
-| corner2  |            | [point3](#point3) |             |
+| Property | Constraint | Type              | Description                                      |
+| -------- | ---------- | ----------------- | ------------------------------------------------ |
+| corner1  |            | [point3](#point3) | A point representing a corner of a bounding box. |
+| corner2  |            | [point3](#point3) | A point representing a corner of a bounding box. |
 
 #### coordinateOrientation
 The direction and handedness of the axes used in the geometry.
 
-| Property   | Constraint | Type                    | Description                      |
-| ---------- | ---------- | ----------------------- | -------------------------------- |
-| handedness | enum       | `"left", "right", null` | The handedness of the third axis |
-| upAxis     | enum       | `"y-up", "z-up", null`  |                                  |
+| Property   | Constraint | Type                    | Description                                                            |
+| ---------- | ---------- | ----------------------- | ---------------------------------------------------------------------- |
+| handedness | enum       | `"left", "right", null` | A means of expressing a left-handed or right-handed coordinate system. |
+| upAxis     | enum       | `"y-up", "z-up", null`  | The elevation axis of 3-dimensional coordinate.                        |
 
 #### levelOfDetail
 Percentage of the screen that an object can reasonably take up.
@@ -228,7 +241,7 @@ The number of “real” units represented by a single unit in the coordinate sp
 |            | [linearDistance](#linearDistance) |             |
 ### Controlled Values
 #### materialType
-Data values and relationships required to describe the look of a CG Asset.
+A categorization of what the material is intended to simulate.
 
 | Value                  |
 | ---------------------- |

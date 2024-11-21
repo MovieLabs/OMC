@@ -37,24 +37,24 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | fileDetails           |            | [fileDetails](#fileDetails)                                          |                                                                                                                       |
 | geometryType          | ctrlValue  | [geometryType](#geometryType)                                        | A description of the general underlying form of a three-dimensional shape.                                            |
 | levelOfDetal          |            | [levelOfDetail](../Utility/Utility.md#levelOfDetail)                 | Percentage of the screen that an object can reasonably take up.                                                       |
-| linkSet               |            | [linkSet](#linkSet)                                                  |                                                                                                                       |
-| materialType          | ctrlValue  | [materialType](../Utility/Utility.md#materialType)                   | Data values and relationships required to describe the look of a CG Asset.                                            |
+| linkSet               |            | [linkSet](#linkSet)                                                  | Metadata used in resolving an identifier.                                                                             |
+| materialType          | ctrlValue  | [materialType](../Utility/Utility.md#materialType)                   | A categorization of what the material is intended to simulate.                                                        |
 | purpose               | ctrlValue  | [purpose](../Utility/Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
 | scale                 |            | [scale](../Utility/Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
 
 #### fileDetails
-| Property      | Constraint | Type         | Description |
-| ------------- | ---------- | ------------ | ----------- |
-| fileName      |            | string, null |             |
-| filePath      |            | string, null |             |
-| fileExtension |            | string, null |             |
-| mediaType     |            | string, null |             |
+| Property      | Constraint | Type         | Description                                                                                                       |
+| ------------- | ---------- | ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| fileName      |            | string, null | A name that can be used for the file if stored to a file system.                                                  |
+| filePath      |            | string, null | A directory path that can be used for the file if stored to a file system.                                        |
+| fileExtension |            | string, null | A file extension, often 3-4 characters indicating the format of the file.                                         |
+| mediaType     |            | string, null | A two-part identifier for file formats and content formats, often referred to as a MIME type and defined by IANA. |
 
 #### linkSet
-| Property   | Constraint | Type         | Description |
-| ---------- | ---------- | ------------ | ----------- |
-| recordType |            | string, null |             |
-| mediaType  |            | string, null |             |
+| Property   | Constraint | Type         | Description                                                                                                       |
+| ---------- | ---------- | ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| recordType |            | string, null | A user generated categorization or description of the record.                                                     |
+| mediaType  |            | string, null | A two-part identifier for file formats and content formats, often referred to as a MIME type and defined by IANA. |
 
 
 ### Controlled Values

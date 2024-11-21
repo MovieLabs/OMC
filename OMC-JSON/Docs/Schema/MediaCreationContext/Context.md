@@ -4,27 +4,27 @@ Informs scope within the construction process of a Creative Work.
 
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property          | Constraint        | Type                                                                           | Description                                                                     |
-| ----------------- | ----------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
-| entityType        | const<br>required | `"CreativeWork"`                                                               | Declares the entity type.                                                       |
-| contextType       | ctrlValue         | [contextType](#contextType)                                                    | The specific type of context                                                    |
-| contextCategory   |                   | string<br>null                                                                 | Provides an additional level of categorization of the Context beyond it's type. |
-| contextProperties |                   | [contextProperties](#contextProperties)                                        | Properties specific to this composition                                         |
-| For               |                   |                                                                                |                                                                                 |
-| Context           | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work.               |
-| contributor       |                   | [contributor](#contributor)                                                    |                                                                                 |
-| contributesTo     |                   | [contributesTo](#contributesTo)                                                |                                                                                 |
-| features          |                   | [features](#features)                                                          |                                                                                 |
-| featuresIn        |                   | [featuresIn](#featuresIn)                                                      |                                                                                 |
-| for               |                   | [for](#for)                                                                    |                                                                                 |
-| has               |                   | [has](#has)                                                                    |                                                                                 |
-| neededBy          |                   | [neededBy](#neededBy)                                                          |                                                                                 |
-| needs             |                   | [needs](#needs)                                                                |                                                                                 |
-| related           |                   | [related](#related)                                                            |                                                                                 |
-| represents        |                   | [represents](#represents)                                                      |                                                                                 |
-| representedBy     |                   | [representedBy](#representedBy)                                                |                                                                                 |
-| usedIn            |                   | [usedIn](#usedIn)                                                              |                                                                                 |
-| uses              |                   | [uses](#uses)                                                                  |                                                                                 |
+| Property          | Constraint        | Type                                                                           | Description                                                                        |
+| ----------------- | ----------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| entityType        | const<br>required | `"CreativeWork"`                                                               | Declares the entity type.                                                          |
+| contextType       | ctrlValue         | [contextType](#contextType)                                                    | The specific type of context                                                       |
+| contextCategory   |                   | string<br>null                                                                 | Provides an additional level of categorization of the Context beyond it's type.    |
+| contextProperties |                   | [contextProperties](#contextProperties)                                        | Properties specific to this composition                                            |
+| For               |                   |                                                                                |                                                                                    |
+| Context           | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work.                  |
+| contributor       |                   | [contributor](#contributor)                                                    | The person or organization making the contribution.                                |
+| contributesTo     |                   | [contributesTo](#contributesTo)                                                | The creative work that the person or organization is contributing to.              |
+| features          |                   | [features](#features)                                                          | Relates a narrative scene to other narrative entities.                             |
+| featuresIn        |                   | [featuresIn](#featuresIn)                                                      | Relates a narrative entity to a narrative scene.                                   |
+| for               |                   | [for](#for)                                                                    | Relates non-narrative entities, the inverse of has.                                |
+| has               |                   | [has](#has)                                                                    | Relates non-narrative entities, the inverse of for.                                |
+| neededBy          |                   | [neededBy](#neededBy)                                                          | Relates narrative entities, e.g. narrative prop, to a character, inverse of needs. |
+| needs             |                   | [needs](#needs)                                                                | Relates a character to other narrative entities, inverse of neededBy.              |
+| related           |                   | [related](#related)                                                            | A generic related entity.                                                          |
+| represents        |                   | [represents](#represents)                                                      |                                                                                    |
+| representedBy     |                   | [representedBy](#representedBy)                                                |                                                                                    |
+| usedIn            |                   | [usedIn](#usedIn)                                                              |                                                                                    |
+| uses              |                   | [uses](#uses)                                                                  |                                                                                    |
 
 ### Object Properties
 

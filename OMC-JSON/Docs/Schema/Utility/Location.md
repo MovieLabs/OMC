@@ -6,8 +6,8 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property    | Constraint        | Type                                                                                                 | Description                                                       |
 | ----------- | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | entityType  | const<br>required | `"Location"`                                                                                         | Declares the entity type.                                         |
-| address     |                   |                                                                                                      |                                                                   |
-| coordinates |                   |                                                                                                      |                                                                   |
+| address     |                   | [address](./Utility.md#address)                                                                      | An address for the Location                                       |
+| coordinates |                   | [coordinates](./Utility.md#coordinates)                                                              | A set of GPS coordinates for the location                         |
 | Context     | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
 
 

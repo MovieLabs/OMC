@@ -19,19 +19,18 @@ In the tables below, each Asset that contains a property that references another
 
 **Asset**
 
-| **Property**  | **Name**   | **Target entity**   | **Target type**     |
-| ------------- | ---------- | ------------------- | ------------------- |
-| [ Asset ]     |            | Asset               |                     |
-| AssetSC       |            | AssetSC             | Any structural type |
-| [ Context ]   | for        | NarrativeScene      |                     |
-|               |            | Composition         |                     |
-|               | has        | NarrativeScene      |                     |
-|               |            | Participant         | screenWriter        |
-|               |            | Slate               |                     |
-|               | represents | ==ProductionScene== |                     |
-|               | usedIn     | ProductionLocation  |                     |
-|               |            | ProductionScene     |                     |
-| [ Depiction ] |            | Depiction           | portrayal           |
+| **Property**  | **Name** | **Target entity**  | **Target type**     |
+| ------------- | -------- | ------------------ | ------------------- |
+| [ Asset ]     |          | Asset              |                     |
+| AssetSC       |          | AssetSC            | Any structural type |
+| [ Context ]   | for      | NarrativeScene     |                     |
+|               |          | Composition        |                     |
+|               | has      | NarrativeScene     |                     |
+|               |          | Participant        | screenWriter        |
+|               |          | Slate              |                     |
+|               | usedIn   | ProductionLocation |                     |
+|               |          | ProductionScene    |                     |
+| [ Depiction ] |          | Depiction          | portrayal           |
 
 ----------
 
@@ -204,15 +203,14 @@ In the tables below, each Asset that contains a property that references another
 
 **ProductionScene**
 
-| **Property** | **Name**      | **Target entity**  | **Target type**                                             |
-| ------------ | ------------- | ------------------ | ----------------------------------------------------------- |
-| [ Context ]  | for           | NarrativeScene     |                                                             |
-|              | has           | Slate              |                                                             |
-|              | related       | ProductionScene    |                                                             |
-|              | representedBy | Asset              | capture                                                     |
-|              | uses          | Asset              | prop, setDressing, greenery, vehicle, costume, hair, makeup |
-|              |               | Depiction          |                                                             |
-|              |               | ProductionLocation |                                                             |
+| **Property** | **Name** | **Target entity**  | **Target type**                                             |
+| ------------ | -------- | ------------------ | ----------------------------------------------------------- |
+| [ Context ]  | for      | NarrativeScene     |                                                             |
+|              | has      | Slate              |                                                             |
+|              | related  | ProductionScene    |                                                             |
+|              | uses     | Asset              | prop, setDressing, greenery, vehicle, costume, hair, makeup |
+|              |          | Depiction          |                                                             |
+|              |          | ProductionLocation |                                                             |
 
 ----------
 
