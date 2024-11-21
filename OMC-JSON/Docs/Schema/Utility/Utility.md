@@ -296,9 +296,3 @@ A record of when something was changed and by whom.
 | Origin     |            | [Asset](../Asset/Asset.md)                   |             |
 | reason     |            | string, null                                 |             |
 | annotation |            | [ [annotation](#annotation) ]                |             |
-
-
-
-
-
-
