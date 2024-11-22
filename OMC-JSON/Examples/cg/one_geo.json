@@ -10,7 +10,7 @@
     ],
     "name": "apple",
     "assetFC": {
-      "functionalType": "model",
+      "functionalType": "productionProp",
       "functionalProperties": {}
     },
     "AssetSC": {

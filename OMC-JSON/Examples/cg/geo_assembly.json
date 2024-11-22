@@ -92,7 +92,7 @@
     ],
     "name": "schoolRoom",
     "assetFC": {
-      "functionalType": "model",
+      "functionalType": "cgModel",
       "functionalProperties": {}
     },
     "AssetSC": {
@@ -149,7 +149,7 @@
     ],
     "name": "desk",
     "assetFC": {
-      "functionalType": "model",
+      "functionalType": "productionProp",
       "functionalProperties": {}
     },
     "AssetSC": {
@@ -206,7 +206,7 @@
     ],
     "name": "apple",
     "assetFC": {
-      "functionalType": "model",
+      "functionalType": "productionProp",
       "functionalProperties": {}
     },
     "AssetSC": {
@@ -263,7 +263,7 @@
     ],
     "name": "bell",
     "assetFC": {
-      "functionalType": "model",
+      "functionalType": "productionProp",
       "functionalProperties": {}
     },
     "AssetSC": {
