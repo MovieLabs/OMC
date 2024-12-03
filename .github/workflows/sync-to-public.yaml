@@ -38,7 +38,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PUBLIC_REPO_PAT }}
         run: |
-          git remote add public https://gmanepalli-mlabs:${{ secrets.PUBLIC_REPO_PAT }}@github.com/MovieLabs/test-OMC.git
+          git remote add public https://<username>:${{ secrets.PUBLIC_REPO_PAT }}@github.com/MovieLabs/test-OMC.git
 
       - name: Check if target branch exists in public repo
         id: check_branch
@@ -68,6 +68,11 @@ jobs:
           # Perform a squash merge of changes from source branch
           git checkout ${{ inputs.target_branch_name }}
           git reset --soft $(git merge-base public/${{ inputs.target_branch_name }} HEAD)
+
+          # Remove `.github` directory before committing
+          git rm -r --cached .github || true
+
+          # Add all other changes to the staging area
           git add .
           git commit -m "${{ inputs.commit_message }}"
 
