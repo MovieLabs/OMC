@@ -5,8 +5,8 @@ Informs scope within the construction process of a Creative Work.
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
 | Property          | Constraint        | Type                                                                           | Description                                                                        |
-| ----------------- | ----------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| entityType        | const<br>required | `"CreativeWork"`                                                               | Declares the entity type.                                                          |
+| ----------------- | ----------------- |--------------------------------------------------------------------------------| ---------------------------------------------------------------------------------- |
+| entityType        | const<br>required | `"Context"`                                                                    | Declares the entity type.                                                          |
 | contextType       | ctrlValue         | [contextType](#contextType)                                                    | The specific type of context                                                       |
 | contextCategory   |                   | string<br>null                                                                 | Provides an additional level of categorization of the Context beyond it's type.    |
 | contextProperties |                   | [contextProperties](#contextProperties)                                        | Properties specific to this composition                                            |
