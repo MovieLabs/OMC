@@ -1,4 +1,4 @@
-#!/bin/bash
+# !/bin/bash
 
 # Variables
 SOURCE_REPO_URL="https://github.com/MovieLabs/Prodtech-OMC-Data-Model.git"
