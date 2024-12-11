@@ -148,7 +148,7 @@
                     "string",
                     "null"
                   ],
-                  "controlledValues": [
+                  "x-controlledValues": [
                     "artwork",
                     "artwork.animatedStoryboard",
                     "artwork.conceptArt",
@@ -305,7 +305,7 @@
                 "null"
               ],
               "title": "Map Format",
-              "controlledValues": [
+              "x-controlledValues": [
                 "plainTexture",
                 "shadow",
                 "volumeTexture",
@@ -322,7 +322,7 @@
                 "null"
               ],
               "title": "Map Type",
-              "controlledValues": [
+              "x-controlledValues": [
                 "diffuse",
                 "weightMap",
                 "uvMap",
@@ -864,27 +864,27 @@
               ],
               "title": "Structural Type",
               "description": "A cannonical description of the the assets form.",
-              "controlledValues": [
+              "x-controlledValues": [
                 "assetGroup",
+                "digital",
+                "digital.audio",
+                "digital.audio.object",
+                "digital.audioVisual",
+                "digital.data",
+                "digital.document",
+                "digital.image",
+                "digital.imageSequence",
+                "digital.movingImage",
+                "digital.procedural",
+                "digital.structuredDocument",
                 "geometry",
                 "physical",
-                "physical.image",
-                "physical.structuredDocument",
-                "physical.document",
                 "physical.audioVisual",
-                "physical.audio",
+                "physical.document",
+                "physical.image",
                 "physical.imageSequence",
                 "physical.movingImage",
-                "digital",
-                "digital.movingImage",
-                "digital.image",
-                "digital.structuredDocument",
-                "digital.document",
-                "digital.audioVisual",
-                "digital.audio",
-                "digital.imageSequence",
-                "digital.data",
-                "digital.procedural"
+                "physical.structuredDocument"
               ]
             },
             "structuralProperties": {
@@ -896,13 +896,16 @@
               "description": "A set of properties that describe the asset in this form.",
               "properties": {
                 "assetGroup": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/assetGroup"},
-                "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
-                "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
-                "dimensions": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/dimensions"},
+                "audioBitRate": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/audioBitRate"},
+                "audioSampleRate": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/audioSampleRate"},
+                "audioSampleSize": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/audioSampleSize"},
+                "dimensions": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/dimensions"},
                 "boundingBox": {"$ref": "#/$defs/Utility/properties/boundingBox"},
                 "coordinateOrientation": {"$ref": "#/$defs/Utility/properties/coordinateOrientation"},
+                "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
                 "geometryType": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/geometryType"},
                 "levelOfDetail": {"$ref": "#/$defs/Utility/properties/levelOfDetail"},
+                "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
                 "purpose": {"$ref": "#/$defs/Utility/properties/purpose"},
                 "scale": {"$ref": "#/$defs/Utility/properties/scale"}
               },
@@ -928,28 +931,71 @@
           "required": ["entityType"],
           "description": "Describes the form of an Asset along with the attributes specific to that asset’s form.",
           "$defs": {
-            "linkset": {
-              "type": [
-                "object",
-                "null"
-              ],
+            "assetGroup": {
+              "type": "boolean",
               "properties": {
-                "recordType": {
+                "isOrdered": {
                   "type": [
-                    "string",
-                    "null"
-                  ]
-                },
-                "mediaType": {
-                  "type": [
-                    "string",
+                    "boolean",
                     "null"
                   ]
                 }
               },
               "additionalProperties": false,
-              "title": "Linkset",
-              "description": "When used with resolution system returning a linkset additional information can help disambiguate multiple linksets in the response."
+              "title": "Asset Group",
+              "description": "Signifies if this is an Asset Group (Presumed `false` if property is absent).",
+              "default": false
+            },
+            "audioBitRate": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "properties": {
+                "isOrdered": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "title": "Audio Bit Rate",
+              "description": "The number of bits in one second of sampled audio, expressed in Kbits per second."
+            },
+            "audioSampleRate": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "properties": {
+                "isOrdered": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "title": "Audio Sample Rate",
+              "description": "The average number of samples per second taken from the source audio input in KHz."
+            },
+            "audioSampleSize": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "properties": {
+                "isOrdered": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "title": "Audio Sample Size",
+              "description": "The number of bits per audio sample."
             },
             "fileDetails": {
               "type": [
@@ -986,30 +1032,12 @@
               "title": "File Details",
               "description": "Where opaque identifiers are used it can be useful to express naming for use in traditional file systems"
             },
-            "dimensions": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/dimensions"},
-            "assetGroup": {
-              "type": [
-                "object",
-                "null"
-              ],
-              "properties": {
-                "isOrdered": {
-                  "type": [
-                    "boolean",
-                    "null"
-                  ]
-                }
-              },
-              "additionalProperties": false,
-              "title": "Asset Group",
-              "description": "Structural properties of an Asset Group"
-            },
             "geometryType": {
               "type": [
                 "string",
                 "null"
               ],
-              "controlledValues": [
+              "x-controlledValues": [
                 "torus",
                 "teapot",
                 "plane",
@@ -1021,7 +1049,32 @@
                 "cone",
                 "capsule",
                 "basisCurve"
-              ]
+              ],
+              "title": "Geometry Type",
+              "description": "A description of the general underlying form of a three-dimensional shape."
+            },
+            "linkset": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "recordType": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "mediaType": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "title": "Linkset",
+              "description": "When used with resolution system returning a linkset additional information can help disambiguate multiple linksets in the response."
             }
           },
           "unevaluatedProperties": false
@@ -1096,8 +1149,7 @@
                 "null"
               ],
               "title": "Structural Properties",
-              "description": "A set of properties that describe the infrastructure in this form",
-              "properties": ""
+              "description": "A set of properties that describe the infrastructure in this form"
             }
           },
           "required": ["entityType"],
@@ -1125,8 +1177,7 @@
                 "null"
               ],
               "title": "Functional Properties",
-              "description": "A set of properties that describe the tasks functional use",
-              "properties": ""
+              "description": "A set of properties that describe the tasks functional use"
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           },
@@ -1307,7 +1358,7 @@
               ],
               "title": "Context Type",
               "description": "A classification of the type of context represented",
-              "controlledValues": [
+              "x-controlledValues": [
                 "narrative",
                 "production",
                 "shootDay",
@@ -3917,16 +3968,19 @@
               ],
               "title": "Composition Type",
               "description": "The type, or sub-class, that this specific Composition represents.",
-              "controlledValues": [
+              "x-controlledValues": [
+                "audio",
+                "audio.preMix",
+                "audio.soundEditorialUnit",
                 "cgAssembly",
-                "geometryAssembly",
                 "compositeMaterial",
+                "geometryAssembly",
                 "sequence",
-                "sequence.vfx",
-                "sequence.vfxImage",
-                "sequence.editorial",
+                "sequence.animation",
                 "sequence.color",
-                "sequence.animation"
+                "sequence.editorial",
+                "sequence.vfx",
+                "sequence.vfxImage"
               ]
             },
             "compositionProperties": {
@@ -4951,7 +5005,7 @@
           ],
           "title": "Purpose (Geometry)",
           "description": "A suggested or intended use for the object in a pipeline.",
-          "controlledValues": [
+          "x-controlledValues": [
             "printing",
             "general",
             "annotation",
