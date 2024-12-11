@@ -43,19 +43,20 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 ### Controlled & Enumerated Values
 
 #### compositionType
-
-| Value              | Description                                                                       |
-| ------------------ | --------------------------------------------------------------------------------- |
-| cgAssembly         | A Composition that includes a collection of related CG Assets and CG Assemblies.  |
-| compositeMaterial  | A Material represented by a Composition.                                          |
-| geometryAssembly   | A composition only containing geometry information.                               |
-| sequence           | An ordered collection of media used to organize units of work.                    |
-| sequence.animation | A unit of work made up of an ordered series of Animation shots.                   |
-| sequence.color     | A sequence of shots with color grading characteristics linked to creative intent. |
-| sequence.editorial | A sequence of shots linked to creative intent.                                    |
-| sequence.vfx       | A unit of work made up of an ordered series of VFX shots.                         |
-| sequence.vfxImage  | An Image Sequence used in VFX work.                                               |
-
+| Value | Description |
+|-------|-------------|
+| audio | A representation of sound. |
+| audio.preMix | A collection of sound samples that have been processed for technical or creative review. |
+| audio.soundEditorialUnit | A collection of sound samples that have been selected in reference to the Creative Work or a portion of it. |
+| cgAssembly | A Composition that includes a collection of related CG Assets and CG Assemblies. |
+| compositeMaterial | A Material represented by a Composition.  |
+| geometryAssembly | A composition only containing geometry information. |
+| sequence | An ordered collection of media used to organize units of work. |
+| sequence.animation | A unit of work made up of an ordered series of Animation shots. |
+| sequence.color | A sequence of shots with color grading characteristics linked to creative intent. |
+| sequence.editorial | A sequence of shots linked to creative intent. |
+| sequence.vfx | A unit of work made up of an ordered series of VFX shots. |
+| sequence.vfxImage | An Image Sequence used in VFX work. |
 
 ## Examples
 

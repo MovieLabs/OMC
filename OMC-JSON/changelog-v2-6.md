@@ -107,4 +107,3 @@ Some properties would have failed validation if `null` was provided, this has be
 
 The schema can now accept a single entity as an object, previously single entities had to be wrapped in an array.
 
-t

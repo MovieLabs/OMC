@@ -29,7 +29,7 @@ if (-not $TARGET_BRANCH_EXISTS) {
 
 # Fetch the target branch if it exists
 if ($TARGET_BRANCH_EXISTS) {
-    git fetch target $TARGET_BRANCH:$TARGET_BRANCH
+    git fetch target $TARGET_BRANCH
 }
 
 # Switch to the target branch

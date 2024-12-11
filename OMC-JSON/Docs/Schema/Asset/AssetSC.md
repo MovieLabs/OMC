@@ -32,6 +32,11 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 
 | Property              | Constraint | Type                                                                 | Description                                                                                                           |
 | --------------------- | ---------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| assetGroup            |            | boolean                                                              | Signifies if this is an Asset Group (Presumed `false` if property is absent).                                         |
+| audioBitRate          |            | integer                                                              | The number of bits in one second of sampled audio, expressed in Kbits per second.                                     |
+| audioSampleRate       |            | integer                                                              | The average number of samples per second taken from the source audio input in KHz.                                    |
+| audioSampleSize       |            | integer                                                              | The number of bits per audio sample.                                                                                  |
+| dimensions            |            | [dimensions](../Utility/Utility.md#dimensions)                       | Dimensions for an asset in a unit of measurement.                                                                     |
 | boundingBox           |            | [boundingBox](../Utility/Utility.md#boundingBox)                     | The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry. |
 | coordinateOrientation |            | [coordinateOrientation](../Utility/Utility.md#coordinateOrientation) | The direction and handedness of the axes used in the geometry.                                                        |
 | fileDetails           |            | [fileDetails](#fileDetails)                                          |                                                                                                                       |
@@ -56,33 +61,31 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | recordType |            | string, null | A user generated categorization or description of the record.                                                     |
 | mediaType  |            | string, null | A two-part identifier for file formats and content formats, often referred to as a MIME type and defined by IANA. |
 
-
 ### Controlled Values
 
 #### structuralType
-| Value                       | Description                                                                                           |
-| --------------------------- | ----------------------------------------------------------------------------------------------------- |
-| digital                     | Information that exists as digital data.                                                              |
-| digital.audio               | A representation of sound.                                                                            |
-| digital.audio.wild          | N/A                                                                                                   |
-| digital.audioVisual         | A Moving Image with Audio synchronized to the images.                                                 |
-| digital.data                | An Asset composed of digital data.                                                                    |
-| digital.document            | A human readable object containing text and/or images.                                                |
-| digital.image               | A two-dimensional visual representation.                                                              |
-| digital.imageSequence       | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image. |
-| digital.movingImage         | A temporally ordered sequence of Images                                                               |
-| digital.procedural          | An Asset that produces data that does not persist outside of its immediate use.                       |
-| digital.structuredDocument  | A Document structured according to a set of rules which are used to parse or understand the document. |
-| geometry                    | A shape defined in three dimensions.                                                                  |
-| physical                    | A physical asset is one where the tangible reality of the Asset is its defining feature.              |
-| physical.audio              | A representation of sound.                                                                            |
-| physical.audio.wild         | N/A                                                                                                   |
-| physical.audioVisual        | A Moving Image with Audio synchronized to the images.                                                 |
-| physical.document           | A human readable object containing text and/or images.                                                |
-| physical.image              | A two-dimensional visual representation.                                                              |
-| physical.imageSequence      | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image. |
-| physical.movingImage        | A temporally ordered sequence of Images                                                               |
-| physical.structuredDocument | A Document structured according to a set of rules which are used to parse or understand the document. |
+| Value                       | Description                                                                                                              |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| assetGroup                  | Signifies this Asset represents and Asset Group.                                                                         |
+| digital                     | Information that exists as digital data.                                                                                 |
+| digital.audio               | A representation of sound.                                                                                               |
+| digital.audio.object        | A segment of audio essence with associated metadata describing positional and other properties which may vary with time. |
+| digital.audioVisual         | A Moving Image with Audio synchronized to the images.                                                                    |
+| digital.data                | An Asset composed of digital data.                                                                                       |
+| digital.document            | A human readable object containing text and/or images.                                                                   |
+| digital.image               | A two-dimensional visual representation.                                                                                 |
+| digital.imageSequence       | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image.                    |
+| digital.movingImage         | A temporally ordered sequence of Images                                                                                  |
+| digital.procedural          | An Asset that produces data that does not persist outside of its immediate use.                                          |
+| digital.structuredDocument  | A Document structured according to a set of rules which are used to parse or understand the document.                    |
+| geometry                    | A shape defined in three dimensions.                                                                                     |
+| physical                    | A physical asset is one where the tangible reality of the Asset is its defining feature.                                 |
+| physical.audioVisual        | A Moving Image with Audio synchronized to the images.                                                                    |
+| physical.document           | A human readable object containing text and/or images.                                                                   |
+| physical.image              | A two-dimensional visual representation.                                                                                 |
+| physical.imageSequence      | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image.                    |
+| physical.movingImage        | A temporally ordered sequence of Images                                                                                  |
+| physical.structuredDocument | A Document structured according to a set of rules which are used to parse or understand the document.                    |
 #### geometryType
 A description of the general underlying form of a three-dimensional shape.
 
