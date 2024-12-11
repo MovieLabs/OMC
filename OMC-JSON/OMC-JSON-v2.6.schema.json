@@ -991,34 +991,21 @@
           "description": "Describes the form of an Asset along with the attributes specific to that asset’s form.",
           "$defs": {
             "assetGroup": {
-              "type": "boolean",
+              "type": [
+                "object",
+                "null"
+              ],
               "properties": {
-                "isOrdered": {
-                  "type": [
-                    "boolean",
-                    "null"
-                  ]
-                }
+                "isOrdered": {"type": "boolean"}
               },
-              "additionalProperties": false,
               "title": "Asset Group",
-              "description": "Signifies if this is an Asset Group (Presumed `false` if property is absent).",
-              "default": false
+              "description": "Properties of the Asset Group."
             },
             "audioBitRate": {
               "type": [
                 "integer",
                 "null"
               ],
-              "properties": {
-                "isOrdered": {
-                  "type": [
-                    "boolean",
-                    "null"
-                  ]
-                }
-              },
-              "additionalProperties": false,
               "title": "Audio Bit Rate",
               "description": "The number of bits in one second of sampled audio, expressed in Kbits per second."
             },
@@ -1027,15 +1014,6 @@
                 "integer",
                 "null"
               ],
-              "properties": {
-                "isOrdered": {
-                  "type": [
-                    "boolean",
-                    "null"
-                  ]
-                }
-              },
-              "additionalProperties": false,
               "title": "Audio Sample Rate",
               "description": "The average number of samples per second taken from the source audio input in KHz."
             },
@@ -1044,15 +1022,6 @@
                 "integer",
                 "null"
               ],
-              "properties": {
-                "isOrdered": {
-                  "type": [
-                    "boolean",
-                    "null"
-                  ]
-                }
-              },
-              "additionalProperties": false,
               "title": "Audio Sample Size",
               "description": "The number of bits per audio sample."
             },
@@ -2416,7 +2385,7 @@
               }
             }
           },
-          "unevaluatedProperties": true,
+          "unevaluatedProperties": false,
           "required": ["entityType"]
         },
         "CreativeWork": {
@@ -3916,7 +3885,6 @@
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           },
-          "additionalProperties": true,
           "description": "Describes the purpose of the Task within the production process"
         }
       },

@@ -32,7 +32,7 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 
 | Property              | Constraint | Type                                                                 | Description                                                                                                           |
 | --------------------- | ---------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| assetGroup            |            | boolean                                                              | Signifies if this is an Asset Group (Presumed `false` if property is absent).                                         |
+| assetGroup            |            | [assetGroup](#assetGroup)                                            | Properties of the Asset Group.                                                                                        |
 | audioBitRate          |            | integer                                                              | The number of bits in one second of sampled audio, expressed in Kbits per second.                                     |
 | audioSampleRate       |            | integer                                                              | The average number of samples per second taken from the source audio input in KHz.                                    |
 | audioSampleSize       |            | integer                                                              | The number of bits per audio sample.                                                                                  |
@@ -46,6 +46,11 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | materialType          | ctrlValue  | [materialType](../Utility/Utility.md#materialType)                   | A categorization of what the material is intended to simulate.                                                        |
 | purpose               | ctrlValue  | [purpose](../Utility/Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
 | scale                 |            | [scale](../Utility/Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
+
+#### assetGroup
+| Property  | Constraint | Type    | Description                                       |
+| --------- | ---------- | ------- | ------------------------------------------------- |
+| isOrdered |            | boolean | `true` if this should be treated as an ordered st |
 
 #### fileDetails
 | Property      | Constraint | Type         | Description                                                                                                       |
