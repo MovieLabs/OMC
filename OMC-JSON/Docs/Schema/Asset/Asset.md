@@ -183,6 +183,16 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 | specular         |
 | uvMap            |
 | weightMap        |
+#### mapFormat
+| Value | Description |
+|-------|-------------|
+| cubeFaceEnvironment | N/A |
+| cubeFaceShadow | N/A |
+| latLongEnvironment | N/A |
+| plainTexture | N/A |
+| shadow | N/A |
+| volumeShadow | N/A |
+| volumeTexture | N/A |
 
 ## Examples
 
