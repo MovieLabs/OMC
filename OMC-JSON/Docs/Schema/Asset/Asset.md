@@ -32,11 +32,32 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 #### assetFC
 Describes the use or purpose of an Asset within the production process
 
-| Property             | Constraint | Type                                                                                                                                                                                                                      | Description                                                                                                               |
-| -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| functionalType       | ctrlValue  | [functionalType](#functionalType)                                                                                                                                                                                         | Describes the use or purpose of an Asset within the production process                                                    |
-| functionalProperties |            | [mapFormat](#mapFormat)<br>[mapType](#mapType)<br>[cameraMetadata](#cameraMetadata)<br>[lensMetadata](#lensMetadata)<br>[recorderMetadata](#recorderMetadata)<br>[isSelfContained](#isSelfContained)<br>[timing](#timing) | Properties that future describe an Asset function and use within the production process.                                  |
-| customData           |            | [customData](../Utility/Utility.md#customData)                                                                                                                                                                            | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
+| Property             | Constraint | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Description                                                                                                               |
+| -------------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| functionalType       | ctrlValue  | [functionalType](#functionalType)                                                                                                                                                                                                                                                                                                                                                                                                                                 | Describes the use or purpose of an Asset within the production process                                                    |
+| functionalProperties | anyOf      | [audioChannelName](#audioChannelName)<br>[audioContentInfo](#audioContentInfo)<br>[audioMixType](#audioMixType)<br>[audioProcessingAction](#audioProcessingAction)<br>[audioTrackName](#audioTrackName)<br>[mapFormat](#mapFormat)<br>[mapType](#mapType)<br>[cameraMetadata](#cameraMetadata)<br>[lensMetadata](#lensMetadata)<br>[recorderMetadata](#recorderMetadata)<br>[isSelfContained](#isSelfContained)<br>[soundfield](#soundfield)<br>[timing](#timing) | Properties that future describe an Asset function and use within the production process.                                  |
+| customData           |            | [customData](../Utility/Utility.md#customData)                                                                                                                                                                                                                                                                                                                                                                                                                    | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
+#### audioChannelName
+
+| Constraint | Type         | Description                                                                            |
+| ---------- | ------------ | -------------------------------------------------------------------------------------- |
+|            | string, null | A formalization of the name of the loudspeaker the Audio Channel in intended to drive. |
+#### audioContentInfo
+
+| Constraint | Type         | Description                                                     |
+| ---------- | ------------ | --------------------------------------------------------------- |
+|            | string, null | Identification of the content type in a particular Audio Asset. |
+#### audioProcessingAction
+
+| Constraint | Type         | Description                                                   |
+| ---------- | ------------ | ------------------------------------------------------------- |
+|            | string, null | Indication of what was done to the audio in an Audio Session. |
+#### audioTrackName
+
+| Constraint | Type         | Description                                  |
+| ---------- | ------------ | -------------------------------------------- |
+|            | string, null | Further differentiation for the Audio Track. |
+
 #### cameraMetadata
 Capture-specific details and information about the Camera itself.
 
@@ -100,6 +121,13 @@ Information about a Recorder and the recording media.
 | Constraint | Type    | Description                                                                        |
 | ---------- | ------- | ---------------------------------------------------------------------------------- |
 |            | boolean | Indicates the Asset does not depend on other Assets to perform its functional use. |
+
+#### soundfield
+
+| Constraint | Type         | Description                                                                             |
+| ---------- | ------------ | --------------------------------------------------------------------------------------- |
+|            | string, null | The acoustical space created by simultaneously reproducing one or more Audio Channels.. |
+
 #### timing
 Timing data for a shot, indicating which frames of the shot are to be used.
 
@@ -166,7 +194,18 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 | shot.editorial                           | A shot that has been marked for editorial use.                                                                                                                                                |
 | shot.vfx                                 | A Shot that has been identified as requiring VFX work.                                                                                                                                        |
 | technicalReferenceMaterial               | Images and other material used to inform the execution of the production.                                                                                                                     |
+
+#### audioMixType
+A description of the type or use for this mix.
+
+| Value | Description |
+|-------|-------------|
+| finalMix | A Mix for distribution of the Creative Work. |
+| onSetMix | A Mix of the on-set captured Audio. |
+| temporaryMix | A non-final Mix used in the creative process, e.g. for review. |
 #### mapType
+Guidance about the intended use of a Map in a Material
+
 | Value            |
 | ---------------- |
 | albedo           |
@@ -184,6 +223,8 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 | uvMap            |
 | weightMap        |
 #### mapFormat
+The data layout of a Map.
+
 | Value | Description |
 |-------|-------------|
 | cubeFaceEnvironment | N/A |

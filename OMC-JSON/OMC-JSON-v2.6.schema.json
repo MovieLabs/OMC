@@ -207,14 +207,20 @@
                     "null"
                   ],
                   "properties": {
+                    "audioChannelName": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioChannelName"},
+                    "audioContentInfo": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioContentInfo"},
+                    "audioMixType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioMixType"},
+                    "audioProcessingAction": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioProcessingAction"},
+                    "cameraMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/cameraMetadata"},
+                    "isSelfContained": {"$ref": "#/$defs/Asset/properties/Asset/$defs/isSelfContained"},
+                    "lensMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/lensMetadata"},
                     "mapFormat": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapFormat"},
                     "mapType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapType"},
-                    "scd": {"$ref": "#/$defs/Asset/properties/Asset/$defs/scd"},
-                    "cameraMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/cameraMetadata"},
-                    "lensMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/lensMetadata"},
                     "recorderMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/recorderMetadata"},
-                    "isSelfContained": {"$ref": "#/$defs/Asset/properties/Asset/$defs/isSelfContained"},
-                    "timing": {"$ref": "#/$defs/Asset/properties/Asset/$defs/timing"}
+                    "soundfield": {"$ref": "#/$defs/Asset/properties/Asset/$defs/soundfield"},
+                    "timing": {"$ref": "#/$defs/Asset/properties/Asset/$defs/timing"},
+                    "scd": {"$ref": "#/$defs/Asset/properties/Asset/$defs/scd"},
+                    "audioTrackName": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioTrackName"}
                   }
                 },
                 "customData": {"$ref": "#/$defs/Utility/properties/customData"}
@@ -247,98 +253,50 @@
           },
           "required": ["entityType"],
           "$defs": {
-            "scd": {
-              "type": "object",
-              "properties": {
-                "component": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "sourceStart": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "sourceEnd": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "recordStart": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "recordEnd": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "duration": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "Shot": {
-                        "type": "object",
-                        "anyOf": [
-                          {"$ref": "#/$defs/core/properties/reference"},
-                          {"$ref": "#/$defs/Asset/properties/Asset"}
-                        ]
-                      }
-                    }
-                  }
-                }
-              },
-              "additionalProperties": false,
-              "deprecated": true
-            },
-            "mapFormat": {
+            "audioChannelName": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Map Format",
-              "x-controlledValues": [
-                "plainTexture",
-                "shadow",
-                "volumeTexture",
-                "volumeShadow",
-                "latLongEnvironment",
-                "cubeFaceShadow",
-                "cubeFaceEnvironment"
-              ],
-              "description": "The data layout of a Map."
+              "title": "Audio Channel Name",
+              "description": "A formalization of the name of the loudspeaker the Audio Channel in intended to drive."
             },
-            "mapType": {
+            "audioContentInfo": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Map Type",
-              "x-controlledValues": [
-                "diffuse",
-                "weightMap",
-                "uvMap",
-                "specular",
-                "roughness",
-                "projectionMap",
-                "normal",
-                "opacity",
-                "metalness",
-                "heightMap",
-                "depthMap",
-                "bump",
-                "ambientOcclusion",
-                "albedo"
+              "title": "Audio Content Information",
+              "description": "Identification of the content type in a particular Audio Asset."
+            },
+            "audioMixType": {
+              "type": [
+                "string",
+                "null"
               ],
-              "description": "Guidance about the intended use of a Map in a Material."
+              "title": "Audio Mix Type",
+              "description": "A description of the type or use for this mix.",
+              "x-controlledValues": [
+                "finalMix",
+                "onSetMix",
+                "temporaryMix"
+              ]
+            },
+            "audioProcessingAction": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Audio Processing Action",
+              "description": "Indication of what was done to the audio in an Audio Session."
+            },
+            "audioTrackName": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Audio Track Name",
+              "description": "Further differentiation for the Audio Track."
             },
             "cameraMetadata": {
               "type": [
@@ -583,6 +541,14 @@
               "title": "Camera Metadata",
               "description": "Capture-specific details and information about the Camera itself."
             },
+            "isSelfContained": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Is Self Contained",
+              "description": "Indicates the Asset does not depend on other Assets to perform its functional use."
+            },
             "lensMetadata": {
               "type": [
                 "object",
@@ -672,6 +638,47 @@
                 }
               }
             },
+            "mapFormat": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Map Format",
+              "x-controlledValues": [
+                "plainTexture",
+                "shadow",
+                "volumeTexture",
+                "volumeShadow",
+                "latLongEnvironment",
+                "cubeFaceShadow",
+                "cubeFaceEnvironment"
+              ],
+              "description": "The data layout of a Map."
+            },
+            "mapType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Map Type",
+              "x-controlledValues": [
+                "diffuse",
+                "weightMap",
+                "uvMap",
+                "specular",
+                "roughness",
+                "projectionMap",
+                "normal",
+                "opacity",
+                "metalness",
+                "heightMap",
+                "depthMap",
+                "bump",
+                "ambientOcclusion",
+                "albedo"
+              ],
+              "description": "Guidance about the intended use of a Map in a Material."
+            },
             "recorderMetadata": {
               "type": [
                 "object",
@@ -723,13 +730,13 @@
               },
               "additionalProperties": false
             },
-            "isSelfContained": {
+            "soundfield": {
               "type": [
-                "boolean",
+                "string",
                 "null"
               ],
-              "title": "Is Self Contained",
-              "description": "Indicates the Asset does not depend on other Assets to perform its functional use."
+              "title": "Soundfield",
+              "description": "The acoustical space created by simultaneously reproducing one or more Audio Channels."
             },
             "timing": {
               "type": [
@@ -769,6 +776,58 @@
                 }
               },
               "additionalProperties": false
+            },
+            "scd": {
+              "type": "object",
+              "properties": {
+                "component": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sourceStart": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "sourceEnd": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "recordStart": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "recordEnd": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "duration": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "Shot": {
+                        "type": "object",
+                        "anyOf": [
+                          {"$ref": "#/$defs/core/properties/reference"},
+                          {"$ref": "#/$defs/Asset/properties/Asset"}
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "additionalProperties": false,
+              "deprecated": true
             }
           },
           "unevaluatedProperties": false
