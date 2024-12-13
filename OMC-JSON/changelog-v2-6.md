@@ -50,6 +50,9 @@ NarrativeAction has been renamed to 'SpecialAction'. This was a bug in the 2.0 s
 Formal definitions for asset functional properties were added as controlled values. These are not enumerated, but are considered best practice.
 
 Additional functional properties:
+- `audioChannelName` - The name of the audio channel on an audio asset
+- `audioMixType` - The type of audio mix
+- `audioProcesingAction` - A description of the processing carried out on audio asset
 - `mapFormat` - A set of controlled values
 - `mapType` - A set of controlled values
 - `cameraMetadata` - Properties for camera metadata
@@ -66,12 +69,18 @@ Additional structural properties
 - `audioSampleRate` - The sample rate of the audio
 - `audioSampleSize` - The sample size of the audio
 - `geometryType` - The type of geometry
+- `levelOfDetail` - The level of detail cg 3D assets
+- `purpose` - The intended purpose for cg asset
+- `scale` - The scale of a cg asset
 
 ### Utility
 - `tag`: A new property to allow for internal tags to be included along with a domain indicating their source.
 - `annotation`: A new property to allow for annotations to be included along with a domain indicating their source.
 - `identifier`: The optional properties `combinedForm` and `url` have been added to the identifier property. These can be useful for
 utilizing or resolving the identifier in systems.
+- `codec` - The codec used for the asset
+- `audioContent` - A description for audio assets
+- `soundField` - A description of the soundfield for audio assets
 
 ## Additional refactoring and bug fixes
 - `entityInfo`: Deprecated in favor of `instanceInfo`, which is a more accurate representation of the data that is. 

@@ -35,29 +35,33 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 
 | Field Name            | Constraint | Type                                                        | Description                                                                                                           |
 | --------------------- | ---------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| audioContent          |            | [ [audioContent](../Utility/Utility.md#audioContent) ]      | Classification of the content type in a particular Audio Asset.                                                       |
 | boundingBox           |            | [boundingBox](./Utility.md#boundingBox)                     | The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry. |
 | coordinateOrientation |            | [coordinateOrientation](./Utility.md#coordinateOrientation) | The direction and handedness of the axes used in the geometry.                                                        |
 | levelOfDetail         |            | [levelOfDetail](./Utility.md#levelOfDetail)                 | Percentage of the screen that an object can reasonably take up.                                                       |
 | purpose               |            | [purpose](./Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
+| soundfield            |            | [soundfield](../Utility/Utility.md#soundfield)              | The acoustical space created by simultaneously reproducing one or more Audio Channels.                                |
 | scale                 |            | [scale](./Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
 ### Controlled & Enumerated Values
 
 #### compositionType
-| Value | Description |
-|-------|-------------|
-| audio | A representation of sound. |
-| audio.preMix | A collection of sound samples that have been processed for technical or creative review. |
-| audio.soundEditorialUnit | A collection of sound samples that have been selected in reference to the Creative Work or a portion of it. |
-| cgAssembly | A Composition that includes a collection of related CG Assets and CG Assemblies. |
-| compositeMaterial | A Material represented by a Composition.  |
-| geometryAssembly | A composition only containing geometry information. |
-| sequence | An ordered collection of media used to organize units of work. |
-| sequence.animation | A unit of work made up of an ordered series of Animation shots. |
-| sequence.color | A sequence of shots with color grading characteristics linked to creative intent. |
-| sequence.editorial | A sequence of shots linked to creative intent. |
-| sequence.vfx | A unit of work made up of an ordered series of VFX shots. |
-| sequence.vfxImage | An Image Sequence used in VFX work. |
-
+| Value                    | Description                                                                                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| audio                    | A Composition consisting of audio assets, Audio Compositions, and an Audio Session.                                                             |
+| audio.bed                | The sum of non-object STEMs.                                                                                                                    |
+| audio.preMix             | A collection of sound samples that have been processed for technical or creative review.                                                        |
+| audio.printmaster        | The combination of STEMs for a particular soundfield at unity gain.                                                                             |
+| audio.soundEditorialUnit | A collection of sound samples that have been selected in reference to the Creative Work or a portion of it.                                     |
+| audio.stem               | Final processed Audio Assets and Compositions combined based on their Audio Classification, representing the final sound for the Creative Work. |
+| cgAssembly               | A Composition that includes a collection of related CG Assets and CG Assemblies.                                                                |
+| compositeMaterial        | A Material represented by a Composition.                                                                                                        |
+| geometryAssembly         | A composition only containing geometry information.                                                                                             |
+| sequence                 | An ordered collection of media used to organize units of work.                                                                                  |
+| sequence.animation       | A unit of work made up of an ordered series of Animation shots.                                                                                 |
+| sequence.color           | A sequence of shots with color grading characteristics linked to creative intent.                                                               |
+| sequence.editorial       | A sequence of shots linked to creative intent.                                                                                                  |
+| sequence.vfx             | A unit of work made up of an ordered series of VFX shots.                                                                                       |
+| sequence.vfxImage        | An Image Sequence used in VFX work.                                                                                                             |
 ## Examples
 
 ```JSON

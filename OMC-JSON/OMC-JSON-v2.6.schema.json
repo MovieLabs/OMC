@@ -155,6 +155,8 @@
                     "artwork.storyboard",
                     "audio",
                     "audio.channel",
+                    "audio.object",
+                    "audio.objectMetadata",
                     "audio.onSetMix",
                     "audio.track",
                     "cameraMetadata",
@@ -208,7 +210,7 @@
                   ],
                   "properties": {
                     "audioChannelName": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioChannelName"},
-                    "audioContentInfo": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioContentInfo"},
+                    "audioContent": {"$ref": "#/$defs/Utility/properties/audioContent"},
                     "audioMixType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioMixType"},
                     "audioProcessingAction": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioProcessingAction"},
                     "cameraMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/cameraMetadata"},
@@ -217,7 +219,7 @@
                     "mapFormat": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapFormat"},
                     "mapType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapType"},
                     "recorderMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/recorderMetadata"},
-                    "soundfield": {"$ref": "#/$defs/Asset/properties/Asset/$defs/soundfield"},
+                    "soundfield": {"$ref": "#/$defs/Utility/properties/soundfield"},
                     "timing": {"$ref": "#/$defs/Asset/properties/Asset/$defs/timing"},
                     "scd": {"$ref": "#/$defs/Asset/properties/Asset/$defs/scd"},
                     "audioTrackName": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioTrackName"}
@@ -255,19 +257,41 @@
           "$defs": {
             "audioChannelName": {
               "type": [
-                "string",
+                "array",
                 "null"
               ],
               "title": "Audio Channel Name",
-              "description": "A formalization of the name of the loudspeaker the Audio Channel in intended to drive."
-            },
-            "audioContentInfo": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Audio Content Information",
-              "description": "Identification of the content type in a particular Audio Asset."
+              "description": "A formalization of the name of the loudspeaker the Audio Channel in intended to drive.",
+              "items": {"type": "string"},
+              "x-controlledValues": [
+                "C",
+                "Ch",
+                "Cs",
+                "HI",
+                "L",
+                "Lc",
+                "LFE",
+                "Lh",
+                "Lrs",
+                "Lrsh",
+                "Ls",
+                "Lsh",
+                "Lss",
+                "Lssh",
+                "Lts",
+                "R",
+                "Rc",
+                "Rh",
+                "Rrs",
+                "Rs",
+                "Rsh",
+                "Rss",
+                "Rssh",
+                "Rts",
+                "Rtsh",
+                "Ts",
+                "VIN"
+              ]
             },
             "audioMixType": {
               "type": [
@@ -277,8 +301,10 @@
               "title": "Audio Mix Type",
               "description": "A description of the type or use for this mix.",
               "x-controlledValues": [
+                "finalDeliverable",
                 "finalMix",
                 "onSetMix",
+                "printmaster",
                 "temporaryMix"
               ]
             },
@@ -730,14 +756,6 @@
               },
               "additionalProperties": false
             },
-            "soundfield": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Soundfield",
-              "description": "The acoustical space created by simultaneously reproducing one or more Audio Channels."
-            },
             "timing": {
               "type": [
                 "object",
@@ -960,6 +978,7 @@
                 "audioSampleSize": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/audioSampleSize"},
                 "dimensions": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/dimensions"},
                 "boundingBox": {"$ref": "#/$defs/Utility/properties/boundingBox"},
+                "codec": {"$ref": "#/$defs/Utility/properties/codec"},
                 "coordinateOrientation": {"$ref": "#/$defs/Utility/properties/coordinateOrientation"},
                 "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
                 "geometryType": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/geometryType"},
@@ -3997,8 +4016,11 @@
               "description": "The type, or sub-class, that this specific Composition represents.",
               "x-controlledValues": [
                 "audio",
+                "audio.bed",
                 "audio.preMix",
+                "audio.printmaster",
                 "audio.soundEditorialUnit",
+                "audio.stem",
                 "cgAssembly",
                 "compositeMaterial",
                 "geometryAssembly",
@@ -4017,11 +4039,13 @@
               ],
               "title": "Composition Properties",
               "properties": {
+                "audioContent": {"$ref": "#/$defs/Utility/properties/audioContent"},
                 "boundingBox": {"$ref": "#/$defs/Utility/properties/boundingBox"},
                 "coordinateOrientation": {"$ref": "#/$defs/Utility/properties/coordinateOrientation"},
                 "levelOfDetail": {"$ref": "#/$defs/Utility/properties/levelOfDetail"},
                 "purpose": {"$ref": "#/$defs/Utility/properties/purpose"},
-                "scale": {"$ref": "#/$defs/Utility/properties/scale"}
+                "scale": {"$ref": "#/$defs/Utility/properties/scale"},
+                "soundfield": {"$ref": "#/$defs/Utility/properties/soundfield"}
               }
             },
             "Asset": {
@@ -5048,7 +5072,7 @@
             "string",
             "null"
           ],
-          "controlledValues": [
+          "x-controlledValues": [
             "gasOrLiquid",
             "gasOrLiquid.fire",
             "gasOrLiquid.oil",
@@ -5075,6 +5099,95 @@
           ],
           "title": "Material Type",
           "description": "Data values and relationships required to describe the look of a CG Asset."
+        },
+        "codec": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Codec",
+          "description": "The specific codec used to encode the Asset."
+        },
+        "audioContent": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "mcaContent": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "x-controlledValues": [
+                  "ADR",
+                  "BG",
+                  "CM",
+                  "CRD",
+                  "DME",
+                  "DV",
+                  "DX",
+                  "FFX",
+                  "FOL",
+                  "FX",
+                  "GRP",
+                  "HI",
+                  "LCM",
+                  "ME",
+                  "MESP",
+                  "MOS",
+                  "MX",
+                  "NDME",
+                  "ONAR",
+                  "OP",
+                  "PNAR",
+                  "PRM",
+                  "SAP",
+                  "VI",
+                  "VO",
+                  "VOC",
+                  "WLA"
+                ],
+                "title": "MCA Content",
+                "description": "Indicates the nature of the content."
+              },
+              "mcaContentSubtype": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "x-controlledValues": [
+                  "ANN",
+                  "CAST",
+                  "CL",
+                  "CTR",
+                  "DIR",
+                  "FS",
+                  "OTHER",
+                  "PRP",
+                  "TECH",
+                  "WRT"
+                ],
+                "description": "Granular indication of the nature of the content if required."
+              },
+              "language": {"$ref": "#/$defs/Utility/properties/language"}
+            }
+          },
+          "title": "Audio Content Information",
+          "description": "Identification of the content type in a particular Audio Asset."
+        },
+        "soundfield": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Soundfield",
+          "description": "The acoustical space created by simultaneously reproducing one or more Audio Channels.",
+          "x-controlledValues": [
+            "51",
+            "61",
+            "71",
+            "M",
+            "SDS"
+          ]
         },
         "provenance": {
           "type": [
