@@ -1,0 +1,56 @@
+{
+  "editorSuggest": {
+    "enableAutoSuggest": true,
+    "triggerPhrase": "//",
+    "commentFormat": "html"
+  },
+  "decoration": {
+    "autoRegisterLabels": true,
+    "styles": {
+      "labels": {},
+      "tag": {
+        "style": {
+          "fontSize": 10,
+          "opacity": 40
+        },
+        "enableStyle": true
+      }
+    },
+    "defaultPalette": "bright"
+  },
+  "outline": {
+    "fontSize": 12,
+    "showLabelsFilter": false,
+    "showSearchInput": false,
+    "hiddenLabels": [],
+    "hiddenTypes": []
+  },
+  "tts": {
+    "rate": 1.1,
+    "pitch": 1,
+    "volume": 1,
+    "focusAnnotationInEditor": true
+  },
+  "notes": {
+    "defaultFolder": "notes",
+    "notesNamingMode": "annotation-label/annotation-text",
+    "openNoteAfterCreation": false,
+    "insertLinkToNote": true,
+    "defaultFolderMode": "current folder/notes/<file-name>",
+    "template": "{{block_link}}",
+    "truncateFileName": false
+  },
+  "idling": {
+    "daysUnused": [
+      "2024-12-05"
+    ]
+  },
+  "clipboard": {
+    "templates": {
+      "front": "",
+      "header": "# {{note_name}}",
+      "highlight": "- {{highlight_text}}",
+      "comment": "- _{{comment_text}}_"
+    }
+  }
+}
