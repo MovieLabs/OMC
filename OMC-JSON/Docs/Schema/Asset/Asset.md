@@ -190,36 +190,43 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 #### audioChannelName
 A formalization of the name of the loudspeaker the Audio Channel in intended to drive.
 
-| Value | Description                        |
-| ----- | ---------------------------------- |
-| C     | Center channel                     |
-| Ch    | Center Height channel              |
-| Cs    | Center Surround channel            |
-| HI    | Hearing Impaired channel           |
-| L     | Left channel                       |
-| Lc    | Left Center channel                |
-| LFE   | Low Frequency Effects channel      |
-| Lh    | Left Height channel                |
-| Lrs   | Left Rear Surround channel         |
-| Lrsh  | Left Rear Surround Height channel  |
-| Ls    | Left Surround channel              |
-| Lsh   | Left Surround Height channel       |
-| Lss   | Left Side Surround channel         |
-| Lssh  | Left Side Surround Height channel  |
-| Lts   | Left Top Surround channel          |
-| R     | Right channel                      |
-| Rc    | Right Center channel               |
-| Rh    | Right Height channel               |
-| Rrs   | Right Rear Surround channel        |
-| Rs    | Right Surround channel             |
-| Rsh   | Right Surround Height channel      |
-| Rss   | Right Surround Height channel      |
-| Rssh  | Right Side Surround Height channel |
-| Rts   | Right Top Surround channel         |
-| Rtsh  | Right Rear Surround Height channel |
-| Ts    | Top Surround channel               |
-| VIN   | Visually Impaired channel          |
-
+| Value | Description |
+|-------|-------------|
+| C | Center channel |
+| Ch | Center Height channel |
+| Cs | Center Surround channel |
+| HI | Hearing Impaired channel |
+| L | Left channel |
+| Lc | Left Center channel |
+| LFE | Low Frequency Effects channel |
+| Lh | Left Height channel |
+| Lrs | Left Rear Surround channel |
+| Lrsh | Left Rear Surround Height channel |
+| Ls | Left Surround channel |
+| Lsh | Left Surround Height channel |
+| Lss | Left Side Surround channel |
+| Lssh | Left Side Surround Height channel |
+| Lst | Left Surround Top |
+| Lt | Left Total |
+| Lts | Left Top Surround channel |
+| M1 | Mono One |
+| M2 | Mono Two |
+| NSC[channel number] | Numbered Source Channel |
+| R | Right channel |
+| Rc | Right Center channel |
+| Rh | Right Height channel |
+| Rrs | Right Rear Surround channel |
+| Rs | Right Surround channel |
+| Rsh | Right Surround Height channel |
+| Rss | Right Surround Height channel |
+| Rssh | Right Side Surround Height channel |
+| Rst | Right Surround Top |
+| Rt | Right Total |
+| Rts | Right Top Surround channel |
+| Rtsh | Right Rear Surround Height channel |
+| S | Surround |
+| Ts | Top Surround channel |
+| VIN | Visually Impaired channel |
 #### audioMixType
 A description of the type or use for this mix.
 

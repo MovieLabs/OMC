@@ -294,17 +294,6 @@ Classification of the content type in a particular Audio Asset.
 | mcaContentSubtype | ctrlValue  | [mcaContentSubtype](#mcaContentSubtype)    | Granular indication of the nature of the content if required. |
 | language          |            | [language](../Utility/Utility.md#language) |                                                               |
 
-#### soundfield
-The acoustical space created by simultaneously reproducing one or more Audio Channels.
-
-| Value | Description                                             |
-| ----- | ------------------------------------------------------- |
-| 51    | 5.1 - Uses channels: L, C, R, LS, RS, LFE               |
-| 61    | 6.1 - Uses channels: L, R, C, Lss, Rss, Cs, LFE         |
-| 71    | 7.1DS - Uses channels: L, C, R, Lss, Rss, Lrs, Rrs, LFE |
-| M     | 1.0 Monaural - Uses channel: C                          |
-| SDS   | 7.1SDS - Uses channels: L, Lc, C, Rc, R, Ls, Rs, LFE    |
-
 ### Controlled Values
 #### mcaContent
 Classification of the content type in a particular Audio Asset.
@@ -353,8 +342,26 @@ Additional classification of the content type in a particular Audio Asset.
 | PRP   | Props: audio content information.       |
 | TECH  | Technical: audio content information.   |
 | WRT   | Writer: audio content information.      |
+#### soundfield
+The acoustical space created by simultaneously reproducing one or more Audio Channels.
 
-
+| Value | Description                                              |
+| ----- | -------------------------------------------------------- |
+| 30    | 3.0 - Uses channels L, C, R                              |
+| 40    | 4.0 - Uses channels L, C, R, S                           |
+| 50    | 5.0 - Uses channels L, C, R, Ls, Rs                      |
+| 51    | 5.1 - Uses channels: L, C, R, LS, RS, LFE                |
+| 51EX  | 5.1 EX - Uses channels L, C, R, Lst, Rst, LFE            |
+| 60    | 6.0 - Uses channels L, C, R, Ls, Rs, Cs                  |
+| 61    | 6.1 - Uses channels: L, R, C, Lss, Rss, Cs, LFE          |
+| 70    | 7.0 DS - Uses channels L, C, R, Lss, Rss, Rls, Rrs       |
+| 71    | 7.1DS - Uses channels: L, C, R, Lss, Rss, Lrs, Rrs, LFE  |
+| DM    | Dual Mono - Uses channels M1, M2                         |
+| DNS   | Discrete Numbered Sources - Uses channels NSC001, NSC002 |
+| LtRt  | Lt-Rt - Uses channels Lt, Rt                             |
+| M     | 1.0 Monaural - Uses channel: C                           |
+| SDS   | 7.1SDS - Uses channels: L, Lc, C, Rc, R, Ls, Rs, LFE     |
+| ST    | Standard Stereo - Uses channels L, R                     |
 
 ## General
 

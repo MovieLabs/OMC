@@ -278,7 +278,12 @@
                 "Lsh",
                 "Lss",
                 "Lssh",
+                "Lst",
+                "Lt",
                 "Lts",
+                "M1",
+                "M2",
+                "NSC[channel number]",
                 "R",
                 "Rc",
                 "Rh",
@@ -287,8 +292,11 @@
                 "Rsh",
                 "Rss",
                 "Rssh",
+                "Rst",
+                "Rt",
                 "Rts",
                 "Rtsh",
+                "S",
                 "Ts",
                 "VIN"
               ]
@@ -5182,11 +5190,21 @@
           "title": "Soundfield",
           "description": "The acoustical space created by simultaneously reproducing one or more Audio Channels.",
           "x-controlledValues": [
+            "30",
+            "40",
+            "50",
             "51",
+            "51EX",
+            "60",
             "61",
+            "70",
             "71",
+            "DM",
+            "DNS",
+            "LtRt",
             "M",
-            "SDS"
+            "SDS",
+            "ST"
           ]
         },
         "provenance": {
