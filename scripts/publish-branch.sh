@@ -2,11 +2,12 @@
 
 # Variables
 SOURCE_REPO_URL="https://github.com/MovieLabs/Prodtech-OMC-Data-Model.git"
-TARGET_REPO_URL="https://github.com/MovieLabs/test-OMC.git"
+# TARGET_REPO_URL="https://github.com/MovieLabs/test-OMC.git"
+TARGET_REPO_URL="https://github.com/MovieLabs/OMC"
 
 SOURCE_BRANCH="${1:-Dev-v2.6}"
-TARGET_BRANCH="${2:-Prod-v2.6}"
-COMMIT_MESSAGE="${3:-Updates for v2.6}"
+TARGET_BRANCH="${2:-main}"
+COMMIT_MESSAGE="${3:-v2.6 release-1}"
 END_TAG_NAME="${4:-tag-v2.6}"
 
 # Clone the source repository
