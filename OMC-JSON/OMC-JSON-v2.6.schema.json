@@ -1097,7 +1097,7 @@
               ],
               "title": "Structural Properties",
               "description": "A set of properties that describe the infrastructure in this form",
-              "properties": {}
+              "properties": ""
             }
           },
           "required": ["entityType"],
@@ -1126,7 +1126,7 @@
               ],
               "title": "Functional Properties",
               "description": "A set of properties that describe the tasks functional use",
-              "properties": {}
+              "properties": ""
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           },
@@ -1355,6 +1355,8 @@
                 "array",
                 "null"
               ],
+              "deprecated": true,
+              "$comment": "Use 'ForEntity' to avoid confusion with the relationship property 'for'",
               "items": {
                 "anyOf": [
                   {"$ref": "#/$defs/core/properties/reference"},
@@ -1379,7 +1381,38 @@
                 ]
               },
               "title": "Context For",
-              "description": "The entities for which this Context applies to"
+              "description": "The entities for which this Context is applicable"
+            },
+            "ForEntity": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/Asset/properties/Asset"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Character"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Context"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Depiction"},
+                  {"$ref": "#/$defs/Participant/properties/Participant"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/SpecialAction"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Effect"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeScene"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeStyling"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeWardrobe"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/ProductionLocation"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/ProductionScene"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Sequence"},
+                  {"$ref": "#/$defs/MediaCreationContext/properties/Slate"}
+                ]
+              },
+              "title": "Context For",
+              "description": "The entities for which this Context is applicable."
             },
             "contributor": {
               "type": [
@@ -1572,6 +1605,21 @@
                     ]
                   }
                 },
+                "Composition": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "$ref": "#/$defs/Utility/properties/Composition"
+                      },
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
                 "CreativeWork": {
                   "type": [
                     "array",
@@ -1648,6 +1696,21 @@
                   "items": {
                     "anyOf": [
                       {"$ref": "#/$defs/Asset/properties/Asset"},
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "Composition": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "$ref": "#/$defs/Utility/properties/Composition"
+                      },
                       {"$ref": "#/$defs/core/properties/reference"}
                     ]
                   }
@@ -2026,6 +2089,21 @@
                     ]
                   }
                 },
+                "Composition": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "$ref": "#/$defs/Utility/properties/Composition"
+                      },
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
                 "Depiction": {
                   "type": [
                     "array",
@@ -2067,6 +2145,136 @@
                         "type": "object",
                         "$ref": "#/$defs/MediaCreationContext/properties/ProductionLocation"
                       },
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                }
+              }
+            },
+            "idea": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "Asset": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "$ref": "#/$defs/Asset/properties/Asset"
+                      },
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "Composition": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "$ref": "#/$defs/Utility/properties/Composition"
+                      },
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                }
+              }
+            },
+            "subject": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "Character": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/MediaCreationContext/properties/Character"},
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "NarrativeAudio": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeAudio"},
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "NarrativeLocation": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeLocation"},
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "NarrativeObject": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeObject"},
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "NarrativeStyling": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeStyling"},
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "NarrativeWardrobe": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/MediaCreationContext/properties/NarrativeWardrobe"},
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "CreativeWork": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {"$ref": "#/$defs/MediaCreationContext/properties/CreativeWork"},
                       {"$ref": "#/$defs/core/properties/reference"}
                     ]
                   }

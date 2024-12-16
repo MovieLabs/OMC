@@ -4,27 +4,29 @@ Informs scope within the construction process of a Creative Work.
 
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property          | Constraint        | Type                                                                           | Description                                                                        |
-| ----------------- | ----------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| entityType        | const<br>required | `"CreativeWork"`                                                               | Declares the entity type.                                                          |
-| contextType       | ctrlValue         | [contextType](#contextType)                                                    | The specific type of context                                                       |
-| contextCategory   |                   | string<br>null                                                                 | Provides an additional level of categorization of the Context beyond it's type.    |
-| contextProperties |                   | [contextProperties](#contextProperties)                                        | Properties specific to this composition                                            |
-| For               |                   |                                                                                |                                                                                    |
-| Context           | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work.                  |
-| contributor       |                   | [contributor](#contributor)                                                    | The person or organization making the contribution.                                |
-| contributesTo     |                   | [contributesTo](#contributesTo)                                                | The creative work that the person or organization is contributing to.              |
-| features          |                   | [features](#features)                                                          | Relates a narrative scene to other narrative entities.                             |
-| featuresIn        |                   | [featuresIn](#featuresIn)                                                      | Relates a narrative entity to a narrative scene.                                   |
-| for               |                   | [for](#for)                                                                    | Relates non-narrative entities, the inverse of has.                                |
-| has               |                   | [has](#has)                                                                    | Relates non-narrative entities, the inverse of for.                                |
-| neededBy          |                   | [neededBy](#neededBy)                                                          | Relates narrative entities, e.g. narrative prop, to a character, inverse of needs. |
-| needs             |                   | [needs](#needs)                                                                | Relates a character to other narrative entities, inverse of neededBy.              |
-| related           |                   | [related](#related)                                                            | A generic related entity.                                                          |
-| represents        |                   | [represents](#represents)                                                      |                                                                                    |
-| representedBy     |                   | [representedBy](#representedBy)                                                |                                                                                    |
-| usedIn            |                   | [usedIn](#usedIn)                                                              |                                                                                    |
-| uses              |                   | [uses](#uses)                                                                  |                                                                                    |
+| Property          | Constraint        | Type                                                                           | Description                                                                                   |
+| ----------------- | ----------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| entityType        | const<br>required | `"Context"`                                                                    | Declares the entity type.                                                                     |
+| contextType       | ctrlValue         | [contextType](#contextType)                                                    | The specific type of context                                                                  |
+| contextCategory   |                   | string<br>null                                                                 | Provides an additional level of categorization of the Context beyond it's type.               |
+| contextProperties |                   | [contextProperties](#contextProperties)                                        | Properties specific to this composition                                                       |
+| ForEntity         |                   | [ [identifier](../Utility/Utility.md#identifier) ]                             | The entities for which this Context is applicable.                                            |
+| Context           | anyOf             | [ [Context](./Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work.                             |
+| contributor       |                   | [contributor](#contributor)                                                    | The person or organization making the contribution.                                           |
+| contributesTo     |                   | [contributesTo](#contributesTo)                                                | The creative work that the person or organization is contributing to.                         |
+| features          |                   | [features](#features)                                                          | Relates a narrative scene to other narrative entities.                                        |
+| featuresIn        |                   | [featuresIn](#featuresIn)                                                      | Relates a narrative entity to a narrative scene.                                              |
+| for               |                   | [for](#for)                                                                    | Relates non-narrative entities, the inverse of has.                                           |
+| has               |                   | [has](#has)                                                                    | Relates non-narrative entities, the inverse of for.                                           |
+| neededBy          |                   | [neededBy](#neededBy)                                                          | Relates narrative entities, e.g. narrative prop, to a character, inverse of needs.            |
+| needs             |                   | [needs](#needs)                                                                | Relates a character to other narrative entities, inverse of neededBy.                         |
+| related           |                   | [related](#related)                                                            | A generic related entity.                                                                     |
+| represents        |                   | [represents](#represents)                                                      |                                                                                               |
+| representedBy     |                   | [representedBy](#representedBy)                                                |                                                                                               |
+| usedIn            |                   | [usedIn](#usedIn)                                                              |                                                                                               |
+| uses              |                   | [uses](#uses)                                                                  |                                                                                               |
+| idea              |                   | [idea](#idea)                                                                  | Relates narrative entities to Assets or Compositions that represent concepts for that entity. |
+| subject           |                   | [subject](#subject)                                                            | Relates Assets and Compositions that are concepts, like artwork, to narrative entities        |
 
 ### Object Properties
 
@@ -62,15 +64,16 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property        | Constraint | Type                                                                                           | Description |
 | --------------- | ---------- | ---------------------------------------------------------------------------------------------- | ----------- |
 | Asset           | anyOf      | [ [Asset](../Asset/Asset.md)<br>[identifier](../Utility/Utility.md#identifier) ]               |             |
+| Composition     | anyOf      | [ [Composition](../Utility/Composition.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 | CreativeWork    | anyOf      | [ [CreativeWork](./CreativeWork.md)<br>[identifier](../Utility/Utility.md#identifier) ]        |             |
 | NarrativeScene  | anyOf      | [ [NarrativeScene](./NarrativeScene.md)<br>[identifier](../Utility/Utility.md#identifier) ]    |             |
 | ProductionScene | anyOf      | [ [ProductionScene](./ProductionScene.md)<br>[identifier](../Utility/Utility.md#identifier) ]  |             |
 | Slate           | anyOf      | [ [Slate](./Slate.md)<br>[identifier](../Utility/Utility.md#identifier) ]                      |             |
-| Composition     | anyOf      | [ [Composition](../Utility/Composition.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 #### has
 | Property          | Constraint | Type                                                                                                        | Description |
 | ----------------- | ---------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
 | Asset             | anyOf      | [ [Asset](../Asset/Asset.md)<br>[identifier](../Utility/Utility.md#identifier) ]                            |             |
+| Composition       | anyOf      | [ [Composition](../Utility/Composition.md)<br>[identifier](../Utility/Utility.md#identifier) ]              |             |
 | Infrastructure    | anyOf      | [ [Infrastructure](../Infrastructure/Infrastructure.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 | NarrativeLocation | anyOf      | [ [NarrativeLocation](./NarrativeLocation.md)<br>[identifier](../Utility/Utility.md#identifier) ]           |             |
 | NarrativeScene    | anyOf      | [ [NarrativeScene](./NarrativeScene.md)<br>[identifier](../Utility/Utility.md#identifier) ]                 |             |
@@ -104,7 +107,6 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 #### representedBy
 | Property        | Constraint | Type                                                                                          | Description |
 | --------------- | ---------- | --------------------------------------------------------------------------------------------- | ----------- |
-| Asset           | anyOf      | [ [Asset](../Asset/Asset.md)<br>[identifier](../Utility/Utility.md#identifier) ]              |             |
 | ProductionScene | anyOf      | [ [ProductionScene](./ProductionScene.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 
 #### usedIn
@@ -117,9 +119,31 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 | Property           | Constraint | Type                                                                                                        | Description |
 | ------------------ | ---------- | ----------------------------------------------------------------------------------------------------------- | ----------- |
 | Asset              | anyOf      | [ [Asset](../Asset/Asset.md)<br>[identifier](../Utility/Utility.md#identifier) ]                            |             |
+| Composition        | anyOf      | [ [Composition](../Utility/Composition.md)<br>[identifier](../Utility/Utility.md#identifier) ]              |             |
 | Depiction          | anyOf      | [ [Depiction](./Depiction.md)<br>[identifier](../Utility/Utility.md#identifier) ]                           |             |
 | Infrastructure     | anyOf      | [ [Infrastructure](../Infrastructure/Infrastructure.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
 | ProductionLocation | anyOf      | [ [ProductionLocation](./ProductionLocation.md)<br>[identifier](../Utility/Utility.md#identifier) ]         |             |
+
+#### idea
+
+| Property    | Constraint | Type                                                                                           | Description |
+| ----------- | ---------- | ---------------------------------------------------------------------------------------------- | ----------- |
+| Asset       | anyOf      | [ [Asset](../Asset/Asset.md)<br>[identifier](../Utility/Utility.md#identifier) ]               |             |
+| Composition | anyOf      | [ [Composition](../Utility/Composition.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
+
+#### subject
+
+| Property          | Constraint | Type                                                                                              | Description |
+| ----------------- | ---------- | ------------------------------------------------------------------------------------------------- | ----------- |
+| Character         | anyOf      | [ [Character](./Character.md)<br>[identifier](../Utility/Utility.md#identifier) ]                 |             |
+| NarrativeAudio    | anyOf      | [ [NarrativeAudio](./NarrativeAudio.md)<br>[identifier](../Utility/Utility.md#identifier) ]       |             |
+| NarrativeLocation | anyOf      | [ [NarrativeLocation](./NarrativeLocation.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
+| NarrativeObject   | anyOf      | [ [NarrativeObject](./NarrativeObject.md)<br>[identifier](../Utility/Utility.md#identifier) ]     |             |
+| NarrativeStyling  | anyOf      | [ [NarrativeStyling](./NarrativeStyling.md)<br>[identifier](../Utility/Utility.md#identifier) ]   |             |
+| NarrativeWardrobe | anyOf      | [ [NarrativeWardrobe](./NarrativeWardrobe.md)<br>[identifier](../Utility/Utility.md#identifier) ] |             |
+
+
+
 #### shootDay
 Details about the shoot day and date.
 
