@@ -88,11 +88,12 @@ Entity schema are now created using the union of a baseEntity schema and a schem
 `tag` and `note` have been added to the baseEntity schema, allowing for these properties to be used across all entities.
 
 #### controlledValue
-A new annotation property `controlledValues` has been added to multiple properties.
+An annotation property `controlledValues` has been added to the JSON-Schema in places where a controlled value should be used.
+JSON-Schema validators should ignore this property, but it can be used by tools, like the MovieLabs validator, to provide additional information to users.
 
-Controlled values signify values for this property are official terms we encourage the use of when constructing
-controlled OMC instances. However, these are not enumerated, because it is possible the list does not cover all
-possible values. They should be used whenever possible, but other values are allowed.
+Controlled values are official defined terms withing OMC, we strongly encourage the use of these when creating OMC instances because,
+it allows consumers to understand the meaning of the value. However, these are not enumerated, because it is possible the list does not cover all
+possible use cases. They should be used whenever possible, but other values are allowed.
 
 
 
