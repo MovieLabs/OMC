@@ -283,6 +283,95 @@ A suggested or intended use for the object in a pipeline.
 | proxy | Lower-resolution geometry used for faster pre-visualization and playback. |
 | rendering | Final high-quality visual output of 3D geometry. |
 
+## Audio
+
+#### audioContent
+Classification of the content type in a particular Audio Asset.
+
+| Property          | Constraint | Type                                       | Description                                                   |
+| ----------------- | ---------- | ------------------------------------------ | ------------------------------------------------------------- |
+| mcaContent        | ctrlValue  | [mcaContent](#mcaContent)                  | Indicates the nature of the content.                          |
+| mcaContentSubtype | ctrlValue  | [mcaContentSubtype](#mcaContentSubtype)    | Granular indication of the nature of the content if required. |
+| language          |            | [language](../Utility/Utility.md#language) |                                                               |
+
+### Controlled Values
+#### mcaContent
+Classification of the content type in a particular Audio Asset.
+
+| Value | Description |
+|-------|-------------|
+| ADR | Automated Dialog Replacement audio channel |
+| BG | Backgrounds audio channel |
+| CM | Recorded Commentary audio channel |
+| CRD | Crowd audio channel |
+| DME | DME audio channel |
+| DV | Descriptive Video audio channel |
+| DX | Dialog audio channel |
+| FFX | Filled Effects audio channel |
+| FOL | Foley audio channel |
+| FX | Effects audio channel |
+| GRP | Group audio channel |
+| HI | Hearing Impaired audio channel |
+| LCM | Live commentary audio channel |
+| ME | Music and Effects audio channel |
+| MESP | Music and Effects with Optional audio channel |
+| MOS | Silence audio channel |
+| MX | Music audio channel |
+| NDME | NDME audio channel |
+| ONAR | Optional Narration audio channel |
+| OP | Optional Music and Effects audio channel |
+| PNAR | Program Narration audio channel |
+| PRM | Primary audio channel |
+| SAP | Secondary audio program |
+| VI | Visually Impaired audio channel |
+| VO | Voice Over audio channel |
+| VOC | Vocal audio channel |
+| WLA | Walla audio channel |
+#### mcaContentSubtype
+Additional classification of the content type in a particular Audio Asset.
+
+| Value | Description                             |
+| ----- | --------------------------------------- |
+| ANN   | Announcer: audio content information.   |
+| CAST  | Cast: audio content information.        |
+| CL    | Cloth: audio content information.       |
+| CTR   | Commentator: audio content information. |
+| DIR   | Director: audio content information.    |
+| FS    | Footsteps: audio content information.   |
+| OTHER | Other: audio content information.       |
+| PRP   | Props: audio content information.       |
+| TECH  | Technical: audio content information.   |
+| WRT   | Writer: audio content information.      |
+#### soundfield
+The acoustical space created by simultaneously reproducing one or more Audio Channels.
+
+| Value | Description                                              |
+| ----- | -------------------------------------------------------- |
+| 30    | 3.0 - Uses channels L, C, R                              |
+| 40    | 4.0 - Uses channels L, C, R, S                           |
+| 50    | 5.0 - Uses channels L, C, R, Ls, Rs                      |
+| 51    | 5.1 - Uses channels: L, C, R, LS, RS, LFE                |
+| 51EX  | 5.1 EX - Uses channels L, C, R, Lst, Rst, LFE            |
+| 60    | 6.0 - Uses channels L, C, R, Ls, Rs, Cs                  |
+| 61    | 6.1 - Uses channels: L, R, C, Lss, Rss, Cs, LFE          |
+| 70    | 7.0 DS - Uses channels L, C, R, Lss, Rss, Rls, Rrs       |
+| 71    | 7.1DS - Uses channels: L, C, R, Lss, Rss, Lrs, Rrs, LFE  |
+| DM    | Dual Mono - Uses channels M1, M2                         |
+| DNS   | Discrete Numbered Sources - Uses channels NSC001, NSC002 |
+| LtRt  | Lt-Rt - Uses channels Lt, Rt                             |
+| M     | 1.0 Monaural - Uses channel: C                           |
+| SDS   | 7.1SDS - Uses channels: L, Lc, C, Rc, R, Ls, Rs, LFE     |
+| ST    | Standard Stereo - Uses channels L, R                     |
+
+## General
+
+#### codec
+A system that compresses or decompresses digitized audio, video, or images. 
+
+| Constraint | Type         | Description                                  |
+| ---------- | ------------ | -------------------------------------------- |
+|            | string, null | The specific codec used to encode the Asset. |
+
 ## Versions
 
 #### provenance

@@ -245,14 +245,6 @@ As with name, this is primarily for human consumption and should not be used for
 
 Other properties are detailed in [baseEntity](../Schema/core/baseEntity) schema definition.
 
-
-
-
-
-
-
-
-
 See [Schema-Practices](./SchemaPractices.md) for more information.
 
 <!--

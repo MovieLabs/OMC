@@ -32,11 +32,29 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 #### assetFC
 Describes the use or purpose of an Asset within the production process
 
-| Property             | Constraint | Type                                                                                                                                                                                                                      | Description                                                                                                               |
-| -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| functionalType       | ctrlValue  | [functionalType](#functionalType)                                                                                                                                                                                         | Describes the use or purpose of an Asset within the production process                                                    |
-| functionalProperties |            | [mapFormat](#mapFormat)<br>[mapType](#mapType)<br>[cameraMetadata](#cameraMetadata)<br>[lensMetadata](#lensMetadata)<br>[recorderMetadata](#recorderMetadata)<br>[isSelfContained](#isSelfContained)<br>[timing](#timing) | Properties that future describe an Asset function and use within the production process.                                  |
-| customData           |            | [customData](../Utility/Utility.md#customData)                                                                                                                                                                            | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
+| Property             | Constraint | Type                                           | Description                                                                                                               |
+| -------------------- | ---------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| functionalType       | ctrlValue  | [functionalType](#functionalType)              | Describes the use or purpose of an Asset within the production process                                                    |
+| functionalProperties |            | [functionalProperties](#functionalProperties)  | Properties that future describe an Asset function and use within the production process.                                  |
+| customData           |            | [customData](../Utility/Utility.md#customData) | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
+
+### functionalProperties
+| Property              | Constraint | Type                                                   | Description                                                                            |
+| --------------------- | ---------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| audioChannelName      | ctrlValue  | [ [audioChannelName](#audioChannelName) ]              | A formalization of the name of the loudspeaker the Audio Channel in intended to drive. |
+| audioContent          |            | [ [audioContent](../Utility/Utility.md#audioContent) ] | Classification of the content type in a particular Audio Asset.                        |
+| audioMixType          | ctrlValue  | [audioMixType](#audioMixType)                          | A description of the type or use for this mix.                                         |
+| audioProcessingAction |            | string, null                                           | Indication of what was done to the audio in an Audio Session.                          |
+| audioTrackName        |            | string, null                                           | Further differentiation for the Audio Track.                                           |
+| mapFormat             | ctrlValue  | [mapFormat](#mapFormat)                                | The data layout of a Map                                                               |
+| mapType               | ctrlValue  | [mapType](#mapType)                                    | Guidance about the intended use of a Map in a Material.                                |
+| cameraMetadata        |            | [cameraMetadata](#cameraMetadata)                      | Capture-specific details and information about the Camera itself.                      |
+| lensMetadata          |            | [lensMetadata](#lensMetadata)                          | Capture-specific details and information about the Lens itself.                        |
+| recorderMetadata      |            | [recorderMetadata](#recorderMetadata)                  | Information about a Recorder and the recording media.                                  |
+| isSelfContained       |            | [isSelfContained](#isSelfContained)                    | An Asset that does not depend on any other assets for a particular functional use.     |
+| soundfield            | ctrlValue  | [soundfield](../Utility/Utility.md#soundfield)         | The acoustical space created by simultaneously reproducing one or more Audio Channels. |
+| timing                |            | [timing](#timing)                                      | Timing data for a shot, indicating which frames of the shot are to be used.            |
+
 #### cameraMetadata
 Capture-specific details and information about the Camera itself.
 
@@ -96,6 +114,7 @@ Information about a Recorder and the recording media.
 | recorderSerialNumber    |            | string, null | A number unique to each recorder from the same manufacturer or vendor and of the same model.                |
 | storageMediaUID         |            | string, null | An alphanumeric code that uniquely identifies the storage media (i.e., mag) the footage was recorded on to. |
 #### isSelfContained
+An Asset that does not depend on any other assets for a particular functional use.
 
 | Constraint | Type    | Description                                                                        |
 | ---------- | ------- | ---------------------------------------------------------------------------------- |
@@ -122,19 +141,20 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 | artwork.conceptArt                       | Images that illustrate ideas for potential depictions of elements of the creative intent.                                                                                                     |
 | artwork.storyboard                       | A series of images that forms a visual representation of some part of the narrative.                                                                                                          |
 | audio                                    | A representation of sound.                                                                                                                                                                    |
-| audio.channel                            | N/A                                                                                                                                                                                           |
-| audio.onSetMix                           | A mix of multiple audio channels captured on set.                                                                                                                                             |
-| audio.track                              | N/A                                                                                                                                                                                           |
+| audio.channel                            | A distinct collection of sequenced audio samples that are intended for delivery to a single loudspeaker or other reproduction device.                                                         |
+| audio.mix                                | A combination of multiple Audio Assets and Compositions into a particular format.                                                                                                             |
+| audio.object                             | A segment of audio essence with associated metadata describing positional and other properties which may vary with time.                                                                      |
+| audio.objectMetadata                     | A file containing metadata about the audio object.                                                                                                                                            |
+| audio.track                              | A temporally continuous sequence of related samples.                                                                                                                                          |
+| audioSession                             | An Asset that represents the state of the audio mixing and editing process.                                                                                                                   |
 | cameraMetadata                           | Capture-specific details and information about the Camera itself.                                                                                                                             |
 | capture                                  | The result of recording an event by any means                                                                                                                                                 |
-| capture.audio                            | A representation of sound.                                                                                                                                                                    |
-| capture.audio.wild                       | An audio capture intended to be synchronized with video but captured separately.                                                                                                              |
 | capture.calibration                      | Captured calibration data from a device.                                                                                                                                                      |
 | capture.cameraProxy                      | A proxy directly generated by the camera.                                                                                                                                                     |
 | capture.faceCamera                       | A capture of an actor's face, often used for motion capture.                                                                                                                                  |
 | capture.lidar                            | Light Detecting and Ranging, a capture from a specialized scanning device that creates a point cloud.                                                                                         |
 | capture.motionCapture                    | The recording of motion as a stream of digital data.                                                                                                                                          |
-| capture.ocf                              | N/A                                                                                                                                                                                           |
+| capture.ocf                              | Original Captured Footage, A moving image captured from a camera.                                                                                                                             |
 | capture.roll                             | Identifier for a group of events captured together on the same camera and recording media.                                                                                                    |
 | capture.witnessCamera                    | A video capture not intended for the creative work, but as a record of related action, typically on-set.                                                                                      |
 | cgModel                                  | A generic use for Geometry.                                                                                                                                                                   |
@@ -144,13 +164,13 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 | color.lut                                | Look up table                                                                                                                                                                                 |
 | configuration                            | Asset that contains information about the configuration of components of the workflow.                                                                                                        |
 | configuration.colorSpace                 | A configuration file for a color management system.                                                                                                                                           |
-| creativeReferenceMaterial                | Images or other material used to inform the creation of a production element, to help convey a tone or look, etc.                                                                             |
 | costume                                  | An Asset used to depict the Narrative Wardrobe of a Character.                                                                                                                                |
+| creativeReferenceMaterial                | Images or other material used to inform the creation of a production element, to help convey a tone or look, etc.                                                                             |
 | lensMetadata                             | Capture-specific details and information about the Lens itself.                                                                                                                               |
 | map                                      | An image intended to drive or influence a behavior or value within a CG workflow.                                                                                                             |
 | material                                 | Data values and relationships required to describe the look of a CG Asset.                                                                                                                    |
 | productionCharacter                      | An Asset used in the portrayal of a Character.                                                                                                                                                |
-| productionProp                           | An Asset used to depict a Narrative Prop.                                                                                                                                                     |
+| productionProp                           | A Depiction of the Narrative Prop.                                                                                                                                                            |
 | productionProp.productionGreenery        | An Asset or Assets used to depict Narrative greenery in a Production Scene.                                                                                                                   |
 | productionProp.productionVehicle         | An Asset used in the Depiction of a Narrative Vehicle                                                                                                                                         |
 | productionSetDressing                    | Assets used in the depiction of Narrative Set Dressing.                                                                                                                                       |
@@ -167,17 +187,61 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 | shot.editorial                           | A shot that has been marked for editorial use.                                                                                                                                                |
 | shot.vfx                                 | A Shot that has been identified as requiring VFX work.                                                                                                                                        |
 | technicalReferenceMaterial               | Images and other material used to inform the execution of the production.                                                                                                                     |
-#### mapFormat
-| Value               |
-| ------------------- |
-| cubeFaceEnvironment |
-| cubeFaceShadow      |
-| latLongEnvironment  |
-| plainTexture        |
-| shadow              |
-| volumeShadow        |
-| volumeTexture       |
+#### audioChannelName
+A formalization of the name of the loudspeaker the Audio Channel in intended to drive.
+
+| Value | Description |
+|-------|-------------|
+| C | Center channel |
+| Ch | Center Height channel |
+| Cs | Center Surround channel |
+| HI | Hearing Impaired channel |
+| L | Left channel |
+| Lc | Left Center channel |
+| LFE | Low Frequency Effects channel |
+| Lh | Left Height channel |
+| Lrs | Left Rear Surround channel |
+| Lrsh | Left Rear Surround Height channel |
+| Ls | Left Surround channel |
+| Lsh | Left Surround Height channel |
+| Lss | Left Side Surround channel |
+| Lssh | Left Side Surround Height channel |
+| Lst | Left Surround Top |
+| Lt | Left Total |
+| Lts | Left Top Surround channel |
+| M1 | Mono One |
+| M2 | Mono Two |
+| NSC[channel number] | Numbered Source Channel |
+| R | Right channel |
+| Rc | Right Center channel |
+| Rh | Right Height channel |
+| Rrs | Right Rear Surround channel |
+| Rs | Right Surround channel |
+| Rsh | Right Surround Height channel |
+| Rss | Right Surround Height channel |
+| Rssh | Right Side Surround Height channel |
+| Rst | Right Surround Top |
+| Rt | Right Total |
+| Rts | Right Top Surround channel |
+| Rtsh | Right Rear Surround Height channel |
+| S | Surround |
+| Ts | Top Surround channel |
+| VIN | Visually Impaired channel |
+#### audioMixType
+A description of the type or use for this mix.
+
+| Value | Description |
+|-------|-------------|
+| finalDeliverable | Playable audio that can be packaged and distributed with a finished Creative Work. |
+| finalMix | A Mix for distribution of the Creative Work. |
+| onSetMix | A Mix of the on-set captured Audio. |
+| printmaster | The combination of STEMs for a particular soundfield at unity gain. |
+| temporaryMix | A non-final Mix used in the creative process, e.g. for review. |
+
+
 #### mapType
+Guidance about the intended use of a Map in a Material
+
 | Value            |
 | ---------------- |
 | albedo           |
@@ -194,7 +258,18 @@ Timing data for a shot, indicating which frames of the shot are to be used.
 | specular         |
 | uvMap            |
 | weightMap        |
+#### mapFormat
+The data layout of a Map.
 
+| Value               | Description |
+| ------------------- | ----------- |
+| cubeFaceEnvironment | N/A         |
+| cubeFaceShadow      | N/A         |
+| latLongEnvironment  | N/A         |
+| plainTexture        | N/A         |
+| shadow              | N/A         |
+| volumeShadow        | N/A         |
+| volumeTexture       | N/A         |
 ## Examples
 
 ```JSON

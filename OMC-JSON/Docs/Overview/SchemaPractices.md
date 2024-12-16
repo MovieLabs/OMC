@@ -65,6 +65,13 @@ We therefore consider it a good practice to set a property's value to `null`, if
 
 With the exception of identifier, arrays may be empty, every entity must have at least one unique identifier.
 
+## Controlled Values
+OMC defines a lot a vocabulary, the intent being, that recipients of OMC-JSON can unambiguously understand what is being described. Many internal systems will have different ways of expressing the same thing, whether it be a different word, spelling, casing, etc. It is OMC's intent to normalize these differences between systems, so there is less guessing and less mapping.
+
+However, it is possible that OMC does not have an existing definition for a given property, and to allow some flexibility, in most cases the schema does not require that only controlled values be used. However, it is best practice, and expected that when a defined term adequately describes a condition it is used in the exact form expressed in the documentation.
+
+Controlled values are present in OMC-JSON schema, they use an annotation property ``x-controlledValues`` . This is not an official JSON-Schema property, and should be ignored by schema validators. The MovieLabs OMC-Validator utilizes the annotation and will issue a warning if a non-controlled value is used on a property that has a list of controlled values.
+
 ## Extending OMC-JSON
 Extensions and modifications to OMC-JSON can create compatibility problems; see [Schema Versioning](./SchemaVersioning.md). The OMC-JSON schema generally sets the JSON-Schema keyword `additionalProperties` to ``false``, ensuring misspellings or custom properties will be rejected on validation.
 

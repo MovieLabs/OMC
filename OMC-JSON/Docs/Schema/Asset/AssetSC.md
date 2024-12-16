@@ -32,6 +32,12 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 
 | Property              | Constraint | Type                                                                 | Description                                                                                                           |
 | --------------------- | ---------- | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| assetGroup            |            | [assetGroup](#assetGroup)                                            | Properties of the Asset Group.                                                                                        |
+| audioBitRate          |            | integer, null                                                        | The number of bits in one second of sampled audio, expressed in Kbits per second.                                     |
+| audioSampleRate       |            | integer, null                                                        | The average number of samples per second taken from the source audio input in KHz.                                    |
+| audioSampleSize       |            | integer, null                                                        | The number of bits per audio sample.                                                                                  |
+| codec                 |            | [codec](../Utility/Utility.md#codec)                                 | The specific codec used to encode the Asset.                                                                          |
+| dimensions            |            | [dimensions](../Utility/Utility.md#dimensions)                       | Dimensions for an asset in a unit of measurement.                                                                     |
 | boundingBox           |            | [boundingBox](../Utility/Utility.md#boundingBox)                     | The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry. |
 | coordinateOrientation |            | [coordinateOrientation](../Utility/Utility.md#coordinateOrientation) | The direction and handedness of the axes used in the geometry.                                                        |
 | fileDetails           |            | [fileDetails](#fileDetails)                                          |                                                                                                                       |
@@ -41,6 +47,11 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | materialType          | ctrlValue  | [materialType](../Utility/Utility.md#materialType)                   | A categorization of what the material is intended to simulate.                                                        |
 | purpose               | ctrlValue  | [purpose](../Utility/Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
 | scale                 |            | [scale](../Utility/Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
+
+#### assetGroup
+| Property  | Constraint | Type    | Description                                       |
+| --------- | ---------- | ------- | ------------------------------------------------- |
+| isOrdered |            | boolean | `true` if this should be treated as an ordered st |
 
 #### fileDetails
 | Property      | Constraint | Type         | Description                                                                                                       |
@@ -56,15 +67,14 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | recordType |            | string, null | A user generated categorization or description of the record.                                                     |
 | mediaType  |            | string, null | A two-part identifier for file formats and content formats, often referred to as a MIME type and defined by IANA. |
 
-
 ### Controlled Values
 
 #### structuralType
 | Value                       | Description                                                                                           |
 | --------------------------- | ----------------------------------------------------------------------------------------------------- |
+| assetGroup                  | Signifies this Asset represents and Asset Group.                                                      |
 | digital                     | Information that exists as digital data.                                                              |
 | digital.audio               | A representation of sound.                                                                            |
-| digital.audio.wild          | N/A                                                                                                   |
 | digital.audioVisual         | A Moving Image with Audio synchronized to the images.                                                 |
 | digital.data                | An Asset composed of digital data.                                                                    |
 | digital.document            | A human readable object containing text and/or images.                                                |
@@ -75,8 +85,6 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | digital.structuredDocument  | A Document structured according to a set of rules which are used to parse or understand the document. |
 | geometry                    | A shape defined in three dimensions.                                                                  |
 | physical                    | A physical asset is one where the tangible reality of the Asset is its defining feature.              |
-| physical.audio              | A representation of sound.                                                                            |
-| physical.audio.wild         | N/A                                                                                                   |
 | physical.audioVisual        | A Moving Image with Audio synchronized to the images.                                                 |
 | physical.document           | A human readable object containing text and/or images.                                                |
 | physical.image              | A two-dimensional visual representation.                                                              |

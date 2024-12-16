@@ -31,7 +31,7 @@ Schema Documentation
 **/Examples**: A set of example OMC-JSON files, these will validate against the schema and demonstrate the structure and concepts.
 
 ## OMC-RDF
-The RDF in this repo is currently v2.0. The schema is divided into three files:
+The RDF in this repo is currently v2.6. The schema is divided into three files:
 
 - cw.ttl is the basic Creative Work. The namespace is [https://mc.movielabs.com/cw](https://mc.movielabs.com/rdf/cw_v1.2.ttl) and it uses cw: as its prefix. A Creative Work is a uniquely identified production.  (See [Part 6: Creative Works](https://mc.movielabs.com/docs/ontology/creative-works/introduction))
 

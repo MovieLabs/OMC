@@ -148,13 +148,15 @@
                     "string",
                     "null"
                   ],
-                  "controlledValues": [
+                  "x-controlledValues": [
                     "artwork",
                     "artwork.animatedStoryboard",
                     "artwork.conceptArt",
                     "artwork.storyboard",
                     "audio",
                     "audio.channel",
+                    "audio.object",
+                    "audio.objectMetadata",
                     "audio.onSetMix",
                     "audio.track",
                     "cameraMetadata",
@@ -207,14 +209,20 @@
                     "null"
                   ],
                   "properties": {
+                    "audioChannelName": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioChannelName"},
+                    "audioContent": {"$ref": "#/$defs/Utility/properties/audioContent"},
+                    "audioMixType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioMixType"},
+                    "audioProcessingAction": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioProcessingAction"},
+                    "cameraMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/cameraMetadata"},
+                    "isSelfContained": {"$ref": "#/$defs/Asset/properties/Asset/$defs/isSelfContained"},
+                    "lensMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/lensMetadata"},
                     "mapFormat": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapFormat"},
                     "mapType": {"$ref": "#/$defs/Asset/properties/Asset/$defs/mapType"},
-                    "scd": {"$ref": "#/$defs/Asset/properties/Asset/$defs/scd"},
-                    "cameraMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/cameraMetadata"},
-                    "lensMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/lensMetadata"},
                     "recorderMetadata": {"$ref": "#/$defs/Asset/properties/Asset/$defs/recorderMetadata"},
-                    "isSelfContained": {"$ref": "#/$defs/Asset/properties/Asset/$defs/isSelfContained"},
-                    "timing": {"$ref": "#/$defs/Asset/properties/Asset/$defs/timing"}
+                    "soundfield": {"$ref": "#/$defs/Utility/properties/soundfield"},
+                    "timing": {"$ref": "#/$defs/Asset/properties/Asset/$defs/timing"},
+                    "scd": {"$ref": "#/$defs/Asset/properties/Asset/$defs/scd"},
+                    "audioTrackName": {"$ref": "#/$defs/Asset/properties/Asset/$defs/audioTrackName"}
                   }
                 },
                 "customData": {"$ref": "#/$defs/Utility/properties/customData"}
@@ -247,98 +255,82 @@
           },
           "required": ["entityType"],
           "$defs": {
-            "scd": {
-              "type": "object",
-              "properties": {
-                "component": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "sourceStart": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "sourceEnd": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "recordStart": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "recordEnd": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "duration": {
-                        "type": [
-                          "string",
-                          "null"
-                        ]
-                      },
-                      "Shot": {
-                        "type": "object",
-                        "anyOf": [
-                          {"$ref": "#/$defs/core/properties/reference"},
-                          {"$ref": "#/$defs/Asset/properties/Asset"}
-                        ]
-                      }
-                    }
-                  }
-                }
-              },
-              "additionalProperties": false,
-              "deprecated": true
+            "audioChannelName": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "title": "Audio Channel Name",
+              "description": "A formalization of the name of the loudspeaker the Audio Channel in intended to drive.",
+              "items": {"type": "string"},
+              "x-controlledValues": [
+                "C",
+                "Ch",
+                "Cs",
+                "HI",
+                "L",
+                "Lc",
+                "LFE",
+                "Lh",
+                "Lrs",
+                "Lrsh",
+                "Ls",
+                "Lsh",
+                "Lss",
+                "Lssh",
+                "Lst",
+                "Lt",
+                "Lts",
+                "M1",
+                "M2",
+                "NSC[channel number]",
+                "R",
+                "Rc",
+                "Rh",
+                "Rrs",
+                "Rs",
+                "Rsh",
+                "Rss",
+                "Rssh",
+                "Rst",
+                "Rt",
+                "Rts",
+                "Rtsh",
+                "S",
+                "Ts",
+                "VIN"
+              ]
             },
-            "mapFormat": {
+            "audioMixType": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Map Format",
-              "controlledValues": [
-                "plainTexture",
-                "shadow",
-                "volumeTexture",
-                "volumeShadow",
-                "latLongEnvironment",
-                "cubeFaceShadow",
-                "cubeFaceEnvironment"
-              ],
-              "description": "The data layout of a Map."
+              "title": "Audio Mix Type",
+              "description": "A description of the type or use for this mix.",
+              "x-controlledValues": [
+                "finalDeliverable",
+                "finalMix",
+                "onSetMix",
+                "printmaster",
+                "temporaryMix"
+              ]
             },
-            "mapType": {
+            "audioProcessingAction": {
               "type": [
                 "string",
                 "null"
               ],
-              "title": "Map Type",
-              "controlledValues": [
-                "diffuse",
-                "weightMap",
-                "uvMap",
-                "specular",
-                "roughness",
-                "projectionMap",
-                "normal",
-                "opacity",
-                "metalness",
-                "heightMap",
-                "depthMap",
-                "bump",
-                "ambientOcclusion",
-                "albedo"
+              "title": "Audio Processing Action",
+              "description": "Indication of what was done to the audio in an Audio Session."
+            },
+            "audioTrackName": {
+              "type": [
+                "string",
+                "null"
               ],
-              "description": "Guidance about the intended use of a Map in a Material."
+              "title": "Audio Track Name",
+              "description": "Further differentiation for the Audio Track."
             },
             "cameraMetadata": {
               "type": [
@@ -583,6 +575,14 @@
               "title": "Camera Metadata",
               "description": "Capture-specific details and information about the Camera itself."
             },
+            "isSelfContained": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Is Self Contained",
+              "description": "Indicates the Asset does not depend on other Assets to perform its functional use."
+            },
             "lensMetadata": {
               "type": [
                 "object",
@@ -672,6 +672,47 @@
                 }
               }
             },
+            "mapFormat": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Map Format",
+              "x-controlledValues": [
+                "plainTexture",
+                "shadow",
+                "volumeTexture",
+                "volumeShadow",
+                "latLongEnvironment",
+                "cubeFaceShadow",
+                "cubeFaceEnvironment"
+              ],
+              "description": "The data layout of a Map."
+            },
+            "mapType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Map Type",
+              "x-controlledValues": [
+                "diffuse",
+                "weightMap",
+                "uvMap",
+                "specular",
+                "roughness",
+                "projectionMap",
+                "normal",
+                "opacity",
+                "metalness",
+                "heightMap",
+                "depthMap",
+                "bump",
+                "ambientOcclusion",
+                "albedo"
+              ],
+              "description": "Guidance about the intended use of a Map in a Material."
+            },
             "recorderMetadata": {
               "type": [
                 "object",
@@ -723,14 +764,6 @@
               },
               "additionalProperties": false
             },
-            "isSelfContained": {
-              "type": [
-                "boolean",
-                "null"
-              ],
-              "title": "Is Self Contained",
-              "description": "Indicates the Asset does not depend on other Assets to perform its functional use."
-            },
             "timing": {
               "type": [
                 "object",
@@ -769,6 +802,58 @@
                 }
               },
               "additionalProperties": false
+            },
+            "scd": {
+              "type": "object",
+              "properties": {
+                "component": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sourceStart": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "sourceEnd": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "recordStart": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "recordEnd": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "duration": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "Shot": {
+                        "type": "object",
+                        "anyOf": [
+                          {"$ref": "#/$defs/core/properties/reference"},
+                          {"$ref": "#/$defs/Asset/properties/Asset"}
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "additionalProperties": false,
+              "deprecated": true
             }
           },
           "unevaluatedProperties": false
@@ -864,27 +949,27 @@
               ],
               "title": "Structural Type",
               "description": "A cannonical description of the the assets form.",
-              "controlledValues": [
+              "x-controlledValues": [
                 "assetGroup",
+                "digital",
+                "digital.audio",
+                "digital.audio.object",
+                "digital.audioVisual",
+                "digital.data",
+                "digital.document",
+                "digital.image",
+                "digital.imageSequence",
+                "digital.movingImage",
+                "digital.procedural",
+                "digital.structuredDocument",
                 "geometry",
                 "physical",
-                "physical.image",
-                "physical.structuredDocument",
-                "physical.document",
                 "physical.audioVisual",
-                "physical.audio",
+                "physical.document",
+                "physical.image",
                 "physical.imageSequence",
                 "physical.movingImage",
-                "digital",
-                "digital.movingImage",
-                "digital.image",
-                "digital.structuredDocument",
-                "digital.document",
-                "digital.audioVisual",
-                "digital.audio",
-                "digital.imageSequence",
-                "digital.data",
-                "digital.procedural"
+                "physical.structuredDocument"
               ]
             },
             "structuralProperties": {
@@ -896,13 +981,17 @@
               "description": "A set of properties that describe the asset in this form.",
               "properties": {
                 "assetGroup": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/assetGroup"},
-                "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
-                "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
-                "dimensions": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/dimensions"},
+                "audioBitRate": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/audioBitRate"},
+                "audioSampleRate": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/audioSampleRate"},
+                "audioSampleSize": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/audioSampleSize"},
+                "dimensions": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/dimensions"},
                 "boundingBox": {"$ref": "#/$defs/Utility/properties/boundingBox"},
+                "codec": {"$ref": "#/$defs/Utility/properties/codec"},
                 "coordinateOrientation": {"$ref": "#/$defs/Utility/properties/coordinateOrientation"},
+                "fileDetails": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/fileDetails"},
                 "geometryType": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/geometryType"},
                 "levelOfDetail": {"$ref": "#/$defs/Utility/properties/levelOfDetail"},
+                "linkset": {"$ref": "#/$defs/Asset/properties/AssetSC/$defs/linkset"},
                 "purpose": {"$ref": "#/$defs/Utility/properties/purpose"},
                 "scale": {"$ref": "#/$defs/Utility/properties/scale"}
               },
@@ -928,28 +1017,40 @@
           "required": ["entityType"],
           "description": "Describes the form of an Asset along with the attributes specific to that asset’s form.",
           "$defs": {
-            "linkset": {
+            "assetGroup": {
               "type": [
                 "object",
                 "null"
               ],
               "properties": {
-                "recordType": {
-                  "type": [
-                    "string",
-                    "null"
-                  ]
-                },
-                "mediaType": {
-                  "type": [
-                    "string",
-                    "null"
-                  ]
-                }
+                "isOrdered": {"type": "boolean"}
               },
-              "additionalProperties": false,
-              "title": "Linkset",
-              "description": "When used with resolution system returning a linkset additional information can help disambiguate multiple linksets in the response."
+              "title": "Asset Group",
+              "description": "Properties of the Asset Group."
+            },
+            "audioBitRate": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "title": "Audio Bit Rate",
+              "description": "The number of bits in one second of sampled audio, expressed in Kbits per second."
+            },
+            "audioSampleRate": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "title": "Audio Sample Rate",
+              "description": "The average number of samples per second taken from the source audio input in KHz."
+            },
+            "audioSampleSize": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "title": "Audio Sample Size",
+              "description": "The number of bits per audio sample."
             },
             "fileDetails": {
               "type": [
@@ -986,30 +1087,12 @@
               "title": "File Details",
               "description": "Where opaque identifiers are used it can be useful to express naming for use in traditional file systems"
             },
-            "dimensions": {"$ref": "#/$defs/Utility/properties/unitOfMeasurement/properties/dimensions"},
-            "assetGroup": {
-              "type": [
-                "object",
-                "null"
-              ],
-              "properties": {
-                "isOrdered": {
-                  "type": [
-                    "boolean",
-                    "null"
-                  ]
-                }
-              },
-              "additionalProperties": false,
-              "title": "Asset Group",
-              "description": "Structural properties of an Asset Group"
-            },
             "geometryType": {
               "type": [
                 "string",
                 "null"
               ],
-              "controlledValues": [
+              "x-controlledValues": [
                 "torus",
                 "teapot",
                 "plane",
@@ -1021,7 +1104,32 @@
                 "cone",
                 "capsule",
                 "basisCurve"
-              ]
+              ],
+              "title": "Geometry Type",
+              "description": "A description of the general underlying form of a three-dimensional shape."
+            },
+            "linkset": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "recordType": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "mediaType": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "title": "Linkset",
+              "description": "When used with resolution system returning a linkset additional information can help disambiguate multiple linksets in the response."
             }
           },
           "unevaluatedProperties": false
@@ -1096,8 +1204,7 @@
                 "null"
               ],
               "title": "Structural Properties",
-              "description": "A set of properties that describe the infrastructure in this form",
-              "properties": ""
+              "description": "A set of properties that describe the infrastructure in this form"
             }
           },
           "required": ["entityType"],
@@ -1125,8 +1232,7 @@
                 "null"
               ],
               "title": "Functional Properties",
-              "description": "A set of properties that describe the tasks functional use",
-              "properties": ""
+              "description": "A set of properties that describe the tasks functional use"
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           },
@@ -1307,7 +1413,7 @@
               ],
               "title": "Context Type",
               "description": "A classification of the type of context represented",
-              "controlledValues": [
+              "x-controlledValues": [
                 "narrative",
                 "production",
                 "shootDay",
@@ -2306,7 +2412,7 @@
               }
             }
           },
-          "unevaluatedProperties": true,
+          "unevaluatedProperties": false,
           "required": ["entityType"]
         },
         "CreativeWork": {
@@ -3806,7 +3912,6 @@
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
           },
-          "additionalProperties": true,
           "description": "Describes the purpose of the Task within the production process"
         }
       },
@@ -3917,16 +4022,22 @@
               ],
               "title": "Composition Type",
               "description": "The type, or sub-class, that this specific Composition represents.",
-              "controlledValues": [
+              "x-controlledValues": [
+                "audio",
+                "audio.bed",
+                "audio.preMix",
+                "audio.printmaster",
+                "audio.soundEditorialUnit",
+                "audio.stem",
                 "cgAssembly",
-                "geometryAssembly",
                 "compositeMaterial",
+                "geometryAssembly",
                 "sequence",
-                "sequence.vfx",
-                "sequence.vfxImage",
-                "sequence.editorial",
+                "sequence.animation",
                 "sequence.color",
-                "sequence.animation"
+                "sequence.editorial",
+                "sequence.vfx",
+                "sequence.vfxImage"
               ]
             },
             "compositionProperties": {
@@ -3936,11 +4047,13 @@
               ],
               "title": "Composition Properties",
               "properties": {
+                "audioContent": {"$ref": "#/$defs/Utility/properties/audioContent"},
                 "boundingBox": {"$ref": "#/$defs/Utility/properties/boundingBox"},
                 "coordinateOrientation": {"$ref": "#/$defs/Utility/properties/coordinateOrientation"},
                 "levelOfDetail": {"$ref": "#/$defs/Utility/properties/levelOfDetail"},
                 "purpose": {"$ref": "#/$defs/Utility/properties/purpose"},
-                "scale": {"$ref": "#/$defs/Utility/properties/scale"}
+                "scale": {"$ref": "#/$defs/Utility/properties/scale"},
+                "soundfield": {"$ref": "#/$defs/Utility/properties/soundfield"}
               }
             },
             "Asset": {
@@ -4951,7 +5064,7 @@
           ],
           "title": "Purpose (Geometry)",
           "description": "A suggested or intended use for the object in a pipeline.",
-          "controlledValues": [
+          "x-controlledValues": [
             "printing",
             "general",
             "annotation",
@@ -4967,7 +5080,7 @@
             "string",
             "null"
           ],
-          "controlledValues": [
+          "x-controlledValues": [
             "gasOrLiquid",
             "gasOrLiquid.fire",
             "gasOrLiquid.oil",
@@ -4994,6 +5107,105 @@
           ],
           "title": "Material Type",
           "description": "Data values and relationships required to describe the look of a CG Asset."
+        },
+        "codec": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Codec",
+          "description": "The specific codec used to encode the Asset."
+        },
+        "audioContent": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "mcaContent": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "x-controlledValues": [
+                  "ADR",
+                  "BG",
+                  "CM",
+                  "CRD",
+                  "DME",
+                  "DV",
+                  "DX",
+                  "FFX",
+                  "FOL",
+                  "FX",
+                  "GRP",
+                  "HI",
+                  "LCM",
+                  "ME",
+                  "MESP",
+                  "MOS",
+                  "MX",
+                  "NDME",
+                  "ONAR",
+                  "OP",
+                  "PNAR",
+                  "PRM",
+                  "SAP",
+                  "VI",
+                  "VO",
+                  "VOC",
+                  "WLA"
+                ],
+                "title": "MCA Content",
+                "description": "Indicates the nature of the content."
+              },
+              "mcaContentSubtype": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "x-controlledValues": [
+                  "ANN",
+                  "CAST",
+                  "CL",
+                  "CTR",
+                  "DIR",
+                  "FS",
+                  "OTHER",
+                  "PRP",
+                  "TECH",
+                  "WRT"
+                ],
+                "description": "Granular indication of the nature of the content if required."
+              },
+              "language": {"$ref": "#/$defs/Utility/properties/language"}
+            }
+          },
+          "title": "Audio Content Information",
+          "description": "Identification of the content type in a particular Audio Asset."
+        },
+        "soundfield": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Soundfield",
+          "description": "The acoustical space created by simultaneously reproducing one or more Audio Channels.",
+          "x-controlledValues": [
+            "30",
+            "40",
+            "50",
+            "51",
+            "51EX",
+            "60",
+            "61",
+            "70",
+            "71",
+            "DM",
+            "DNS",
+            "LtRt",
+            "M",
+            "SDS",
+            "ST"
+          ]
         },
         "provenance": {
           "type": [

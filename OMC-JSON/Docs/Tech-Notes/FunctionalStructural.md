@@ -17,7 +17,7 @@ In OMC-JSON for the Participant and Assets functional characteristics we have ma
 
 The naming convention for the types uses dot notation and camel case for each term. This can imply a hierarchical naming structure, which is mostly followed. However, there is an inevitable discussion as to whether something is a digital.image, or an image.digital. There is no right answer but establishing an agreed order can help parsers. We also consider the strings to be splittable, and the individual terms can be used for categorization.
 
-The sections below show some examples. Future work includes a published vocabulary as part of this repo.
+The sections below show some examples.
 
 **Structural & Functional Properties**
 
@@ -25,7 +25,7 @@ Along with a structural or functional type there may also be a set of properties
 
 For example, a blob of data would structurally be `digital.data`. If that data had two representations, XML and JSON, then including a property describing it’s mimetype would differentiate the two and allow the correct representation to be selected for a given application.
 
-The schema currently has a very limited set of definitions for structural and functional properties, future work will look to expand this for a set of properties, although the expectation is custom properties will be need, for which the `customData` property exists.
+The schema currently has a very limited set of definitions for structural and functional properties, future work will look to expand this for a set of properties, although the expectation is custom properties will be need, for which the [customData](../Schema/Utility/Utility.md#customData) property exists.
 
 ## Assets
 Asset entities are likely to be the vast majority of entities in any given production and will make up the bulk of the structural and functional types.
@@ -92,6 +92,7 @@ OMC-JSON: AssetSC
       "width": "8064px",
       "height": "6048px"
     }
+  }
 }
 ```    
 **Example Structural Types**
