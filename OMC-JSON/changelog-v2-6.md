@@ -2,54 +2,65 @@
 
 ### Composition
 
-A new top-level entity type of Composition was added
+A new top-level entity type of Composition was added. Compositions are a collection of Assets that when combined according with a set of instructions create a new Asset.
 
 ### Character
-`profile.background`: This should now use the annotation property.
+`profile.background`: This should now use the annotation utility schema to express values regarding a characters background.
 
 ### Context
-`contextCategory` was added as a new property to allow a canonical way to describe finer grained categorization then just the `contextType`.
+`contextCategory`: A new property to allow a canonical way to describe finer grained categorization of a Context then just the `contextType`.
+
+`idea`: A relationship property to allow for the association of a narrative entity with an asset or composition representing a concept.
+
+`subject`: A relationship property to allow for the association of an asset or composition representing its narrative subject entity.
 
 ### CreativeWork
 Additional properties were added to extend functionality and provide more detailed information about the creative work and add support for episodic works.
 `creativeWorkType`: Describes the type or sub-class of creative work (creativeWork, series, season, episode).
+
 `creativeWorkCategory`: Describes the category of the creative work (movie, tv short).
+
 `seasonNumber`: The season number of the creative work when applicable.
+
 `episodeSequence`: The episode sequence description of the creative work when applicable.
+
 `title`: deprecated in favor of `creativeWorkTitle`.
-`creativeWorkTitle`: The title of the creative work, the structure now provides for adding a language code to the title. 
+
+`creativeWorkTitle`: The title of the creative work, the structure now provides for adding a language code to the title.
+
 `Series`: A new intrinsic relationship to relate a creative work to another Creative Work describing the series.
+
 `Season`: A new intrinsic relationship to relate a creative work to another Creative Work describing the season.
+
 `Episode`: A new intrinsic relationship to relate a creative work to other Creative Works that are episodes.
+
 `ProductionCompany`: A new intrinsic relationship to relate a creative work to a company that produced it.
+
 
 ### Depiction
 
-The property Depicter used in 2.0 has been deprecated and replaced with Depiction. The schema will continue to support Depicter for backwards compatibility, but it is recommended that new implementations use Depictor.
-This was an spelling error that was corrected, and now aligns with the formal documentation.
+The property Depicter used in 2.0 has been deprecated and replaced with Depictor. This was an spelling error that was corrected, and now aligns with the formal documentation.
 
 Depiction can now have Compositions as the depicted entity, this allows for more complex depictions to be described.
 
 ### NarrativeAudio
-The property `narrativeType` has new enumerated values to align the naming schema with other narrative types.
+The property `narrativeType` has new enumerated values to align the naming scheme with other narrative types.
 audio -> narrativeAudio
 soundEffect -> narrativeSoundEffect
 music -> narrativeMusic
 
 ### NarrativeAction
 
-NarrativeAction was the development name, the release version should have been 'SpecialAction'. NarrativeAction has been deprecated and replaced with SpecialAction. The schema will continue to support NarrativeAction for backwards compatibility, but it is recommended that new implementations use SpecialAction.
+NarrativeAction has been renamed to 'SpecialAction'. This was a bug in the 2.0 schema that has been corrected.
 
 ### NarrativeLocation
-The property `narrativeType` was added, with a single enumerated value of `narrativeLocation`. This is for consistency
-with other narrative types and for any future expansion of the narrative types.
+`narrativeType`: This has a single enumerated value of `narrativeLocation`. This is for consistency with other narrative entities and for any future expansion.
 
 ### NarrativeScene
-The property `narrativeType` was added, with a single enumerated value of `narrativeScene`. This is for consistency
-with other narrative types and for any future expansion of the narrative types.
+`narrativeType`: This has a single enumerated value of `narrativeScene`. This is for consistency with other narrative entities and for any future expansion.
 
 ### Participant
-`contact`: This property was deprecated, contact information should be a property of the Participant structural characteristics.
+`contact`: This property was deprecated, contact information should be a property of the Participant Structural Characteristics.
 
 ### Asset
 Formal definitions for asset functional properties:
@@ -77,11 +88,12 @@ Entity schema are now created using the union of a baseEntity schema and a schem
 `tag` and `note` have been added to the baseEntity schema, allowing for these properties to be used across all entities.
 
 #### controlledValue
-A new annotation property `controlledValues` has been added to multiple properties.
+An annotation property `controlledValues` has been added to the JSON-Schema in places where a controlled value should be used.
+JSON-Schema validators should ignore this property, but it can be used by tools, like the MovieLabs validator, to provide additional information to users.
 
-Controlled values signify values for this property are official terms we encourage the use of when constructing
-controlled OMC instances. However, these are not enumerated, because it is possible the list does not cover all
-possible values. They should be used whenever possible, but other values are allowed.
+Controlled values are official defined terms withing OMC, we strongly encourage the use of these when creating OMC instances because,
+it allows consumers to understand the meaning of the value. However, these are not enumerated, because it is possible the list does not cover all
+possible use cases. They should be used whenever possible, but other values are allowed.
 
 
 
