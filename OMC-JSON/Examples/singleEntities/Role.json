@@ -1,0 +1,13 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Role",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "rol/7EdFxI0xaHHruB97KA9Ni"
+      }
+    ],
+    "roleType": "director"
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+      }
+    ],
+    "name": "Headquarters",
+    "description": "The galactic federation home base of operations",
+    "narrativeType": "narrativeLocation",
+    "Location": {
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "nloc/St_Hh-LxAQo4ICUAtbZ0v"
+        }
+      ]
+    },
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/34T8RjoQbKCl5lnyalkmr"
+          }
+        ]
+      }
+    ],
+    "Depiction": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "dep-HNvGRn9JY9wv1IwjG8Gff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "narrativeType": "narrativeLocation",
+    "Location": null,
+    "Context": null,
+    "Depiction": null
+  }
+]

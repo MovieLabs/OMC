@@ -19,19 +19,18 @@ In the tables below, each Asset that contains a property that references another
 
 **Asset**
 
-| **Property**  | **Name**   | **Target entity**  | **Target type**     |
-| ------------- | ---------- | ------------------ | ------------------- |
-| [ Asset ]     |            | Asset              |                     |
-| AssetSC       |            | AssetSC            | Any structural type |
-| [ Context ]   | for        | NarrativeScene     |                     |
-|               |            | Sequence           |                     |
-|               | has        | NarrativeScene     |                     |
-|               |            | Participant        | screenWriter        |
-|               |            | Slate              |                     |
-|               | represents | ProductionScene    |                     |
-|               | usedIn     | ProductionLocation |                     |
-|               |            | ProductionScene    |                     |
-| [ Depiction ] |            | Depiction          | portrayal           |
+| **Property**  | **Name** | **Target entity**  | **Target type**     |
+| ------------- | -------- | ------------------ | ------------------- |
+| [ Asset ]     |          | Asset              |                     |
+| AssetSC       |          | AssetSC            | Any structural type |
+| [ Context ]   | for      | NarrativeScene     |                     |
+|               |          | Composition        |                     |
+|               | has      | NarrativeScene     |                     |
+|               |          | Participant        | screenWriter        |
+|               |          | Slate              |                     |
+|               | usedIn   | ProductionLocation |                     |
+|               |          | ProductionScene    |                     |
+| [ Depiction ] |          | Depiction          | portrayal           |
 
 ----------
 
@@ -48,7 +47,7 @@ In the tables below, each Asset that contains a property that references another
 | **Property**  | **Name**   | **Target entity** | **Target type**                                       |
 | ------------- | ---------- | ----------------- | ----------------------------------------------------- |
 | [ Context ]   | featuresIn | NarrartiveScene   |                                                       |
-|               | needs      | Effect            | sfx, vfx                                              |
+|               | needs      | Effect            | effect, specialEffect, visualEffect                   |
 |               |            | NarrativeAudio    | narrativeSoundEffect, narrativeMusic                  |
 |               |            | NarrativeObject   | narrativeProp, narrativeSetDressing, narrativeVehicle |
 |               |            | NarrativeStyling  | narrativeHair,<br>narrativeMakeup                     |
@@ -79,9 +78,9 @@ In the tables below, each Asset that contains a property that references another
 
 | **Property** | **Name** | **Target entity** | **Target type**                                       |
 | ------------ | -------- | ----------------- | ----------------------------------------------------- |
-| [ Context ]  | uses     | Asser             |                                                       |
+| [ Context ]  | uses     | Asset             |                                                       |
 |              | usedIn   | ProductionScene   |                                                       |
-| Depicts      |          | Character         |                                                       |
+| Depicts      |          | Character         | character, extra                                      |
 |              |          | NarrativeLocation |                                                       |
 |              |          | NarrativeObject   | narrativeProp, narrativeSetDressing, narrativeVehicle |
 |              |          | NarrativeStyling  | narrativeHair,<br>narrativeMakeup                     |
@@ -93,11 +92,11 @@ In the tables below, each Asset that contains a property that references another
 
 **Effect**
 
-| **Property**  | **Name**   | **Target entity** | **Target type** |
-| ------------- | ---------- | ----------------- | --------------- |
-| [ Context ]   | featuresIn | NarrativeScene    |                 |
-|               | neededBy   | Character         |                 |
-| [ Depiction ] |            | Depiction         | portrayal       |
+| **Property**  | **Name**   | **Target entity** | **Target type**  |
+| ------------- | ---------- | ----------------- | ---------------- |
+| [ Context ]   | featuresIn | NarrativeScene    |                  |
+|               | neededBy   | Character         | character, extra |
+| [ Depiction ] |            | Depiction         | portrayal        |
 
 ----------
 
@@ -112,11 +111,11 @@ In the tables below, each Asset that contains a property that references another
 
 **NarrativeAudio**
 
-| **Property**  | **Name**   | **Target entity** | **Target type** |
-| ------------- | ---------- | ----------------- | --------------- |
-| Context       | featuresIn | NarrativeScene    |                 |
-|               | neededBy   | Character         |                 |
-| [ Depiction ] |            | Depiction         | portrayal       |
+| **Property**  | **Name**   | **Target entity** | **Target type**  |
+| ------------- | ---------- | ----------------- | ---------------- |
+| Context       | featuresIn | NarrativeScene    |                  |
+|               | neededBy   | Character         | character, extra |
+| [ Depiction ] |            | Depiction         | portrayal        |
 
 ----------
 
@@ -132,31 +131,31 @@ In the tables below, each Asset that contains a property that references another
 
 **NarrativeObject**
 
-| **Property**  | **Name**   | **Target entity** | **Target type** |
-| ------------- | ---------- | ----------------- | --------------- |
-| Context       | featuresIn | NarrativeScene    |                 |
-|               | neededBy   | Character         |                 |
-| [ Depiction ] |            | Depiction         | portrayal       |
+| **Property**  | **Name**   | **Target entity** | **Target type**  |
+| ------------- | ---------- | ----------------- | ---------------- |
+| Context       | featuresIn | NarrativeScene    |                  |
+|               | neededBy   | Character         | character, extra |
+| [ Depiction ] |            | Depiction         | portrayal        |
 
 ----------
 
 **NarrativeStyling**
 
-| **Property**  | **Name**   | **Target entity** | **Target type** |
-| ------------- | ---------- | ----------------- | --------------- |
-| [ Context ]   | featuresIn | NarrativeScene    |                 |
-|               | neededBy   | Character         |                 |
-| [ Depiction ] |            | Depiction         | portrayal       |
+| **Property**  | **Name**   | **Target entity** | **Target type**  |
+| ------------- | ---------- | ----------------- | ---------------- |
+| [ Context ]   | featuresIn | NarrativeScene    |                  |
+|               | neededBy   | Character         | character, extra |
+| [ Depiction ] |            | Depiction         | portrayal        |
 
 ----------
 
 **NarrativeWardrobe**
 
-| **Property**  | **Name**   | **Target entity** | **Target type** |
-| ------------- | ---------- | ----------------- | --------------- |
-| [ Context ]   | featuresIn | NarrativeScene    |                 |
-|               | neededBy   | Character         |                 |
-| [ Depiction ] |            | Depiction         | portrayal       |
+| **Property**  | **Name**   | **Target entity** | **Target type**  |
+| ------------- | ---------- | ----------------- | ---------------- |
+| [ Context ]   | featuresIn | NarrativeScene    |                  |
+|               | neededBy   | Character         | character, extra |
+| [ Depiction ] |            | Depiction         | portrayal        |
 
 ----------
 
@@ -165,13 +164,13 @@ In the tables below, each Asset that contains a property that references another
 | **Property** | **Name** | **Target entity** | **Target type**                                       |
 | ------------ | -------- | ----------------- | ----------------------------------------------------- |
 | [ Context ]  | features | Character         |                                                       |
-|              |          | NarrativeAction   |                                                       |
+|              |          | Effect            | effect, specialEffect, visualEffect                   |
 |              |          | NarrativeAudio    | narrativeSoundEffect, narrativeMusic                  |
-|              |          | NarrativeEffect   | sfx, vfx                                              |
 |              |          | NarrativeLocation |                                                       |
 |              |          | NarrativeObject   | narrativeProp, narrativeSetDressing, narrativeVehicle |
 |              |          | NarrativeStyling  | narrativeHair,<br>narrativeMakeup                     |
 |              |          | NarrativeWardrobe |                                                       |
+|              |          | SpecialAction     |                                                       |
 |              | for      | CreativeWork      |                                                       |
 |              | has      | ProductionScene   |                                                       |
 |              |          | Asset             |                                                       |
@@ -204,24 +203,14 @@ In the tables below, each Asset that contains a property that references another
 
 **ProductionScene**
 
-| **Property** | **Name**      | **Target entity**  | **Target type**                                             |
-| ------------ | ------------- | ------------------ | ----------------------------------------------------------- |
-| [ Context ]  | for           | NarrativeScene     |                                                             |
-|              | has           | Slate              |                                                             |
-|              | related       | ProductionScene    |                                                             |
-|              | representedBy | Asset              | capture                                                     |
-|              | uses          | Asset              | prop, setDressing, greenery, vehicle, costume, hair, makeup |
-|              |               | Depiction          |                                                             |
-|              |               | ProductionLocation |                                                             |
-
-----------
-
-**Sequence**
-
-| **Property** | **Name** | **Target entity** | **Type** |
-| ------------ | -------- | ----------------- | -------- |
-| [ Context ]  | for      | ProductionScene   |          |
-| SCD          |          | Asset             | scf      |
+| **Property** | **Name** | **Target entity**  | **Target type**                                             |
+| ------------ | -------- | ------------------ | ----------------------------------------------------------- |
+| [ Context ]  | for      | NarrativeScene     |                                                             |
+|              | has      | Slate              |                                                             |
+|              | related  | ProductionScene    |                                                             |
+|              | uses     | Asset              | prop, setDressing, greenery, vehicle, costume, hair, makeup |
+|              |          | Depiction          |                                                             |
+|              |          | ProductionLocation |                                                             |
 
 ----------
 
@@ -240,10 +229,10 @@ In the tables below, each Asset that contains a property that references another
 
 **SpecialAction**
 
-| **Property** | **Name**   | **Target entity** | **Target type** |
-| ------------ | ---------- | ----------------- | --------------- |
-| [ Context ]  | featuresIn | NarrativeScene    |                 |
-|              | neededBy   | Character         |                 |
+| **Property** | **Name**   | **Target entity** | **Target type**  |
+| ------------ | ---------- | ----------------- | ---------------- |
+| [ Context ]  | featuresIn | NarrativeScene    |                  |
+|              | neededBy   | Character         | character, extra |
 
 ----------
 
@@ -251,7 +240,7 @@ In the tables below, each Asset that contains a property that references another
 
 | **Property** | **Name** | **Target entity** | **Target type** |
 | ------------ | -------- | ----------------- | --------------- |
-| [ Context ]  | has      | NarrativeAction   |                 |
+| [ Context ]  | has      | SpecialAction     |                 |
 | Task         |          | Task              |                 |
 | TaskSC       |          | TaskSC            |                 |
 

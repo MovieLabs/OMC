@@ -1,0 +1,312 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Composition",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "cmp/99D6EA09-EBC6-4394-9FC1-97D6EA16CA1F"
+      }
+    ],
+    "name": "schoolRoom",
+    "compositionType": "geometryAssembly",
+    "compositionProperties": {
+      "purpose": "general",
+      "levelOfDetail": 50,
+      "scale": "1m"
+    },
+    "Asset": [],
+    "AssetSC": [],
+    "Composition": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "cmp/34CBF417-944D-42A5-B2B0-CC6620B9A36A"
+          }
+        ]
+      }
+    ],
+    "StartHere": {
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "ast/A6C80A6C-ABD6-4FE5-B653-3B6643EE4A6A"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Composition",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "cmp/34CBF417-944D-42A5-B2B0-CC6620B9A36A"
+      }
+    ],
+    "name": "teacherDesk",
+    "compositionType": "geometryAssembly",
+    "compositionProperties": {
+      "purpose": "general",
+      "levelOfDetail": 50,
+      "scale": "1m"
+    },
+    "Asset": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/93C356B2-67CC-47A3-82CB-89BA639D06F9"
+          }
+        ]
+      },
+      {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/AAEE3617-5D30-4D73-BCC6-A266DBF4B54F"
+          }
+        ]
+      }
+    ],
+    "AssetSC": [],
+    "Composition": [],
+    "StartHere": {
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "ast/CF5E69CB-EBF4-47B3-B3DB-C7B396FA14FB"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/A6C80A6C-ABD6-4FE5-B653-3B6643EE4A6A"
+      }
+    ],
+    "name": "schoolRoom",
+    "assetFC": {
+      "functionalType": "cgModel",
+      "functionalProperties": {}
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/A6C80A6C-ABD6-4FE5-B653-3B6643EE4A6A"
+        }
+      ],
+      "structuralType": "geometry",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "model/vnd.usda"
+        },
+        "fileDetails": {
+          "fileExtension": "usda",
+          "fileName": "schoolRoom.usda",
+          "filePath": "/CG/sets/schoolRoom/"
+        },
+        "geometryType": "mesh",
+        "scale": "1m",
+        "boundingBox": {
+          "corner1": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "corner2": {
+            "x": 20.0,
+            "y": 20.0,
+            "z": 20.0
+          }
+        },
+        "coordinateOrientation": {
+          "upAxis": "z-up",
+          "handedness": "right"
+        },
+        "purpose": "general",
+        "levelOfDetail": 25
+      }
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/CF5E69CB-EBF4-47B3-B3DB-C7B396FA14FB"
+      }
+    ],
+    "name": "desk",
+    "assetFC": {
+      "functionalType": "productionProp",
+      "functionalProperties": {}
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/CF5E69CB-EBF4-47B3-B3DB-C7B396FA14FB"
+        }
+      ],
+      "structuralType": "geometry",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "model/vnd.usda"
+        },
+        "fileDetails": {
+          "fileExtension": "usda",
+          "fileName": "desk.usda",
+          "filePath": "/CG/assets/desk/"
+        },
+        "geometryType": "mesh",
+        "scale": "1m",
+        "boundingBox": {
+          "corner1": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "corner2": {
+            "x": 1.0,
+            "y": 0.5,
+            "z": 0.5
+          }
+        },
+        "coordinateOrientation": {
+          "upAxis": "z-up",
+          "handedness": "right"
+        },
+        "purpose": "general",
+        "levelOfDetail": 25
+      }
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/93C356B2-67CC-47A3-82CB-89BA639D06F9"
+      }
+    ],
+    "name": "apple",
+    "assetFC": {
+      "functionalType": "productionProp",
+      "functionalProperties": {}
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/93C356B2-67CC-47A3-82CB-89BA639D06F9"
+        }
+      ],
+      "structuralType": "geometry",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "model/vnd.usda"
+        },
+        "fileDetails": {
+          "fileExtension": "usda",
+          "fileName": "apple.usda",
+          "filePath": "/CG/assets/apple/"
+        },
+        "geometryType": "mesh",
+        "scale": "1m",
+        "boundingBox": {
+          "corner1": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "corner2": {
+            "x": 0.05,
+            "y": 0.05,
+            "z": 0.05
+          }
+        },
+        "coordinateOrientation": {
+          "upAxis": "z-up",
+          "handedness": "right"
+        },
+        "purpose": "general",
+        "levelOfDetail": 25
+      }
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/AAEE3617-5D30-4D73-BCC6-A266DBF4B54F"
+      }
+    ],
+    "name": "bell",
+    "assetFC": {
+      "functionalType": "productionProp",
+      "functionalProperties": {}
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/AAEE3617-5D30-4D73-BCC6-A266DBF4B54F"
+        }
+      ],
+      "structuralType": "geometry",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "model/vnd.usda"
+        },
+        "fileDetails": {
+          "fileExtension": "usda",
+          "fileName": "bell.usda",
+          "filePath": "/CG/assets/bell/"
+        },
+        "geometryType": "mesh",
+        "scale": "1m",
+        "boundingBox": {
+          "corner1": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "corner2": {
+            "x": 0.05,
+            "y": 0.05,
+            "z": 0.05
+          }
+        },
+        "coordinateOrientation": {
+          "upAxis": "z-up",
+          "handedness": "right"
+        },
+        "purpose": "general",
+        "levelOfDetail": 25
+      }
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeWardrobe",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+      }
+    ],
+    "name": "Spacesuit",
+    "description": "RD-12 Envrionmental Protection Suit",
+    "narrativeType": "narrativeWardrobe",
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/wWz2OqsKDO7bTLZm9TdTJ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeWardrobe",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "wrd/Ia7-FdhY1yBFyqG_2nYW8"
+      }
+    ],
+    "name": "Spacesuit",
+    "description": "RD-12 Envrionmental Protection Suit",
+    "narrativeType": "narrativeWardrobe",
+    "Context": null
+  }
+]

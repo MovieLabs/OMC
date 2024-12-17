@@ -1,0 +1,39 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Effect",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+      }
+    ],
+    "name": "A special Action",
+    "description": "Sven is hit by laser blast",
+    "effectType": "specialEffect",
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Effect",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "chr/HNvHjXqJY9wv1IwjG-Hf1"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "effectType": "visualEffect",
+    "Context": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeAudio",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+      }
+    ],
+    "name": "Explosion",
+    "description": "Space ship explosion",
+    "narrativeType": "narrativeSoundEffect",
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/34T8RjoQbKCl5lnyalkmr"
+          }
+        ]
+      }
+    ],
+    "Depiction": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "dep-HNvGRn9JY9wv1IwjG8Gff"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeAudio",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+      }
+    ],
+    "name": null,
+    "description": null,
+    "narrativeType": "narrativeAudio",
+    "Context": null,
+    "Depiction": null
+  }
+]

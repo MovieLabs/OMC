@@ -1,0 +1,39 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeStyling",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+      }
+    ],
+    "name": "Kiera's hair",
+    "description": "Blue streak",
+    "narrativeType": "narrativeHair",
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeStyling",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+      }
+    ],
+    "name": "Sven's scar",
+    "description": "A scar on his left cheek",
+    "narrativeType": "narrativeMakeup",
+    "Context": null
+  }
+]

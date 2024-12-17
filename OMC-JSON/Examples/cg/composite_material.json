@@ -1,0 +1,169 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Composition",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "cmp/2CD37C79-D1F4-49A6-84D8-49350B167B0F"
+      }
+    ],
+    "name": "TH_Castle_Bricks",
+    "compositionType": "compositeMaterial",
+    "compositionProperties": {
+      "purpose": "general",
+      "levelOfDetail": 50,
+      "scale": "1m"
+    },
+    "Asset": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/01385931-68F6-4F4F-9B06-7F94A72F3FF3"
+          }
+        ]
+      },
+      {
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/B085BFD5-755A-4DA9-9331-986E8A838934"
+          }
+        ]
+      }
+    ],
+    "AssetSC": [],
+    "Composition": [],
+    "StartHere": {
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+      }
+    ],
+    "name": "TH_Castle_Bricks",
+    "assetFC": {
+      "functionalType": "material",
+      "functionalProperties": {
+        "materialType": "inorganic.stone.marble"
+      }
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/669E728D-8393-4FD1-BF29-2BB7B9DE662C"
+        }
+      ],
+      "structuralType": "digital.structuredDocument",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "application/xml"
+        },
+        "fileDetails": {
+          "fileExtension": "mtlx",
+          "fileName": "TH_Castle_Bricks.mtlx",
+          "filePath": "/CG/materials/TH_Castle_Bricks/"
+        },
+        "purpose": "rendering"
+      }
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/01385931-68F6-4F4F-9B06-7F94A72F3FF3"
+      }
+    ],
+    "name": "TH_Castle_Bricks_baseColor",
+    "assetFC": {
+      "functionalType": "map",
+      "functionalProperties": {
+        "mapType": "baseColor",
+        "mapFormat": "plainTexture"
+      }
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/01385931-68F6-4F4F-9B06-7F94A72F3FF3"
+        }
+      ],
+      "structuralType": "digital.image",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "image/png"
+        },
+        "fileDetails": {
+          "fileExtension": "png",
+          "fileName": "TH_Castle_Bricks_baseColor.png",
+          "filePath": "/CG/materials/TH_Castle_Bricks/textures/"
+        },
+        "purpose": "rendering"
+      }
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/B085BFD5-755A-4DA9-9331-986E8A838934"
+      }
+    ],
+    "name": "TH_Castle_Bricks_roughness",
+    "assetFC": {
+      "functionalType": "map",
+      "functionalProperties": {
+        "mapType": "roughness",
+        "mapFormat": "plainTexture"
+      }
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/B085BFD5-755A-4DA9-9331-986E8A838934"
+        }
+      ],
+      "structuralType": "digital.image",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "image/png"
+        },
+        "fileDetails": {
+          "fileExtension": "png",
+          "fileName": "TH_Castle_Bricks_roughness.png",
+          "filePath": "/CG/materials/TH_Castle_Bricks/textures/"
+        },
+        "purpose": "rendering"
+      }
+    }
+  }
+]

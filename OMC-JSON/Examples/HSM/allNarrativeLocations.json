@@ -1,0 +1,457 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ujQpZcShX7y6Do114nXNp"
+      }
+    ],
+    "name": "Space",
+    "description": "The vast infintite nothingness",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/OB6MeonzccsbCw4EHv3kw"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ],
+              "name": "Space",
+              "description": "Sven repairs satellite and is ambushed by Trilobot"
+            },
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ],
+              "name": "Space Moments Later",
+              "description": "Sven reaches spaceship and climbs in."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/cnFSmIYdk0j5NhYkkcjnp"
+      }
+    ],
+    "name": "Headquarters",
+    "description": "The galactic federation home base of operations",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/34T8RjoQbKCl5lnyalkmr"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ],
+              "name": "Space",
+              "description": "Sven repairs satellite and is ambushed by Trilobot"
+            },
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ],
+              "name": "Space Moments Later",
+              "description": "Sven reaches spaceship and climbs in."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/z_GgQuQK8JOzOygofIAwU"
+      }
+    ],
+    "name": "Atmosphere",
+    "description": "The upper atmoshere of SR-232",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/gOeG3sVZgo2PGogMQOZqx"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
+                }
+              ],
+              "name": "Space",
+              "description": "Sven repairs satellite and is ambushed by Trilobot"
+            },
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
+                }
+              ],
+              "name": "Atmosphere",
+              "description": "Sven crashes into atmosphere and water"
+            },
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
+                }
+              ],
+              "name": "Space Moments Later",
+              "description": "Sven reaches spaceship and climbs in."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/L5VqKriC9OFF2DsaLc66u"
+      }
+    ],
+    "name": "Planet",
+    "description": "Planet SR-232",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/W6k3INeUC8pVIJHoeZpw7"
+          }
+        ],
+        "featuresIn": null
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/50DwTikSnhJViFrABXvGF"
+      }
+    ],
+    "name": "Beach",
+    "description": "Sandy beach leading into jungle on coastline",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/6mZcMvDTYRQnfwQOH2GcA"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ],
+              "name": "Beach",
+              "description": "Sven swims to surface and walks into beach."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ym4RXT4JbXxIAAc1uTUXX"
+      }
+    ],
+    "name": "Ocean",
+    "description": "Quadrant 4 of Planet SR-232",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/6k8-CFXqXdyuztG19jDk0"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ],
+              "name": "Beach",
+              "description": "Sven swims to surface and walks into beach."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/4h-qk9I4CW6nVIbHjpBEr"
+      }
+    ],
+    "name": "Coastline",
+    "description": "Rocky outcrops of Quadrant 4 of Planet SR-232",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/YJVoLzantYRbkJneXXuVA"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
+                }
+              ],
+              "name": "Beach",
+              "description": "Sven swims to surface and walks into beach."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/JR_953OF4aawPxxjrhQgS"
+      }
+    ],
+    "name": "Jungle",
+    "description": "Deep thick brush, trees and fruits on rocky terrain",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/vVhJcyJnne9h-gkjkJNuZ"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
+                }
+              ],
+              "name": "Jungle",
+              "description": "Title sequence with Sven bursting out of the jungle to the title sequence."
+            },
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
+                }
+              ],
+              "name": "Jungle",
+              "description": "Sven retreats to the jungle and destroys the Trilobot using exploding fruit native to the planet."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/ryfjgiLuoYBZePKoW9Yxy"
+      }
+    ],
+    "name": "Plateau",
+    "description": "Volcanic ridge above valley",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/eEgBqiGajyZCr2mb5mPpo"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ],
+              "name": "Plateau",
+              "description": "Sven discovers city"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/EZ4G2BwwADdGAYwsJZprm"
+      }
+    ],
+    "name": "Killamari City",
+    "description": "Hidden mining and headquarters of Killamari on Planet SR-232",
+    "Location": null,
+    "Context": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "entityType": "Context",
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/PNI-deSI_YJulZ99V6zMP"
+          }
+        ],
+        "featuresIn": {
+          "NarrativeScene": [
+            {
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "entityType": "NarrativeScene",
+              "identifier": [
+                {
+                  "identifierScope": "labkoat",
+                  "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
+                }
+              ],
+              "name": "Plateau",
+              "description": "Sven discovers city"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

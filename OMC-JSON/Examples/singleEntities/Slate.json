@@ -1,0 +1,69 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Slate",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "slt/uOKge8nJKPQM9y9IVkDIz"
+      }
+    ],
+    "slateUID": "2A-2",
+    "cameraLabel": "A",
+    "cameraUnit": "MaIn",
+    "cameraRoll": "CRA",
+    "soundRoll": "SRA",
+    "shootDate": "2022-07-23",
+    "shootDay": 1,
+    "recordingFPS": 29.97,
+    "CreativeWork": {
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "cw/2A-T23FDXvnSAl5JPmueO"
+        }
+      ]
+    },
+    "Director": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "ptc/3AE1ybCWJXJFxKhWhF0qd"
+          }
+        ]
+      }
+    ],
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/hlDwnZidsasQM3qOTyCWE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Slate",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "slt/uOKge8nJKPQM9y9IVkDIz"
+      }
+    ],
+    "slateUID": null,
+    "cameraLabel": null,
+    "cameraUnit": null,
+    "cameraRoll": null,
+    "soundRoll": null,
+    "shootDate": null,
+    "shootDay": null,
+    "recordingFPS": null,
+    "CreativeWork": null,
+    "Director": null,
+    "Context": null
+  }
+]

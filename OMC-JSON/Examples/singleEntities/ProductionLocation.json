@@ -1,0 +1,48 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/DBMKDFZ5G7PBwtgK2PXBG"
+      }
+    ],
+    "name": "Game On ",
+    "description": "Motion Capture Stage",
+    "locationType": "shooting",
+    "Location": {
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "loc/CJXwmiWy3cXV802h-5fWI"
+        }
+      ]
+    },
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/74J6YVjYu7jTmhuoKCVx9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "ProductionLocation",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "loc/DBMKDFZ5G7PBwtgK2PXBG"
+      }
+    ],
+    "name": "Game On ",
+    "description": "Motion Capture Stage",
+    "locationType": "production",
+    "Location": null,
+    "Context": null
+  }
+]

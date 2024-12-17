@@ -9,15 +9,15 @@ JSON-Schema itself is versioned, so any validator will need to know which versio
 ## OMC-JSON Schema Version
 OMC-JSON schemas present some specific considerations when dealing with schema advancement, as certain changes can break validation but still maintain compatibility with historical data.
 
-OMC is structured as a set of independent entities that are related to one another. This makes each instance of an entity an atomic unit that may be exchanged alone or with other entities in a larger payload. In a distributed system, there is no guarantee that all the sub-systems are using the same schema version, or that older historical data is not still in active use. Therefore, each entity must express which version of the schema was used to encode it. Systems consuming OMC-JSON can then either validate or parse an entity with the correct schema.
+OMC is structured as a set of independent entities that are related to one another. This makes each instance of an entity an atomic thing that may be exchanged alone or with other entities in a larger payload. In a distributed system, there is no guarantee that all the sub-systems are using the same schema version, or that older historical data is not still in active use. Therefore, each entity must express which version of the schema was used to encode it. Systems consuming OMC-JSON can then either validate or parse an entity with the correct schema.
 
 When considering compatibilities between schema versions, there is a difference between whether a change affects validation or whether it will impact parsing of the data. If a schema advancement adds a new property, a payload that utilizes that property would not validate against an older version. However, data created with an historical schema can still be read and parsed with a newer schema (e.g., where only the minor version has incremented).
 
-We have decided to generally set the JSON-Schema `additionalProperties` directive to `false`. This will have the effect of causing a validation error if property names are misspelled or custom fields are included. This ensures payloads comply with the specification. For users who want to express information that is not covered by the ontology or schema, the `customData` property is provided, where any valid JSON may be used.
+We have decided to generally set the JSON-Schema `additionalProperties` constraint to `false`. This will have the effect of causing a validation error if property names are misspelled or custom fields are included. This ensures payloads comply with the specification. For users who want to express information that is not covered by the ontology or schema, the `customData` property is provided, where any valid JSON may be used.
 
 The schema as a whole carries a single version number which will apply to each sub-schema as well. The single version tracking simplifies the version management.
 
-Although a single version number is used, we require each entity (as opposed to the JSON object as a whole) convey the version when defining a JSON instance. This will allow downstream consumers to use appropriate parsers at the entity level.
+Although a single version number is used, we require each entity (as opposed to the JSON object as a whole) to convey the version when defining a JSON instance. This will allow downstream consumers to use appropriate parsers at the entity level.
 
 **Schema Version number**
 
@@ -37,8 +37,6 @@ An increase in the minor version indicates that functionality has been added or 
 
 Example: A property can be deprecated, but not removed. Properties that are not required can be added.
 
-
-
 ## Implementation considerations
 **Validating data**
 
@@ -52,8 +50,7 @@ When consuming data it may be validated against a schema prior to parsing the pa
 
 The presumption is that clients consuming OMC-JSON will need to parse a payload to act on it appropriately, for example by mapping its property values to an internal data model. Although many entities share a set of common properties, each has specific meaning and typically unique properties. Therefore, the consumer should be expected to need a separate means to parse each entity type.
 
-
-- With the exception of the limited set of required properties, there is no expectation that any specific property will be in present in payload.
+- With the exception of the limited set of `required` properties, there should be no expectation that any specific property will be in present in payload.
 - A property key may be present and set to `null`.
 - A property that is an array, may have an empty array.
 - Generally, the parser for each entity will be versioned to match a schema version:

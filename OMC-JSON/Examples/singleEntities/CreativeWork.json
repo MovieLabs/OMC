@@ -1,0 +1,166 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "CreativeWork",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+      }
+    ],
+    "creativeWorkType": "creativeWork",
+    "creativeWorkCategory": "short",
+    "creativeWorkTitle": [
+      {
+        "title": "Hyperspace Madness",
+        "titleType": "release",
+        "titleLanguage": "en"
+      },
+      {
+        "title": "HSM",
+        "titleType": "internal",
+        "titleLanguage": "en"
+      }
+    ],
+    "seasonNumber": 4,
+    "episodeSequence": {
+      "houseSequence": "4",
+      "distributionNumber": [
+        {
+          "value": 4,
+          "domain": "labkoat"
+        }
+      ]
+    },
+    "description": "Sven is a bumbling intergalactic repair man sent off to investigate a malfunctioning satellite.. He is quickly ambushed by the dreaded Killamari who have taken over the planet and plan to use it as a base to invade earth.",
+    "approximateLength": "PT5M",
+    "originalLanguage": [
+      "en"
+    ],
+    "countryOfOrigin": [
+      "US"
+    ],
+    "Series": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/hlDTz5s8IStbx6jfjdo"
+          }
+        ]
+      }
+    ],
+    "Season": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/h443258IStbx6jfjdo"
+          }
+        ]
+      }
+    ],
+    "Episode": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/54gtrs8IStbx6jfjdo"
+          }
+        ]
+      }
+    ],
+    "ProductionCompany": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cw/hlDTz5s8ISgdsre324"
+          }
+        ]
+      }
+    ],
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
+          }
+        ]
+      }
+    ],
+    "annotation": [
+      {
+        "title": "Note Title",
+        "text": "Note text."
+      }
+    ],
+    "tag": [
+      {
+        "domain": "tagType",
+        "value": [
+          "tagValue",
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "CreativeWork",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+      }
+    ],
+    "creativeWorkType": "creativeWork",
+    "creativeWorkCategory": null,
+    "creativeWorkTitle": [
+      {
+        "title": "Hyperspace Madness",
+        "titleType": null,
+        "titleLanguage": null
+      }
+    ],
+    "seasonNumber": null,
+    "episodeSequence": {
+      "houseSequence": null,
+      "distributionNumber": null
+    },
+    "description": null,
+    "approximateLength": null,
+    "originalLanguage": [],
+    "countryOfOrigin": [],
+    "Series": [],
+    "Season": [],
+    "Episode": [],
+    "ProductionCompany": [],
+    "Context": []
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "CreativeWork",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "cw/hlDTz5s8IStbxWvdRVfSh"
+      }
+    ],
+    "creativeWorkType": "creativeWork",
+    "creativeWorkCategory": null,
+    "creativeWorkTitle": null,
+    "seasonNumber": null,
+    "episodeSequence": null,
+    "description": null,
+    "approximateLength": null,
+    "originalLanguage": null,
+    "countryOfOrigin": null,
+    "Series": null,
+    "Season": null,
+    "Episode": null,
+    "ProductionCompany": null,
+    "Context": null
+  }
+]

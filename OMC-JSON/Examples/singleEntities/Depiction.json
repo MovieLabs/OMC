@@ -1,0 +1,47 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Depiction",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "dep-HNvGRn9JY9wv1IwjG8Gff"
+      }
+    ],
+    "depictionType": "portrayal",
+    "Depicts": {
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+        }
+      ]
+    },
+    "Depicter": {
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "ptc/HynO3uE6KceCGhx-fkBWo"
+        },
+        {
+          "identifierScope": "imdb",
+          "identifierValue": "nm0872514"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Depiction",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "dep-HNvGRn9JY9wv1IwjG8Gff"
+      }
+    ],
+    "depictionType": "depiction",
+    "Depicts": null,
+    "Depicter": null,
+    "Context": null
+  }
+]

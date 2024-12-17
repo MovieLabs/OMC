@@ -1,0 +1,43 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/758EE5A1-640F-4AA7-99A5-1C3B0A3BC95D"
+      }
+    ],
+    "name": "proceduralMarble",
+    "assetFC": {
+      "functionalType": "material",
+      "functionalProperties": {
+        "materialType": "inorganic.stone.marble",
+        "isSelfContained": true
+      }
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "ast/758EE5A1-640F-4AA7-99A5-1C3B0A3BC95E"
+        }
+      ],
+      "structuralType": "digital.structuredDocument",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "application/xml"
+        },
+        "fileDetails": {
+          "fileExtension": "mtlx",
+          "fileName": "marble.mtlx",
+          "filePath": "/CG/materials/"
+        },
+        "purpose": "rendering"
+      }
+    }
+  }
+]

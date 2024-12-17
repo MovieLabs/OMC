@@ -1,5 +1,4 @@
 # Schema Practices
-
 In developing OMC-JSON we have made certain decisions about the structure and way certain things are expressed. Some of these are well trod discussions in the computer science field and some can invoke passionately held positions. Here we outline what our decisions were and the reasoning behind them.
 
 ## Property Naming
@@ -18,11 +17,11 @@ The exception to this is when a property does not describe a canonical value. Fo
 
 Properties are named using either camelCase (lower case first letter) or PascalCase (capitalized first letter). Camel case and Pascal case do not include spaces or punctuation in property names and use capital letters to differentiate words. In ‘camelCase’, the first word is not capitalized, and in ‘PascalCase’, the first word is capitalized, OMC-JSON uses the two conventions in specific circumstances.
 
-Entities are named using Pascal case. Most uses of this (and all of the examples given) represent top-level class definitions in OMC-RDF. For example, `NarrativeObject`, `Shot`, `Character`
+Entities are named using Pascal case. Most uses of this (and all of the examples given) represent top-level class definitions in OMC-RDF. For example, `NarrativeObject`, `Asset`, `Character`
 
 The properties of an entity use the following conventions:
 
-- Properties that refer to another entity carry either a reference to that entity or embed some subset of its properties. The property name uses pascal case to indicate it is a reference. (`Context`, `Location`, `Depiction`).
+- Properties that refer to another entity may either just reference that entity, or embed some or all of its properties. The property name uses pascal case to indicate it is a reference. (`Context`, `Location`, `Depiction`).
 - Properties that have a complex or primitive value (rather than a reference) are camel case. (`characterName`, `shootDay`, `identifier`)
 
 **Punctuation**
@@ -35,13 +34,13 @@ OMC-JSON does not use additional symbols prepended or appended to names. For exa
 
 We avoid the use of plurals.
 
-- It can create inconsistencies in naming, i.e., parties vs dates vs classes (ies, s, es). This can be hard for some people to remember.
-- When plurals are used to indicate that a property can have multiple values, it can lead to confusion when there is only one. It can also complicate parsing of the data as it may not always be clear whether something should be in an array or not.
+- It can create inconsistencies in naming, i.e., parties vs dates vs classes (ies, s, es). This can be especially hard for non-native English speakers to remember.
+- When plurals are used to indicate that a property can have multiple values, it can lead to confusion when there is only one value. It can also complicate parsing of the data as it may not always be clear whether something should be an array or not.
 - If a schema is updated and a property that was originally singular is changed to allow multiple values, it would be a breaking change.
 
 **Multiple Values**
 
-Where a property can contain multiple values, the schema specifies an array, even when only a single value is present. Where a property should only ever contain a single instance, an object is used.
+Where a property can contain multiple values, the schema specifies an array, even when only a single value is present. Where a property should only ever contain a single value an object may be used.
 
 This practice helps simplify parsing the payload. A parser can be written to expect that a value is iterable even when it contains a single value, creating less need to type check everything.
 
@@ -64,14 +63,21 @@ It should be noted that the absence of a property does not mean that there is no
 
 We therefore consider it a good practice to set a property's value to `null`, if you wish to specifically communicate the absence of a value, the schema allows most properties to be set to null and is preferable to ambiguous values like “”, or 0 (unless you actually mean zero).
 
-With the exception of identifier, arrays may be empty.
+With the exception of identifier, arrays may be empty, every entity must have at least one unique identifier.
+
+## Controlled Values
+OMC defines a lot a vocabulary, the intent being, that recipients of OMC-JSON can unambiguously understand what is being described. Many internal systems will have different ways of expressing the same thing, whether it be a different word, spelling, casing, etc. It is OMC's intent to normalize these differences between systems, so there is less guessing and less mapping.
+
+However, it is possible that OMC does not have an existing definition for a given property, and to allow some flexibility, in most cases the schema does not require that only controlled values be used. However, it is best practice, and expected that when a defined term adequately describes a condition it is used in the exact form expressed in the documentation.
+
+Controlled values are present in OMC-JSON schema, they use an annotation property ``x-controlledValues`` . This is not an official JSON-Schema property, and should be ignored by schema validators. The MovieLabs OMC-Validator utilizes the annotation and will issue a warning if a non-controlled value is used on a property that has a list of controlled values.
 
 ## Extending OMC-JSON
 Extensions and modifications to OMC-JSON can create compatibility problems; see [Schema Versioning](./SchemaVersioning.md). The OMC-JSON schema generally sets the JSON-Schema keyword `additionalProperties` to ``false``, ensuring misspellings or custom properties will be rejected on validation.
 
 This provides a level of safety in that only properties that have been described in the spec are included as part of the core payload. It also allows for new properties to be added and historical data to still be valid with versions equal to or greater than the version they were created with.
 
-To allow for proprietary data or extensions we include the `customData` property. Individual applications can include any data as a value for this. It is up to the sending and receiving parties to know how to interpret this field. We recommend that some sort of identifying key or namespace is used as an additional safeguard against collisions.
+To allow for proprietary data or extensions we include the `customData` property. Individual applications can include any data as a value for this. It is up to the sending and receiving parties to know how to interpret the contents. We recommend that some sort of identifying key or namespace is used as an additional safeguard against collisions.
 
 The `customData` property can be useful for including additional metadata directly in a payload. For example, to include additional fields from an EXIF file as part of the structural characteristics of an image. In this case you might encode it like this:
 
@@ -79,7 +85,7 @@ The `customData` property can be useful for including additional metadata direct
 {
   "customData": {
     "exif": {
-      "fieldName": <data>
+      "fieldName": "<data>"
     }
   }
 }
@@ -91,7 +97,7 @@ This same mechanism works for application-specific custom data.
 ```JSON
 {
     "customData": {
-        "applicationName": <base64>
+        "applicationName": "<base64>"
     }
 }
 ```

@@ -1,0 +1,59 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/98DF66E4-5C6F-43C2-8B6D-04B7B05ECB41"
+      }
+    ],
+    "name": "apple",
+    "assetFC": {
+      "functionalType": "productionProp",
+      "functionalProperties": {}
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "cg-example",
+          "identifierValue": "asc/98DF66E4-5C6F-43C2-8B6D-04B7B05ECB41"
+        }
+      ],
+      "structuralType": "geometry",
+      "structuralProperties": {
+        "linkset": {
+          "recordType": "item",
+          "mediaType": "model/obj"
+        },
+        "fileDetails": {
+          "fileExtension": "png",
+          "fileName": "apple.obj",
+          "filePath": "/CG/apple/"
+        },
+        "geometryType": "mesh",
+        "scale": "1m",
+        "boundingBox": {
+          "corner1": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "corner2": {
+            "x": 0.05,
+            "y": 0.05,
+            "z": 0.05
+          }
+        },
+        "coordinateOrientation": {
+          "upAxis": "z-up",
+          "handedness": "right"
+        },
+        "purpose": "general",
+        "levelOfDetail": 25
+      }
+    }
+  }
+]

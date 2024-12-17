@@ -1,0 +1,68 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+      }
+    ],
+    "name": "Beach rocks",
+    "description": "Various types of rocks that can be found on the beaches of SR 232",
+    "narrativeType": "narrativeSetDressing",
+    "size": "small",
+    "quantity": 10,
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+      }
+    ],
+    "name": "Beach rocks",
+    "description": "Various types of rocks that can be found on the beaches of SR 232",
+    "narrativeType": "narrativeSetDressing",
+    "size": "large",
+    "quantity": "dozen",
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/Q7RfaXCaI8fUyZuvddPFJ"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "NarrativeObject",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "psd/CtrVXKgNDDME9aKy8EAqX"
+      }
+    ],
+    "name": "Beach rocks",
+    "description": "Various types of rocks that can be found on the beaches of SR 232",
+    "narrativeType": "narrativeSetDressing",
+    "size": null,
+    "quantity": null,
+    "Context": null
+  }
+]

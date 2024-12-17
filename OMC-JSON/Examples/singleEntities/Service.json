@@ -1,0 +1,81 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Service",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGH"
+      }
+    ],
+    "structuralType": "service",
+    "serviceName": {
+      "fullName": "Movielabs fMam",
+      "altName": "fMam"
+    },
+    "contact": {
+      "email": {
+        "business": "fmam@movielabs.com",
+        "personal": "blank@gmail.com"
+      },
+      "telephone": {
+        "business": "213-555-1234",
+        "personal": "213-555-5678"
+      }
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Service",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGI"
+      }
+    ],
+    "structuralType": "service",
+    "serviceName": {
+      "fullName": null,
+      "altName": null
+    },
+    "contact": {
+      "email": {
+        "business": null,
+        "personal": null
+      },
+      "telephone": {
+        "business": null,
+        "personal": null
+      }
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Service",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGJ"
+      }
+    ],
+    "structuralType": "service",
+    "serviceName": null,
+    "contact": {
+      "email": null,
+      "telephone": null
+    }
+  },
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "Service",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "ptsc/MFlCPsgmu_5xPCpQp7gGK"
+      }
+    ],
+    "structuralType": "service",
+    "serviceName": null,
+    "contact": null
+  }
+]

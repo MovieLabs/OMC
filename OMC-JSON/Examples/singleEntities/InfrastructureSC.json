@@ -1,0 +1,14 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "entityType": "InfrastructureSC",
+    "identifier": [
+      {
+        "identifierScope": "labkoat",
+        "identifierValue": "infc/7EdFxI0xaHHruB97KA9Ni"
+      }
+    ],
+    "structuralType": "camera",
+    "structuralProperties": null
+  }
+]

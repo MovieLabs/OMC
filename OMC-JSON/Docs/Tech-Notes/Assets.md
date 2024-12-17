@@ -35,14 +35,15 @@ The following diagrams illustrate the idea:
 
 - Two Production Scenes utilize the same Asset (e.g., a 3D model of a prop).
 
-![](../Diagrams/Asset-1.svg)
+![](../Diagrams/Asset-1a.svg)
 
 The Director requests some changes to the design of the prop resulting in a revision.
 
-- The Production Scenes still refer to the same Asset, it is after all the same ‘thing’ or same prop. You do not want to have to find and update every place in the system that refers to this Asset and change its identifier
+- The Production Scenes still refer to the same Asset, it is after all the same ‘thing’ or same prop. You do not want to have to find and update every place in the system that refers to this Asset and change its identifier.
 - By updating the reference that the Asset uses to refer to a new AssetSC representing the revised essence, you only need to make a change in one place, and the next time the Asset is called for, it will refer to the correct revision.
 - You can also create a record of revisions by further having the new AssetSC refer to the previous version. More details in the section on **[[Versions]].**
-![](../Diagrams/Asset-2.svg)
+
+![](../Diagrams/Asset-2b.svg)
 
 *Note: A useful side effect of having separate identifiers for the 'whole' asset and the essence is that this more* *clearly delineates* *metadata and object, allowing security authorization to be more easily separated. This allows applications and participants to view metadata about assets without being granted access to the asset itself. For example, a system admin can provision, move or migrate files without being granted direct access to sensitive content itself.*
 
@@ -54,7 +55,7 @@ An Asset can carry additional data that help describe its functional and structu
 
 It can be especially useful where metadata is originally embedded as part of the essence file. OMC can allow properties to be accessed by applications and workflows without having to load the essence file.
 
-*Note:* *Given the large* *number* *of structural types and potential properties involved**,* *it should be remembered* *that* *the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key aspects of data that* *are* *useful* *for* *finding, identifying, or disambiguating assets in a workflow.*
+*Note: Given the large number of structural types and potential properties involved, it should be remembered that the intent of the OMC-JSON is not to replicate existing metadata schemes. The structural properties provide an opportunity to communicate some key aspects of data that are useful for finding, identifying, or disambiguating assets in a workflow.*
 
 It is also worth noting that data itself can be essence. For example, camera metadata is often saved as a separate file, known as a sidecar, along with the captured media. This file would itself be an Asset. Some subset of the data can be directly included as properties in the OMC-JSON, but as the note above points out, judiciously.
 
@@ -62,7 +63,9 @@ It is also worth noting that data itself can be essence. For example, camera met
 The following JSON examples show only the pertinent attributes for clarity. Real entities would also include properties like `schemaVersion`, `structuralProperties` and `functionalProperties`.
 
 **Single Digital Asset**
-This shows the simplest case of single Asset (A1) and single AssetSC (E1).
+This shows the simplest case of single Asset (ast-01) and single AssetSC (astsc-01a).
+
+![](../Diagrams/Asset-3a.svg)
 
 OMC-JSON: Asset
 ```JSON
@@ -84,7 +87,7 @@ OMC-JSON: Asset
         ]
     },
     "assetFC": {
-        "functionalType": "technicalReference"
+        "functionalType": "technicalReferenceMaterial"
     }
 }
 ```
@@ -102,14 +105,14 @@ OMC-JSON: AssetSC
 }
 ```
 
-![](../Diagrams/Asset-3.svg)
-----------
 
 **Digital Asset, two functional uses**
 
-This shows two Assets which use the same essence; one uses the image as reference art and the other uses it as a texture.
+This shows two Assets which use the same essence; one uses the image as reference art and the other uses it as a texture map.
 
 There does not have to be any formal relationship between Assets A1 and A2, though, of course one can be added.
+
+![](../Diagrams/Asset-4a.svg)
 
 OMC-JSON: Asset
 ```JSON
@@ -156,7 +159,10 @@ OMC-JSON: Asset
             ]
         },
         "assetFC": {
-            "functionalType": "texture"
+            "functionalType": "map",
+            "functionalProperties": {
+		        "mapFormat": "normal"
+            }
         }
     }
 }
@@ -177,7 +183,7 @@ OMC-JSON: AssetSC
 }
 ```
 
-![](../Diagrams/Asset-4.svg)
+
 ----------
 ## Asset Groups
 Asset groups provide for logical groupings of Assets into a single entity. Asset groups are Assets themselves. They refer to other Assets or Asset groups by their identifiers. This creates a hierarchical structure of Assets.
@@ -194,7 +200,9 @@ This Asset is an Asset Group that contains three other Assets.
 
 - OMC has relationships `member` and `memberOf` allowing bi-directional navigation. OMC-JSON represents only a hierarchy for simplification; if a consuming application needs both directions, it is easy to infer.
 - Asset Groups can contain Asset Groups, because any Asset can be a Group; so hierarchies of any depth can be created.
-- This example below shows AssetSC expanded to include its properties.
+- To note is the structural type for the Asset representing the group is ``assetGroup``.
+
+![](../Diagrams/Asset-5a.svg)
 
 OMC-JSON: Asset
 ```JSON
@@ -248,8 +256,6 @@ OMC-JSON: Asset
     ]
 }
 ```
-
-![](../Diagrams/Asset-5.svg)
 
 <!--
 Copyright 2021-2023 Motion Picture Laboratories, Inc.
