@@ -7,7 +7,7 @@ The OMC-JSON folder contains all materials related to the OMC-JSON schema
 
 **/Docs**: Supplementary documentation including schema documentation and tech notes giving guidance on how to use the OMC and OMC-JSON schema.
 
-The documentation is split into two sections, a set of documents that outline the basic structure and practices we used to guide the schema development, and a set of tech notes focussed on specific concepts and how to use them.
+The documentation is split into two sections, a set of documents that outline the basic structure and practices we used to guide the schema development, and a set of tech notes focused on specific concepts and how to use them.
 
 Overview
 1. [Introduction](OMC-JSON/Docs/Overview/Introduction.md) 
