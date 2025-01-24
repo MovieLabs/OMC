@@ -1,9 +1,10 @@
 # Read Me
 
 ## OMC-JSON
+
 The OMC-JSON folder contains all materials related to the OMC-JSON schema
 
-Adding a change to test out if this gets transferred to GitBook
+Removing the change in gitbook to what happens
 
 **OMC-JSON-v2.6.schema.json**:The OMC schema itself
 
@@ -12,12 +13,14 @@ Adding a change to test out if this gets transferred to GitBook
 The documentation is split into two sections, a set of documents that outline the basic structure and practices we used to guide the schema development, and a set of tech notes focussed on specific concepts and how to use them.
 
 Overview
-1. [Introduction](OMC-JSON/Docs/Overview/Introduction.md) 
+
+1. [Introduction](OMC-JSON/Docs/Overview/Introduction.md)
 2. [Schema Structure](OMC-JSON/Docs/Overview/SchemaStructure.md)
 3. [Schema Practices](OMC-JSON/Docs/Overview/SchemaPractices.md)
 4. [Schema Versioning](OMC-JSON/Docs/Overview/SchemaVersioning.md)
 
 Tech Notes
+
 1. [Narrative & Production](OMC-JSON/Docs/Tech-Notes/NarrativeProduction.md)
 2. [Functional & Structural](OMC-JSON/Docs/Tech-Notes/FunctionalStructural.md)
 3. [Assets](OMC-JSON/Docs/Tech-Notes/Assets.md)
@@ -27,27 +30,26 @@ Tech Notes
 7. [Relationship Appendix](OMC-JSON/Docs/Tech-Notes/RelationshipAppendix.md)
 
 Schema Documentation
+
 1. [Introduction](OMC-JSON/Docs/Schema/Introduction.md)
 2. [root](OMC-JSON/Docs/Schema/core/root.md)
 
 **/Examples**: A set of example OMC-JSON files, these will validate against the schema and demonstrate the structure and concepts.
 
 ## OMC-RDF
+
 The RDF in this repo is currently v2.6. The schema is divided into three files:
 
-- cw.ttl is the basic Creative Work. The namespace is [https://mc.movielabs.com/cw](https://mc.movielabs.com/rdf/cw_v1.2.ttl) and it uses cw: as its prefix. A Creative Work is a uniquely identified production.  (See [Part 6: Creative Works](https://mc.movielabs.com/docs/ontology/creative-works/introduction))
+* cw.ttl is the basic Creative Work. The namespace is [https://mc.movielabs.com/cw](https://mc.movielabs.com/rdf/cw_v1.2.ttl) and it uses cw: as its prefix. A Creative Work is a uniquely identified production. (See [Part 6: Creative Works](https://mc.movielabs.com/docs/ontology/creative-works/introduction))
+  * cw:CreativeWork is the base class for Creative Work, and is declared to be equivalent to the (empty) omc:CreativeWork using ‘owl:equivalentClass omc:CreativeWork’
+  * cw: has structures for episodic content and edits based on the model used by [EIDR](https://www.eidr.org/technology/).
+  * cw.ttl includes omc.ttl
+* omc.ttl is the Ontology for Media Creation and covers the production process for Creative Works. The namespace is [https://mc.movielabs.com/omc](https://mc.movielabs.com/rdf/omc_v1.2.ttl) and it uses omc: as its prefix.
+*   omd.ttl is the Ontology for Media Distribution, covering distribution channels, consumption metrics, and some kinds of marketing information such as awards, reviews, and ratings. The namespace is [https://mc.movielabs.com/omd](https://mc.movielabs.com/rdf/omd_v1.2.ttl) and it uses omd: as its prefix. It includes CW (and hence OMC).
 
-  - cw:CreativeWork is the base class for Creative Work, and is declared to be equivalent to the (empty)  omc:CreativeWork using ‘owl:equivalentClass omc:CreativeWork’
-  - cw: has structures for episodic content and edits based on the model used by [EIDR](https://www.eidr.org/technology/).
-  - cw.ttl includes omc.ttl
+    OMD is a _connected ontology_ as defined in [_Part 1: Overview_](https://mc.movielabs.com/docs/ontology/overview/introduction).
 
-- omc.ttl is the Ontology for Media Creation and covers the production process for Creative Works. The     namespace is [https://mc.movielabs.com/omc](https://mc.movielabs.com/rdf/omc_v1.2.ttl) and it uses omc: as its prefix.
-
-- omd.ttl is the Ontology for Media Distribution, covering distribution channels, consumption metrics, and some kinds of marketing information such as awards, reviews, and ratings. The namespace is [https://mc.movielabs.com/omd](https://mc.movielabs.com/rdf/omd_v1.2.ttl) and it uses omd: as its prefix. It includes CW (and hence OMC).
-
-  OMD is a *connected ontology* as defined in [*Part 1: Overview*](https://mc.movielabs.com/docs/ontology/overview/introduction).
-
-  ***NOTE***: *OMD is in pre-release, and subject to change.*
+    _**NOTE**_: _OMD is in pre-release, and subject to change._
 
 These three files are used to generate two sets of self-contained HTML documentation pages, one for OMC (including CW) and one for OMD (including OMC and CW). The HTML documentation shows many of the object properties of a class in a diagram; however, not all relationships are shown that way, so it is important to look at the References section on each page as well.
 
@@ -61,11 +63,11 @@ The OMC-RDF folder contains all materials related to the OMC RDF schema
 
 **releaseNotes.txt**: release notes for the 2.0 and 2.5 releases.
 
-**[Functional And Structural Classes in RDF](./OMC-RDF/RDFFunctionalStructural.md)**
+[**Functional And Structural Classes in RDF**](OMC-RDF/RDFFunctionalStructural.md)
 
-**[Points and Matrices in RDF](./OMC-RDF/RDFPointMatrix.md)**
+[**Points and Matrices in RDF**](OMC-RDF/RDFPointMatrix.md)
 
-**[Known Bugs and Issues](OMC-RDF/KnownBugsIssues.md)**
+[**Known Bugs and Issues**](OMC-RDF/KnownBugsIssues.md)
 
 **/OntologyMediaCreation-OMC**: The OMC ontology, containing the current schema, with previous revisions in **OntologyMediaCreation-OMC/previous**
 
@@ -75,11 +77,10 @@ The OMC-RDF folder contains all materials related to the OMC RDF schema
 
 ### Notes
 
-- Most distribution-oriented concepts have been moved from cw: into omd: (e.g. different release titles and consumption metrics) but there are still a few left (e.g. cw:Genre and cw:Franchise.)
-
-- The names of relationships (the predicates in the RDF triples) are taken from [Part 7: Relationships](https://mc.movielabs.com/docs/ontology/relationships/introduction) for most object properties. Some relationship names are in the omcT: namespace and are subject to change. If they do change, the omcT:  name will be retained for backwards compatibility.
-- The datatype properties that are present are based on the names of attributes in the larger documentation set.
-- Not all property names (relationships, in the parlance of the overview documents) have a skos:prefLabel declared; this will be fixed in future releases.
+* Most distribution-oriented concepts have been moved from cw: into omd: (e.g. different release titles and consumption metrics) but there are still a few left (e.g. cw:Genre and cw:Franchise.)
+* The names of relationships (the predicates in the RDF triples) are taken from [Part 7: Relationships](https://mc.movielabs.com/docs/ontology/relationships/introduction) for most object properties. Some relationship names are in the omcT: namespace and are subject to change. If they do change, the omcT: name will be retained for backwards compatibility.
+* The datatype properties that are present are based on the names of attributes in the larger documentation set.
+* Not all property names (relationships, in the parlance of the overview documents) have a skos:prefLabel declared; this will be fixed in future releases.
 
 ## **FAQs**
 
@@ -87,7 +88,7 @@ The OMC-RDF folder contains all materials related to the OMC RDF schema
 
 The Creative Works Ontology was the result of a working group focused on distribution and analytics. Much of the thinking about the basic Creative Work has been retained in the new model. OMC builds off of the revised Creative Work on the production side, and OMD moves the distribution and analytics model into a connected ontology, rather than being completely standalone. Information captured during production is often lost and has to be re-created, the connected ontologies make it easier to carry it forward to distribution. We encourage you to migrate from the original 2018 CW to the new ontologies, but the original 2018 CW is still available for reference.
 
-When we refer to a Creative Work in OMC, it refers to the Creative Work as defined in [*Part 6: Creative Works*](https://mc.movielabs.com/docs/ontology/creative-works/introduction). Formal documentation for OMD will be published as an Annex to Part 6: Creative Works.
+When we refer to a Creative Work in OMC, it refers to the Creative Work as defined in [_Part 6: Creative Works_](https://mc.movielabs.com/docs/ontology/creative-works/introduction). Formal documentation for OMD will be published as an Annex to Part 6: Creative Works.
 
 **Why are some things classes rather than more traditional relationships?**
 
@@ -99,4 +100,4 @@ One of the main goals of the working groups that produced the ontology was to un
 
 ## License
 
-All files in this repository are Copyright 2021-2023 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the [LICENSE](./LICENSE.txt) file.
+All files in this repository are Copyright 2021-2023 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the [LICENSE](LICENSE.txt) file.
