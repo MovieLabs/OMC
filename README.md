@@ -3,6 +3,8 @@
 ## OMC-JSON
 The OMC-JSON folder contains all materials related to the OMC-JSON schema
 
+Adding a change to test out if this gets transferred to GitBook
+
 **OMC-JSON-v2.6.schema.json**:The OMC schema itself
 
 **/Docs**: Supplementary documentation including schema documentation and tech notes giving guidance on how to use the OMC and OMC-JSON schema.
