@@ -155,12 +155,12 @@ Details about the shoot day and date.
 ### Controlled Values
 
 #### contextType
-| Value | Description |
-|-------|-------------|
-| concept | An exploratory representation of something from the narrative. |
-| narrative | Informs scope for realizing the creative intent and aligns individual creative decisions within a Creative Work. |
-| production | A real place that is used to depict the Narrative Location or used for creating the production. |
-| shootDay | The number of the day on the shooting schedule. |
+| Value      | Description                                                                                                      |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- |
+| concept    | An exploratory representation of something from the narrative.                                                   |
+| narrative  | Informs scope for realizing the creative intent and aligns individual creative decisions within a Creative Work. |
+| production | A real place that is used to depict the Narrative Location or used for creating the production.                  |
+| shootDay   | The number of the day on the shooting schedule.                                                                  |
 ## Examples
 
 ```JSON

@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -17,7 +17,7 @@
       }
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {

@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Character",
     "identifier": [
       {
@@ -20,18 +20,30 @@
         "hairLength": "Short",
         "eyeColor": "Green"
       },
-      "background": {
-        "likes": "Kiera, Space, Nature",
-        "dislikes": "War, Big space cities, Conflict",
-        "habits": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera.",
-        "traits": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
-      },
+      "background": [
+        {
+          "title": "Likes",
+          "text": "Kiera, Space, Nature"
+        },
+        {
+          "title": "Dislikes",
+          "text": "War, Big space cities, Conflict"
+        },
+        {
+          "title": "Habits",
+          "text": "Sven is a bit of a sloth, happy to be far from prying eyes as he does his work at his pace. He is also a bit of a coward and has avoided the space navy at all cost. He is kind and patient and caring for the people in his life like Kiera."
+        },
+        {
+          "title": "Traits",
+          "text": "Sven is a helpful unassuming character who likes to be alone. He connects with his handlers like Kiera but is happy to be engrossed in his work. He is generally scared of all things and not a hero."
+        }
+      ],
       "gender": null
     },
     "description": "Sven is an unassuming Satellite repair man. He spends his time alone in his ship traveling to remote planets on the outskirt of the galaxy maintaining a network of exploration satellites. He is more of a lover than a fighter.",
     "Depiction": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Depiction",
         "identifier": [
           {
@@ -56,7 +68,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -64,6 +76,7 @@
             "identifierValue": "cxt/377RXIREHUj5MPzsl-Sba"
           }
         ],
+        "contextType": "narrative",
         "featuresIn": {
           "NarrativeScene": [
             {
@@ -330,7 +343,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Character",
     "identifier": [
       {
@@ -350,19 +363,31 @@
         "hairLength": "N/A",
         "eyeColor": "Red"
       },
-      "background": {
-        "likes": "Explore, Hide",
-        "dislikes": "Failure, Getting captured",
-        "habits": "The trilobot is a stealth robot that hides and only attacks when absolutely necessary.",
-        "traits": "They are deceptive and cunning and relentless."
-      },
+      "background": [
+        {
+          "title": "Likes",
+          "text": "Explore, Hide"
+        },
+        {
+          "title": "Dislikes",
+          "text": "Failure, Getting captured"
+        },
+        {
+          "title": "Habits",
+          "text": "The trilobot is a stealth robot that hides and only attacks when absolutely necessary."
+        },
+        {
+          "title": "Traits",
+          "text": "They are deceptive and cunning and relentless."
+        }
+      ],
       "gender": null
     },
     "description": "The advanced scouts of the Kilimari roam the universe looking for planets to consume.",
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -370,6 +395,7 @@
             "identifierValue": "cxt/Ki6uaGlM82HGRlBgEnMXe"
           }
         ],
+        "contextType": "narrative",
         "featuresIn": {
           "NarrativeScene": [
             {
@@ -532,7 +558,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Character",
     "identifier": [
       {
@@ -552,19 +578,31 @@
         "hairLength": "N/A",
         "eyeColor": "Yellow"
       },
-      "background": {
-        "likes": "Conquest, war, Riches",
-        "dislikes": "Humans, Water, Freedom",
-        "habits": "The killamari live to expand their empire.",
-        "traits": "They are fearful of everything and surround themselves with armies of robots."
-      },
+      "background": [
+        {
+          "title": "Likes",
+          "text": "Conquest, war, Riches"
+        },
+        {
+          "title": "Dislikes",
+          "text": "Humans, Water, Freedom"
+        },
+        {
+          "title": "Habits",
+          "text": "The killamari live to expand their empire."
+        },
+        {
+          "title": "Traits",
+          "text": "They are fearful of everything and surround themselves with armies of robots."
+        }
+      ],
       "gender": null
     },
     "description": "A heartless race of squid like creatures that live to take the natural resources from every planet in the galaxy.\r\r\r\n",
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -572,6 +610,7 @@
             "identifierValue": "cxt/NpYI-Tkz81bEJCmyAAbql"
           }
         ],
+        "contextType": "narrative",
         "featuresIn": {
           "NarrativeScene": [
             {
@@ -605,7 +644,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Character",
     "identifier": [
       {
@@ -625,19 +664,31 @@
         "hairLength": "Long",
         "eyeColor": "Green"
       },
-      "background": {
-        "likes": "Sven. Space. Adventure.",
-        "dislikes": "Corporate life, Liars.",
-        "habits": "Kiera is a dreamer and loves to support the people she loves.",
-        "traits": "Kiera is kind and thoughtful. She is curious and longs for adventure."
-      },
+      "background": [
+        {
+          "title": "Likes",
+          "text": "Sven. Space. Adventure."
+        },
+        {
+          "title": "Dislikes",
+          "text": "Corporate life, Liars."
+        },
+        {
+          "title": "Habits",
+          "text": "Kiera is a dreamer and loves to support the people she loves."
+        },
+        {
+          "title": "Traits",
+          "text": "Kiera is kind and thoughtful. She is curious and longs for adventure."
+        }
+      ],
       "gender": null
     },
     "description": "Kiera is the ever present voice in the sky overseeing Sven's operations from central command. We never see her on camera but she is Sven's secret love and they both dream of a day when they can be together.",
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -645,6 +696,7 @@
             "identifierValue": "cxt/Y4xT3kqb60guubgFC_-hz"
           }
         ],
+        "contextType": "narrative",
         "featuresIn": {
           "NarrativeScene": [
             {
@@ -690,7 +742,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Character",
     "identifier": [
       {
@@ -710,19 +762,31 @@
         "hairLength": "N/A",
         "eyeColor": "Red"
       },
-      "background": {
-        "likes": "War, Protection",
-        "dislikes": "Water, Mountains",
-        "habits": "The juggernauts exist to server their masters. ",
-        "traits": "These machines have one goal: destruction. They are slow and clumsy but once they train on their targets they are unstoppable"
-      },
+      "background": [
+        {
+          "title": "Likes",
+          "text": "War, Protection"
+        },
+        {
+          "title": "Dislikes",
+          "text": "Water, Mountains"
+        },
+        {
+          "title": "Habits",
+          "text": "The juggernauts exist to server their masters. "
+        },
+        {
+          "title": "Traits",
+          "text": "These machines have one goal: destruction. They are slow and clumsy but once they train on their targets they are unstoppable"
+        }
+      ],
       "gender": null
     },
     "description": "The war machines of the Killmari. They crush planets and help the klllimari control vast swathes of the galaxy.",
     "Depiction": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -730,6 +794,7 @@
             "identifierValue": "cxt/rEbRZuu_BHhsstb48gLw1"
           }
         ],
+        "contextType": "narrative",
         "featuresIn": {
           "NarrativeScene": [
             {

@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -12,7 +12,7 @@
     "description": "Motion Capture Stage",
     "locationType": "shooting",
     "Location": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "Location",
       "identifier": [
         {
@@ -34,7 +34,7 @@
     },
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -42,12 +42,13 @@
             "identifierValue": "cxt/74J6YVjYu7jTmhuoKCVx9"
           }
         ],
-        "usedIn": null
+        "usedIn": null,
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -59,7 +60,7 @@
     "description": "Headquarters of MovieLabs Studio",
     "locationType": "production",
     "Location": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "Location",
       "identifier": [
         {
@@ -81,7 +82,7 @@
     },
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -89,12 +90,13 @@
             "identifierValue": "cxt/MJsu5EHqZ_Zql09enQ8aE"
           }
         ],
-        "usedIn": null
+        "usedIn": null,
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -106,7 +108,7 @@
     "description": "Headquarters of Labkoat.media",
     "locationType": "production",
     "Location": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "Location",
       "identifier": [
         {
@@ -128,7 +130,7 @@
     },
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -136,12 +138,13 @@
             "identifierValue": "cxt/0ePi-n5yunaJfgLvicU7K"
           }
         ],
-        "usedIn": null
+        "usedIn": null,
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -153,7 +156,7 @@
     "description": "Virtual Production Stage",
     "locationType": "shooting",
     "Location": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "Location",
       "identifier": [
         {
@@ -175,7 +178,7 @@
     },
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -183,12 +186,13 @@
             "identifierValue": "cxt/LXmTA23HTrvs4o-XyYnAm"
           }
         ],
-        "usedIn": null
+        "usedIn": null,
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -200,7 +204,7 @@
     "description": "Headquarters of FX-DMZ",
     "locationType": "production",
     "Location": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "Location",
       "identifier": [
         {
@@ -222,7 +226,7 @@
     },
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -230,12 +234,13 @@
             "identifierValue": "cxt/Qu0MpN4umGn70YXud-Myj"
           }
         ],
-        "usedIn": null
+        "usedIn": null,
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -249,7 +254,7 @@
     "Location": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -260,7 +265,7 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -270,7 +275,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -280,7 +285,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -290,12 +295,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -309,7 +315,7 @@
     "Location": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -317,12 +323,13 @@
             "identifierValue": "cxt/0NkWtf0TjVk82CRduelbv"
           }
         ],
-        "usedIn": null
+        "usedIn": null,
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -336,7 +343,7 @@
     "Location": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -347,7 +354,7 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -357,7 +364,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -367,7 +374,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -377,7 +384,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -387,12 +394,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -406,7 +414,7 @@
     "Location": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -417,7 +425,7 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -427,12 +435,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -446,7 +455,7 @@
     "Location": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -457,7 +466,7 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -467,12 +476,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "ProductionLocation",
     "identifier": [
       {
@@ -486,7 +496,7 @@
     "Location": null,
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -497,7 +507,7 @@
         "usedIn": {
           "ProductionScene": [
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -507,7 +517,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -517,7 +527,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -527,7 +537,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -537,7 +547,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -547,7 +557,7 @@
               ]
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "ProductionScene",
               "identifier": [
                 {
@@ -557,7 +567,8 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   }

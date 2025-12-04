@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -19,7 +19,7 @@
     },
     "Asset": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -28,7 +28,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -50,7 +50,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "A006C001_24020722",
             "cameraLabel": "A",
@@ -62,7 +62,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -75,7 +75,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -95,12 +95,13 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -109,7 +110,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -131,7 +132,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "A006C002_240207CY",
             "cameraLabel": "A",
@@ -143,7 +144,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -156,7 +157,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -176,12 +177,13 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -190,7 +192,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -212,7 +214,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "A006C003_240207Z5",
             "cameraLabel": "A",
@@ -224,7 +226,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -237,7 +239,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -257,12 +259,13 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -271,7 +274,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -293,7 +296,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "B001C001_240207NU",
             "cameraLabel": "B",
@@ -305,7 +308,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -318,7 +321,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -338,12 +341,13 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -352,7 +356,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -374,7 +378,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "B001C002_240207DN",
             "cameraLabel": "B",
@@ -386,7 +390,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -399,7 +403,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -419,12 +423,13 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -433,7 +438,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -455,7 +460,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "A006C004_2402073T",
             "cameraLabel": "A",
@@ -467,7 +472,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -480,7 +485,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -500,12 +505,13 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -514,7 +520,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -536,7 +542,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "A006C005_240207WG",
             "cameraLabel": "A",
@@ -548,7 +554,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -561,7 +567,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -581,12 +587,13 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -595,7 +602,7 @@
           }
         ],
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -617,7 +624,7 @@
           }
         },
         "assetFC": {
-          "functionalType": "capture.video.ocf",
+          "functionalType": "capture.ocf",
           "functionalProperties": {
             "clipName": "A006C006_240207XX",
             "cameraLabel": "A",
@@ -629,7 +636,7 @@
         },
         "Context": [
           {
-            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+            "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
             "entityType": "Context",
             "identifier": [
               {
@@ -642,7 +649,7 @@
             "has": {
               "Slate": [
                 {
-                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+                  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
                   "entityType": "Slate",
                   "identifier": [
                     {
@@ -662,7 +669,8 @@
                   "recordingFPS": 24
                 }
               ]
-            }
+            },
+            "contextType": "production"
           }
         ]
       }

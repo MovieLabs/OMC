@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -13,7 +13,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -50,12 +50,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -68,7 +69,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -89,12 +90,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -107,7 +109,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -128,12 +130,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -146,7 +149,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -167,12 +170,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -185,7 +189,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -222,12 +226,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -240,7 +245,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -277,12 +282,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -295,7 +301,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -316,12 +322,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -334,7 +341,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -371,12 +378,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -389,7 +397,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -426,12 +434,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -444,7 +453,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -481,12 +490,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -499,7 +509,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -520,12 +530,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -538,7 +549,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -559,12 +570,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -577,7 +589,7 @@
     "narrativeType": "narrativeSetDressing",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -630,12 +642,13 @@
             }
           ]
         },
-        "neededBy": null
+        "neededBy": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -648,7 +661,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -688,12 +701,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -706,7 +720,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -746,12 +760,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -764,7 +779,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -804,12 +819,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -822,7 +838,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -870,12 +886,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -888,7 +905,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -928,12 +945,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -946,7 +964,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1026,12 +1044,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1044,7 +1063,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1086,12 +1105,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1104,7 +1124,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1144,12 +1164,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1162,7 +1183,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1194,12 +1215,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1212,7 +1234,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1292,12 +1314,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1310,7 +1333,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1358,12 +1381,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1376,7 +1400,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1440,12 +1464,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1458,7 +1483,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1514,12 +1539,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1532,7 +1558,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1572,12 +1598,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1590,7 +1617,7 @@
     "narrativeType": "narrativeVehicle",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1648,12 +1675,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1666,7 +1694,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1706,12 +1734,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1724,7 +1753,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1764,12 +1793,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1782,7 +1812,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1822,12 +1852,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1840,7 +1871,7 @@
     "narrativeType": "narrativeGreenery",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1896,12 +1927,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1914,7 +1946,7 @@
     "narrativeType": "narrativeGreenery",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1978,12 +2010,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -1996,7 +2029,7 @@
     "narrativeType": "narrativeGreenery",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -2044,12 +2077,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -2062,7 +2096,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -2110,12 +2144,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -2128,7 +2163,7 @@
     "narrativeType": "narrativeGreenery",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -2184,12 +2219,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeObject",
     "identifier": [
       {
@@ -2202,7 +2238,7 @@
     "narrativeType": "narrativeProp",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -2258,7 +2294,8 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "narrative"
       }
     ]
   }

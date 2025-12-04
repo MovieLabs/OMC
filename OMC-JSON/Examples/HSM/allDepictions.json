@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Depiction",
     "identifier": [
       {
@@ -12,7 +12,7 @@
     "name": "Sven MC",
     "description": "The actor portaying Sven in motion capture",
     "Depicts": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "Character",
       "identifier": [
         {
@@ -25,18 +25,19 @@
     },
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
             "identifierScope": "labkoat",
             "identifierValue": "cxt/377U8MFEHUj5MPzslPoII"
           }
-        ]
+        ],
+        "contextType": "production"
       }
     ],
     "Depicter": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "Participant",
       "identifier": [
         {

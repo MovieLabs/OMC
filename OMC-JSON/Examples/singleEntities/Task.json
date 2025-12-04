@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Task",
     "identifier": [
       {
@@ -18,9 +18,16 @@
     },
     "taskFC": {
       "functionalType": "transcode",
-      "customData": {
-        "taskType": "director"
-      }
+      "customData": [
+        {
+          "domain": "labkoat.media",
+          "namespace": "task",
+          "schema": "https://labkoat.media/schemas/task-extension.json",
+          "value": {
+            "taskType": "director"
+          }
+        }
+      ]
     },
     "Context": [
       {
@@ -34,7 +41,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Task",
     "identifier": [
       {

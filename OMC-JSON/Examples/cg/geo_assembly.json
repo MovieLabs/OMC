@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Composition",
     "identifier": [
       {
@@ -15,18 +15,20 @@
       "levelOfDetail": 50,
       "scale": "1m"
     },
-    "Asset": [],
-    "AssetSC": [],
-    "Composition": [
-      {
-        "identifier": [
-          {
-            "identifierScope": "cg-example",
-            "identifierValue": "cmp/34CBF417-944D-42A5-B2B0-CC6620B9A36A"
-          }
-        ]
-      }
-    ],
+    "includes": {
+      "Asset": [],
+      "AssetSC": [],
+      "Composition": [
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "cmp/34CBF417-944D-42A5-B2B0-CC6620B9A36A"
+            }
+          ]
+        }
+      ]
+    },
     "StartHere": {
       "identifier": [
         {
@@ -37,7 +39,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Composition",
     "identifier": [
       {
@@ -52,26 +54,28 @@
       "levelOfDetail": 50,
       "scale": "1m"
     },
-    "Asset": [
-      {
-        "identifier": [
-          {
-            "identifierScope": "cg-example",
-            "identifierValue": "ast/93C356B2-67CC-47A3-82CB-89BA639D06F9"
-          }
-        ]
-      },
-      {
-        "identifier": [
-          {
-            "identifierScope": "cg-example",
-            "identifierValue": "ast/AAEE3617-5D30-4D73-BCC6-A266DBF4B54F"
-          }
-        ]
-      }
-    ],
-    "AssetSC": [],
-    "Composition": [],
+    "includes": {
+      "Asset": [
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/93C356B2-67CC-47A3-82CB-89BA639D06F9"
+            }
+          ]
+        },
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/AAEE3617-5D30-4D73-BCC6-A266DBF4B54F"
+            }
+          ]
+        }
+      ],
+      "AssetSC": [],
+      "Composition": []
+    },
     "StartHere": {
       "identifier": [
         {
@@ -82,7 +86,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -96,7 +100,7 @@
       "functionalProperties": {}
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -139,7 +143,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -153,7 +157,7 @@
       "functionalProperties": {}
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -196,7 +200,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -210,7 +214,7 @@
       "functionalProperties": {}
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -253,7 +257,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -267,7 +271,7 @@
       "functionalProperties": {}
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {

@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "CreativeWork",
     "identifier": [
       {
@@ -16,20 +16,19 @@
         "identifierValue": "tt19632706"
       }
     ],
-    "title": {
-      "workingTitle": "Hyperspace Madness"
-    },
+    "creativeWorkTitle": [
+      {
+        "titleName": "Hyperspace Madness",
+        "titleType": "working"
+      }
+    ],
     "description": "Sven is a bumbling intergalactic repair man sent off to investigate a malfunctioning satellite.. He is quickly ambushed by the dreaded Killamari who have taken over the planet and plan to use it as a base to invade earth.",
     "approximateLength": "PT5M",
-    "originalLanguage": [
-      "en"
-    ],
-    "countryOfOrigin": [
-      "US"
-    ],
+    "originalLanguage": ["en"],
+    "countryOfOrigin": ["US"],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -37,10 +36,11 @@
             "identifierValue": "cxt/6RdTMezue-GZEDEB44_x7"
           }
         ],
+        "contextType": "production",
         "contributor": {
           "Participant": [
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -52,7 +52,7 @@
               "description": null
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -64,7 +64,7 @@
               "description": null
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -80,7 +80,7 @@
               "description": "Stunt actor doing mo-cap for Sven"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -92,7 +92,7 @@
               "description": "Does a bit of this and a lot of that"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -104,7 +104,7 @@
               "description": null
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -116,7 +116,7 @@
               "description": null
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -128,7 +128,7 @@
               "description": "External from vfx studio"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -140,7 +140,7 @@
               "description": null
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "Participant",
               "identifier": [
                 {
@@ -157,7 +157,7 @@
           "Asset": null,
           "NarrativeScene": [
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "NarrativeScene",
               "identifier": [
                 {
@@ -165,13 +165,14 @@
                   "identifierValue": "nscn/wz_MHOLYI3VwYx_0AX47Y"
                 }
               ],
+              "narrativeType": "narrativeScene",
               "sceneName": {
                 "fullName": "Jungle"
               },
               "sceneNumber": "1"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "NarrativeScene",
               "identifier": [
                 {
@@ -179,13 +180,14 @@
                   "identifierValue": "nscn/St_Hh-LxAQo4ICUAtbZ0v"
                 }
               ],
+              "narrativeType": "narrativeScene",
               "sceneName": {
                 "fullName": "Space"
               },
               "sceneNumber": "2"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "NarrativeScene",
               "identifier": [
                 {
@@ -193,13 +195,14 @@
                   "identifierValue": "nscn/xJpXtpM0G2QQM92TITfTf"
                 }
               ],
+              "narrativeType": "narrativeScene",
               "sceneName": {
                 "fullName": "Space Moments Later"
               },
               "sceneNumber": "3"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "NarrativeScene",
               "identifier": [
                 {
@@ -207,13 +210,14 @@
                   "identifierValue": "nscn/3EF7fR-xOJ7IamLr2iYsg"
                 }
               ],
+              "narrativeType": "narrativeScene",
               "sceneName": {
                 "fullName": "Atmosphere"
               },
               "sceneNumber": "4"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "NarrativeScene",
               "identifier": [
                 {
@@ -221,13 +225,14 @@
                   "identifierValue": "nscn/lmPkGo1nXjJgfeNnoxArq"
                 }
               ],
+              "narrativeType": "narrativeScene",
               "sceneName": {
                 "fullName": "Beach"
               },
               "sceneNumber": "5"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "NarrativeScene",
               "identifier": [
                 {
@@ -235,13 +240,14 @@
                   "identifierValue": "nscn/1icPnKZ4LRliFd3WI9urA"
                 }
               ],
+              "narrativeType": "narrativeScene",
               "sceneName": {
                 "fullName": "Plateau"
               },
               "sceneNumber": "7"
             },
             {
-              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+              "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
               "entityType": "NarrativeScene",
               "identifier": [
                 {
@@ -249,6 +255,7 @@
                   "identifierValue": "nscn/zH9BzX8cjf-wY6N-HE6fg"
                 }
               ],
+              "narrativeType": "narrativeScene",
               "sceneName": {
                 "fullName": "Jungle"
               },

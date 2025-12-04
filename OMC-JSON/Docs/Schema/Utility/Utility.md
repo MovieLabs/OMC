@@ -15,9 +15,12 @@ Human readable commentary, explanation, or information.
 #### customData
 A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties.
 
-| Constraint | Type         | Description |
-| ---------- | ------------ | ----------- |
-|            | object, null |             |
+| Property  | Constraint | Type         | Description                                                                  |
+| --------- | ---------- | ------------ | ---------------------------------------------------------------------------- |
+| domain    |            | string, null | Indicates the set or system in which the custom data is relevant or defined. |
+| namespace |            | string, null | The namespace used by the custom data.                                       |
+| schema    |            | string, null | URL for the schema used by the custom data.                                  |
+| value     |            | any          | The user defined custom data.                                                |
 
 #### identifier
 An identifier uniquely identifies an entity within a particular scope.
@@ -49,6 +52,26 @@ A short string from a particular set, used for categorization and description.
 | -------- | ---------- | ------------------- | ----------------------------------------------------------------------------------- |
 | domain   |            | string, null        | An indication of the set or system in which the tag values are relevant or defined. |
 | value    |            | [ string ]<br> null | A set of tags taken from the domain.                                                |
+
+#### codec
+A system that compresses or decompresses digitized audio, video, or images. 
+
+| Constraint | Type         | Description                                  |
+| ---------- | ------------ | -------------------------------------------- |
+|            | string, null | The specific codec used to encode the Asset. |
+
+#### software
+A set of executable instructions that tells a computer how to operate.
+
+| Property          | Constraint | Type                                                                                     | Description                                                                                    |
+| ----------------- | ---------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| softwareName      |            | string, null                                                                             | The name of the software.                                                                      |
+| softwareVersion   |            | string, null                                                                             | A version ascribed to the the software that was used.                                          |
+| apiVersion        |            | string, null                                                                             | For applications or SAAS services where an API is used.                                        |
+| plugin            |            | [[software](#software)]                                                                  | A list of required plugins, these are also software.                                           |
+| operatingSystem   |            | [software](#software)                                                                    | The operating system that used, this is also software                                          |
+| parameters        |            | string, null                                                                             | Parameters used when executing the software, such as in a command line                         |
+| ConfigurationFile |            | [&nbsp[Asset](../Asset/Asset.md)<br>[identifier](../Utility/Utility.md#identifier)&nbsp] | Optional reference to an file(Asset) containing additional configuration or other information. |
 
 ## People and Place
 
@@ -362,15 +385,6 @@ The acoustical space created by simultaneously reproducing one or more Audio Cha
 | M     | 1.0 Monaural - Uses channel: C                           |
 | SDS   | 7.1SDS - Uses channels: L, Lc, C, Rc, R, Ls, Rs, LFE     |
 | ST    | Standard Stereo - Uses channels L, R                     |
-
-## General
-
-#### codec
-A system that compresses or decompresses digitized audio, video, or images. 
-
-| Constraint | Type         | Description                                  |
-| ---------- | ------------ | -------------------------------------------- |
-|            | string, null | The specific codec used to encode the Asset. |
 
 ## Versions
 

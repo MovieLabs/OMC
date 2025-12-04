@@ -16,9 +16,9 @@ Includes properties from: [baseEntity](../core/baseEntity.md)
 #### participantFC
 The use or purpose of a Participant within the production process.
 
-| Property       | Constraint | Type                                           | Description                                                                                                                              |
-| -------------- | ---------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| functionalType |            | string<br>null                                 |                                                                                                                                          |
-| jobTitle       |            | string<br>null                                 | A formal name for the position a Person holds in relation to the production, usually associated with a specific set of responsibilities. |
-| Role           |            | [ [Role](./Role.md) ]                          | A set of Roles associated with this Participant.                                                                                         |
-| customData     |            | [customData](../Utility/Utility.md#customData) | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties.                |
+| Property       | Constraint | Type                                                             | Description                                                                                                                              |
+| -------------- | ---------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| functionalType |            | string<br>null                                                   |                                                                                                                                          |
+| jobTitle       |            | string<br>null                                                   | A formal name for the position a Person holds in relation to the production, usually associated with a specific set of responsibilities. |
+| Role           |            | [ [Role](./Role.md) ], null                                      | A set of Roles associated with this Participant.                                                                                         |
+| customData     |            | [&nbsp[customData](../Utility/Utility.md#customData)&nbsp], null | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties.                |

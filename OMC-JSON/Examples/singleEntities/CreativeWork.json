@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "CreativeWork",
     "identifier": [
       {
@@ -34,12 +34,8 @@
     },
     "description": "Sven is a bumbling intergalactic repair man sent off to investigate a malfunctioning satellite.. He is quickly ambushed by the dreaded Killamari who have taken over the planet and plan to use it as a base to invade earth.",
     "approximateLength": "PT5M",
-    "originalLanguage": [
-      "en"
-    ],
-    "countryOfOrigin": [
-      "US"
-    ],
+    "originalLanguage": ["en"],
+    "countryOfOrigin": ["US"],
     "Series": [
       {
         "identifier": [
@@ -99,15 +95,12 @@
     "tag": [
       {
         "domain": "tagType",
-        "value": [
-          "tagValue",
-          8
-        ]
+        "value": ["tagValue", 8]
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "CreativeWork",
     "identifier": [
       {
@@ -140,7 +133,7 @@
     "Context": []
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "CreativeWork",
     "identifier": [
       {

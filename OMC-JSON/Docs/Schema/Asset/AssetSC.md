@@ -26,7 +26,7 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | Derivation       | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of AssetSC's that are Derived from this one.                                                                        |
 | Representation   | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of AssetSC's that are Representations of this one.                                                                  |
 | Revision         | anyOf      | [ [AssetSC](./AssetSC.md) <br>[identifier](../Utility/Utility.md#identifier) ] | A set of AssetSC's that are Revisions of this one.                                                                        |
-| customData       |            | [customData](../Utility/Utility.md#customData)                                 | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
+| customData       |            | [&nbsp[customData](../Utility/Utility.md#customData)&nbsp], null               | A user defined set of custom data in the payload of the instance, used where the formal schema lacks required properties. |
 
 #### structuralProperties
 
@@ -36,16 +36,18 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 | audioBitRate          |            | integer, null                                                        | The number of bits in one second of sampled audio, expressed in Kbits per second.                                     |
 | audioSampleRate       |            | integer, null                                                        | The average number of samples per second taken from the source audio input in KHz.                                    |
 | audioSampleSize       |            | integer, null                                                        | The number of bits per audio sample.                                                                                  |
-| codec                 |            | [codec](../Utility/Utility.md#codec)                                 | The specific codec used to encode the Asset.                                                                          |
-| dimensions            |            | [dimensions](../Utility/Utility.md#dimensions)                       | Dimensions for an asset in a unit of measurement.                                                                     |
+| axisAligned           |            | boolean, null                                                        | True if the volume is aligned with the three axes of the coordinate space.                                            |
 | boundingBox           |            | [boundingBox](../Utility/Utility.md#boundingBox)                     | The minimum axis-aligned right rectangular prism in the local space of the Geometry that fully encloses the Geometry. |
+| cgVolumePurpose       |            | string, null                                                         | The intended use of a CG Volume in the CG pipeline                                                                    |
+| codec                 |            | [codec](../Utility/Utility.md#codec)                                 | The specific codec used to encode the Asset.                                                                          |
 | coordinateOrientation |            | [coordinateOrientation](../Utility/Utility.md#coordinateOrientation) | The direction and handedness of the axes used in the geometry.                                                        |
+| dimensions            |            | [dimensions](../Utility/Utility.md#dimensions)                       | Dimensions for an asset in a unit of measurement.                                                                     |
 | fileDetails           |            | [fileDetails](#fileDetails)                                          |                                                                                                                       |
 | geometryType          | ctrlValue  | [geometryType](#geometryType)                                        | A description of the general underlying form of a three-dimensional shape.                                            |
 | levelOfDetal          |            | [levelOfDetail](../Utility/Utility.md#levelOfDetail)                 | Percentage of the screen that an object can reasonably take up.                                                       |
 | linkSet               |            | [linkSet](#linkSet)                                                  | Metadata used in resolving an identifier.                                                                             |
-| materialType          | ctrlValue  | [materialType](../Utility/Utility.md#materialType)                   | A categorization of what the material is intended to simulate.                                                        |
 | purpose               | ctrlValue  | [purpose](../Utility/Utility.md#purpose)                             | A suggested or intended use for the object in a pipeline.                                                             |
+| numberPoints          |            | integer, null                                                        | The number of individual points in the point cloud.                                                                   |
 | scale                 |            | [scale](../Utility/Utility.md#scale)                                 | The number of “real” units represented by a single unit in the coordinate space of the Geometry.                      |
 
 #### assetGroup
@@ -70,27 +72,30 @@ Includes properties from: [baseVersion](../core/baseVersion.md)
 ### Controlled Values
 
 #### structuralType
-| Value                       | Description                                                                                           |
-| --------------------------- | ----------------------------------------------------------------------------------------------------- |
-| assetGroup                  | Signifies this Asset represents and Asset Group.                                                      |
-| digital                     | Information that exists as digital data.                                                              |
-| digital.audio               | A representation of sound.                                                                            |
-| digital.audioVisual         | A Moving Image with Audio synchronized to the images.                                                 |
-| digital.data                | An Asset composed of digital data.                                                                    |
-| digital.document            | A human readable object containing text and/or images.                                                |
-| digital.image               | A two-dimensional visual representation.                                                              |
-| digital.imageSequence       | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image. |
-| digital.movingImage         | A temporally ordered sequence of Images                                                               |
-| digital.procedural          | An Asset that produces data that does not persist outside of its immediate use.                       |
-| digital.structuredDocument  | A Document structured according to a set of rules which are used to parse or understand the document. |
-| geometry                    | A shape defined in three dimensions.                                                                  |
-| physical                    | A physical asset is one where the tangible reality of the Asset is its defining feature.              |
-| physical.audioVisual        | A Moving Image with Audio synchronized to the images.                                                 |
-| physical.document           | A human readable object containing text and/or images.                                                |
-| physical.image              | A two-dimensional visual representation.                                                              |
-| physical.imageSequence      | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image. |
-| physical.movingImage        | A temporally ordered sequence of Images                                                               |
-| physical.structuredDocument | A Document structured according to a set of rules which are used to parse or understand the document. |
+| Value                       | Description                                                                                                              |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| assetGroup                  | Signifies this Asset represents and Asset Group.                                                                         |
+| digital                     | Information that exists as digital data.                                                                                 |
+| digital.audio               | A representation of sound.                                                                                               |
+| digital.audio.object        | A segment of audio essence with associated metadata describing positional and other properties which may vary with time. |
+| digital.audioVisual         | A Moving Image with Audio synchronized to the images.                                                                    |
+| digital.data                | An Asset composed of digital data.                                                                                       |
+| digital.document            | A human readable object containing text and/or images.                                                                   |
+| digital.image               | A two-dimensional visual representation.                                                                                 |
+| digital.imageSequence       | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image.                    |
+| digital.movingImage         | A temporally ordered sequence of Images                                                                                  |
+| digital.procedural          | An Asset that produces data that does not persist outside of its immediate use.                                          |
+| digital.pointCloud          | A set of data points in 3D space.                                                                                        |
+| digital.volume              | A non-mesh representation of 3D data.                                                                                    |
+| digital.structuredDocument  | A Document structured according to a set of rules which are used to parse or understand the document.                    |
+| geometry                    | A shape defined in three dimensions.                                                                                     |
+| physical                    | A physical asset is one where the tangible reality of the Asset is its defining feature.                                 |
+| physical.audioVisual        | A Moving Image with Audio synchronized to the images.                                                                    |
+| physical.document           | A human readable object containing text and/or images.                                                                   |
+| physical.image              | A two-dimensional visual representation.                                                                                 |
+| physical.imageSequence      | A temporally ordered sequence of individual images which are the constituent parts of a Moving Image.                    |
+| physical.movingImage        | A temporally ordered sequence of Images                                                                                  |
+| physical.structuredDocument | A Document structured according to a set of rules which are used to parse or understand the document.                    |
 #### geometryType
 A description of the general underlying form of a three-dimensional shape.
 

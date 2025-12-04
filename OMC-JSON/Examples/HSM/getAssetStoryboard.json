@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -11,7 +11,7 @@
     "name": "Fall",
     "description": null,
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -34,7 +34,7 @@
     },
     "Asset": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -45,7 +45,7 @@
         "name": "Blaster dodge",
         "description": "Sven attempts to dodge the fire while entering the atmosphere",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -74,7 +74,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -85,7 +85,7 @@
         "name": "Direct hit",
         "description": "Direct hit on the engine",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -114,7 +114,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -125,7 +125,7 @@
         "name": "Sven worried",
         "description": "Sven says I am hit!",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -154,7 +154,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -165,7 +165,7 @@
         "name": "Ship smoke",
         "description": "Damage ship speeding towards planet",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -194,7 +194,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -205,7 +205,7 @@
         "name": "Ground approaching",
         "description": "Rushing through the clouds out of control",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -234,7 +234,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -245,7 +245,7 @@
         "name": "Sven Struggle",
         "description": "Sven struggles to control the ship.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -274,7 +274,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -285,7 +285,7 @@
         "name": "Ship Cloud",
         "description": "Ship pierces through the clouds at break neck speed",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -314,7 +314,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -325,7 +325,7 @@
         "name": "Face crash",
         "description": "Ship pierces through the clouds at break neck speed",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -354,7 +354,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -365,7 +365,7 @@
         "name": "Sven eject button",
         "description": "Sven grabs his communicator so he can stay in touch with Kiera",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -394,7 +394,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -405,7 +405,7 @@
         "name": "Sven eject button",
         "description": "Sven spots the eject button",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -434,7 +434,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -445,7 +445,7 @@
         "name": "Sven fly out",
         "description": "Sven hits the eject button and shoots out of the frame",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -474,7 +474,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -485,7 +485,7 @@
         "name": "Sven parachute",
         "description": "Sven flies away from the ship which is crashing towards the camera",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -514,7 +514,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -525,7 +525,7 @@
         "name": "Ship approach water",
         "description": "Ships speeds toward camera.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -554,7 +554,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -565,7 +565,7 @@
         "name": "Ship impact",
         "description": "Ship crashes into water with a violent explosion.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -594,7 +594,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -605,7 +605,7 @@
         "name": "Sven flip",
         "description": "Sven flips through the air.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -634,7 +634,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -645,7 +645,7 @@
         "name": "Sven impact",
         "description": "Sven crashes into water",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -674,7 +674,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -685,7 +685,7 @@
         "name": "Sven Sink",
         "description": "Sven sinks to the bottom",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -714,7 +714,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -725,7 +725,7 @@
         "name": "Sven Surface",
         "description": "Sven fights loose and floats to the surface",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -756,7 +756,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -783,12 +783,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -799,7 +800,7 @@
     "name": "Beach",
     "description": null,
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -822,7 +823,7 @@
     },
     "Asset": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -833,7 +834,7 @@
         "name": "water",
         "description": "Rough water wondering if Sven makes the surface",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -862,7 +863,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -873,7 +874,7 @@
         "name": "Sven breach",
         "description": "Sven breaches the surface and takes a deep breath",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -902,7 +903,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -913,7 +914,7 @@
         "name": "Ship sink",
         "description": "Sven watches his ship sink into the ocean",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -942,7 +943,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -953,7 +954,7 @@
         "name": "Find beach",
         "description": "Sven turns towards the beach",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -982,7 +983,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -993,7 +994,7 @@
         "name": "Beach survey",
         "description": "Sven surveys the landscape.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1022,7 +1023,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1033,7 +1034,7 @@
         "name": "Sven swim",
         "description": "Sven swims towards the beach",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1062,7 +1063,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1073,7 +1074,7 @@
         "name": "Sven emerge",
         "description": "Sven emerges from the water",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1102,7 +1103,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1113,7 +1114,7 @@
         "name": "Sven communicator",
         "description": "Sven is happy he still has his communicator.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1142,7 +1143,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1153,7 +1154,7 @@
         "name": "Sven calls home",
         "description": "Sven contacts Kiera",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1182,7 +1183,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1193,7 +1194,7 @@
         "name": "Sven frustrated",
         "description": "Come on! Strange readings",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1222,7 +1223,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1233,7 +1234,7 @@
         "name": "Sven Turn",
         "description": "What there is Killimari here?",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1262,7 +1263,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1273,7 +1274,7 @@
         "name": "Sven scared",
         "description": "Sven scared when he hears the noise",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1302,7 +1303,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1313,7 +1314,7 @@
         "name": "Sven sees Trilobot",
         "description": "Sven turns when he hears the trilobot approach",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1342,7 +1343,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1353,7 +1354,7 @@
         "name": "Trilobot hover",
         "description": "We finally see the trilobot up close and it starts firing  at Sven",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1382,7 +1383,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1393,7 +1394,7 @@
         "name": "Sven horror",
         "description": "Sven looks in horror",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1422,7 +1423,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1433,7 +1434,7 @@
         "name": "Rock Blast",
         "description": "Sven runs for cover as rock explodes around him",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1462,7 +1463,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1473,7 +1474,7 @@
         "name": "Sven rock cover",
         "description": "Sven dives behind a big rock",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1502,7 +1503,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1513,7 +1514,7 @@
         "name": "Sven freak out",
         "description": "This is bad really bad",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1542,7 +1543,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1553,7 +1554,7 @@
         "name": "Sven bolt",
         "description": "Sven is forced to flee",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1582,7 +1583,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1593,7 +1594,7 @@
         "name": "Sven Jungle",
         "description": "Sven spots a jungle entrance",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1622,7 +1623,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1633,7 +1634,7 @@
         "name": "jungle dash",
         "description": "Sven makes a break for the jungle",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1662,7 +1663,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1673,7 +1674,7 @@
         "name": "Trilobot blast",
         "description": "Trilobot pounds the rocks with laser beams",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1702,7 +1703,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1713,7 +1714,7 @@
         "name": "Jungle entrance",
         "description": "Sven gets into the jungle with the trilobot in hot pursuit.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1744,7 +1745,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -1763,12 +1764,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -1779,7 +1781,7 @@
     "name": "Plateau",
     "description": null,
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -1802,7 +1804,7 @@
     },
     "Asset": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1813,7 +1815,7 @@
         "name": "Jungle Clear",
         "description": "Sven walks out of the jungle clearing to see a cliff's edge",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1842,7 +1844,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1853,7 +1855,7 @@
         "name": "Sven Cliff",
         "description": "Sven approaches the edge",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1882,7 +1884,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1893,7 +1895,7 @@
         "name": "Sven edge",
         "description": "Sven peers over",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1922,7 +1924,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1933,7 +1935,7 @@
         "name": "City",
         "description": "Sven looks at City",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -1962,7 +1964,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -1973,7 +1975,7 @@
         "name": "Call home",
         "description": "Kiera I think I found the source of your strange readings",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2002,7 +2004,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2013,7 +2015,7 @@
         "name": "Start Screen",
         "description": "Start Gameplay",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2044,7 +2046,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -2063,12 +2065,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -2079,7 +2082,7 @@
     "name": "Title",
     "description": null,
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -2102,7 +2105,7 @@
     },
     "Asset": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2113,7 +2116,7 @@
         "name": "title forest",
         "description": "Title graphic overlaid on Sven",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2142,7 +2145,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2153,7 +2156,7 @@
         "name": "title graphic",
         "description": "Title graphic solo",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2182,7 +2185,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2193,7 +2196,7 @@
         "name": "title blast",
         "description": "Sven blasting through forest",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2224,7 +2227,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -2243,12 +2246,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -2259,7 +2263,7 @@
     "name": "Satellite",
     "description": null,
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -2282,7 +2286,7 @@
     },
     "Asset": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2293,7 +2297,7 @@
         "name": "Satellite establish",
         "description": "Estabishing shot of Sven in orbit.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2322,7 +2326,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2333,7 +2337,7 @@
         "name": "Sven face",
         "description": "Sven focusing on his work",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2362,7 +2366,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2373,7 +2377,7 @@
         "name": "Sven tools",
         "description": "Sven taking out his tools to start the repair. Kiera checks in.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2402,7 +2406,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2413,7 +2417,7 @@
         "name": "Sven work wide",
         "description": "Sven working away. It's going great.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2442,7 +2446,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2453,7 +2457,7 @@
         "name": "Planet",
         "description": "Sven talking to Kiera about the Neptune Eclpse",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2482,7 +2486,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2493,7 +2497,7 @@
         "name": "Sven fix face",
         "description": "Sven fixing and responding about the Neptune Eclipse.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2522,7 +2526,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2533,7 +2537,7 @@
         "name": "Sven adjust welder",
         "description": "Sven adjusting his blaster",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2562,7 +2566,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2573,7 +2577,7 @@
         "name": "Sven welding",
         "description": "Sven making some final repairs",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2602,7 +2606,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2613,7 +2617,7 @@
         "name": "Power Up",
         "description": "Sven powering back on the satellite. Last fix of the season.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2642,7 +2646,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2653,7 +2657,7 @@
         "name": "Success",
         "description": "Sven asking Kiera if she would go with him to the Neptune Eclipse",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2682,7 +2686,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2693,7 +2697,7 @@
         "name": "Trilobot eye",
         "description": "Sven turns to the sound of the Trilobot",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2722,7 +2726,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2733,7 +2737,7 @@
         "name": "Trilobot rise",
         "description": "The trilobot rises up and powers up its blaster.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2762,7 +2766,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2773,7 +2777,7 @@
         "name": "Sven deflect",
         "description": "Sven blocks the blast with the satellite hatch",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2802,7 +2806,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2813,7 +2817,7 @@
         "name": "Sven flee",
         "description": "Sven desperately tries to escape to his ship",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2842,7 +2846,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2853,7 +2857,7 @@
         "name": "Sven ship seat",
         "description": "Sven wildly maneuvers into his ship crashing into his seat",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2882,7 +2886,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2893,7 +2897,7 @@
         "name": "Hatch close",
         "description": "Sven closes his hatch",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2922,7 +2926,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2933,7 +2937,7 @@
         "name": "Fulll throttle",
         "description": "Sven hammers down the throttle.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -2962,7 +2966,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -2973,7 +2977,7 @@
         "name": "Engine Ready",
         "description": "Closeup of engines firing up",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3002,7 +3006,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3013,7 +3017,7 @@
         "name": "Blast Off",
         "description": "Ship blasting towards the planet.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3044,7 +3048,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -3063,12 +3067,13 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -3079,7 +3084,7 @@
     "name": "Jungle Run",
     "description": null,
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -3102,7 +3107,7 @@
     },
     "Asset": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3113,7 +3118,7 @@
         "name": "Sven emerge",
         "description": "Sven emerging from brush",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3142,7 +3147,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3153,7 +3158,7 @@
         "name": "Sven flip jungle",
         "description": "Back to title frame. Sven flying through air",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3182,7 +3187,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3193,7 +3198,7 @@
         "name": "Sven fall ground",
         "description": "Sven slams onto the jungle floor",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3222,7 +3227,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3233,7 +3238,7 @@
         "name": "Fruit Explode",
         "description": "Sven sees fruit explode",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3262,7 +3267,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3273,7 +3278,7 @@
         "name": "Trilobot close",
         "description": "Trilobot closes in",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3302,7 +3307,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3313,7 +3318,7 @@
         "name": "Sven fires back",
         "description": "Sven fires back with his blaster",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3342,7 +3347,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3353,7 +3358,7 @@
         "name": "Sven fire wild",
         "description": "Sven runs and fires wildly",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3382,7 +3387,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3393,7 +3398,7 @@
         "name": "Sven opening",
         "description": "Sven heads towards an opening",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3422,7 +3427,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3433,7 +3438,7 @@
         "name": "Sven trees",
         "description": "Sven stops when he sees something in the trees. a plant full of exploding fruit",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3462,7 +3467,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3473,7 +3478,7 @@
         "name": "Sven last stand",
         "description": "Sven prepares for his last stand.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3502,7 +3507,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3513,7 +3518,7 @@
         "name": "Sven tree hit",
         "description": "Sven shoots at the tree just as the Trilobot passes",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3542,7 +3547,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3553,7 +3558,7 @@
         "name": "Trilobot crunch",
         "description": "The shot is timed perfectly",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3582,7 +3587,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3593,7 +3598,7 @@
         "name": "Tree explode",
         "description": "The fruit swell up and explode",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3622,7 +3627,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3633,7 +3638,7 @@
         "name": "Trilobot explode",
         "description": "The Trilobot is destroyed.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3662,7 +3667,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3673,7 +3678,7 @@
         "name": "Sven Stunned",
         "description": "Sven is stunned but alive.",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3702,7 +3707,7 @@
         }
       },
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -3713,7 +3718,7 @@
         "name": "City Noise",
         "description": "Sven hears more sounds in the distance",
         "AssetSC": {
-          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
           "entityType": "AssetSC",
           "identifier": [
             {
@@ -3744,7 +3749,7 @@
     ],
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -3763,7 +3768,8 @@
               ]
             }
           ]
-        }
+        },
+        "contextType": "production"
       }
     ]
   }

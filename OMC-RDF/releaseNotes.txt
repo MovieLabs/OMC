@@ -1,3 +1,68 @@
+2.6 - 2.8 RELEASE NOTES
+CG ASSETS
+Added classes, relationships, and vocabulary for omc:PointCloud and omc:CGPointCloud
+Added classes, relationships, and vocabulary for omc:Volume and omc:CGVolume
+For both of the above, extended domain and range on some relationships
+
+Added classes, relationships, and vocabulary for omc:CG_Rig
+Added classes, relationships, and vocabulary for omc:UDIM_Tile
+Added classes, relationships, and vocabulary omc:CGModel
+
+Added omc:Emissive and omc:EmissiveColor
+Extended domain and range of omc:hasBoundingBox to cover new uses of bounding boxes 
+Added missing subclass information for omc:Material and fixed other bugs relating to Materials as domains and ranges.
+Made omc:SimpleMaterial a subclass of omc:AssetAsFunction (i.e., an Asset Functional Class)
+Corrected omc:Collsion to omc:Collision
+
+
+AUDIO
+Added classes, relationships, and vocabulary from Part3C:Audio
+
+USER-DEFINED DATA
+Added classes and relationships for omc:Software
+Added classes and relationships for omc:Tag
+Added classes and relationships for attributes for omc:CustomData
+
+COLLECTION
+Added classes and relationships for omc:Collection
+
+ASSET PHYSICAL/DIGITAL BUGS FIXES AND ADDITIONS
+Clarified definitions and structure of omc:DigitalAsset and omc:DigitalData
+Changed several erroneous references from omc:DigitalData to omc:DigitalAsset
+
+Removed omc:AnalogImage (use omc:PhysicalImage instead)
+Added omc:AnalogMovingImage
+Added omc:AnalogAudio class
+Added omc:DigitalMovingImages
+Made omc:PhysicalDocument and omc:PhysicalImage   subclasses of omc:PhysicalAsset
+
+SHOTS AND SEQUENCES
+Made omc:Sequence a subclass of omc:Composition
+Added omc:EditorialShot and its relationships
+Similarly for VFX Shot and VFX Sequence
+Added omc:Shot to the domain for omc:hasSlate
+
+CONTEXT AND NARRATIVE ELEMENTS
+Revised relationship names and their inverses for omc:Depiction
+
+Fixed some bugs in subclassing of various Narrative elements
+Added omc:NarrativeStyling
+Removed omc:NarrativeScript, omc:ProductionScript
+Removed omc:Slugline as a class; use omc:hasSlugline with a String instead
+
+
+GROUPS
+Changed omc:AssetGroup to be subclass of omc:Asset
+Changes omc:ParticipantGroup to be subclass of omc:Participant
+Made omc:TaskGroup a subclass of omc:Task
+
+
+OTHER
+Corrected definition of omc:Annotation
+Changed omc:Codec from omc:Asset to omc:VocabularyTerm
+Changed omc:ResolvableIrl to omc:ResolvableUrl
+
+- - - - - - 
 2.5 RELEASE NOTES
 
 CONTEXT

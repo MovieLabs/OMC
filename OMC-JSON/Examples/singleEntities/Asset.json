@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -21,7 +21,7 @@
         }
       ],
       "DerivationOf": {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Asset",
         "identifier": [
           {
@@ -145,14 +145,12 @@
     "tag": [
       {
         "domain": "tagType",
-        "value": [
-          "tagValue", 8
-        ]
+        "value": ["tagValue", 8]
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -216,7 +214,7 @@
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -248,7 +246,7 @@
     "tag": null
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {

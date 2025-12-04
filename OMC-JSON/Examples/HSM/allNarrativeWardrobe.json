@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeWardrobe",
     "identifier": [
       {
@@ -13,7 +13,7 @@
     "narrativeType": "narrativeWardrobe",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -93,12 +93,13 @@
             }
           ]
         },
-        "has": null
+        "has": null,
+        "contextType": "narrative"
       }
     ]
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "NarrativeWardrobe",
     "identifier": [
       {
@@ -111,7 +112,7 @@
     "narrativeType": "narrativeWardrobe",
     "Context": [
       {
-        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
         "entityType": "Context",
         "identifier": [
           {
@@ -143,7 +144,8 @@
             }
           ]
         },
-        "has": null
+        "has": null,
+        "contextType": "narrative"
       }
     ]
   }

@@ -1,20 +1,20 @@
-[
-  {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
-    "entityType": "Composition",
-    "identifier": [
-      {
-        "identifierScope": "cg-example",
-        "identifierValue": "cmp/DE14F3DF-D929-45C3-B151-4CDE7147D220"
-      }
-    ],
-    "name": "schoolRoomAllBricks",
-    "compositionType": "cgAssembly",
-    "compositionProperties": {
-      "purpose": "general",
-      "levelOfDetail": 50,
-      "scale": "1m"
-    },
+{
+  "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+  "entityType": "Composition",
+  "identifier": [
+    {
+      "identifierScope": "cg-example",
+      "identifierValue": "cmp/DE14F3DF-D929-45C3-B151-4CDE7147D220"
+    }
+  ],
+  "name": "schoolRoomAllBricks",
+  "compositionType": "cgAssembly",
+  "compositionProperties": {
+    "purpose": "general",
+    "levelOfDetail": 50,
+    "scale": "1m"
+  },
+  "includes": {
     "Asset": [],
     "AssetSC": [],
     "Composition": [
@@ -26,52 +26,14 @@
           }
         ]
       }
-    ],
-    "StartHere": {
-      "identifier": [
-        {
-          "identifierScope": "cg-example",
-          "identifierValue": "ast/23B9E4AA-2BEA-466C-A3BE-3FA9C5E46B64"
-        }
-      ]
-    }
+    ]
   },
-  {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
-    "entityType": "Composition",
+  "StartHere": {
     "identifier": [
       {
         "identifierScope": "cg-example",
-        "identifierValue": "cmp/DE14F3DF-D929-45C3-B151-4CDE7147D220"
+        "identifierValue": "ast/23B9E4AA-2BEA-466C-A3BE-3FA9C5E46B64"
       }
-    ],
-    "name": "schoolRoomAllBricks",
-    "compositionType": "cgAssembly",
-    "compositionProperties": {
-      "purpose": null,
-      "levelOfDetail": null,
-      "scale": null
-    },
-    "Asset": null,
-    "AssetSC": null,
-    "Composition": null,
-    "StartHere": null
-  },
-  {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
-    "entityType": "Composition",
-    "identifier": [
-      {
-        "identifierScope": "cg-example",
-        "identifierValue": "cmp/DE14F3DF-D929-45C3-B151-4CDE7147D220"
-      }
-    ],
-    "name": "schoolRoomAllBricks",
-    "compositionType": "cgAssembly",
-    "compositionProperties": null,
-    "Asset": null,
-    "AssetSC": null,
-    "Composition": null,
-    "StartHere": null
+    ]
   }
-]
+}

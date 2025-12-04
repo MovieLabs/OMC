@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Composition",
     "identifier": [
       {
@@ -15,26 +15,28 @@
       "levelOfDetail": 50,
       "scale": "1m"
     },
-    "Asset": [
-      {
-        "identifier": [
-          {
-            "identifierScope": "cg-example",
-            "identifierValue": "ast/01385931-68F6-4F4F-9B06-7F94A72F3FF3"
-          }
-        ]
-      },
-      {
-        "identifier": [
-          {
-            "identifierScope": "cg-example",
-            "identifierValue": "ast/B085BFD5-755A-4DA9-9331-986E8A838934"
-          }
-        ]
-      }
-    ],
-    "AssetSC": [],
-    "Composition": [],
+    "includes": {
+      "Asset": [
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/01385931-68F6-4F4F-9B06-7F94A72F3FF3"
+            }
+          ]
+        },
+        {
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "ast/B085BFD5-755A-4DA9-9331-986E8A838934"
+            }
+          ]
+        }
+      ],
+      "AssetSC": [],
+      "Composition": []
+    },
     "StartHere": {
       "identifier": [
         {
@@ -45,7 +47,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -61,7 +63,7 @@
       }
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -85,7 +87,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -97,12 +99,12 @@
     "assetFC": {
       "functionalType": "map",
       "functionalProperties": {
-        "mapType": "baseColor",
+        "mapType": "diffuse",
         "mapFormat": "plainTexture"
       }
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {
@@ -126,7 +128,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Asset",
     "identifier": [
       {
@@ -143,7 +145,7 @@
       }
     },
     "AssetSC": {
-      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
       "entityType": "AssetSC",
       "identifier": [
         {

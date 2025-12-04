@@ -59,10 +59,10 @@ In the tables below, each Asset that contains a property that references another
 
 **Context**
 
-| **Property** | **Name** | **Target entity**       | **Target type** |
-| ------------ | -------- | ----------------------- | --------------- |
-| [ Context ]  |          | Context                 |                 |
-| [ For ]      |          | Anything with a Context |                 |
+| **Property**  | **Name** | **Target entity**       | **Target type** |
+| ------------- | -------- | ----------------------- | --------------- |
+| [ Context ]   |          | Context                 |                 |
+| [ ForEntity ] |          | Anything with a Context |                 |
 
 
 **CreativeWork**

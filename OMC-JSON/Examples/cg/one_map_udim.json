@@ -1,0 +1,218 @@
+[
+  {
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+    "entityType": "Asset",
+    "identifier": [
+      {
+        "identifierScope": "cg-example",
+        "identifierValue": "ast/A838FB4A-4489-4829-BF0E-D67BD1ABEDF1"
+      }
+    ],
+    "name": "denim",
+    "assetFC": {
+      "functionalType": "map",
+      "functionalProperties": {
+        "mapType": "diffuse",
+        "mapFormat": "plainTexture"
+      }
+    },
+    "AssetSC": {
+      "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+      "entityType": "AssetSC",
+      "identifier": [
+        {
+          "identifierScope": "labkoat",
+          "identifierValue": "asc/580A0B28-027A-4703-9253-0A786E29F324"
+        }
+      ],
+      "structuralType": "assetGroup",
+      "structuralProperties": {
+        "assetGroup": {
+          "isOrdered": false
+        }
+      }
+    },
+    "Asset": [
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/569B49B8-DC91-446D-AA44-9C0831DB2D93"
+          }
+        ],
+        "name": "denim_1001",
+        "assetFC": {
+          "functionalType": "udimTile",
+          "functionalProperties": {
+            "tileNumber": 1001
+          }
+        },
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "asc/3D85ED07-B3E4-41F9-A855-B9F52EDBE1AF"
+            }
+          ],
+          "name": "denim_1001",
+          "structuralType": "digital.image",
+          "structuralProperties": {
+            "dimensions": {
+              "height": "2048px",
+              "width": "2048px"
+            },
+            "linkset": {
+              "recordType": "item",
+              "mediaType": "image/exr"
+            },
+            "fileDetails": {
+              "fileExtension": "exr",
+              "fileName": "denim_1001.exr",
+              "filePath": "/CG/textures/"
+            },
+            "purpose": "rendering"
+          }
+        }
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/8A5D54FC-0D96-4EC5-A1D4-850723609996"
+          }
+        ],
+        "name": "denim_1002",
+        "assetFC": {
+          "functionalType": "udimTile",
+          "functionalProperties": {
+            "tileNumber": 1002
+          }
+        },
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "asc/99826C06-F3E1-45D8-BF9B-4F87F141C2F2"
+            }
+          ],
+          "name": "denim_1002",
+          "structuralType": "digital.image",
+          "structuralProperties": {
+            "dimensions": {
+              "height": "1024px",
+              "width": "1024px"
+            },
+            "linkset": {
+              "recordType": "item",
+              "mediaType": "image/exr"
+            },
+            "fileDetails": {
+              "fileExtension": "exr",
+              "fileName": "denim_1002.exr",
+              "filePath": "/CG/textures/"
+            },
+            "purpose": "rendering"
+          }
+        }
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/68353274-52C7-4597-BE2F-138C322DB877"
+          }
+        ],
+        "name": "denim_1011",
+        "assetFC": {
+          "functionalType": "udimTile",
+          "functionalProperties": {
+            "tileNumber": 1011
+          }
+        },
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "asc/CC1FF9C0-9ED1-43A1-BE67-D8DFBB44884E"
+            }
+          ],
+          "name": "denim_1011",
+          "structuralType": "digital.image",
+          "structuralProperties": {
+            "dimensions": {
+              "height": "1024px",
+              "width": "1024px"
+            },
+            "linkset": {
+              "recordType": "item",
+              "mediaType": "image/exr"
+            },
+            "fileDetails": {
+              "fileExtension": "exr",
+              "fileName": "denim_1011.exr",
+              "filePath": "/CG/textures/"
+            },
+            "purpose": "rendering"
+          }
+        }
+      },
+      {
+        "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+        "entityType": "Asset",
+        "identifier": [
+          {
+            "identifierScope": "cg-example",
+            "identifierValue": "ast/B658D666-9858-4E98-809E-653AD7ACFB10"
+          }
+        ],
+        "name": "denim_1012",
+        "assetFC": {
+          "functionalType": "udimTile",
+          "functionalProperties": {
+            "tileNumber": 1012
+          }
+        },
+        "AssetSC": {
+          "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
+          "entityType": "AssetSC",
+          "identifier": [
+            {
+              "identifierScope": "cg-example",
+              "identifierValue": "asc/591C10D3-45A2-4EED-8E20-6198658A05EA"
+            }
+          ],
+          "name": "denim_1012",
+          "structuralType": "digital.image",
+          "structuralProperties": {
+            "dimensions": {
+              "height": "1024px",
+              "width": "1024px"
+            },
+            "linkset": {
+              "recordType": "item",
+              "mediaType": "image/exr"
+            },
+            "fileDetails": {
+              "fileExtension": "exr",
+              "fileName": "denim_1012.exr",
+              "filePath": "/CG/textures/"
+            },
+            "purpose": "rendering"
+          }
+        }
+      }
+    ]
+  }
+]

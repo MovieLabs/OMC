@@ -3,11 +3,12 @@
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property             | Constraint        | Type       | Description               |
-| -------------------- | ----------------- | ---------- | ------------------------- |
-| entityType           | const<br>required | `"TaskSC"` | Declares the entity type. |
-| strcuturalType       |                   |            |                           |
-| structuralProperties |                   |            |                           |
+| Property             | Constraint        | Type                                                             | Description                                     |
+| -------------------- | ----------------- | ---------------------------------------------------------------- | ----------------------------------------------- |
+| entityType           | const<br>required | `"TaskSC"`                                                       | Declares the entity type.                       |
+| strcuturalType       |                   | string, null                                                     | A structured description of the the Tasks form. |
+| structuralProperties |                   |                                                                  |                                                 |
+| customData           |                   | [&nbsp[customData](../Utility/Utility.md#customData)&nbsp], null |                                                 |
 
 ## Examples
 

@@ -3,21 +3,23 @@ The underlying systems and framework required for the production of the Creative
 ### Properties
 Includes properties from: [baseEntity](../core/baseEntity.md)
 
-| Property         | Constraint        | Type                                                                                                | Description                                                       |
-| ---------------- | ----------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| entityType       | const<br>required | `"Infrastructure"`                                                                                  | Declares the entity type.                                         |
-| InfrastructureSC |                   | [InfrastructureSC](./Infrastructure.md)                                                             |                                                                   |
-| infrastructureFC |                   | [infrastructureFC](#infrastructureFC)                                                               |                                                                   |
-| Context          | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[reference](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work. |
+| Property         | Constraint        | Type                                                                                                 | Description                                                                                               |
+| ---------------- | ----------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| entityType       | const<br>required | `"Infrastructure"`                                                                                   | Declares the entity type.                                                                                 |
+| InfrastructureSC |                   | [InfrastructureSC](./Infrastructure.md)                                                              | Describes the form of the Infrastructure along with the attributes specific to that infrastructure's form |
+| infrastructureFC |                   | [infrastructureFC](#infrastructureFC)                                                                | Describes the use or purpose of an Infrastructure within the production process                           |
+| Context          | anyOf             | [ [Context](../MediaCreationContext/Context.md) <br>[identifier](../Utility/Utility.md#identifier) ] | Informs scope within the construction process of a Creative Work.                                         |
 
 ### Object Properties
 
 #### infrastructureFC
+Describes the use or purpose of an Infrastructure within the production process
 
-| Property             | Constraint                  | Type         | Description |
-| -------------------- | --------------------------- | ------------ | ----------- |
-| functionalType       |                             | string, null |             |
-| functionalProperties | additionalProperties: false | object, null |             |
+| Property             | Constraint                                                       | Type         | Description                                                 |
+| -------------------- | ---------------------------------------------------------------- | ------------ | ----------------------------------------------------------- |
+| functionalType       |                                                                  | string, null | The use or purpose of a Task within the production process. |
+| functionalProperties | additionalProperties: false                                      | object, null | A set of properties that describe the tasks functional use  |
+| customData           | [&nbsp[customData](../Utility/Utility.md#customData)&nbsp], null |              |                                                             |
 
 
 ## Examples

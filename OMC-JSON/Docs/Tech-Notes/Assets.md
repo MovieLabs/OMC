@@ -41,7 +41,7 @@ The Director requests some changes to the design of the prop resulting in a revi
 
 - The Production Scenes still refer to the same Asset, it is after all the same ‘thing’ or same prop. You do not want to have to find and update every place in the system that refers to this Asset and change its identifier.
 - By updating the reference that the Asset uses to refer to a new AssetSC representing the revised essence, you only need to make a change in one place, and the next time the Asset is called for, it will refer to the correct revision.
-- You can also create a record of revisions by further having the new AssetSC refer to the previous version. More details in the section on **[[Versions]].**
+- You can also create a record of revisions by further having the new AssetSC refer to the previous version. More details in the section on **[[Version]].**
 
 ![](../Diagrams/Asset-2b.svg)
 

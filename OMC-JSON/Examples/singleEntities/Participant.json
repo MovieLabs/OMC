@@ -1,6 +1,6 @@
 [
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Participant",
     "identifier": [
       {
@@ -18,30 +18,36 @@
         }
       ]
     },
-    "Participant": [{
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "pts/MFlCPsgmu_5xPCpQpteyf"
-        }
-      ]
-    }],
-    "Context": [{
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "cxt/377U8MFEHUj5MPzslPoII"
-        }
-      ]
-    }],
-    "Depiction": [{
-      "identifier": [
-        {
-          "identifierScope": "labkoat",
-          "identifierValue": "dep-HNvGRn9JY9wv1IwjG8Gff"
-        }
-      ]
-    }],
+    "Participant": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "pts/MFlCPsgmu_5xPCpQpteyf"
+          }
+        ]
+      }
+    ],
+    "Context": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "cxt/377U8MFEHUj5MPzslPoII"
+          }
+        ]
+      }
+    ],
+    "Depiction": [
+      {
+        "identifier": [
+          {
+            "identifierScope": "labkoat",
+            "identifierValue": "dep-HNvGRn9JY9wv1IwjG8Gff"
+          }
+        ]
+      }
+    ],
     "participantFC": {
       "functionalType": null,
       "jobTitle": "Screenwriter",
@@ -58,7 +64,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Participant",
     "identifier": [
       {
@@ -79,7 +85,7 @@
     }
   },
   {
-    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.6",
+    "schemaVersion": "https://movielabs.com/omc/json/schema/v2.8",
     "entityType": "Participant",
     "identifier": [
       {
