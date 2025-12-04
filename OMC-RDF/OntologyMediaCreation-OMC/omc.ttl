@@ -4056,8 +4056,8 @@ omc:hasSoftware
           omc:Collection
         ) ;
     ] ;
-  rdfs:label "has softare"@en ;
-  rdfs:range omc:Address ;
+  rdfs:label "has software"@en ;
+  rdfs:range omc:Software ;
 .
 omc:hasSoftwareVersion
   rdf:type owl:DatatypeProperty ;
