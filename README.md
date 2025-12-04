@@ -1,9 +1,11 @@
 # Read Me
 
-## OMC-JSON
+## OMC-JSON V2.8
 The OMC-JSON folder contains all materials related to the OMC-JSON schema
 
-**OMC-JSON-v2.6.schema.json**:The OMC schema itself
+**OMC-JSON-v2.8.schema.json**:The OMC schema itself
+
+[Version 2.8 changelog](OMC-JSON/changelog-v2-8.md)
 
 **/Docs**: Supplementary documentation including schema documentation and tech notes giving guidance on how to use the OMC and OMC-JSON schema.
 
@@ -31,7 +33,7 @@ Schema Documentation
 **/Examples**: A set of example OMC-JSON files, these will validate against the schema and demonstrate the structure and concepts.
 
 ## OMC-RDF
-The RDF in this repo is currently v2.6. The schema is divided into three files:
+The RDF in this repo is currently v2.8. The schema is divided into three files:
 
 - cw.ttl is the basic Creative Work. The namespace is [https://mc.movielabs.com/cw](https://mc.movielabs.com/rdf/cw_v1.2.ttl) and it uses cw: as its prefix. A Creative Work is a uniquely identified production.  (See [Part 6: Creative Works](https://mc.movielabs.com/docs/ontology/creative-works/introduction))
 
@@ -97,4 +99,4 @@ One of the main goals of the working groups that produced the ontology was to un
 
 ## License
 
-All files in this repository are Copyright 2021-2023 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the [LICENSE](./LICENSE.txt) file.
+All files in this repository are Copyright 2021-2025 Motion Picture Laboratories, Inc. and made available under the Apache 2.0 license provided in the [LICENSE](./LICENSE.txt) file.
