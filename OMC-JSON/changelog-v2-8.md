@@ -1,3 +1,18 @@
+This 2.8.1 update for 2/4/2026 includes the following updates from 2.8
+### Composition
+Fixed bug where Collection was not one of the entities in the `includes` property
+
+### Context
+`hasProduct` edge was renamed `produces` - better match with OMC
+
+### Infrastructure
+Fixed missing property `Infrastrcuture` to allow for infrastructure groups
+
+### software
+Fixed bug where software property did not accept null as a value.
+
+
+
 This 2.8 version includes all updates to the formal v2.7 spec as well as additions and updates from v2.8
 
 ### Asset

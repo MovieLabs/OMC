@@ -1053,9 +1053,8 @@
               "description": "True if the Asset is an Analog Asset."
             },
             "software": {
-              "type": "array",
               "title": "Software",
-              "description": "A description of any software that might be connected to this AssetSC, typically the one that generated it.",
+              "description": "A description of any software that might be connected to this Composition, typically those used in generating the final product.",
               "$ref": "#/$defs/Utility/properties/software"
             },
             "Carrier": {
@@ -1076,7 +1075,7 @@
                 "null"
               ],
               "properties": {
-                "isOrdered": {"type": "boolean"}
+                "isOrdered": {"type": ["boolean"]}
               },
               "title": "Asset Group",
               "description": "Properties of the Asset Group."
@@ -1226,6 +1225,20 @@
             "entityType": {
               "title": "Entity Type",
               "const": "Infrastructure"
+            },
+            "Infrastructure": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "title": "Infrastructure Group",
+              "description": "The set of Infrastructure that make up an an infrastructure group and has a structuralType of 'nfrastructureGroup'",
+              "items": {
+                "anyOf": [
+                  {"$ref": "#/$defs/core/properties/reference"},
+                  {"$ref": "#/$defs/Infrastructure/properties/Infrastructure"}
+                ]
+              }
             },
             "InfrastructureSC": {
               "title": "Structural Characteristics",
@@ -1507,11 +1520,8 @@
               "$comment": "Currently considered Beta and only adopted in OMC-JSON"
             },
             "contextProperties": {
-              "type": [
-                "object",
-                "null"
-              ],
               "anyOf": [
+                {"type": "null"},
                 {
                   "type": "object",
                   "$ref": "#/$defs/MediaCreationContext/properties/Context/$defs/shootDay"
@@ -1798,6 +1808,21 @@
                       {
                         "type": "object",
                         "$ref": "#/$defs/Utility/properties/Composition"
+                      },
+                      {"$ref": "#/$defs/core/properties/reference"}
+                    ]
+                  }
+                },
+                "Collection": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "$ref": "#/$defs/Utility/properties/Collection"
                       },
                       {"$ref": "#/$defs/core/properties/reference"}
                     ]
@@ -2464,7 +2489,7 @@
                 }
               }
             },
-            "hasProduct": {
+            "produces": {
               "type": [
                 "object",
                 "null"
@@ -3619,11 +3644,11 @@
       "title": "Media Creation Context Definitions"
     },
     "Participant": {
-      "type": "object",
+      "type": ["object"],
       "title": "Participant Definitions",
       "properties": {
         "Participant": {
-          "type": "object",
+          "type": ["object"],
           "title": "Participant",
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
@@ -3740,7 +3765,7 @@
           "unevaluatedProperties": false
         },
         "Person": {
-          "type": "object",
+          "type": ["object"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3793,7 +3818,7 @@
           "unevaluatedProperties": false
         },
         "Department": {
-          "type": "object",
+          "type": ["object"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3832,7 +3857,7 @@
           "unevaluatedProperties": false
         },
         "Organization": {
-          "type": "object",
+          "type": ["object"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3871,7 +3896,7 @@
           "unevaluatedProperties": false
         },
         "Service": {
-          "type": "object",
+          "type": ["object"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3894,9 +3919,8 @@
               "title": "Service's Contact"
             },
             "software": {
-              "type": "array",
               "title": "Software",
-              "description": "A description of any software used by the Service",
+              "description": "A description of any software that might be connected to this Composition, typically those used in generating the final product.",
               "$ref": "#/$defs/Utility/properties/software"
             }
           },
@@ -3906,7 +3930,7 @@
           "unevaluatedProperties": false
         },
         "Role": {
-          "type": "object",
+          "type": ["object", "null"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3916,7 +3940,7 @@
               "const": "Role"
             },
             "roleType": {
-              "type": "string",
+              "type": ["string", "null"],
               "title": "Role Type",
               "description": "The specific role, typically used in authorization systems",
               "$comment": "A set of controlled values is planned for a future release"
@@ -3931,10 +3955,10 @@
       "additionalProperties": false
     },
     "Task": {
-      "type": "object",
+      "type": ["object"],
       "properties": {
         "Task": {
-          "type": "object",
+          "type": ["object"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3973,7 +3997,7 @@
           "unevaluatedProperties": false
         },
         "TaskSC": {
-          "type": "object",
+          "type": ["object"],
           "title": "Task Structural Characteristics",
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
@@ -4042,10 +4066,10 @@
       "additionalProperties": false
     },
     "Utility": {
-      "type": "object",
+      "type": ["object"],
       "properties": {
         "Collection": {
-          "type": "object",
+          "type": ["object"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -4061,7 +4085,9 @@
               ],
               "title": "Collection Type",
               "description": "The type, or sub-class, of this specific Collection.",
-              "x-controlledValues": ["collection"]
+              "x-controlledValues": [
+                "collection"
+              ]
             },
             "includes": {
               "oneOf": [
@@ -4074,7 +4100,6 @@
               ]
             },
             "software": {
-              "type": "array",
               "title": "Software",
               "description": "A description of any software that might be connected to this Composition, typically those used in generating the final product.",
               "$ref": "#/$defs/Utility/properties/software"
@@ -4086,7 +4111,7 @@
           "description": "A bundle of OMC entities, each of which must have an Identifier."
         },
         "Composition": {
-          "type": "object",
+          "type": ["object"],
           "title": "Composition",
           "description": "A set of Assets or other Compositions that can be combined to produce a new Asset.",
           "allOf": [
@@ -4300,7 +4325,6 @@
               }
             },
             "software": {
-              "type": "array",
               "title": "Software",
               "description": "A description of any software that might be connected to this Composition, typically those used in generating the final product.",
               "$ref": "#/$defs/Utility/properties/software"
@@ -4322,7 +4346,7 @@
           "required": ["entityType"]
         },
         "Location": {
-          "type": "object",
+          "type": ["object"],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -4364,7 +4388,7 @@
           ],
           "title": "Annotation",
           "items": {
-            "type": "object",
+            "type": ["object"],
             "properties": {
               "author": {
                 "type": [
@@ -4375,12 +4399,12 @@
                 "description": "Who wrote or added this annotation."
               },
               "title": {
+                "title": "Title",
+                "description": "A title for the note or annotation.",
                 "type": [
                   "string",
                   "null"
-                ],
-                "title": "Title",
-                "description": "A title for the note or annotation."
+                ]
               },
               "text": {
                 "type": [
@@ -4444,19 +4468,19 @@
           ]
         },
         "identifier": {
-          "type": "array",
+          "type": ["array"],
           "title": "Identifier",
           "description": "An identifier uniquely identifies an entity within a particular scope.",
           "items": {
-            "type": "object",
+            "type": ["object"],
             "properties": {
               "identifierScope": {
-                "type": "string",
+                "type": ["string"],
                 "title": "Identifier Scope",
                 "description": "The universe within which an identifier is valid and unique."
               },
               "identifierValue": {
-                "type": "string",
+                "type": ["string"],
                 "title": "Identifier Value",
                 "description": "A string of characters that uniquely identifies an object within a particular scope."
               },
@@ -4500,7 +4524,7 @@
             "null"
           ],
           "items": {
-            "type": "object",
+            "type": ["object"],
             "properties": {
               "domain": {
                 "type": [
@@ -4930,7 +4954,7 @@
               "title": "Period in Time",
               "properties": {
                 "startTime": {
-                  "type": "string",
+                  "type": ["string"],
                   "title": "Start Time"
                 },
                 "durationTime": {
@@ -5436,72 +5460,81 @@
           ]
         },
         "software": {
-          "type": [
-            "object",
-            "null"
-          ],
-          "properties": {
-            "softwareName": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Software Name",
-              "description": "The name of the software"
+          "anyOf": [
+            {
+              "type": ["null"]
             },
-            "softwareVersion": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Software Version",
-              "description": "A version ascribed to the software that was used."
-            },
-            "apiVersion": {
-              "title": "API Version",
-              "description": "For applications or SAAS services where an API is used.",
-              "type": [
-                "string",
-                "null"
+            {
+              "type": ["array"],
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "softwareName": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "title": "Software Name",
+                      "description": "The name of the software"
+                    },
+                    "softwareVersion": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "title": "Software Version",
+                      "description": "A version ascribed to the software that was used."
+                    },
+                    "apiVersion": {
+                      "title": "API Version",
+                      "description": "For applications or SAAS services where an API is used.",
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "plugin": {
+                      "title": "Plugin",
+                      "description": "A list of required plugins, these are also software",
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "$ref": "#/$defs/Utility/properties/software"
+                    },
+                    "operatingSystem": {
+                      "title": "Operating System",
+                      "description": "The operating system that used, which is 'software'",
+                      "$ref": "#/$defs/Utility/properties/software"
+                    },
+                    "parameters": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "title": "Parameters",
+                      "description": "Parameters used when executing the software, such as in a command line"
+                    },
+                    "ConfigurationFile": {
+                      "type": [
+                        "array",
+                        "null"
+                      ],
+                      "title": "ConfigurationFile",
+                      "description": "Optional reference to an file(Asset) containing additional configuration or other information.",
+                      "items": {
+                        "anyOf": [
+                          {"$ref": "#/$defs/core/properties/reference"},
+                          {"$ref": "#/$defs/Asset/properties/Asset"}
+                        ]
+                      }
+                    }
+                  }
+                }
               ]
-            },
-            "plugin": {
-              "title": "Plugin",
-              "description": "A list of required plugins, these are also software",
-              "type": [
-                "array",
-                "null"
-              ],
-              "$ref": "#/$defs/Utility/properties/software"
-            },
-            "operatingSystem": {
-              "title": "Operating System",
-              "description": "The operating system that used, which is 'software'",
-              "$ref": "#/$defs/Utility/properties/software"
-            },
-            "parameters": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Parameters",
-              "description": "Parameters used when executing the software, such as in a command line"
-            },
-            "ConfigurationFile": {
-              "type": [
-                "array",
-                "null"
-              ],
-              "title": "ConfigurationFile",
-              "description": "Optional reference to an file(Asset) containing additional configuration or other information.",
-              "items": {
-                "anyOf": [
-                  {"$ref": "#/$defs/core/properties/reference"},
-                  {"$ref": "#/$defs/Asset/properties/Asset"}
-                ]
-              }
             }
-          },
+          ],
           "title": "Software",
           "description": "A set of executable instructions that tells a computer how to operate."
         },
@@ -5563,7 +5596,7 @@
           "description": "An identifier that references another entity in the graph"
         },
         "rootObject": {
-          "type": "object",
+          "type": ["object"],
           "properties": {
             "Asset": {
               "type": [
@@ -5817,7 +5850,7 @@
           "additionalProperties": false
         },
         "collectionObject": {
-          "type": "object",
+          "type": ["object"],
           "properties": {
             "Asset": {
               "type": [
@@ -6221,9 +6254,9 @@
                   {"$ref": "#/$defs/Utility/properties/Location"}
                 ]
               }
-            },
-            "additionalProperties": false
-          }
+            }
+          },
+          "additionalProperties": false
         },
         "rootEntity": {
           "allOf": [
@@ -6608,12 +6641,12 @@
               "description": "A name for the entity, this is primarily for human consumption in things like user interfaces. It should not be considered a canonical name."
             },
             "description": {
+              "title": "Description",
+              "description": "A brief description of the entity, primarily for human consumption.",
               "type": [
                 "string",
                 "null"
-              ],
-              "title": "Description",
-              "description": "A brief description of the entity, primarily for human consumption."
+              ]
             },
             "customData": {"$ref": "#/$defs/Utility/properties/customData"},
             "annotation": {"$ref": "#/$defs/Utility/properties/annotation"},
@@ -6698,12 +6731,12 @@
               "title": "A name for this specific version of the Asset"
             },
             "description": {
+              "title": "Asset description",
+              "description": "A human readable description of the version",
               "type": [
                 "string",
                 "null"
-              ],
-              "title": "Asset description",
-              "description": "A human readable description of the version"
+              ]
             },
             "annotation": {"$ref": "#/$defs/Utility/properties/annotation"},
             "customData": {"$ref": "#/$defs/Utility/properties/customData"}
