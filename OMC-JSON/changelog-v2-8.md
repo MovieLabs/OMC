@@ -1,4 +1,7 @@
 This 2.8.1 update for 2/4/2026 includes the following updates from 2.8
+### Collection
+Added the property `collectionProperties`
+
 ### Composition
 Fixed bug where Collection was not one of the entities in the `includes` property
 

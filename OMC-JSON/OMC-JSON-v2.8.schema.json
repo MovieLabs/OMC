@@ -1075,7 +1075,9 @@
                 "null"
               ],
               "properties": {
-                "isOrdered": {"type": ["boolean"]}
+                "isOrdered": {
+                  "type": ["boolean"]
+                }
               },
               "title": "Asset Group",
               "description": "Properties of the Asset Group."
@@ -3930,7 +3932,10 @@
           "unevaluatedProperties": false
         },
         "Role": {
-          "type": ["object", "null"],
+          "type": [
+            "object",
+            "null"
+          ],
           "allOf": [
             {"$ref": "#/$defs/core/properties/baseEntity"}
           ],
@@ -3940,7 +3945,10 @@
               "const": "Role"
             },
             "roleType": {
-              "type": ["string", "null"],
+              "type": [
+                "string",
+                "null"
+              ],
               "title": "Role Type",
               "description": "The specific role, typically used in authorization systems",
               "$comment": "A set of controlled values is planned for a future release"
@@ -4085,9 +4093,14 @@
               ],
               "title": "Collection Type",
               "description": "The type, or sub-class, of this specific Collection.",
-              "x-controlledValues": [
-                "collection"
-              ]
+              "x-controlledValues": ["collection"]
+            },
+            "collectionProperties": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "title": "Collection Properties"
             },
             "includes": {
               "oneOf": [
