@@ -4438,10 +4438,11 @@
           "oneOf": [
             {"type": "null"},
             {
-              "type": "object",
-              "maxProperties": 0,
+              "type": ["object"],
               "deprecated": true,
-              "description": "Deprecated in favor of an array objects, with explicit provenance to allow for disambiguation."
+              "$comment": "Deprecated in favor of an array objects, with explicit provenance to allow for disambiguation.",
+              "properties": {},
+              "additionalProperties": true
             },
             {
               "type": "array",
